@@ -370,6 +370,37 @@ Mata conversão e não muda nada na resposta da Tower.
 7. Bloco "A Tower começou no Montese. Continua aqui."  ★ sinal local + permanência
 ```
 
+## 5.4b `/cotacao/` — o construtor de cotação
+
+Substitui o formulário curto de 5 campos que existia em `/empresas/orcamento/`
+(agora com 301 para cá). O formulário curto qualificava; este **fecha o pedido**.
+
+```
+1. ITENS, repetíveis          categoria → descrição livre → quantidade
+2. GRADE DE NUMERAÇÃO         ★ só para calçado, 33 a 48, com total somado
+3. ENTREGA                    cidade e prazo
+4. IDENTIFICAÇÃO MÍNIMA       nome e empresa, ambos opcionais
+5. PRÉVIA DA MENSAGEM         o texto exato que será enviado, à vista
+6. ENVIAR                     abre o WhatsApp com tudo pronto
+```
+
+**Por que a grade de numeração é o coração da página.** É o dado que mais falta
+num pedido de calçado para equipe. Sem ele, o ciclo é: cliente pede orçamento →
+Tower pergunta os tamanhos → cliente levanta com a equipe → dois dias depois
+volta. Com ele, o orçamento sai na primeira resposta.
+
+**Decisões de projeto:**
+- **Nada é armazenado.** A mensagem é montada no navegador; não há servidor,
+  banco nem envio. O texto só sai quando a pessoa aperta enviar.
+- **Nenhum campo obrigatório além da categoria.** Nome, empresa, cidade e prazo
+  são opcionais — pedir mais mataria conversão sem melhorar a resposta.
+- **Guarda de tamanho.** Acima de 1400 caracteres o link `wa.me` corre risco de
+  ser truncado sem aviso. A interface detecta isso, esconde o botão de envio
+  direto e oferece copiar o texto — falhar silenciosamente com metade do pedido
+  seria pior do que dar um passo a mais.
+- **Serve B2C e B2B.** Um par para si: marca 1 na numeração. Equipe inteira:
+  preenche a grade. Mesma página, sem bifurcação artificial.
+
 ## 5.7 Sistema de CTA de WhatsApp
 
 **Regra:** nenhum CTA genérico existe no site. Todo botão carrega origem e contexto,

@@ -70,7 +70,7 @@ export default function ComoAtendemosPagina() {
           secao="como-atendemos-fechamento"
           titulo="Vamos começar pelo que a sua equipe faz."
           texto="Segmento, quantas pessoas e para quando. Com isso já conseguimos indicar o que faz sentido e passar prazo e valor."
-          rotulo="Solicitar orçamento"
+          rotulo="Falar no WhatsApp"
           publico="b2b"
         />
       </Secao>

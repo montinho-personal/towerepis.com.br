@@ -10,6 +10,7 @@ const NAV = [
   { href: '/protecao/', rotulo: 'Proteção' },
   { href: '/para-seu-trabalho/', rotulo: 'Para seu trabalho' },
   { href: '/empresas/', rotulo: 'Empresas' },
+  { href: '/cotacao/', rotulo: 'Cotação' },
   { href: '/conhecimento/', rotulo: 'Conhecimento' },
   { href: '/a-tower/', rotulo: 'A Tower' },
 ]

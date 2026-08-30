@@ -24,8 +24,8 @@ export default function Empresas() {
 
       <div className="wrap">
         <div className="flex flex-wrap gap-3">
-          <Link href="/empresas/orcamento/" className="btn btn-ink">
-            Solicitar orçamento
+          <Link href="/cotacao/" className="btn btn-ink">
+            Montar cotação
           </Link>
           <Link href="/empresas/como-atendemos/" className="btn btn-ghost">
             Como atendemos

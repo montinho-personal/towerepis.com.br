@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     url('/', 1, 'weekly'),
+    url('/cotacao/', 0.95, 'monthly'),
     url('/calcados/', 0.9, 'monthly'),
     url('/calcados/comparativo/', 0.9, 'monthly'),
     ...CALCADOS.map((c) => url(`/calcados/${c.slug}/`, 0.8, 'monthly')),
@@ -27,7 +28,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/para-seu-trabalho/', 0.9, 'monthly'),
     ...PROFISSOES.map((p) => url(`/para-seu-trabalho/${p.slug}/`, 0.8, 'monthly')),
     url('/empresas/', 0.9, 'monthly'),
-    url('/empresas/orcamento/', 0.9, 'monthly'),
     url('/empresas/como-atendemos/', 0.7, 'monthly'),
     ...SETORES.map((s) => url(`/empresas/${s.slug}/`, 0.8, 'monthly')),
     url('/encontrar-epi/', 0.7, 'monthly'),

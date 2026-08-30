@@ -116,8 +116,8 @@ export default async function PaginaSetor({
           categoria={s.slug}
         />
         <div className="mt-4">
-          <Link href="/empresas/orcamento/" className="btn btn-ghost">
-            Preencher pelo formulário
+          <Link href="/cotacao/" className="btn btn-ghost">
+            Montar a cotação item a item
           </Link>
         </div>
       </Secao>

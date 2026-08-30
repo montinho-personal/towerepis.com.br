@@ -3,6 +3,11 @@
   "framework": "nextjs",
   "redirects": [
     {
+      "source": "/empresas/orcamento",
+      "destination": "/cotacao/",
+      "permanent": true
+    },
+    {
       "source": "/sobre",
       "destination": "/a-tower/",
       "permanent": true

@@ -41,6 +41,7 @@ export type ContextoWhatsApp =
   | 'empresas-construcao'
   | 'empresas-facilities'
   | 'orcamento'
+  | 'cotacao'
   | 'ferramenta'
   | 'marcas'
   | 'historia'
@@ -81,6 +82,7 @@ const MENSAGENS: Record<ContextoWhatsApp, string> = {
   'empresas-construcao': `${ABERTURA} Sou responsável pela compra de EPIs em uma construtora e gostaria de um orçamento.`,
   'empresas-facilities': `${ABERTURA} Sou responsável pela compra de EPIs em uma empresa de limpeza e gostaria de um orçamento.`,
   orcamento: `${ABERTURA} Gostaria de solicitar um orçamento de EPIs.`,
+  cotacao: `${ABERTURA} Gostaria de montar uma cotação.`,
 
   ferramenta: `${ABERTURA} Usei a ferramenta de orientação do site e gostaria de ajuda para escolher.`,
   marcas: `${ABERTURA} Gostaria de saber quais marcas vocês trabalham e o que têm disponível.`,
@@ -100,6 +102,80 @@ export function linkWhatsApp(
 
 export function mensagemDoContexto(contexto: ContextoWhatsApp): string {
   return MENSAGENS[contexto]
+}
+
+/**
+ * Limite prático para o texto de um link wa.me.
+ *
+ * A URL final leva o texto codificado, e navegador e WhatsApp truncam
+ * URLs muito longas — silenciosamente, o que é o pior tipo de falha aqui.
+ * Acima deste limite a interface oferece copiar o texto em vez de arriscar
+ * mandar um pedido cortado pela metade.
+ */
+export const LIMITE_MENSAGEM = 1400
+
+export type ItemCotacao = {
+  id: string
+  categoria: string
+  descricao: string
+  quantidade: string
+  /** Só para calçado: numeração -> quantidade de pares. */
+  numeracao: Record<string, string>
+}
+
+/**
+ * Monta a mensagem da cotação.
+ *
+ * O formato é pensado para ser lido no WhatsApp, num celular, por quem está
+ * atendendo: blocos curtos, sem tabela, sem markdown — que o WhatsApp não
+ * renderiza — e com a grade de numeração resumida numa linha só.
+ */
+export function mensagemCotacao(dados: {
+  itens: ItemCotacao[]
+  cidade: string
+  prazo: string
+  nome: string
+  empresa: string
+  observacao: string
+}): string {
+  const linhas: string[] = [
+    'Olá! Vim pelo site da Tower e gostaria de uma cotação.',
+    '',
+    'ITENS',
+  ]
+
+  dados.itens.forEach((item, i) => {
+    linhas.push(`${i + 1}) ${item.categoria}`)
+    if (item.descricao.trim()) linhas.push(`   ${item.descricao.trim()}`)
+
+    const grade = Object.entries(item.numeracao)
+      .filter(([, qtd]) => Number(qtd) > 0)
+      .sort(([a], [b]) => Number(a) - Number(b))
+
+    if (grade.length) {
+      const total = grade.reduce((s, [, q]) => s + Number(q), 0)
+      linhas.push(
+        `   Numeração: ${grade.map(([n, q]) => `${n}x${q}`).join(', ')} (${total} pares)`,
+      )
+    } else if (item.quantidade.trim()) {
+      linhas.push(`   Quantidade: ${item.quantidade.trim()}`)
+    }
+  })
+
+  linhas.push('', 'ENTREGA')
+  if (dados.cidade.trim()) linhas.push(`Cidade: ${dados.cidade.trim()}`)
+  if (dados.prazo) linhas.push(`Prazo: ${dados.prazo}`)
+
+  if (dados.nome.trim() || dados.empresa.trim()) {
+    linhas.push('', 'QUEM ESTÁ PEDINDO')
+    linhas.push([dados.nome.trim(), dados.empresa.trim()].filter(Boolean).join(' — '))
+  }
+
+  if (dados.observacao.trim()) {
+    linhas.push('', 'OBSERVAÇÃO', dados.observacao.trim())
+  }
+
+  return linhas.join('\n')
 }
 
 /**
