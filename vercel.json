@@ -1,4 +1,46 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": "nextjs"
+  "framework": "nextjs",
+  "redirects": [
+    {
+      "source": "/sobre",
+      "destination": "/a-tower/",
+      "permanent": true
+    },
+    {
+      "source": "/quem-somos",
+      "destination": "/a-tower/",
+      "permanent": true
+    },
+    {
+      "source": "/empresa",
+      "destination": "/a-tower/",
+      "permanent": true
+    },
+    {
+      "source": "/parceiros",
+      "destination": "/marcas/",
+      "permanent": true
+    },
+    {
+      "source": "/produtos",
+      "destination": "/protecao/",
+      "permanent": true
+    },
+    {
+      "source": "/calcados",
+      "destination": "/calcados/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/conhecimento/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:slug",
+      "destination": "/conhecimento/:slug/",
+      "permanent": true
+    }
+  ]
 }
