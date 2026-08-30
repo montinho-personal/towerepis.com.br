@@ -13,7 +13,7 @@ const archivo = Archivo({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-archivo',
-  weight: ['400', '600', '700'],
+  weight: ['400', '600', '700', '800', '900'],
 })
 
 const sourceSerif = Source_Serif_4({

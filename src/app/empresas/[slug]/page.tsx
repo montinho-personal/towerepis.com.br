@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { metadados } from '@/lib/seo'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
@@ -29,12 +30,7 @@ export async function generateMetadata({
   const { slug } = await params
   const s = buscarSetor(slug)
   if (!s) return {}
-  return {
-    title: s.titleSeo,
-    description: s.descricaoSeo,
-    alternates: { canonical: `/empresas/${s.slug}/` },
-    openGraph: { title: s.titleSeo, description: s.descricaoSeo },
-  }
+  return metadados({ titulo: s.titleSeo, descricao: s.descricaoSeo, canonical: `/empresas/${s.slug}/` })
 }
 
 export default async function PaginaSetor({

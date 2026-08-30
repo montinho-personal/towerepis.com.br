@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { metadados } from '@/lib/seo'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
@@ -22,18 +23,12 @@ export async function generateMetadata({
   const { slug } = await params
   const a = buscarArtigo(slug)
   if (!a) return {}
-  return {
-    title: a.tituloSeo,
-    description: a.descricaoSeo,
-    alternates: { canonical: `/conhecimento/${a.slug}/` },
-    openGraph: {
-      type: 'article',
-      title: a.tituloSeo,
-      description: a.descricaoSeo,
-      publishedTime: a.publicado,
-      modifiedTime: a.atualizado,
-    },
-  }
+  return metadados({
+    titulo: a.tituloSeo,
+    descricao: a.descricaoSeo,
+    canonical: `/conhecimento/${a.slug}/`,
+    artigo: { publicado: a.publicado, atualizado: a.atualizado },
+  })
 }
 
 /** `texto` pode conter <strong> e <em> vindos do conteúdo controlado em src/content. */

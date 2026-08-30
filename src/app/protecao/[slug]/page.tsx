@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { metadados } from '@/lib/seo'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
@@ -30,12 +31,7 @@ export async function generateMetadata({
   const { slug } = await params
   const p = buscarProtecao(slug)
   if (!p) return {}
-  return {
-    title: p.titleSeo,
-    description: p.descricaoSeo,
-    alternates: { canonical: `/protecao/${p.slug}/` },
-    openGraph: { title: p.titleSeo, description: p.descricaoSeo },
-  }
+  return metadados({ titulo: p.titleSeo, descricao: p.descricaoSeo, canonical: `/protecao/${p.slug}/` })
 }
 
 export default async function PaginaProtecao({

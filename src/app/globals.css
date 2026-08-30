@@ -16,17 +16,28 @@
   --color-tower-red-deep: #7e0b12; /* hover e texto sobre claro */
   --color-tower-red-soft: #fdf0ef; /* fundo tênue */
 
-  /* Azul-marinho: hierarquia secundária, títulos. */
-  --color-tower-navy: #15294b;
-  --color-tower-navy-deep: #0d1a30;
+  /* Vermelho claro: EXCLUSIVO para marcas e rótulos sobre superfície
+     escura. O vermelho da marca sobre grafite dá 2,4:1 — reprovado.
+     Este dá 5,2:1. Nunca usar sobre fundo claro. */
+  --color-tower-red-light: #f2686e;
 
-  /* Neutros: papel quente, tinta editorial. */
+  /* Grafite: superfícies escuras. É onde a Tower afirma — história,
+     números, autoridade, fechamento. Distinto da tinta de texto:
+     superfície escura com um pouco de calor lê como industrial,
+     preto puro lê como duro. */
+  --color-grafite-900: #16171a;  /* rodapé, o mais profundo */
+  --color-grafite-800: #1f2124;  /* faixas escuras principais */
+  --color-grafite-700: #2c2f33;  /* blocos aninhados sobre escuro */
+  --color-grafite-600: #3d4147;  /* divisórias sobre escuro */
+
+  /* Neutros: papel quente, tinta editorial, aço industrial. */
   --color-paper: #fcfbf9;
-  --color-paper-2: #f4f1ec;   /* faixas — o creme do feed */
+  --color-paper-2: #f0ebe3;   /* creme — mais presente que antes */
   --color-ink: #191a1d;
   --color-ink-2: #4a4e56;
   --color-ink-3: #6e737c;
-  --color-rule: #e3ded6;
+  --color-aco: #a8a29a;       /* concreto e aço, para superfícies técnicas */
+  --color-rule: #ded8ce;
   --color-rule-strong: #cfc8bd;
 
   /* Funcional: verde só para WhatsApp. Cor com função, nunca enfeite. */
@@ -36,6 +47,14 @@
   /* --- Tipografia ------------------------------------------- */
   --font-display: var(--font-archivo), 'Archivo', system-ui, sans-serif;
   --font-serif: var(--font-source-serif), 'Source Serif 4', Georgia, serif;
+
+  /* Escala monumental. Usa clamp() por viewport de propósito: no celular
+     precisa continuar monumental, não encolher até virar título comum.
+     É o que preserva a direção de arte na tela pequena. */
+  --text-mega: clamp(4.5rem, 15vw, 11rem);
+  --text-monumental: clamp(2.75rem, 8vw, 6rem);
+  --text-display: clamp(2.4rem, 6.5vw, 4.6rem);
+  --text-titulo: clamp(1.7rem, 3.6vw, 2.6rem);
 
   /* Escala modular ~1.25, ancorada em 16px. */
   --text-2xs: 0.6875rem;
@@ -219,9 +238,41 @@
   }
 
   /* --- Faixa e régua ---------------------------------------- */
+  /* --- Superfícies -----------------------------------------
+     Cada uma tem função declarada: papel onde se lê, creme para
+     separar sem escurecer, grafite onde se afirma, vermelho onde
+     se decide. */
   .band { background: var(--color-paper-2); }
-  .band-ink { background: var(--color-ink); color: var(--color-paper); }
-  .band-ink h2, .band-ink h3 { color: var(--color-paper); }
+
+  .band-ink {
+    background: var(--color-grafite-800);
+    color: var(--color-paper);
+  }
+  .band-ink h1, .band-ink h2, .band-ink h3 { color: var(--color-paper); }
+  /* Sobre escuro, rótulo usa o vermelho claro — o da marca reprovaria. */
+  .band-ink .eyebrow-red { color: var(--color-tower-red-light); }
+  .band-ink .eyebrow { color: #9aa0a8; }
+
+  .band-red {
+    background: var(--color-tower-red);
+    color: #fff;
+  }
+  .band-red h1, .band-red h2, .band-red h3 { color: #fff; }
+  .band-red .eyebrow { color: #ffd9db; }
+
+  /* --- Três compassos verticais ----------------------------
+     A monotonia do site não vinha só da cor: vinha de toda seção
+     ter o mesmo respiro. Compressão antes de expansão é o que
+     cria a sensação de ritmo. */
+  .ritmo-compacto { padding-block: clamp(2rem, 4vw, 3.5rem); }
+  .ritmo-normal   { padding-block: clamp(3.5rem, 7vw, 5rem); }
+  .ritmo-amplo    { padding-block: clamp(5rem, 11vw, 8.5rem); }
+
+  /* Faixa que sangra de borda a borda. Grafite em caixinha vira card. */
+  .sangra {
+    width: 100vw;
+    margin-inline: calc(50% - 50vw);
+  }
 
   .rule-top { border-top: 1px solid var(--color-rule); }
   .rule-heavy { border-top: 2px solid var(--color-ink); }

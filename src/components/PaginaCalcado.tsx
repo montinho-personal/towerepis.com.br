@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { metadados } from '@/lib/seo'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
@@ -19,12 +20,11 @@ import { JsonLd, schemaFaq } from '@/lib/schema'
 export function metadataCalcado(slug: string): Metadata {
   const c = buscarCalcado(slug)
   if (!c) return {}
-  return {
-    title: c.titleSeo,
-    description: c.descricaoSeo,
-    alternates: { canonical: `/calcados/${c.slug}/` },
-    openGraph: { title: c.titleSeo, description: c.descricaoSeo },
-  }
+  return metadados({
+    titulo: c.titleSeo,
+    descricao: c.descricaoSeo,
+    canonical: `/calcados/${c.slug}/`,
+  })
 }
 
 export function PaginaCalcado({ slug }: { slug: string }) {
