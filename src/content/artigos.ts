@@ -31,6 +31,10 @@ export type Artigo = {
   fontes: { titulo: string; url: string }[]
   paginaComercial: { href: string; rotulo: string }
   contexto: ContextoWhatsApp
+  /** Mensagem própria do artigo. Herdar a do contexto comercial faria o
+   *  texto afirmar uma origem falsa — "vim pela área de empresas" para
+   *  quem veio de um texto sobre a NR-6. */
+  mensagemWhats: string
   ctaTitulo: string
   ctaTexto: string
 }
@@ -155,6 +159,8 @@ export const ARTIGOS: Artigo[] = [
       rotulo: 'Ver calçados para cozinha',
     },
     contexto: 'profissao-cozinha',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Li o texto sobre calçado para cozinha e queria ajuda para escolher o modelo certo para a minha rotina.',
     ctaTitulo: 'Trabalha em cozinha e ainda está em dúvida?',
     ctaTexto:
       'Conte como é a sua rotina: tipo de cozinha, como fica o piso e quantas horas você passa em pé. A gente mostra as opções que fazem sentido e explica a diferença entre elas.',
@@ -243,6 +249,8 @@ export const ARTIGOS: Artigo[] = [
       rotulo: 'Ver soluções para empresas',
     },
     contexto: 'empresas',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Li o texto sobre o CA e gostaria de ajuda para conferir se os EPIs que usamos hoje estão adequados.',
     ctaTitulo: 'Precisa conferir o CA dos EPIs que a sua equipe usa?',
     ctaTexto:
       'Mande a lista do que vocês usam hoje. A gente ajuda a verificar se o que está em uso corresponde ao risco da atividade e o que vale substituir.',
@@ -345,6 +353,8 @@ export const ARTIGOS: Artigo[] = [
       rotulo: 'Ver a comparação completa',
     },
     contexto: 'calcados-comparativo',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Li o texto sobre calçado ocupacional e de segurança e continuo em dúvida sobre qual serve para o meu caso.',
     ctaTitulo: 'Ainda em dúvida sobre qual é o seu caso?',
     ctaTexto:
       'Descreva a sua rotina de trabalho: onde você fica, como é o piso e se há movimentação de carga. A gente diz qual dos dois faz sentido e por quê.',
@@ -445,6 +455,8 @@ export const ARTIGOS: Artigo[] = [
       rotulo: 'Ver soluções para empresas',
     },
     contexto: 'empresas',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Li o texto sobre a NR-6 e gostaria de ajuda para organizar o EPI da nossa equipe.',
     ctaTitulo: 'Precisa organizar o EPI da sua equipe?',
     ctaTexto:
       'Conte quantas pessoas são e o que elas fazem. A gente ajuda a montar o conjunto por atividade e a verificar se o que vocês usam hoje corresponde ao risco.',
@@ -540,6 +552,8 @@ export const ARTIGOS: Artigo[] = [
       rotulo: 'Ver calçados antiderrapantes',
     },
     contexto: 'calcados-antiderrapantes',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Li o texto sobre solado antiderrapante e queria saber qual modelo serve para o piso onde eu trabalho.',
     ctaTitulo: 'Quer saber se o modelo serve para o seu piso?',
     ctaTexto:
       'Descreva como é o chão onde você trabalha e o que costuma cair nele. A gente verifica a marcação dos modelos e indica o que faz sentido.',

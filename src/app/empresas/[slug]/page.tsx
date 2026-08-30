@@ -11,7 +11,7 @@ import {
   Perguntas,
   Secao,
 } from '@/components/Blocos'
-import { BlocoCta } from '@/components/WhatsAppCta'
+import { BlocoCta, CtaLinha } from '@/components/WhatsAppCta'
 import { ComoAtendemos, ComQuemVoceFala, ErroCaro } from '@/components/BlocosB2B'
 import { IconeSeta } from '@/components/Icones'
 import { JsonLd, schemaFaq } from '@/lib/schema'
@@ -70,7 +70,19 @@ export default async function PaginaSetor({
       </section>
 
       <Secao className="wrap">
-        <OQueObservar titulo="O que costuma ser necessário" itens={s.oQueCostuma} />
+        {/* Atalho cedo: o comprador B2B com pressa não deveria precisar
+            percorrer a página toda para pedir. */}
+        <CtaLinha
+          contexto={s.contexto}
+          secao="setor-topo"
+          texto="Precisa de um orçamento para a sua equipe?"
+          rotulo="Pedir pelo WhatsApp"
+          publico="b2b"
+          categoria={s.slug}
+        />
+        <div className="mt-14">
+          <OQueObservar titulo="O que costuma ser necessário" itens={s.oQueCostuma} />
+        </div>
         <p className="mt-6 max-w-2xl text-sm text-ink-3">
           Esta lista é orientativa. A definição do que é obrigatório em cada função vem
           da avaliação de riscos da sua empresa, feita por profissional habilitado.

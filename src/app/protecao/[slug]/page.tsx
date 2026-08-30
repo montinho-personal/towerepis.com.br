@@ -14,7 +14,7 @@ import {
   AssinaturaTecnica,
   Secao,
 } from '@/components/Blocos'
-import { BlocoCta } from '@/components/WhatsAppCta'
+import { BlocoCta, CtaLinha } from '@/components/WhatsAppCta'
 import { JsonLd, schemaFaq } from '@/lib/schema'
 
 export const dynamicParams = false
@@ -57,6 +57,18 @@ export default async function PaginaProtecao({
 
       <Secao className="wrap pt-0">
         <EmUmaFrase>{p.emUmaFrase}</EmUmaFrase>
+
+        {/* Atalho para quem já se decidiu, sem obrigar a rolar a página
+            inteira. Mesma mensagem contextual do bloco do fim. */}
+        <div className="mt-10">
+          <CtaLinha
+            contexto={p.contexto}
+            secao="protecao-topo"
+            texto="Prefere perguntar direto? A gente responde com o que faz sentido para a sua atividade."
+            rotulo="Falar no WhatsApp"
+            categoria={p.slug}
+          />
+        </div>
       </Secao>
 
       <Secao className="wrap pt-0">

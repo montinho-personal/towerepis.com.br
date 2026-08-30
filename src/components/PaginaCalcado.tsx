@@ -14,7 +14,7 @@ import {
   AssinaturaTecnica,
   Secao,
 } from './Blocos'
-import { BlocoCta } from './WhatsAppCta'
+import { BlocoCta, CtaLinha } from './WhatsAppCta'
 import { JsonLd, schemaFaq } from '@/lib/schema'
 
 export function metadataCalcado(slug: string): Metadata {
@@ -45,6 +45,18 @@ export function PaginaCalcado({ slug }: { slug: string }) {
 
       <Secao className="wrap pt-0">
         <EmUmaFrase>{c.emUmaFrase}</EmUmaFrase>
+
+        {/* Atalho para quem já se decidiu, sem obrigar a rolar a página
+            inteira. Mesma mensagem contextual do bloco do fim. */}
+        <div className="mt-10">
+          <CtaLinha
+            contexto={c.contexto}
+            secao="calcado-topo"
+            texto="Quer ajuda para escolher o modelo certo para a sua rotina?"
+            rotulo="Ver opções no WhatsApp"
+            categoria={c.slug}
+          />
+        </div>
       </Secao>
 
       <Secao className="wrap pt-0">

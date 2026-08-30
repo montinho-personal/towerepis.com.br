@@ -59,6 +59,53 @@ export function WhatsAppCta({
 }
 
 /**
+ * CTA de linha, para aparecer cedo na página.
+ *
+ * O bloco completo fica no fim, depois de todo o conteúdo — que é o lugar
+ * certo para ele. Mas quem já se decidiu no primeiro terço da página não
+ * deveria precisar rolar tudo para agir, principalmente no celular.
+ *
+ * Compacto de propósito: não repete a promessa nem grita. Só oferece o
+ * atalho, com a mesma mensagem contextual do bloco final.
+ */
+export function CtaLinha({
+  contexto,
+  secao,
+  texto,
+  rotulo,
+  publico,
+  categoria,
+  mensagem,
+}: {
+  contexto: ContextoWhatsApp
+  secao: string
+  texto: string
+  rotulo: string
+  publico?: 'b2b' | 'b2c'
+  categoria?: string
+  mensagem?: string
+}) {
+  return (
+    <div className="flex flex-col gap-4 border-y-2 border-ink py-6 sm:flex-row sm:items-center sm:justify-between sm:gap-8">
+      <p className="max-w-lg font-display text-[1.05rem] font-bold leading-snug">
+        {texto}
+      </p>
+      <div className="shrink-0">
+        <WhatsAppCta
+          contexto={contexto}
+          secao={secao}
+          publico={publico}
+          categoria={categoria}
+          mensagem={mensagem}
+        >
+          {rotulo}
+        </WhatsAppCta>
+      </div>
+    </div>
+  )
+}
+
+/**
  * Bloco de CTA com a mensagem à vista.
  * Mostrar o texto que será enviado reduz a hesitação de quem tem receio
  * de "incomodar" — a pessoa vê exatamente o que vai acontecer.
@@ -71,6 +118,7 @@ export function BlocoCta({
   rotulo = 'Falar no WhatsApp',
   publico,
   categoria,
+  mensagem,
 }: {
   contexto: ContextoWhatsApp
   secao: string
@@ -79,6 +127,7 @@ export function BlocoCta({
   rotulo?: string
   publico?: 'b2b' | 'b2c'
   categoria?: string
+  mensagem?: string
 }) {
   return (
     <div className="border border-rule bg-paper-2 p-6 sm:p-8">
@@ -91,6 +140,7 @@ export function BlocoCta({
           secao={secao}
           publico={publico}
           categoria={categoria}
+          mensagem={mensagem}
         >
           {rotulo}
         </WhatsAppCta>
@@ -99,7 +149,7 @@ export function BlocoCta({
       <p className="mt-5 text-xs text-ink-3 leading-relaxed">
         <span className="eyebrow">Sua mensagem já vai assim</span>
         <span className="mt-1.5 block italic">
-          “{mensagemDoContexto(contexto)}”
+          “{mensagem ?? mensagemDoContexto(contexto)}”
         </span>
       </p>
     </div>

@@ -182,6 +182,7 @@ export default async function Artigo({ params }: { params: Promise<{ slug: strin
           texto={a.ctaTexto}
           rotulo="Falar no WhatsApp"
           categoria={a.cluster}
+          mensagem={a.mensagemWhats}
         />
       </Secao>
 

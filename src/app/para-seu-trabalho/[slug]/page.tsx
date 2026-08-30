@@ -15,7 +15,7 @@ import {
   PonteEmpresas,
   Secao,
 } from '@/components/Blocos'
-import { BlocoCta } from '@/components/WhatsAppCta'
+import { BlocoCta, CtaLinha } from '@/components/WhatsAppCta'
 import { JsonLd, schemaFaq } from '@/lib/schema'
 
 export const dynamicParams = false
@@ -75,6 +75,19 @@ export default async function PaginaProfissao({
 
       <Secao className="wrap pb-0">
         <EmUmaFrase>{p.emUmaFrase}</EmUmaFrase>
+
+        {/* Atalho para quem já se decidiu, sem obrigar a rolar a página
+            inteira. Mesma mensagem contextual do bloco do fim. */}
+        <div className="mt-10">
+          <CtaLinha
+            contexto={p.contexto}
+            secao="profissao-topo"
+            texto="Já sabe o que precisa? Fale direto com quem entende."
+            rotulo="Falar no WhatsApp"
+            publico="b2c"
+            categoria={p.slug}
+          />
+        </div>
       </Secao>
 
       <Secao className="wrap">
