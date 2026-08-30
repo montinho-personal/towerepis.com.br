@@ -13,9 +13,9 @@ export const metadata: Metadata = {
 export default function HubProfissoes() {
   return (
     <>
-      <Trilha itens={[{ nome: 'Para seu trabalho', url: '/para-seu-trabalho/' }]} />
+      <Trilha itens={[{ nome: 'Por profissão', url: '/para-seu-trabalho/' }]} />
       <CabecalhoPagina
-        rotulo="Para seu trabalho"
+        rotulo="Por profissão"
         titulo="Comece pelo que você faz"
         resumo="O risco muda conforme a rotina, e o critério de escolha muda junto. Encontre a sua atividade e veja o que realmente importa observar antes de comprar."
       />

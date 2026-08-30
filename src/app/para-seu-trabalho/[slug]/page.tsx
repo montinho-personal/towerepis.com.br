@@ -53,7 +53,7 @@ export default async function PaginaProfissao({
       <JsonLd dados={schemaFaq(p.perguntas)} />
       <Trilha
         itens={[
-          { nome: 'Para seu trabalho', url: '/para-seu-trabalho/' },
+          { nome: 'Por profissão', url: '/para-seu-trabalho/' },
           { nome: p.nome, url: `/para-seu-trabalho/${p.slug}/` },
         ]}
       />

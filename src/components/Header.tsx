@@ -5,12 +5,20 @@ import { useState } from 'react'
 import { Logo } from './Logo'
 import { WhatsAppCta } from './WhatsAppCta'
 
+/**
+ * Os rótulos seguem uma lógica só: cada um nomeia o que está atrás do link.
+ *
+ * "Empresas" nomeava um tipo de cliente, não um conteúdo — e ninguém se
+ * identifica como "Empresa" ao procurar calçado para a cozinha. "Para equipes"
+ * nomeia a situação, que é como a pessoa realmente pensa.
+ *
+ * O orçamento não está aqui: é a conversão principal e vive no botão.
+ */
 const NAV = [
   { href: '/calcados/', rotulo: 'Calçados' },
   { href: '/protecao/', rotulo: 'Proteção' },
-  { href: '/para-seu-trabalho/', rotulo: 'Para seu trabalho' },
-  { href: '/empresas/', rotulo: 'Empresas' },
-  { href: '/cotacao/', rotulo: 'Cotação' },
+  { href: '/para-seu-trabalho/', rotulo: 'Por profissão' },
+  { href: '/empresas/', rotulo: 'Para equipes' },
   { href: '/conhecimento/', rotulo: 'Conhecimento' },
   { href: '/a-tower/', rotulo: 'A Tower' },
 ]
@@ -41,11 +49,11 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <div className="hidden sm:block">
-            <WhatsAppCta contexto="header" secao="header" variante="ink">
-              Falar agora
-            </WhatsAppCta>
-          </div>
+          {/* Ação primária do site. O WhatsApp continua a um toque, pelo
+              botão flutuante e pelos CTAs de cada página. */}
+          <Link href="/orcamento/" className="btn btn-red hidden sm:inline-flex">
+            Pedir orçamento
+          </Link>
 
           <button
             type="button"
@@ -80,7 +88,14 @@ export function Header() {
                 </Link>
               </li>
             ))}
-            <li className="py-4">
+            <li className="space-y-3 py-4">
+              <Link
+                href="/orcamento/"
+                onClick={() => setAberto(false)}
+                className="btn btn-red btn-block"
+              >
+                Pedir orçamento
+              </Link>
               <WhatsAppCta contexto="header" secao="menu-mobile" bloco>
                 Falar no WhatsApp
               </WhatsAppCta>

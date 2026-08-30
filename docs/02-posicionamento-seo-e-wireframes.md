@@ -370,7 +370,27 @@ Mata conversão e não muda nada na resposta da Tower.
 7. Bloco "A Tower começou no Montese. Continua aqui."  ★ sinal local + permanência
 ```
 
-## 5.4b `/cotacao/` — o construtor de cotação
+## 5.3b Navegação — uma lógica só
+
+O menu tinha **três lógicas misturadas**: por produto (Calçados, Proteção), por
+profissão (Para seu trabalho) e por tipo de cliente (Empresas). Era isso, mais do
+que qualquer palavra isolada, que dava sensação de vago.
+
+| Antes | Agora | Por quê |
+|---|---|---|
+| Para seu trabalho | **Por profissão** | Diz o critério de organização. Mais curto |
+| Empresas | **Para equipes** | Nomeia a situação, não a identidade. Ninguém se identifica como "Empresa" ao procurar calçado para a cozinha — e por isso clicaria em "Calçados", nunca achando a trilha B2B |
+| Cotação (item de lista) | **Pedir orçamento** (botão) | É a conversão principal. Item de lista a tratava como igual a "A Tower" |
+
+**A URL `/empresas/` foi mantida de propósito.** O rótulo é para humanos; a URL é
+para busca, e "EPI para empresas Fortaleza" é termo real de alto valor. Separar as
+duas coisas é correto — não é inconsistência.
+
+**Autoridade em navegação vem de precisão, não de formalidade.** Um menu onde cada
+palavra diz exatamente o que há atrás lê como competência; um que obriga a adivinhar
+lê como amadorismo.
+
+## 5.4b `/orcamento/` — o construtor de orçamento
 
 Substitui o formulário curto de 5 campos que existia em `/empresas/orcamento/`
 (agora com 301 para cá). O formulário curto qualificava; este **fecha o pedido**.

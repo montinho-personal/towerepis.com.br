@@ -15,17 +15,17 @@ export const metadata: Metadata = {
 export default function Empresas() {
   return (
     <>
-      <Trilha itens={[{ nome: 'Empresas', url: '/empresas/' }]} />
+      <Trilha itens={[{ nome: 'Para equipes', url: '/empresas/' }]} />
       <CabecalhoPagina
-        rotulo="Para empresas"
+        rotulo="Para equipes"
         titulo="EPI para a sua equipe, escolhido pela atividade"
         resumo="Você precisa que o equipamento chegue no prazo, corresponda ao risco e seja realmente usado pela equipe. É nessas três coisas que a gente trabalha desde 1995."
       />
 
       <div className="wrap">
         <div className="flex flex-wrap gap-3">
-          <Link href="/cotacao/" className="btn btn-ink">
-            Montar cotação
+          <Link href="/orcamento/" className="btn btn-ink">
+            Pedir orçamento
           </Link>
           <Link href="/empresas/como-atendemos/" className="btn btn-ghost">
             Como atendemos

@@ -107,7 +107,7 @@ export function FormularioCotacao() {
     })
     rastrearWhatsApp({
       contexto: 'cotacao',
-      pagina: '/cotacao/',
+      pagina: '/orcamento/',
       secao: 'formulario',
       publico: empresa.trim() ? 'b2b' : 'b2c',
       categoria: itensValidos[0]?.categoria,
@@ -382,7 +382,7 @@ export function FormularioCotacao() {
                   onClick={() =>
                     rastrearWhatsApp({
                       contexto: 'cotacao',
-                      pagina: '/cotacao/',
+                      pagina: '/orcamento/',
                       secao: 'formulario-longo',
                       publico: empresa.trim() ? 'b2b' : 'b2c',
                     })

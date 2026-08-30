@@ -45,12 +45,12 @@ export default function ComoAtendemosPagina() {
       <JsonLd dados={schemaFaq(PERGUNTAS)} />
       <Trilha
         itens={[
-          { nome: 'Empresas', url: '/empresas/' },
+          { nome: 'Para equipes', url: '/empresas/' },
           { nome: 'Como atendemos', url: '/empresas/como-atendemos/' },
         ]}
       />
       <CabecalhoPagina
-        rotulo="Empresas"
+        rotulo="Para equipes"
         titulo="Como a gente atende"
         resumo="Antes de falar de produto, vale explicar o processo. Saber como funciona reduz mais incerteza do que qualquer promessa sobre qualidade."
       />

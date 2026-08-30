@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     url('/', 1, 'weekly'),
-    url('/cotacao/', 0.95, 'monthly'),
+    url('/orcamento/', 0.95, 'monthly'),
     url('/calcados/', 0.9, 'monthly'),
     url('/calcados/comparativo/', 0.9, 'monthly'),
     ...CALCADOS.map((c) => url(`/calcados/${c.slug}/`, 0.8, 'monthly')),

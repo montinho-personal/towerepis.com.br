@@ -51,12 +51,12 @@ export default async function PaginaSetor({
       <JsonLd dados={schemaFaq(s.perguntas)} />
       <Trilha
         itens={[
-          { nome: 'Empresas', url: '/empresas/' },
+          { nome: 'Para equipes', url: '/empresas/' },
           { nome: s.nome, url: `/empresas/${s.slug}/` },
         ]}
       />
 
-      <CabecalhoPagina rotulo={`Empresas · ${s.nome}`} titulo={s.h1} resumo={s.resumo} />
+      <CabecalhoPagina rotulo={`Para equipes · ${s.nome}`} titulo={s.h1} resumo={s.resumo} />
 
       {/* O problema DELE, antes do produto. */}
       <section className="wrap">
@@ -116,8 +116,8 @@ export default async function PaginaSetor({
           categoria={s.slug}
         />
         <div className="mt-4">
-          <Link href="/cotacao/" className="btn btn-ghost">
-            Montar a cotação item a item
+          <Link href="/orcamento/" className="btn btn-ghost">
+            Montar o orçamento item a item
           </Link>
         </div>
       </Secao>

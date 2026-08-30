@@ -34,20 +34,20 @@ const PERGUNTAS = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Montar cotação de EPI',
+  title: 'Pedir orçamento de EPI',
   description:
-    'Monte sua cotação de EPI item a item, com grade de numeração para calçado, e envie pronta pelo WhatsApp. Sem cadastro. Tower EPI’s, Fortaleza.',
-  alternates: { canonical: '/cotacao/' },
+    'Monte seu orçamento de EPI item a item, com grade de numeração para calçado, e envie pronto pelo WhatsApp. Sem cadastro. Tower EPI’s, Fortaleza.',
+  alternates: { canonical: '/orcamento/' },
 }
 
 export default function Cotacao() {
   return (
     <>
       <JsonLd dados={schemaFaq(PERGUNTAS)} />
-      <Trilha itens={[{ nome: 'Cotação', url: '/cotacao/' }]} />
+      <Trilha itens={[{ nome: 'Orçamento', url: '/orcamento/' }]} />
       <CabecalhoPagina
-        rotulo="Cotação"
-        titulo="Monte sua cotação"
+        rotulo="Orçamento"
+        titulo="Peça seu orçamento"
         resumo="Adicione os itens, preencha a numeração se for calçado, e a mensagem sai pronta para o WhatsApp. Sem cadastro, sem e-mail, sem CNPJ."
       />
 
