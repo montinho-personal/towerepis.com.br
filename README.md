@@ -20,8 +20,20 @@ ATRAIR → ENTENDER → ORIENTAR → GERAR CONFIANÇA → QUALIFICAR → WHATSAP
 
 **https://towerepis-com-br-git-claude-to-1dd32b-montinho-personal-trainer.vercel.app**
 
-Deploy automático na Vercel a cada push neste branch
+Deploy automático na Vercel a cada push em **`main`**
 (projeto `towerepis-com-br`, time Montinho Personal Trainer).
+
+### Branches
+
+| Branch | Papel |
+|---|---|
+| `main` | **Produção.** Todo push aqui publica no domínio |
+| `claude/tower-epis-website-v7fq8k` | Branch de desenvolvimento. Gera deploy de preview |
+
+Os dois são mantidos em sincronia. O `main` existe porque a Vercel usa esse nome
+como branch de produção por padrão — sem ele, todo push gerava apenas preview e a
+produção só mudava com promoção manual, o que fez o site ficar três entregas
+atrasado sem ninguém perceber.
 
 O domínio `towerepis.com.br` ainda **não** aponta para a Vercel — hoje resolve
 para `162.240.81.81`. Enquanto isso, o deploy é de preview e a Vercel envia
