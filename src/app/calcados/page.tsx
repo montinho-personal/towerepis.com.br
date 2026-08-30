@@ -100,6 +100,49 @@ export default function HubCalcados() {
         </div>
       </Secao>
 
+      {/* Marcas — no hub de calçado, porque é onde a informação é útil
+          para decidir, e não numa página institucional que ninguém abre. */}
+      <Secao className="wrap pt-0">
+        <h2 className="eyebrow eyebrow-red">As marcas que trabalhamos</h2>
+        <div className="mt-6 grid gap-px border border-ink bg-ink lg:grid-cols-[1.4fr_1fr]">
+          <Link
+            href="/marcas/bompel/"
+            className="group bg-paper p-7 transition-colors hover:bg-paper-2 sm:p-9"
+          >
+            <p className="eyebrow eyebrow-red">Principal parceria hoje</p>
+            <p className="numeral mt-3 text-4xl group-hover:text-tower-red">Bompel</p>
+            <p className="mt-5 measure text-ink-2">
+              Fabricante brasileiro de calçado profissional, com quase quatro décadas de
+              operação. Cobre calçado de segurança, com biqueira, e ocupacional, sem
+              biqueira. É a linha que mais atendemos e a que conhecemos com mais
+              profundidade — do comportamento do solado à grade de numeração.
+            </p>
+            <span className="mt-6 inline-block font-display text-sm font-bold text-tower-red">
+              Ver a linha Bompel →
+            </span>
+          </Link>
+
+          <div className="bg-paper p-7 sm:p-9">
+            <p className="eyebrow">Também trabalhamos</p>
+            <p className="numeral mt-3 text-2xl">Sticky Shoes</p>
+            <p className="mt-2 text-[0.95rem] leading-relaxed text-ink-2">
+              Calçado ocupacional impermeável, para cozinha, alimentação e saúde.
+            </p>
+            <p className="numeral mt-6 text-2xl">3M</p>
+            <p className="mt-2 text-[0.95rem] leading-relaxed text-ink-2">
+              Proteção respiratória, auditiva e visual. É a marca com que a Tower nasceu,
+              em 1995.
+            </p>
+            <Link
+              href="/marcas/"
+              className="mt-6 inline-block font-display text-sm font-bold text-tower-red"
+            >
+              Ver todas as marcas →
+            </Link>
+          </div>
+        </div>
+      </Secao>
+
       <Secao className="wrap pt-0">
         <BlocoCta
           contexto="calcados"

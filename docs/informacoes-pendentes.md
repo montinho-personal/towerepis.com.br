@@ -53,6 +53,11 @@ Todo conteúdo normativo cita fonte oficial e nenhuma afirmação foi feita por
 inferência. Mesmo assim, o conteúdo precisa da leitura dele antes de ir ao ar —
 é o nome dele que assina as páginas.
 
+### 4b. Lista completa das marcas trabalhadas hoje
+A Bompel já está no site como principal parceria, com 3M e Sticky Shoes ao lado.
+Se houver outras marcas relevantes, mandem que eu incluo — hoje a página diz
+que a lista não é completa, o que é honesto mas menos útil do que a lista real.
+
 ### 5. Dados que faltam no rodapé e no schema
 - Razão social e CNPJ
 - E-mail comercial

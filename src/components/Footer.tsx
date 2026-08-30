@@ -41,6 +41,7 @@ const COLUNAS = [
     links: [
       { href: '/a-tower/', rotulo: 'Nossa história' },
       { href: '/a-tower/helano/', rotulo: 'Helano' },
+      { href: '/marcas/bompel/', rotulo: 'Bompel' },
       { href: '/marcas/', rotulo: 'Marcas' },
       { href: '/empresas/', rotulo: 'Para empresas' },
       { href: '/conhecimento/', rotulo: 'Conhecimento' },

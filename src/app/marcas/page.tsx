@@ -6,14 +6,16 @@ import { BlocoCta } from '@/components/WhatsAppCta'
 export const metadata: Metadata = {
   title: 'Marcas que a Tower trabalha',
   description:
-    'Trabalhamos com 3M, Sticky Shoes e Bompel, entre outras. Trabalhar com mais de um fabricante permite comparar sem torcer para um lado.',
+    'A Bompel é hoje a principal parceria da Tower em calçado profissional. Trabalhamos também com 3M e Sticky Shoes, entre outras.',
   alternates: { canonical: '/marcas/' },
 }
 
 /**
- * PENDENTE: lista completa de marcas trabalhadas hoje. As três confirmadas
- * vieram do feed do Instagram e do questionário. Não listamos marca sem
- * confirmação — catálogo desatualizado é pior que catálogo inexistente.
+ * A ordem desta página reflete a operação de hoje, não a história.
+ * A Bompel vem primeiro porque é a principal parceria atual; a 3M vem
+ * depois, como origem da empresa e linha ainda trabalhada.
+ *
+ * PENDENTE: lista completa das marcas trabalhadas hoje.
  */
 export default function Marcas() {
   return (
@@ -22,75 +24,120 @@ export default function Marcas() {
       <CabecalhoPagina
         rotulo="Marcas"
         titulo="Com quem a gente trabalha"
-        resumo="Trabalhar com mais de um fabricante tem uma vantagem prática para quem compra: a gente pode comparar sem torcer para um lado. Quando um modelo não serve para o seu caso, dá para dizer isso."
+        resumo="Em calçado profissional, que é o que mais sai hoje, a principal parceria da Tower é com a Bompel. Trabalhamos também com outras marcas — e é isso que permite dizer, quando for o caso, que um modelo não serve para a sua atividade."
       />
 
+      {/* PARCEIRA PRINCIPAL — destaque de tamanho, não só de ordem. */}
       <Secao className="wrap pt-0">
-        <h2 className="sr-only">Marcas trabalhadas</h2>
-        <div className="mt-0 grid gap-px border border-ink bg-ink lg:grid-cols-3">
-          <div className="bg-paper p-7 sm:p-9">
-            <p className="numeral text-3xl">3M</p>
-            <p className="eyebrow mt-3">Desde a fundação</p>
-            <p className="mt-5 text-ink-2">
-              A relação com a 3M é a origem da Tower: foi a 3M que, em 1995, procurava
-              alguém para desenvolver o mercado de proteção no Ceará e ofereceu a
-              distribuição ao Helano. A empresa recebeu depois o reconhecimento de
-              Distribuidor Regional.
-            </p>
-            <Link
-              href="/marcas/3m/"
-              className="mt-6 inline-block font-display text-sm font-bold text-tower-red"
-            >
-              Ler a história com a 3M →
-            </Link>
-          </div>
+        <h2 className="eyebrow eyebrow-red">Principal parceria hoje</h2>
 
-          <div className="bg-paper p-7 sm:p-9">
-            <p className="numeral text-3xl">Sticky Shoes</p>
-            <p className="eyebrow mt-3">Calçado ocupacional</p>
-            <p className="mt-5 text-ink-2">
-              Linha de calçado ocupacional impermeável, com solado antiderrapante,
-              bastante usada em cozinha, área de alimentação e serviços de saúde.
-              Disponível também em linha branca para ambientes com padrão sanitário mais
-              rígido.
-            </p>
-            <Link
-              href="/calcados/ocupacionais/"
-              className="mt-6 inline-block font-display text-sm font-bold text-tower-red"
-            >
-              Ver calçados ocupacionais →
-            </Link>
-          </div>
+        <div className="mt-6 border-2 border-ink">
+          <div className="grid gap-8 p-7 sm:p-10 lg:grid-cols-[1fr_1.3fr] lg:gap-14">
+            <div>
+              <p className="numeral text-4xl sm:text-5xl">Bompel</p>
+              <p className="eyebrow mt-3">Calçado de segurança e ocupacional</p>
+              <p className="mt-6 text-ink-2">
+                Fabricante brasileiro de calçado profissional, com quase quatro décadas
+                de operação. É a linha que mais atendemos hoje, e a que conhecemos com
+                mais profundidade — de numeração e forma até o comportamento do solado em
+                cada tipo de piso.
+              </p>
+              <div className="mt-7 flex flex-wrap gap-3">
+                <Link href="/marcas/bompel/" className="btn btn-ink">
+                  Ver a linha Bompel
+                </Link>
+                <a
+                  href="https://www.bompel.com.br/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-ghost"
+                >
+                  Site do fabricante
+                </a>
+              </div>
+            </div>
 
-          <div className="bg-paper p-7 sm:p-9">
-            <p className="numeral text-3xl">Bompel</p>
-            <p className="eyebrow mt-3">Calçado profissional</p>
-            <p className="mt-5 text-ink-2">
-              Linha de calçado profissional em couro, incluindo modelos com fechamento em
-              elástico e solado resistente a escorregamento. Usada em atividades que
-              pedem mais robustez do que o calçado em material sintético.
-            </p>
-            <Link
-              href="/calcados/"
-              className="mt-6 inline-block font-display text-sm font-bold text-tower-red"
-            >
-              Ver calçados →
-            </Link>
+            <div>
+              <p className="eyebrow">O que costuma aparecer nos modelos</p>
+              <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+                {[
+                  'Cabedal em couro vaqueta, incluindo versões hidrofugadas',
+                  'Fechamento em elástico, sem cadarço',
+                  'Biqueira em composite ou termoplástica, conforme o modelo',
+                  'Solado bidensidade em poliuretano',
+                  'Versões com proteção metatarsal',
+                  'Modelos com Certificado de Aprovação',
+                ].map((item) => (
+                  <li key={item} className="flex gap-3 text-[0.95rem] leading-relaxed">
+                    <span className="mt-2 block h-1.5 w-1.5 shrink-0 rounded-full bg-tower-red" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-6 text-sm text-ink-3">
+                O que cada modelo atende consta no Certificado de Aprovação dele. Pergunte
+                pelo item específico que a gente confere antes de você comprar.
+              </p>
+            </div>
           </div>
         </div>
-
-        <p className="mt-8 max-w-2xl text-sm text-ink-3">
-          Esta não é a lista completa. Trabalhamos com outros fabricantes conforme a
-          categoria e a necessidade. Se você procura uma marca específica, pergunte.
-        </p>
       </Secao>
 
-      <Secao className="wrap pt-0">
+      {/* OUTRAS MARCAS */}
+      <Secao className="band">
+        <div className="wrap">
+          <h2 className="eyebrow">Também trabalhamos</h2>
+
+          <div className="mt-6 grid gap-px border border-ink bg-ink lg:grid-cols-2">
+            <div className="bg-paper p-7 sm:p-9">
+              <p className="numeral text-3xl">3M</p>
+              <p className="eyebrow mt-3">Proteção respiratória, auditiva e visual</p>
+              <p className="mt-5 text-ink-2">
+                A 3M é a origem da Tower: foi ela que, em 1995, procurava alguém para
+                desenvolver o mercado de proteção no Ceará e ofereceu a distribuição ao
+                Helano. A empresa recebeu depois o reconhecimento de Distribuidor
+                Regional. Continuamos trabalhando a linha, com destaque para proteção
+                respiratória.
+              </p>
+              <Link
+                href="/marcas/3m/"
+                className="mt-6 inline-block font-display text-sm font-bold text-tower-red"
+              >
+                Ler a história com a 3M →
+              </Link>
+            </div>
+
+            <div className="bg-paper p-7 sm:p-9">
+              <p className="numeral text-3xl">Sticky Shoes</p>
+              <p className="eyebrow mt-3">Calçado ocupacional impermeável</p>
+              <p className="mt-5 text-ink-2">
+                Linha de calçado ocupacional impermeável, com solado antiderrapante, usada
+                em cozinha, área de alimentação e serviços de saúde. Inclui linha branca,
+                para ambientes com padrão sanitário mais rígido.
+              </p>
+              <Link
+                href="/calcados/ocupacionais/"
+                className="mt-6 inline-block font-display text-sm font-bold text-tower-red"
+              >
+                Ver calçados ocupacionais →
+              </Link>
+            </div>
+          </div>
+
+          <p className="mt-8 max-w-2xl text-sm text-ink-3">
+            Esta não é a lista completa — trabalhamos com outros fabricantes conforme a
+            categoria. Se você procura uma marca específica, pergunte: se a gente não
+            trabalha, diz isso também.
+          </p>
+        </div>
+      </Secao>
+
+      <Secao className="wrap">
         <BlocoCta
           contexto="marcas"
           secao="marcas-fechamento"
-          titulo="Procura uma marca ou um modelo específico?"
-          texto="Diga o que você procura. Se a gente trabalha, informa disponibilidade e prazo. Se não trabalha, diz isso também — e, se fizer sentido, indica uma alternativa equivalente."
+          titulo="Procura um modelo específico?"
+          texto="Diga qual você procura. Informamos disponibilidade e prazo — e, se não fizer sentido para a sua atividade, dizemos isso antes de vender."
           rotulo="Perguntar no WhatsApp"
         />
       </Secao>

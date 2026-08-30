@@ -88,7 +88,20 @@ export const empresa = {
     },
   },
 
-  marcas: ['3M', 'Sticky Shoes', 'Bompel'],
+  /**
+   * Marcas trabalhadas.
+   *
+   * A ordem importa e não é histórica: reflete a operação de HOJE.
+   * A Bompel é a principal parceria atual — o site precisa dizer isso.
+   * A 3M é a origem da empresa, e continua sendo trabalhada, mas hoje
+   * não é o carro-chefe. Confundir as duas coisas faria o site descrever
+   * a Tower de 1995 em vez da Tower de agora.
+   */
+  marcas: [
+    { nome: 'Bompel', slug: 'bompel', site: 'https://www.bompel.com.br/', principal: true },
+    { nome: '3M', slug: '3m', site: null, principal: false },
+    { nome: 'Sticky Shoes', slug: null, site: null, principal: false },
+  ],
 } as const
 
 /** Fatos publicáveis, usados como prova ao longo do site. */

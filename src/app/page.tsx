@@ -168,6 +168,27 @@ export default function Home() {
         </div>
       </Secao>
 
+      {/* 5b. MARCAS — dizer cedo com o que a gente trabalha reduz a
+             incerteza de quem já sabe o que quer. */}
+      <Secao className="wrap pt-0">
+        <div className="flex flex-col gap-6 border-y border-rule py-8 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="eyebrow eyebrow-red">Principal parceria em calçado</p>
+            <p className="numeral mt-2 text-4xl">Bompel</p>
+          </div>
+          <p className="max-w-md text-[0.95rem] leading-relaxed text-ink-2">
+            Fabricante brasileiro com quase quatro décadas, em calçado de segurança e
+            ocupacional. Trabalhamos também Sticky Shoes e 3M, entre outras.
+          </p>
+          <Link
+            href="/marcas/"
+            className="shrink-0 font-display text-sm font-bold text-tower-red"
+          >
+            Ver as marcas →
+          </Link>
+        </div>
+      </Secao>
+
       {/* 6. PROFISSÃO — reconhecimento imediato: "tem o meu caso aqui". */}
       <Secao className="band">
         <div className="wrap">

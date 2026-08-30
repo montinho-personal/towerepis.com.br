@@ -138,8 +138,27 @@ antigos são os ativos visuais mais valiosos do projeto.
 - Link: `wa.me/message/WKZSQ3ZTFS4QI1`
 - Telefone em post: **(85) 3491-9494** com ícone de WhatsApp ⚠️ confirmar
 
-## Marcas confirmadas no feed
-**3M · Sticky Shoes · Bompel**
+## Marcas — ordem pela OPERAÇÃO DE HOJE, não pela história
+
+| Marca | Papel hoje | Observação |
+|---|---|---|
+| **Bompel** | **Principal parceria** | Fabricante brasileiro de calçado profissional, quase 40 anos. `bompel.com.br`. Linhas ADAPT e INFINITY. Calçado de segurança e ocupacional |
+| 3M | Origem da empresa; linha ainda trabalhada | Proteção respiratória, auditiva e visual. É a credencial histórica, **não** o carro-chefe atual |
+| Sticky Shoes | Linha ocupacional | Impermeável, antiderrapante. Cozinha, alimentação, saúde |
+
+⚠️ **Regra editorial:** o site descreve a Tower de hoje. Colocar a 3M na frente por
+causa da história faria o site descrever a empresa de 1995. A 3M aparece como origem
+e como credencial; a Bompel aparece como o que a Tower vende agora.
+
+### Sobre a Bompel — fatos verificáveis
+Razão social **Bompel Indústria de Calçados Ltda**. Fabricante, não apenas marca.
+Couro vaqueta, incluindo versões hidrofugadas · fechamento em elástico · biqueira em
+composite ou termoplástica conforme o modelo · solado bidensidade em poliuretano ·
+versões com proteção metatarsal · modelos com Certificado de Aprovação próprio.
+
+⚠️ **Cuidado técnico já tratado na copy:** biqueira de *composite* é proteção contra
+impacto; biqueira *termoplástica*, em muitos modelos, é de **conformação** — dá forma,
+mas não protege. O site diz isso explicitamente, porque é onde o comprador mais erra.
 
 ## Foco comercial atual, evidente no feed
 **Calçados ocupacionais e de segurança.** Sticky Shoes (impermeável, antiderrapante,
