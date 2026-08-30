@@ -9,7 +9,7 @@ import {
   AssinaturaTecnica,
   Secao,
 } from '@/components/Blocos'
-import { BlocoCta } from '@/components/WhatsAppCta'
+import { FechamentoCta } from '@/components/WhatsAppCta'
 import { JsonLd, schemaFaq } from '@/lib/schema'
 
 const PERGUNTAS = [
@@ -208,16 +208,14 @@ export default function MarcaBompel() {
         </div>
       </Secao>
 
-      <Secao className="wrap pt-0">
-        <BlocoCta
-          contexto="marcas"
-          secao="bompel-fechamento"
-          titulo="Diga o que você faz que a gente indica o modelo."
-          texto="Tipo de piso, se há queda de material sobre o pé, quantas horas em pé e se é para você ou para uma equipe. Com isso a gente já consegue apontar o modelo e passar prazo."
-          rotulo="Falar no WhatsApp"
-          categoria="bompel"
-        />
-      </Secao>
+      <FechamentoCta
+        contexto="marcas"
+        secao="bompel-fechamento"
+        titulo="Diga o que você faz que a gente indica o modelo."
+        texto="Tipo de piso, se há queda de material sobre o pé, quantas horas em pé e se é para você ou para uma equipe. Com isso a gente já consegue apontar o modelo e passar prazo."
+        rotulo="Falar no WhatsApp"
+        categoria="bompel"
+      />
     </>
   )
 }

@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { metadados } from '@/lib/seo'
-import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
 import { PROFISSOES, buscarProfissao } from '@/content/profissoes'
@@ -9,13 +8,14 @@ import {
   CabecalhoPagina,
   EmUmaFrase,
   OQueObservar,
-  GradeLinks,
+  ListaLinks,
+  LinksIrmaos,
   Perguntas,
   AssinaturaTecnica,
   PonteEmpresas,
   Secao,
 } from '@/components/Blocos'
-import { BlocoCta, CtaLinha } from '@/components/WhatsAppCta'
+import { FechamentoCta, CtaLinha } from '@/components/WhatsAppCta'
 import { JsonLd, schemaFaq } from '@/lib/schema'
 
 export const dynamicParams = false
@@ -90,19 +90,27 @@ export default async function PaginaProfissao({
         </div>
       </Secao>
 
-      <Secao className="wrap">
-        <OQueObservar itens={p.oQueObservar} />
+      {/* O critério é a coisa mais valiosa da página e vinha em papel, no
+          mesmo peso do resto. É o momento em que a Tower afirma — e é onde
+          o grafite tem função. */}
+      <Secao className="band-ink" ritmo="normal">
+        <div className="wrap">
+          <OQueObservar itens={p.oQueObservar} tom="escuro" />
+        </div>
       </Secao>
 
-      <Secao className="band">
+      {/* Régua, não cards: estes itens não são destinos equivalentes, são o
+          conjunto que a rotina costuma pedir — e em cards ficavam com o
+          mesmo peso de qualquer outra grade do site. */}
+      <Secao className="band" ritmo="normal">
         <div className="wrap">
           <h2 className="text-2xl sm:text-3xl">O que a Tower trabalha para essa rotina</h2>
           <p className="mt-4 measure text-ink-2">
             Sem preço e sem carrinho. O modelo certo depende de detalhes da sua rotina, e
             isso a gente resolve conversando.
           </p>
-          <div className="mt-10">
-            <GradeLinks itens={p.categorias} />
+          <div className="mt-9">
+            <ListaLinks itens={p.categorias} />
           </div>
         </div>
       </Secao>
@@ -119,33 +127,23 @@ export default async function PaginaProfissao({
         </div>
       </Secao>
 
-      <Secao className="wrap pt-0">
-        <BlocoCta
-          contexto={p.contexto}
-          secao="profissao-fechamento"
-          titulo={p.ctaTitulo}
-          texto={p.ctaTexto}
-          rotulo="Ver opções no WhatsApp"
-          publico="b2c"
-          categoria={p.slug}
-        />
-      </Secao>
+      <FechamentoCta
+        contexto={p.contexto}
+        secao="profissao-fechamento"
+        titulo={p.ctaTitulo}
+        texto={p.ctaTexto}
+        rotulo="Ver opções no WhatsApp"
+        publico="b2c"
+        categoria={p.slug}
+      />
 
-      <Secao className="wrap pt-0">
-        <p className="eyebrow">Outras profissões</p>
-        <ul className="mt-5 flex flex-wrap gap-2">
-          {PROFISSOES.filter((o) => o.slug !== p.slug).map((o) => (
-            <li key={o.slug}>
-              <Link
-                href={`/para-seu-trabalho/${o.slug}/`}
-                className="inline-block border border-rule-strong px-4 py-3 font-display text-[0.8rem] font-semibold transition-colors hover:border-ink hover:bg-paper-2"
-              >
-                {o.nome}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </Secao>
+      <LinksIrmaos
+        rotulo="Outras profissões"
+        itens={PROFISSOES.filter((o) => o.slug !== p.slug).map((o) => ({
+          href: `/para-seu-trabalho/${o.slug}/`,
+          nome: o.nome,
+        }))}
+      />
     </>
   )
 }

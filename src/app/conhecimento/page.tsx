@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ARTIGOS } from '@/content/artigos'
 import { Trilha, CabecalhoPagina, Secao } from '@/components/Blocos'
-import { BlocoCta } from '@/components/WhatsAppCta'
+import { FechamentoCta } from '@/components/WhatsAppCta'
 
 export const metadata: Metadata = {
   title: 'Central de conhecimento sobre EPI',
@@ -16,14 +16,15 @@ export default function Conhecimento() {
 
   return (
     <>
-      <Trilha itens={[{ nome: 'Conhecimento', url: '/conhecimento/' }]} />
+      <Trilha itens={[{ nome: 'Conhecimento', url: '/conhecimento/' }]} tom="escuro" />
       <CabecalhoPagina
+        variante="ink"
         rotulo="Central de conhecimento"
         titulo="Antes de comprar, entenda"
         resumo="Textos que respondem as dúvidas que mais chegam no nosso WhatsApp. Todo conteúdo normativo cita fonte oficial e é revisado por técnico de segurança do trabalho."
       />
 
-      <Secao className="wrap pt-0">
+      <Secao className="wrap">
         {clusters.map((cluster) => (
           <div key={cluster} className="mb-16 last:mb-0">
             <h2 className="eyebrow eyebrow-red">{cluster}</h2>
@@ -51,15 +52,13 @@ export default function Conhecimento() {
         ))}
       </Secao>
 
-      <Secao className="wrap pt-0">
-        <BlocoCta
-          contexto="artigo"
-          secao="conhecimento-fechamento"
-          titulo="Sua dúvida não está aqui?"
-          texto="Pergunte. Se a pergunta se repetir, ela vira o próximo texto desta página — foi assim que escolhemos os que já estão publicados."
-          rotulo="Perguntar no WhatsApp"
-        />
-      </Secao>
+      <FechamentoCta
+        contexto="artigo"
+        secao="conhecimento-fechamento"
+        titulo="Sua dúvida não está aqui?"
+        texto="Pergunte. Se a pergunta se repetir, ela vira o próximo texto desta página — foi assim que escolhemos os que já estão publicados."
+        rotulo="Perguntar no WhatsApp"
+      />
     </>
   )
 }

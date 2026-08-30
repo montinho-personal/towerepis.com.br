@@ -106,11 +106,19 @@ export function CtaLinha({
 }
 
 /**
- * Bloco de CTA com a mensagem à vista.
- * Mostrar o texto que será enviado reduz a hesitação de quem tem receio
- * de "incomodar" — a pessoa vê exatamente o que vai acontecer.
+ * Fechamento de página, em grafite e de borda a borda.
+ *
+ * A Home já terminava assim; as páginas internas terminavam num quadro
+ * creme dentro do papel, e o resultado era que a última coisa vista antes
+ * do rodapé era mais branco. O verde do WhatsApp contra o grafite é o
+ * contraste mais forte disponível no sistema — desperdiçá-lo justamente no
+ * momento da decisão era o erro.
+ *
+ * Mostrar o texto que será enviado continua no lugar: reduz a hesitação de
+ * quem tem receio de "incomodar", porque a pessoa vê exatamente o que vai
+ * acontecer antes de tocar no botão.
  */
-export function BlocoCta({
+export function FechamentoCta({
   contexto,
   secao,
   titulo,
@@ -119,6 +127,7 @@ export function BlocoCta({
   publico,
   categoria,
   mensagem,
+  children,
 }: {
   contexto: ContextoWhatsApp
   secao: string
@@ -128,30 +137,43 @@ export function BlocoCta({
   publico?: 'b2b' | 'b2c'
   categoria?: string
   mensagem?: string
+  /** Ação secundária opcional — orçamento, comparativo, o que a página pedir. */
+  children?: React.ReactNode
 }) {
   return (
-    <div className="border border-rule bg-paper-2 p-6 sm:p-8">
-      <h2 className="text-xl sm:text-2xl max-w-lg">{titulo}</h2>
-      <p className="mt-3 measure text-ink-2">{texto}</p>
+    <section className="band-ink ritmo-normal">
+      <div className="wrap">
+        <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-end lg:gap-16">
+          <div>
+            <p className="eyebrow eyebrow-red">Atendimento direto</p>
+            <h2 className="mt-4 max-w-xl text-titulo">{titulo}</h2>
+            <p className="mt-6 max-w-lg text-lg leading-relaxed text-paper/75">{texto}</p>
+          </div>
 
-      <div className="mt-6">
-        <WhatsAppCta
-          contexto={contexto}
-          secao={secao}
-          publico={publico}
-          categoria={categoria}
-          mensagem={mensagem}
-        >
-          {rotulo}
-        </WhatsAppCta>
+          <div className="lg:pb-1">
+            <div className="flex flex-col gap-4">
+              <WhatsAppCta
+                contexto={contexto}
+                secao={secao}
+                publico={publico}
+                categoria={categoria}
+                mensagem={mensagem}
+                bloco
+              >
+                {rotulo}
+              </WhatsAppCta>
+              {children}
+            </div>
+
+            <p className="mt-7 border-t border-grafite-600 pt-5 text-xs leading-relaxed text-paper/60">
+              <span className="eyebrow">Sua mensagem já vai assim</span>
+              <span className="mt-2 block italic">
+                &ldquo;{mensagem ?? mensagemDoContexto(contexto)}&rdquo;
+              </span>
+            </p>
+          </div>
+        </div>
       </div>
-
-      <p className="mt-5 text-xs text-ink-3 leading-relaxed">
-        <span className="eyebrow">Sua mensagem já vai assim</span>
-        <span className="mt-1.5 block italic">
-          “{mensagem ?? mensagemDoContexto(contexto)}”
-        </span>
-      </p>
-    </div>
+    </section>
   )
 }

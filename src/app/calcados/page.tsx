@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Trilha, CabecalhoPagina, GradeLinks, Secao, Comparacao } from '@/components/Blocos'
-import { BlocoCta } from '@/components/WhatsAppCta'
+import { FechamentoCta } from '@/components/WhatsAppCta'
 import { PROFISSOES } from '@/content/profissoes'
 
 export const metadata: Metadata = {
@@ -14,14 +14,15 @@ export const metadata: Metadata = {
 export default function HubCalcados() {
   return (
     <>
-      <Trilha itens={[{ nome: 'Calçados', url: '/calcados/' }]} />
+      <Trilha itens={[{ nome: 'Calçados', url: '/calcados/' }]} tom="escuro" />
       <CabecalhoPagina
+        variante="ink"
         rotulo="Calçados profissionais"
         titulo="Calçados de segurança e ocupacionais"
         resumo="É a categoria com maior demanda e maior confusão do mercado de EPI. A diferença entre um tipo e outro não é de qualidade — é de risco. Entender isso resolve a maior parte das compras erradas."
       />
 
-      <Secao className="wrap pt-0">
+      <Secao className="wrap">
         <h2 className="eyebrow">A distinção normativa</h2>
         <div className="mt-6" />
         <Comparacao
@@ -143,16 +144,14 @@ export default function HubCalcados() {
         </div>
       </Secao>
 
-      <Secao className="wrap pt-0">
-        <BlocoCta
-          contexto="calcados"
-          secao="hub-calcados"
-          titulo="Diga onde você trabalha que a gente indica o modelo."
-          texto="Tipo de piso, se molha, se há queda de objeto e quantas horas em pé. Com isso a gente já consegue mostrar o que faz sentido — e o que não faz."
-          rotulo="Ver opções no WhatsApp"
-          categoria="calcados"
-        />
-      </Secao>
+      <FechamentoCta
+        contexto="calcados"
+        secao="hub-calcados"
+        titulo="Diga onde você trabalha que a gente indica o modelo."
+        texto="Tipo de piso, se molha, se há queda de objeto e quantas horas em pé. Com isso a gente já consegue mostrar o que faz sentido — e o que não faz."
+        rotulo="Ver opções no WhatsApp"
+        categoria="calcados"
+      />
     </>
   )
 }

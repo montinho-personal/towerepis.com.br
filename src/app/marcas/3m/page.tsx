@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Trilha, CabecalhoPagina, Secao } from '@/components/Blocos'
-import { BlocoCta } from '@/components/WhatsAppCta'
+import { FechamentoCta } from '@/components/WhatsAppCta'
 
 export const metadata: Metadata = {
   title: 'A relação da Tower com a 3M',
@@ -90,15 +90,13 @@ export default function Marca3M() {
         </div>
       </Secao>
 
-      <Secao className="wrap pt-0">
-        <BlocoCta
-          contexto="marcas"
-          secao="3m-fechamento"
-          titulo="Precisa de proteção respiratória?"
-          texto="Conte a que a equipe fica exposta — poeira, névoa, vapor. É essa informação que define o equipamento adequado, e a gente ajuda a verificar."
-          rotulo="Falar no WhatsApp"
-        />
-      </Secao>
+      <FechamentoCta
+        contexto="marcas"
+        secao="3m-fechamento"
+        titulo="Precisa de proteção respiratória?"
+        texto="Conte a que a equipe fica exposta — poeira, névoa, vapor. É essa informação que define o equipamento adequado, e a gente ajuda a verificar."
+        rotulo="Falar no WhatsApp"
+      />
     </>
   )
 }

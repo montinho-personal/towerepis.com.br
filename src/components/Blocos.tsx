@@ -2,21 +2,45 @@ import Link from 'next/link'
 import { IconeSeta } from './Icones'
 import { schemaBreadcrumb, JsonLd } from '@/lib/schema'
 
-/** Trilha de navegação + BreadcrumbList. */
-export function Trilha({ itens }: { itens: { nome: string; url: string }[] }) {
+/**
+ * Trilha de navegação + BreadcrumbList.
+ *
+ * O tom escuro existe para as páginas de índice, que abrem em grafite: a
+ * trilha em papel acima de uma faixa escura deixaria uma tira branca de
+ * poucos pixels entre o topo e o cabeçalho. Com o mesmo fundo, trilha e
+ * cabeçalho leem como um bloco só.
+ */
+export function Trilha({
+  itens,
+  tom = 'claro',
+}: {
+  itens: { nome: string; url: string }[]
+  tom?: 'claro' | 'escuro'
+}) {
   const completo = [{ nome: 'Início', url: '/' }, ...itens]
+  const escuro = tom === 'escuro'
   return (
     <>
       <JsonLd dados={schemaBreadcrumb(completo)} />
-      <nav aria-label="Trilha de navegação" className="wrap pt-6">
-        <ol className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-ink-3">
+      <nav
+        aria-label="Trilha de navegação"
+        className={escuro ? 'band-ink pt-6' : 'pt-6'}
+      >
+        <ol
+          className={`wrap flex flex-wrap items-center gap-x-2 gap-y-1 text-xs ${
+            escuro ? 'text-paper/55' : 'text-ink-3'
+          }`}
+        >
           {completo.map((item, i) => (
             <li key={item.url} className="flex items-center gap-2">
               {i > 0 && <span aria-hidden="true">/</span>}
               {i === completo.length - 1 ? (
-                <span className="text-ink-2">{item.nome}</span>
+                <span className={escuro ? 'text-paper/85' : 'text-ink-2'}>{item.nome}</span>
               ) : (
-                <Link href={item.url} className="hover:text-tower-red">
+                <Link
+                  href={item.url}
+                  className={escuro ? 'hover:text-tower-red-light' : 'hover:text-tower-red'}
+                >
                   {item.nome}
                 </Link>
               )}
@@ -28,16 +52,43 @@ export function Trilha({ itens }: { itens: { nome: string; url: string }[] }) {
   )
 }
 
-/** Cabeçalho de página: rótulo, H1 e resposta direta. */
+/**
+ * Cabeçalho de página: rótulo, H1 e resposta direta.
+ *
+ * Duas variantes, e a escolha entre elas é hierárquica, não decorativa.
+ *
+ * As páginas de índice — profissões, proteção, calçados, conhecimento,
+ * equipes, marcas — abrem em grafite. São as aberturas de capítulo do site:
+ * quem chega nelas está escolhendo um caminho, e a mudança de superfície
+ * marca essa troca de nível durante a navegação.
+ *
+ * As páginas finais abrem em papel, porque são para ler. Escurecer todas
+ * gastaria o grafite até ele não significar mais nada — a regra do projeto
+ * é que a superfície escura afirma, e afirmação repetida vira ruído.
+ */
 export function CabecalhoPagina({
   rotulo,
   titulo,
   resumo,
+  variante = 'papel',
 }: {
   rotulo: string
   titulo: string
   resumo: string
+  variante?: 'papel' | 'ink'
 }) {
+  if (variante === 'ink') {
+    return (
+      <header className="band-ink pb-14 pt-8 sm:pb-20 sm:pt-10" data-continua>
+        <div className="wrap">
+          <p className="eyebrow eyebrow-red">{rotulo}</p>
+          <h1 className="mt-5 max-w-4xl text-titulo sm:text-4xl lg:text-5xl">{titulo}</h1>
+          <p className="mt-7 max-w-2xl text-lg leading-relaxed text-paper/75">{resumo}</p>
+        </div>
+      </header>
+    )
+  }
+
   return (
     <header className="wrap pt-8 pb-12 sm:pt-12 sm:pb-16">
       <p className="eyebrow eyebrow-red">{rotulo}</p>
@@ -69,22 +120,34 @@ export function EmUmaFrase({ children }: { children: React.ReactNode }) {
 export function OQueObservar({
   titulo = 'O que observar',
   itens,
+  tom = 'claro',
 }: {
   titulo?: string
   itens: { titulo: string; texto: string }[]
+  tom?: 'claro' | 'escuro'
 }) {
+  const escuro = tom === 'escuro'
   return (
     <section>
-      <h2 className="eyebrow">{titulo}</h2>
-      <ol className="mt-6 divide-y divide-rule border-y border-rule">
+      <h2 className={`eyebrow ${escuro ? 'eyebrow-red' : ''}`}>{titulo}</h2>
+      <ol
+        className={`mt-6 divide-y border-y ${
+          escuro ? 'divide-grafite-600 border-grafite-600' : 'divide-rule border-rule'
+        }`}
+      >
         {itens.map((item, i) => (
           <li key={item.titulo} className="grid gap-2 py-6 sm:grid-cols-[3.5rem_1fr] sm:gap-6">
-            <span className="numeral text-2xl text-tower-red" aria-hidden="true">
+            <span
+              className={`numeral text-2xl ${escuro ? 'text-tower-red-light' : 'text-tower-red'}`}
+              aria-hidden="true"
+            >
               {String(i + 1).padStart(2, '0')}
             </span>
             <div>
               <h3 className="font-display text-lg font-bold">{item.titulo}</h3>
-              <p className="mt-1.5 measure text-ink-2">{item.texto}</p>
+              <p className={`mt-1.5 measure ${escuro ? 'text-paper/70' : 'text-ink-2'}`}>
+                {item.texto}
+              </p>
             </div>
           </li>
         ))}
@@ -162,6 +225,126 @@ export function GradeLinks({
         <li key={`vazio-${i}`} aria-hidden="true" className="hidden bg-paper sm:block" />
       ))}
     </ul>
+  )
+}
+
+/**
+ * Lista de links em régua — a alternativa à grade de cards.
+ *
+ * A grade de cards resolvia tudo no site, e por isso não resolvia nada bem:
+ * um conjunto de seis destinos equivalentes e uma lista de "o que costuma
+ * ser necessário para essa rotina" chegavam ao leitor com exatamente o
+ * mesmo peso visual. Card é uma promessa de equivalência entre itens.
+ * Quando os itens não são equivalentes, a régua é mais honesta — e ocupa
+ * menos altura, o que no celular é a diferença entre ver e não ver.
+ *
+ * `numerada` dá ordem e peso: serve quando a lista é um raciocínio.
+ * `simples` é só travessia: serve quando são atalhos laterais que não
+ * deveriam competir com o conteúdo da página.
+ */
+export function ListaLinks({
+  itens,
+  variante = 'numerada',
+  tom = 'claro',
+}: {
+  itens: { href: string; titulo: string; texto: string }[]
+  variante?: 'numerada' | 'simples'
+  tom?: 'claro' | 'escuro'
+}) {
+  const escuro = tom === 'escuro'
+  const regua = escuro ? 'border-grafite-600' : 'border-rule'
+  const secundario = escuro ? 'text-paper/65' : 'text-ink-2'
+  const realce = escuro ? 'text-tower-red-light' : 'text-tower-red'
+  const fundoHover = escuro ? 'hover:bg-grafite-700' : 'hover:bg-paper-2'
+
+  if (variante === 'simples') {
+    return (
+      <ul className={`grid border-t ${regua} sm:grid-cols-2 sm:gap-x-10`}>
+        {itens.map((item) => (
+          <li key={item.href} className={`border-b ${regua}`}>
+            <Link
+              href={item.href}
+              className={`group flex items-baseline justify-between gap-5 py-5 transition-colors ${
+                escuro ? 'hover:text-tower-red-light' : 'hover:text-tower-red'
+              }`}
+            >
+              <span>
+                <span className="font-display text-base font-bold">{item.titulo}</span>
+                <span className={`mt-1 block text-[0.9rem] leading-snug ${secundario}`}>
+                  {item.texto}
+                </span>
+              </span>
+              <IconeSeta className={`h-4 w-4 shrink-0 translate-y-1 ${realce}`} />
+            </Link>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+
+  return (
+    <ol className={`border-t-2 ${escuro ? 'border-paper/25' : 'border-ink'}`}>
+      {itens.map((item, i) => (
+        <li key={item.href} className={`border-b ${regua}`}>
+          <Link
+            href={item.href}
+            className={`group grid gap-2 py-6 transition-colors sm:grid-cols-[4rem_1fr_auto] sm:items-baseline sm:gap-7 sm:px-3 ${fundoHover}`}
+          >
+            <span className={`numeral text-2xl ${realce}`} aria-hidden="true">
+              {String(i + 1).padStart(2, '0')}
+            </span>
+            <span>
+              <span
+                className={`font-display text-lg font-bold transition-colors ${
+                  escuro ? 'group-hover:text-tower-red-light' : 'group-hover:text-tower-red'
+                }`}
+              >
+                {item.titulo}
+              </span>
+              <span className={`mt-1.5 block measure text-[0.95rem] leading-relaxed ${secundario}`}>
+                {item.texto}
+              </span>
+            </span>
+            <IconeSeta className={`hidden h-4 w-4 shrink-0 sm:block ${realce}`} />
+          </Link>
+        </li>
+      ))}
+    </ol>
+  )
+}
+
+/**
+ * Links entre páginas irmãs — "outras profissões", "outros tipos".
+ *
+ * Existia copiado em quatro arquivos com a mesma marcação. Continua
+ * discreto de propósito: é navegação de saída, não conteúdo, e não deveria
+ * disputar atenção com o CTA que vem antes dele.
+ */
+export function LinksIrmaos({
+  rotulo,
+  itens,
+}: {
+  rotulo: string
+  itens: { href: string; nome: string }[]
+}) {
+  return (
+    <section className="band ritmo-compacto">
+      <div className="wrap">
+        <h2 className="eyebrow">{rotulo}</h2>
+        <ul className="mt-5 flex flex-wrap gap-2">
+          {itens.map((item) => (
+            <li key={item.href}>
+              <Link
+                href={item.href}
+                className="inline-block border border-rule-strong bg-paper px-4 py-3 font-display text-[0.8rem] font-semibold transition-colors hover:border-ink hover:bg-paper-2"
+              >
+                {item.nome}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
   )
 }
 
@@ -256,7 +439,7 @@ export function PonteEmpresas({
  * mais que oito inventados, e a regra do projeto proíbe métrica
  * fabricada.
  */
-export function BarraProva() {
+export function BarraProva({ continua = false }: { continua?: boolean }) {
   const fatos = [
     { destaque: '1995', texto: 'No mercado de proteção do Ceará' },
     { destaque: '3M', texto: 'Distribuidor Regional premiado' },
@@ -264,7 +447,11 @@ export function BarraProva() {
     { destaque: 'CE', texto: 'Fortaleza e região' },
   ]
   return (
-    <section className="band-ink ritmo-compacto">
+    // `continua` declara que esta faixa é a continuação da anterior, e não
+    // duas superfícies escuras empilhadas por descuido. A verificação de QA
+    // reprova faixas escuras adjacentes justamente para pegar o descuido —
+    // então a intenção precisa estar no código, não numa exceção do teste.
+    <section className="band-ink ritmo-compacto" data-continua={continua || undefined}>
       <div className="wrap">
         <ul className="grid grid-cols-2 gap-x-6 gap-y-9 lg:grid-cols-4">
           {fatos.map((f) => (
@@ -283,12 +470,31 @@ export function BarraProva() {
   )
 }
 
+/**
+ * Seção com compasso vertical explícito.
+ *
+ * O padrão continua sendo o compasso normal, mas ele deixou de ser a única
+ * opção. A monotonia das páginas internas não vinha só da cor: vinha de
+ * toda seção respirar igual. Compressão antes de expansão é o que produz
+ * ritmo — e sem um jeito de pedir compressão, não havia ritmo a produzir.
+ *
+ * As utilidades `pt-0` e `pb-0` continuam funcionando por cima destas
+ * classes: `.ritmo-*` vive na camada de componentes e o Tailwind resolve a
+ * camada de utilidades depois.
+ */
 export function Secao({
   children,
   className = '',
+  ritmo = 'normal',
 }: {
   children: React.ReactNode
   className?: string
+  ritmo?: 'compacto' | 'normal' | 'amplo'
 }) {
-  return <section className={`py-14 sm:py-20 ${className}`}>{children}</section>
+  const compasso = {
+    compacto: 'ritmo-compacto',
+    normal: 'ritmo-normal',
+    amplo: 'ritmo-amplo',
+  }[ritmo]
+  return <section className={`${compasso} ${className}`}>{children}</section>
 }

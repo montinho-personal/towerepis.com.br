@@ -12,14 +12,15 @@ export const metadata: Metadata = {
 export default function EncontrarEpi() {
   return (
     <>
-      <Trilha itens={[{ nome: 'Encontrar EPI', url: '/encontrar-epi/' }]} />
+      <Trilha itens={[{ nome: 'Encontrar EPI', url: '/encontrar-epi/' }]} tom="escuro" />
       <CabecalhoPagina
+        variante="ink"
         rotulo="Ferramenta de orientação"
         titulo="Encontre o EPI certo para o seu trabalho"
         resumo="Quatro perguntas. No final, você vê o que costuma merecer atenção no seu caso e pode falar com a gente com o contexto já pronto."
       />
 
-      <Secao className="wrap pt-0">
+      <Secao className="wrap">
         {/* Ressalva antes da ferramenta, não depois. Uma ferramenta de
             orientação que se apresenta como diagnóstico técnico seria
             irresponsável em saúde e segurança do trabalho. */}

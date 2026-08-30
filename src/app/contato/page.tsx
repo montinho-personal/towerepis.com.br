@@ -52,65 +52,70 @@ export default function Contato() {
         resumo="O WhatsApp é o nosso canal principal, e quem responde é um dos dois sócios. Se puder, já diga o que você faz e o que precisa proteger — assim a primeira resposta já vem útil."
       />
 
-      <Secao className="wrap pt-0">
-        <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
-          <div className="border border-ink p-7 sm:p-9">
-            <p className="eyebrow eyebrow-red">Canal principal</p>
-            <p className="numeral mt-4 text-3xl sm:text-4xl">
-              {empresa.whatsapp.exibicao}
-            </p>
-            <p className="mt-4 text-ink-2">
-              Atendimento por Helano e Cristina. {empresa.horario.texto}.
-            </p>
-            <div className="mt-7">
-              <WhatsAppCta contexto="contato" secao="contato-principal" bloco>
-                Abrir conversa no WhatsApp
-              </WhatsAppCta>
-            </div>
-          </div>
-
-          <div className="space-y-8">
+      {/* O canal e a área de atendimento são a página inteira, e estavam num
+          quadro de contorno fino sobre papel — o mesmo peso de qualquer
+          outra caixa do site. Em grafite, o número e o verde do WhatsApp
+          passam a ser a primeira coisa que se vê. Faixa que sangra, não
+          caixa: grafite em caixinha vira card. */}
+      <section className="band-ink ritmo-normal">
+        <div className="wrap">
+          <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
             <div>
-              <p className="eyebrow">Onde atendemos</p>
-              <p className="mt-3 text-lg">
-                Fortaleza, região metropolitana e Ceará.
+              <p className="eyebrow eyebrow-red">Canal principal</p>
+              <p className="numeral mt-5 text-4xl sm:text-5xl">
+                {empresa.whatsapp.exibicao}
               </p>
-              <p className="mt-3 text-ink-2">
-                Combinamos prazo e forma de entrega antes de fechar o pedido. Se não
-                dermos conta do prazo que você precisa, dizemos na hora.
+              <p className="mt-5 text-paper/75">
+                Atendimento por Helano e Cristina. {empresa.horario.texto}.
               </p>
+              <div className="mt-8 max-w-sm">
+                <WhatsAppCta contexto="contato" secao="contato-principal" bloco>
+                  Abrir conversa no WhatsApp
+                </WhatsAppCta>
+              </div>
             </div>
 
-            <div>
-              <p className="eyebrow">Instagram</p>
-              <p className="mt-3">
-                <a
-                  href={empresa.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-lg underline underline-offset-4 hover:text-tower-red"
-                >
-                  @towerepis
-                </a>
-              </p>
-            </div>
+            <div className="space-y-8 lg:border-l lg:border-grafite-600 lg:pl-16">
+              <div>
+                <h2 className="eyebrow">Onde atendemos</h2>
+                <p className="mt-3 text-lg">Fortaleza, região metropolitana e Ceará.</p>
+                <p className="mt-3 text-paper/75">
+                  Combinamos prazo e forma de entrega antes de fechar o pedido. Se não
+                  dermos conta do prazo que você precisa, dizemos na hora.
+                </p>
+              </div>
 
-            <div className="border-t border-rule pt-8">
-              <p className="eyebrow eyebrow-red">A Tower começou no Montese</p>
-              <p className="mt-3 text-ink-2">
-                Foi num prédio pequeno alugado ali, em 1995, com estoque embaixo e
-                escritório em cima. Em 2003 a empresa mudou para um prédio muito maior, no
-                mesmo bairro, onde ficou mais de treze anos. Hoje a operação é conduzida
-                diretamente pelos dois sócios, e o atendimento acontece pelo WhatsApp.
-              </p>
+              <div>
+                <h2 className="eyebrow">Instagram</h2>
+                <p className="mt-3">
+                  <a
+                    href={empresa.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg underline underline-offset-4 hover:text-tower-red-light"
+                  >
+                    @towerepis
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </Secao>
+      </section>
 
-      <Secao className="wrap pt-0">
-        <div className="max-w-3xl">
+      <Secao className="wrap">
+        <div className="grid gap-12 lg:grid-cols-[1.6fr_1fr] lg:gap-16">
           <Perguntas perguntas={PERGUNTAS} />
+
+          <div className="border-l-4 border-tower-red pl-6 lg:h-fit">
+            <h2 className="eyebrow eyebrow-red">A Tower começou no Montese</h2>
+            <p className="mt-3 text-ink-2">
+              Foi num prédio pequeno alugado ali, em 1995, com estoque embaixo e
+              escritório em cima. Em 2003 a empresa mudou para um prédio muito maior, no
+              mesmo bairro, onde ficou mais de treze anos. Hoje a operação é conduzida
+              diretamente pelos dois sócios, e o atendimento acontece pelo WhatsApp.
+            </p>
+          </div>
         </div>
       </Secao>
     </>

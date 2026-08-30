@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Trilha, Secao } from '@/components/Blocos'
-import { BlocoCta } from '@/components/WhatsAppCta'
+import { FechamentoCta } from '@/components/WhatsAppCta'
 import { JsonLd, schemaPessoaHelano } from '@/lib/schema'
 import { ARTIGOS } from '@/content/artigos'
 
@@ -129,15 +129,13 @@ export default function PaginaHelano() {
         </div>
       </Secao>
 
-      <Secao className="wrap pt-0">
-        <BlocoCta
-          contexto="historia"
-          secao="helano-fechamento"
-          titulo="Tem uma dúvida técnica?"
-          texto="Descreva a atividade e a que a pessoa fica exposta. A resposta vem de quem trabalha com isso desde antes de 1995."
-          rotulo="Falar com a Tower"
-        />
-      </Secao>
+      <FechamentoCta
+        contexto="historia"
+        secao="helano-fechamento"
+        titulo="Tem uma dúvida técnica?"
+        texto="Descreva a atividade e a que a pessoa fica exposta. A resposta vem de quem trabalha com isso desde antes de 1995."
+        rotulo="Falar com a Tower"
+      />
     </>
   )
 }

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Trilha, CabecalhoPagina, Perguntas, Secao } from '@/components/Blocos'
-import { BlocoCta } from '@/components/WhatsAppCta'
+import { FechamentoCta } from '@/components/WhatsAppCta'
 import { ComoAtendemos as Etapas, ComQuemVoceFala } from '@/components/BlocosB2B'
 import { JsonLd, schemaFaq } from '@/lib/schema'
 
@@ -64,16 +64,14 @@ export default function ComoAtendemosPagina() {
         </div>
       </Secao>
 
-      <Secao className="wrap pt-0">
-        <BlocoCta
-          contexto="empresas"
-          secao="como-atendemos-fechamento"
-          titulo="Vamos começar pelo que a sua equipe faz."
-          texto="Segmento, quantas pessoas e para quando. Com isso já conseguimos indicar o que faz sentido e passar prazo e valor."
-          rotulo="Falar no WhatsApp"
-          publico="b2b"
-        />
-      </Secao>
+      <FechamentoCta
+        contexto="empresas"
+        secao="como-atendemos-fechamento"
+        titulo="Vamos começar pelo que a sua equipe faz."
+        texto="Segmento, quantas pessoas e para quando. Com isso já conseguimos indicar o que faz sentido e passar prazo e valor."
+        rotulo="Falar no WhatsApp"
+        publico="b2b"
+      />
     </>
   )
 }

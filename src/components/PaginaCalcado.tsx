@@ -9,12 +9,13 @@ import {
   CabecalhoPagina,
   EmUmaFrase,
   OQueObservar,
-  GradeLinks,
+  ListaLinks,
+  LinksIrmaos,
   Perguntas,
   AssinaturaTecnica,
   Secao,
 } from './Blocos'
-import { BlocoCta, CtaLinha } from './WhatsAppCta'
+import { FechamentoCta, CtaLinha } from './WhatsAppCta'
 import { JsonLd, schemaFaq } from '@/lib/schema'
 
 export function metadataCalcado(slug: string): Metadata {
@@ -59,15 +60,19 @@ export function PaginaCalcado({ slug }: { slug: string }) {
         </div>
       </Secao>
 
-      <Secao className="wrap pt-0">
-        <OQueObservar itens={c.oQueObservar} />
+      {/* Calçado é a categoria que mais gera dúvida no WhatsApp da Tower.
+          O critério é a resposta, e merece a superfície que afirma. */}
+      <Secao className="band-ink">
+        <div className="wrap">
+          <OQueObservar itens={c.oQueObservar} tom="escuro" />
+        </div>
       </Secao>
 
-      <Secao className="band">
+      <Secao className="band" ritmo="compacto">
         <div className="wrap">
           <h2 className="text-2xl sm:text-3xl">Quem costuma usar</h2>
-          <div className="mt-10">
-            <GradeLinks itens={c.paraQuem} />
+          <div className="mt-8">
+            <ListaLinks itens={c.paraQuem} variante="simples" />
           </div>
         </div>
       </Secao>
@@ -90,32 +95,22 @@ export function PaginaCalcado({ slug }: { slug: string }) {
         </div>
       </Secao>
 
-      <Secao className="wrap pt-0">
-        <BlocoCta
-          contexto={c.contexto}
-          secao="calcado-fechamento"
-          titulo={c.ctaTitulo}
-          texto={c.ctaTexto}
-          rotulo="Ver opções no WhatsApp"
-          categoria={c.slug}
-        />
-      </Secao>
+      <FechamentoCta
+        contexto={c.contexto}
+        secao="calcado-fechamento"
+        titulo={c.ctaTitulo}
+        texto={c.ctaTexto}
+        rotulo="Ver opções no WhatsApp"
+        categoria={c.slug}
+      />
 
-      <Secao className="wrap pt-0">
-        <p className="eyebrow">Outros tipos</p>
-        <ul className="mt-5 flex flex-wrap gap-2">
-          {CALCADOS.filter((o) => o.slug !== c.slug).map((o) => (
-            <li key={o.slug}>
-              <Link
-                href={`/calcados/${o.slug}/`}
-                className="inline-block border border-rule-strong px-4 py-3 font-display text-[0.8rem] font-semibold transition-colors hover:border-ink hover:bg-paper-2"
-              >
-                {o.nome}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </Secao>
+      <LinksIrmaos
+        rotulo="Outros tipos"
+        itens={CALCADOS.filter((o) => o.slug !== c.slug).map((o) => ({
+          href: `/calcados/${o.slug}/`,
+          nome: o.nome,
+        }))}
+      />
     </>
   )
 }

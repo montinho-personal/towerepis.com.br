@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { metadados } from '@/lib/seo'
-import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
 import { PROTECOES, buscarProtecao } from '@/content/protecoes'
@@ -9,12 +8,13 @@ import {
   CabecalhoPagina,
   EmUmaFrase,
   OQueObservar,
-  GradeLinks,
+  ListaLinks,
+  LinksIrmaos,
   Perguntas,
   AssinaturaTecnica,
   Secao,
 } from '@/components/Blocos'
-import { BlocoCta, CtaLinha } from '@/components/WhatsAppCta'
+import { FechamentoCta, CtaLinha } from '@/components/WhatsAppCta'
 import { JsonLd, schemaFaq } from '@/lib/schema'
 
 export const dynamicParams = false
@@ -71,15 +71,21 @@ export default async function PaginaProtecao({
         </div>
       </Secao>
 
-      <Secao className="wrap pt-0">
-        <OQueObservar itens={p.oQueObservar} />
+      {/* O critério em grafite: é o que a página tem de mais valioso e
+          estava no mesmo peso visual do resto. */}
+      <Secao className="band-ink">
+        <div className="wrap">
+          <OQueObservar itens={p.oQueObservar} tom="escuro" />
+        </div>
       </Secao>
 
-      <Secao className="band">
+      {/* Travessia lateral, não conteúdo principal: em cards ocupava meia
+          tela de celular e competia com o que a pessoa veio ler. */}
+      <Secao className="band" ritmo="compacto">
         <div className="wrap">
           <h2 className="text-2xl sm:text-3xl">Onde essa proteção costuma ser usada</h2>
-          <div className="mt-10">
-            <GradeLinks itens={p.paraQuem} />
+          <div className="mt-8">
+            <ListaLinks itens={p.paraQuem} variante="simples" />
           </div>
         </div>
       </Secao>
@@ -91,40 +97,25 @@ export default async function PaginaProtecao({
         </div>
       </Secao>
 
-      <Secao className="wrap pt-0">
-        <BlocoCta
-          contexto={p.contexto}
-          secao="protecao-fechamento"
-          titulo={p.ctaTitulo}
-          texto={p.ctaTexto}
-          rotulo="Falar no WhatsApp"
-          categoria={p.slug}
-        />
-      </Secao>
+      <FechamentoCta
+        contexto={p.contexto}
+        secao="protecao-fechamento"
+        titulo={p.ctaTitulo}
+        texto={p.ctaTexto}
+        rotulo="Falar no WhatsApp"
+        categoria={p.slug}
+      />
 
-      <Secao className="wrap pt-0">
-        <p className="eyebrow">Outras partes do corpo</p>
-        <ul className="mt-5 flex flex-wrap gap-2">
-          <li>
-            <Link
-              href="/calcados/"
-              className="inline-block border border-rule-strong px-4 py-3 font-display text-[0.8rem] font-semibold transition-colors hover:border-ink hover:bg-paper-2"
-            >
-              Pés
-            </Link>
-          </li>
-          {PROTECOES.filter((o) => o.slug !== p.slug).map((o) => (
-            <li key={o.slug}>
-              <Link
-                href={`/protecao/${o.slug}/`}
-                className="inline-block border border-rule-strong px-4 py-3 font-display text-[0.8rem] font-semibold transition-colors hover:border-ink hover:bg-paper-2"
-              >
-                {o.parte}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </Secao>
+      <LinksIrmaos
+        rotulo="Outras partes do corpo"
+        itens={[
+          { href: '/calcados/', nome: 'Pés' },
+          ...PROTECOES.filter((o) => o.slug !== p.slug).map((o) => ({
+            href: `/protecao/${o.slug}/`,
+            nome: o.parte,
+          })),
+        ]}
+      />
     </>
   )
 }

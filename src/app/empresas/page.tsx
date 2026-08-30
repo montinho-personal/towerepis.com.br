@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { SETORES } from '@/content/setores'
 import { Trilha, CabecalhoPagina, GradeLinks, Secao, BarraProva } from '@/components/Blocos'
-import { BlocoCta } from '@/components/WhatsAppCta'
+import { FechamentoCta } from '@/components/WhatsAppCta'
 import { ComoAtendemos, ComQuemVoceFala, ErroCaro } from '@/components/BlocosB2B'
 
 export const metadata: Metadata = {
@@ -15,27 +15,31 @@ export const metadata: Metadata = {
 export default function Empresas() {
   return (
     <>
-      <Trilha itens={[{ nome: 'Para equipes', url: '/empresas/' }]} />
+      <Trilha itens={[{ nome: 'Para equipes', url: '/empresas/' }]} tom="escuro" />
       <CabecalhoPagina
+        variante="ink"
         rotulo="Para equipes"
         titulo="EPI para a sua equipe, escolhido pela atividade"
         resumo="Você precisa que o equipamento chegue no prazo, corresponda ao risco e seja realmente usado pela equipe. É nessas três coisas que a gente trabalha desde 1995."
       />
 
-      <div className="wrap">
-        <div className="flex flex-wrap gap-3">
-          <Link href="/orcamento/" className="btn btn-ink">
-            Pedir orçamento
-          </Link>
-          <Link href="/empresas/como-atendemos/" className="btn btn-ghost">
-            Como atendemos
-          </Link>
+      {/* Cabeçalho, ações e prova formam um bloco grafite só. Separados por
+          uma tira de papel, os botões viravam uma faixa branca solta entre
+          duas superfícies escuras. */}
+      <div className="band-ink pb-14" data-continua>
+        <div className="wrap">
+          <div className="flex flex-wrap gap-3">
+            <Link href="/orcamento/" className="btn btn-red">
+              Pedir orçamento
+            </Link>
+            <Link href="/empresas/como-atendemos/" className="btn btn-linha">
+              Como atendemos
+            </Link>
+          </div>
         </div>
       </div>
 
-      <div className="mt-14">
-        <BarraProva />
-      </div>
+      <BarraProva continua />
 
       <Secao className="wrap">
         <h2 className="text-2xl sm:text-3xl">Encontre o seu setor</h2>
@@ -58,16 +62,14 @@ export default function Empresas() {
       <ComoAtendemos />
       <ComQuemVoceFala />
 
-      <Secao className="wrap">
-        <BlocoCta
-          contexto="empresas"
-          secao="empresas-fechamento"
-          titulo="Conte o que a sua equipe faz que a gente monta o orçamento."
-          texto="Quantas pessoas são, quais atividades e para quando você precisa. Não pedimos CNPJ nem cadastro para começar — isso fica para depois, se fechar."
-          rotulo="Solicitar orçamento"
-          publico="b2b"
-        />
-      </Secao>
+      <FechamentoCta
+        contexto="empresas"
+        secao="empresas-fechamento"
+        titulo="Conte o que a sua equipe faz que a gente monta o orçamento."
+        texto="Quantas pessoas são, quais atividades e para quando você precisa. Não pedimos CNPJ nem cadastro para começar — isso fica para depois, se fechar."
+        rotulo="Solicitar orçamento"
+        publico="b2b"
+      />
     </>
   )
 }

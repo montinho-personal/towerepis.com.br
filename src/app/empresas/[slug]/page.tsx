@@ -8,10 +8,11 @@ import {
   Trilha,
   CabecalhoPagina,
   OQueObservar,
+  LinksIrmaos,
   Perguntas,
   Secao,
 } from '@/components/Blocos'
-import { BlocoCta, CtaLinha } from '@/components/WhatsAppCta'
+import { FechamentoCta, CtaLinha } from '@/components/WhatsAppCta'
 import { ComoAtendemos, ComQuemVoceFala, ErroCaro } from '@/components/BlocosB2B'
 import { IconeSeta } from '@/components/Icones'
 import { JsonLd, schemaFaq } from '@/lib/schema'
@@ -113,38 +114,27 @@ export default async function PaginaSetor({
         </div>
       </Secao>
 
-      <Secao className="wrap pt-0">
-        <BlocoCta
-          contexto={s.contexto}
-          secao="setor-fechamento"
-          titulo="Conte o que a sua equipe faz que a gente monta o orçamento."
-          texto="Quantas pessoas são, o que elas fazem e para quando você precisa. Com isso já conseguimos indicar o que faz sentido e passar prazo e valor."
-          rotulo="Solicitar orçamento"
-          publico="b2b"
-          categoria={s.slug}
-        />
-        <div className="mt-4">
-          <Link href="/orcamento/" className="btn btn-ghost">
-            Montar o orçamento item a item
-          </Link>
-        </div>
-      </Secao>
+      <FechamentoCta
+        contexto={s.contexto}
+        secao="setor-fechamento"
+        titulo="Conte o que a sua equipe faz que a gente monta o orçamento."
+        texto="Quantas pessoas são, o que elas fazem e para quando você precisa. Com isso já conseguimos indicar o que faz sentido e passar prazo e valor."
+        rotulo="Solicitar orçamento"
+        publico="b2b"
+        categoria={s.slug}
+      >
+        <Link href="/orcamento/" className="btn btn-red btn-block">
+          Montar o orçamento item a item
+        </Link>
+      </FechamentoCta>
 
-      <Secao className="wrap pt-0">
-        <p className="eyebrow">Outros setores</p>
-        <ul className="mt-5 flex flex-wrap gap-2">
-          {SETORES.filter((o) => o.slug !== s.slug).map((o) => (
-            <li key={o.slug}>
-              <Link
-                href={`/empresas/${o.slug}/`}
-                className="inline-block border border-rule-strong px-4 py-3 font-display text-[0.8rem] font-semibold transition-colors hover:border-ink hover:bg-paper-2"
-              >
-                {o.nome}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </Secao>
+      <LinksIrmaos
+        rotulo="Outros setores"
+        itens={SETORES.filter((o) => o.slug !== s.slug).map((o) => ({
+          href: `/empresas/${o.slug}/`,
+          nome: o.nome,
+        }))}
+      />
     </>
   )
 }

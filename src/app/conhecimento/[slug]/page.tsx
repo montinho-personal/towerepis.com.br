@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation'
 
 import { ARTIGOS, buscarArtigo, type Bloco } from '@/content/artigos'
 import { Trilha, AssinaturaTecnica, Secao } from '@/components/Blocos'
-import { BlocoCta } from '@/components/WhatsAppCta'
+import { FechamentoCta } from '@/components/WhatsAppCta'
 import { IconeSeta } from '@/components/Icones'
 import { JsonLd, schemaArtigo } from '@/lib/schema'
 
@@ -173,33 +173,35 @@ export default async function Artigo({ params }: { params: Promise<{ slug: strin
         </div>
       </article>
 
-      <Secao className="wrap">
-        {/* CTA que nasce da intenção do artigo — nunca um "entre em contato". */}
-        <BlocoCta
-          contexto={a.contexto}
-          secao="artigo-fechamento"
-          titulo={a.ctaTitulo}
-          texto={a.ctaTexto}
-          rotulo="Falar no WhatsApp"
-          categoria={a.cluster}
-          mensagem={a.mensagemWhats}
-        />
-      </Secao>
+      {/* CTA que nasce da intenção do artigo — nunca um "entre em contato".
+          O artigo é a página mais longa e mais branca do site: terminar em
+          grafite é o que separa o texto do que vem depois dele. */}
+      <FechamentoCta
+        contexto={a.contexto}
+        secao="artigo-fechamento"
+        titulo={a.ctaTitulo}
+        texto={a.ctaTexto}
+        rotulo="Falar no WhatsApp"
+        categoria={a.cluster}
+        mensagem={a.mensagemWhats}
+      />
 
-      <Secao className="wrap pt-0">
-        <p className="eyebrow">Continue lendo</p>
-        <ul className="mt-6 border-t-2 border-ink">
-          {relacionados.map((o) => (
-            <li key={o.slug} className="border-b border-rule">
-              <Link
-                href={`/conhecimento/${o.slug}/`}
-                className="block py-6 font-display text-lg font-bold transition-colors hover:text-tower-red"
-              >
-                {o.titulo}
-              </Link>
-            </li>
-          ))}
-        </ul>
+      <Secao className="band" ritmo="compacto">
+        <div className="wrap">
+          <h2 className="eyebrow">Continue lendo</h2>
+          <ul className="mt-6 border-t-2 border-ink">
+            {relacionados.map((o) => (
+              <li key={o.slug} className="border-b border-rule">
+                <Link
+                  href={`/conhecimento/${o.slug}/`}
+                  className="block py-6 font-display text-lg font-bold transition-colors hover:text-tower-red"
+                >
+                  {o.titulo}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </Secao>
     </>
   )

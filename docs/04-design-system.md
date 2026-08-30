@@ -170,6 +170,84 @@ Onde o fechamento em grafite encontra o rodapé, entra uma costura vermelha de 4
 O vermelho fazendo trabalho estrutural, em vez de dois escuros se fundindo num
 bloco só.
 
+## ETAPA 3 — PÁGINAS INTERNAS E O FIM DO DOMÍNIO DOS CARDS
+
+Antes desta etapa, 12 das 42 páginas não tinham **nenhuma** superfície: eram
+papel do topo ao rodapé. A média de superfície escura no site era de 2%.
+Depois: nenhuma página sem superfície, e média de 22%.
+
+### Hierarquia de abertura — a regra que decide o grafite
+
+Não é decoração, é nível de navegação:
+
+| Tipo de página | Abertura | Por quê |
+|---|---|---|
+| Índice (`/protecao/`, `/para-seu-trabalho/`, `/calcados/`, `/conhecimento/`, `/empresas/`, `/marcas/`, `/encontrar-epi/`) | **Grafite** | São aberturas de capítulo. Quem chega está escolhendo um caminho, e a troca de superfície marca a mudança de nível. |
+| Página final (profissão, proteção, calçado, setor, artigo) | **Papel** | São para ler. Escurecer todas gastaria o grafite até ele não significar mais nada. |
+
+Nas páginas de índice a **trilha também é escura**. Trilha em papel acima de
+faixa escura deixava uma tira branca de poucos pixels entre o topo e o
+cabeçalho.
+
+### Onde o grafite entra nas páginas finais
+
+Dois momentos, sempre os mesmos:
+
+1. **`O que observar`** — o critério técnico. É o que a página tem de mais
+   valioso e vinha no mesmo peso do resto. É o momento em que a Tower afirma.
+2. **O fechamento** — todas as páginas terminavam num quadro creme sobre papel.
+   O verde do WhatsApp contra o grafite é o contraste mais forte do sistema, e
+   desperdiçá-lo justamente no momento da decisão era o erro. `BlocoCta` foi
+   removido; existe só `FechamentoCta`, que sangra de borda a borda.
+
+### Cards deixaram de ser a resposta padrão
+
+24 grades de cards no site → 8. As 8 que ficaram são conjuntos de destinos
+realmente equivalentes (categorias da Home, índices).
+
+Card é uma **promessa de equivalência entre itens**. Quando os itens não são
+equivalentes, a régua é mais honesta — e ocupa menos altura, o que no celular é
+a diferença entre ver e não ver. Duas substituições:
+
+- `ListaLinks variante="numerada"` — quando a lista é um raciocínio
+  ("o que a Tower trabalha para essa rotina").
+- `ListaLinks variante="simples"` — quando são atalhos laterais que não deveriam
+  competir com o conteúdo ("onde essa proteção costuma ser usada").
+
+`LinksIrmaos` recolheu quatro cópias da mesma marcação de "outras profissões /
+outros tipos / outros setores", agora sobre creme.
+
+### `Secao` ganhou compasso
+
+`ritmo="compacto" | "normal" | "amplo"`. A monotonia não vinha só da cor: vinha
+de toda seção respirar igual. `pt-0` e `pb-0` continuam vencendo por cima —
+`.ritmo-*` vive na camada de componentes e o Tailwind resolve utilidades depois.
+
+### `data-continua` — intenção declarada no código, não exceção no teste
+
+A verificação de QA reprova duas faixas escuras adjacentes, porque quase sempre é
+descuido. Onde é de propósito — trilha + cabeçalho + prova formando uma abertura
+de capítulo única em `/empresas/` — o elemento seguinte carrega `data-continua`.
+A exceção mora no código, não numa regra especial dentro do teste.
+
+### `.btn-linha`
+Contorno para superfície escura. `.btn-ghost` usa texto em tinta e desaparece no
+grafite — o que só se descobre olhando.
+
+### Duas armadilhas do próprio QA, registradas
+1. **Limiar de luminância não é contraste.** A primeira versão reprovava o
+   vermelho-claro sobre grafite, que passa em AA com folga (5,36:1).
+2. **Regex não lê cor de CSS moderno.** O Tailwind v4 resolve `text-paper/70`
+   para um `color-mix()` que o navegador devolve em oklab; extrair "números" dali
+   produz lixo — todas as medições vinham 1,30:1. Toda cor passa por um canvas,
+   que normaliza qualquer sintaxe e ainda entrega o alfa.
+
+### O que ficou de fora, e por quê
+`/orcamento/` continua sem faixa escura. É um formulário, e a página é o
+formulário: escurecer campos de preenchimento prejudica o uso sem ganhar nada.
+
+---
+
 ## O QUE O SISTEMA NÃO TEM — DE PROPÓSITO
 
 Sem gradiente. Sem sombra decorativa. Sem card com borda arredondada. Sem ícone

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Trilha, CabecalhoPagina, Secao } from '@/components/Blocos'
-import { BlocoCta } from '@/components/WhatsAppCta'
+import { FechamentoCta } from '@/components/WhatsAppCta'
 
 export const metadata: Metadata = {
   title: 'Marcas que a Tower trabalha',
@@ -20,15 +20,16 @@ export const metadata: Metadata = {
 export default function Marcas() {
   return (
     <>
-      <Trilha itens={[{ nome: 'Marcas', url: '/marcas/' }]} />
+      <Trilha itens={[{ nome: 'Marcas', url: '/marcas/' }]} tom="escuro" />
       <CabecalhoPagina
+        variante="ink"
         rotulo="Marcas"
         titulo="Com quem a gente trabalha"
         resumo="Em calçado profissional, que é o que mais sai hoje, a principal parceria da Tower é com a Bompel. Trabalhamos também com outras marcas — e é isso que permite dizer, quando for o caso, que um modelo não serve para a sua atividade."
       />
 
       {/* PARCEIRA PRINCIPAL — destaque de tamanho, não só de ordem. */}
-      <Secao className="wrap pt-0">
+      <Secao className="wrap">
         <h2 className="eyebrow eyebrow-red">Principal parceria hoje</h2>
 
         <div className="mt-6 border-2 border-ink">
@@ -132,15 +133,13 @@ export default function Marcas() {
         </div>
       </Secao>
 
-      <Secao className="wrap">
-        <BlocoCta
-          contexto="marcas"
-          secao="marcas-fechamento"
-          titulo="Procura um modelo específico?"
-          texto="Diga qual você procura. Informamos disponibilidade e prazo — e, se não fizer sentido para a sua atividade, dizemos isso antes de vender."
-          rotulo="Perguntar no WhatsApp"
-        />
-      </Secao>
+      <FechamentoCta
+        contexto="marcas"
+        secao="marcas-fechamento"
+        titulo="Procura um modelo específico?"
+        texto="Diga qual você procura. Informamos disponibilidade e prazo — e, se não fizer sentido para a sua atividade, dizemos isso antes de vender."
+        rotulo="Perguntar no WhatsApp"
+      />
     </>
   )
 }

@@ -9,7 +9,7 @@ import {
   AssinaturaTecnica,
   Secao,
 } from '@/components/Blocos'
-import { BlocoCta } from '@/components/WhatsAppCta'
+import { FechamentoCta } from '@/components/WhatsAppCta'
 import { JsonLd, schemaFaq } from '@/lib/schema'
 
 const PERGUNTAS = [
@@ -230,16 +230,14 @@ export default function Comparativo() {
         </div>
       </Secao>
 
-      <Secao className="wrap pt-0">
-        <BlocoCta
-          contexto="calcados-comparativo"
-          secao="comparativo-fechamento"
-          titulo="Ainda não sabe qual é o seu caso?"
-          texto="Descreva a sua rotina: onde você fica, como é o piso e se há movimentação de carga. A gente diz qual dos dois faz sentido e explica por quê."
-          rotulo="Tirar a dúvida no WhatsApp"
-          categoria="calcados"
-        />
-      </Secao>
+      <FechamentoCta
+        contexto="calcados-comparativo"
+        secao="comparativo-fechamento"
+        titulo="Ainda não sabe qual é o seu caso?"
+        texto="Descreva a sua rotina: onde você fica, como é o piso e se há movimentação de carga. A gente diz qual dos dois faz sentido e explica por quê."
+        rotulo="Tirar a dúvida no WhatsApp"
+        categoria="calcados"
+      />
     </>
   )
 }

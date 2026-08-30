@@ -200,6 +200,18 @@
   }
   .btn-ghost:hover { border-color: var(--color-ink); background: var(--color-paper-2); }
 
+  /* Contorno sobre superfície escura. O fantasma padrão usa texto em
+     tinta e desaparece no grafite — o que só se descobre olhando. */
+  .btn-linha {
+    background: transparent;
+    color: var(--color-paper);
+    border-color: rgba(252, 251, 249, 0.4);
+  }
+  .btn-linha:hover {
+    border-color: var(--color-paper);
+    background: rgba(252, 251, 249, 0.08);
+  }
+
   .btn-block { width: 100%; }
 
   /* --- Régua tipográfica de conteúdo ------------------------- */

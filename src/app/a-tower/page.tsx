@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Trilha, Secao } from '@/components/Blocos'
-import { BlocoCta } from '@/components/WhatsAppCta'
+import { FechamentoCta } from '@/components/WhatsAppCta'
 
 export const metadata: Metadata = {
   title: 'Nossa história: trinta anos no Ceará',
@@ -216,15 +216,13 @@ export default function ATower() {
 
       {/* A história termina em AÇÃO. História que não vira porta de entrada
           é vaidade institucional. */}
-      <Secao className="wrap pt-0">
-        <BlocoCta
-          contexto="historia"
-          secao="historia-fechamento"
-          titulo="É com essas duas pessoas que você vai falar."
-          texto="Conte o que você faz e o que precisa proteger. A resposta vem de quem trabalha com isso desde antes de 1995."
-          rotulo="Falar com a Tower"
-        />
-      </Secao>
+      <FechamentoCta
+        contexto="historia"
+        secao="historia-fechamento"
+        titulo="É com essas duas pessoas que você vai falar."
+        texto="Conte o que você faz e o que precisa proteger. A resposta vem de quem trabalha com isso desde antes de 1995."
+        rotulo="Falar com a Tower"
+      />
     </>
   )
 }
