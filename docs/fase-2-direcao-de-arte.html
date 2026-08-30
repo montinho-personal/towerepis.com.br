@@ -1,0 +1,1003 @@
+<title>Direção de Arte Tower EPI's</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+/* ============================================================
+   Este documento é construído NO sistema que ele propõe.
+   Aprovar o que você vê é aprovar a direção.
+
+   Tema único, deliberadamente: é um documento sobre as cores de
+   uma marca específica. Reinterpretá-las no tema do leitor
+   descaracterizaria a entrega. Todas as cores são pintadas
+   explicitamente para o documento se sustentar em qualquer host.
+   ============================================================ */
+:root{
+  --papel:#FCFBF9;
+  --creme:#F0EBE3;
+  --grafite-900:#16171A;
+  --grafite-800:#1F2124;
+  --grafite-700:#2C2F33;
+  --grafite-600:#3D4147;
+  --vermelho:#B4111B;
+  --vermelho-fundo:#8E0D15;
+  --vermelho-claro:#F2686E;
+  --tinta:#191A1D;
+  --tinta-2:#4A4E56;
+  --tinta-3:#6E737C;
+  --aco:#A8A29A;
+  --regua:#DED8CE;
+  --zap:#128C4A;
+  --display:'Archivo','Helvetica Neue',Arial,sans-serif;
+  --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--papel);color:var(--tinta);
+  font-family:var(--serif);font-size:17px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:var(--display);font-weight:800;letter-spacing:-.03em;line-height:1.05;text-wrap:balance;margin:0}
+p{margin:0;text-wrap:pretty}
+a{color:var(--vermelho-fundo)}
+:focus-visible{outline:3px solid var(--vermelho);outline-offset:3px}
+img,svg{display:block;max-width:100%}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+.wrap{width:100%;max-width:1080px;margin-inline:auto;padding-inline:22px}
+@media(min-width:800px){.wrap{padding-inline:48px}}
+.medida{max-width:60ch}
+
+/* Superfícies */
+.s-papel{background:var(--papel);color:var(--tinta)}
+.s-creme{background:var(--creme);color:var(--tinta)}
+.s-grafite{background:var(--grafite-800);color:var(--papel)}
+.s-grafite h1,.s-grafite h2,.s-grafite h3{color:var(--papel)}
+.s-vermelho{background:var(--vermelho);color:#fff}
+.s-vermelho h2,.s-vermelho h3{color:#fff}
+section{padding-block:clamp(48px,8vw,104px)}
+.compacta{padding-block:clamp(32px,4vw,56px)}
+
+/* Rótulo */
+.rot{font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--tinta-3);margin:0}
+.rot-v{color:var(--vermelho)}
+.s-grafite .rot{color:#9AA0A8}
+.s-grafite .rot-v{color:var(--vermelho-claro)}
+.s-vermelho .rot{color:#FFD9DB}
+
+/* O ponto — elemento proprietário */
+.ponto{display:inline-block;width:.42em;height:.42em;border-radius:50%;background:var(--vermelho);vertical-align:baseline}
+.s-grafite .ponto,.s-vermelho .ponto{background:var(--vermelho-claro)}
+.s-vermelho .ponto{background:#fff}
+
+.numeral{font-family:var(--display);font-weight:900;letter-spacing:-.05em;line-height:.82;font-variant-numeric:tabular-nums}
+.mega{font-size:clamp(4.5rem,15vw,11rem)}
+.grande{font-size:clamp(2.4rem,7vw,4.5rem)}
+
+h1{font-size:clamp(2.4rem,6.5vw,4.6rem)}
+h2{font-size:clamp(1.7rem,3.6vw,2.6rem)}
+h3{font-size:clamp(1.1rem,1.8vw,1.35rem);font-weight:700;letter-spacing:-.015em}
+
+.pilha{display:flex;flex-direction:column;gap:14px}
+.pilha-g{display:flex;flex-direction:column;gap:32px}
+.grade{display:grid;gap:1px;background:var(--regua)}
+.s-grafite .grade{background:var(--grafite-600)}
+@media(min-width:760px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}}
+.cel{background:var(--papel);padding:22px}
+.s-grafite .cel{background:var(--grafite-800)}
+.s-creme .cel{background:var(--creme)}
+
+/* Tabelas */
+.tab-rol{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:15px;min-width:520px}
+th{font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-align:left;padding:10px 14px 10px 0;border-bottom:2px solid var(--tinta);vertical-align:bottom}
+td{padding:12px 14px 12px 0;border-bottom:1px solid var(--regua);vertical-align:top}
+.s-grafite th{border-bottom-color:var(--papel);color:var(--papel)}
+.s-grafite td{border-bottom-color:var(--grafite-600)}
+td:first-child{font-weight:600}
+
+/* Amostras de cor */
+.amostras{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:1px;background:var(--regua)}
+.am{padding:18px;min-height:140px;display:flex;flex-direction:column;justify-content:flex-end;gap:3px}
+.am b{font-family:var(--display);font-size:13px;font-weight:700;letter-spacing:.02em}
+.am span{font-family:var(--display);font-size:11px;letter-spacing:.06em;opacity:.75}
+
+/* Ritmo — a barra que demonstra a proporção de superfícies */
+.ritmo{display:flex;height:56px;border:1px solid var(--regua)}
+.ritmo div{display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:10px;font-weight:700;letter-spacing:.1em}
+
+/* Lista com o ponto */
+ul.pts{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px}
+ul.pts li{position:relative;padding-left:22px}
+ul.pts li::before{content:'';position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--vermelho)}
+.s-grafite ul.pts li::before{background:var(--vermelho-claro)}
+
+.faixa-topo{border-top:2px solid var(--tinta)}
+.s-grafite .faixa-topo{border-top-color:var(--papel)}
+.cita{font-family:var(--display);font-weight:800;letter-spacing:-.025em;line-height:1.12;font-size:clamp(1.5rem,3.4vw,2.4rem)}
+.nota{font-size:14px;color:var(--tinta-3);line-height:1.6}
+.s-grafite .nota{color:#9AA0A8}
+.selo{display:inline-block;font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 10px;background:var(--vermelho);color:#fff}
+.ok{color:#1B7A45;font-weight:600}
+.nao{color:var(--vermelho-fundo);font-weight:600}
+.s-grafite .ok{color:#5FD695}.s-grafite .nao{color:var(--vermelho-claro)}
+</style>
+
+<!-- ABERTURA -->
+<header class="s-papel" style="padding-block:clamp(40px,7vw,80px) clamp(32px,5vw,56px)">
+  <div class="wrap">
+    <p class="rot rot-v">Tower EPI&rsquo;s &middot; Fase 2 &middot; Direção de arte</p>
+    <h1 style="margin-top:20px;max-width:16ch">O site está claro. Falta ele ter peso.</h1>
+    <p class="medida" style="margin-top:24px;font-size:19px;color:var(--tinta-2)">
+      A crítica está certa, e os números do próprio código confirmam. Este documento
+      propõe a evolução visual — sem tocar em estratégia, arquitetura, conteúdo ou SEO.
+      Nada foi implementado: é para aprovação.
+    </p>
+  </div>
+</header>
+
+<!-- EVIDÊNCIA -->
+<section class="s-grafite compacta">
+  <div class="wrap">
+    <p class="rot rot-v">O diagnóstico em quatro números</p>
+    <div class="grade g4" style="margin-top:26px">
+      <div class="cel">
+        <p class="numeral grande" style="color:var(--vermelho-claro)">67</p>
+        <p style="margin-top:12px;font-size:14px;line-height:1.5">seções em fundo papel</p>
+      </div>
+      <div class="cel">
+        <p class="numeral grande">6</p>
+        <p style="margin-top:12px;font-size:14px;line-height:1.5">seções em grafite</p>
+      </div>
+      <div class="cel">
+        <p class="numeral grande">20</p>
+        <p style="margin-top:12px;font-size:14px;line-height:1.5">repetições da mesma grade de cards</p>
+      </div>
+      <div class="cel">
+        <p class="numeral grande">1</p>
+        <p style="margin-top:12px;font-size:14px;line-height:1.5">uso de tipografia monumental — em cinza quase invisível</p>
+      </div>
+    </div>
+    <p class="nota" style="margin-top:22px;max-width:62ch">
+      Medido no código, não por impressão. O tamanho de texto mais usado no site
+      inteiro é 0,95rem: texto pequeno. E o azul-marinho que eu havia definido na
+      paleta nunca foi usado uma única vez — token morto.
+    </p>
+  </div>
+</section>
+
+<!-- 1-2. DIAGNÓSTICO -->
+<section class="s-papel">
+  <div class="wrap">
+    <p class="rot rot-v">01 &middot; Diagnóstico</p>
+    <h2 style="margin-top:16px;max-width:20ch">Cinco causas, não uma questão de gosto</h2>
+
+    <div class="pilha-g" style="margin-top:40px">
+      <div class="faixa-topo" style="padding-top:20px">
+        <h3>1. O branco não foi escolhido. Ele sobrou.</h3>
+        <p class="medida" style="margin-top:10px;color:var(--tinta-2)">
+          O site tem <strong>zero fotografias</strong>. Quando se tira a imagem de um
+          layout editorial, o que resta é papel. A brancura é sintoma da ausência de
+          matéria, não só de uma decisão de cor — e é a causa raiz das outras quatro.
+        </p>
+      </div>
+      <div class="faixa-topo" style="padding-top:20px">
+        <h3>2. O grafite é exceção quando deveria ser estrutura</h3>
+        <p class="medida" style="margin-top:10px;color:var(--tinta-2)">
+          Seis seções escuras contra sessenta e sete claras. O escuro aparece tão pouco
+          que não chega a formar ritmo: vira acidente de percurso.
+        </p>
+      </div>
+      <div class="faixa-topo" style="padding-top:20px">
+        <h3>3. O vermelho nunca vira superfície</h3>
+        <p class="medida" style="margin-top:10px;color:var(--tinta-2)">
+          Ele existe só como marca pequena: rótulos de 11px, bullets, o ponto do logo.
+          <strong>Uma cor de marca que só aparece a 11px nunca vira memória.</strong>
+          Ela precisa, em algum momento, ocupar campo.
+        </p>
+      </div>
+      <div class="faixa-topo" style="padding-top:20px">
+        <h3>4. A escala tipográfica não chega ao monumental</h3>
+        <p class="medida" style="margin-top:10px;color:var(--tinta-2)">
+          O H1 da Home tem 3,25rem no desktop. Isso é grande, não é monumental. O único
+          numeral realmente enorme — o &ldquo;1995&rdquo; do hero — está na cor da régua,
+          quase invisível. A escala existe no CSS e não é usada.
+        </p>
+      </div>
+      <div class="faixa-topo" style="padding-top:20px">
+        <h3>5. Todas as seções têm o mesmo compasso</h3>
+        <p class="medida" style="margin-top:10px;color:var(--tinta-2)">
+          Mesmo respiro vertical, mesmo contêiner, mesmo bloco alinhado à esquerda, vinte
+          vezes a mesma grade de cards. Mesmo com conteúdos diferentes, a página
+          <em>parece</em> uniforme. Sem compressão e sem expansão, não há ritmo.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3-5. CONCEITO -->
+<section class="s-vermelho">
+  <div class="wrap">
+    <p class="rot">02 &middot; Conceito de direção de arte</p>
+    <h2 style="margin-top:18px;max-width:18ch;font-size:clamp(2rem,5vw,3.4rem)">
+      Três superfícies e um ponto
+    </h2>
+    <p class="medida" style="margin-top:22px;font-size:19px;color:#FFE4E6">
+      Cada superfície tem uma função declarada. Não é decoração alternada: é o leitor
+      sabendo, pela cor do chão, o que aquela seção está fazendo com ele.
+    </p>
+
+    <div class="grade g4" style="margin-top:40px;background:rgba(255,255,255,.35)">
+      <div class="cel" style="background:var(--papel);color:var(--tinta)">
+        <p class="rot rot-v">Papel</p>
+        <p style="margin-top:10px;font-family:var(--display);font-weight:800;font-size:20px">Onde se lê</p>
+        <p style="margin-top:8px;font-size:14px;line-height:1.55;color:var(--tinta-2)">
+          Conteúdo, critério, comparação, artigos. A clareza que já funciona.
+        </p>
+      </div>
+      <div class="cel" style="background:var(--grafite-800);color:var(--papel)">
+        <p class="rot" style="color:var(--vermelho-claro)">Grafite</p>
+        <p style="margin-top:10px;font-family:var(--display);font-weight:800;font-size:20px">Onde se afirma</p>
+        <p style="margin-top:8px;font-size:14px;line-height:1.55;color:#B8BEC6">
+          História, números, autoridade, prova. O peso dos 30 anos.
+        </p>
+      </div>
+      <div class="cel" style="background:var(--vermelho-fundo);color:#fff">
+        <p class="rot" style="color:#FFD9DB">Vermelho</p>
+        <p style="margin-top:10px;font-family:var(--display);font-weight:800;font-size:20px">Onde se decide</p>
+        <p style="margin-top:8px;font-size:14px;line-height:1.55;color:#FFE4E6">
+          O momento de escolher. Raro, curto, e por isso impossível de ignorar.
+        </p>
+      </div>
+      <div class="cel" style="background:var(--creme);color:var(--tinta)">
+        <p class="rot">O ponto</p>
+        <p style="margin-top:10px;font-family:var(--display);font-weight:800;font-size:20px">
+          O que atravessa<span class="ponto" style="margin-left:.18em"></span>
+        </p>
+        <p style="margin-top:8px;font-size:14px;line-height:1.55;color:var(--tinta-2)">
+          O elemento proprietário. Já existe no logo — vira sistema.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s-papel">
+  <div class="wrap">
+    <p class="rot rot-v">Por que este conceito, e não outro</p>
+    <h2 style="margin-top:16px;max-width:22ch">Ele já estava na marca e no conteúdo</h2>
+
+    <div class="grade g2" style="margin-top:34px">
+      <div class="cel" style="padding:26px">
+        <h3>O ponto vem do logo</h3>
+        <p style="margin-top:10px;color:var(--tinta-2);font-size:15.5px;line-height:1.6">
+          O &ldquo;O&rdquo; de T<span class="ponto"></span>WER já é um ponto vermelho. Em
+          segurança do trabalho, um ponto de atenção é exatamente o que importa: a única
+          coisa que não se pode deixar passar. Ele vira bullet, marcador, divisor, marca
+          de registro no canto da seção, e a pontuação final de <strong>1995<span class="ponto"></span></strong>
+        </p>
+      </div>
+      <div class="cel" style="padding:26px">
+        <h3>O contraste vem do conteúdo</h3>
+        <p style="margin-top:10px;color:var(--tinta-2);font-size:15.5px;line-height:1.6">
+          O site inteiro já é construído sobre comparação: ocupacional × segurança,
+          isto/não isto, se existe/se não existe. Fazer o sistema visual ser
+          literalmente sobre contraste faz o design dizer a mesma coisa que a copy —
+          em vez de apenas hospedá-la.
+        </p>
+      </div>
+    </div>
+
+    <div style="margin-top:44px">
+      <p class="rot">Atributos visuais desejados</p>
+      <p class="cita" style="margin-top:14px;max-width:24ch">
+        Editorial na organização.<br>
+        Industrial na matéria.<br>
+        Humano nas pessoas.
+      </p>
+      <p class="nota" style="margin-top:18px;max-width:60ch">
+        <strong>Moodboard, em palavras:</strong> aço escovado e concreto. Uma placa de
+        sinalização industrial bem tipografada. O couro de uma botina em close, com a
+        costura visível. Um arquivo fotográfico de família dos anos 90, um pouco
+        desbotado. Manual técnico bem impresso. Nada de escritório, nada de gente
+        sorrindo de capacete, nada de céu azul.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 6, 12-14. COR -->
+<section class="s-creme">
+  <div class="wrap">
+    <p class="rot rot-v">03 &middot; Sistema de cor</p>
+    <h2 style="margin-top:16px">A paleta completa</h2>
+    <p class="medida" style="margin-top:16px;color:var(--tinta-2)">
+      O azul-marinho sai — nunca foi usado e o briefing pede para evitar azul
+      corporativo. Entram uma escala de grafite para superfícies e um vermelho claro
+      que resolve um problema real de contraste, explicado abaixo.
+    </p>
+
+    <div class="amostras" style="margin-top:34px">
+      <div class="am" style="background:#FCFBF9;color:#191A1D"><b>Papel</b><span>#FCFBF9</span></div>
+      <div class="am" style="background:#F0EBE3;color:#191A1D"><b>Creme</b><span>#F0EBE3</span></div>
+      <div class="am" style="background:#DED8CE;color:#191A1D"><b>Régua</b><span>#DED8CE</span></div>
+      <div class="am" style="background:#A8A29A;color:#191A1D"><b>Aço</b><span>#A8A29A</span></div>
+      <div class="am" style="background:#6E737C;color:#fff"><b>Tinta 3</b><span>#6E737C</span></div>
+      <div class="am" style="background:#4A4E56;color:#fff"><b>Tinta 2</b><span>#4A4E56</span></div>
+      <div class="am" style="background:#3D4147;color:#fff"><b>Grafite 600</b><span>#3D4147</span></div>
+      <div class="am" style="background:#2C2F33;color:#fff"><b>Grafite 700</b><span>#2C2F33</span></div>
+      <div class="am" style="background:#1F2124;color:#fff"><b>Grafite 800</b><span>#1F2124</span></div>
+      <div class="am" style="background:#16171A;color:#fff"><b>Grafite 900</b><span>#16171A</span></div>
+      <div class="am" style="background:#B4111B;color:#fff"><b>Vermelho Tower</b><span>#B4111B</span></div>
+      <div class="am" style="background:#8E0D15;color:#fff"><b>Vermelho fundo</b><span>#8E0D15</span></div>
+      <div class="am" style="background:#F2686E;color:#191A1D"><b>Vermelho claro</b><span>#F2686E</span></div>
+      <div class="am" style="background:#128C4A;color:#fff"><b>WhatsApp</b><span>#128C4A</span></div>
+    </div>
+
+    <h3 style="margin-top:48px">A regra que evita o erro mais provável</h3>
+    <p class="medida" style="margin-top:12px;color:var(--tinta-2)">
+      Calculei os contrastes. O vermelho da marca sobre grafite dá <strong>2,39:1</strong> —
+      reprovado, e de longe. É a armadilha natural deste conceito: colocar o vermelho no
+      escuro parece óbvio e é ilegível.
+    </p>
+
+    <div class="tab-rol" style="margin-top:22px">
+      <table>
+        <thead><tr><th>Combinação</th><th>Contraste</th><th>Uso</th></tr></thead>
+        <tbody>
+          <tr><td>Tinta sobre papel</td><td>16,3:1</td><td class="ok">Texto corrido</td></tr>
+          <tr><td>Papel sobre grafite&nbsp;800</td><td>16,5:1</td><td class="ok">Texto em seção escura</td></tr>
+          <tr><td>Tinta&nbsp;2 sobre papel</td><td>8,1:1</td><td class="ok">Texto secundário</td></tr>
+          <tr><td>Branco sobre vermelho</td><td>6,8:1</td><td class="ok">Texto em faixa vermelha</td></tr>
+          <tr><td>Vermelho sobre papel</td><td>6,8:1</td><td class="ok">Rótulos e links</td></tr>
+          <tr><td>Vermelho claro sobre grafite</td><td>5,2:1</td><td class="ok">Rótulos no escuro</td></tr>
+          <tr><td>Tinta&nbsp;3 sobre papel</td><td>4,6:1</td><td class="ok">Texto de apoio</td></tr>
+          <tr><td><strong>Vermelho sobre grafite</strong></td><td><strong>2,4:1</strong></td><td class="nao">Nunca como texto</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="margin-top:34px" class="grade g3">
+      <div class="cel" style="padding:24px">
+        <p class="rot rot-v">Regra do vermelho</p>
+        <ul class="pts" style="margin-top:14px;font-size:15px;color:var(--tinta-2)">
+          <li>No máximo <strong>uma faixa vermelha por página</strong>.</li>
+          <li>Sobre grafite: só como campo ou elemento gráfico grande. Nunca texto.</li>
+          <li>Sobre claro: livre para rótulo, link, numeral e divisor.</li>
+          <li>Nunca em botão de WhatsApp — verde é semântico.</li>
+        </ul>
+      </div>
+      <div class="cel" style="padding:24px">
+        <p class="rot rot-v">Regra do grafite</p>
+        <ul class="pts" style="margin-top:14px;font-size:15px;color:var(--tinta-2)">
+          <li>Reservado a história, números, autoridade e fechamento.</li>
+          <li>Sangra de borda a borda, sempre. Grafite em caixinha vira card.</li>
+          <li>Rótulos nele usam vermelho claro, não o vermelho da marca.</li>
+          <li>Duas faixas escuras nunca se encostam.</li>
+        </ul>
+      </div>
+      <div class="cel" style="padding:24px">
+        <p class="rot rot-v">Regra das áreas claras</p>
+        <ul class="pts" style="margin-top:14px;font-size:15px;color:var(--tinta-2)">
+          <li>Papel para leitura longa; creme para separar sem escurecer.</li>
+          <li>Máximo de <strong>duas seções claras seguidas</strong> sem quebra.</li>
+          <li>O respiro continua — o que muda é ele deixar de ser a única textura.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="margin-top:48px">A proporção alvo</h3>
+    <p class="nota" style="margin-top:10px">Hoje, à esquerda. Proposto, à direita.</p>
+    <div style="margin-top:16px;display:grid;gap:20px">
+      <div>
+        <p class="rot" style="margin-bottom:8px">Hoje</p>
+        <div class="ritmo">
+          <div style="flex:85;background:var(--papel);color:var(--tinta-3)">PAPEL 85%</div>
+          <div style="flex:10;background:var(--creme);color:var(--tinta-3)">10%</div>
+          <div style="flex:5;background:var(--grafite-800);color:#fff">5%</div>
+        </div>
+      </div>
+      <div>
+        <p class="rot rot-v" style="margin-bottom:8px">Proposto</p>
+        <div class="ritmo">
+          <div style="flex:48;background:var(--papel);color:var(--tinta-3)">PAPEL 48%</div>
+          <div style="flex:20;background:var(--creme);color:var(--tinta-3)">CREME 20%</div>
+          <div style="flex:26;background:var(--grafite-800);color:#fff">GRAFITE 26%</div>
+          <div style="flex:6;background:var(--vermelho);color:#fff">6%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7, 15. TIPOGRAFIA -->
+<section class="s-papel">
+  <div class="wrap">
+    <p class="rot rot-v">04 &middot; Sistema tipográfico</p>
+    <h2 style="margin-top:16px">As famílias ficam. A escala muda.</h2>
+    <p class="medida" style="margin-top:16px;color:var(--tinta-2)">
+      Archivo e Source Serif 4 continuam — a grotesca dá o peso industrial, a serifada dá
+      a leitura editorial, e a escolha é biograficamente verdadeira: o Helano é jornalista
+      de formação. O que muda é peso e escala. Entram os pesos 800 e 900, e a escala passa
+      a chegar ao monumental.
+    </p>
+
+    <div style="margin-top:44px" class="pilha-g">
+      <div class="faixa-topo" style="padding-top:18px">
+        <p class="rot">Mega &middot; Archivo 900 &middot; clamp(4,5rem &rarr; 11rem)</p>
+        <p class="numeral mega" style="margin-top:12px">1995<span class="ponto" style="width:.14em;height:.14em;vertical-align:baseline"></span></p>
+        <p class="nota" style="margin-top:14px">Datas, marcos, aberturas de seção. Escala por viewport — no celular continua monumental.</p>
+      </div>
+      <div class="faixa-topo" style="padding-top:18px">
+        <p class="rot">H1 &middot; Archivo 800 &middot; clamp(2,4rem &rarr; 4,6rem)</p>
+        <p style="font-family:var(--display);font-weight:800;letter-spacing:-.03em;line-height:1.05;font-size:clamp(2.4rem,6.5vw,4.6rem);margin-top:12px;max-width:15ch">O melhor EPI é o que a pessoa usa o dia inteiro.</p>
+      </div>
+      <div class="faixa-topo" style="padding-top:18px">
+        <p class="rot">H2 &middot; Archivo 800 &middot; clamp(1,7rem &rarr; 2,6rem)</p>
+        <h2 style="margin-top:12px">Já fomos grandes. Hoje somos dois.</h2>
+      </div>
+      <div class="faixa-topo" style="padding-top:18px">
+        <p class="rot">Corpo &middot; Source Serif 4 &middot; 17px / 1,65</p>
+        <p style="margin-top:12px;max-width:60ch">
+          Cozinha profissional junta três coisas que quase nenhum outro ambiente junta:
+          piso molhado com gordura, respingo quente e jornada longa em pé.
+        </p>
+      </div>
+      <div class="faixa-topo" style="padding-top:18px">
+        <p class="rot">Rótulo &middot; Archivo 700 &middot; 11px &middot; tracking .18em</p>
+        <p class="rot rot-v" style="margin-top:12px">Principal parceria hoje</p>
+      </div>
+    </div>
+
+    <div style="margin-top:52px">
+      <p class="rot rot-v">Números e datas como sistema</p>
+      <h3 style="margin-top:12px">&ldquo;Desde 1995&rdquo; deixa de ser frase e vira elemento</h3>
+      <div class="grade g3" style="margin-top:22px">
+        <div class="cel" style="padding:26px">
+          <p class="numeral" style="font-size:2.6rem">1995<span style="color:var(--vermelho)"> &rarr; </span>2026</p>
+          <p class="nota" style="margin-top:12px">Divisor de seção. O intervalo faz o trabalho sozinho.</p>
+        </div>
+        <div class="cel" style="padding:26px">
+          <p class="numeral" style="font-size:3.4rem">30<span style="font-size:.5em;color:var(--vermelho)">+</span></p>
+          <p class="nota" style="margin-top:12px">Faixa de autoridade. Numeral em escala, rótulo pequeno embaixo.</p>
+        </div>
+        <div class="cel" style="padding:26px">
+          <p style="font-family:var(--display);font-weight:800;font-size:1.05rem;letter-spacing:.02em;line-height:1.4">
+            TOWER EPI&rsquo;S<br>FORTALEZA — CE<br><span style="color:var(--vermelho)">DESDE 1995</span>
+          </p>
+          <p class="nota" style="margin-top:12px">Assinatura de marca. Rodapé, aberturas, fim de página.</p>
+        </div>
+      </div>
+      <p class="nota" style="margin-top:20px;max-width:62ch">
+        <strong>Restrição importante:</strong> a faixa de autoridade terá poucos números,
+        porque só existem quatro verdadeiros — 1995, 30+ anos, 2 sócios e o prêmio 3M.
+        Melhor quatro números grandes e verdadeiros do que oito inventados. Continua
+        valendo a regra do projeto: nada de métrica fabricada.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 8-9. GRID E ESPAÇO -->
+<section class="s-creme">
+  <div class="wrap">
+    <p class="rot rot-v">05 &middot; Grid, espaço e ritmo vertical</p>
+    <h2 style="margin-top:16px">O que resolve a monotonia não é cor. É compasso.</h2>
+    <div class="grade g2" style="margin-top:32px">
+      <div class="cel" style="padding:26px">
+        <h3>Grid</h3>
+        <ul class="pts" style="margin-top:14px;font-size:15px;color:var(--tinta-2)">
+          <li>Contêiner de 78rem mantido; medida de leitura de 38rem mantida.</li>
+          <li>Entra um grid de <strong>12 colunas</strong> para composições assimétricas.</li>
+          <li>Entram seções <strong>full-bleed</strong>, que sangram de borda a borda.</li>
+          <li>Nem toda seção começa na coluna 1: deslocamento vira recurso.</li>
+        </ul>
+      </div>
+      <div class="cel" style="padding:26px">
+        <h3>Espaço</h3>
+        <ul class="pts" style="margin-top:14px;font-size:15px;color:var(--tinta-2)">
+          <li>Três compassos, não um: <strong>compacto</strong>, <strong>normal</strong> e <strong>amplo</strong>.</li>
+          <li>Faixa de autoridade é compacta e densa. História é ampla.</li>
+          <li>Compressão antes de expansão: é o que cria a sensação de respiro.</li>
+          <li>A escala de espaçamento fixa continua — sem valor avulso.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. FOTOGRAFIA -->
+<section class="s-grafite">
+  <div class="wrap">
+    <p class="rot rot-v">06 &middot; Sistema de fotografia</p>
+    <h2 style="margin-top:16px;max-width:20ch">O ponto mais frágil do plano, dito na cara</h2>
+    <p class="medida" style="margin-top:18px;color:#C7CDD4;font-size:18px">
+      Boa parte do impacto que você quer depende de fotos que <strong>ainda não existem</strong>.
+      Por isso a regra que organiza esta fase inteira:
+    </p>
+    <p class="cita" style="margin-top:24px;max-width:24ch;color:var(--papel)">
+      O sistema tem que ficar forte <span style="color:var(--vermelho-claro)">sem</span> fotografia — e melhor com ela.
+    </p>
+    <p class="medida" style="margin-top:20px;color:#C7CDD4">
+      Se eu desenhar dependendo de imagem, entregamos caixas cinzas vazias, que é pior do
+      que o site de hoje. Então cor, escala e superfície carregam o peso agora; a
+      fotografia entra em espaços já preparados, e cada foto que chega melhora a página
+      sem exigir redesenho.
+    </p>
+
+    <div class="grade g3" style="margin-top:36px">
+      <div class="cel" style="padding:24px">
+        <p class="rot rot-v">Tratamento</p>
+        <ul class="pts" style="margin-top:14px;font-size:15px;color:#C7CDD4">
+          <li>Documental. Sem filtro, sem pose, sem sorriso de catálogo.</li>
+          <li>Histórica entra <strong>como é</strong>: desbotada, tremida, com marca de dobra. O defeito é a prova.</li>
+          <li>Produto sobre fundo neutro ou grafite, luz dura, sombra definida.</li>
+          <li>Zero banco de imagens. Uma única foto genérica destrói a promessa do site.</li>
+        </ul>
+      </div>
+      <div class="cel" style="padding:24px">
+        <p class="rot rot-v">Escala</p>
+        <ul class="pts" style="margin-top:14px;font-size:15px;color:#C7CDD4">
+          <li>Retrato dos sócios: meia tela, não miniatura em card.</li>
+          <li>Primeira sede: sangrando, com &ldquo;1995&rdquo; monumental ao lado.</li>
+          <li>Produto: <strong>um</strong> calçado ocupando boa parte da tela, recortado.</li>
+          <li>Close de solado e costura como textura de fundo de seção.</li>
+        </ul>
+      </div>
+      <div class="cel" style="padding:24px">
+        <p class="rot rot-v">Enquanto não chegam</p>
+        <ul class="pts" style="margin-top:14px;font-size:15px;color:#C7CDD4">
+          <li>Grafite e vermelho ocupam os espaços previstos para imagem.</li>
+          <li>Tipografia monumental faz o papel de imagem.</li>
+          <li>Nenhum espaço reservado fica visivelmente vazio.</li>
+          <li>Trocar por foto depois é substituição, não redesenho.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. SISTEMA GRÁFICO -->
+<section class="s-papel">
+  <div class="wrap">
+    <p class="rot rot-v">07 &middot; Sistema gráfico proprietário</p>
+    <h2 style="margin-top:16px;max-width:24ch">Sem o logo, ainda tem que parecer Tower</h2>
+    <div class="grade g4" style="margin-top:32px">
+      <div class="cel" style="padding:24px">
+        <p style="font-size:2.4rem;line-height:1"><span class="ponto" style="width:.5em;height:.5em"></span></p>
+        <h3 style="margin-top:14px">O ponto</h3>
+        <p class="nota" style="margin-top:8px">Bullet, marcador de FAQ, divisor, pontuação de data, marca de registro no canto.</p>
+      </div>
+      <div class="cel" style="padding:24px">
+        <div style="height:38px;display:flex;align-items:flex-end;gap:4px">
+          <span style="display:block;width:100%;height:3px;background:var(--tinta)"></span>
+        </div>
+        <h3 style="margin-top:14px">A régua pesada</h3>
+        <p class="nota" style="margin-top:8px">Filete de 2–3px em tinta abrindo blocos. Já existe e passa a ser sistemático.</p>
+      </div>
+      <div class="cel" style="padding:24px">
+        <p class="selo">Desde 1995</p>
+        <h3 style="margin-top:14px">A etiqueta</h3>
+        <p class="nota" style="margin-top:8px">Retângulo vermelho, caixa alta, tracking largo. Nunca arredondada.</p>
+      </div>
+      <div class="cel" style="padding:24px">
+        <p class="numeral" style="font-size:2.2rem;color:var(--regua)">01</p>
+        <h3 style="margin-top:14px">O numeral fantasma</h3>
+        <p class="nota" style="margin-top:8px">Numeração grande em cor de régua, atrás do conteúdo. Só onde existe sequência real.</p>
+      </div>
+    </div>
+    <p class="nota" style="margin-top:22px;max-width:62ch">
+      Quatro elementos, e só. Um sistema proprietário se reconhece por repetição
+      disciplinada, não por variedade — o excesso é o que faz parecer biblioteca genérica.
+    </p>
+  </div>
+</section>
+
+<!-- 16-17. HEADER E FOOTER -->
+<section class="s-creme">
+  <div class="wrap">
+    <p class="rot rot-v">08 &middot; Header e footer</p>
+    <div class="grade g2" style="margin-top:26px">
+      <div class="cel" style="padding:26px">
+        <h3>Header</h3>
+        <p style="margin-top:10px;color:var(--tinta-2);font-size:15.5px;line-height:1.6">
+          Muda pouco, e de propósito: a navegação foi reorganizada há pouco e está
+          funcionando. Ajustes:
+        </p>
+        <ul class="pts" style="margin-top:14px;font-size:15px;color:var(--tinta-2)">
+          <li>Logo maior, com mais respiro à esquerda.</li>
+          <li>Filete inferior vira <strong>2px em tinta</strong> em vez de hairline cinza.</li>
+          <li>Ao rolar, compacta a altura — sem esconder e sem reaparecer saltando.</li>
+          <li><strong>Pedir orçamento</strong> segue em vermelho; WhatsApp segue no flutuante.</li>
+        </ul>
+      </div>
+      <div class="cel" style="padding:26px">
+        <h3>Footer</h3>
+        <p style="margin-top:10px;color:var(--tinta-2);font-size:15.5px;line-height:1.6">
+          Já é grafite. O que falta é ele fechar a marca em vez de listar links.
+        </p>
+        <ul class="pts" style="margin-top:14px;font-size:15px;color:var(--tinta-2)">
+          <li><strong>TOWER EPI&rsquo;S / FORTALEZA — CE / DESDE 1995</strong> em escala grande, no topo do rodapé.</li>
+          <li>O &ldquo;1995&rdquo; sai de 15% de opacidade e ganha presença real.</li>
+          <li>Navegação em colunas mantida — é boa para SEO local e para o usuário.</li>
+          <li>Fecha com a assinatura, não com o aviso legal.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 18. HOME -->
+<section class="s-papel">
+  <div class="wrap">
+    <p class="rot rot-v">09 &middot; Home, seção a seção</p>
+    <h2 style="margin-top:16px">O ritmo proposto</h2>
+    <p class="medida" style="margin-top:16px;color:var(--tinta-2)">
+      A ordem estratégica não muda — ela foi testada e funciona. Muda a superfície, a
+      escala e a função psicológica de cada bloco.
+    </p>
+    <div class="tab-rol" style="margin-top:28px">
+      <table>
+        <thead><tr><th>Seção</th><th>Superfície</th><th>Função</th><th>O que muda</th></tr></thead>
+        <tbody>
+          <tr><td>Hero</td><td>Papel</td><td>Silêncio</td><td>H1 monumental. &ldquo;1995&rdquo; deixa de ser cinza invisível e vira presença</td></tr>
+          <tr><td>Autoridade</td><td><strong>Grafite</strong></td><td>Impacto</td><td>Quatro números verdadeiros em escala grande. Compacta e densa</td></tr>
+          <tr><td>Bifurcação</td><td>Papel</td><td>Orientação</td><td>Dois blocos assimétricos, não dois cards iguais</td></tr>
+          <tr><td>Categorias</td><td>Creme</td><td>Respiro</td><td>Blocos maiores, menos cards, espaço para foto</td></tr>
+          <tr><td>Calçados / Bompel</td><td><strong>Vermelho</strong></td><td>Energia</td><td>A única faixa vermelha da página. Produto dominante</td></tr>
+          <tr><td>A dúvida comum</td><td>Papel</td><td>Pensar</td><td>A comparação já é o gráfico — só ganha escala</td></tr>
+          <tr><td>Por profissão</td><td>Creme</td><td>Reconhecimento</td><td>Lista editorial em vez de grade de cards</td></tr>
+          <tr><td>História</td><td><strong>Grafite</strong></td><td>Sentir</td><td>&ldquo;1995&rdquo; monumental + foto documental sangrando</td></tr>
+          <tr><td>Helano e Cristina</td><td>Papel</td><td>Humano</td><td>Retrato em meia tela. É o bloco que mais ganha com foto</td></tr>
+          <tr><td>Conhecimento</td><td>Papel</td><td>Autoridade</td><td>Tratamento editorial, tipo índice de revista</td></tr>
+          <tr><td>Fechamento</td><td><strong>Grafite</strong></td><td>Ação</td><td>O verde do WhatsApp contra o escuro. Impossível de perder</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="nota" style="margin-top:20px;max-width:64ch">
+      Repare que nenhuma seção foi criada ou removida, e a ordem é a mesma. O ganho vem
+      de alternância e escala — não de conteúdo novo.
+    </p>
+  </div>
+</section>
+
+<!-- 19. HISTÓRIA -->
+<section class="s-grafite">
+  <div class="wrap">
+    <p class="rot rot-v">10 &middot; Nossa História</p>
+    <h2 style="margin-top:16px">A página que deve ficar na memória</h2>
+    <p class="medida" style="margin-top:18px;color:#C7CDD4">
+      Hoje é uma linha do tempo bem escrita, em fundo claro, com todos os marcos no mesmo
+      peso. A proposta é dar <strong>materialidade</strong>: cada marco vira um momento
+      editorial com respiro próprio, alternando superfície.
+    </p>
+
+    <div style="margin-top:44px;border-top:2px solid var(--papel);padding-top:26px">
+      <p class="numeral mega" style="color:var(--vermelho-claro)">1995</p>
+      <p style="margin-top:22px;font-family:var(--display);font-weight:800;font-size:clamp(1.3rem,3vw,2rem);line-height:1.2;max-width:20ch">
+        Montese. Fortaleza.<br>
+        Estoque embaixo.<br>
+        Escritório em cima.<br>
+        <span style="color:var(--vermelho-claro)">Duas pessoas.</span>
+      </p>
+      <p class="nota" style="margin-top:20px;max-width:56ch">
+        Exemplo do tratamento: a data em escala monumental, o fato em frases curtas
+        quebradas como verso, e o espaço fazendo o silêncio. Ao lado disso entraria a foto
+        da primeira sede, sangrando pela borda.
+      </p>
+    </div>
+
+    <div class="grade g2" style="margin-top:48px;background:var(--grafite-600)">
+      <div class="cel" style="padding:26px">
+        <p class="rot rot-v">O arco em três atos</p>
+        <ul class="pts" style="margin-top:14px;font-size:15px;color:#C7CDD4">
+          <li><strong>1994–1995</strong> — o convite da 3M e o começo. Grafite.</li>
+          <li><strong>2003–2016</strong> — a empresa cresce. Papel, mais respiro, fotos de feiras e eventos.</li>
+          <li><strong>2018–hoje</strong> — volta a ser dois. Grafite de novo, fechando o arco.</li>
+        </ul>
+      </div>
+      <div class="cel" style="padding:26px">
+        <p class="rot rot-v">A frase central</p>
+        <p class="cita" style="margin-top:14px;color:var(--papel)">
+          &ldquo;Para muita gente, a Tower é uma empresa de EPIs. Para nós, é uma história de vida.&rdquo;
+        </p>
+        <p class="nota" style="margin-top:14px">
+          Ocupa uma tela inteira, sozinha, entre dois blocos. Sem foto, sem ornamento.
+          O silêncio ao redor é o que dá o peso.
+        </p>
+      </div>
+    </div>
+
+    <div style="margin-top:40px;border-left:4px solid var(--vermelho-claro);padding-left:22px">
+      <p class="rot rot-v">Onde eu vou segurar a mão</p>
+      <p style="margin-top:10px;color:#C7CDD4;max-width:60ch">
+        Você mesmo pediu para não romantizar, e concordo. Estamos falando de segurança do
+        trabalho: a emoção precisa <strong>aumentar a confiança</strong>, não substituir o
+        profissionalismo. Na prática, isso significa não usar os sacrifícios pessoais da
+        família como material de copy, e manter a proporção em autoridade primeiro,
+        humanidade depois — nunca o contrário.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 20-23. DEMAIS PÁGINAS E CTAs -->
+<section class="s-papel">
+  <div class="wrap">
+    <p class="rot rot-v">11 &middot; Demais páginas</p>
+    <div class="grade g2" style="margin-top:26px">
+      <div class="cel" style="padding:26px">
+        <h3>Páginas comerciais e de profissão</h3>
+        <ul class="pts" style="margin-top:14px;font-size:15px;color:var(--tinta-2)">
+          <li>Abertura em grafite com o nome da profissão em escala.</li>
+          <li>&ldquo;O que observar&rdquo; ganha numeral fantasma — ali <em>existe</em> sequência real.</li>
+          <li>Produto grande substitui parte dos cards.</li>
+          <li>Uma faixa escura no meio quebra a leitura longa.</li>
+        </ul>
+      </div>
+      <div class="cel" style="padding:26px">
+        <h3>Para equipes</h3>
+        <ul class="pts" style="margin-top:14px;font-size:15px;color:var(--tinta-2)">
+          <li>Mais grafite que o resto do site: estrutura é o que o comprador B2B procura.</li>
+          <li>Grid mais rígido; etapas do atendimento numeradas em escala.</li>
+          <li>Fotografia industrial, quando houver.</li>
+          <li>Objetividade — nada de linguagem de consultoria.</li>
+        </ul>
+      </div>
+      <div class="cel" style="padding:26px">
+        <h3>Conhecimento</h3>
+        <ul class="pts" style="margin-top:14px;font-size:15px;color:var(--tinta-2)">
+          <li>Índice tratado como sumário de revista, não como grade de cards.</li>
+          <li>Artigo com entrada editorial: rótulo, título grande, linha fina.</li>
+          <li>Assinatura do Helano ganha peso — é o ativo de autoridade.</li>
+        </ul>
+      </div>
+      <div class="cel" style="padding:26px">
+        <h3>CTAs</h3>
+        <ul class="pts" style="margin-top:14px;font-size:15px;color:var(--tinta-2)">
+          <li>Verde continua exclusivo do WhatsApp — e passa a chamar mais atenção justamente por aparecer sobre grafite.</li>
+          <li><strong>Pedir orçamento</strong> em vermelho; conversa em verde. Duas ações, duas cores, sem competir.</li>
+          <li>Segue proibido &ldquo;fale conosco&rdquo; genérico: todo CTA carrega contexto.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 24-25. COMPORTAMENTO -->
+<section class="s-creme">
+  <div class="wrap">
+    <p class="rot rot-v">12 &middot; Celular e desktop</p>
+    <h2 style="margin-top:16px;max-width:26ch">No celular a direção de arte não pode encolher</h2>
+    <div class="grade g2" style="margin-top:30px">
+      <div class="cel" style="padding:26px">
+        <h3>Celular</h3>
+        <ul class="pts" style="margin-top:14px;font-size:15px;color:var(--tinta-2)">
+          <li>Toda escala grande usa <code style="font-family:var(--display);font-size:.9em">clamp()</code> por viewport — monumental continua monumental.</li>
+          <li>A alternância de superfícies é <strong>mais importante</strong> no celular: sem ela, é rolagem infinita de branco.</li>
+          <li>Faixas escuras sangram até a borda, sem margem lateral.</li>
+          <li>Foto de produto ocupa a largura inteira.</li>
+          <li>Botão flutuante do WhatsApp permanece.</li>
+        </ul>
+      </div>
+      <div class="cel" style="padding:26px">
+        <h3>Desktop</h3>
+        <ul class="pts" style="margin-top:14px;font-size:15px;color:var(--tinta-2)">
+          <li>Assimetria e deslocamento de colunas passam a ser usados.</li>
+          <li>Texto e imagem convivem lado a lado com proporções desiguais.</li>
+          <li>Largura de leitura continua limitada a 38rem, mesmo em tela larga.</li>
+          <li>Faixas sangram; conteúdo permanece no contêiner.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 26-28. ESCOPO -->
+<section class="s-papel">
+  <div class="wrap">
+    <p class="rot rot-v">13 &middot; Escopo</p>
+    <h2 style="margin-top:16px">O que fica, o que muda, o que sai</h2>
+    <div class="grade g3" style="margin-top:30px">
+      <div class="cel" style="padding:26px">
+        <p class="selo" style="background:var(--tinta)">Preservar</p>
+        <ul class="pts" style="margin-top:16px;font-size:15px;color:var(--tinta-2)">
+          <li>Toda a estratégia, arquitetura e URLs.</li>
+          <li>Toda a copy e todo o SEO: H1, headings, schema, canonicals, breadcrumbs.</li>
+          <li>Archivo + Source Serif 4.</li>
+          <li>Navegação recém-reorganizada.</li>
+          <li>Sistema de CTA com contexto e o construtor de orçamento.</li>
+          <li>FAQ em acordeão nativo.</li>
+          <li>Zero JavaScript além do necessário.</li>
+        </ul>
+      </div>
+      <div class="cel" style="padding:26px">
+        <p class="selo">Alterar</p>
+        <ul class="pts" style="margin-top:16px;font-size:15px;color:var(--tinta-2)">
+          <li>Proporção de superfícies: de 85/10/5 para 48/20/26/6.</li>
+          <li>Escala tipográfica, com pesos 800 e 900 e faixa monumental.</li>
+          <li>Ritmo vertical: três compassos em vez de um.</li>
+          <li>Header e footer ganham presença de marca.</li>
+          <li>Grade de cards vira composição editorial na maioria dos usos.</li>
+        </ul>
+      </div>
+      <div class="cel" style="padding:26px">
+        <p class="selo" style="background:var(--tinta-3)">Remover</p>
+        <ul class="pts" style="margin-top:16px;font-size:15px;color:var(--tinta-2)">
+          <li>O token de azul-marinho — morto desde o primeiro dia.</li>
+          <li>Numerais decorativos em cinza quase invisível.</li>
+          <li>Uso da grade de cards como resposta padrão para tudo.</li>
+          <li>Nada de conteúdo é removido.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 29. RISCOS -->
+<section class="s-grafite">
+  <div class="wrap">
+    <p class="rot rot-v">14 &middot; Riscos</p>
+    <h2 style="margin-top:16px">O que pode dar errado, e como evito</h2>
+    <div class="tab-rol" style="margin-top:26px">
+      <table>
+        <thead><tr><th>Risco</th><th>Como se manifesta</th><th>Mitigação</th></tr></thead>
+        <tbody>
+          <tr><td>Contraste</td><td>Vermelho sobre grafite dá 2,4:1 e fica ilegível</td><td>Regra escrita: vermelho no escuro só como campo. Rótulo usa vermelho claro. QA verifica</td></tr>
+          <tr><td>Performance</td><td>Foto sangrando destrói o LCP no 4G</td><td>AVIF/WebP, <code>srcset</code>, dimensões declaradas, lazy exceto no LCP. Meta mantida: LCP abaixo de 2s</td></tr>
+          <tr><td>CLS</td><td>Imagem sem dimensão empurra o conteúdo</td><td>Proporção declarada em toda imagem. QA já mede isso</td></tr>
+          <tr><td>Texto sobre imagem</td><td>Legibilidade cai e o SEO do bloco se perde</td><td>Só com camada sólida e contraste verificado. Nunca em texto longo</td></tr>
+          <tr><td>SEO</td><td>Escala monumental empurra conteúdo para baixo da dobra</td><td>Nenhum H1, heading, texto ou link muda. Escala não altera semântica</td></tr>
+          <tr><td>Acessibilidade</td><td>Numeral decorativo lido por leitor de tela</td><td><code>aria-hidden</code> em todo elemento decorativo, como já é feito</td></tr>
+          <tr><td>Exagero</td><td>O site vira &ldquo;colorido&rdquo; em vez de ter peso</td><td>Uma faixa vermelha por página. Duas escuras nunca se encostam</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 30. PLANO -->
+<section class="s-papel">
+  <div class="wrap">
+    <p class="rot rot-v">15 &middot; Plano de implementação</p>
+    <h2 style="margin-top:16px">Quatro etapas, em ordem de risco</h2>
+    <p class="medida" style="margin-top:16px;color:var(--tinta-2)">
+      Cada etapa é publicável sozinha. Se você quiser parar depois da segunda, o site já
+      terá mudado de patamar.
+    </p>
+    <div class="pilha-g" style="margin-top:34px">
+      <div class="faixa-topo" style="padding-top:18px">
+        <p class="rot">Etapa 1 &middot; risco baixo</p>
+        <h3 style="margin-top:8px">Fundação invisível</h3>
+        <p class="medida" style="margin-top:8px;color:var(--tinta-2)">
+          Tokens de cor novos, azul removido, escala tipográfica estendida, três compassos
+          de espaçamento. Nada muda de aparência ainda — é a base para o resto.
+          <strong>Também fecho aqui o favicon e a imagem de compartilhamento</strong>, que
+          hoje não existem e prejudicam todo link enviado no WhatsApp.
+        </p>
+      </div>
+      <div class="faixa-topo" style="padding-top:18px">
+        <p class="rot">Etapa 2 &middot; onde está a maior parte do ganho</p>
+        <h3 style="margin-top:8px">Ritmo e escala na Home e na História</h3>
+        <p class="medida" style="margin-top:8px;color:var(--tinta-2)">
+          Faixas de superfície, tipografia monumental, faixa de autoridade, header e
+          footer. É a etapa que resolve a queixa central.
+        </p>
+      </div>
+      <div class="faixa-topo" style="padding-top:18px">
+        <p class="rot">Etapa 3</p>
+        <h3 style="margin-top:8px">Páginas internas e fim do domínio dos cards</h3>
+        <p class="medida" style="margin-top:8px;color:var(--tinta-2)">
+          Profissões, calçados, equipes e blog recebem o sistema. A grade de cards passa a
+          ser uma opção entre várias, e não a resposta padrão.
+        </p>
+      </div>
+      <div class="faixa-topo" style="padding-top:18px">
+        <p class="rot">Etapa 4 &middot; depende de vocês</p>
+        <h3 style="margin-top:8px">Fotografia</h3>
+        <p class="medida" style="margin-top:8px;color:var(--tinta-2)">
+          Substituição nos espaços já preparados. Prioridade: Helano e Cristina, a primeira
+          sede em 1995, logotipos antigos, produto. Não é redesenho — é troca.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANTES → DEPOIS -->
+<section class="s-creme">
+  <div class="wrap">
+    <p class="rot rot-v">16 &middot; Antes &rarr; Depois</p>
+    <h2 style="margin-top:16px">Como a percepção muda</h2>
+    <div class="tab-rol" style="margin-top:26px">
+      <table>
+        <thead><tr><th>Nos primeiros segundos</th><th>Hoje</th><th>Depois</th></tr></thead>
+        <tbody>
+          <tr><td>Primeira impressão</td><td>&ldquo;Site organizado e limpo.&rdquo;</td><td>&ldquo;Essa empresa tem história.&rdquo;</td></tr>
+          <tr><td>Idade percebida</td><td>Indefinida. Poderia ter aberto ano passado</td><td>Décadas. O 1995 é a primeira coisa que pesa</td></tr>
+          <tr><td>Memória de marca</td><td>Baixa. Tirando o logo, poderia ser qualquer empresa</td><td>O ponto, o vermelho e o grafite se reconhecem sem logo</td></tr>
+          <tr><td>Autoridade</td><td>Vem do texto, se a pessoa ler</td><td>Vem antes da leitura, pela estrutura e pela escala</td></tr>
+          <tr><td>Percepção de porte</td><td>Discreto a ponto de parecer pequeno</td><td>Sólido — sem fingir ser maior do que é</td></tr>
+          <tr><td>Rolagem</td><td>Branco, branco, branco</td><td>Silêncio, impacto, respiro, história, ação</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="margin-top:40px">
+      <p class="rot rot-v">Instagram — o que vem, o que muda, o que fica para trás</p>
+      <div class="grade g3" style="margin-top:18px">
+        <div class="cel" style="padding:22px">
+          <p style="font-family:var(--display);font-weight:800;font-size:15px;letter-spacing:.06em">MANTER</p>
+          <ul class="pts" style="margin-top:12px;font-size:14.5px;color:var(--tinta-2)">
+            <li>O vermelho — é o reconhecimento da marca</li>
+            <li>O ponto no lugar do O</li>
+            <li>Presença de preto e do creme</li>
+            <li>Destacar em vermelho a palavra que importa</li>
+            <li>Produto na mão, em close</li>
+          </ul>
+        </div>
+        <div class="cel" style="padding:22px">
+          <p style="font-family:var(--display);font-weight:800;font-size:15px;letter-spacing:.06em">EVOLUIR</p>
+          <ul class="pts" style="margin-top:12px;font-size:14.5px;color:var(--tinta-2)">
+            <li>Vermelho de degradê para chapado</li>
+            <li>Preto vira escala de grafite com função</li>
+            <li>Fontes variadas viram uma escala só</li>
+            <li>Foto de produto ganha padrão de luz e fundo</li>
+          </ul>
+        </div>
+        <div class="cel" style="padding:22px">
+          <p style="font-family:var(--display);font-weight:800;font-size:15px;letter-spacing:.06em">ABANDONAR</p>
+          <ul class="pts" style="margin-top:12px;font-size:14.5px;color:var(--tinta-2)">
+            <li>Formas diagonais e blobs</li>
+            <li>Degradês</li>
+            <li>Sombras e contornos decorativos</li>
+            <li>Excesso de elementos por peça</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FECHAMENTO -->
+<footer class="s-grafite" style="padding-block:clamp(56px,9vw,110px)">
+  <div class="wrap">
+    <p class="rot rot-v">O teste de percepção</p>
+    <div class="grade g2" style="margin-top:24px;background:var(--grafite-600)">
+      <div class="cel" style="padding:24px">
+        <p style="font-size:15.5px;color:#C7CDD4;line-height:1.6">
+          <strong style="color:var(--papel)">Sem os textos, ainda parece uma empresa de 30 anos?</strong><br>
+          Sim — a faixa de autoridade em grafite, o 1995 monumental e a densidade das
+          seções escuras funcionam sem uma palavra.
+        </p>
+      </div>
+      <div class="cel" style="padding:24px">
+        <p style="font-size:15.5px;color:#C7CDD4;line-height:1.6">
+          <strong style="color:var(--papel)">Sem o logo, ainda existe identidade?</strong><br>
+          Sim — o ponto vermelho, a régua pesada, a etiqueta e a escala dos numerais são
+          reconhecíveis sozinhos. É o que hoje falta.
+        </p>
+      </div>
+    </div>
+
+    <p style="margin-top:52px;font-family:var(--display);font-weight:800;letter-spacing:-.03em;line-height:1.1;font-size:clamp(1.6rem,4vw,2.8rem);max-width:20ch">
+      Manter a clareza.<br>
+      <span style="color:var(--vermelho-claro)">Adicionar presença.</span>
+    </p>
+
+    <div style="margin-top:56px;border-top:2px solid var(--papel);padding-top:26px;display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-end">
+      <p style="font-family:var(--display);font-weight:800;font-size:clamp(1rem,2vw,1.3rem);letter-spacing:.03em;line-height:1.45">
+        TOWER EPI&rsquo;S<br>
+        FORTALEZA — CE<br>
+        <span style="color:var(--vermelho-claro)">DESDE 1995</span>
+      </p>
+      <p class="numeral" style="font-size:clamp(3rem,9vw,6rem);color:var(--grafite-600)" aria-hidden="true">1995</p>
+    </div>
+    <p class="nota" style="margin-top:32px;max-width:60ch">
+      Nada foi implementado. Aguardando aprovação da direção de arte para começar pela
+      Etapa 1.
+    </p>
+  </div>
+</footer>
