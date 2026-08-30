@@ -16,6 +16,17 @@ fazer boa parte do trabalho comercial antes disso.
 ATRAIR → ENTENDER → ORIENTAR → GERAR CONFIANÇA → QUALIFICAR → WHATSAPP
 ```
 
+## No ar
+
+**https://towerepis-com-br-git-claude-to-1dd32b-montinho-personal-trainer.vercel.app**
+
+Deploy automático na Vercel a cada push neste branch
+(projeto `towerepis-com-br`, time Montinho Personal Trainer).
+
+O domínio `towerepis.com.br` ainda **não** aponta para a Vercel — hoje resolve
+para `162.240.81.81`. Enquanto isso, o deploy é de preview e a Vercel envia
+`x-robots-tag: noindex`, então nada é indexado antes da hora.
+
 ## Estado atual
 
 **Site implementado e passando no QA. Aguardando os dados pendentes para lançar.**
