@@ -95,6 +95,7 @@ Cada um existe por uma razão estratégica, não estética.
 | `Comparacao` | Duas colunas lado a lado. O "motivo gráfico" do projeto: o site inteiro é sobre distinguir A de B |
 | `BarraProva` | Quatro fatos, zero adjetivo, antes de pedir qualquer coisa |
 | `AssinaturaTecnica` | E-E-A-T visível para o leitor, não só para o robô |
+| `Perguntas` | FAQ em acordeão nativo — `<details>`/`<summary>`, sem JavaScript |
 | `PonteEmpresas` | Ponte B2C→B2B. Quem lê "cozinha" pode ser o cozinheiro **ou** o dono |
 | `BlocoCta` | CTA com a mensagem do WhatsApp à vista |
 | `ErroCaro` | Reposiciona a decisão B2B de preço para adesão |
@@ -112,6 +113,31 @@ Foco visível obrigatório: contorno vermelho de 3px com deslocamento de 3px.
 Alvos de toque com no mínimo 44px de altura. `prefers-reduced-motion` respeitado.
 
 ---
+
+### O FAQ em acordeão
+
+Construído sobre `<details>`/`<summary>` nativo, **sem uma linha de JavaScript**.
+Isso não é economia de código — é o que garante três coisas ao mesmo tempo:
+
+1. **Funciona sem JS**, como o resto do site.
+2. **É acessível de graça**: navegável por teclado, anunciado corretamente por
+   leitor de tela, com estado aberto/fechado exposto ao sistema operacional.
+3. **Mantém a resposta dentro do HTML**, mesmo fechada. Este é o ponto crítico:
+   26 páginas do site emitem schema `FAQPage`, que exige a resposta presente na
+   página. Um acordeão em JavaScript que injetasse o texto só no clique quebraria
+   o schema — e ninguém perceberia, porque visualmente ficaria igual.
+
+O marcador é um `+` que vira `−`, feito com dois pseudo-elementos e uma
+transformação. Anima só `transform`, que é barato, e some sob
+`prefers-reduced-motion`.
+
+O atributo `name` dá o comportamento clássico de abrir uma e fechar a anterior.
+Navegadores que ainda não o suportam permitem várias abertas — degradação
+aceitável, não falha.
+
+A abertura suave usa `interpolate-size` e `::details-content` dentro de um
+`@supports`. Onde o navegador não suporta, abre instantaneamente — que é um
+comportamento correto, não um defeito.
 
 ## O QUE O SISTEMA NÃO TEM — DE PROPÓSITO
 

@@ -165,23 +165,42 @@ export function GradeLinks({
   )
 }
 
-/** Perguntas frequentes visíveis (requisito para usar FAQPage schema). */
+/**
+ * Perguntas frequentes, em acordeão.
+ *
+ * Usa <details>/<summary> nativo em vez de JavaScript. Isso não é economia
+ * de código: é o que garante que funcione sem JS, seja navegável por teclado
+ * e por leitor de tela, e — o ponto crítico aqui — mantenha a resposta dentro
+ * do HTML. Estas páginas emitem schema FAQPage, que exige a resposta presente
+ * na página; um acordeão que injeta o texto só no clique quebraria isso.
+ *
+ * O atributo `name` faz o comportamento clássico de abrir uma e fechar a
+ * anterior. Navegadores que ainda não o suportam simplesmente permitem várias
+ * abertas ao mesmo tempo, o que também é utilizável.
+ */
 export function Perguntas({
   perguntas,
+  titulo = 'Perguntas frequentes',
+  nome = 'faq',
 }: {
   perguntas: { pergunta: string; resposta: string }[]
+  titulo?: string
+  nome?: string
 }) {
   return (
     <section>
-      <h2 className="eyebrow">Perguntas frequentes</h2>
-      <dl className="mt-6 divide-y divide-rule border-y border-rule">
+      <h2 className="eyebrow">{titulo}</h2>
+      <div className="faq mt-6">
         {perguntas.map((p) => (
-          <div key={p.pergunta} className="py-6">
-            <dt className="font-display text-lg font-bold">{p.pergunta}</dt>
-            <dd className="mt-2 measure text-ink-2">{p.resposta}</dd>
-          </div>
+          <details key={p.pergunta} name={nome} className="faq-item">
+            <summary>
+              <span>{p.pergunta}</span>
+              <span className="faq-sinal" aria-hidden="true" />
+            </summary>
+            <p className="faq-resposta">{p.resposta}</p>
+          </details>
         ))}
-      </dl>
+      </div>
     </section>
   )
 }
