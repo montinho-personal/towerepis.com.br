@@ -11,7 +11,7 @@ export function Logo({ escuro = false }: { escuro?: boolean }) {
   return (
     <span className="inline-flex flex-col leading-none">
       <span
-        className={`numeral text-[1.4rem] sm:text-[1.55rem] ${escuro ? 'text-paper' : 'text-ink'}`}
+        className={`numeral text-[1.6rem] sm:text-[1.85rem] ${escuro ? 'text-paper' : 'text-ink'}`}
         style={{ letterSpacing: '0.02em' }}
       >
         T
@@ -27,7 +27,7 @@ export function Logo({ escuro = false }: { escuro?: boolean }) {
         WER
       </span>
       <span
-        className={`font-display text-[0.6rem] font-semibold tracking-[0.34em] ${escuro ? 'text-paper/70' : 'text-ink-2'}`}
+        className={`font-display text-[0.66rem] font-bold tracking-[0.34em] ${escuro ? 'text-paper/70' : 'text-ink-2'}`}
       >
         EPI&rsquo;S
       </span>

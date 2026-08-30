@@ -249,9 +249,11 @@
     color: var(--color-paper);
   }
   .band-ink h1, .band-ink h2, .band-ink h3 { color: var(--color-paper); }
-  /* Sobre escuro, rótulo usa o vermelho claro — o da marca reprovaria. */
-  .band-ink .eyebrow-red { color: var(--color-tower-red-light); }
+  /* Ordem importa: as duas regras têm a mesma especificidade, então a
+     genérica vem primeiro e a específica depois. Invertido, o rótulo
+     vermelho no escuro renderiza cinza — e sem nenhum erro visível. */
   .band-ink .eyebrow { color: #9aa0a8; }
+  .band-ink .eyebrow-red { color: var(--color-tower-red-light); }
 
   .band-red {
     background: var(--color-tower-red);

@@ -247,7 +247,15 @@ export function PonteEmpresas({
   )
 }
 
-/** Faixa de prova factual. Fatos, zero adjetivo. */
+/**
+ * Faixa de autoridade.
+ *
+ * Grafite, compacta e densa — é a seção que afirma. São só quatro
+ * números porque só existem quatro verdadeiros: 1995, o prêmio 3M, os
+ * dois sócios e o estado. Quatro números grandes e verdadeiros valem
+ * mais que oito inventados, e a regra do projeto proíbe métrica
+ * fabricada.
+ */
 export function BarraProva() {
   const fatos = [
     { destaque: '1995', texto: 'No mercado de proteção do Ceará' },
@@ -256,14 +264,22 @@ export function BarraProva() {
     { destaque: 'CE', texto: 'Fortaleza e região' },
   ]
   return (
-    <ul className="grid grid-cols-2 gap-px border-y border-rule bg-rule lg:grid-cols-4">
-      {fatos.map((f) => (
-        <li key={f.destaque} className="bg-paper px-5 py-7 sm:px-6">
-          <p className="numeral text-3xl text-tower-red sm:text-4xl">{f.destaque}</p>
-          <p className="mt-2.5 text-[0.85rem] leading-snug text-ink-2">{f.texto}</p>
-        </li>
-      ))}
-    </ul>
+    <section className="band-ink ritmo-compacto">
+      <div className="wrap">
+        <ul className="grid grid-cols-2 gap-x-6 gap-y-9 lg:grid-cols-4">
+          {fatos.map((f) => (
+            <li key={f.destaque}>
+              <p className="numeral text-5xl text-tower-red-light sm:text-6xl">
+                {f.destaque}
+              </p>
+              <p className="mt-4 max-w-[16ch] text-[0.9rem] leading-snug text-paper/70">
+                {f.texto}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
   )
 }
 

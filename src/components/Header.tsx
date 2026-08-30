@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Logo } from './Logo'
 import { WhatsAppCta } from './WhatsAppCta'
 
@@ -25,10 +25,24 @@ const NAV = [
 
 export function Header() {
   const [aberto, setAberto] = useState(false)
+  const [rolou, setRolou] = useState(false)
+
+  /* Compacta a altura ao rolar. Não esconde e não reaparece saltando —
+     header que some e volta é desorientador e faz o layout pular. */
+  useEffect(() => {
+    const aoRolar = () => setRolou(window.scrollY > 24)
+    aoRolar()
+    window.addEventListener('scroll', aoRolar, { passive: true })
+    return () => window.removeEventListener('scroll', aoRolar)
+  }, [])
 
   return (
-    <header className="sticky top-0 z-30 border-b border-rule bg-paper/95 backdrop-blur-sm">
-      <div className="wrap flex h-16 items-center justify-between gap-4 sm:h-18">
+    <header className="sticky top-0 z-30 border-b-2 border-ink bg-paper/95 backdrop-blur-sm">
+      <div
+        className={`wrap flex items-center justify-between gap-4 transition-[height] duration-200 ${
+          rolou ? 'h-14 sm:h-16' : 'h-18 sm:h-22'
+        }`}
+      >
         <Link href="/" className="shrink-0" aria-label="Tower EPI's, página inicial">
           <Logo />
         </Link>

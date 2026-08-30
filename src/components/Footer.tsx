@@ -53,15 +53,26 @@ const COLUNAS = [
 
 export function Footer() {
   return (
-    <footer className="band-ink mt-24">
+    <footer className="border-t-4 border-tower-red bg-grafite-900 text-paper">
       <div className="wrap py-16 sm:py-20">
-        <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_2.2fr]">
+        {/* Assinatura de marca antes da navegação. O rodapé fecha a marca;
+            os links vêm depois, não no lugar dela. */}
+        <div className="border-b border-grafite-600 pb-12">
+          <p className="font-display text-[1.6rem] font-extrabold leading-[1.35] tracking-[0.03em] sm:text-[2.1rem]">
+            TOWER EPI&rsquo;S
+            <br />
+            FORTALEZA — CE
+            <br />
+            <span className="text-tower-red-light">DESDE 1995</span>
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-14 lg:grid-cols-[minmax(0,1fr)_2.2fr]">
           <div>
             <Logo escuro />
             <p className="mt-5 max-w-xs text-[0.95rem] leading-relaxed text-paper/70">
-              {empresa.assinatura}
-              <br />
-              Fortaleza, Ceará.
+              Equipamentos de proteção individual para Fortaleza, a região
+              metropolitana e o Ceará.
             </p>
 
             <p className="mt-6 text-[0.95rem] text-paper/70">
@@ -86,7 +97,7 @@ export function Footer() {
               </a>
             </p>
 
-            <p className="numeral mt-10 text-6xl text-paper/15" aria-hidden="true">
+            <p className="numeral mt-12 text-mega leading-[0.8] text-grafite-700" aria-hidden="true">
               1995
             </p>
           </div>
@@ -112,7 +123,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col gap-3 border-t border-paper/15 pt-8 text-xs text-paper/60 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-16 flex flex-col gap-3 border-t border-grafite-600 pt-8 text-xs text-paper/60 sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {new Date().getFullYear()} {empresa.nome}
             {empresa.cnpj ? ` · CNPJ ${empresa.cnpj}` : ''} · Fortaleza — CE

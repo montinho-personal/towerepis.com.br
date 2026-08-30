@@ -139,6 +139,37 @@ A abertura suave usa `interpolate-size` e `::details-content` dentro de um
 `@supports`. Onde o navegador não suporta, abre instantaneamente — que é um
 comportamento correto, não um defeito.
 
+## FASE 2 — RITMO DE SUPERFÍCIES *(implementado)*
+
+Três superfícies com função declarada, mais o ponto como elemento proprietário.
+
+| Superfície | Token | Função |
+|---|---|---|
+| Papel | `--color-paper` | Onde se lê |
+| Creme | `--color-paper-2` | Separar sem escurecer |
+| Grafite | `--color-grafite-800` / `-900` | Onde se afirma |
+| Vermelho | `--color-tower-red` | Onde se decide |
+
+**Proporção medida na Home:** 40% papel · 22% creme · 34% grafite · 4% vermelho.
+Antes era 85 / 10 / 5 / 0.
+
+### Duas regras que o QA verifica
+1. **Nunca vermelho da marca como texto sobre escuro.** Dá 2,4:1 e reprova. Sobre
+   grafite, rótulo usa `--color-tower-red-light` (5,2:1); o vermelho da marca só
+   entra como campo. O QA falha a build se encontrar texto `#b4111b` em `.band-ink`.
+2. **Uma faixa vermelha por página.** Na Home é a da Bompel. Mais de uma e o
+   impacto se dissolve.
+
+### Armadilha de CSS registrada
+`.band-ink .eyebrow` e `.band-ink .eyebrow-red` têm a mesma especificidade. Se a
+genérica vier depois, o rótulo vermelho no escuro renderiza cinza — sem erro
+visível. A ordem no arquivo é a proteção; não trocar.
+
+### Duas superfícies escuras nunca se encostam
+Onde o fechamento em grafite encontra o rodapé, entra uma costura vermelha de 4px.
+O vermelho fazendo trabalho estrutural, em vez de dois escuros se fundindo num
+bloco só.
+
 ## O QUE O SISTEMA NÃO TEM — DE PROPÓSITO
 
 Sem gradiente. Sem sombra decorativa. Sem card com borda arredondada. Sem ícone

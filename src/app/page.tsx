@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 
-import { WhatsAppCta, BlocoCta } from '@/components/WhatsAppCta'
+import { WhatsAppCta } from '@/components/WhatsAppCta'
 import { BarraProva, GradeLinks, Secao, Comparacao } from '@/components/Blocos'
 import { IconeSeta } from '@/components/Icones'
 import { PROFISSOES } from '@/content/profissoes'
@@ -19,22 +19,24 @@ export default function Home() {
   return (
     <>
       {/* 1. HERO — em 5 segundos: o que é, onde é, e os dois caminhos. */}
-      <section className="wrap pt-14 pb-16 sm:pt-20 sm:pb-20">
+      <section className="wrap ritmo-amplo pb-0 sm:pb-0">
         <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
           <div>
-            <p className="eyebrow eyebrow-red">Fortaleza — Ceará</p>
-            <h1 className="mt-5 max-w-3xl text-4xl sm:text-5xl lg:text-6xl">
+            <p className="eyebrow eyebrow-red">Fortaleza — Ceará · Desde 1995</p>
+            <h1 className="mt-6 max-w-4xl text-display">
               O melhor EPI é o que a pessoa usa o dia inteiro.
             </h1>
-            <p className="mt-7 max-w-xl text-lg leading-relaxed text-ink-2">
+            <p className="mt-8 max-w-xl text-lg leading-relaxed text-ink-2">
               Equipamentos de proteção individual em Fortaleza, desde 1995. Calçados
               ocupacionais e de segurança, proteção respiratória, luvas, óculos e mais —
               com a orientação de quem é técnico de segurança do trabalho.
             </p>
           </div>
 
+          {/* O 1995 sai do cinza-régua quase invisível e passa a ter peso.
+              É o ativo visual mais forte que a marca tem. */}
           <p
-            className="numeral hidden text-[9rem] leading-none text-rule lg:block xl:text-[11rem]"
+            className="numeral hidden text-[9rem] leading-none text-rule-strong lg:block xl:text-[11rem]"
             aria-hidden="true"
           >
             1995
@@ -168,29 +170,35 @@ export default function Home() {
         </div>
       </Secao>
 
-      {/* 5b. MARCAS — dizer cedo com o que a gente trabalha reduz a
-             incerteza de quem já sabe o que quer. */}
-      <Secao className="wrap pt-0">
-        <div className="flex flex-col gap-6 border-y border-rule py-8 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <p className="eyebrow eyebrow-red">Principal parceria em calçado</p>
-            <p className="numeral mt-2 text-4xl">Bompel</p>
+      {/* 5b. MARCAS — a ÚNICA faixa vermelha da página. É o momento de
+             energia: o vermelho como superfície, não como marca de 11px.
+             Uma por página, para não perder o impacto. */}
+      <section className="band-red ritmo-normal">
+        <div className="wrap">
+          <div className="grid gap-10 lg:grid-cols-[auto_1fr] lg:items-end lg:gap-20">
+            <div>
+              <p className="eyebrow">Principal parceria em calçado</p>
+              <p className="numeral mt-4 text-6xl sm:text-7xl">Bompel</p>
+            </div>
+            <div className="lg:pb-3">
+              <p className="max-w-lg text-lg leading-relaxed text-white/90">
+                Fabricante brasileiro com quase quatro décadas, em calçado de segurança e
+                ocupacional. É a linha que mais atendemos e a que conhecemos com mais
+                profundidade.
+              </p>
+              <Link
+                href="/marcas/bompel/"
+                className="mt-7 inline-flex items-center gap-2 border-b-2 border-white pb-1 font-display text-sm font-bold text-white transition-opacity hover:opacity-70"
+              >
+                Ver a linha Bompel <IconeSeta />
+              </Link>
+            </div>
           </div>
-          <p className="max-w-md text-[0.95rem] leading-relaxed text-ink-2">
-            Fabricante brasileiro com quase quatro décadas, em calçado de segurança e
-            ocupacional. Trabalhamos também Sticky Shoes e 3M, entre outras.
-          </p>
-          <Link
-            href="/marcas/"
-            className="shrink-0 font-display text-sm font-bold text-tower-red"
-          >
-            Ver as marcas →
-          </Link>
         </div>
-      </Secao>
+      </section>
 
       {/* 6. PROFISSÃO — reconhecimento imediato: "tem o meu caso aqui". */}
-      <Secao className="band">
+      <Secao className="band ritmo-normal">
         <div className="wrap">
           <h2 className="text-2xl sm:text-3xl">Comece pelo que você faz</h2>
           <p className="mt-4 measure text-ink-2">
@@ -256,15 +264,23 @@ export default function Home() {
       </Secao>
 
       {/* 8. HISTÓRIA EM DOSE — planta a permanência sem sequestrar a Home. */}
-      <Secao className="band-ink">
+      <Secao className="band-ink ritmo-amplo">
         <div className="wrap">
-          <p className="eyebrow text-paper/55">Trinta anos</p>
-          <h2 className="mt-4 max-w-2xl text-2xl sm:text-3xl">
+          {/* O 1995 em escala monumental abre a faixa: é o que faz a
+              pessoa sentir a idade da empresa antes de ler. */}
+          <p
+            className="numeral text-mega leading-[0.82] text-grafite-700"
+            aria-hidden="true"
+          >
+            1995
+          </p>
+          <p className="eyebrow eyebrow-red mt-10">Trinta anos</p>
+          <h2 className="mt-4 max-w-3xl text-titulo">
             Já fomos grandes. Hoje somos dois. Tem cliente que compra com a gente desde
             os anos 90.
           </h2>
 
-          <ol className="mt-12 grid gap-px border border-paper/15 bg-paper/15 sm:grid-cols-2 lg:grid-cols-4">
+          <ol className="mt-14 grid gap-px border border-grafite-600 bg-grafite-600 sm:grid-cols-2 lg:grid-cols-4">
             {[
               {
                 ano: '1994',
@@ -287,9 +303,9 @@ export default function Home() {
                   'Menor, e com os mesmos clientes. Distribuidor Regional premiado pela 3M, atendendo Fortaleza e o Ceará.',
               },
             ].map((item) => (
-              <li key={item.ano} className="bg-ink p-6 sm:p-7">
-                <p className="numeral text-3xl text-tower-red">{item.ano}</p>
-                <p className="mt-4 text-[0.9rem] leading-relaxed text-paper/70">
+              <li key={item.ano} className="bg-grafite-800 p-6 sm:p-7">
+                <p className="numeral text-4xl text-tower-red-light">{item.ano}</p>
+                <p className="mt-5 text-[0.9rem] leading-relaxed text-paper/70">
                   {item.texto}
                 </p>
               </li>
@@ -330,16 +346,34 @@ export default function Home() {
         </div>
       </Secao>
 
-      {/* 10. FECHAMENTO — o passo mais fácil possível. */}
-      <Secao className="wrap pt-0">
-        <BlocoCta
-          contexto="home"
-          secao="home-fechamento"
-          titulo="Não sabe por onde começar? Conte o que você faz."
-          texto="Diga qual é a sua atividade e o que você precisa proteger. A gente responde com as opções que fazem sentido para o seu caso — e explica por quê."
-          rotulo="Falar com a Tower"
-        />
-      </Secao>
+      {/* 10. FECHAMENTO — grafite. O verde do WhatsApp contra o escuro
+             fica impossível de perder: é o papel de uma cor semântica
+             usada com parcimônia no resto do site. */}
+      <section className="band-ink ritmo-amplo">
+        <div className="wrap">
+          <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-end lg:gap-20">
+            <div>
+              <p className="eyebrow eyebrow-red">Atendimento direto</p>
+              <h2 className="mt-4 max-w-xl text-titulo">
+                Não sabe por onde começar? Conte o que você faz.
+              </h2>
+              <p className="mt-6 max-w-lg text-lg leading-relaxed text-paper/75">
+                Diga qual é a sua atividade e o que você precisa proteger. A gente
+                responde com as opções que fazem sentido para o seu caso — e explica
+                por quê. Quem responde é o Helano ou a Cristina.
+              </p>
+            </div>
+            <div className="flex flex-col gap-4 lg:pb-2">
+              <WhatsAppCta contexto="home" secao="home-fechamento" bloco>
+                Falar com a Tower
+              </WhatsAppCta>
+              <Link href="/orcamento/" className="btn btn-red btn-block">
+                Pedir orçamento
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
