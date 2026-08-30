@@ -31,31 +31,39 @@ existem URLs antigas a redirecionar.
 
 ---
 
-## Estado do DNS — resolvido em 30/08/2026
+## DNS final — HostGator
 
-DNS gerido na **HostGator**. Configuração final:
+⚠️ **Estes valores são específicos deste projeto Vercel.** Não são os genéricos da
+documentação. Se um dia o projeto for recriado na Vercel, os valores mudam — sempre
+copiar de *Settings → Domains → View DNS configuration*.
 
-| Tipo | Nome | Valor | Situação |
+| Tipo | Nome | Valor | TTL |
 |---|---|---|---|
-| `A` | `towerepis.com.br` | `76.76.21.21` | ✅ Vercel, propagado |
-| `CNAME` | `www` | `cname.vercel-dns-0.com` | ✅ Vercel, propagado |
-| ~~`MX`~~ | ~~`towerepis.com.br`~~ | — | ❌ removido |
-| ~~`CNAME`~~ | ~~`mail`~~ | — | ❌ removido |
-| ~~`CNAME`~~ | ~~`ftp`~~ | — | ❌ removido |
+| `A` | `towerepis.com.br` | `216.150.1.1` | 14400 |
+| `CNAME` | `www` | `1e3fda645d3a9614.vercel-dns-016.com` | 14400 |
 
-### O problema que apareceu no caminho
+Registros `MX`, `mail` e `ftp` foram removidos — não há e-mail neste domínio.
 
-O registro `MX` apontava para o **próprio domínio** (`towerepis.com.br`). Enquanto o
-apex resolvia para a HostGator, o e-mail funcionava. Ao trocar o `A` para a Vercel,
-o MX passou a apontar para um servidor que **não tem serviço de e-mail** — e mensagem
-enviada sumiria sem erro visível para quem enviou.
+### As duas armadilhas deste apontamento
 
-Confirmado que **não existe caixa de e-mail no domínio**, os registros `MX`, `mail` e
-`ftp` foram removidos. Ficaram apenas os dois que servem o site.
+**1. O IP genérico não serviu.** Começamos com `76.76.21.21`, que é o endereço
+anycast antigo e de uso geral da Vercel, citado na documentação dela. O domínio
+respondeu com `ERR_CONNECTION_TIMED_OUT` mesmo depois da propagação completa.
+A Vercel expandiu a faixa de IPs e passou a atribuir endereços próprios por projeto;
+o card do domínio no painel é a única fonte confiável do valor. O aviso
+*"DNS Change Recommended"* era exatamente isso — não era cosmético.
 
-⚠️ **Se um dia a Tower criar e-mail `@towerepis.com.br`**, o MX terá de apontar para o
-servidor de e-mail do provedor escolhido — **nunca** para `towerepis.com.br`, que hoje
-é a Vercel.
+**2. O `MX` apontava para o próprio domínio.** Enquanto o apex resolvia para a
+HostGator, o e-mail funcionava. Ao mover o `A` para a Vercel, o MX passaria a
+entregar num servidor sem serviço de e-mail — e mensagem sumiria sem erro visível
+para quem enviou. Como não há caixa no domínio, foi só remover.
+
+**Se um dia criarem e-mail `@towerepis.com.br`**, o `MX` precisa apontar para o
+servidor do provedor de e-mail escolhido — **nunca** para `towerepis.com.br`.
+
+### Sobre o TTL
+Os dois registros estão com TTL de 14400s (4 horas). **Vale baixar para 300s**:
+qualquer ajuste futuro passa a propagar em 5 minutos em vez de 4 horas.
 
 ## Domínio canônico: apex, sem `www`
 
