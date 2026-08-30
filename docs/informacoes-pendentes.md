@@ -1,129 +1,116 @@
 # INFORMAÇÕES PENDENTES
 
-O que ainda preciso receber, organizado por **o que cada item destrava**.
-Itens marcados 🔴 bloqueiam fases seguintes.
+> **Atualizado em 30/08/2026**, depois do questionário e do acesso ao Instagram.
+> Resolvidos: história completa, nome canônico (**Tower EPI's**), decisão sobre
+> endereço (não publicar — *service-area business*), decisão sobre citar clientes
+> (setor + tempo), escopo da v1 (arquitetura completa), marcas (3M, Sticky Shoes,
+> Bompel) e DNA visual da marca.
+>
+> O que segue é o que ainda falta.
 
 ---
 
-## 🔴 BLOQUEIA A FASE 2 (Posicionamento e Copy)
+## 🔴 BLOQUEIA O LANÇAMENTO
 
-### 1. O questionário de história da empresa
-Foi citado no briefing mas não foi anexado. É o documento mais importante que falta.
-Trabalhei com os elementos da seção 3 do briefing, mas neles não há datas, nomes,
-números nem as frases próprias dos fundadores — que é o que separa uma história
-verdadeira de uma história genérica.
+### 1. Confirmar o número do WhatsApp
+**(85) 3491-9494** — visto em um post do Instagram, com ícone de WhatsApp.
+Os **29 CTAs do site** apontam para ele. Precisamos confirmar três coisas:
 
-### 2. Confirmação de fatos históricos
-- Ano exato em que Helano e Cristina começaram no mercado de EPI (antes de 1995).
-- Data / período do reconhecimento como distribuidor regional da 3M.
-- Marcos entre 1995 e hoje: mudança de endereço, ampliação, entrada de novas
-  categorias, momentos difíceis superados (crises, pandemia).
-- Nome completo e formação registrada do Helano — **exatamente como pode ser publicado**
-  (ex.: "Técnico em Segurança do Trabalho, registro nº ___"). Não vou publicar
-  credencial que não possa ser comprovada.
-- Papel atual da Cristina na empresa.
-- Se há filhos ou segunda geração atuando (sucessão é ativo forte de storytelling B2B).
+1. o número está correto;
+2. tem WhatsApp ativo;
+3. recebe mensagem com texto pré-preenchido (link `wa.me`).
 
-### 3. Autorização para citar clientes
-- Podemos citar nomes de clientes de longa data? Quais?
-- Se não, podemos usar o formato **"rede de restaurantes atendida desde 2003"**
-  (setor + tempo, sem nome)? Esse formato já é muito forte e costuma ser
-  mais fácil de autorizar.
+**Se estiver errado, o site inteiro converte para lugar nenhum.** É o item de maior
+risco do projeto e o mais rápido de resolver: basta abrir
+`https://wa.me/558534919494?text=teste` no celular e ver se abre a conversa certa.
 
----
+Configurado em `src/config/empresa.ts` — um campo muda o site todo.
 
-## 🔴 BLOQUEIA A FASE 3 (SEO) e o SEO LOCAL INTEIRO
+### 2. Fotografia
+O design foi feito para foto real e não tem nenhuma. O questionário confirma que
+existem: **fotos dos fundadores, da primeira sede e dos logotipos antigos**.
 
-### 4. NAP definitivo
-- **Nome canônico da empresa** — "Tower EPI's" ou "Tower Distribuidora"? *(Recomendo Tower EPI's.)*
-- Razão social e CNPJ (para rodapé e dados estruturados).
-- Endereço completo com número e CEP exato do imóvel.
-- Telefone fixo.
-- **Número do WhatsApp comercial** — indispensável, é a conversão principal do site.
-- Há mais de um WhatsApp (ex.: um para empresas, outro para varejo)?
-- Horário de funcionamento, incluindo sábado.
-- E-mail comercial.
+Prioridade:
+1. Helano e Cristina — vai para a Home, `/a-tower/` e `/a-tower/helano/`
+2. **Primeira sede no Montese, 1995** — o ativo visual mais valioso do projeto
+3. Logotipos antigos
+4. Produtos das linhas Sticky Shoes, Bompel e 3M
 
-### 5. Google Business Profile
-- Existe perfil criado? Está reivindicado? Sob qual nome?
-- Quantas avaliações tem hoje?
-- Quem tem acesso?
+Foto antiga de qualidade baixa vale mais que foto nova genérica. Se não houver
+acervo suficiente, produção fotográfica precisa entrar no escopo.
 
-### 6. Área de atendimento real
-- Atende só Fortaleza ou também região metropolitana?
-- Entrega em outras cidades do Ceará? Quais, de verdade?
-- Vende para fora do Ceará?
-- Faz entrega própria, transportadora, ou é retirada na loja?
+### 3. Logo em vetor
+Reconstruí o logotipo tipograficamente a partir do selo do Instagram (TOWER com o
+ponto vermelho no lugar do O). Funciona, mas o ideal é o arquivo original em
+`.ai`, `.eps` ou `.svg`, ou PNG em alta com fundo transparente.
 
 ---
 
-## 🔴 BLOQUEIA AS FASES 7 e 8 (Design System e UI)
+## 🟡 ANTES DE DIVULGAR O SITE
 
-### 7. Instagram e material de marca
-- **URL do perfil** (ficou como `[INSERIR URL DO INSTAGRAM]` no briefing).
-- **Importante:** a rede desta sessão bloqueia acesso ao Instagram. Mesmo com a URL,
-  preciso que você me **envie as imagens**:
-  - 15 a 20 prints do feed (grade e posts individuais)
-  - Logo em vetor (.ai/.eps/.svg) ou PNG em alta com fundo transparente
-  - Qualquer material impresso: cartão, sacola, fachada, uniforme, carimbo, catálogo
+### 4. Revisão técnica pelo Helano
+Todo conteúdo normativo cita fonte oficial e nenhuma afirmação foi feita por
+inferência. Mesmo assim, o conteúdo precisa da leitura dele antes de ir ao ar —
+é o nome dele que assina as páginas.
 
-### 8. Acervo fotográfico
-Este é o item de maior risco do projeto. O conceito depende de fotografia real.
-- Fotos da loja (fachada e interior)
-- Fotos do Helano e da Cristina
-- Fotos da equipe
-- Fotos de produtos que a Tower vende
-- **Fotos históricas** (anos 90 / 2000) — mesmo de qualidade baixa. Foto antiga
-  ruim vale mais que foto nova genérica, e vira o melhor ativo da página de história.
+### 5. Dados que faltam no rodapé e no schema
+- Razão social e CNPJ
+- E-mail comercial
+- Horário exato de atendimento (hoje está genérico: "segunda a sexta, em horário comercial")
 
-**Se não houver acervo, produção fotográfica precisa entrar no escopo do projeto.**
-Sem ela, o site cai para banco de imagens — exatamente o que o briefing proíbe.
+### 6. Ano e nome exato do prêmio de Distribuidor Regional da 3M
+Hoje o site diz "Distribuidor Regional premiado" sem data. Com o ano, fica mais forte.
+Se houver troféu ou certificado, vale fotografar.
 
----
+### 7. Registro profissional do Helano
+Para a página de autor e o schema `Person`. Só publico credencial que possa ser
+comprovada.
 
-## 🟡 NECESSÁRIO ANTES DA FASE 6 (Copy)
+### 8. Área de entrega real hoje
+O site diz "Fortaleza e região". Precisa confirmar: o motorista de entrega
+continua? Entregam em quais cidades, de fato?
 
-### 9. Operação e catálogo
-- Lista das **marcas** trabalhadas (além da 3M).
-- As 10 a 15 **categorias** que mais vendem hoje.
-- Os **setores de cliente** mais representativos.
-- Vende no varejo para pessoa física, ou só empresa? (Muda a jornada B2C inteira.)
-- Tem pedido mínimo?
-- Formas de pagamento — trabalha com faturamento/boleto para empresa?
-- Prazo típico de entrega.
-- Como funciona troca de numeração de calçado? *(Objeção nº 1 do B2B em calçados.)*
+### 9. Aprovação da frase sobre propina
+Vocês responderam que nunca aceitaram **pagar propina**. É verdadeiro e forte, mas
+**não coloquei no site** porque precisa da aprovação explícita de vocês dois — e
+porque precisa ser dito em primeira pessoa, sem virar acusação ao mercado.
 
-### 10. Sobre o atendimento
-- Quantas pessoas atendem o WhatsApp?
-- Volume aproximado de mensagens por dia.
-- **Quais as 5 perguntas que mais se repetem?** *(Isso define os primeiros artigos
-  do blog — são as dúvidas reais dos clientes reais, com valor de SEO comprovado
-  pela própria operação.)*
-- Qual o horário de resposta?
+Sugestão, se aprovarem:
+> *"Em trinta anos, nunca pagamos propina para vender. Perdemos negócios por isso.
+> Seguimos aqui."*
+
+### 10. Autorização para citar clientes pelo nome
+Hoje o site diz *"uma indústria têxtil do Ceará compra com a gente desde os anos
+1990"*, sem nome. Se conseguirem autorização por escrito do Grupo Santana Têxtil, a
+prova fica ainda mais forte.
 
 ---
 
-## 🟡 DECISÕES QUE PRECISO DE VOCÊ
+## 🟢 PARALELO AO SITE — E PODE COMEÇAR HOJE
 
-### 11. Páginas de produto individual
-Sem preço e sem carrinho — criar ou não?
-*(Recomendação detalhada na Fase 1, seção 10: **não criar na v1**, e deixar o
-WhatsApp mostrar quais produtos são realmente buscados por nome.)*
+### 11. Google Business Profile
+Configurar como **área de atendimento**, sem endereço. Para busca local isso
+frequentemente pesa mais do que o site.
 
-### 12. Quem escreve e quem revisa o conteúdo técnico
-O E-E-A-T do projeto depende de assinatura real.
-- O Helano pode revisar e assinar os artigos técnicos?
-- Quanto tempo por semana ele teria para isso?
-- Se o tempo for curto, proponho: eu escrevo, ele revisa e aprova — e a assinatura
-  é honesta porque a revisão técnica é real.
+### 12. Campanha de avaliações
+**O maior retorno pelo menor esforço do projeto inteiro.** Trinta anos de clientes
+e quase nenhuma avaliação registrada é dinheiro parado. Meta inicial: 30 avaliações
+em 90 dias.
 
-### 13. Domínio
-`towerepis.com.br` já está registrado e aponta para um servidor (162.240.81.81).
-- Existe site no ar hoje? Não consegui acessar por bloqueio de rede desta sessão.
-- Quem controla o DNS? *(Precisaremos apontar para a Vercel no lançamento.)*
-- Há conteúdo ou URLs antigas que precisem de redirecionamento 301?
+### 13. Corrigir o endereço antigo nos diretórios
+GuiaMais, TeleListas, Apontador, Solutudo e Encontra Fortaleza ainda listam
+"Tower Distribuidora" no endereço do Montese. **Endereço obsoleto público é pior do
+que endereço nenhum** — o cliente vai lá e não encontra ninguém.
 
-### 14. Acessos
-- GitHub: confirmar acesso de escrita ao repositório.
-- Vercel: em qual conta/time o projeto deve ser criado?
-- Google Analytics / Search Console: existem contas? Quem administra?
+---
+
+## ⚙️ ACESSOS PARA O LANÇAMENTO
+
+### 14. Domínio
+`towerepis.com.br` está registrado e aponta para `162.240.81.81`.
+- Existe site no ar hoje? Há URLs antigas que precisem de redirecionamento 301?
+- Quem controla o DNS? Precisaremos apontar para a Vercel.
+
+### 15. Contas
+- Vercel: em qual conta o projeto deve ser criado?
+- Google Analytics e Search Console: existem? Quem administra?

@@ -18,28 +18,69 @@ ATRAIR → ENTENDER → ORIENTAR → GERAR CONFIANÇA → QUALIFICAR → WHATSAP
 
 ## Estado atual
 
-**Fase 1 (Descoberta e Estratégia) concluída — aguardando aprovação.**
-Nenhum código foi escrito ainda, por decisão de processo.
+**Site implementado e passando no QA. Aguardando os dados pendentes para lançar.**
 
 | Fase | Entrega | Status |
 |---|---|---|
-| 1 | Descoberta e leitura estratégica | ✅ Concluída, aguardando aprovação |
-| 2 | Posicionamento | ⏸ Bloqueada (falta o questionário de história) |
-| 3 | SEO e arquitetura definitiva | ⏸ Bloqueada (falta NAP e dados de operação) |
-| 4 | Jornadas | ⏸ |
-| 5 | Wireframes | ⏸ |
-| 6 | Copy | ⏸ |
-| 7 | Design System | ⏸ Bloqueada (falta material do Instagram) |
-| 8 | UI | ⏸ |
-| 9 | Implementação | ⏸ |
-| 10 | QA | ⏸ |
+| 1 | Descoberta e leitura estratégica | ✅ |
+| 2 | Posicionamento | ✅ revisado após o questionário |
+| 3 | SEO e arquitetura definitiva | ✅ |
+| 4 | Jornadas B2C e B2B | ✅ |
+| 5 | Wireframes | ✅ |
+| 6 | Copy | ✅ real, sem lorem ipsum |
+| 7 | Design System | ✅ derivado do Instagram |
+| 8 | UI | ✅ |
+| 9 | Implementação | ✅ 47 páginas estáticas |
+| 10 | QA | ✅ 0 problemas em 41 páginas |
+
+### Antes de colocar no ar
+
+1. 🔴 **Confirmar o WhatsApp (85) 3491-9494.** O número veio de um post do Instagram
+   e alimenta os 29 CTAs do site. Se estiver errado, o site converte para lugar nenhum.
+2. 🔴 **Fotos reais.** O design foi feito para elas e ainda não tem nenhuma.
+3. 🟡 Revisão do conteúdo técnico pelo Helano.
+4. 🟡 Google Business Profile como *service-area business* e campanha de avaliações.
+
+Lista completa em [`docs/informacoes-pendentes.md`](docs/informacoes-pendentes.md).
+
+## Rodando o projeto
+
+```bash
+npm install
+npm run dev        # desenvolvimento
+npm run build      # build de produção
+npm run typecheck  # checagem de tipos
+```
+
+Deploy na Vercel: o projeto é Next.js padrão, sem variável de ambiente obrigatória.
+
+### Onde mexer
+
+| Para mudar | Edite |
+|---|---|
+| Telefone, WhatsApp, horário, dados da empresa | `src/config/empresa.ts` |
+| Mensagens de WhatsApp por contexto | `src/lib/whatsapp.ts` |
+| Conteúdo de uma profissão | `src/content/profissoes.ts` |
+| Conteúdo de uma categoria de proteção | `src/content/protecoes.ts` |
+| Conteúdo de calçados | `src/content/calcados.ts` |
+| Páginas de setor B2B | `src/content/setores.ts` |
+| Artigos | `src/content/artigos.ts` |
+| Cores, tipografia, espaçamento | `src/app/globals.css`, bloco `@theme` |
+
+Adicionar uma profissão, um setor ou um artigo é adicionar **um objeto** ao arquivo
+de conteúdo — a página, o sitemap e os links internos passam a existir sozinhos.
 
 ## Documentos
 
 | Arquivo | Conteúdo |
 |---|---|
-| [`docs/01-fase-1-descoberta-e-estrategia.md`](docs/01-fase-1-descoberta-e-estrategia.md) | Leitura estratégica, ativos, concorrência, SEO, posicionamento, conceito, arquitetura, jornadas |
-| [`docs/informacoes-pendentes.md`](docs/informacoes-pendentes.md) | O que falta receber e o que cada item destrava |
+| [`docs/01-fase-1-descoberta-e-estrategia.md`](docs/01-fase-1-descoberta-e-estrategia.md) | Leitura estratégica, concorrência, SEO, arquitetura, jornadas |
+| [`docs/02-posicionamento-seo-e-wireframes.md`](docs/02-posicionamento-seo-e-wireframes.md) | Mapa de palavras-chave, interlinking, wireframes |
+| [`docs/03-fatos-verificados.md`](docs/03-fatos-verificados.md) | **Fonte única de verdade da copy.** Questionário + DNA visual do Instagram |
+| [`docs/04-design-system.md`](docs/04-design-system.md) | O que preservou do Instagram, o que evoluiu e por quê |
+| [`docs/05-posicionamento-revisado.md`](docs/05-posicionamento-revisado.md) | Posicionamento final, depois do questionário |
+| [`docs/06-qa.md`](docs/06-qa.md) | Relatório de QA e correções aplicadas |
+| [`docs/informacoes-pendentes.md`](docs/informacoes-pendentes.md) | O que falta e o que cada item destrava |
 
 ## Princípios inegociáveis do projeto
 
@@ -57,9 +98,14 @@ Extraídos do briefing e assumidos como regra de execução:
 9. **Performance acima de animação.** LCP < 2,0s, CLS < 0,05, INP < 200ms.
 10. **Conteúdo técnico é assinado e datado.**
 
-## Stack previsto
+11. **Nada sugere loja física.** A Tower não tem loja desde 2018 — opera como
+    *service-area business*, e o site diz isso com todas as letras.
+12. **Sem sucessão inventada.** As filhas escolheram outros caminhos.
 
-Next.js (App Router, majoritariamente estático) · conteúdo em MDX versionado ·
-deploy na Vercel · sem CMS externo na v1.
+## Stack
 
-*Premissas detalhadas no Anexo A da Fase 1 — a confirmar na Fase 9.*
+Next.js 15 (App Router) · TypeScript · Tailwind CSS v4 · conteúdo tipado em
+`src/content` · deploy na Vercel · sem CMS e sem banco de dados.
+
+47 páginas estáticas, 102 kB de JS compartilhado, zero biblioteca de terceiros
+no navegador.

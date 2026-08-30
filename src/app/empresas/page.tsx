@@ -1,0 +1,73 @@
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import { SETORES } from '@/content/setores'
+import { Trilha, CabecalhoPagina, GradeLinks, Secao, BarraProva } from '@/components/Blocos'
+import { BlocoCta } from '@/components/WhatsAppCta'
+import { ComoAtendemos, ComQuemVoceFala, ErroCaro } from '@/components/BlocosB2B'
+
+export const metadata: Metadata = {
+  title: 'EPI para empresas em Fortaleza',
+  description:
+    'Fornecimento de EPI para equipes em Fortaleza e no Ceará. Orçamento com CA dos itens, entrega na região e reposição sem recomeçar do zero. Desde 1995.',
+  alternates: { canonical: '/empresas/' },
+}
+
+export default function Empresas() {
+  return (
+    <>
+      <Trilha itens={[{ nome: 'Empresas', url: '/empresas/' }]} />
+      <CabecalhoPagina
+        rotulo="Para empresas"
+        titulo="EPI para a sua equipe, escolhido pela atividade"
+        resumo="Você precisa que o equipamento chegue no prazo, corresponda ao risco e seja realmente usado pela equipe. É nessas três coisas que a gente trabalha desde 1995."
+      />
+
+      <div className="wrap">
+        <div className="flex flex-wrap gap-3">
+          <Link href="/empresas/orcamento/" className="btn btn-ink">
+            Solicitar orçamento
+          </Link>
+          <Link href="/empresas/como-atendemos/" className="btn btn-ghost">
+            Como atendemos
+          </Link>
+        </div>
+      </div>
+
+      <div className="mt-14">
+        <BarraProva />
+      </div>
+
+      <Secao className="wrap">
+        <h2 className="text-2xl sm:text-3xl">Encontre o seu setor</h2>
+        <p className="mt-4 measure text-ink-2">
+          Cada setor tem riscos, vocabulário e prioridades diferentes. Escolha o seu para
+          ver o que costuma ser necessário.
+        </p>
+        <div className="mt-10">
+          <GradeLinks
+            itens={SETORES.map((s) => ({
+              href: `/empresas/${s.slug}/`,
+              titulo: s.nome,
+              texto: s.resumoCurto,
+            }))}
+          />
+        </div>
+      </Secao>
+
+      <ErroCaro />
+      <ComoAtendemos />
+      <ComQuemVoceFala />
+
+      <Secao className="wrap">
+        <BlocoCta
+          contexto="empresas"
+          secao="empresas-fechamento"
+          titulo="Conte o que a sua equipe faz que a gente monta o orçamento."
+          texto="Quantas pessoas são, quais atividades e para quando você precisa. Não pedimos CNPJ nem cadastro para começar — isso fica para depois, se fechar."
+          rotulo="Solicitar orçamento"
+          publico="b2b"
+        />
+      </Secao>
+    </>
+  )
+}

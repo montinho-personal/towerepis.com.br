@@ -1,0 +1,251 @@
+@import 'tailwindcss';
+
+/* ============================================================
+   DESIGN SYSTEM — TOWER EPI'S
+   Derivado do Instagram @towerepis. Ver docs/03-fatos-verificados.md §10.
+
+   PRESERVADO   vermelho da marca, ponto/círculo do logo, azul-marinho, creme
+   EVOLUÍDO     degradê -> chapado; formas diagonais -> grid editorial;
+                tipografia de app -> sistema com display grotesca + serifa
+   ============================================================ */
+
+@theme {
+  /* --- Cor -------------------------------------------------- */
+  /* Vermelho: principal ativo de reconhecimento da marca. */
+  --color-tower-red: #b4111b;      /* uso gráfico e superfícies */
+  --color-tower-red-deep: #7e0b12; /* hover e texto sobre claro */
+  --color-tower-red-soft: #fdf0ef; /* fundo tênue */
+
+  /* Azul-marinho: hierarquia secundária, títulos. */
+  --color-tower-navy: #15294b;
+  --color-tower-navy-deep: #0d1a30;
+
+  /* Neutros: papel quente, tinta editorial. */
+  --color-paper: #fcfbf9;
+  --color-paper-2: #f4f1ec;   /* faixas — o creme do feed */
+  --color-ink: #191a1d;
+  --color-ink-2: #4a4e56;
+  --color-ink-3: #6e737c;
+  --color-rule: #e3ded6;
+  --color-rule-strong: #cfc8bd;
+
+  /* Funcional: verde só para WhatsApp. Cor com função, nunca enfeite. */
+  --color-zap: #128c4a;
+  --color-zap-deep: #0e7440;
+
+  /* --- Tipografia ------------------------------------------- */
+  --font-display: var(--font-archivo), 'Archivo', system-ui, sans-serif;
+  --font-serif: var(--font-source-serif), 'Source Serif 4', Georgia, serif;
+
+  /* Escala modular ~1.25, ancorada em 16px. */
+  --text-2xs: 0.6875rem;
+  --text-xs: 0.78125rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.3125rem;
+  --text-2xl: 1.625rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+  --text-5xl: 3.25rem;
+  --text-6xl: 4.25rem;
+  --text-7xl: 5.5rem;
+
+  /* --- Espaço: escala fixa, sem valores avulsos -------------- */
+  --spacing: 0.25rem;
+
+  --breakpoint-xs: 26rem;
+}
+
+/* ============================================================ */
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-serif);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.08;
+    text-wrap: balance;
+    color: var(--color-ink);
+  }
+
+  p { text-wrap: pretty; }
+
+  /* Foco visível de verdade — requisito de acessibilidade, não detalhe. */
+  :focus-visible {
+    outline: 3px solid var(--color-tower-red);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: var(--color-tower-red);
+    color: #fff;
+  }
+
+  /* Reserva de espaço para imagem: protege CLS. */
+  img, svg, video { display: block; max-width: 100%; height: auto; }
+}
+
+@layer components {
+  /* --- Grid e medida ---------------------------------------- */
+  .wrap {
+    width: 100%;
+    max-width: 78rem;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 48rem) { .wrap { padding-inline: 2.5rem; } }
+
+  .wrap-tight { max-width: 46rem; }
+  .measure { max-width: 38rem; }
+
+  /* --- Rótulo: a voz "editorial" do sistema ------------------ */
+  .eyebrow {
+    font-family: var(--font-display);
+    font-size: var(--text-2xs);
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-ink-3);
+  }
+  .eyebrow-red { color: var(--color-tower-red); }
+
+  /* --- O ponto vermelho: marca gráfica vinda do logo --------- */
+  .dot::after {
+    content: '';
+    display: inline-block;
+    width: 0.34em;
+    height: 0.34em;
+    margin-left: 0.18em;
+    border-radius: 9999px;
+    background: var(--color-tower-red);
+    vertical-align: baseline;
+  }
+
+  /* --- Botões ----------------------------------------------- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-sm);
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+    padding: 0.95rem 1.4rem;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    text-align: center;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    /* Alvo confortável no celular. */
+    min-height: 3rem;
+  }
+
+  .btn-zap { background: var(--color-zap); color: #fff; }
+  .btn-zap:hover { background: var(--color-zap-deep); }
+
+  .btn-ink { background: var(--color-ink); color: var(--color-paper); }
+  .btn-ink:hover { background: #000; }
+
+  .btn-red { background: var(--color-tower-red); color: #fff; }
+  .btn-red:hover { background: var(--color-tower-red-deep); }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--color-ink);
+    border-color: var(--color-rule-strong);
+  }
+  .btn-ghost:hover { border-color: var(--color-ink); background: var(--color-paper-2); }
+
+  .btn-block { width: 100%; }
+
+  /* --- Régua tipográfica de conteúdo ------------------------- */
+  .prose-tower { font-size: 1.0625rem; line-height: 1.7; }
+  .prose-tower > * + * { margin-top: 1.15rem; }
+  .prose-tower h2 {
+    font-size: var(--text-2xl);
+    margin-top: 2.75rem;
+    padding-top: 1.25rem;
+    border-top: 2px solid var(--color-ink);
+  }
+  .prose-tower h3 { font-size: var(--text-lg); margin-top: 2rem; }
+  .prose-tower a {
+    color: var(--color-tower-red-deep);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+  }
+  .prose-tower a:hover { text-decoration-thickness: 2px; }
+  .prose-tower strong { font-weight: 600; }
+  .prose-tower ul { list-style: none; padding: 0; }
+  .prose-tower ul > li {
+    position: relative;
+    padding-left: 1.35rem;
+    margin-top: 0.6rem;
+  }
+  .prose-tower ul > li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.72em;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 9999px;
+    background: var(--color-tower-red);
+  }
+
+  /* --- Faixa e régua ---------------------------------------- */
+  .band { background: var(--color-paper-2); }
+  .band-ink { background: var(--color-ink); color: var(--color-paper); }
+  .band-ink h2, .band-ink h3 { color: var(--color-paper); }
+
+  .rule-top { border-top: 1px solid var(--color-rule); }
+  .rule-heavy { border-top: 2px solid var(--color-ink); }
+
+  /* --- Numeral editorial: "1995", "30" ---------------------- */
+  .numeral {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.045em;
+    font-variant-numeric: tabular-nums;
+    line-height: 0.85;
+  }
+
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 100;
+    background: var(--color-ink);
+    color: #fff;
+    padding: 0.85rem 1.25rem;
+    font-family: var(--font-display);
+    font-size: var(--text-sm);
+    font-weight: 700;
+  }
+  .skip-link:focus { left: 0; }
+}
