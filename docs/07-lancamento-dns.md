@@ -31,51 +31,53 @@ existem URLs antigas a redirecionar.
 
 ---
 
-## Passo a passo
+## Estado do DNS — resolvido em 30/08/2026
 
-Não consigo executar esta parte: o conjunto de ferramentas da Vercel disponível
-aqui **não expõe a ação de adicionar domínio a um projeto**, e a alteração de DNS
-exige o login do registrador, que é de vocês.
+DNS gerido na **HostGator**. Configuração final:
 
-### Passo 1 — Adicionar o domínio na Vercel
-No painel: projeto **towerepis-com-br** → **Settings** → **Domains** → adicionar:
-- `towerepis.com.br`
-- `www.towerepis.com.br`
+| Tipo | Nome | Valor | Situação |
+|---|---|---|---|
+| `A` | `towerepis.com.br` | `76.76.21.21` | ✅ Vercel, propagado |
+| `CNAME` | `www` | `cname.vercel-dns-0.com` | ✅ Vercel, propagado |
+| ~~`MX`~~ | ~~`towerepis.com.br`~~ | — | ❌ removido |
+| ~~`CNAME`~~ | ~~`mail`~~ | — | ❌ removido |
+| ~~`CNAME`~~ | ~~`ftp`~~ | — | ❌ removido |
 
-A Vercel vai mostrar os registros exatos a configurar. **Use os valores que ela
-mostrar**, não os deste documento — o alvo do CNAME varia por projeto.
+### O problema que apareceu no caminho
 
-### Passo 2 — Configurar o DNS no registrador
-Os valores esperados:
+O registro `MX` apontava para o **próprio domínio** (`towerepis.com.br`). Enquanto o
+apex resolvia para a HostGator, o e-mail funcionava. Ao trocar o `A` para a Vercel,
+o MX passou a apontar para um servidor que **não tem serviço de e-mail** — e mensagem
+enviada sumiria sem erro visível para quem enviou.
 
-| Registro | Nome | Valor |
-|---|---|---|
-| `A` | `@` | `76.76.21.21` |
-| `CNAME` | `www` | `cname.vercel-dns-0.com` |
+Confirmado que **não existe caixa de e-mail no domínio**, os registros `MX`, `mail` e
+`ftp` foram removidos. Ficaram apenas os dois que servem o site.
 
-Isso **substitui** o apontamento atual para `162.240.81.81`.
+⚠️ **Se um dia a Tower criar e-mail `@towerepis.com.br`**, o MX terá de apontar para o
+servidor de e-mail do provedor escolhido — **nunca** para `towerepis.com.br`, que hoje
+é a Vercel.
 
-⚠️ Se houver e-mail no domínio (`@towerepis.com.br`), **não mexa nos registros
-`MX`**. Trocar o A e o CNAME não afeta e-mail; apagar os MX derruba.
+## Domínio canônico: apex, sem `www`
 
-### Passo 3 — Promover para produção
-Na Vercel, em **Deployments**, no menu `⋯` do deploy mais recente:
-**Promote to Production**. Ou definir o branch de produção em
-**Settings → Git → Production Branch** como `claude/tower-epis-website-v7fq8k`.
+Decidido: **`https://towerepis.com.br`**, com `www` redirecionando para ele.
 
-Enquanto o deploy for de preview, a Vercel envia `x-robots-tag: noindex` e o
-Google não indexa.
+É o que o código já usa — os 41 `canonical`, o `sitemap.xml` e os `@id` do schema
+apontam todos para o apex. Não há nenhum `www` no código, de propósito.
 
-### Passo 4 — Depois que propagar
-1. Conferir se `https://towerepis.com.br` abre o site novo (pode levar de minutos
-   a algumas horas).
-2. Conferir se o certificado HTTPS foi emitido (a Vercel faz sozinha).
-3. Testar um CTA de WhatsApp de verdade, do celular.
-4. Cadastrar no **Google Search Console** e enviar
+Na Vercel: `towerepis.com.br` como domínio de produção, e `www.towerepis.com.br`
+como redirect para ele.
+
+## O que falta
+
+1. **Promover para produção** — em Deployments, menu `⋯` do deploy mais recente →
+   *Promote to Production*. Sem isso o domínio serve o deploy antigo, só de documentos.
+2. **Testar o WhatsApp** — abrir `https://wa.me/558534919494?text=teste` no celular.
+3. Conferir se `https://towerepis.com.br` abre o site e se o HTTPS foi emitido
+   (a Vercel faz sozinha, leva alguns minutos após o domínio validar).
+4. **Google Search Console** — cadastrar o domínio e enviar
    `https://towerepis.com.br/sitemap.xml`.
-5. Configurar o **Google Business Profile** como área de atendimento.
-
----
+5. **Google Business Profile** — configurar como área de atendimento, sem endereço.
+6. **Campanha de avaliações** com os clientes de longa data.
 
 ## Redirecionamentos já configurados
 
