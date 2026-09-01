@@ -27,6 +27,11 @@ export function schemaOrganizacao() {
     url: `${SITE}/`,
     foundingDate: String(empresa.fundacao),
     telephone: `+${empresa.whatsapp.numero}`,
+    // O selo quadrado que a Tower já usa no Instagram. O Google pede o
+    // logotipo para o painel de conhecimento, e o reconhecimento tem que ser
+    // o mesmo que o cliente já viu em outro lugar.
+    logo: `${SITE}/logo-tower-epis.png`,
+    image: `${SITE}/fotos/pessoas/helano-e-cristina.jpg`,
     address: {
       '@type': 'PostalAddress',
       addressLocality: empresa.endereco.cidade,
@@ -118,6 +123,7 @@ export function schemaPessoaHelano() {
     jobTitle: empresa.socios.helano.credencial,
     worksFor: { '@id': `${SITE}/#organizacao` },
     url: `${SITE}/a-tower/helano/`,
+    image: `${SITE}/fotos/pessoas/helano.jpg`,
     knowsAbout: [
       'Segurança do trabalho',
       'Equipamento de Proteção Individual',

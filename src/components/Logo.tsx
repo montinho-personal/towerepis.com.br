@@ -1,11 +1,17 @@
 /**
  * Logotipo.
  *
- * Reconstrução tipográfica do selo do Instagram: "TOWER" em caixa alta com o
- * ponto vermelho no lugar do O, e "EPI's" abaixo. Mantém o reconhecimento e
- * descarta o degradê — que não escala, não imprime bem e envelhece rápido.
+ * Reconstrução tipográfica: "TOWER" em caixa alta com o ponto vermelho no
+ * lugar do O, e "EPI's" abaixo. Descarta o degradê do selo — que não escala,
+ * não imprime bem e envelhece rápido.
  *
- * PENDENTE: substituir pelo vetor oficial quando Helano/Cristina enviarem.
+ * DIVERGÊNCIA A RESOLVER: o selo de 1000px que Helano/Cristina enviaram tem o
+ * O comum, sem ponto. O ponto veio da leitura que fiz do Instagram e pode ter
+ * sido invenção minha. Está aguardando decisão deles — trocar o desenho da
+ * marca não é escolha de quem faz o site.
+ *
+ * PENDENTE: o vetor oficial (AI, EPS, SVG ou PDF). O arquivo que chegou é
+ * raster com fundo vermelho chapado, então não substitui isto no cabeçalho.
  */
 export function Logo({ escuro = false }: { escuro?: boolean }) {
   return (
@@ -27,9 +33,9 @@ export function Logo({ escuro = false }: { escuro?: boolean }) {
         WER
       </span>
       <span
-        className={`font-display text-[0.66rem] font-bold tracking-[0.34em] ${escuro ? 'text-paper/70' : 'text-ink-2'}`}
+        className={`font-display text-[0.66rem] font-bold tracking-[0.3em] ${escuro ? 'text-paper/70' : 'text-ink-2'}`}
       >
-        EPI&rsquo;S
+        EPI&rsquo;s
       </span>
     </span>
   )

@@ -1,0 +1,4 @@
+# Fotos e originais são binários: diff e merge de texto não fazem sentido.
+*.png binary
+*.jpg binary
+*.jpeg binary

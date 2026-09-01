@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Trilha, Secao } from '@/components/Blocos'
+import { Retrato } from '@/components/Retrato'
 import { FechamentoCta } from '@/components/WhatsAppCta'
 import { JsonLd, schemaPessoaHelano } from '@/lib/schema'
 import { ARTIGOS } from '@/content/artigos'
@@ -33,12 +34,30 @@ export default function PaginaHelano() {
         ]}
       />
 
+      {/* Página de autoria: é ela que sustenta o E-E-A-T dos artigos. Rosto
+          com nome e função faz mais por isso do que qualquer declaração. */}
       <section className="wrap pt-10 pb-14 sm:pt-14">
-        <p className="eyebrow eyebrow-red">Quem revisa o conteúdo técnico</p>
-        <h1 className="mt-5 text-4xl sm:text-5xl">Helano</h1>
-        <p className="mt-4 font-display text-lg font-semibold text-ink-2">
-          Sócio-proprietário da Tower EPI&rsquo;s · Técnico de Segurança do Trabalho
-        </p>
+        {/* O recorte guarda a mão da Cristina no ombro dele, porque a foto não
+            separa os dois em nenhum enquadramento — ela está atrás dele em
+            todos. Em tamanho pequeno aquilo virava uma mancha escura sem
+            sentido; grande o bastante, lê-se como o que é. */}
+        <div className="grid gap-9 sm:grid-cols-[17rem_1fr] sm:items-end sm:gap-12">
+          <Retrato
+            src="/fotos/pessoas/helano.jpg"
+            alt="Helano, sócio-proprietário da Tower EPI's e técnico de segurança do trabalho, com a mão de Cristina em seu ombro."
+            largura={950}
+            altura={1330}
+            tamanhos="(min-width: 640px) 17rem, 70vw"
+            prioridade
+          />
+          <div className="sm:pb-2">
+            <p className="eyebrow eyebrow-red">Quem revisa o conteúdo técnico</p>
+            <h1 className="mt-5 text-4xl sm:text-5xl">Helano</h1>
+            <p className="mt-4 font-display text-lg font-semibold text-ink-2">
+              Sócio-proprietário da Tower EPI&rsquo;s · Técnico de Segurança do Trabalho
+            </p>
+          </div>
+        </div>
       </section>
 
       <Secao className="wrap pt-0">

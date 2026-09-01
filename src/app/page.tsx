@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { WhatsAppCta } from '@/components/WhatsAppCta'
 import { BarraProva, GradeLinks, Secao, Comparacao } from '@/components/Blocos'
 import { IconeSeta } from '@/components/Icones'
+import { Retrato } from '@/components/Retrato'
 import { PROFISSOES } from '@/content/profissoes'
 import { PROTECOES } from '@/content/protecoes'
 import { ARTIGOS } from '@/content/artigos'
@@ -218,11 +219,26 @@ export default function Home() {
 
       {/* 7. QUEM ESTÁ DO OUTRO LADO — converte "um site" em "uma pessoa".
              Resolve a objeção central dos dois públicos de uma vez.
-             PENDENTE: fotos reais de Helano e Cristina (declaradas no
-             questionário). Até lá, tratamento tipográfico — nunca banco
-             de imagens. */}
+
+             A foto é o que fecha o argumento. Até ela chegar, a promessa de
+             que quem responde são os dois donos era só texto: verificável
+             apenas depois de mandar mensagem. Agora a pessoa vê antes. */}
       <Secao className="wrap">
-        <div className="grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:gap-20">
+        <div className="grid gap-10 lg:grid-cols-[0.72fr_1fr] lg:gap-16">
+          <Retrato
+            src="/fotos/pessoas/helano-e-cristina.jpg"
+            alt="Helano e Cristina, sócios-proprietários da Tower EPI's, em retrato de estúdio."
+            largura={2046}
+            altura={3074}
+            tamanhos="(min-width: 1024px) 30vw, 100vw"
+            legenda={
+              <>
+                <strong className="font-semibold text-ink">Helano e Cristina.</strong>{' '}
+                Fundaram a Tower em 1995 e são quem responde no WhatsApp até hoje.
+              </>
+            }
+          />
+
           <div>
             <p className="eyebrow eyebrow-red">Quem responde</p>
             <h2 className="mt-4 text-2xl sm:text-3xl">
@@ -243,14 +259,7 @@ export default function Home() {
                 catálogo: <em>onde você trabalha e como é a sua rotina?</em>
               </p>
             </div>
-            <div className="mt-8">
-              <Link href="/a-tower/" className="btn btn-ghost">
-                Conhecer a Tower
-              </Link>
-            </div>
-          </div>
-
-          <blockquote className="border-l-4 border-tower-red pl-6 sm:pl-8">
+            <blockquote className="mt-10 border-l-4 border-tower-red pl-6 sm:pl-8">
             <p className="font-display text-xl font-bold leading-snug sm:text-2xl">
               “Em 1995, a 3M procurava alguém para desenvolver o mercado de proteção no
               Ceará. Convidou o Helano. A Tower nasceu desse convite.”
@@ -259,7 +268,14 @@ export default function Home() {
               A empresa começou num prédio pequeno alugado no Montese, em Fortaleza.
               Estoque embaixo, escritório em cima. Eram só os dois.
             </footer>
-          </blockquote>
+            </blockquote>
+
+            <div className="mt-9">
+              <Link href="/a-tower/" className="btn btn-ghost">
+                Conhecer a Tower
+              </Link>
+            </div>
+          </div>
         </div>
       </Secao>
 

@@ -259,18 +259,51 @@ tipografia, grid, espaço e contraste**.
 
 ---
 
-## PENDÊNCIA CRÍTICA: FOTOGRAFIA
+## FOTOGRAFIA — O QUE CHEGOU
 
-O sistema está desenhado para fotografia real e **ainda não tem nenhuma**.
-O questionário confirma que existem fotos dos fundadores, da primeira sede e dos
+**Retrato de Helano e Cristina** (2046×3074). Entrou em três lugares, e só
+três, porque repetir a mesma foto gasta o efeito dela:
+
+| Onde | Por quê |
+|---|---|
+| Home, "Quem responde" | Fecha o argumento central do site. A promessa de que quem responde são os dois donos era só texto — verificável apenas depois de mandar mensagem. Agora se vê antes. |
+| `/a-tower/`, "Quem atende" | Dá rosto aos dois cartões de biografia. |
+| `/a-tower/helano/` | Página de autoria: é ela que sustenta o E-E-A-T dos artigos, e rosto com nome e função faz mais por isso do que declaração. |
+
+O recorte só do Helano guarda a mão da Cristina no ombro dele. A foto não
+separa os dois em enquadramento nenhum — ela está atrás dele em todos. Em
+tamanho pequeno aquilo virava mancha escura sem sentido, então o retrato dele
+é grande o bastante para a mão se ler como mão.
+
+O componente `Retrato` é o único caminho para foto de pessoa: sem canto
+arredondado, sem sombra e sem moldura. O fundo do estúdio é um tom quente
+(#b39d89) bem mais escuro que o papel, então a foto se recorta sozinha —
+moldura em cima disso viraria porta-retrato.
+
+**Peso:** o PNG de 5,1 MB virou JPEG de 466 KB, e o `next/image` entrega AVIF
+de **19 KB** no tamanho em que aparece. Todas com `width`/`height` declarados,
+então não há deslocamento de layout.
+
+**Dados estruturados:** `Person` do Helano ganhou `image`, e a `Organization`
+ganhou `logo` e `image`. É o que o Google usa em painel de conhecimento.
+
+## AINDA FALTA
+
+O sistema está desenhado para mais fotografia do que tem.
+O questionário confirma que existem fotos da primeira sede e dos
 logotipos antigos.
 
 Enquanto não chegam, todas as áreas previstas para foto foram resolvidas
 tipograficamente — nunca com banco de imagens, que é o que o briefing proíbe e o
 que destruiria a promessa de autenticidade do projeto.
 
-**Prioridade das fotos:**
-1. Helano e Cristina (Home, `/a-tower/`, `/a-tower/helano/`)
+**Prioridade do que falta:**
+1. ~~Helano e Cristina~~ — chegou.
 2. Primeira sede no Montese, 1995 (`/a-tower/`) — o ativo visual mais valioso
+   que a empresa tem, e o único que nenhuma outra distribuidora pode ter.
 3. Logotipos antigos (`/a-tower/`)
 4. Produtos das linhas trabalhadas (páginas de calçado e proteção)
+5. Uma foto de trabalho dos dois. O retrato que chegou é de estúdio, formal, e
+   isso contrasta com o argumento de "nunca saíram do balcão". Ele funciona
+   onde está; uma foto no meio do estoque ou atendendo faria outro trabalho,
+   que o de estúdio não faz.

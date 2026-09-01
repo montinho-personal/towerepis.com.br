@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Trilha, Secao } from '@/components/Blocos'
+import { Retrato } from '@/components/Retrato'
 import { FechamentoCta } from '@/components/WhatsAppCta'
 
 export const metadata: Metadata = {
@@ -138,10 +139,27 @@ export default function ATower() {
 
       {/* QUEM SÃO */}
       <Secao className="wrap">
-        <p className="eyebrow eyebrow-red">Quem atende</p>
-        <div className="mt-8 grid gap-px border border-ink bg-ink sm:grid-cols-2">
+        <h2 className="eyebrow eyebrow-red">Quem atende</h2>
+
+        <div className="mt-8 grid gap-10 lg:grid-cols-[0.62fr_1fr] lg:gap-14">
+          <Retrato
+            src="/fotos/pessoas/helano-e-cristina.jpg"
+            alt="Helano e Cristina, sócios-proprietários da Tower EPI's, em retrato de estúdio."
+            largura={2046}
+            altura={3074}
+            tamanhos="(min-width: 1024px) 26vw, 100vw"
+            legenda={
+              <>
+                <strong className="font-semibold text-ink">Helano e Cristina.</strong>{' '}
+                Os dois desde 1995 — pelo prédio do Montese, pela sede de 2003 e pela
+                Tower de hoje.
+              </>
+            }
+          />
+
+          <div className="grid gap-px self-start border border-ink bg-ink">
           <div className="bg-paper p-7 sm:p-9">
-            <h2 className="font-display text-2xl font-bold">Helano</h2>
+            <h3 className="font-display text-2xl font-bold">Helano</h3>
             <p className="eyebrow mt-2">Sócio-proprietário · Técnico de Segurança do Trabalho</p>
             <p className="mt-5 text-ink-2">
               Jornalista de formação, virou técnico de segurança do trabalho e passou a
@@ -158,7 +176,7 @@ export default function ATower() {
           </div>
 
           <div className="bg-paper p-7 sm:p-9">
-            <h2 className="font-display text-2xl font-bold">Cristina</h2>
+            <h3 className="font-display text-2xl font-bold">Cristina</h3>
             <p className="eyebrow mt-2">Sócia-proprietária · Atendimento e vendas</p>
             <p className="mt-5 text-ink-2">
               Trabalhou treze anos em banco antes de entrar no mercado de EPI, em São
@@ -166,6 +184,7 @@ export default function ATower() {
               perguntamos como gostam que um cliente seja tratado, a resposta foi:
               “com eficiência, rapidez no atendimento, atenção e cuidado”.
             </p>
+          </div>
           </div>
         </div>
       </Secao>
