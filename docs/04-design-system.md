@@ -287,6 +287,50 @@ então não há deslocamento de layout.
 **Dados estruturados:** `Person` do Helano ganhou `image`, e a `Organization`
 ganhou `logo` e `image`. É o que o Google usa em painel de conhecimento.
 
+## O LOGOTIPO — RESOLVIDO
+
+Chegou o vetor (`Logo tower EPIS 2.ai`), e ele respondeu a divergência que eu
+tinha registrado.
+
+**Eu tinha errado.** A versão anterior do `Logo.tsx` punha um ponto vermelho no
+lugar do O. Era invenção minha, feita a partir de uma leitura do Instagram. O
+vetor oficial mostra o **O comum**. Corrigido.
+
+**A tipografia da marca é Museo** — 700 no "TOWER", 300 no "EPI's". Isso estava
+dentro do arquivo, em duas fontes CFF embutidas.
+
+**Como a marca entrou no site:** contornos, não texto. Um logotipo é artwork, e
+tratá-lo como tipografia viva criaria dependência de uma fonte comercial que o
+site não licencia. Os caminhos vieram dos glifos reais do arquivo, com o
+kerning que estava lá: −19 entre T e O, −10 entre O e W, e o "s" puxado para
+debaixo do apóstrofo por um `Td` de 1,597 em em vez do avanço natural.
+
+O fundo vermelho e o degradê ficaram para trás. Degradê não escala, não imprime
+bem, e o sistema não tem nenhum. A marca herda `currentColor`, então funciona
+em papel e em grafite com a mesma geometria — que é como um logotipo
+monocromático deve se comportar.
+
+O favicon passou a usar o **T real do Museo 700** no lugar do T desenhado à mão.
+
+### Onde cada versão vive
+
+| Arquivo | Onde | Por quê |
+|---|---|---|
+| `Logo.tsx` (inline) | cabeçalho e rodapé | Herda `currentColor`, sem requisição extra, funciona nos dois fundos. |
+| `public/marca-tower-epis.svg` | asset solto | Para quando alguém precisar da marca fora do site. |
+| `src/app/icon.svg` | favicon | Só o T: qualquer coisa além disso é ilegível a 16px. |
+| `public/logo-tower-epis.png` | `logo` nos dados estruturados | O selo quadrado com fundo, que é o formato que o Google quer. |
+| `docs/originais/logo-tower-epis.ai` | arquivo-fonte | Fora de `public/`, porque origem não se serve. |
+
+### Como extraí, caso precise de novo
+O `.ai` é um PDF por dentro. As bibliotecas disponíveis (fontkit, opentype.js)
+só aceitam CFF dentro de um invólucro OpenType, e o que estava lá era CFF puro
+— 1,3 KB. Interpretar os charstrings Type 2 direto deu menos trabalho do que
+montar um OTF mínimo em volta. O interpretador está em
+`docs/ferramentas/cff.py`.
+
+---
+
 ## AINDA FALTA
 
 O sistema está desenhado para mais fotografia do que tem.

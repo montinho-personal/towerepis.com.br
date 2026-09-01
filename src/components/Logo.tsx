@@ -1,42 +1,48 @@
 /**
- * Logotipo.
+ * Logotipo oficial da Tower EPI's.
  *
- * Reconstrução tipográfica: "TOWER" em caixa alta com o ponto vermelho no
- * lugar do O, e "EPI's" abaixo. Descarta o degradê do selo — que não escala,
- * não imprime bem e envelhece rápido.
+ * Contornos extraídos do arquivo vetorial que Helano e Cristina enviaram
+ * (Logo tower EPIS 2.ai). A marca é composta em Museo — 700 no "TOWER", 300
+ * no "EPI's" — e os caminhos abaixo são os glifos reais daquele arquivo, com
+ * o kerning que estava lá: -19 entre T e O, -10 entre O e W, e o "s" puxado
+ * para debaixo do apóstrofo.
  *
- * DIVERGÊNCIA A RESOLVER: o selo de 1000px que Helano/Cristina enviaram tem o
- * O comum, sem ponto. O ponto veio da leitura que fiz do Instagram e pode ter
- * sido invenção minha. Está aguardando decisão deles — trocar o desenho da
- * marca não é escolha de quem faz o site.
+ * São contornos, não texto: um logotipo é artwork, não tipografia viva. Isso
+ * também evita depender de uma fonte comercial que o site não licencia.
  *
- * PENDENTE: o vetor oficial (AI, EPS, SVG ou PDF). O arquivo que chegou é
- * raster com fundo vermelho chapado, então não substitui isto no cabeçalho.
+ * O que ficou para trás do selo original: o fundo vermelho e o degradê. O
+ * degradê não escala, não imprime bem e o sistema não tem nenhum. A marca
+ * herda `currentColor`, então funciona em papel e em grafite com a mesma
+ * geometria — que é como um logotipo monocromático deve se comportar.
+ *
+ * CORRIGIDO: a versão anterior tinha um ponto vermelho no lugar do O. Era
+ * invenção minha, feita a partir de uma leitura do Instagram. O vetor oficial
+ * mostra o O comum, e é ele que vale.
  */
 export function Logo({ escuro = false }: { escuro?: boolean }) {
   return (
-    <span className="inline-flex flex-col leading-none">
-      <span
-        className={`numeral text-[1.6rem] sm:text-[1.85rem] ${escuro ? 'text-paper' : 'text-ink'}`}
-        style={{ letterSpacing: '0.02em' }}
-      >
-        T
-        <span className="relative inline-block align-baseline">
-          <span className="invisible">O</span>
-          <span
-            aria-hidden="true"
-            className="absolute inset-0 flex items-center justify-center"
-          >
-            <span className="block h-[0.72em] w-[0.72em] rounded-full bg-tower-red" />
-          </span>
-        </span>
-        WER
-      </span>
-      <span
-        className={`font-display text-[0.66rem] font-bold tracking-[0.3em] ${escuro ? 'text-paper/70' : 'text-ink-2'}`}
-      >
-        EPI&rsquo;s
-      </span>
-    </span>
+    <svg
+      viewBox="66.87 310.33 869.13 399.7"
+      role="img"
+      aria-label="Tower EPI&rsquo;s"
+      fill="currentColor"
+      className={`h-[2.15rem] w-auto sm:h-[2.45rem] ${escuro ? 'text-paper' : 'text-ink'}`}
+    >
+      <g transform="translate(63.25 484.54589999999996) scale(0.241301 -0.241301)">
+        <path d="M261.0 0.0L392.0 0.0L392.0 599.0L501.0 599.0C515.0 599.0 523.0 591.0 523.0 577.0L523.0 534.0L638.0 534.0L638.0 646.0C638.0 693.0 622.0 710.0 574.0 710.0L79.0 710.0C31.0 710.0 15.0 693.0 15.0 646.0L15.0 534.0L130.0 534.0L130.0 577.0C130.0 591.0 138.0 599.0 152.0 599.0L261.0 599.0Z" transform="translate(0.00 0)" />
+        <path d="M30.0 360.0C30.0 151.0 188.0 -12.0 397.0 -12.0C606.0 -12.0 764.0 151.0 764.0 360.0C764.0 563.0 606.0 722.0 397.0 722.0C188.0 722.0 30.0 563.0 30.0 360.0ZM166.0 360.0C166.0 496.0 269.0 600.0 397.0 600.0C525.0 600.0 628.0 496.0 628.0 360.0C628.0 218.0 525.0 110.0 397.0 110.0C269.0 110.0 166.0 218.0 166.0 360.0Z" transform="translate(634.00 0)" />
+        <path d="M214.0 0.0L366.0 0.0L479.0 402.0C492.0 448.0 498.0 490.0 498.0 490.0L500.0 490.0C500.0 490.0 506.0 447.0 518.0 402.0L626.0 0.0L777.0 0.0L925.0 577.0C929.0 594.0 939.0 599.0 957.0 599.0L976.0 599.0L976.0 710.0L890.0 710.0C840.0 710.0 813.0 698.0 803.0 652.0L705.0 229.0C696.0 189.0 693.0 154.0 693.0 154.0L691.0 154.0C691.0 154.0 688.0 188.0 677.0 229.0L555.0 708.0L444.0 708.0L315.0 229.0C304.0 188.0 300.0 154.0 300.0 154.0L298.0 154.0C298.0 154.0 295.0 189.0 286.0 229.0L189.0 652.0C178.0 698.0 151.0 710.0 101.0 710.0L16.0 710.0L16.0 599.0L35.0 599.0C52.0 599.0 63.0 594.0 67.0 577.0Z" transform="translate(1418.00 0)" />
+        <path d="M99.0 68.0C99.0 20.0 119.0 0.0 167.0 0.0L489.0 0.0C536.0 0.0 557.0 20.0 557.0 68.0L557.0 176.0L438.0 176.0L438.0 133.0C438.0 119.0 430.0 111.0 416.0 111.0L252.0 111.0C238.0 111.0 230.0 119.0 230.0 133.0L230.0 302.0L460.0 302.0L460.0 413.0L230.0 413.0L230.0 599.0L390.0 599.0C404.0 599.0 412.0 591.0 412.0 577.0L412.0 534.0L531.0 534.0L531.0 642.0C531.0 689.0 510.0 710.0 463.0 710.0L34.0 710.0L34.0 599.0L99.0 599.0Z" transform="translate(2410.00 0)" />
+        <path d="M99.0 0.0L230.0 0.0L230.0 265.0L296.0 265.0C333.0 265.0 348.0 260.0 363.0 232.0L454.0 53.0C477.0 8.0 500.0 0.0 553.0 0.0L622.0 0.0L622.0 111.0L609.0 111.0C587.0 111.0 570.0 113.0 559.0 134.0L490.0 271.0C477.0 297.0 455.0 307.0 455.0 307.0L455.0 309.0C485.0 315.0 573.0 368.0 573.0 496.0C573.0 630.0 482.0 710.0 352.0 710.0L34.0 710.0L34.0 599.0L99.0 599.0ZM230.0 377.0L230.0 599.0L336.0 599.0C400.0 599.0 439.0 559.0 439.0 489.0C439.0 418.0 400.0 377.0 334.0 377.0Z" transform="translate(2988.00 0)" />
+      </g>
+      <rect x="90" y="524.477" width="846" height="7" />
+      <g transform="translate(306.8188 707.6542999999999) scale(0.199126 -0.197905)">
+        <path d="M107.0 61.0C107.0 18.0 125.0 0.0 168.0 0.0L472.0 0.0C515.0 0.0 533.0 18.0 533.0 61.0L533.0 131.0L468.0 131.0L468.0 84.0C468.0 69.0 460.0 62.0 446.0 62.0L199.0 62.0C185.0 62.0 177.0 69.0 177.0 84.0L177.0 323.0L441.0 323.0L441.0 385.0L177.0 385.0L177.0 641.0L417.0 641.0C431.0 641.0 439.0 634.0 439.0 619.0L439.0 572.0L505.0 572.0L505.0 642.0C505.0 685.0 487.0 703.0 444.0 703.0L42.0 703.0L42.0 641.0L107.0 641.0Z" transform="translate(0.00 0)" />
+        <path d="M107.0 0.0L177.0 0.0L177.0 276.0L339.0 276.0C464.0 276.0 556.0 360.0 556.0 491.0C556.0 621.0 464.0 703.0 339.0 703.0L42.0 703.0L42.0 641.0L107.0 641.0ZM177.0 338.0L177.0 641.0L331.0 641.0C423.0 641.0 484.0 586.0 484.0 491.0C484.0 395.0 423.0 338.0 330.0 338.0Z" transform="translate(558.00 0)" />
+        <path d="M46.0 0.0L247.0 0.0L247.0 62.0L180.0 62.0L180.0 641.0L247.0 641.0L247.0 703.0L46.0 703.0L46.0 641.0L112.0 641.0L112.0 62.0L46.0 62.0Z" transform="translate(1137.00 0)" />
+        <path d="M51.0 541.0L105.0 541.0L161.0 713.0L90.0 713.0Z" transform="translate(1430.00 0)" />
+        <path d="M29.0 76.0C29.0 76.0 91.0 -12.0 222.0 -12.0C322.0 -12.0 398.0 45.0 398.0 129.0C398.0 296.0 116.0 270.0 116.0 383.0C116.0 432.0 158.0 456.0 228.0 456.0C261.0 456.0 315.0 442.0 315.0 405.0L315.0 381.0L379.0 381.0L379.0 424.0C379.0 495.0 277.0 515.0 226.0 515.0C125.0 515.0 47.0 470.0 47.0 379.0C47.0 217.0 329.0 237.0 329.0 127.0C329.0 74.0 279.0 47.0 223.0 47.0C124.0 47.0 68.0 123.0 68.0 123.0Z" transform="translate(1597.00 0)" />
+      </g>
+    </svg>
   )
 }
