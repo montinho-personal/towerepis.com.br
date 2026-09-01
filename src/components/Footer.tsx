@@ -69,7 +69,7 @@ export function Footer() {
 
         <div className="mt-12 grid gap-14 lg:grid-cols-[minmax(0,1fr)_2.2fr]">
           <div>
-            <Logo escuro />
+            <Logo prefixo="rodape" className="h-16 w-16" />
             <p className="mt-5 max-w-xs text-[0.95rem] leading-relaxed text-paper/70">
               Equipamentos de proteção individual para Fortaleza, a região
               metropolitana e o Ceará.

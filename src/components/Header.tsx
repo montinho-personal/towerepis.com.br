@@ -44,7 +44,12 @@ export function Header() {
         }`}
       >
         <Link href="/" className="shrink-0" aria-label="Tower EPI's, página inicial">
-          <Logo />
+          <Logo
+            prefixo="cabecalho"
+            className={`transition-[width,height] duration-200 ${
+              rolou ? 'h-11 w-11 sm:h-[3.25rem] sm:w-[3.25rem]' : 'h-14 w-14 sm:h-[4.3rem] sm:w-[4.3rem]'
+            }`}
+          />
         </Link>
 
         <nav aria-label="Principal" className="hidden lg:block">

@@ -299,26 +299,58 @@ vetor oficial mostra o **O comum**. Corrigido.
 **A tipografia da marca é Museo** — 700 no "TOWER", 300 no "EPI's". Isso estava
 dentro do arquivo, em duas fontes CFF embutidas.
 
-**Como a marca entrou no site:** contornos, não texto. Um logotipo é artwork, e
-tratá-lo como tipografia viva criaria dependência de uma fonte comercial que o
-site não licencia. Os caminhos vieram dos glifos reais do arquivo, com o
-kerning que estava lá: −19 entre T e O, −10 entre O e W, e o "s" puxado para
-debaixo do apóstrofo por um `Td` de 1,597 em em vez do avanço natural.
+**A marca vai inteira, como ela é.** Fundo, seis facetas, degradês e tipografia
+— reconstrução fiel do arquivo. Diferença média para o original: **0,46 de 255
+por pixel**; o que resta é serrilhado de renderização.
 
-O fundo vermelho e o degradê ficaram para trás. Degradê não escala, não imprime
-bem, e o sistema não tem nenhum. A marca herda `currentColor`, então funciona
-em papel e em grafite com a mesma geometria — que é como um logotipo
-monocromático deve se comportar.
+Eu tinha feito uma primeira versão que descartava o fundo e o degradê, para a
+marca herdar a cor do texto. O argumento era razoável — degradê não escala e o
+sistema não tem nenhum — mas a decisão não era minha. Adaptar a marca de alguém
+sem pedir é o mesmo erro do ponto, de outro tamanho.
 
-O favicon passou a usar o **T real do Museo 700** no lugar do T desenhado à mão.
+**Como foi reconstruída:**
+- As seis facetas e as matrizes de degradê saíram do content stream do PDF que
+  mora dentro do `.ai`, percorrido por `docs/ferramentas/selo.py` — percorrido,
+  não transcrito, porque transcrever caminho a olho é onde entram os erros que
+  ninguém vê.
+- Os degradês do PDF interpolam por t^1.61089 e o SVG só interpola linear entre
+  paradas, então cada um virou doze paradas amostradas dessa curva.
+- Os glifos são os contornos reais das duas fontes CFF embutidas, com o kerning
+  do arquivo: −19 entre T e O, −10 entre O e W, e o "s" puxado para debaixo do
+  apóstrofo por um `Td` de 1,597 em em vez do avanço natural.
+
+**Contornos, não texto.** Um logotipo é artwork; tratá-lo como tipografia viva
+criaria dependência de uma fonte comercial que o site não licencia, e a marca
+quebraria em qualquer máquina sem Museo instalado.
+
+**O selo é quadrado, e quem chama define o lado.** O cabeçalho encolhe ao rolar
+(88px → 64px), então o logo encolhe junto. `h-13`/`w-13` não existem no Tailwind
+deste projeto — teriam falhado em silêncio, com o logo sem tamanho ao rolar. As
+medidas fora da escala vão como valor explícito.
+
+**`prefixo` é obrigatório** porque os degradês precisam de id e a marca aparece
+duas vezes na mesma página. Ids repetidos fariam a segunda instância apontar
+para os degradês da primeira: funciona por acidente, já que são idênticos, e
+quebra no dia em que deixarem de ser.
+
+**O favicon é o selo inteiro.** A 16px o tipo dentro não lê — vira um quadrado
+vermelho. É o mesmo que acontece com o avatar deles no Instagram, e é o
+quadrado vermelho que faz o reconhecimento. A 32px, que é o tamanho real na
+maioria das telas hoje, o "TOWER" já aparece.
+
+**O card de compartilhamento foi refeito.** Ele carregava o logo inventado, e é
+a imagem que aparece em toda prévia de link no WhatsApp — o canal de conversão
+do site inteiro. `apple-icon.png` também.
 
 ### Onde cada versão vive
 
 | Arquivo | Onde | Por quê |
 |---|---|---|
-| `Logo.tsx` (inline) | cabeçalho e rodapé | Herda `currentColor`, sem requisição extra, funciona nos dois fundos. |
+| `Logo.tsx` (inline) | cabeçalho e rodapé | Sem requisição extra, e o selo carrega as próprias cores. |
 | `public/marca-tower-epis.svg` | asset solto | Para quando alguém precisar da marca fora do site. |
-| `src/app/icon.svg` | favicon | Só o T: qualquer coisa além disso é ilegível a 16px. |
+| `src/app/icon.svg` | favicon | O selo inteiro. A 16px vira o quadrado vermelho, que é o que reconhece. |
+| `src/app/opengraph-image.png` | prévia de link | Refeito com o selo real. |
+| `src/app/apple-icon.png` | tela de início no iOS | O selo, 180px. |
 | `public/logo-tower-epis.png` | `logo` nos dados estruturados | O selo quadrado com fundo, que é o formato que o Google quer. |
 | `docs/originais/logo-tower-epis.ai` | arquivo-fonte | Fora de `public/`, porque origem não se serve. |
 

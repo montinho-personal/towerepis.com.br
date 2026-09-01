@@ -32,7 +32,12 @@ export function Retrato({
   tamanhos?: string
 }) {
   return (
-    <figure>
+    // `min-w-0` não é enfeite: item de grid nasce com `min-width:auto`, e a
+    // largura mínima de conteúdo de uma imagem é a largura intrínseca dela.
+    // Sem isso a faixa do grid se recusa a encolher, o `w-full` da imagem
+    // passa a valer 100% de 2046px, e a página inteira rola de lado no
+    // celular — sem nenhum erro, só uma barra horizontal que ninguém quer.
+    <figure className="min-w-0">
       <Image
         src={src}
         alt={alt}
@@ -40,7 +45,7 @@ export function Retrato({
         height={altura}
         sizes={tamanhos}
         priority={prioridade}
-        className="w-full"
+        className="h-auto w-full max-w-full"
       />
       {legenda && (
         <figcaption className="mt-4 border-t-2 border-ink pt-3 text-[0.85rem] leading-snug text-ink-2">
