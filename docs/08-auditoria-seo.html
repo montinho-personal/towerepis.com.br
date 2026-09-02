@@ -1,0 +1,640 @@
+<title>Auditoria SEO da Tower</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --paper: #fcfbf9;
+    --paper-2: #f0ebe3;
+    --ink: #1f2124;
+    --ink-2: #4a4f57;
+    --ink-3: #6e737c;
+    --rule: #e3ded5;
+    --rule-forte: #cfc7ba;
+    --red: #b4111b;
+    --red-clara: #f2686e;
+    --red-fundo: #fbeef0;
+    --grafite: #1f2124;
+    --grafite-2: #2c2f33;
+    --grafite-linha: #3d4147;
+    --sobre-grafite: #fcfbf9;
+    --display: 'Archivo', system-ui, -apple-system, sans-serif;
+    --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --mono: ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #17181a;
+      --paper-2: #1f2124;
+      --ink: #f2f0ed;
+      --ink-2: #b8b4ae;
+      --ink-3: #8e8a84;
+      --rule: #33363a;
+      --rule-forte: #494d53;
+      --red: #f2686e;
+      --red-clara: #f2686e;
+      --red-fundo: #2a1c1e;
+      --grafite: #0f1011;
+      --grafite-2: #191b1d;
+      --grafite-linha: #34383d;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #17181a;
+    --paper-2: #1f2124;
+    --ink: #f2f0ed;
+    --ink-2: #b8b4ae;
+    --ink-3: #8e8a84;
+    --rule: #33363a;
+    --rule-forte: #494d53;
+    --red: #f2686e;
+    --red-clara: #f2686e;
+    --red-fundo: #2a1c1e;
+    --grafite: #0f1011;
+    --grafite-2: #191b1d;
+    --grafite-linha: #34383d;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+  .env { max-width: 60rem; margin-inline: auto; padding-inline: 1.5rem; }
+  @media (min-width: 48rem) { .env { padding-inline: 2.5rem; } }
+  .medida { max-width: 40rem; }
+
+  h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; letter-spacing: -0.022em; text-wrap: balance; margin: 0; line-height: 1.14; }
+  p, li { text-wrap: pretty; }
+
+  .rot {
+    font-family: var(--display); font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-3); margin: 0;
+  }
+  .rot-red { color: var(--red); }
+
+  /* --- capa --- */
+  .capa { background: var(--grafite); color: var(--sobre-grafite); padding-block: clamp(3rem, 8vw, 5.5rem); }
+  .capa .rot { color: var(--red-clara); }
+  .capa h1 { color: var(--sobre-grafite); font-size: clamp(2.1rem, 5.6vw, 3.6rem); margin-top: 1.1rem; max-width: 22ch; }
+  .capa .sub { color: #bab7b2; font-size: 1.06rem; max-width: 46ch; margin: 1.6rem 0 0; }
+  .meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr)); gap: 1.2rem 2rem; margin-top: 2.6rem; border-top: 1px solid var(--grafite-linha); padding-top: 1.5rem; }
+  .meta dt { font-family: var(--display); font-size: 0.66rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #8e8a84; }
+  .meta dd { margin: 0.3rem 0 0; font-family: var(--display); font-weight: 600; font-size: 1.05rem; color: var(--sobre-grafite); font-variant-numeric: tabular-nums; }
+
+  /* --- seções --- */
+  section { padding-block: clamp(2.4rem, 5vw, 3.6rem); border-top: 1px solid var(--rule); }
+  section:first-of-type { border-top: 0; }
+  .num { font-family: var(--display); font-weight: 700; font-size: 0.72rem; letter-spacing: 0.14em; color: var(--red); }
+  h2 { font-size: clamp(1.45rem, 3vw, 1.95rem); margin-top: 0.55rem; }
+  h3 { font-size: 1.08rem; margin-top: 2rem; }
+  h4 { font-family: var(--display); font-size: 0.92rem; margin-top: 1.5rem; }
+  section > p, section > ul, section > ol { max-width: 40rem; }
+  p { margin: 1rem 0 0; }
+  ul, ol { margin: 1rem 0 0; padding-left: 1.15rem; }
+  li { margin-top: 0.45rem; }
+  li::marker { color: var(--red); }
+  strong { font-weight: 600; }
+  em { color: var(--ink-2); }
+  code { font-family: var(--mono); font-size: 0.84em; background: var(--paper-2); padding: 0.1em 0.36em; border-radius: 2px; }
+  a { color: inherit; text-decoration-color: var(--red); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+
+  /* --- destaque --- */
+  .achado { border-left: 3px solid var(--red); background: var(--red-fundo); padding: 1.1rem 1.3rem; margin-top: 1.5rem; max-width: 42rem; }
+  .achado .rot { color: var(--red); }
+  .achado p { margin-top: 0.5rem; }
+  .achado p:first-of-type { margin-top: 0.5rem; }
+
+  .nota { border-top: 2px solid var(--ink); padding-top: 0.9rem; margin-top: 1.6rem; max-width: 40rem; font-size: 0.95rem; color: var(--ink-2); }
+
+  /* --- tabelas --- */
+  .rolagem { overflow-x: auto; margin-top: 1.4rem; border-bottom: 1px solid var(--rule); }
+  table { border-collapse: collapse; width: 100%; font-family: var(--display); font-size: 0.82rem; }
+  th { text-align: left; font-weight: 700; font-size: 0.66rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); padding: 0 0.8rem 0.6rem 0; border-bottom: 2px solid var(--ink); white-space: nowrap; }
+  td { padding: 0.55rem 0.8rem 0.55rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; font-variant-numeric: tabular-nums; }
+  td:first-child, th:first-child { padding-left: 0; }
+  .u { font-family: var(--mono); font-size: 0.76rem; white-space: nowrap; }
+  .n { text-align: right; }
+  .fraco { color: var(--ink-3); }
+  tr.alerta td { background: var(--red-fundo); }
+
+  /* --- selos --- */
+  .selo { display: inline-block; font-family: var(--display); font-size: 0.64rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; padding: 0.16em 0.5em; border: 1px solid var(--rule-forte); color: var(--ink-2); white-space: nowrap; }
+  .selo-cheio { background: var(--red); border-color: var(--red); color: #fff; }
+  .selo-ink { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+
+  /* --- faixa escura --- */
+  .faixa { background: var(--grafite); color: var(--sobre-grafite); padding-block: clamp(2.4rem, 5vw, 3.4rem); border-top: 0; }
+  .faixa h2, .faixa h3 { color: var(--sobre-grafite); }
+  .faixa .rot { color: #8e8a84; }
+  .faixa .num { color: var(--red-clara); }
+  .faixa p, .faixa li { color: #c4c1bc; }
+  .faixa strong { color: var(--sobre-grafite); }
+  .faixa code { background: var(--grafite-2); color: #d8d5d0; }
+  .faixa th { color: #8e8a84; border-bottom-color: #6e737c; }
+  .faixa td { border-bottom-color: var(--grafite-linha); color: #c4c1bc; }
+  .faixa .rolagem { border-bottom-color: var(--grafite-linha); }
+  .faixa .selo { border-color: var(--grafite-linha); color: #c4c1bc; }
+
+  /* --- grade de blocos --- */
+  .grade { display: grid; gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin-top: 1.6rem; }
+  @media (min-width: 40rem) { .grade-2 { grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 52rem) { .grade-3 { grid-template-columns: repeat(3, 1fr); } }
+  .grade > div { background: var(--paper); padding: 1.1rem 1.2rem; }
+  .grade h4 { margin-top: 0.5rem; }
+  .grade p { font-size: 0.94rem; margin-top: 0.5rem; }
+
+  .fluxo { font-family: var(--display); font-size: 0.86rem; font-weight: 600; line-height: 2; margin-top: 1.2rem; }
+  .fluxo span { color: var(--red); padding-inline: 0.4rem; }
+
+  .lotes { list-style: none; padding: 0; margin-top: 1.6rem; border-top: 2px solid var(--ink); max-width: 44rem; }
+  .lotes li { display: grid; grid-template-columns: 4.5rem 1fr; gap: 1.2rem; padding-block: 1rem; border-bottom: 1px solid var(--rule); margin: 0; }
+  .lotes b { font-family: var(--display); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); padding-top: 0.2rem; }
+  .lotes p { margin: 0.3rem 0 0; font-size: 0.95rem; }
+  .lotes strong { font-family: var(--display); font-size: 0.98rem; }
+
+  footer { background: var(--paper-2); border-top: 3px solid var(--red); padding-block: 2.4rem; }
+  footer p { font-size: 0.9rem; color: var(--ink-2); }
+
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+
+<header class="capa">
+  <div class="env">
+    <p class="rot">Auditoria · Fase 5 · Setembro de 2026</p>
+    <h1>O site está tecnicamente limpo. Falta ele se comportar como uma biblioteca.</h1>
+    <p class="sub">Rastreamento completo das 43 URLs, grafo de linkagem interna, sobreposição semântica entre páginas e verificação de SERP. Nenhuma alteração feita — este documento é o diagnóstico.</p>
+    <dl class="meta">
+      <div><dt>URLs rastreadas</dt><dd>43</dd></div>
+      <div><dt>Erros técnicos</dt><dd>0</dd></div>
+      <div><dt>Canibalização real</dt><dd>1 par</dd></div>
+      <div><dt>Hubs sem link editorial</dt><dd>4 de 6</dd></div>
+      <div><dt>Páginas com fonte externa</dt><dd>7 de 43</dd></div>
+    </dl>
+  </div>
+</header>
+
+<main class="env">
+
+<section>
+  <p class="num">00</p>
+  <h2>O que foi medido, e o que eu não pude medir</h2>
+  <p>Rastreei o site inteiro em navegador real, a partir da home, seguindo cada link. Extraí de cada página: status, canonical, title, description, árvore de headings, volume de texto, schema, imagens, âncoras, links internos por região (cabeçalho, rodapé, trilha, corpo) e links externos. Depois montei o grafo de linkagem e calculei a sobreposição semântica entre todos os pares de páginas.</p>
+  <p>Tudo neste documento que aparece como número vem dessa medição. Onde a conclusão é inferência, está dito.</p>
+
+  <div class="achado">
+    <p class="rot rot-red">O que falta, e que muda a ordem de prioridade</p>
+    <p><strong>Não tenho acesso ao Search Console.</strong> Sem ele, não existe dado real de consulta, impressão, clique, CTR ou posição. Isso significa que a seção de <em>quick wins</em> deste documento é baseada em estrutura, não em desempenho — e que qualquer priorização por "páginas na posição 4–20" é impossível hoje.</p>
+    <p>Também não tenho dado de tráfego, backlinks ou histórico de indexação. O site é novo, então provavelmente ainda há pouco a ver — mas isso precisa ser verificado, não presumido. <strong>É o primeiro item da lista de pendências de vocês.</strong></p>
+  </div>
+
+  <p>Para a análise de concorrência e de lacunas de conteúdo, consultei as SERPs reais das consultas centrais em vez de especular. As fontes estão citadas na seção 11.</p>
+</section>
+
+<section>
+  <p class="num">01</p>
+  <h2>Inventário completo</h2>
+  <p>43 URLs. Todas respondem 200, todas têm canonical, todas têm exatamente um H1, todas têm <code>og:image</code>. Profundidade máxima de clique: 2. Não há redirecionamento em cadeia, página bloqueada por engano nem URL fora do sitemap.</p>
+
+  <div class="rolagem">
+    <table>
+      <thead>
+        <tr>
+          <th>URL</th><th>Tipo</th><th class="n">Prof.</th><th class="n">Palavras</th>
+          <th class="n">Links de corpo<br>recebidos</th><th class="n">Título</th><th>Schema além do padrão</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="u">/</td><td>home</td><td class="n">0</td><td class="n">838</td><td class="n">0</td><td class="n">42</td><td class="fraco">—</td></tr>
+        <tr class="alerta"><td class="u">/protecao/</td><td>hub</td><td class="n">1</td><td class="n">151</td><td class="n">0</td><td class="n">41</td><td class="fraco">—</td></tr>
+        <tr class="alerta"><td class="u">/para-seu-trabalho/</td><td>hub</td><td class="n">1</td><td class="n">146</td><td class="n">2</td><td class="n">44</td><td class="fraco">—</td></tr>
+        <tr class="alerta"><td class="u">/conhecimento/</td><td>hub</td><td class="n">1</td><td class="n">207</td><td class="n">1</td><td class="n">47</td><td class="fraco">—</td></tr>
+        <tr class="alerta"><td class="u">/empresas/</td><td>hub</td><td class="n">1</td><td class="n">494</td><td class="n">3</td><td class="n">44</td><td class="fraco">—</td></tr>
+        <tr><td class="u">/calcados/</td><td>hub</td><td class="n">1</td><td class="n">361</td><td class="n">8</td><td class="n">63</td><td class="fraco">—</td></tr>
+        <tr class="alerta"><td class="u">/marcas/</td><td>hub</td><td class="n">1</td><td class="n">271</td><td class="n">1</td><td class="n">41</td><td class="fraco">—</td></tr>
+        <tr><td class="u">/para-seu-trabalho/cozinha/</td><td>profissão</td><td class="n">1</td><td class="n">742</td><td class="n">13</td><td class="n">64</td><td>FAQPage</td></tr>
+        <tr><td class="u">/para-seu-trabalho/construcao/</td><td>profissão</td><td class="n">1</td><td class="n">606</td><td class="n">15</td><td class="n">59</td><td>FAQPage</td></tr>
+        <tr><td class="u">/para-seu-trabalho/industria/</td><td>profissão</td><td class="n">1</td><td class="n">566</td><td class="n">16</td><td class="n">59</td><td>FAQPage</td></tr>
+        <tr><td class="u">/para-seu-trabalho/enfermagem-e-saude/</td><td>profissão</td><td class="n">1</td><td class="n">566</td><td class="n">13</td><td class="n">59</td><td>FAQPage</td></tr>
+        <tr><td class="u">/para-seu-trabalho/limpeza-e-conservacao/</td><td>profissão</td><td class="n">1</td><td class="n">523</td><td class="n">15</td><td class="n">60</td><td>FAQPage</td></tr>
+        <tr><td class="u">/para-seu-trabalho/manutencao/</td><td>profissão</td><td class="n">1</td><td class="n">484</td><td class="n">12</td><td class="n">49</td><td>FAQPage</td></tr>
+        <tr><td class="u">/para-seu-trabalho/logistica-e-estoque/</td><td>profissão</td><td class="n">1</td><td class="n">447</td><td class="n">12</td><td class="n">58</td><td>FAQPage</td></tr>
+        <tr><td class="u">/protecao/respiratoria/</td><td>proteção</td><td class="n">1</td><td class="n">480</td><td class="n">11</td><td class="n">54</td><td>FAQPage</td></tr>
+        <tr><td class="u">/protecao/maos/</td><td>proteção</td><td class="n">1</td><td class="n">434</td><td class="n">11</td><td class="n">57</td><td>FAQPage</td></tr>
+        <tr><td class="u">/protecao/auditiva/</td><td>proteção</td><td class="n">1</td><td class="n">409</td><td class="n">8</td><td class="n">48</td><td>FAQPage</td></tr>
+        <tr><td class="u">/protecao/olhos-e-face/</td><td>proteção</td><td class="n">1</td><td class="n">376</td><td class="n">9</td><td class="n">50</td><td>FAQPage</td></tr>
+        <tr><td class="u">/protecao/corpo/</td><td>proteção</td><td class="n">1</td><td class="n">356</td><td class="n">8</td><td class="n">57</td><td>FAQPage</td></tr>
+        <tr><td class="u">/protecao/cabeca/</td><td>proteção</td><td class="n">1</td><td class="n">348</td><td class="n">8</td><td class="n">50</td><td>FAQPage</td></tr>
+        <tr><td class="u">/calcados/ocupacionais/</td><td>calçado</td><td class="n">1</td><td class="n">450</td><td class="n">7</td><td class="n">64</td><td>FAQPage</td></tr>
+        <tr><td class="u">/calcados/seguranca/</td><td>calçado</td><td class="n">1</td><td class="n">439</td><td class="n">9</td><td class="n">64</td><td>FAQPage</td></tr>
+        <tr><td class="u">/calcados/antiderrapantes/</td><td>calçado</td><td class="n">1</td><td class="n">452</td><td class="n">6</td><td class="n">61</td><td>FAQPage</td></tr>
+        <tr><td class="u">/empresas/alimentacao/</td><td>setor</td><td class="n">2</td><td class="n">774</td><td class="n">6</td><td class="n">55</td><td>FAQPage</td></tr>
+        <tr><td class="u">/empresas/industria/</td><td>setor</td><td class="n">2</td><td class="n">746</td><td class="n">8</td><td class="n">59</td><td>FAQPage</td></tr>
+        <tr><td class="u">/empresas/construcao/</td><td>setor</td><td class="n">2</td><td class="n">726</td><td class="n">6</td><td class="n">56</td><td>FAQPage</td></tr>
+        <tr><td class="u">/empresas/facilities-e-limpeza/</td><td>setor</td><td class="n">2</td><td class="n">707</td><td class="n">6</td><td class="n">56</td><td>FAQPage</td></tr>
+        <tr><td class="u">/empresas/saude/</td><td>setor</td><td class="n">2</td><td class="n">701</td><td class="n">6</td><td class="n">57</td><td>FAQPage</td></tr>
+        <tr class="alerta"><td class="u">/calcados/comparativo/</td><td>artigo comercial</td><td class="n">1</td><td class="n">800</td><td class="n">9</td><td class="n">50</td><td>FAQPage</td></tr>
+        <tr class="alerta"><td class="u">/conhecimento/calcado-ocupacional-ou-de-seguranca/</td><td>artigo</td><td class="n">1</td><td class="n">595</td><td class="n">7</td><td class="n">50</td><td>BlogPosting</td></tr>
+        <tr><td class="u">/conhecimento/calcado-para-cozinha-como-escolher/</td><td>artigo</td><td class="n">1</td><td class="n">770</td><td class="n">7</td><td class="n">62</td><td>BlogPosting</td></tr>
+        <tr><td class="u">/conhecimento/nr-6-o-que-a-empresa-precisa-saber/</td><td>artigo</td><td class="n">2</td><td class="n">599</td><td class="n">5</td><td class="n">59</td><td>BlogPosting</td></tr>
+        <tr><td class="u">/conhecimento/o-que-e-ca-certificado-de-aprovacao/</td><td>artigo</td><td class="n">1</td><td class="n">573</td><td class="n">7</td><td class="n">50</td><td>BlogPosting</td></tr>
+        <tr><td class="u">/conhecimento/solado-antiderrapante-o-que-significa/</td><td>artigo</td><td class="n">2</td><td class="n">580</td><td class="n">4</td><td class="n">62</td><td>BlogPosting</td></tr>
+        <tr><td class="u">/a-tower/</td><td>institucional</td><td class="n">1</td><td class="n">795</td><td class="n">1</td><td class="n">50</td><td class="fraco">—</td></tr>
+        <tr><td class="u">/a-tower/helano/</td><td>autoria</td><td class="n">1</td><td class="n">375</td><td class="n">24</td><td class="n">55</td><td>Person</td></tr>
+        <tr><td class="u">/marcas/bompel/</td><td>marca</td><td class="n">1</td><td class="n">828</td><td class="n">3</td><td class="n">35</td><td>FAQPage</td></tr>
+        <tr class="alerta"><td class="u">/marcas/3m/</td><td>marca</td><td class="n">2</td><td class="n">267</td><td class="n">1</td><td class="n">41</td><td class="fraco">—</td></tr>
+        <tr><td class="u">/orcamento/</td><td>conversão</td><td class="n">1</td><td class="n">470</td><td class="n">7</td><td class="n">36</td><td>FAQPage</td></tr>
+        <tr><td class="u">/empresas/como-atendemos/</td><td>institucional</td><td class="n">2</td><td class="n">507</td><td class="n">1</td><td class="n">42</td><td>FAQPage</td></tr>
+        <tr class="alerta"><td class="u">/contato/</td><td>institucional</td><td class="n">1</td><td class="n">210</td><td class="n">0</td><td class="n">46</td><td>FAQPage</td></tr>
+        <tr class="alerta"><td class="u">/encontrar-epi/</td><td>ferramenta</td><td class="n">2</td><td class="n">59</td><td class="n">1</td><td class="n">54</td><td class="fraco">—</td></tr>
+        <tr><td class="u">/politica-de-privacidade/</td><td>legal</td><td class="n">1</td><td class="n">192</td><td class="n">0</td><td class="n">37</td><td class="fraco">—</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="nota">Todas as páginas emitem <code>Organization</code>, <code>LocalBusiness</code> e <code>WebSite</code>; todas menos a home emitem <code>BreadcrumbList</code>. A coluna mostra só o que vem além disso. Linhas destacadas são as tratadas nas seções 5 a 8.</p>
+</section>
+
+<section class="faixa">
+  <div class="env" style="padding:0">
+    <p class="num">02</p>
+    <h2>O achado central: a autoridade corre na direção errada</h2>
+    <p>A arquitetura é hub-and-spoke — seis índices, cada um com suas páginas finais. O modelo funciona quando o hub distribui autoridade para o cluster <em>e o cluster devolve para o hub</em>. Medindo só links editoriais de corpo (ignorando menu e rodapé, que apontam para tudo e não sinalizam nada):</p>
+
+    <div class="rolagem">
+      <table>
+        <thead><tr><th>Página</th><th>Papel</th><th class="n">Links editoriais recebidos</th></tr></thead>
+        <tbody>
+          <tr><td class="u">/a-tower/helano/</td><td>página de autor</td><td class="n">24</td></tr>
+          <tr><td class="u">/para-seu-trabalho/industria/</td><td>folha</td><td class="n">16</td></tr>
+          <tr><td class="u">/para-seu-trabalho/construcao/</td><td>folha</td><td class="n">15</td></tr>
+          <tr><td class="u">/calcados/</td><td><strong>hub</strong></td><td class="n">8</td></tr>
+          <tr><td class="u">/empresas/</td><td><strong>hub</strong></td><td class="n">3</td></tr>
+          <tr><td class="u">/para-seu-trabalho/</td><td><strong>hub</strong></td><td class="n">2</td></tr>
+          <tr><td class="u">/conhecimento/</td><td><strong>hub</strong></td><td class="n">1</td></tr>
+          <tr><td class="u">/marcas/</td><td><strong>hub</strong></td><td class="n">1</td></tr>
+          <tr><td class="u">/protecao/</td><td><strong>hub</strong></td><td class="n">0</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>A página mais linkada do site é a biografia do Helano — 24 links, porque o bloco "Quem escreveu" aparece em toda página técnica. Isso é ótimo para E-E-A-T e é para ser assim. Mas o hub de <strong>Proteção</strong>, que deveria concentrar a autoridade de seis páginas de categoria, recebe <strong>zero</strong> links editoriais. Ele só existe no menu.</p>
+
+    <p>A causa é estrutural, e é uma decisão que eu tomei sem perceber a consequência: as páginas finais linkam <em>lateralmente</em> (para outras profissões, outras partes do corpo) e <em>para baixo</em> (para categorias), mas quase nunca <em>para cima</em>. O cluster de proteção tem 48 links saindo de cada folha e nenhum deles volta ao hub.</p>
+
+    <p>Consequência prática: quando alguém busca <strong>"EPI Fortaleza"</strong> ou <strong>"proteção respiratória"</strong> — consultas de categoria — a página que o Google tem para oferecer é a mais fraca do cluster. O hub tem 151 palavras e nenhum sinal interno de importância.</p>
+  </div>
+</section>
+
+<section>
+  <p class="num">03</p>
+  <h2>Problemas técnicos</h2>
+  <p>Poucos, e nenhum grave. O site foi construído com verificação automatizada desde o início, então o que costuma aparecer numa auditoria — links quebrados, canonical ausente, H1 duplicado, imagem sem alt, hierarquia de heading pulada — não aparece aqui.</p>
+
+  <div class="grade grade-2">
+    <div>
+      <p class="rot rot-red">7 títulos acima de 60 caracteres</p>
+      <h4>Causa mecânica, não editorial</h4>
+      <p>O template do site acrescenta <code>· Tower EPI's</code> a todo título — 14 caracteres. Os títulos em si têm ~50. Afeta <code>/calcados/</code> e as três páginas de calçado, mais cozinha e dois artigos. O Google corta por largura em pixels, e o que ele corta é justamente o sufixo da marca; o dano é pequeno, mas é gratuito.</p>
+    </div>
+    <div>
+      <p class="rot rot-red">1 description fora de faixa</p>
+      <h4><code>/calcados/</code> com 161 caracteres</h4>
+      <p>E <code>/politica-de-privacidade/</code> com 59, curta demais para dizer alguma coisa. As outras 41 estão entre 111 e 157, todas distintas — não há description duplicada no site.</p>
+    </div>
+    <div>
+      <p class="rot">Sem problema</p>
+      <h4>0 erros de rastreamento</h4>
+      <p>43/43 respondem 200. Nenhuma cadeia de redirecionamento, nenhum <code>noindex</code> acidental, nenhuma URL órfã do sitemap, profundidade máxima 2 cliques.</p>
+    </div>
+    <div>
+      <p class="rot">Sem problema</p>
+      <h4>0 imagens sem <code>alt</code></h4>
+      <p>Todas com <code>width</code> e <code>height</code> declarados, servidas em AVIF pelo otimizador. Nomes de arquivo descritivos (<code>helano-e-cristina.jpg</code>), sem empilhamento de palavra-chave.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="num">04</p>
+  <h2>Problemas de conteúdo</h2>
+
+  <h3>Seis páginas rasas — mas só quatro são problema</h3>
+  <p><code>/protecao/</code> (151 palavras), <code>/para-seu-trabalho/</code> (146) e <code>/conhecimento/</code> (207) são hubs que só apresentam uma grade de links. São exatamente as páginas que deveriam responder às consultas de categoria, e não têm o que responder. <code>/encontrar-epi/</code> tem 59 palavras porque é uma ferramenta interativa — o conteúdo aparece conforme a pessoa responde, o que é correto para o uso e ruim para indexação.</p>
+  <p><code>/contato/</code> (210) e <code>/politica-de-privacidade/</code> (192) são rasas por natureza e estão certas assim.</p>
+
+  <h3>Uma regressão que eu introduzi na Etapa 3</h3>
+  <div class="achado">
+    <p class="rot rot-red">Perda de estrutura de heading</p>
+    <p>Quando troquei a grade de cards por listas em régua nas páginas de profissão, proteção e calçado, os itens deixaram de ser <code>&lt;h3&gt;</code> e viraram <code>&lt;span&gt;</code>. Ganhei ritmo visual e altura de tela; perdi ~40 headings que carregavam termos reais — "Calçados ocupacionais", "Calçados antiderrapantes", "Cozinha e alimentação".</p>
+    <p>Em <code>/para-seu-trabalho/cozinha/</code> a seção "O que a Tower trabalha para essa rotina" hoje é um H2 sem nenhum H3 abaixo. A home, que ainda usa cards, manteve os H3. <strong>Correção: devolver o <code>&lt;h3&gt;</code> ao componente de lista.</strong> O visual não muda — é troca de elemento, não de estilo.</p>
+  </div>
+
+  <h3>Os dois blocos mais valiosos não são endereçáveis</h3>
+  <p>"Em uma frase" — a resposta direta no topo de cada página final — é um <code>&lt;p&gt;</code> com classe de rótulo. "A rotina que a gente conhece" também. Do ponto de vista de um leitor está certo; do ponto de vista de um extrator de resposta, esses blocos não existem no sumário da página. São justamente os que mais mereciam ser citados.</p>
+</section>
+
+<section>
+  <p class="num">05</p>
+  <h2>Canibalização</h2>
+  <p>Calculei a similaridade de cosseno entre todos os 903 pares de páginas, usando title, H1 e headings com peso maior que o corpo. Um par crítico, e um padrão a vigiar.</p>
+
+  <div class="achado">
+    <p class="rot rot-red">Similaridade 0,85 — título e H1 idênticos</p>
+    <p><code>/calcados/comparativo/</code> e <code>/conhecimento/calcado-ocupacional-ou-de-seguranca/</code> têm <strong>o mesmo title e o mesmo H1</strong>: "Calçado ocupacional ou de segurança?". Duas URLs disputando a mesma consulta, que é provavelmente a consulta informacional mais valiosa do negócio inteiro — a própria home diz que é a pergunta que mais chega no WhatsApp.</p>
+  </div>
+
+  <p><strong>Recomendação:</strong> não fundir. As duas têm razão de existir e servem intenções diferentes — mas hoje isso não está dito em lugar nenhum, nem para o leitor nem para o Google. A saída é diferenciar de verdade:</p>
+  <ul>
+    <li><code>/calcados/comparativo/</code> vira a <strong>página de decisão</strong>, dentro do funil comercial de calçados. Título voltado para escolha ("Qual dos dois é o seu caso"), tabela comparativa como espinha dorsal, CTA de orçamento. É a que deve ranquear para a consulta.</li>
+    <li><code>/conhecimento/calcado-ocupacional-ou-de-seguranca/</code> vira a <strong>referência normativa</strong>: as duas normas, o que cada uma exige, o que muda na prática. Título voltado para definição ("NBR ISO 20345 e 20347: o que muda"). Alimenta a primeira com link editorial.</li>
+  </ul>
+  <p>Se não houver apetite para reescrever as duas, a alternativa segura é <code>canonical</code> do artigo apontando para a comercial. Perde-se a cobertura informacional, mas resolve a disputa.</p>
+
+  <h3>O padrão a vigiar: as páginas de setor</h3>
+  <p>Os cinco setores de <code>/empresas/</code> ficam entre 0,58 e 0,66 de similaridade entre si — alimentação × saúde é o par mais alto. A causa é que três blocos inteiros são idênticos nas cinco páginas: "O erro que sai caro", "Do primeiro contato à reposição" e "Já fomos grandes. Hoje somos dois". Cerca de 380 das ~730 palavras de cada página são compartilhadas.</p>
+  <p>Isso <strong>ainda não é canibalização</strong> — os títulos, H1 e blocos de riscos são distintos, e cada uma tem consulta própria ("EPI para construtora", "EPI para restaurante"). Mas está no limite. Se novos setores forem criados com o mesmo molde, vira conteúdo programático raso. <strong>Regra para o futuro: setor novo só entra com blocos de risco e de FAQ próprios, e no mínimo 400 palavras exclusivas.</strong></p>
+</section>
+
+<section>
+  <p class="num">06</p>
+  <h2>Páginas órfãs e mal servidas</h2>
+  <p>Nenhuma página está órfã no sentido estrito — todas são alcançáveis em até 2 cliques, porque cabeçalho e rodapé apontam para tudo. Mas cinco não recebem nenhum link editorial de corpo, que é o único tipo que sinaliza importância:</p>
+  <div class="rolagem">
+    <table>
+      <thead><tr><th>URL</th><th class="n">Links de corpo</th><th>Diagnóstico</th></tr></thead>
+      <tbody>
+        <tr><td class="u">/protecao/</td><td class="n">0</td><td>Hub central sem nenhum link editorial. O problema mais caro da lista.</td></tr>
+        <tr><td class="u">/contato/</td><td class="n">0</td><td>Aceitável — o WhatsApp é o canal, e ele está em toda página.</td></tr>
+        <tr><td class="u">/politica-de-privacidade/</td><td class="n">0</td><td>Correto. Página legal vive no rodapé.</td></tr>
+        <tr><td class="u">/encontrar-epi/</td><td class="n">1</td><td>Ferramenta de qualificação com um único link de entrada. Desperdício.</td></tr>
+        <tr><td class="u">/marcas/3m/</td><td class="n">1</td><td>O convite da 3M em 1995 é o fato fundador da empresa. Uma menção.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="faixa">
+  <div class="env" style="padding:0">
+    <p class="num">07</p>
+    <h2>Linkagem interna: o que já funciona</h2>
+    <p>Antes das correções, o que está certo e não deve ser mexido:</p>
+    <ul>
+      <li><strong>Zero âncoras genéricas.</strong> Nenhum "clique aqui", "saiba mais" ou "veja aqui" no site inteiro. Nenhuma âncora vazia de ícone.</li>
+      <li><strong>Âncoras descritivas e variadas.</strong> A mais repetida é "Helano" (23×, do bloco de autoria). Depois vêm nomes de profissão e de parte do corpo — descritivos, naturais, sem exact-match forçado.</li>
+      <li><strong>Todo artigo aponta para exatamente uma página comercial.</strong> Regra que já está no código e evita dispersão.</li>
+      <li><strong>Trilha de navegação com <code>BreadcrumbList</code></strong> em 42 das 43 páginas, com hierarquia coerente.</li>
+    </ul>
+    <h3>O que corrigir</h3>
+    <ol>
+      <li><strong>Devolver links para os hubs.</strong> Cada página final deve linkar para o seu hub em contexto editorial — não só na trilha. Ex.: no fim de <code>/protecao/respiratoria/</code>, "Veja todas as partes do corpo que exigem proteção" → <code>/protecao/</code>.</li>
+      <li><strong>Ligar <code>/encontrar-epi/</code> às páginas de profissão.</strong> Quem chega numa profissão e não se reconhece ali é exatamente quem a ferramenta serve.</li>
+      <li><strong>Ligar <code>/marcas/3m/</code> à história.</strong> <code>/a-tower/</code> conta o convite de 1995 sem linkar a página que o desenvolve.</li>
+      <li><strong>Ligar os artigos entre si por assunto, não por recência.</strong> "Continue lendo" hoje pega os três primeiros da lista. O artigo de solado antiderrapante recebe 4 links; o de NR-6, 5. São os dois menos servidos do blog.</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <p class="num">08</p>
+  <h2>Links externos</h2>
+  <p>Sete páginas de 43 citam fonte externa. Todas as citações são boas — gov.br para NR-6 e para o CA, Target/normas.com.br para requisitos de calçado, Bompel para catálogo do fabricante. Todas com <code>rel="noopener noreferrer"</code> e âncora descritiva.</p>
+  <p>O problema é a cobertura: <strong>as 21 páginas de profissão, proteção e setor não citam nenhuma fonte.</strong> São páginas que afirmam critério técnico — "biqueira só se houver risco mecânico", "PFF2 para partículas" — sem apontar de onde vem.</p>
+
+  <div class="achado">
+    <p class="rot rot-red">Uma lacuna específica e fácil de fechar</p>
+    <p>O artigo <code>/conhecimento/o-que-e-ca-certificado-de-aprovacao/</code> tem uma seção <strong>"Como consultar"</strong> e linka para a página do gov.br sobre <em>obter</em> um CA — que é o procedimento do fabricante, não do comprador. <strong>Falta o link para a consulta em si</strong>, que é o que o leitor foi ali fazer.</p>
+    <p>A ferramenta oficial é o sistema CAEPI do Ministério do Trabalho. Aparece indexada como <code>caepi.trabalho.gov.br/internet/consultacainternet.aspx</code>, e documentos do próprio ministério citam <code>caepi.mte.gov.br</code>. <strong>Não consegui verificar qual está no ar</strong> — o endereço está bloqueado a partir deste ambiente. Confirmar antes de publicar; a regra do projeto é não afirmar norma sem fonte verificada.</p>
+  </div>
+</section>
+
+<section>
+  <p class="num">09</p>
+  <h2>Mapa de entidades</h2>
+  <p>Os dados estruturados já declaram a entidade central e suas relações, e isso está correto e verificável:</p>
+  <div class="fluxo">
+    Tower EPI's <span>→</span> Organization + LocalBusiness<br>
+    <span>→</span> fundada em 1995 · atende Fortaleza, RMF e Ceará · sem endereço público<br>
+    <span>→</span> Helano (Person) · técnico de segurança do trabalho · autor e revisor de todo conteúdo técnico<br>
+    <span>→</span> conhece: EPI, calçado ocupacional, calçado de segurança, proteção respiratória, segurança do trabalho
+  </div>
+  <p style="margin-top:1.6rem">O que <strong>não</strong> está declarado e deveria estar, porque é verdadeiro e verificável:</p>
+  <ul>
+    <li><strong>A relação com a 3M.</strong> É o fato fundador e a credencial mais forte que existe. Hoje vive só em texto corrido. Cabe como <code>Organization.award</code> ou <code>knowsAbout</code>, e a página <code>/marcas/3m/</code> merece <code>BreadcrumbList</code> mais um link editorial da história.</li>
+    <li><strong>Cristina.</strong> Sócia desde 1995, responde no WhatsApp, e não existe como entidade em lugar nenhum do site — nem <code>Person</code>, nem página própria. O site diz "são os dois donos que respondem" e estrutura só um.</li>
+    <li><strong>A Bompel como parceria principal.</strong> Está no texto e na página de marca, não nos dados.</li>
+  </ul>
+  <p class="nota"><strong>Sobre <code>Product</code>:</strong> a ausência é deliberada e deve continuar. <code>Product</code> sem <code>offers</code>, preço ou disponibilidade é schema vazio; com dado inventado, é violação de diretriz. A Tower não tem catálogo com preço — então não tem <code>Product</code>. Isso é acerto, não lacuna.</p>
+</section>
+
+<section>
+  <p class="num">10</p>
+  <h2>Arquitetura de clusters proposta</h2>
+  <p>A estrutura atual já é boa. O ajuste é de <em>ênfase</em>, não de reorganização — e a decisão de onde investir vem de uma constatação da SERP (seção 11): calçado é onde a Tower pode ganhar, e onde a concorrência local não está.</p>
+
+  <div class="grade grade-3">
+    <div>
+      <p class="rot rot-red">Prioridade 1</p>
+      <h4>Calçados</h4>
+      <p>O cluster mais completo e o de maior potencial. Hub + 3 tipos + comparativo + 3 artigos + 7 profissões apontando. Falta: aprofundar o hub, resolver a canibalização, e cobrir as lacunas da seção 11.</p>
+    </div>
+    <div>
+      <p class="rot rot-red">Prioridade 2</p>
+      <h4>Proteção por parte do corpo</h4>
+      <p>Seis páginas sólidas, hub vazio, zero artigos de apoio. É o cluster mais desequilibrado: as folhas existem, o topo e a base não. Respiratória é a de maior demanda e a que mais merece artigo próprio.</p>
+    </div>
+    <div>
+      <p class="rot">Prioridade 3</p>
+      <h4>EPI para empresas</h4>
+      <p>Cinco setores + como atendemos + orçamento. Bem servido comercialmente. O risco é o molde repetido (seção 5), não a falta de conteúdo.</p>
+    </div>
+    <div>
+      <p class="rot">Prioridade 3</p>
+      <h4>Por profissão</h4>
+      <p>Sete páginas, as mais bem linkadas do site. Funcionam como ponte entre busca informacional e comercial. Manter; hub precisa de corpo.</p>
+    </div>
+    <div>
+      <p class="rot">Prioridade 4</p>
+      <h4>Segurança do trabalho / normas</h4>
+      <p>Só NR-6 e CA hoje. É o cluster que mais gera autoridade citável por IA e o que menos converte direto. Crescer devagar, com fonte oficial em cada afirmação.</p>
+    </div>
+    <div>
+      <p class="rot">Suporte</p>
+      <h4>Marca e história</h4>
+      <p>Sustenta E-E-A-T e busca de marca. Não precisa crescer — precisa estar linkado (seções 6 e 7).</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="num">11</p>
+  <h2>Lacunas de conteúdo, com base em SERP real</h2>
+  <p>Consultei as buscas centrais em vez de listar palavras-chave plausíveis. Três constatações mudam a estratégia.</p>
+
+  <h3>O concorrente local usa páginas programáticas — e isso é uma oportunidade</h3>
+  <p>Na busca por <strong>"EPI Fortaleza"</strong>, a Original EPI ocupa três resultados com três páginas quase idênticas: "Revendedor de EPI Fortaleza CE", "Fornecedor de EPI Fortaleza CE", "Distribuidora de EPI Fortaleza CE". É exatamente o padrão de <em>doorway page</em> que este projeto proíbe. A Power EPI, fundada em 2009 em Fortaleza, é o concorrente local mais substantivo. O resto da SERP é diretório (TeleListas, Guia Fortaleza) e varejo nacional.</p>
+  <p><strong>Leitura:</strong> ninguém em Fortaleza está competindo com conteúdo consultivo. A Tower não precisa vencer no volume de páginas — precisa ser a única com critério técnico assinado por um técnico de segurança.</p>
+
+  <h3>Na busca por calçado, não há nenhum player local — e quase nenhum brasileiro consultivo</h3>
+  <p>Em <strong>"calçado ocupacional ou de segurança"</strong>, a primeira página é fabricante e site de conteúdo (Conforto, Polako, Tecnicouro, Safetline, Ferpam), sem nenhum distribuidor local. Em <strong>"calçado antiderrapante para cozinha"</strong>, o resultado é dominado por <em>e-commerce e sites de Portugal</em> — RAG Tailor's, CFardas, OrtoPrime, Fardart. Conteúdo brasileiro, consultivo e não-transacional sobre calçado de cozinha praticamente não existe.</p>
+  <p><strong>Leitura:</strong> este é o buraco mais explorável do mapa, e a Tower já tem artigo publicado nele.</p>
+
+  <h3>Lacunas concretas, em ordem de valor</h3>
+  <div class="rolagem">
+    <table>
+      <thead><tr><th>Conteúdo a criar</th><th>Intenção</th><th>Apoia</th><th>Por quê</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Como consultar o CA passo a passo</strong>, com o endereço oficial</td><td>informacional / verificação</td><td class="u">/orcamento/</td><td>Consulta de alto volume; o artigo atual promete "como consultar" e não entrega o link.</td></tr>
+        <tr><td><strong>PFF1, PFF2 e PFF3: qual usar para cada agente</strong></td><td>informacional técnica</td><td class="u">/protecao/respiratoria/</td><td>Cluster sem nenhum artigo. Respiratória é a categoria de maior demanda depois de calçado.</td></tr>
+        <tr><td><strong>Numeração e forma do pé em calçado de segurança</strong></td><td>informacional / erro comum</td><td class="u">/calcados/</td><td>Causa nº 1 de abandono de EPI, já citada em várias páginas e nunca desenvolvida.</td></tr>
+        <tr><td><strong>Ficha de EPI: o que registrar e por quê</strong></td><td>informacional B2B</td><td class="u">/empresas/</td><td>Dor real de quem compra para equipe; conecta NR-6 a orçamento.</td></tr>
+        <tr><td><strong>Luva certa por tipo de risco</strong></td><td>informacional técnica</td><td class="u">/protecao/maos/</td><td>Mãos é a segunda categoria mais linkada do cluster e não tem artigo.</td></tr>
+        <tr><td><strong>Página da Cristina</strong></td><td>navegacional / confiança</td><td class="u">/a-tower/</td><td>Metade do atendimento não existe como entidade. Ver seção 9.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="nota">Nenhuma dessas depende de dado que a Tower não tenha. Todas saem de conhecimento que o Helano já usa no atendimento — que é o que torna o conteúdo impossível de copiar bem.</p>
+</section>
+
+<section>
+  <p class="num">12</p>
+  <h2>SEO local</h2>
+  <p>A base está correta: <code>LocalBusiness</code> com <code>areaServed</code> (Fortaleza, região metropolitana, Ceará) e <strong>sem <code>streetAddress</code></strong> — que é o tratamento certo para negócio de área de atendimento sem loja aberta ao público desde 2018. Declarar endereço seria mentir para o Google e para quem tentasse ir até lá.</p>
+  <p>Fortaleza aparece em 12 títulos, de forma natural, sem repetição forçada. Não há página de bairro nem cidade inventada.</p>
+  <h3>O que falta, e é do lado de vocês</h3>
+  <ul>
+    <li><strong>Google Business Profile como <em>service-area business</em>.</strong> É a alavanca local mais forte que existe e o site não substitui. Configurar sem endereço visível, com área de atendimento, mesmo telefone e mesma descrição do site.</li>
+    <li><strong>Avaliações.</strong> Clientes que compram desde os anos 90 são a prova social mais forte disponível — e não existe nenhuma pública. Nunca inventar; pedir.</li>
+    <li><strong>Consistência NAP.</strong> Nome, telefone e área precisam ser idênticos em site, GBP e Instagram. Divergência dilui o sinal.</li>
+  </ul>
+  <p class="nota"><strong>Não criar</strong> páginas por bairro ou por cidade vizinha sem operação real. É exatamente o que o concorrente faz e o que o Google penaliza.</p>
+</section>
+
+<section>
+  <p class="num">13</p>
+  <h2>E-E-A-T e AEO/GEO</h2>
+  <div class="grade grade-2">
+    <div>
+      <p class="rot">Já forte</p>
+      <h4>Autoria e revisão</h4>
+      <p>Todo conteúdo técnico é assinado pelo Helano, com <code>Person</code>, credencial declarada, página de autor e link em 24 páginas. <code>BlogPosting</code> com <code>author</code> e <code>reviewedBy</code>. Data de revisão visível. Isso é mais do que a maioria dos concorrentes tem.</p>
+    </div>
+    <div>
+      <p class="rot">Já forte</p>
+      <h4>Experiência declarada e verificável</h4>
+      <p>1995, o convite da 3M, o encolhimento deliberado, a foto real dos dois sócios. Fatos, não adjetivos — que é o formato que sistemas de IA conseguem citar.</p>
+    </div>
+    <div>
+      <p class="rot rot-red">A corrigir</p>
+      <h4>Resposta não endereçável</h4>
+      <p>O bloco "Em uma frase" é a resposta direta de cada página e não é um heading. Para extração de resposta, transformá-lo em <code>&lt;h2&gt;</code> é a alteração de maior retorno por menor esforço do documento inteiro.</p>
+    </div>
+    <div>
+      <p class="rot rot-red">A corrigir</p>
+      <h4>Afirmação técnica sem fonte</h4>
+      <p>21 páginas afirmam critério técnico sem citar de onde vem. Para GEO isso é o que separa "conteúdo citável" de "conteúdo plausível". Uma fonte oficial por página de categoria resolve.</p>
+    </div>
+  </div>
+  <p><strong>Sobre <code>FAQPage</code>:</strong> 25 páginas emitem, sempre com a resposta presente no HTML — o acordeão é <code>&lt;details&gt;</code> nativo, então nada é injetado por JavaScript. Tecnicamente correto. Vale lembrar que o Google restringiu o rich result de FAQ a sites de saúde e governo; o schema continua útil para compreensão, não para aparência na SERP. Não é motivo para remover, é motivo para não contar com ele.</p>
+</section>
+
+<section class="faixa">
+  <div class="env" style="padding:0">
+    <p class="num">14</p>
+    <h2>As 20 alterações de maior impacto</h2>
+    <p>Ordenadas por retorno sobre esforço. Impacto e risco medidos contra o objetivo declarado: conversas qualificadas no WhatsApp e autoridade temática.</p>
+    <div class="rolagem">
+      <table>
+        <thead><tr><th class="n">#</th><th>Alteração</th><th>Impacto</th><th>Esforço</th><th>Risco</th></tr></thead>
+        <tbody>
+          <tr><td class="n">1</td><td>Resolver a canibalização "calçado ocupacional ou de segurança" — diferenciar as duas páginas por intenção</td><td><span class="selo selo-cheio">Muito alto</span></td><td><span class="selo">Médio</span></td><td><span class="selo">Médio</span></td></tr>
+          <tr><td class="n">2</td><td>Devolver link editorial das folhas para os seus hubs (6 clusters)</td><td><span class="selo selo-cheio">Muito alto</span></td><td><span class="selo">Baixo</span></td><td><span class="selo">Baixo</span></td></tr>
+          <tr><td class="n">3</td><td>Transformar "Em uma frase" em <code>&lt;h2&gt;</code> em todas as páginas finais</td><td><span class="selo selo-cheio">Alto</span></td><td><span class="selo">Baixo</span></td><td><span class="selo">Baixo</span></td></tr>
+          <tr><td class="n">4</td><td>Dar corpo aos hubs <code>/protecao/</code>, <code>/para-seu-trabalho/</code> e <code>/conhecimento/</code> (400+ palavras úteis cada)</td><td><span class="selo selo-cheio">Alto</span></td><td><span class="selo">Médio</span></td><td><span class="selo">Baixo</span></td></tr>
+          <tr><td class="n">5</td><td>Devolver <code>&lt;h3&gt;</code> às listas em régua (regressão da Etapa 3)</td><td><span class="selo selo-cheio">Alto</span></td><td><span class="selo">Baixo</span></td><td><span class="selo">Baixo</span></td></tr>
+          <tr><td class="n">6</td><td>Configurar Google Business Profile como service-area business</td><td><span class="selo selo-cheio">Alto</span></td><td><span class="selo">Baixo</span></td><td><span class="selo">Baixo</span></td></tr>
+          <tr><td class="n">7</td><td>Ligar Search Console e Analytics — sem isso toda priorização futura é cega</td><td><span class="selo selo-cheio">Alto</span></td><td><span class="selo">Baixo</span></td><td><span class="selo">Baixo</span></td></tr>
+          <tr><td class="n">8</td><td>Corrigir a seção "Como consultar" do artigo do CA com o endereço oficial verificado</td><td><span class="selo selo-cheio">Alto</span></td><td><span class="selo">Baixo</span></td><td><span class="selo">Baixo</span></td></tr>
+          <tr><td class="n">9</td><td>Encurtar os 7 títulos acima de 60 caracteres (encurtar o sufixo do template)</td><td><span class="selo">Médio</span></td><td><span class="selo">Baixo</span></td><td><span class="selo">Baixo</span></td></tr>
+          <tr><td class="n">10</td><td>Criar artigo "PFF1, PFF2 e PFF3: qual usar para cada agente"</td><td><span class="selo selo-cheio">Alto</span></td><td><span class="selo">Médio</span></td><td><span class="selo">Baixo</span></td></tr>
+          <tr><td class="n">11</td><td>Uma fonte oficial por página de categoria (21 páginas sem citação)</td><td><span class="selo">Médio</span></td><td><span class="selo">Médio</span></td><td><span class="selo">Baixo</span></td></tr>
+          <tr><td class="n">12</td><td>Ligar <code>/encontrar-epi/</code> a partir das 7 páginas de profissão</td><td><span class="selo">Médio</span></td><td><span class="selo">Baixo</span></td><td><span class="selo">Baixo</span></td></tr>
+          <tr><td class="n">13</td><td>Criar a página da Cristina e declará-la como <code>Person</code></td><td><span class="selo">Médio</span></td><td><span class="selo">Baixo</span></td><td><span class="selo">Baixo</span></td></tr>
+          <tr><td class="n">14</td><td>"Continue lendo" por assunto, não por ordem da lista</td><td><span class="selo">Médio</span></td><td><span class="selo">Baixo</span></td><td><span class="selo">Baixo</span></td></tr>
+          <tr><td class="n">15</td><td>Campanha de avaliações no Google com clientes antigos</td><td><span class="selo selo-cheio">Alto</span></td><td><span class="selo">Médio</span></td><td><span class="selo">Baixo</span></td></tr>
+          <tr><td class="n">16</td><td>Artigo "Numeração e forma do pé" — a causa nº 1 de abandono de EPI</td><td><span class="selo">Médio</span></td><td><span class="selo">Médio</span></td><td><span class="selo">Baixo</span></td></tr>
+          <tr><td class="n">17</td><td>Declarar a relação com a 3M nos dados estruturados e linkar <code>/marcas/3m/</code> da história</td><td><span class="selo">Médio</span></td><td><span class="selo">Baixo</span></td><td><span class="selo">Baixo</span></td></tr>
+          <tr><td class="n">18</td><td>Artigo "Ficha de EPI: o que registrar e por quê" (ponte NR-6 → orçamento)</td><td><span class="selo">Médio</span></td><td><span class="selo">Médio</span></td><td><span class="selo">Baixo</span></td></tr>
+          <tr><td class="n">19</td><td>Dar conteúdo indexável a <code>/encontrar-epi/</code> sem quebrar a ferramenta</td><td><span class="selo">Baixo</span></td><td><span class="selo">Médio</span></td><td><span class="selo">Médio</span></td></tr>
+          <tr><td class="n">20</td><td>Regra de molde para setores novos: 400+ palavras exclusivas, FAQ próprio</td><td><span class="selo">Baixo</span></td><td><span class="selo">Baixo</span></td><td><span class="selo">Baixo</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="nota" style="border-top-color:#6e737c;color:#c4c1bc">Os itens 6, 7 e 15 dependem de vocês, não de código. São três dos oito de maior impacto da lista — e o item 7 é pré-requisito para priorizar qualquer coisa depois deste documento.</p>
+  </div>
+</section>
+
+<section>
+  <p class="num">15</p>
+  <h2>Prioridade por página</h2>
+  <div class="grade grade-2">
+    <div>
+      <p class="rot rot-red">P1 · dinheiro</p>
+      <h4>Onde a conversa nasce</h4>
+      <p><code>/orcamento/</code>, <code>/empresas/</code> e os 5 setores, <code>/calcados/</code> e os 3 tipos, <code>/calcados/comparativo/</code>. Recebem o maior esforço editorial e o maior número de links internos.</p>
+    </div>
+    <div>
+      <p class="rot rot-red">P2 · autoridade comercial</p>
+      <h4>Ponte para a conversa</h4>
+      <p>As 7 profissões, as 6 proteções, <code>/protecao/</code>, <code>/para-seu-trabalho/</code>, <code>/marcas/bompel/</code>. Já são as mais bem servidas de link; precisam devolver autoridade para cima.</p>
+    </div>
+    <div>
+      <p class="rot">P3 · autoridade temática</p>
+      <h4>Onde a busca começa</h4>
+      <p>Os 5 artigos, <code>/conhecimento/</code>. Atraem e educam. Cada um aponta para exatamente uma página comercial — regra a manter.</p>
+    </div>
+    <div>
+      <p class="rot">P4 · suporte</p>
+      <h4>Confiança e utilidade</h4>
+      <p><code>/a-tower/</code>, <code>/a-tower/helano/</code>, <code>/marcas/</code>, <code>/marcas/3m/</code>, <code>/contato/</code>, <code>/encontrar-epi/</code>, <code>/empresas/como-atendemos/</code>, <code>/politica-de-privacidade/</code>.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="num">16</p>
+  <h2>Plano de execução</h2>
+  <ol class="lotes">
+    <li><b>Lote 1</b><div><strong>Estrutura, sem tocar em texto</strong><p>Itens 2, 3, 5, 9, 12, 14 e 17. Tudo em componente, aplicado a dezenas de páginas de uma vez. Risco baixo, retorno imediato, nenhuma reescrita.</p></div></li>
+    <li><b>Lote 2</b><div><strong>Canibalização e hubs</strong><p>Itens 1, 4 e 11. Aqui há reescrita de verdade — as duas páginas de calçado ocupacional × segurança e o corpo dos três hubs vazios.</p></div></li>
+    <li><b>Lote 3</b><div><strong>Conteúdo novo</strong><p>Itens 8, 10, 13, 16 e 18. Um artigo por vez, cada um com fonte verificada e página comercial de destino definida antes de escrever.</p></div></li>
+    <li><b>Lote 4</b><div><strong>Local e medição</strong><p>Itens 6, 7, 15 e 20. Depende de vocês. Idealmente o item 7 acontece <em>antes</em> do Lote 1, para haver linha de base.</p></div></li>
+  </ol>
+  <p style="margin-top:2rem">Ao fim de cada lote, roda a auditoria de novo — o rastreador e a análise de sobreposição ficam versionados no repositório, então a comparação é automática.</p>
+</section>
+
+<section>
+  <p class="num">17</p>
+  <h2>Riscos</h2>
+  <ul>
+    <li><strong>Reescrever antes de medir.</strong> O maior risco do documento. Sem Search Console, é possível reescrever uma página que já ranqueia. Mitigação: item 7 primeiro; Lote 1 não toca em texto.</li>
+    <li><strong>Diluir os setores.</strong> Crescer <code>/empresas/</code> com o molde atual transforma conteúdo bom em conteúdo programático. Mitigação: item 20.</li>
+    <li><strong>SEO comendo a direção de arte.</strong> Encher os hubs de texto pode desfazer o ritmo construído nas Etapas 2 e 3. Mitigação: o conteúdo novo entra nas superfícies que já existem, não em blocos avulsos.</li>
+    <li><strong>Afirmar norma sem fonte.</strong> Risco permanente num site que fala de NR e CA. Mitigação: a regra do projeto já é essa, e o item 11 a estende às páginas que ainda não a cumprem.</li>
+    <li><strong>Imitar o concorrente.</strong> A tentação de responder às três páginas programáticas da Original EPI com três páginas parecidas. Seria adotar a fraqueza dele.</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <div class="env">
+    <p><strong>Nada foi alterado no site.</strong> Este documento é o diagnóstico pedido antes da implementação. O rastreador, a análise de sobreposição semântica e o grafo de links estão versionados em <code>docs/ferramentas/</code> para que a auditoria possa ser repetida a cada lote.</p>
+    <p style="margin-top:1rem;color:var(--ink-3);font-size:0.84rem">Tower EPI's · Fortaleza — CE · Auditoria SEO e semântica · Setembro de 2026</p>
+  </div>
+</footer>
