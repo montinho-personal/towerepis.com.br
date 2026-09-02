@@ -4,7 +4,7 @@ import { empresa } from '@/config/empresa'
 
 export const metadata: Metadata = {
   title: 'Política de privacidade',
-  description: 'Como a Tower EPI’s trata os dados de quem visita este site.',
+  description: 'Este site não tem cadastro, não pede e-mail e não guarda o que você escreve no formulário. O que é coletado, como o WhatsApp entra e como falar com a gente.',
   alternates: { canonical: '/politica-de-privacidade/' },
   robots: { index: false, follow: true },
 }

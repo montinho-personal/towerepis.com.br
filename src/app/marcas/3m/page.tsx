@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Trilha, CabecalhoPagina, Secao } from '@/components/Blocos'
+import { Trilha, CabecalhoPagina, Secao, LinksIrmaos } from '@/components/Blocos'
 import { FechamentoCta } from '@/components/WhatsAppCta'
 
 export const metadata: Metadata = {
@@ -89,6 +89,12 @@ export default function Marca3M() {
           </aside>
         </div>
       </Secao>
+
+      <LinksIrmaos
+        rotulo="Outras marcas"
+        itens={[{ href: '/marcas/bompel/', nome: 'Bompel' }]}
+        hub={{ href: '/marcas/', rotulo: 'Ver todas as marcas que a Tower trabalha' }}
+      />
 
       <FechamentoCta
         contexto="marcas"

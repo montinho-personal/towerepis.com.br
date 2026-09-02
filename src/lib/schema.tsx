@@ -32,6 +32,10 @@ export function schemaOrganizacao() {
     // o mesmo que o cliente já viu em outro lugar.
     logo: `${SITE}/logo-tower-epis.png`,
     image: `${SITE}/fotos/pessoas/helano-e-cristina.jpg`,
+    // O convite da 3M em 1995 é o fato fundador da empresa e a credencial
+    // mais forte que ela tem. Estava só em texto corrido; aqui vira dado.
+    // Declarado porque é verdadeiro e publicado no site — não é selo inventado.
+    award: 'Distribuidor Regional premiado pela 3M',
     address: {
       '@type': 'PostalAddress',
       addressLocality: empresa.endereco.cidade,

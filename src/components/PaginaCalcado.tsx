@@ -110,6 +110,7 @@ export function PaginaCalcado({ slug }: { slug: string }) {
           href: `/calcados/${o.slug}/`,
           nome: o.nome,
         }))}
+        hub={{ href: '/calcados/', rotulo: 'Ver todos os calçados que a Tower trabalha' }}
       />
     </>
   )

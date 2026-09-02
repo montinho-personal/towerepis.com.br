@@ -105,8 +105,12 @@ export function CabecalhoPagina({
  */
 export function EmUmaFrase({ children }: { children: React.ReactNode }) {
   return (
+    // O rótulo é <h2>, e não <p>, porque este bloco é a resposta direta da
+    // página. Como parágrafo, ele não existia no sumário do documento — e é
+    // justamente o trecho que um extrator de resposta deveria citar. A
+    // aparência não muda: a classe .eyebrow define tamanho e peso.
     <div className="border-l-4 border-tower-red bg-tower-red-soft px-6 py-6 sm:px-8">
-      <p className="eyebrow eyebrow-red">Em uma frase</p>
+      <h2 className="eyebrow eyebrow-red">Em uma frase</h2>
       <p className="mt-3 text-lg leading-relaxed sm:text-xl">{children}</p>
     </div>
   )
@@ -241,6 +245,11 @@ export function GradeLinks({
  * `numerada` dá ordem e peso: serve quando a lista é um raciocínio.
  * `simples` é só travessia: serve quando são atalhos laterais que não
  * deveriam competir com o conteúdo da página.
+ *
+ * Os títulos são <h3>, e isso não é detalhe. Na primeira versão deste
+ * componente eu os fiz <span>, e a troca de cards por régua apagou ~40
+ * headings do site — "Calçados antiderrapantes", "Cozinha e alimentação" —
+ * sem nenhum sinal visível. Ganhar ritmo não pode custar sumário.
  */
 export function ListaLinks({
   itens,
@@ -269,7 +278,7 @@ export function ListaLinks({
               }`}
             >
               <span>
-                <span className="font-display text-base font-bold">{item.titulo}</span>
+                <h3 className="inline font-display text-base font-bold">{item.titulo}</h3>
                 <span className={`mt-1 block text-[0.9rem] leading-snug ${secundario}`}>
                   {item.texto}
                 </span>
@@ -294,13 +303,13 @@ export function ListaLinks({
               {String(i + 1).padStart(2, '0')}
             </span>
             <span>
-              <span
-                className={`font-display text-lg font-bold transition-colors ${
+              <h3
+                className={`inline font-display text-lg font-bold transition-colors ${
                   escuro ? 'group-hover:text-tower-red-light' : 'group-hover:text-tower-red'
                 }`}
               >
                 {item.titulo}
-              </span>
+              </h3>
               <span className={`mt-1.5 block measure text-[0.95rem] leading-relaxed ${secundario}`}>
                 {item.texto}
               </span>
@@ -323,9 +332,21 @@ export function ListaLinks({
 export function LinksIrmaos({
   rotulo,
   itens,
+  hub,
 }: {
   rotulo: string
   itens: { href: string; nome: string }[]
+  /**
+   * Link de volta ao índice do cluster.
+   *
+   * A auditoria mostrou que a autoridade corria só para baixo e para os
+   * lados: as páginas finais recebiam de 12 a 16 links editoriais e os
+   * índices recebiam de 0 a 8 — o de proteção, zero. O índice é a página que
+   * deveria responder à busca por categoria, e era a mais fraca do grupo.
+   * Trilha de navegação não resolve isso: ela aparece em toda página e por
+   * isso não sinaliza importância de nada.
+   */
+  hub?: { href: string; rotulo: string }
 }) {
   return (
     <section className="band ritmo-compacto">
@@ -343,6 +364,18 @@ export function LinksIrmaos({
             </li>
           ))}
         </ul>
+
+        {hub && (
+          <p className="mt-6 border-t border-rule pt-5">
+            <Link
+              href={hub.href}
+              className="group inline-flex items-center gap-2 font-display text-[0.95rem] font-bold transition-colors hover:text-tower-red"
+            >
+              {hub.rotulo}
+              <IconeSeta className="h-4 w-4 text-tower-red" />
+            </Link>
+          </p>
+        )}
       </div>
     </section>
   )
@@ -406,12 +439,20 @@ export function AssinaturaTecnica({ atualizado }: { atualizado: string }) {
   )
 }
 
-/** Ponte B2C → B2B. O leitor de "cozinha" pode ser o cozinheiro ou o dono. */
-export function PonteEmpresas({
+/**
+ * Ponte para outro caminho.
+ *
+ * Nasceu como ponte B2C → B2B — o leitor de "cozinha" pode ser o cozinheiro
+ * ou o dono. Serve para qualquer desvio de rota que dependa de quem está
+ * lendo, e por isso o rótulo é parâmetro.
+ */
+export function Ponte({
   href,
+  rotulo,
   texto,
 }: {
   href: string
+  rotulo: string
   texto: string
 }) {
   return (
@@ -420,7 +461,7 @@ export function PonteEmpresas({
       className="group flex items-center justify-between gap-6 border border-rule bg-paper-2 p-6 transition-colors hover:border-ink"
     >
       <div>
-        <p className="eyebrow">Compra para uma equipe?</p>
+        <p className="eyebrow">{rotulo}</p>
         <p className="mt-2 font-display text-lg font-bold group-hover:text-tower-red">
           {texto}
         </p>

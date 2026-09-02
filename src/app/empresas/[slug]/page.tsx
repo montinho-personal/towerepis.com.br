@@ -58,7 +58,7 @@ export default async function PaginaSetor({
       {/* O problema DELE, antes do produto. */}
       <section className="wrap">
         <div className="border-y border-rule py-8">
-          <p className="eyebrow">O que costuma complicar nesse setor</p>
+          <h2 className="eyebrow">O que costuma complicar nesse setor</h2>
           <ul className="mt-5 grid gap-3 sm:grid-cols-2">
             {s.problemas.map((item) => (
               <li key={item} className="flex gap-3 text-[0.98rem] leading-relaxed">
@@ -134,6 +134,7 @@ export default async function PaginaSetor({
           href: `/empresas/${o.slug}/`,
           nome: o.nome,
         }))}
+        hub={{ href: '/empresas/', rotulo: 'Ver como a Tower atende equipes' }}
       />
     </>
   )

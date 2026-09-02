@@ -5,9 +5,9 @@ import { FechamentoCta } from '@/components/WhatsAppCta'
 import { PROFISSOES } from '@/content/profissoes'
 
 export const metadata: Metadata = {
-  title: 'Calçados de segurança e ocupacionais em Fortaleza',
+  title: 'Calçados de segurança e ocupacionais',
   description:
-    'Calçado de segurança com biqueira, calçado ocupacional e antiderrapante. Entenda a diferença e escolha com orientação de quem é técnico de segurança do trabalho.',
+    'Calçado de segurança com biqueira, ocupacional e antiderrapante em Fortaleza. Entenda a diferença com quem é técnico de segurança do trabalho.',
   alternates: { canonical: '/calcados/' },
 }
 

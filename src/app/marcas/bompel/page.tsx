@@ -8,6 +8,7 @@ import {
   Perguntas,
   AssinaturaTecnica,
   Secao,
+  LinksIrmaos,
 } from '@/components/Blocos'
 import { FechamentoCta } from '@/components/WhatsAppCta'
 import { JsonLd, schemaFaq } from '@/lib/schema'
@@ -207,6 +208,12 @@ export default function MarcaBompel() {
           <AssinaturaTecnica atualizado="agosto de 2026" />
         </div>
       </Secao>
+
+      <LinksIrmaos
+        rotulo="Outras marcas"
+        itens={[{ href: '/marcas/3m/', nome: '3M' }]}
+        hub={{ href: '/marcas/', rotulo: 'Ver todas as marcas que a Tower trabalha' }}
+      />
 
       <FechamentoCta
         contexto="marcas"

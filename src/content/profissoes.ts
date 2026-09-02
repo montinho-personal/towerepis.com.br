@@ -34,7 +34,7 @@ export const PROFISSOES: Profissao[] = [
     nome: 'Cozinha e alimentação',
     resumoCurto:
       'Piso molhado, gordura, respingo quente e muitas horas em pé. O solado decide quase tudo.',
-    titleSeo: 'Calçado para cozinha: como escolher o modelo certo',
+    titleSeo: 'Calçado para cozinha: como escolher',
     descricaoSeo:
       'Piso molhado, gordura e jornada em pé. Veja o que observar num calçado para trabalhar em cozinha e fale com quem entende. Tower EPI’s, Fortaleza, desde 1995.',
     h1: 'Calçado para quem trabalha em cozinha',

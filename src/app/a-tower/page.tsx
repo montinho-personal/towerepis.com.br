@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Trilha, Secao } from '@/components/Blocos'
+import { IconeSeta } from '@/components/Icones'
 import { Retrato } from '@/components/Retrato'
 import { FechamentoCta } from '@/components/WhatsAppCta'
 
@@ -52,6 +53,7 @@ const MARCOS = [
     titulo: 'Distribuidor Regional 3M',
     texto:
       'O reconhecimento de que Helano e Cristina mais se orgulham. Veio do trabalho e do volume de vendas — e da mesma empresa que, anos antes, tinha feito o convite que deu origem a tudo.',
+    link: { href: '/marcas/3m/', rotulo: 'A relação da Tower com a 3M' },
   },
   {
     ano: '2016 · 2018',
@@ -96,6 +98,17 @@ export default function ATower() {
               <div>
                 <h2 className="font-display text-xl font-bold sm:text-2xl">{m.titulo}</h2>
                 <p className="mt-3 max-w-2xl text-ink-2">{m.texto}</p>
+                {m.link && (
+                  <p className="mt-4">
+                    <Link
+                      href={m.link.href}
+                      className="inline-flex items-center gap-2 font-display text-sm font-bold text-tower-red"
+                    >
+                      {m.link.rotulo}
+                      <IconeSeta className="h-4 w-4" />
+                    </Link>
+                  </p>
+                )}
               </div>
             </li>
           ))}

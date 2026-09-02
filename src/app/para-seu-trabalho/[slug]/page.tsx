@@ -12,7 +12,7 @@ import {
   LinksIrmaos,
   Perguntas,
   AssinaturaTecnica,
-  PonteEmpresas,
+  Ponte,
   Secao,
 } from '@/components/Blocos'
 import { FechamentoCta, CtaLinha } from '@/components/WhatsAppCta'
@@ -61,7 +61,7 @@ export default async function PaginaProfissao({
           segundos, nada do que vier depois é lido. */}
       <section className="wrap">
         <div className="border-y border-rule py-8">
-          <p className="eyebrow">A rotina que a gente conhece</p>
+          <h2 className="eyebrow">A rotina que a gente conhece</h2>
           <ul className="mt-5 grid gap-3 sm:grid-cols-2">
             {p.reconhecimento.map((item) => (
               <li key={item} className="flex gap-3 text-[0.98rem] leading-relaxed">
@@ -121,8 +121,21 @@ export default async function PaginaProfissao({
           <div className="space-y-6">
             <AssinaturaTecnica atualizado="agosto de 2026" />
             {p.ponteEmpresas && (
-              <PonteEmpresas href={p.ponteEmpresas.href} texto={p.ponteEmpresas.texto} />
+              <Ponte
+                href={p.ponteEmpresas.href}
+                rotulo="Compra para uma equipe?"
+                texto={p.ponteEmpresas.texto}
+              />
             )}
+
+            {/* Quem chega aqui e não se reconhece na rotina descrita é
+                exatamente quem a ferramenta serve. Ela tinha um único link de
+                entrada no site inteiro. */}
+            <Ponte
+              href="/encontrar-epi/"
+              rotulo="Sua rotina é diferente?"
+              texto="Responda quatro perguntas e veja o que costuma merecer atenção no seu caso"
+            />
           </div>
         </div>
       </Secao>
@@ -143,6 +156,7 @@ export default async function PaginaProfissao({
           href: `/para-seu-trabalho/${o.slug}/`,
           nome: o.nome,
         }))}
+        hub={{ href: '/para-seu-trabalho/', rotulo: 'Ver a proteção indicada para cada profissão' }}
       />
     </>
   )

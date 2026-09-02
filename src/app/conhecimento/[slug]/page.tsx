@@ -93,7 +93,22 @@ export default async function Artigo({ params }: { params: Promise<{ slug: strin
   const a = buscarArtigo(slug)
   if (!a) notFound()
 
-  const relacionados = ARTIGOS.filter((o) => o.slug !== a.slug).slice(0, 3)
+  // Antes isto era `.slice(0, 3)` sobre a lista inteira: os três primeiros
+  // artigos apareciam em todos os outros, sempre os mesmos. O resultado
+  // medido foi desigual — o texto sobre solado recebia 4 links e o da NR-6
+  // recebia 5, enquanto os do topo da lista recebiam 7.
+  //
+  // Agora: mesmo cluster primeiro, porque é o que o leitor daquele assunto
+  // quer a seguir; o resto entra girando a partir da posição do artigo
+  // atual, o que distribui os links por igual sem precisar de tabela.
+  const indice = ARTIGOS.findIndex((o) => o.slug === a.slug)
+  const giro = ARTIGOS.map((_, i) => ARTIGOS[(indice + 1 + i) % ARTIGOS.length]).filter(
+    (o) => o.slug !== a.slug,
+  )
+  const relacionados = [
+    ...giro.filter((o) => o.cluster === a.cluster),
+    ...giro.filter((o) => o.cluster !== a.cluster),
+  ].slice(0, 3)
 
   return (
     <>
@@ -201,6 +216,18 @@ export default async function Artigo({ params }: { params: Promise<{ slug: strin
               </li>
             ))}
           </ul>
+
+          {/* Volta ao índice do cluster: sem isto, a autoridade dos artigos
+              só corria de lado. */}
+          <p className="mt-6">
+            <Link
+              href="/conhecimento/"
+              className="inline-flex items-center gap-2 font-display text-[0.95rem] font-bold transition-colors hover:text-tower-red"
+            >
+              Ver todos os textos da central de conhecimento
+              <IconeSeta className="h-4 w-4 text-tower-red" />
+            </Link>
+          </p>
         </div>
       </Secao>
     </>

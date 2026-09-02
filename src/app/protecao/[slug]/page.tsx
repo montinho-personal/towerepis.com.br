@@ -115,6 +115,7 @@ export default async function PaginaProtecao({
             nome: o.parte,
           })),
         ]}
+        hub={{ href: '/protecao/', rotulo: 'Ver todas as partes do corpo que exigem proteção' }}
       />
     </>
   )

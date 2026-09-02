@@ -21,7 +21,7 @@ export const CALCADOS: TipoCalcado[] = [
   {
     slug: 'ocupacionais',
     nome: 'Calçados ocupacionais',
-    titleSeo: 'Calçados ocupacionais em Fortaleza (NBR ISO 20347)',
+    titleSeo: 'Calçados ocupacionais em Fortaleza',
     descricaoSeo:
       'Calçado ocupacional sem biqueira, para atividades sem risco mecânico: cozinha, saúde, limpeza e serviços. Veja o que observar. Tower EPI’s, Fortaleza.',
     h1: 'Calçados ocupacionais',
@@ -86,7 +86,7 @@ export const CALCADOS: TipoCalcado[] = [
   {
     slug: 'seguranca',
     nome: 'Calçados de segurança',
-    titleSeo: 'Calçados de segurança em Fortaleza (NBR ISO 20345)',
+    titleSeo: 'Calçados de segurança em Fortaleza',
     descricaoSeo:
       'Calçado de segurança com biqueira de proteção contra impacto, para indústria, construção, logística e manutenção. Tower EPI’s, Fortaleza, desde 1995.',
     h1: 'Calçados de segurança',
@@ -151,7 +151,7 @@ export const CALCADOS: TipoCalcado[] = [
   {
     slug: 'antiderrapantes',
     nome: 'Calçados antiderrapantes',
-    titleSeo: 'Sapato antiderrapante profissional em Fortaleza',
+    titleSeo: 'Sapato antiderrapante em Fortaleza',
     descricaoSeo:
       'O que significa solado antiderrapante, como o desempenho é medido e como escolher para piso molhado ou oleoso. Tower EPI’s, Fortaleza, desde 1995.',
     h1: 'Calçados antiderrapantes',

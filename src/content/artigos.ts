@@ -43,7 +43,7 @@ export const ARTIGOS: Artigo[] = [
   {
     slug: 'calcado-para-cozinha-como-escolher',
     titulo: 'Qual o melhor calçado para trabalhar em cozinha?',
-    tituloSeo: 'Qual o melhor calçado para trabalhar em cozinha?',
+    tituloSeo: 'Qual o melhor calçado para cozinha?',
     resumo:
       'Piso molhado com gordura, respingo quente e jornada em pé mudam completamente o critério. O que realmente importa na escolha.',
     descricaoSeo:
@@ -464,7 +464,7 @@ export const ARTIGOS: Artigo[] = [
   {
     slug: 'solado-antiderrapante-o-que-significa',
     titulo: 'Solado antiderrapante: o que realmente significa',
-    tituloSeo: 'Solado antiderrapante: o que realmente significa',
+    tituloSeo: 'Solado antiderrapante: o que significa',
     resumo:
       'Não existe "antiderrapante" genérico. O desempenho é medido em superfícies diferentes — e isso muda a escolha.',
     descricaoSeo:
