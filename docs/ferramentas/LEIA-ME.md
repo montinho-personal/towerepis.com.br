@@ -27,3 +27,17 @@ para comparação depois de cada lote.
   glifos de fontes embutidas em PDF/AI.
 - `selo.py` — converte o content stream do `.ai` do logo em SVG, com formas e
   degradês. Ver `docs/04-design-system.md`.
+
+## Auditoria de title/description e CTR
+
+```
+node docs/ferramentas/auditoria-ctr.mjs    # score 0-100 por URL, precisa de paginas.json
+```
+
+Seis das dez dimensões são calculadas por regra e quatro são julgamento
+declarado no próprio arquivo. O score NÃO é CTR medido — é heurística, e
+existe para comparar antes e depois de uma alteração, não para prever clique.
+
+`marco-zero-2026-09-titles.txt` é o estado das 43 URLs em setembro de 2026:
+title, H1 e description com os comprimentos. É a linha de base da segunda
+auditoria, que só faz sentido quando houver amostra no Search Console.

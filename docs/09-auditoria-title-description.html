@@ -1,0 +1,484 @@
+<title>Disputa pelo Clique</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --paper: #fcfbf9; --paper-2: #f0ebe3; --ink: #1f2124; --ink-2: #4a4f57; --ink-3: #6e737c;
+    --rule: #e3ded5; --rule-forte: #cfc7ba; --red: #b4111b; --red-clara: #f2686e; --red-fundo: #fbeef0;
+    --grafite: #1f2124; --grafite-2: #2c2f33; --grafite-linha: #3d4147; --sobre-grafite: #fcfbf9;
+    --serp-titulo: #1a0dab; --serp-url: #4a6741;
+    --display: 'Archivo', system-ui, -apple-system, sans-serif;
+    --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --mono: ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #17181a; --paper-2: #1f2124; --ink: #f2f0ed; --ink-2: #b8b4ae; --ink-3: #8e8a84;
+      --rule: #33363a; --rule-forte: #494d53; --red: #f2686e; --red-clara: #f2686e; --red-fundo: #2a1c1e;
+      --grafite: #0f1011; --grafite-2: #191b1d; --grafite-linha: #34383d;
+      --serp-titulo: #8ab4f8; --serp-url: #9db08f;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #17181a; --paper-2: #1f2124; --ink: #f2f0ed; --ink-2: #b8b4ae; --ink-3: #8e8a84;
+    --rule: #33363a; --rule-forte: #494d53; --red: #f2686e; --red-clara: #f2686e; --red-fundo: #2a1c1e;
+    --grafite: #0f1011; --grafite-2: #191b1d; --grafite-linha: #34383d;
+    --serp-titulo: #8ab4f8; --serp-url: #9db08f;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--serif); font-size: 17px; line-height: 1.62; -webkit-font-smoothing: antialiased; }
+  .env { max-width: 62rem; margin-inline: auto; padding-inline: 1.5rem; }
+  @media (min-width: 48rem) { .env { padding-inline: 2.5rem; } }
+
+  h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; letter-spacing: -0.022em; text-wrap: balance; margin: 0; line-height: 1.14; }
+  p, li { text-wrap: pretty; }
+  .rot { font-family: var(--display); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-3); margin: 0; }
+  .rot-red { color: var(--red); }
+
+  .capa { background: var(--grafite); color: var(--sobre-grafite); padding-block: clamp(3rem, 8vw, 5rem); }
+  .capa .rot { color: var(--red-clara); }
+  .capa h1 { color: var(--sobre-grafite); font-size: clamp(2rem, 5.2vw, 3.4rem); margin-top: 1.1rem; max-width: 20ch; }
+  .capa .sub { color: #bab7b2; font-size: 1.05rem; max-width: 48ch; margin: 1.5rem 0 0; }
+  .meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 1.2rem 2rem; margin-top: 2.4rem; border-top: 1px solid var(--grafite-linha); padding-top: 1.5rem; }
+  .meta dt { font-family: var(--display); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #8e8a84; }
+  .meta dd { margin: 0.3rem 0 0; font-family: var(--display); font-weight: 600; font-size: 1.5rem; color: var(--sobre-grafite); font-variant-numeric: tabular-nums; line-height: 1.1; }
+  .meta dd small { font-family: var(--serif); font-size: 0.82rem; font-weight: 400; color: #bab7b2; display: block; margin-top: 0.2rem; }
+
+  section { padding-block: clamp(2.4rem, 5vw, 3.4rem); border-top: 1px solid var(--rule); }
+  .num { font-family: var(--display); font-weight: 700; font-size: 0.72rem; letter-spacing: 0.14em; color: var(--red); }
+  h2 { font-size: clamp(1.4rem, 2.9vw, 1.9rem); margin-top: 0.55rem; }
+  h3 { font-size: 1.06rem; margin-top: 2rem; }
+  h4 { font-family: var(--display); font-size: 0.9rem; margin-top: 1.4rem; }
+  section > p, section > ul, section > ol { max-width: 40rem; }
+  p { margin: 1rem 0 0; } ul, ol { margin: 1rem 0 0; padding-left: 1.15rem; }
+  li { margin-top: 0.45rem; } li::marker { color: var(--red); }
+  strong { font-weight: 600; } em { color: var(--ink-2); }
+  code { font-family: var(--mono); font-size: 0.84em; background: var(--paper-2); padding: 0.1em 0.36em; border-radius: 2px; }
+  a { color: inherit; text-decoration-color: var(--red); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+
+  .achado { border-left: 3px solid var(--red); background: var(--red-fundo); padding: 1.1rem 1.3rem; margin-top: 1.5rem; max-width: 42rem; }
+  .achado .rot { color: var(--red); }
+  .nota { border-top: 2px solid var(--ink); padding-top: 0.9rem; margin-top: 1.6rem; max-width: 40rem; font-size: 0.95rem; color: var(--ink-2); }
+
+  .rolagem { overflow-x: auto; margin-top: 1.4rem; border-bottom: 1px solid var(--rule); }
+  table { border-collapse: collapse; width: 100%; font-family: var(--display); font-size: 0.8rem; }
+  th { text-align: left; font-weight: 700; font-size: 0.64rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); padding: 0 0.7rem 0.6rem 0; border-bottom: 2px solid var(--ink); white-space: nowrap; }
+  td { padding: 0.5rem 0.7rem 0.5rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; font-variant-numeric: tabular-nums; }
+  td:first-child, th:first-child { padding-left: 0; }
+  .u { font-family: var(--mono); font-size: 0.74rem; }
+  .n { text-align: right; } .fraco { color: var(--ink-3); }
+
+  /* --- simulação de resultado no Google --- */
+  .serp { border: 1px solid var(--rule); background: var(--paper); padding: 1rem 1.15rem; margin-top: 0.7rem; max-width: 40rem; }
+  .serp .caminho { font-family: var(--display); font-size: 0.74rem; color: var(--serp-url); }
+  .serp .t { font-family: var(--display); font-size: 1.06rem; font-weight: 600; color: var(--serp-titulo); margin-top: 0.25rem; line-height: 1.3; }
+  .serp .d { font-size: 0.88rem; color: var(--ink-2); margin-top: 0.35rem; line-height: 1.5; }
+  .serp.antes { border-left: 3px solid var(--rule-forte); }
+  .serp.depois { border-left: 3px solid var(--red); }
+  .par { display: grid; gap: 0.9rem; margin-top: 1.2rem; }
+  @media (min-width: 60rem) { .par { grid-template-columns: 1fr 1fr; align-items: start; } .par .serp { max-width: none; margin-top: 0; } }
+
+  .ficha { border-top: 2px solid var(--ink); padding-top: 1.2rem; margin-top: 2.6rem; }
+  .ficha-topo { display: flex; flex-wrap: wrap; gap: 0.6rem 1rem; align-items: baseline; }
+  .ficha-topo h3 { margin-top: 0; font-size: 1.15rem; }
+  .variantes { list-style: none; padding: 0; margin-top: 1.1rem; max-width: 42rem; }
+  .variantes li { display: grid; grid-template-columns: 1.5rem 1fr auto; gap: 0.8rem; padding-block: 0.55rem; border-bottom: 1px solid var(--rule); margin: 0; align-items: baseline; }
+  .variantes b { font-family: var(--display); font-size: 0.78rem; color: var(--red); }
+  .variantes span.txt { font-family: var(--display); font-size: 0.94rem; font-weight: 600; }
+  .variantes span.len { font-family: var(--mono); font-size: 0.72rem; color: var(--ink-3); }
+  .variantes li.escolhida span.txt { color: var(--red); }
+
+  .selo { display: inline-block; font-family: var(--display); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; padding: 0.16em 0.5em; border: 1px solid var(--rule-forte); color: var(--ink-2); white-space: nowrap; }
+  .selo-cheio { background: var(--red); border-color: var(--red); color: #fff; }
+  .selo-ink { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+
+  .faixa { background: var(--grafite); color: var(--sobre-grafite); padding-block: clamp(2.4rem, 5vw, 3.4rem); border-top: 0; }
+  .faixa h2, .faixa h3, .faixa h4 { color: var(--sobre-grafite); }
+  .faixa .rot { color: #8e8a84; } .faixa .num { color: var(--red-clara); }
+  .faixa p, .faixa li { color: #c4c1bc; } .faixa strong { color: var(--sobre-grafite); }
+  .faixa code { background: var(--grafite-2); color: #d8d5d0; }
+  .faixa th { color: #8e8a84; border-bottom-color: #6e737c; }
+  .faixa td { border-bottom-color: var(--grafite-linha); color: #c4c1bc; }
+  .faixa .rolagem { border-bottom-color: var(--grafite-linha); }
+  .faixa .selo { border-color: var(--grafite-linha); color: #c4c1bc; }
+  .faixa .nota { border-top-color: #6e737c; color: #c4c1bc; }
+
+  .grade { display: grid; gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin-top: 1.6rem; }
+  @media (min-width: 40rem) { .grade-2 { grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 52rem) { .grade-3 { grid-template-columns: repeat(3, 1fr); } }
+  .grade > div { background: var(--paper); padding: 1.1rem 1.2rem; }
+  .grade h4 { margin-top: 0.5rem; } .grade p { font-size: 0.93rem; margin-top: 0.5rem; }
+
+  .lotes { list-style: none; padding: 0; margin-top: 1.6rem; border-top: 2px solid var(--ink); max-width: 44rem; }
+  .lotes li { display: grid; grid-template-columns: 4.5rem 1fr; gap: 1.2rem; padding-block: 1rem; border-bottom: 1px solid var(--rule); margin: 0; }
+  .lotes b { font-family: var(--display); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); padding-top: 0.2rem; }
+  .lotes p { margin: 0.3rem 0 0; font-size: 0.95rem; }
+  .lotes strong { font-family: var(--display); font-size: 0.98rem; }
+
+  footer { background: var(--paper-2); border-top: 3px solid var(--red); padding-block: 2.4rem; }
+  footer p { font-size: 0.9rem; color: var(--ink-2); }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+
+<header class="capa">
+  <div class="env">
+    <p class="rot">Auditoria de snippet · Fase 6 · Setembro de 2026</p>
+    <h1>Ranquear é metade. A outra metade é o clique.</h1>
+    <p class="sub">Auditoria dos 43 títulos e descrições, com pesquisa das SERPs reais de cada consulta central. Nada alterado — este documento é a proposta.</p>
+    <dl class="meta">
+      <div><dt>URLs analisadas</dt><dd>43<small>nenhuma sem title ou description</small></dd></div>
+      <div><dt>Títulos problemáticos</dt><dd>11<small>de 43</small></dd></div>
+      <div><dt>Descrições problemáticas</dt><dd>22<small>quase todas pelo mesmo motivo</small></dd></div>
+      <div><dt>Duplicações exatas</dt><dd>1<small>par de títulos e H1</small></dd></div>
+      <div><dt>Score médio</dt><dd>79,5<small>de 100</small></dd></div>
+    </dl>
+  </div>
+</header>
+
+<main class="env">
+
+<section style="border-top:0">
+  <p class="num">00</p>
+  <h2>O que é medido e o que é julgamento</h2>
+  <p>Extraí title, description e H1 das 43 URLs em navegador real. Contagens, duplicações, comprimentos e sobreposições são <strong>medidos</strong>. As SERPs foram consultadas de verdade, e as fontes estão citadas na seção 03.</p>
+  <p>O <em>CTR Potential Score</em> é uma <strong>heurística minha</strong>, não um CTR medido — seis das dez dimensões são calculadas por regra e quatro são julgamento declarado. A rubrica inteira está na seção 04, para poder ser contestada.</p>
+
+  <div class="achado">
+    <p class="rot rot-red">O site tem dias de vida</p>
+    <p>Não existe histórico no Search Console, e isso está certo: um domínio novo não tem CTR ruim, tem ausência de amostra. Nada aqui foi decidido por dado de desempenho — foi decidido por <strong>intenção, SERP real e concorrência</strong>. É SEO de lançamento: acertar o snippet <em>antes</em> de o Google consolidar a indexação, e não depois.</p>
+  </div>
+
+  <p class="nota"><strong>Baseline.</strong> Este documento é o marco zero. O estado das 43 URLs em setembro de 2026 está versionado em <code>docs/ferramentas/</code>. A partir daqui, título e descrição não devem ser mexidos por algumas semanas — trocar snippet toda semana impede a própria leitura dos dados depois.</p>
+</section>
+
+<section class="faixa">
+  <div class="env" style="padding:0">
+    <p class="num">01</p>
+    <h2>Cinco achados, todos medidos</h2>
+
+    <h3>1 · A mesma assinatura em 15 descrições</h3>
+    <p>Vinte e duas das 43 descrições terminam com uma assinatura de marca. Quinze delas terminam com a <strong>string idêntica</strong> <code>Tower EPI's, Fortaleza, desde 1995.</code></p>
+    <p>São 35 caracteres do espaço mais persuasivo do snippet, gastos repetindo o que o título ao lado e a URL logo acima já dizem. É o maior desperdício isolado do site, e é o motivo pelo qual metade das páginas perde pontos em diferenciação.</p>
+
+    <h3>2 · A marca aparece duas vezes em cinco títulos</h3>
+    <div class="rolagem">
+      <table>
+        <thead><tr><th>URL</th><th>Título como sai na SERP</th></tr></thead>
+        <tbody>
+          <tr><td class="u">/contato/</td><td>Contato — Tower EPI's, Fortaleza <strong>· Tower EPI's</strong></td></tr>
+          <tr><td class="u">/marcas/bompel/</td><td>Bompel na Tower EPI's <strong>· Tower EPI's</strong></td></tr>
+          <tr><td class="u">/marcas/</td><td>Marcas que a Tower trabalha <strong>· Tower EPI's</strong></td></tr>
+          <tr><td class="u">/marcas/3m/</td><td>A relação da Tower com a 3M <strong>· Tower EPI's</strong></td></tr>
+          <tr><td class="u">/empresas/como-atendemos/</td><td>Como a Tower atende empresas <strong>· Tower EPI's</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>O template do site acrescenta <code>· Tower EPI's</code> a tudo. Nestas cinco, o nome já estava no título escrito à mão. O resultado lê como erro de sistema — e é.</p>
+
+    <h3>3 · O sufixo custa 14 caracteres em todas as páginas</h3>
+    <p>Em consulta local comercial, esses 14 caracteres poderiam carregar <strong>"em Fortaleza"</strong>. Hoje o site escolhe repetir a marca — que já aparece na URL, no perfil do Google e nos dados estruturados — em vez de carregar o termo que a pessoa digitou.</p>
+
+    <h3>4 · Um par ainda idêntico</h3>
+    <p><code>/calcados/comparativo/</code> e <code>/conhecimento/calcado-ocupacional-ou-de-seguranca/</code> compartilham title <em>e</em> H1. Já apontado na auditoria anterior; aqui está a proposta concreta de separação (seção 06).</p>
+
+    <h3>5 · A página mais perto do dinheiro tem um dos piores snippets</h3>
+    <p><code>/orcamento/</code> é onde a conversa nasce, e marca <strong>76 de 100</strong> — o penúltimo entre as 17 páginas P1. Sem local, sem sinal de autoridade, e com um título (<em>"Pedir orçamento de EPI"</em>) que qualquer concorrente poderia usar.</p>
+  </div>
+</section>
+
+<section>
+  <p class="num">02</p>
+  <h2>Como classifiquei cada página</h2>
+  <div class="grade grade-3">
+    <div><p class="rot rot-red">17 URLs</p><h4>P1 — dinheiro</h4><p>Home, orçamento, calçados, empresas, os setores de maior porte e as profissões de maior demanda. Recebem variantes A/B/C.</p></div>
+    <div><p class="rot">12 URLs</p><h4>P2 — apoio comercial</h4><p>Demais setores e profissões, hubs de categoria, contato, Bompel.</p></div>
+    <div><p class="rot">11 URLs</p><h4>P3 — autoridade</h4><p>Artigos secundários, marcas, história, ferramenta, como atendemos.</p></div>
+    <div><p class="rot">3 URLs</p><h4>P4 — suporte</h4><p>Página do Helano, vestimentas, política de privacidade.</p></div>
+    <div><p class="rot">Intenções</p><h4>Seis tipos</h4><p>Informacional, comercial, transacional, local, comparativa e navegacional. Cada uma pede uma forma diferente de snippet.</p></div>
+    <div><p class="rot">Regra</p><h4>Uma intenção, uma URL</h4><p>Domínio novo é o momento de fixar isso, antes de o Google ter que escolher entre duas páginas nossas.</p></div>
+  </div>
+</section>
+
+<section>
+  <p class="num">03</p>
+  <h2>O que as SERPs mostraram</h2>
+  <p>Seis consultas centrais pesquisadas. Três descobertas mudam recomendação.</p>
+
+  <h3>Não dá para disputar a consulta de compra — e não devemos tentar</h3>
+  <p>A busca por <strong>"botina calçado de segurança Fortaleza"</strong> devolve <em>só</em> marketplace e e-commerce: MercadoLivre, OLX, SuperEPI, Safetline, Calçados para Trabalhar, 7MBoots. Nenhum distribuidor local consultivo.</p>
+  <p>A Tower não tem catálogo com preço nem carrinho. Um título prometendo "comprar botina em Fortaleza" levaria a pessoa a uma página que não vende — e isso é promessa quebrada, não otimização. <strong>A disputa da Tower nesse cluster é a consulta de escolha, não a de compra.</strong></p>
+
+  <h3>Na consulta técnica, o padrão é blog de distribuidor — e todos escrevem igual</h3>
+  <p>Em <strong>"PFF1 PFF2 PFF3 diferença"</strong>, os dez resultados são artigos de distribuidores e fabricantes, com títulos quase intercambiáveis: <em>"Entenda a diferença entre…"</em>, <em>"Qual a real diferença entre…"</em>, <em>"Qual filtro você deve utilizar?"</em>. Todos citam os mesmos percentuais de eficiência.</p>
+  <p>O mesmo em <strong>"luva de segurança tipos"</strong>: Volk, Minas Ferramentas, Danny, Prometal, Protemar — todos "tipos e como escolher".</p>
+  <p><strong>Duas aberturas.</strong> A primeira: nenhum desses títulos diz <em>quem</em> escreveu. A Tower tem um técnico de segurança do trabalho assinando — e não usa isso no snippet. A segunda: todos explicam a classificação, nenhum lidera com o erro prático que a classificação não resolve — que máscara para partícula não protege contra vapor.</p>
+
+  <h3>Na consulta de norma, o concorrente carimba o ano</h3>
+  <p>Em <strong>"NR-6 obrigações da empresa"</strong>, dois dos dez resultados trazem o ano no título: <em>"…norma sobre EPIs atualizada [2026]"</em> e <em>"NR-6 2026: Guia Completo"</em>. A SERP é dominada por empresas de software e treinamento de SST — BR MED, ChecklistFácil, Sienge, Engehall — não por quem vende EPI.</p>
+  <p><strong>Recomendação contrária ao padrão:</strong> não colocar o ano no título. Ano em título cria obrigação de atualizar todo janeiro, e ano velho num snippet é pior do que ano nenhum. A frescura já é comunicada pela data de revisão visível na página e pelo <code>dateModified</code> nos dados estruturados, que é o que o Google usa para exibir data no snippet. O diferencial da Tower aqui é outro e é mais difícil de copiar: <strong>o texto é escrito por quem entrega EPI, não por quem vende software de gestão.</strong></p>
+
+  <p class="nota">Fontes consultadas: SERPs de "EPI Fortaleza", "calçado ocupacional ou de segurança", "calçado antiderrapante para cozinha", "fornecedor de EPI para empresas", "PFF1 PFF2 PFF3", "NR-6 obrigações", "luva de segurança tipos" e "botina de segurança Fortaleza". Links no fim da conversa.</p>
+</section>
+
+<section>
+  <p class="num">04</p>
+  <h2>A rubrica do score</h2>
+  <p>Dez dimensões, 0 a 10 cada, somando 0–100. Seis são calculadas por regra; quatro são julgamento meu, e estão marcadas.</p>
+  <div class="rolagem">
+    <table>
+      <thead><tr><th>Dimensão</th><th>Como é apurada</th><th>Tipo</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Relevância</strong></td><td>Posição da keyword principal no título: no início = 10, presente = 8, ausente = 5</td><td><span class="selo">regra</span></td></tr>
+        <tr><td><strong>Escaneabilidade</strong></td><td>Risco de truncamento: ≤55 chars = 10, ≤60 = 8, acima = 5</td><td><span class="selo">regra</span></td></tr>
+        <tr><td><strong>Localidade</strong></td><td>Local no título quando a intenção é local = 10; só na descrição = 6; ausente = 2. Quando a intenção <em>não</em> é local, a ausência vale 10</td><td><span class="selo">regra</span></td></tr>
+        <tr><td><strong>Autoridade</strong></td><td>Sinal verificável (1995, técnico de segurança, fonte oficial, 3M) no título = 10, na descrição = 7, ausente = 3</td><td><span class="selo">regra</span></td></tr>
+        <tr><td><strong>Diferenciação</strong></td><td>Parte de 8; −3 se a marca se repete no título, −3 se a descrição usa a cauda de fórmula, −1 se o título é idêntico ao H1</td><td><span class="selo">regra</span></td></tr>
+        <tr><td><strong>Confiança</strong></td><td>Presença de clichê ou promessa vazia derruba para 3</td><td><span class="selo">regra</span></td></tr>
+        <tr><td><strong>Clareza</strong></td><td>Descrição entre 110 e 158 caracteres e informativa</td><td><span class="selo selo-ink">julgamento</span></td></tr>
+        <tr><td><strong>Persuasão</strong></td><td>A descrição dá um motivo concreto, além de descrever</td><td><span class="selo selo-ink">julgamento</span></td></tr>
+        <tr><td><strong>Intenção</strong></td><td>O formato do snippet corresponde ao que aquela SERP premia</td><td><span class="selo selo-ink">julgamento</span></td></tr>
+        <tr><td><strong>Potencial de clique</strong></td><td>Média das nove anteriores</td><td><span class="selo selo-ink">agregado</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="nota">Média geral <strong>79,5</strong>. Por prioridade: P1 = 80,8 · P2 = 78,1 · P3 = 78,6 · P4 = 81,7. O fato de P4 marcar mais que P1 é sintoma, não acaso: a página do Helano tem autoridade explícita no título, e as páginas comerciais não.</p>
+</section>
+
+<section class="faixa">
+  <div class="env" style="padding:0">
+    <p class="num">05</p>
+    <h2>As 20 maiores oportunidades</h2>
+    <p>Ordem = peso comercial (P1 = 4 … P4 = 1) × distância até 100. Não é a lista das piores páginas: é a lista onde melhorar rende mais.</p>
+    <div class="rolagem">
+      <table>
+        <thead><tr><th class="n">#</th><th>URL</th><th class="n">Score</th><th>Prio</th><th>Ponto mais fraco</th></tr></thead>
+        <tbody>
+          <tr><td class="n">1</td><td class="u">/orcamento/</td><td class="n">76</td><td>P1</td><td>autoridade 3 · localidade 6</td></tr>
+          <tr><td class="n">2</td><td class="u">/empresas/industria/</td><td class="n">78</td><td>P1</td><td>autoridade 3 · persuasão 5</td></tr>
+          <tr><td class="n">3</td><td class="u">/empresas/construcao/</td><td class="n">78</td><td>P1</td><td>autoridade 3 · persuasão 5</td></tr>
+          <tr><td class="n">4</td><td class="u">/para-seu-trabalho/construcao/</td><td class="n">78</td><td>P1</td><td>diferenciação 5 · localidade 6</td></tr>
+          <tr><td class="n">5</td><td class="u">/para-seu-trabalho/enfermagem-e-saude/</td><td class="n">78</td><td>P1</td><td>diferenciação 5 · localidade 6</td></tr>
+          <tr><td class="n">6</td><td class="u">/empresas/</td><td class="n">79</td><td>P1</td><td>relevância 5 · persuasão 5</td></tr>
+          <tr><td class="n">7</td><td class="u">/protecao/respiratoria/</td><td class="n">79</td><td>P1</td><td>autoridade 3 · intenção 6</td></tr>
+          <tr><td class="n">8</td><td class="u">/empresas/saude/</td><td class="n">73</td><td>P2</td><td>autoridade 3 · persuasão 5</td></tr>
+          <tr><td class="n">9</td><td class="u">/empresas/facilities-e-limpeza/</td><td class="n">73</td><td>P2</td><td>autoridade 3 · persuasão 5</td></tr>
+          <tr><td class="n">10</td><td class="u">/para-seu-trabalho/cozinha/</td><td class="n">80</td><td>P1</td><td>diferenciação 5 · localidade 6</td></tr>
+          <tr><td class="n">11</td><td class="u">/protecao/</td><td class="n">74</td><td>P2</td><td>relevância 5 · diferenciação 5</td></tr>
+          <tr><td class="n">12</td><td class="u">/calcados/seguranca/</td><td class="n">81</td><td>P1</td><td>diferenciação 5 · persuasão 5</td></tr>
+          <tr><td class="n">13</td><td class="u">/calcados/comparativo/</td><td class="n">81</td><td>P1</td><td>autoridade 3 · título duplicado</td></tr>
+          <tr><td class="n">14</td><td class="u">/empresas/alimentacao/</td><td class="n">76</td><td>P2</td><td>autoridade 3 · persuasão 5</td></tr>
+          <tr><td class="n">15</td><td class="u">/conhecimento/calcado-ocupacional-ou-de-seguranca/</td><td class="n">76</td><td>P2</td><td>autoridade 3 · título duplicado</td></tr>
+          <tr><td class="n">16</td><td class="u">/calcados/</td><td class="n">82</td><td>P1</td><td>localidade 6 · autoridade 7</td></tr>
+          <tr><td class="n">17</td><td class="u">/conhecimento/calcado-para-cozinha-como-escolher/</td><td class="n">82</td><td>P1</td><td>autoridade 3</td></tr>
+          <tr><td class="n">18</td><td class="u">/conhecimento/nr-6-o-que-a-empresa-precisa-saber/</td><td class="n">82</td><td>P1</td><td>persuasão 5</td></tr>
+          <tr><td class="n">19</td><td class="u">/calcados/ocupacionais/</td><td class="n">83</td><td>P1</td><td>autoridade 3</td></tr>
+          <tr><td class="n">20</td><td class="u">/para-seu-trabalho/industria/</td><td class="n">78</td><td>P2</td><td>diferenciação 5 · localidade 6</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="nota">Repare no padrão: <strong>autoridade</strong> e <strong>persuasão</strong> aparecem como ponto fraco em 15 das 20. Não são vinte problemas diferentes — são dois problemas em vinte páginas.</p>
+  </div>
+</section>
+
+<section>
+  <p class="num">06</p>
+  <h2>Antes → Depois, com o raciocínio</h2>
+  <p>As dez primeiras da lista, com variantes. A recomendada está em vermelho.</p>
+
+  <div class="ficha">
+    <div class="ficha-topo"><h3>1 · <code>/orcamento/</code></h3><span class="selo selo-cheio">P1</span><span class="selo">transacional</span><span class="selo">76 → 93</span></div>
+    <p>É a página onde a conversa nasce e o título poderia ser de qualquer concorrente. O diferencial real não está sendo dito: <strong>não tem cadastro, não pede e-mail, e monta a mensagem para você mandar pronta</strong>. Isso é remoção de atrito, que é o que decide clique em intenção transacional.</p>
+    <ul class="variantes">
+      <li class="escolhida"><b>A</b><span class="txt">Orçamento de EPI em Fortaleza, sem cadastro</span><span class="len">57</span></li>
+      <li><b>B</b><span class="txt">Orçamento de EPI pelo WhatsApp · Fortaleza</span><span class="len">56</span></li>
+      <li><b>C</b><span class="txt">Monte seu orçamento de EPI item a item</span><span class="len">52</span></li>
+    </ul>
+    <p><strong>Por que a A:</strong> abre com a keyword, carrega o local, e "sem cadastro" é a única das três que responde à objeção que trava o clique. É verificável — a página realmente não tem cadastro.</p>
+    <div class="par">
+      <div class="serp antes"><p class="rot">Antes</p><p class="caminho">towerepis.com.br › orcamento</p><p class="t">Pedir orçamento de EPI · Tower EPI's</p><p class="d">Monte seu orçamento de EPI item a item, com grade de numeração para calçado, e envie pronto pelo WhatsApp. Sem cadastro. Tower EPI's, Fortaleza.</p></div>
+      <div class="serp depois"><p class="rot rot-red">Depois</p><p class="caminho">towerepis.com.br › orcamento</p><p class="t">Orçamento de EPI em Fortaleza, sem cadastro</p><p class="d">Escolha os itens, informe a grade de numeração e envie pronto pelo WhatsApp. Não pedimos e-mail nem CNPJ. Quem responde é um dos dois donos, desde 1995.</p></div>
+    </div>
+  </div>
+
+  <div class="ficha">
+    <div class="ficha-topo"><h3>2 e 3 · <code>/empresas/industria/</code> e <code>/empresas/construcao/</code></h3><span class="selo selo-cheio">P1</span><span class="selo">comercial B2B</span><span class="selo">78 → 91</span></div>
+    <p>O comprador B2B pergunta outra coisa que o B2C: <em>essa empresa atende empresas? consegue cotar? tem experiência?</em> Nenhuma das três está respondida hoje. E a palavra que ele digita — <strong>"fornecedor"</strong> — não aparece no título; foi com ela que o concorrente Original EPI apareceu na SERP que pesquisei.</p>
+    <ul class="variantes">
+      <li class="escolhida"><b>A</b><span class="txt">Fornecedor de EPI para indústria em Fortaleza</span><span class="len">59</span></li>
+      <li><b>B</b><span class="txt">EPI para indústria em Fortaleza, desde 1995</span><span class="len">57</span></li>
+      <li><b>C</b><span class="txt">EPI para indústria: fornecimento por posto</span><span class="len">56</span></li>
+    </ul>
+    <p><strong>Por que a A:</strong> "fornecedor" é o papel que o comprador procura, e é a diferença entre aparecer para quem quer comprar uma unidade e para quem quer abastecer uma equipe. O "desde 1995" da variante B vai para a descrição, onde cabe sem competir com o local.</p>
+    <div class="par">
+      <div class="serp antes"><p class="rot">Antes</p><p class="caminho">towerepis.com.br › empresas › industria</p><p class="t">EPI para indústria: fornecimento em Fortaleza · Tower…</p><p class="d">Proteção auditiva, respiratória, calçado de segurança e luvas por posto de trabalho. Fornecimento para indústrias no Ceará.</p></div>
+      <div class="serp depois"><p class="rot rot-red">Depois</p><p class="caminho">towerepis.com.br › empresas › industria</p><p class="t">Fornecedor de EPI para indústria em Fortaleza</p><p class="d">Proteção auditiva, respiratória, calçado e luva definidos por posto de trabalho. Orçamento com o CA de cada item, entrega no Ceará e reposição sem recomeçar.</p></div>
+    </div>
+    <p class="nota">Mesma estrutura para construção: <strong>"Fornecedor de EPI para obras em Fortaleza"</strong> (55).</p>
+  </div>
+
+  <div class="ficha">
+    <div class="ficha-topo"><h3>4, 5 e 10 · as páginas de profissão</h3><span class="selo selo-cheio">P1</span><span class="selo">comercial</span><span class="selo">78 → 88</span></div>
+    <p>Os títulos aqui já são bons — <em>"EPI para construção civil: o que a obra exige"</em> tem intenção clara e não precisa mudar. <strong>O problema é inteiro da descrição</strong>, e é o mesmo nas sete: a cauda repetida engole o final e o texto descreve sem dar motivo.</p>
+    <div class="par">
+      <div class="serp antes"><p class="rot">Antes · cozinha</p><p class="caminho">towerepis.com.br › para-seu-trabalho › cozinha</p><p class="t">Calçado para cozinha: como escolher · Tower EPI's</p><p class="d">Piso molhado, gordura e jornada em pé. Veja o que observar num calçado para trabalhar em cozinha e fale com quem entende. Tower EPI's, Fortaleza, desde 1995.</p></div>
+      <div class="serp depois"><p class="rot rot-red">Depois · cozinha</p><p class="caminho">towerepis.com.br › para-seu-trabalho › cozinha</p><p class="t">Calçado para cozinha: como escolher</p><p class="d">Piso molhado, gordura e jornada em pé. O que observar no solado e na cobertura do pé — e por que a biqueira quase nunca é necessária na cozinha.</p></div>
+    </div>
+    <p>A frase que entra no lugar da assinatura é o único conteúdo do snippet que <strong>nenhum concorrente teria coragem de escrever</strong>, porque contraria a venda do item mais caro. É verdadeira, está na página, e é exatamente o tipo de coisa que faz alguém clicar.</p>
+  </div>
+
+  <div class="ficha">
+    <div class="ficha-topo"><h3>6 · <code>/empresas/</code></h3><span class="selo selo-cheio">P1</span><span class="selo">comercial B2B</span><span class="selo">79 → 92</span></div>
+    <ul class="variantes">
+      <li class="escolhida"><b>A</b><span class="txt">Fornecedor de EPI para empresas em Fortaleza</span><span class="len">57</span></li>
+      <li><b>B</b><span class="txt">EPI para equipes: fornecimento em Fortaleza</span><span class="len">57</span></li>
+      <li><b>C</b><span class="txt">EPI para empresas em Fortaleza, desde 1995</span><span class="len">56</span></li>
+    </ul>
+    <p><strong>Por que a A:</strong> mesma lógica dos setores, aplicada ao hub. É a página que precisa capturar a consulta genérica de fornecimento.</p>
+    <p><strong>Descrição:</strong> "Fornecimento para equipes em Fortaleza e no Ceará, com o CA de cada item no orçamento. Sem CNPJ para começar a conversa — quem responde é um dos dois sócios." (155)</p>
+  </div>
+
+  <div class="ficha">
+    <div class="ficha-topo"><h3>7 · <code>/protecao/respiratoria/</code></h3><span class="selo selo-cheio">P1</span><span class="selo">intenção divergente</span><span class="selo">79 → 90</span></div>
+    <p>Aqui há um descompasso de formato: é uma <strong>página de categoria disputando uma SERP de artigos</strong>. Os dez resultados são textos explicativos. Ou o snippet compete no formato deles, ou não compete.</p>
+    <ul class="variantes">
+      <li class="escolhida"><b>A</b><span class="txt">PFF1, PFF2 e PFF3: qual usar para cada risco</span><span class="len">58</span></li>
+      <li><b>B</b><span class="txt">Máscara PFF1, PFF2 ou PFF3? Veja a diferença</span><span class="len">58</span></li>
+      <li><b>C</b><span class="txt">Proteção respiratória: PFF1, PFF2 e PFF3</span><span class="len">54</span></li>
+    </ul>
+    <p><strong>Por que a A:</strong> abre com o termo exato que se digita e promete o que a página realmente entrega — a página tem seção sobre o agente presente, a classificação, a vedação e o CA. A B é mais próxima do padrão da SERP, e por isso mesmo se confunde com os outros nove.</p>
+    <p><strong>Descrição:</strong> "O que decide não é o número da máscara, é o agente presente. Quando cada classe se aplica, e por que peça para poeira não protege contra vapor."</p>
+    <div class="achado">
+      <p class="rot rot-red">Uma condição antes de publicar</p>
+      <p>Considerei uma descrição com os percentuais de eficiência de cada classe, porque todo concorrente os usa. <strong>Não recomendo</strong> enquanto a página não citar a norma de onde eles vêm. A regra do projeto é não afirmar número normativo sem fonte, e ela vale também para o snippet.</p>
+    </div>
+  </div>
+
+  <div class="ficha">
+    <div class="ficha-topo"><h3>13 e 15 · o par duplicado</h3><span class="selo selo-cheio">P1</span><span class="selo">canibalização</span></div>
+    <p>Title e H1 idênticos nas duas. A separação não é cosmética — cada uma passa a servir uma consulta diferente:</p>
+    <div class="par">
+      <div class="serp depois"><p class="rot rot-red">Comercial · decisão</p><p class="caminho">towerepis.com.br › calcados › comparativo</p><p class="t">Ocupacional ou de segurança: qual é o seu caso</p><p class="d">Responda três coisas sobre o seu ambiente — queda de objeto, tipo de piso e horas em pé — e veja qual dos dois protege sem atrapalhar o trabalho.</p></div>
+      <div class="serp depois"><p class="rot rot-red">Informacional · norma</p><p class="caminho">towerepis.com.br › conhecimento › calcado-ocupacional…</p><p class="t">NBR ISO 20345 e 20347: o que muda no calçado</p><p class="d">As duas normas do calçado profissional, o que cada uma exige da biqueira e do solado, e como ler isso no Certificado de Aprovação.</p></div>
+    </div>
+    <p>A comercial passa a responder <em>"qual eu preciso"</em>; a informacional passa a responder <em>"o que diz a norma"</em>. São buscas distintas, feitas por pessoas em momentos distintos, e agora existe uma página para cada.</p>
+  </div>
+
+  <div class="ficha">
+    <div class="ficha-topo"><h3>11 e 16 · os hubs</h3><span class="selo">P1 · P2</span></div>
+    <p><code>/protecao/</code> hoje se chama <em>"Proteção por parte do corpo"</em>. Ninguém digita isso.</p>
+    <ul class="variantes">
+      <li class="escolhida"><b>A</b><span class="txt">EPI por parte do corpo: o que cada um protege</span><span class="len">59</span></li>
+      <li><b>B</b><span class="txt">Tipos de EPI por parte do corpo protegida</span><span class="len">55</span></li>
+    </ul>
+    <p>E <code>/calcados/</code> perdeu "em Fortaleza" no Lote 1 por causa do limite de caracteres. Recomendo devolver, usando título absoluto (ver seção 07): <strong>"Calçado de segurança e ocupacional em Fortaleza"</strong> (46, sem sufixo).</p>
+  </div>
+</section>
+
+<section>
+  <p class="num">07</p>
+  <h2>A decisão estrutural: soltar o sufixo onde o local vale mais</h2>
+  <p>Metade das melhorias acima esbarra nos mesmos 14 caracteres. A proposta não é remover a marca do site — é <strong>parar de gastá-la onde ela não trabalha</strong>.</p>
+  <div class="grade grade-2">
+    <div>
+      <p class="rot">Mantém o sufixo</p>
+      <h4>Institucional, artigos, marcas, legal</h4>
+      <p>Onde a busca é navegacional ou informacional, a marca no fim ajuda o reconhecimento e não disputa espaço com nenhum termo local. São 26 URLs.</p>
+    </div>
+    <div>
+      <p class="rot rot-red">Título absoluto, sem sufixo</p>
+      <h4>Comerciais locais</h4>
+      <p>Home, orçamento, empresas e os cinco setores, calçados e os três tipos, as sete profissões. São <strong>17 URLs</strong> onde "em Fortaleza" rende mais que "· Tower EPI's" — e onde a marca já aparece na URL logo acima do título.</p>
+    </div>
+  </div>
+  <p class="nota">Implementação: o construtor <code>metadados()</code> ganha um sinalizador que emite <code>title.absolute</code>. Duas linhas, sem risco de esquecimento, porque continua tudo passando pelo mesmo lugar.</p>
+</section>
+
+<section>
+  <p class="num">08</p>
+  <h2>Tabela mestre</h2>
+  <p>As 43 URLs, com intenção, keyword primária, score atual e destino. Status de todas: <strong>aguardando aprovação</strong>.</p>
+  <div class="rolagem">
+    <table>
+      <thead><tr><th>URL</th><th>Tipo</th><th>Intenção</th><th>Keyword primária</th><th class="n">Score</th><th>Prio</th><th>Local</th><th>Ação</th></tr></thead>
+      <tbody>
+        <tr><td class="u">/</td><td>home</td><td>local</td><td>EPI Fortaleza</td><td class="n">84</td><td>P1</td><td>sim</td><td>tirar sufixo</td></tr>
+        <tr><td class="u">/orcamento/</td><td>conversão</td><td>transacional</td><td>orçamento de EPI</td><td class="n">76</td><td>P1</td><td>sim</td><td><strong>reescrever</strong></td></tr>
+        <tr><td class="u">/empresas/</td><td>hub B2B</td><td>comercial</td><td>fornecedor de EPI para empresas</td><td class="n">79</td><td>P1</td><td>sim</td><td><strong>reescrever</strong></td></tr>
+        <tr><td class="u">/empresas/industria/</td><td>setor</td><td>comercial</td><td>fornecedor de EPI para indústria</td><td class="n">78</td><td>P1</td><td>sim</td><td><strong>reescrever</strong></td></tr>
+        <tr><td class="u">/empresas/construcao/</td><td>setor</td><td>comercial</td><td>fornecedor de EPI para obra</td><td class="n">78</td><td>P1</td><td>sim</td><td><strong>reescrever</strong></td></tr>
+        <tr><td class="u">/empresas/saude/</td><td>setor</td><td>comercial</td><td>EPI para clínica e hospital</td><td class="n">73</td><td>P2</td><td>sim</td><td><strong>reescrever</strong></td></tr>
+        <tr><td class="u">/empresas/facilities-e-limpeza/</td><td>setor</td><td>comercial</td><td>EPI para empresa de limpeza</td><td class="n">73</td><td>P2</td><td>sim</td><td><strong>reescrever</strong></td></tr>
+        <tr><td class="u">/empresas/alimentacao/</td><td>setor</td><td>comercial</td><td>EPI para restaurante</td><td class="n">76</td><td>P2</td><td>sim</td><td><strong>reescrever</strong></td></tr>
+        <tr><td class="u">/empresas/como-atendemos/</td><td>institucional</td><td>comercial</td><td>como funciona o fornecimento</td><td class="n">81</td><td>P3</td><td>não</td><td>tirar marca dupla</td></tr>
+        <tr><td class="u">/calcados/</td><td>hub</td><td>comercial</td><td>calçado de segurança e ocupacional</td><td class="n">82</td><td>P1</td><td>sim</td><td>devolver local</td></tr>
+        <tr><td class="u">/calcados/seguranca/</td><td>categoria</td><td>comercial</td><td>calçado de segurança Fortaleza</td><td class="n">81</td><td>P1</td><td>sim</td><td>só descrição</td></tr>
+        <tr><td class="u">/calcados/ocupacionais/</td><td>categoria</td><td>comercial</td><td>calçado ocupacional Fortaleza</td><td class="n">83</td><td>P1</td><td>sim</td><td>só descrição</td></tr>
+        <tr><td class="u">/calcados/antiderrapantes/</td><td>categoria</td><td>comercial</td><td>sapato antiderrapante trabalho</td><td class="n">84</td><td>P1</td><td>sim</td><td>só descrição</td></tr>
+        <tr><td class="u">/calcados/comparativo/</td><td>decisão</td><td>comparativa</td><td>ocupacional ou de segurança</td><td class="n">81</td><td>P1</td><td>não</td><td><strong>separar do artigo</strong></td></tr>
+        <tr><td class="u">/para-seu-trabalho/</td><td>hub</td><td>comercial</td><td>EPI por profissão</td><td class="n">83</td><td>P2</td><td>sim</td><td>só descrição</td></tr>
+        <tr><td class="u">/para-seu-trabalho/cozinha/</td><td>profissão</td><td>comercial</td><td>calçado para cozinha</td><td class="n">80</td><td>P1</td><td>sim</td><td>só descrição</td></tr>
+        <tr><td class="u">/para-seu-trabalho/construcao/</td><td>profissão</td><td>comercial</td><td>EPI para construção civil</td><td class="n">78</td><td>P1</td><td>sim</td><td>só descrição</td></tr>
+        <tr><td class="u">/para-seu-trabalho/enfermagem-e-saude/</td><td>profissão</td><td>comercial</td><td>calçado para enfermagem</td><td class="n">78</td><td>P1</td><td>sim</td><td>só descrição</td></tr>
+        <tr><td class="u">/para-seu-trabalho/industria/</td><td>profissão</td><td>comercial</td><td>EPI para indústria</td><td class="n">78</td><td>P2</td><td>sim</td><td>só descrição</td></tr>
+        <tr><td class="u">/para-seu-trabalho/limpeza-e-conservacao/</td><td>profissão</td><td>comercial</td><td>EPI para limpeza</td><td class="n">78</td><td>P2</td><td>sim</td><td>só descrição</td></tr>
+        <tr><td class="u">/para-seu-trabalho/logistica-e-estoque/</td><td>profissão</td><td>comercial</td><td>EPI para logística</td><td class="n">78</td><td>P3</td><td>sim</td><td>só descrição</td></tr>
+        <tr><td class="u">/para-seu-trabalho/manutencao/</td><td>profissão</td><td>comercial</td><td>EPI para manutenção</td><td class="n">80</td><td>P3</td><td>sim</td><td>só descrição</td></tr>
+        <tr><td class="u">/protecao/</td><td>hub</td><td>comercial</td><td>tipos de EPI</td><td class="n">74</td><td>P2</td><td>não</td><td><strong>reescrever</strong></td></tr>
+        <tr><td class="u">/protecao/respiratoria/</td><td>categoria</td><td>comercial/inf.</td><td>PFF1 PFF2 PFF3</td><td class="n">79</td><td>P1</td><td>não</td><td><strong>reescrever</strong></td></tr>
+        <tr><td class="u">/protecao/maos/</td><td>categoria</td><td>comercial/inf.</td><td>luva de segurança tipos</td><td class="n">80</td><td>P2</td><td>não</td><td>só descrição</td></tr>
+        <tr><td class="u">/protecao/auditiva/</td><td>categoria</td><td>comercial/inf.</td><td>protetor auricular</td><td class="n">73</td><td>P3</td><td>não</td><td>só descrição</td></tr>
+        <tr><td class="u">/protecao/cabeca/</td><td>categoria</td><td>comercial/inf.</td><td>capacete classes</td><td class="n">79</td><td>P3</td><td>não</td><td>só descrição</td></tr>
+        <tr><td class="u">/protecao/olhos-e-face/</td><td>categoria</td><td>comercial/inf.</td><td>óculos de proteção</td><td class="n">82</td><td>P3</td><td>não</td><td>só descrição</td></tr>
+        <tr><td class="u">/protecao/corpo/</td><td>categoria</td><td>comercial/inf.</td><td>vestimenta de proteção</td><td class="n">80</td><td>P4</td><td>não</td><td>só descrição</td></tr>
+        <tr><td class="u">/conhecimento/o-que-e-ca-certificado-de-aprovacao/</td><td>artigo</td><td>informacional</td><td>o que é CA do EPI</td><td class="n">88</td><td>P1</td><td>não</td><td>manter</td></tr>
+        <tr><td class="u">/conhecimento/nr-6-o-que-a-empresa-precisa-saber/</td><td>artigo</td><td>informacional</td><td>NR-6 obrigações</td><td class="n">82</td><td>P1</td><td>não</td><td>só descrição</td></tr>
+        <tr><td class="u">/conhecimento/calcado-para-cozinha-como-escolher/</td><td>artigo</td><td>informacional</td><td>melhor calçado para cozinha</td><td class="n">82</td><td>P1</td><td>não</td><td>só descrição</td></tr>
+        <tr><td class="u">/conhecimento/calcado-ocupacional-ou-de-seguranca/</td><td>artigo</td><td>informacional</td><td>NBR ISO 20345 e 20347</td><td class="n">76</td><td>P2</td><td>não</td><td><strong>separar da comercial</strong></td></tr>
+        <tr><td class="u">/conhecimento/solado-antiderrapante-o-que-significa/</td><td>artigo</td><td>informacional</td><td>solado antiderrapante</td><td class="n">84</td><td>P2</td><td>não</td><td>manter</td></tr>
+        <tr><td class="u">/conhecimento/</td><td>hub</td><td>navegacional</td><td>central de conhecimento EPI</td><td class="n">84</td><td>P3</td><td>não</td><td>manter</td></tr>
+        <tr><td class="u">/contato/</td><td>contato</td><td>navegacional</td><td>Tower EPI's contato</td><td class="n">82</td><td>P2</td><td>sim</td><td>tirar marca dupla</td></tr>
+        <tr><td class="u">/marcas/bompel/</td><td>marca</td><td>navegacional</td><td>Bompel calçado</td><td class="n">80</td><td>P2</td><td>não</td><td>tirar marca dupla</td></tr>
+        <tr><td class="u">/marcas/</td><td>hub marca</td><td>navegacional</td><td>marcas de EPI</td><td class="n">81</td><td>P3</td><td>não</td><td>tirar marca dupla</td></tr>
+        <tr><td class="u">/marcas/3m/</td><td>marca</td><td>navegacional</td><td>3M distribuidor Ceará</td><td class="n">82</td><td>P3</td><td>não</td><td>tirar marca dupla</td></tr>
+        <tr><td class="u">/a-tower/</td><td>institucional</td><td>institucional</td><td>Tower EPI's história</td><td class="n">74</td><td>P3</td><td>não</td><td>só descrição</td></tr>
+        <tr><td class="u">/a-tower/helano/</td><td>autoria</td><td>institucional</td><td>Helano técnico de segurança</td><td class="n">91</td><td>P4</td><td>não</td><td>manter</td></tr>
+        <tr><td class="u">/encontrar-epi/</td><td>ferramenta</td><td>informacional</td><td>qual EPI preciso usar</td><td class="n">71</td><td>P3</td><td>não</td><td>só descrição</td></tr>
+        <tr><td class="u">/politica-de-privacidade/</td><td>legal</td><td>legal</td><td>—</td><td class="n">74</td><td>P4</td><td>não</td><td>manter</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <p class="num">09</p>
+  <h2>Risco</h2>
+  <ul>
+    <li><strong>Risco baixo em 38 URLs.</strong> Trocar descrição não afeta ranking — description não é fator de classificação. O efeito é só no clique.</li>
+    <li><strong>Risco médio em 5 URLs.</strong> As que mudam de título e de intenção: o par duplicado, <code>/protecao/</code>, <code>/protecao/respiratoria/</code> e <code>/empresas/</code>. Mudança de título muda o termo pelo qual a página é entendida — e é justamente por isso que se faz agora, com o site novo, e não depois de posicionado.</li>
+    <li><strong>O maior risco é a repetição.</strong> Publicar isto e mexer de novo em duas semanas destrói a possibilidade de leitura. Publicar uma vez, registrar a data, e não tocar por 60 a 90 dias.</li>
+    <li><strong>O Google pode reescrever o snippet.</strong> Ele faz isso quando o título não corresponde ao conteúdo. Por isso todas as propostas usam palavras que estão na página — nenhuma promete o que a página não entrega.</li>
+  </ul>
+</section>
+
+<section>
+  <p class="num">10</p>
+  <h2>Plano</h2>
+  <ol class="lotes">
+    <li><b>Lote A</b><div><strong>Estrutura do template</strong><p>Título absoluto nas 17 URLs comerciais locais e fim da marca duplicada nas 5. Uma alteração no construtor de metadados, sem tocar em texto.</p></div></li>
+    <li><b>Lote B</b><div><strong>Home + as 8 páginas P1 de maior oportunidade</strong><p>Orçamento, empresas, os dois setores maiores, respiratória, e o par duplicado. É aqui que está a maior parte do ganho.</p></div></li>
+    <li><b>Lote C</b><div><strong>As 22 descrições com cauda de fórmula</strong><p>Sete profissões, seis proteções, três calçados, cinco setores e o restante. Mecânico e de risco baixo.</p></div></li>
+    <li><b>Lote D</b><div><strong>Registrar e esperar</strong><p>Data de publicação anotada, Search Console configurado, sitemap enviado. Segunda auditoria quando houver amostra — aí sim com consulta, impressão, CTR e posição, comparando com as hipóteses deste documento.</p></div></li>
+  </ol>
+</section>
+
+</main>
+
+<footer>
+  <div class="env">
+    <p><strong>Nada foi alterado.</strong> As 43 URLs seguem como estão. Este documento é a proposta pedida antes da implementação — e o marco zero para a segunda auditoria, quando houver dado real.</p>
+    <p style="margin-top:1rem;color:var(--ink-3);font-size:0.84rem">Tower EPI's · Fortaleza — CE · Auditoria de title, description e CTR · Setembro de 2026</p>
+  </div>
+</footer>

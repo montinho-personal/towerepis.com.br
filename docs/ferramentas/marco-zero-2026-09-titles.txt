@@ -1,0 +1,215 @@
+/
+  T(42): EPI em Fortaleza — Tower EPI's, desde 1995
+  H1: O melhor EPI é o que a pessoa usa o dia inteiro.
+  D(147): Calçados ocupacionais e de segurança, proteção respiratória, luvas e mais, em Fortaleza. Com orientação de quem é técnico de segurança do trabalho.
+
+/a-tower/
+  T(50): Nossa história: trinta anos no Ceará · Tower EPI's
+  H1: Em 1995, a 3M procurava alguém para desenvolver o mercado de proteção no Ceará.
+  D(155): Em 1995 a 3M procurava alguém para desenvolver o mercado de proteção no Ceará. Convidou o Helano. Esta é a história da Tower EPI’s, contada por quem viveu.
+
+/a-tower/helano/
+  T(55): Helano — Técnico de Segurança do Trabalho · Tower EPI's
+  H1: Helano
+  D(146): Sócio-proprietário da Tower EPI’s e técnico de segurança do trabalho. Responsável pela revisão do conteúdo técnico do site. Fortaleza, desde 1995.
+
+/calcados/
+  T(50): Calçados de segurança e ocupacionais · Tower EPI's
+  H1: Calçados de segurança e ocupacionais
+  D(142): Calçado de segurança com biqueira, ocupacional e antiderrapante em Fortaleza. Entenda a diferença com quem é técnico de segurança do trabalho.
+
+/calcados/antiderrapantes/
+  T(48): Sapato antiderrapante em Fortaleza · Tower EPI's
+  H1: Calçados antiderrapantes
+  D(146): O que significa solado antiderrapante, como o desempenho é medido e como escolher para piso molhado ou oleoso. Tower EPI’s, Fortaleza, desde 1995.
+
+/calcados/comparativo/
+  T(50): Calçado ocupacional ou de segurança? · Tower EPI's
+  H1: Calçado ocupacional ou de segurança: qual é o seu caso?
+  D(148): A diferença entre NBR ISO 20347 e NBR ISO 20345, o que a biqueira faz e o que ela não faz, e como descobrir qual dos dois serve para o seu trabalho.
+
+/calcados/ocupacionais/
+  T(48): Calçados ocupacionais em Fortaleza · Tower EPI's
+  H1: Calçados ocupacionais
+  D(150): Calçado ocupacional sem biqueira, para atividades sem risco mecânico: cozinha, saúde, limpeza e serviços. Veja o que observar. Tower EPI’s, Fortaleza.
+
+/calcados/seguranca/
+  T(48): Calçados de segurança em Fortaleza · Tower EPI's
+  H1: Calçados de segurança
+  D(149): Calçado de segurança com biqueira de proteção contra impacto, para indústria, construção, logística e manutenção. Tower EPI’s, Fortaleza, desde 1995.
+
+/conhecimento/
+  T(47): Central de conhecimento sobre EPI · Tower EPI's
+  H1: Antes de comprar, entenda
+  D(150): Textos sobre calçados profissionais, normas, CA e escolha de EPI. Escritos e revisados por técnico de segurança do trabalho, com fonte oficial citada.
+
+/conhecimento/calcado-ocupacional-ou-de-seguranca/
+  T(50): Calçado ocupacional ou de segurança? · Tower EPI's
+  H1: Calçado ocupacional ou de segurança: qual é o seu caso?
+  D(145): A diferença entre calçado ocupacional (NBR ISO 20347) e calçado de segurança (NBR ISO 20345), e como saber qual é o indicado para o seu trabalho.
+
+/conhecimento/calcado-para-cozinha-como-escolher/
+  T(49): Qual o melhor calçado para cozinha? · Tower EPI's
+  H1: Qual o melhor calçado para trabalhar em cozinha?
+  D(134): Piso molhado, gordura e muitas horas em pé. Veja o que observar num calçado para cozinha e por que a biqueira nem sempre é necessária.
+
+/conhecimento/nr-6-o-que-a-empresa-precisa-saber/
+  T(59): NR-6: o que a empresa precisa saber sobre EPI · Tower EPI's
+  H1: NR-6: o que a empresa precisa saber sobre EPI
+  D(144): Obrigações da empresa quanto ao fornecimento de EPI segundo a norma regulamentadora, com fonte oficial. Guia direto para quem compra e gerencia.
+
+/conhecimento/o-que-e-ca-certificado-de-aprovacao/
+  T(50): O que é o CA do EPI e como consultar · Tower EPI's
+  H1: O que é o CA do EPI e como consultar
+  D(131): Entenda o que é o Certificado de Aprovação (CA) de EPI, para que serve, como consultar no gov.br e o que fazer quando está vencido.
+
+/conhecimento/solado-antiderrapante-o-que-significa/
+  T(52): Solado antiderrapante: o que significa · Tower EPI's
+  H1: Solado antiderrapante: o que realmente significa
+  D(141): Entenda o que é medido no ensaio de resistência ao escorregamento, o que significam as marcações e como escolher para piso molhado ou oleoso.
+
+/contato/
+  T(46): Contato — Tower EPI’s, Fortaleza · Tower EPI's
+  H1: Fale com a Tower
+  D(130): Fale com a Tower EPI’s pelo WhatsApp. Atendimento por Helano e Cristina, os sócios, com entrega em Fortaleza e região. Desde 1995.
+
+/empresas/
+  T(44): EPI para empresas em Fortaleza · Tower EPI's
+  H1: EPI para a sua equipe, escolhido pela atividade
+  D(150): Fornecimento de EPI para equipes em Fortaleza e no Ceará. Orçamento com CA dos itens, entrega na região e reposição sem recomeçar do zero. Desde 1995.
+
+/empresas/alimentacao/
+  T(55): EPI para restaurante e cozinha industrial · Tower EPI's
+  H1: EPI para equipes de cozinha e alimentação
+  D(140): Calçado antiderrapante, luva e proteção para equipes de cozinha. Fornecimento para restaurantes, hotéis e cozinhas industriais em Fortaleza.
+
+/empresas/como-atendemos/
+  T(42): Como a Tower atende empresas · Tower EPI's
+  H1: Como a gente atende
+  D(132): Orçamento, prazo, CA dos itens, entrega em Fortaleza e reposição. Como funciona o atendimento a empresas na Tower EPI’s, desde 1995.
+
+/empresas/construcao/
+  T(56): EPI para construtoras e obras em Fortaleza · Tower EPI's
+  H1: EPI para equipes de obra
+  D(120): Calçado de segurança, capacete, luva e proteção respiratória para equipes de obra. Fornecimento em Fortaleza e no Ceará.
+
+/empresas/facilities-e-limpeza/
+  T(56): EPI para empresas de limpeza e conservação · Tower EPI's
+  H1: EPI para equipes de limpeza e conservação
+  D(134): Luva adequada ao produto químico, calçado antiderrapante e proteção para os olhos. Fornecimento para empresas de limpeza em Fortaleza.
+
+/empresas/industria/
+  T(59): EPI para indústria: fornecimento em Fortaleza · Tower EPI's
+  H1: EPI para indústria, por posto de trabalho
+  D(123): Proteção auditiva, respiratória, calçado de segurança e luvas por posto de trabalho. Fornecimento para indústrias no Ceará.
+
+/empresas/saude/
+  T(57): EPI para clínicas, hospitais e laboratórios · Tower EPI's
+  H1: EPI para equipes da área da saúde
+  D(111): Calçado ocupacional, luvas e proteção respiratória para equipes de saúde. Fornecimento em Fortaleza e no Ceará.
+
+/encontrar-epi/
+  T(54): Encontre o EPI certo para o seu trabalho · Tower EPI's
+  H1: Encontre o EPI certo para o seu trabalho
+  D(146): Quatro perguntas simples para orientar a escolha do equipamento de proteção. Uma orientação inicial, não um laudo técnico. Tower EPI’s, Fortaleza.
+
+/marcas/
+  T(41): Marcas que a Tower trabalha · Tower EPI's
+  H1: Com quem a gente trabalha
+  D(126): A Bompel é hoje a principal parceria da Tower em calçado profissional. Trabalhamos também com 3M e Sticky Shoes, entre outras.
+
+/marcas/3m/
+  T(41): A relação da Tower com a 3M · Tower EPI's
+  H1: A relação com a 3M começou antes da Tower existir
+  D(152): A Tower nasceu de um convite da 3M para desenvolver o mercado de proteção no Ceará, em 1995. E recebeu depois o reconhecimento de Distribuidor Regional.
+
+/marcas/bompel/
+  T(35): Bompel na Tower EPI’s · Tower EPI's
+  H1: Bompel: a linha que mais atendemos hoje
+  D(136): A Bompel é hoje a principal parceria da Tower em calçado profissional. Veja o que a linha cobre, o que observar na escolha e como pedir.
+
+/orcamento/
+  T(36): Pedir orçamento de EPI · Tower EPI's
+  H1: Peça seu orçamento
+  D(144): Monte seu orçamento de EPI item a item, com grade de numeração para calçado, e envie pronto pelo WhatsApp. Sem cadastro. Tower EPI’s, Fortaleza.
+
+/para-seu-trabalho/
+  T(44): EPI por profissão em Fortaleza · Tower EPI's
+  H1: Comece pelo que você faz
+  D(157): Cozinha, enfermagem, limpeza, construção, indústria, logística e manutenção. Veja o que observar na escolha do EPI para a sua rotina. Tower EPI’s, Fortaleza.
+
+/para-seu-trabalho/construcao/
+  T(59): EPI para construção civil: o que a obra exige · Tower EPI's
+  H1: Proteção para quem trabalha na construção
+  D(143): Calçado de segurança com biqueira, capacete, luva e proteção respiratória para poeira. Veja o que observar. Tower EPI’s, Fortaleza, desde 1995.
+
+/para-seu-trabalho/cozinha/
+  T(49): Calçado para cozinha: como escolher · Tower EPI's
+  H1: Calçado para quem trabalha em cozinha
+  D(157): Piso molhado, gordura e jornada em pé. Veja o que observar num calçado para trabalhar em cozinha e fale com quem entende. Tower EPI’s, Fortaleza, desde 1995.
+
+/para-seu-trabalho/enfermagem-e-saude/
+  T(59): Calçado e EPI para enfermagem e área da saúde · Tower EPI's
+  H1: Proteção para quem trabalha na saúde
+  D(145): Plantão longo, piso liso e risco de respingo. Veja o que observar no calçado e nos EPIs para a área da saúde. Tower EPI’s, Fortaleza, desde 1995.
+
+/para-seu-trabalho/industria/
+  T(59): EPI para indústria: o que observar na escolha · Tower EPI's
+  H1: Proteção para quem trabalha na indústria
+  D(138): Proteção auditiva, respiratória, calçado de segurança e luva conforme o processo. Veja o que observar. Tower EPI’s, Fortaleza, desde 1995.
+
+/para-seu-trabalho/limpeza-e-conservacao/
+  T(60): EPI para limpeza e conservação: o que observar · Tower EPI's
+  H1: Proteção para quem trabalha com limpeza e conservação
+  D(140): Luva certa para o produto químico, calçado antiderrapante e proteção para os olhos. Veja o que observar. Tower EPI’s, Fortaleza, desde 1995.
+
+/para-seu-trabalho/logistica-e-estoque/
+  T(58): EPI para logística e estoque: o que observar · Tower EPI's
+  H1: Proteção para quem trabalha com logística e estoque
+  D(137): Calçado de segurança para movimentação de carga, luva de manuseio e sinalização. Veja o que observar. Tower EPI’s, Fortaleza, desde 1995.
+
+/para-seu-trabalho/manutencao/
+  T(49): EPI para manutenção: o que observar · Tower EPI's
+  H1: Proteção para quem trabalha com manutenção
+  D(140): Manutenção enfrenta riscos diferentes a cada chamado. Veja o que observar na escolha do conjunto de EPI. Tower EPI’s, Fortaleza, desde 1995.
+
+/politica-de-privacidade/
+  T(37): Política de privacidade · Tower EPI's
+  H1: Política de privacidade
+  D(156): Este site não tem cadastro, não pede e-mail e não guarda o que você escreve no formulário. O que é coletado, como o WhatsApp entra e como falar com a gente.
+
+/protecao/
+  T(41): Proteção por parte do corpo · Tower EPI's
+  H1: O que você precisa proteger?
+  D(151): Proteção respiratória, luvas, protetor auricular, óculos, capacete e vestimentas. O que observar em cada categoria. Tower EPI’s, Fortaleza, desde 1995.
+
+/protecao/auditiva/
+  T(48): Proteção auditiva: plug ou concha? · Tower EPI's
+  H1: Proteção auditiva
+  D(126): Diferenças entre protetor de inserção e tipo concha, atenuação e conforto no uso contínuo. Tower EPI’s, Fortaleza, desde 1995.
+
+/protecao/cabeca/
+  T(50): Capacete de segurança: classes e uso · Tower EPI's
+  H1: Proteção da cabeça
+  D(128): Classes de capacete, quando cada uma se aplica e o que conferir no Certificado de Aprovação. Tower EPI’s, Fortaleza, desde 1995.
+
+/protecao/corpo/
+  T(57): Vestimentas de proteção e alta visibilidade · Tower EPI's
+  H1: Vestimentas de proteção
+  D(124): Avental, macacão e vestimenta de alta visibilidade: o que observar conforme a exposição. Tower EPI’s, Fortaleza, desde 1995.
+
+/protecao/maos/
+  T(57): Luvas de proteção: como escolher pelo risco · Tower EPI's
+  H1: Proteção das mãos
+  D(140): Corte, produto químico, calor ou abrasão exigem luvas diferentes. Veja o que observar antes de escolher. Tower EPI’s, Fortaleza, desde 1995.
+
+/protecao/olhos-e-face/
+  T(50): Óculos de proteção e protetor facial · Tower EPI's
+  H1: Proteção para olhos e face
+  D(137): Proteção contra projeção de partícula, respingo químico e radiação. O que observar antes de escolher. Tower EPI’s, Fortaleza, desde 1995.
+
+/protecao/respiratoria/
+  T(54): Proteção respiratória: PFF1, PFF2 e PFF3 · Tower EPI's
+  H1: Proteção respiratória
+  D(153): Entenda a diferença entre PFF1, PFF2 e PFF3, quando cada uma se aplica e por que máscara para partícula não protege contra vapor. Tower EPI’s, Fortaleza.
+
