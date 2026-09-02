@@ -159,6 +159,16 @@
   .lotes p { margin: 0.3rem 0 0; font-size: 0.95rem; }
   .lotes strong { font-family: var(--display); font-size: 0.98rem; }
 
+  /* --- faixa de estado, acima do diagnóstico --- */
+  .estado { background: var(--paper-2); border-bottom: 1px solid var(--rule); padding-block: 2rem; }
+  .estado-grade { display: grid; gap: 1.6rem 2.4rem; margin-top: 1.1rem; }
+  @media (min-width: 52rem) { .estado-grade { grid-template-columns: 1.1fr 0.9fr 1.1fr; } }
+  .estado h3 { font-size: 1rem; margin-top: 0; }
+  .estado p { font-size: 0.94rem; margin-top: 0.5rem; }
+  table.mini { margin-top: 0.6rem; font-size: 0.78rem; }
+  table.mini td { border-bottom: 1px solid var(--rule); padding: 0.3rem 0.8rem 0.3rem 0; }
+  table.mini td.n { text-align: right; padding-right: 0; color: var(--ink-2); }
+
   footer { background: var(--paper-2); border-top: 3px solid var(--red); padding-block: 2.4rem; }
   footer p { font-size: 0.9rem; color: var(--ink-2); }
 
@@ -179,6 +189,35 @@
     </dl>
   </div>
 </header>
+
+<div class="estado">
+  <div class="env">
+    <p class="rot rot-red">Estado · atualizado depois da implementação</p>
+    <div class="estado-grade">
+      <div>
+        <h3>Lote 1 concluído</h3>
+        <p>Itens 2, 3, 5, 9, 12, 14 e 17. Estrutura, sem tocar em texto de conteúdo. Auditoria refeita: dos 11 problemas de título, descrição e orfandade editorial, sobraram 2 — ambos aceitáveis.</p>
+      </div>
+      <div>
+        <h3>Links editoriais para os hubs</h3>
+        <table class="mini">
+          <tbody>
+            <tr><td class="u">/protecao/</td><td class="n">0 → <strong>6</strong></td></tr>
+            <tr><td class="u">/conhecimento/</td><td class="n">1 → <strong>6</strong></td></tr>
+            <tr><td class="u">/para-seu-trabalho/</td><td class="n">2 → <strong>9</strong></td></tr>
+            <tr><td class="u">/empresas/</td><td class="n">3 → <strong>8</strong></td></tr>
+            <tr><td class="u">/calcados/</td><td class="n">8 → <strong>11</strong></td></tr>
+            <tr><td class="u">/marcas/</td><td class="n">1 → <strong>3</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h3>Aberto</h3>
+        <p>Lote 2: a canibalização de calçado e as quatro páginas rasas. Lotes 3 e 4 conforme o plano da seção 16 — e o item 7 (Search Console) continua sendo pré-requisito para priorizar por desempenho.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <main class="env">
 

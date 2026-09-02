@@ -1,0 +1,90 @@
+# INVENTÁRIO
+
+rota	tipo	prof	pal	H1	títuloN	descN	LI_entra	LI_corpo	LI_sai	schema	zap
+/	home	0	838	1	42	147	84	0	57	Organization+LocalBusiness+WebSite	4
+/a-tower/	institucional	1	801	1	50	155	86	1	35	Organization+LocalBusiness+WebSite+BreadcrumbList	3
+/a-tower/helano/	institucional	1	375	1	55	146	71	24	40	Organization+LocalBusiness+WebSite+Person+BreadcrumbList	3
+/calcados/	hub	1	361	1	50	142	57	11	47	Organization+LocalBusiness+WebSite+BreadcrumbList	3
+/calcados/antiderrapantes/	calçado	1	459	1	48	146	48	6	43	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+/calcados/comparativo/	institucional	1	800	1	50	148	51	9	39	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	3
+/calcados/ocupacionais/	calçado	1	457	1	48	150	49	7	43	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+/calcados/seguranca/	calçado	1	446	1	48	149	51	9	43	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+/conhecimento/	hub	1	207	1	47	150	95	6	38	Organization+LocalBusiness+WebSite+BreadcrumbList	3
+/conhecimento/calcado-ocupacional-ou-de-seguranca/	artigo	1	598	1	50	145	6	6	43	Organization+LocalBusiness+WebSite+BlogPosting+BreadcrumbList	3
+/conhecimento/calcado-para-cozinha-como-escolher/	artigo	1	774	1	49	134	6	6	43	Organization+LocalBusiness+WebSite+BlogPosting+BreadcrumbList	3
+/conhecimento/nr-6-o-que-a-empresa-precisa-saber/	artigo	2	602	1	59	144	4	4	43	Organization+LocalBusiness+WebSite+BlogPosting+BreadcrumbList	3
+/conhecimento/o-que-e-ca-certificado-de-aprovacao/	artigo	1	578	1	50	131	6	6	43	Organization+LocalBusiness+WebSite+BlogPosting+BreadcrumbList	3
+/conhecimento/solado-antiderrapante-o-que-significa/	artigo	2	587	1	52	141	8	8	43	Organization+LocalBusiness+WebSite+BlogPosting+BreadcrumbList	3
+/contato/	institucional	1	210	1	46	130	42	0	34	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	3
+/empresas/	hub	1	494	1	44	150	98	8	40	Organization+LocalBusiness+WebSite+BreadcrumbList	3
+/empresas/alimentacao/	setor	2	779	1	55	140	6	6	43	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+/empresas/como-atendemos/	institucional	2	507	1	42	132	1	1	36	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	3
+/empresas/construcao/	setor	2	731	1	56	120	6	6	43	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+/empresas/facilities-e-limpeza/	setor	2	712	1	56	134	6	6	43	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+/empresas/industria/	setor	2	751	1	59	123	8	8	43	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+/empresas/saude/	setor	2	706	1	57	111	6	6	43	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+/encontrar-epi/	institucional	2	59	1	54	146	8	8	35	Organization+LocalBusiness+WebSite+BreadcrumbList	2
+/marcas/	hub	1	271	1	41	126	47	3	37	Organization+LocalBusiness+WebSite+BreadcrumbList	3
+/marcas/3m/	marca	2	275	1	41	152	3	3	39	Organization+LocalBusiness+WebSite+BreadcrumbList	3
+/marcas/bompel/	marca	1	836	1	35	136	46	4	41	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	3
+/orcamento/	institucional	1	470	1	36	144	91	7	36	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	2
+/para-seu-trabalho/	hub	1	146	1	44	157	58	9	41	Organization+LocalBusiness+WebSite+BreadcrumbList	3
+/para-seu-trabalho/construcao/	profissão	1	627	1	59	143	57	15	48	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+/para-seu-trabalho/cozinha/	profissão	1	763	1	49	157	55	13	48	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+/para-seu-trabalho/enfermagem-e-saude/	profissão	1	587	1	59	145	55	13	48	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+/para-seu-trabalho/industria/	profissão	1	587	1	59	138	58	16	48	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+/para-seu-trabalho/limpeza-e-conservacao/	profissão	1	544	1	60	140	57	15	48	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+/para-seu-trabalho/logistica-e-estoque/	profissão	1	468	1	58	137	54	12	48	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+/para-seu-trabalho/manutencao/	profissão	1	505	1	49	140	54	12	48	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+/politica-de-privacidade/	institucional	1	192	1	37	156	42	0	34	Organization+LocalBusiness+WebSite+BreadcrumbList	2
+/protecao/	hub	1	151	1	41	151	54	6	41	Organization+LocalBusiness+WebSite+BreadcrumbList	3
+/protecao/auditiva/	proteção	1	417	1	48	126	50	8	46	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+/protecao/cabeca/	proteção	1	356	1	50	128	50	8	46	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+/protecao/corpo/	proteção	1	364	1	57	124	50	8	46	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+/protecao/maos/	proteção	1	442	1	57	140	53	11	46	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+/protecao/olhos-e-face/	proteção	1	384	1	50	137	51	9	46	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+/protecao/respiratoria/	proteção	1	488	1	54	153	53	11	46	Organization+LocalBusiness+WebSite+FAQPage+BreadcrumbList	4
+
+
+# PROBLEMAS DETECTADOS
+
+
+## RASO (6)
+  [RASO] /conhecimento/ 207 palavras
+  [RASO] /contato/ 210 palavras
+  [RASO] /encontrar-epi/ 59 palavras
+  [RASO] /para-seu-trabalho/ 146 palavras
+  [RASO] /politica-de-privacidade/ 192 palavras
+  [RASO] /protecao/ 151 palavras
+
+## ÓRFÃ-EDITORIAL (2)
+  [ÓRFÃ-EDITORIAL] /contato/ 0 links de corpo
+  [ÓRFÃ-EDITORIAL] /politica-de-privacidade/ 0 links de corpo
+
+## TITLE-DUP (1)
+  [TITLE-DUP] 2×: /calcados/comparativo/, /conhecimento/calcado-ocupacional-ou-de-seguranca/
+
+## H1-DUP (1)
+  [H1-DUP] 2×: /calcados/comparativo/, /conhecimento/calcado-ocupacional-ou-de-seguranca/
+
+
+# LINKS EXTERNOS
+
+148×  wa.me   (ex: /)
+ 44×  www.instagram.com   (ex: /)
+  9×  www.gov.br   (ex: /calcados/comparativo/)
+  3×  www.normas.com.br   (ex: /calcados/comparativo/)
+  2×  www.bompel.com.br   (ex: /marcas/)
+
+
+# SCHEMA POR TIPO DE PÁGINA
+
+home            1 págs | ~ 838 palavras | 0.0 links de corpo entrando | Organization, LocalBusiness, WebSite
+institucional   8 págs | ~ 427 palavras | 6.3 links de corpo entrando | Organization, LocalBusiness, WebSite, BreadcrumbList, Person, FAQPage
+hub             6 págs | ~ 272 palavras | 7.2 links de corpo entrando | Organization, LocalBusiness, WebSite, BreadcrumbList
+calçado         3 págs | ~ 454 palavras | 7.3 links de corpo entrando | Organization, LocalBusiness, WebSite, FAQPage, BreadcrumbList
+artigo          5 págs | ~ 628 palavras | 6.0 links de corpo entrando | Organization, LocalBusiness, WebSite, BlogPosting, BreadcrumbList
+setor           5 págs | ~ 736 palavras | 6.4 links de corpo entrando | Organization, LocalBusiness, WebSite, FAQPage, BreadcrumbList
+marca           2 págs | ~ 556 palavras | 3.5 links de corpo entrando | Organization, LocalBusiness, WebSite, BreadcrumbList, FAQPage
+profissão       7 págs | ~ 583 palavras | 13.7 links de corpo entrando | Organization, LocalBusiness, WebSite, FAQPage, BreadcrumbList
+proteção        6 págs | ~ 409 palavras | 9.2 links de corpo entrando | Organization, LocalBusiness, WebSite, FAQPage, BreadcrumbList
