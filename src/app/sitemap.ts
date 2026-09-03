@@ -5,6 +5,7 @@ import { PROTECOES } from '@/content/protecoes'
 import { CALCADOS } from '@/content/calcados'
 import { SETORES } from '@/content/setores'
 import { ARTIGOS } from '@/content/artigos'
+import { CIDADES, ESTADOS } from '@/content/cidades'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = empresa.site
@@ -43,6 +44,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     })),
+    url('/epi-por-cidade/', 0.9, 'monthly'),
+    ...ESTADOS.map((e) => url(`/epi-por-cidade/${e.slug}/`, 0.75, 'monthly')),
+    ...CIDADES.map((c) => url(`/epi-por-cidade/${c.slug}/`, 0.85, 'monthly')),
     url('/contato/', 0.8, 'monthly'),
   ]
 }

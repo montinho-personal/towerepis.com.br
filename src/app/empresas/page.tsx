@@ -58,6 +58,20 @@ export default function Empresas() {
         </div>
       </Secao>
 
+      {/* Ponte para o hub regional. Link de corpo, e não só de rodapé: o
+          menu aponta para tudo e por isso não sinaliza importância de nada. */}
+      <Secao className="wrap" ritmo="compacto">
+        <p className="measure text-[1.02rem] leading-relaxed text-ink-2">
+          A Tower atende empresas em Fortaleza e no interior do Ceará, e também em Teresina,
+          Parnaíba, Natal e Assú.{' '}
+          <Link href="/epi-por-cidade/" className="underline underline-offset-4 hover:text-tower-red">
+            Veja o que muda de uma região para outra
+          </Link>{' '}
+          — o EPI que resolve uma cozinha de hotel no litoral não é o que resolve um galpão
+          de embalagem de fruta.
+        </p>
+      </Secao>
+
       <ErroCaro />
       <ComoAtendemos />
       <ComQuemVoceFala />

@@ -46,6 +46,7 @@ const COLUNAS = [
       { href: '/orcamento/', rotulo: 'Montar cotação' },
       { href: '/empresas/', rotulo: 'Para empresas' },
       { href: '/conhecimento/', rotulo: 'Conhecimento' },
+      { href: '/epi-por-cidade/', rotulo: 'Onde atendemos' },
       { href: '/contato/', rotulo: 'Contato' },
     ],
   },

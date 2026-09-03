@@ -4,6 +4,7 @@ import { PROTECOES } from '@/content/protecoes'
 import { CALCADOS } from '@/content/calcados'
 import { SETORES } from '@/content/setores'
 import { ARTIGOS } from '@/content/artigos'
+import { CIDADES, ESTADOS } from '@/content/cidades'
 
 /**
  * Descobre o contexto de WhatsApp a partir da rota.
@@ -35,7 +36,16 @@ const MAPA: Record<string, Destino> = {
   '/a-tower/': { contexto: 'historia' },
   '/a-tower/helano/': { contexto: 'historia' },
   '/conhecimento/': { contexto: 'artigo' },
+  '/epi-por-cidade/': { contexto: 'epi-por-cidade' },
   '/contato/': { contexto: 'contato' },
+  // A cidade acompanha o botão flutuante: quem lê a página de Teresina e
+  // toca no verde chega dizendo que é de Teresina.
+  ...Object.fromEntries(
+    CIDADES.map((c) => [`/epi-por-cidade/${c.slug}/`, { contexto: c.contexto, mensagem: c.mensagemWhats }]),
+  ),
+  ...Object.fromEntries(
+    ESTADOS.map((e) => [`/epi-por-cidade/${e.slug}/`, { contexto: 'epi-por-cidade' as const }]),
+  ),
   ...Object.fromEntries(PROFISSOES.map((p) => [`/para-seu-trabalho/${p.slug}/`, { contexto: p.contexto }])),
   ...Object.fromEntries(PROTECOES.map((p) => [`/protecao/${p.slug}/`, { contexto: p.contexto }])),
   ...Object.fromEntries(CALCADOS.map((c) => [`/calcados/${c.slug}/`, { contexto: c.contexto }])),

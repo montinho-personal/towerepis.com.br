@@ -339,6 +339,37 @@ export default function Home() {
         </div>
       </Secao>
 
+      {/* 8b. ONDE ATENDEMOS — a pergunta que o comprador faz antes de qualquer
+             outra: "vocês atendem aqui?". Link de corpo para o hub regional. */}
+      <Secao className="wrap" ritmo="compacto">
+        <p className="eyebrow eyebrow-red">Onde atendemos</p>
+        <h2 className="mt-4 max-w-3xl text-2xl sm:text-3xl">
+          De Fortaleza ao Vale do Açu
+        </h2>
+        <p className="mt-5 measure text-[1.05rem] leading-relaxed text-ink-2">
+          A Tower atende empresas no Ceará, no Piauí e no Rio Grande do Norte. Cada região
+          trabalha com uma coisa diferente, e o EPI acompanha:{' '}
+          <Link href="/epi-por-cidade/teresina-pi/" className="underline underline-offset-4 hover:text-tower-red">
+            a rede de saúde de Teresina
+          </Link>
+          ,{' '}
+          <Link href="/epi-por-cidade/barbalha-ce/" className="underline underline-offset-4 hover:text-tower-red">
+            a indústria de calçado do Cariri
+          </Link>{' '}
+          e{' '}
+          <Link href="/epi-por-cidade/assu-rn/" className="underline underline-offset-4 hover:text-tower-red">
+            a fruticultura do Vale do Açu
+          </Link>{' '}
+          não pedem a mesma lista.
+        </p>
+        <Link
+          href="/epi-por-cidade/"
+          className="mt-6 inline-flex items-center gap-2 border-b-2 border-tower-red pb-1 font-display text-sm font-bold hover:text-tower-red"
+        >
+          Ver todas as regiões <IconeSeta />
+        </Link>
+      </Secao>
+
       {/* 9. CONHECIMENTO — a autoridade é contínua, não uma alegação. */}
       <Secao className="wrap">
         <div className="flex flex-wrap items-end justify-between gap-4">

@@ -199,7 +199,7 @@ escolha estética arbitrária: é biograficamente verdadeira.
 | 4 | Registro profissional do Helano como Técnico de Segurança do Trabalho | Página de autor / E-E-A-T |
 | 5 | Fotos: fundadores, primeira sede, logotipos antigos, produtos | Design inteiro |
 | 6 | Razão social e CNPJ | Rodapé e schema |
-| 7 | Área de entrega real hoje e se o motorista continua | Página de empresas |
+| ~~7~~ | ~~Área de entrega real hoje~~ — **RESPONDIDA em 3/9/2026**: a Tower atende Fortaleza, Barbalha (CE), Teresina e Parnaíba (PI), Natal e Assú (RN). Confirmado pelo cliente nesta sessão. Alimenta `empresa.areaAtendida` e as páginas de `/epi-por-cidade/`. Continua em aberto o **como**: se é motorista, transportadora ou os dois, e com que prazo — por isso nenhuma página promete prazo ou frete. | Página de empresas |
 | 8 | Horário de atendimento | Schema e contato |
 | 9 | Lista completa de marcas trabalhadas hoje | Página de marcas |
 | 10 | E-mail comercial | Contato |

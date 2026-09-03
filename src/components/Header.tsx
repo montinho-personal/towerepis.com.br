@@ -47,6 +47,7 @@ const NAV = [
   { href: '/para-seu-trabalho/', rotulo: 'Por profissão' },
   { href: '/empresas/', rotulo: 'Para equipes' },
   { href: '/conhecimento/', rotulo: 'Conhecimento' },
+  { href: '/epi-por-cidade/', rotulo: 'Onde atendemos' },
   { href: '/a-tower/', rotulo: 'A Tower' },
 ]
 

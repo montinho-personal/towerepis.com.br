@@ -54,10 +54,20 @@ export const empresa = {
     pais: 'BR',
   },
 
+  /**
+   * Área atendida — confirmada pelo cliente em 3 de setembro de 2026.
+   *
+   * Alimenta o `areaServed` do schema em todas as páginas e as páginas de
+   * /epi-por-cidade/. NÃO é lista de desejo: cada item aqui é cidade ou
+   * estado onde a Tower atende de verdade. Acrescentar por otimismo faria
+   * o site prometer no WhatsApp o que a operação não entrega.
+   */
   areaAtendida: [
     'Fortaleza',
     'Região Metropolitana de Fortaleza',
     'Ceará',
+    'Piauí',
+    'Rio Grande do Norte',
   ],
 
   // PENDENTE: horário real de atendimento.

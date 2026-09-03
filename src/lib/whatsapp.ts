@@ -34,6 +34,12 @@ export type ContextoWhatsApp =
   | 'profissao-industria'
   | 'profissao-logistica'
   | 'profissao-manutencao'
+  | 'epi-por-cidade'
+  | 'cidade-barbalha'
+  | 'cidade-teresina'
+  | 'cidade-parnaiba'
+  | 'cidade-natal'
+  | 'cidade-assu'
   | 'empresas'
   | 'empresas-alimentacao'
   | 'empresas-saude'
@@ -74,6 +80,16 @@ const MENSAGENS: Record<ContextoWhatsApp, string> = {
   'profissao-industria': `${ABERTURA} Trabalho na indústria e preciso de EPI. Pode me orientar?`,
   'profissao-logistica': `${ABERTURA} Trabalho com logística e estoque e preciso de EPI. Pode me orientar?`,
   'profissao-manutencao': `${ABERTURA} Trabalho com manutenção e preciso de EPI. Pode me orientar?`,
+
+  // As mensagens de cidade dizem a cidade em primeira pessoa. O contexto
+  // chega junto do pedido, e a Tower já sabe de onde a conversa nasceu sem
+  // precisar perguntar.
+  'epi-por-cidade': `${ABERTURA} Gostaria de saber se vocês atendem a minha cidade.`,
+  'cidade-barbalha': `${ABERTURA} Sou de Barbalha, no Cariri, e gostaria de um orçamento de EPI para a minha empresa.`,
+  'cidade-teresina': `${ABERTURA} Sou de Teresina e gostaria de um orçamento de EPI para a minha equipe.`,
+  'cidade-parnaiba': `${ABERTURA} Sou de Parnaíba e gostaria de um orçamento de EPI para a minha equipe.`,
+  'cidade-natal': `${ABERTURA} Sou de Natal e gostaria de um orçamento de EPI para a minha empresa.`,
+  'cidade-assu': `${ABERTURA} Sou de Assú, no Vale do Açu, e gostaria de um orçamento de EPI para a minha empresa.`,
 
   empresas: `${ABERTURA} Vim pela área de empresas e gostaria de solicitar um orçamento de EPIs para nossa equipe.`,
   'empresas-alimentacao': `${ABERTURA} Tenho um negócio na área de alimentação e gostaria de um orçamento de EPIs para a equipe.`,
