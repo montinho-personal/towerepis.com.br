@@ -7,21 +7,26 @@
  * Por isso todo evento carrega origem e contexto. Sem provedor configurado,
  * as funções são no-op — o site funciona igual.
  *
- * ATENÇÃO, LGPD. Hoje NÃO existe provedor configurado, e o site não grava
- * cookie nenhum — foi medido, e as páginas legais afirmam isso por escrito.
- * No dia em que alguém ligar GA4, GTM ou pixel aqui, três coisas passam a
- * ser necessárias ANTES de a ferramenta ir ao ar:
+ * LGPD. O provedor é o GA4, e ele só existe com aceite. As três condições que
+ * este comentário exigia antes de qualquer medição ir ao ar foram cumpridas:
  *
- *   1. banner de consentimento com aceitar, recusar e configurar no mesmo
- *      peso visual, sem caixa pré-marcada;
- *   2. Google Consent Mode v2 negado por padrão (analytics_storage,
- *      ad_storage, ad_user_data, ad_personalization);
+ *   1. banner de consentimento com aceitar e recusar no mesmo peso visual,
+ *      sem caixa pré-marcada — `components/Medicao.tsx`;
+ *   2. Consent Mode v2 negado por padrão, e o gtag.js sequer é baixado antes
+ *      do aceite — `lib/consentimento.ts`;
  *   3. /politica-de-cookies/ com a tabela real e /politica-de-privacidade/
- *      descrevendo o tratamento — as duas hoje dizem que não existe.
+ *      descrevendo o tratamento.
  *
- * Ligar a medição sem isso torna dois documentos legais falsos.
- * Verificador: docs/ferramentas/qa-privacidade.mjs
+ * NENHUM EVENTO SAI SEM ACEITE. A checagem abaixo é a terceira tranca, depois
+ * de o script não carregar e de o Consent Mode negar. Parece redundante e é:
+ * a que vai salvar é justamente a que ninguém lembrar de remover junto com as
+ * outras duas no dia de uma refatoração apressada.
+ *
+ * Verificador: docs/ferramentas/qa-privacidade.mjs — roda as duas trilhas,
+ * antes e depois do aceite.
  */
+
+import { lerConsentimento } from './consentimento'
 
 type Params = Record<string, string | number | boolean | undefined>
 
@@ -34,6 +39,7 @@ declare global {
 
 function enviar(evento: string, params: Params = {}) {
   if (typeof window === 'undefined') return
+  if (lerConsentimento() !== 'aceito') return
   const limpos = Object.fromEntries(
     Object.entries(params).filter(([, v]) => v !== undefined && v !== ''),
   )

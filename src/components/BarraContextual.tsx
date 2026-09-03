@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import { linkWhatsApp } from '@/lib/whatsapp'
 import { barraDaRota } from '@/lib/barra-contextual'
 import { rastrearWhatsApp, rastrearBarra } from '@/lib/analytics'
+import { MEDICAO_CONFIGURADA, lerConsentimento, ouvirConsentimento } from '@/lib/consentimento'
 import { IconeWhatsApp } from './Icones'
 
 /**
@@ -19,10 +20,16 @@ import { IconeWhatsApp } from './Icones'
  *
  * NÃO GUARDA NADA. O fechamento vive em estado de React: sobrevive à
  * navegação dentro do site e some num recarregamento. Dava para persistir em
- * sessionStorage, e eu não persisti de propósito — a política de privacidade
- * e a de cookies afirmam, com medição publicada, que o site não grava nada no
- * navegador. Gastar essa afirmação para lembrar que alguém fechou uma barra é
- * troca ruim.
+ * sessionStorage, e eu não persisti de propósito. Desde que o GA4 entrou, o
+ * site grava uma coisa no navegador: a resposta ao banner de consentimento —
+ * e é só. Somar um segundo registro para lembrar que alguém fechou uma barra
+ * transformaria "gravamos exatamente uma coisa, e é a sua escolha" em uma
+ * lista, que é uma frase pior de escrever numa política e de defender.
+ *
+ * ESPERA O BANNER SAIR. Enquanto o consentimento não foi respondido, o banner
+ * ocupa a mesma borda de baixo. Duas barras fixas empilhadas é o empilhamento
+ * que a gente decidiu não ter — e perguntar sobre dados e vender ao mesmo
+ * tempo é pior ainda.
  *
  * NÃO CONCORRE COM O CTA DA PÁGINA. Enquanto qualquer botão de WhatsApp do
  * conteúdo está na tela, a barra recolhe. Isso apareceu numa captura: no
@@ -51,6 +58,10 @@ export function BarraContextual() {
   const [visivel, setVisivel] = useState(false)
   const [fechada, setFechada] = useState(false)
   const [ctaNaTela, setCtaNaTela] = useState(false)
+  // Começa bloqueada quando existe medição configurada: o servidor não sabe se
+  // a pessoa já respondeu, e aparecer sob o banner por um instante é pior do
+  // que aparecer um instante depois.
+  const [aguardandoBanner, setAguardandoBanner] = useState(MEDICAO_CONFIGURADA)
   const jaContou = useRef<string | null>(null)
   const caixa = useRef<HTMLDivElement>(null)
   const [altura, setAltura] = useState<number | null>(null)
@@ -65,6 +76,12 @@ export function BarraContextual() {
   // Recolhe perto de um CTA do conteúdo. A margem inferior negativa impede
   // que o botão apareça pela borda de baixo e desligue a barra por um pixel:
   // o CTA precisa estar de fato na leitura, não raspando a dobra.
+  useEffect(() => {
+    if (!MEDICAO_CONFIGURADA) return
+    setAguardandoBanner(lerConsentimento() === null)
+    return ouvirConsentimento((estado) => setAguardandoBanner(estado === null))
+  }, [])
+
   useEffect(() => {
     const el = caixa.current
     if (!el) return
@@ -120,15 +137,15 @@ export function BarraContextual() {
 
   // Uma impressão por página, e só quando ela realmente apareceu.
   useEffect(() => {
-    if (!visivel || fechada || ctaNaTela || !barra) return
+    if (!visivel || fechada || ctaNaTela || aguardandoBanner || !barra) return
     if (jaContou.current === pathname) return
     jaContou.current = pathname
     rastrearBarra('barra_exibida', { pagina: pathname, chamada: barra.chamada })
-  }, [visivel, fechada, ctaNaTela, barra, pathname])
+  }, [visivel, fechada, ctaNaTela, aguardandoBanner, barra, pathname])
 
   if (!barra) return null
 
-  const mostrando = visivel && !fechada && !ctaNaTela
+  const mostrando = visivel && !fechada && !ctaNaTela && !aguardandoBanner
 
   return (
     <>

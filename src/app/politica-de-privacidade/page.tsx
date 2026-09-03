@@ -2,25 +2,29 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Trilha, CabecalhoPagina, SumarioLegal, Secao } from '@/components/Blocos'
 import { empresa } from '@/config/empresa'
+import { AvisoMedicaoInativa } from '@/components/AvisoMedicao'
 
 /**
  * Política de privacidade.
  *
- * ESCRITA A PARTIR DE MEDIÇÃO, NÃO DE MODELO. A versão anterior afirmava que
- * o site usava "ferramenta de análise de audiência" — e não usava. Auditoria
- * em navegador real, em oito rotas, mediu: zero cookies, zero requisições a
- * terceiros, zero uso de localStorage ou sessionStorage.
+ * ESCRITA A PARTIR DE MEDIÇÃO, NÃO DE MODELO. Uma versão antiga afirmava que
+ * o site usava "ferramenta de análise de audiência" quando não usava. Depois
+ * veio uma versão que afirmava não usar nenhuma — correta na época. Hoje o
+ * site usa Google Analytics 4, condicionado a aceite, e esta página foi
+ * atualizada ANTES de a ferramenta ir ao ar, como as duas versões anteriores
+ * prometiam que aconteceria.
  *
- * REGRA DE MANUTENÇÃO: `src/lib/analytics.ts` está pronto e inerte — sem
- * provedor configurado, as funções são no-op. No dia em que alguém configurar
- * GA4, GTM ou pixel, esta página passa a estar ERRADA, e o site passa a
- * precisar de banner de consentimento e de política de cookies com tabela.
- * Atualizar as três coisas ANTES de ligar a medição, não depois.
+ * REGRA DE MANUTENÇÃO: qualquer ferramenta nova — GTM, pixel, mapa, chat,
+ * reCAPTCHA — entra nesta página, na tabela de /politica-de-cookies/ e na
+ * versão do consentimento em lib/consentimento.ts ANTES de ir ao ar. A
+ * verificação que sustenta os números está em
+ * docs/ferramentas/qa-privacidade.mjs e roda as duas trilhas, com e sem
+ * aceite.
  */
 export const metadata: Metadata = {
   title: 'Política de privacidade',
   description:
-    'Este site não usa cookies, não tem cadastro e não guarda o que você escreve no formulário. Veja o que é tratado, por quê, e como exercer seus direitos.',
+    'O site só grava cookie de análise depois que você aceita, não tem cadastro e não guarda o que você escreve no formulário. Veja o que é tratado, por quê, e como exercer seus direitos.',
   alternates: { canonical: '/politica-de-privacidade/' },
 }
 
@@ -48,7 +52,7 @@ export default function Privacidade() {
       <CabecalhoPagina
         rotulo="Privacidade"
         titulo="Política de privacidade"
-        resumo="Este site não usa cookies, não tem cadastro e não guarda o que você escreve no formulário. Abaixo está o que realmente acontece com os seus dados."
+        resumo="O site não tem cadastro, não guarda o que você escreve no formulário e só grava cookie de medição se você aceitar. Abaixo está o que realmente acontece com os seus dados."
       />
 
       <Secao className="wrap pt-0">
@@ -62,13 +66,17 @@ export default function Privacidade() {
           </p>
           <ul>
             <li>
-              <strong>Não usa cookies.</strong> Nenhum — nem de análise, nem de marketing,
-              nem de preferência.
+              <strong>Só usa cookie se você aceitar.</strong> São dois, os do Google
+              Analytics, e servem para medir audiência. Enquanto você não responder ao
+              banner, e para sempre se você recusar, não há cookie nenhum — nem de
+              marketing, nem de preferência.
             </li>
             <li>
-              <strong>Não carrega nada de terceiros.</strong> Não há Google Analytics,
+              <strong>Não carrega nada de terceiros antes do seu aceite.</strong> Não há
               Google Tag Manager, pixel de rede social, mapa incorporado, chat, reCAPTCHA
-              nem fonte externa. As fontes são servidas pelo próprio site.
+              nem fonte externa em momento nenhum. As fontes são servidas pelo próprio
+              site. O único terceiro é o Google Analytics, e ele só é baixado depois do
+              &ldquo;Aceitar&rdquo;.
             </li>
             <li>
               <strong>Não tem cadastro, login nem newsletter.</strong>
@@ -181,22 +189,55 @@ export default function Privacidade() {
               operação do site, que são os menos invasivos possíveis e não servem para
               perfilar ninguém.
             </li>
+            <li>
+              <strong>Consentimento</strong> — a medição de audiência, e só ela.
+            </li>
           </ul>
           <p>
-            <strong>Consentimento não aparece nesta lista</strong>, e isso é proposital:
-            sem cookies de análise ou marketing e sem newsletter, não há tratamento aqui
-            que dependa de você autorizar. Se um dia houver, esta política muda antes.
+            A medição é o único tratamento deste site que depende de você autorizar. O
+            pedido é destacado e específico, não vem embutido em nenhum outro aceite, e
+            pode ser retirado a qualquer momento na{' '}
+            <Link href="/politica-de-cookies/">política de cookies</Link>, com o mesmo
+            número de cliques que custou dar. Retirar não afeta o que foi tratado
+            licitamente antes.
+          </p>
+          <p>
+            A Tower <strong>não</strong> apoia a medição em legítimo interesse, que seria
+            o caminho para não precisar perguntar. A leitura do Guia Orientativo sobre
+            Cookies da ANPD é a de que cookie não essencial depende de consentimento, e
+            entre a leitura mais confortável e a mais protetiva a escolha aqui é a
+            segunda.
           </p>
           <p className="text-sm">
             A classificação definitiva das bases legais é matéria jurídica e deve ser
             validada por profissional da área antes de ser tratada como definitiva.
           </p>
 
-          <h2 id="cookies">Cookies</h2>
+          <h2 id="cookies">Cookies e medição de audiência</h2>
+          <AvisoMedicaoInativa />
           <p>
-            Este site não utiliza cookies. Por isso ele não exibe banner de consentimento —
-            pedir autorização para algo que não existe seria encenação, não transparência.
-            O detalhe está na <Link href="/politica-de-cookies/">política de cookies</Link>.
+            O site usa <strong>Google Analytics 4</strong> para medir audiência —{' '}
+            <strong>e só depois de você aceitar</strong>. Enquanto você não responder ao
+            banner, e para sempre se você recusar, nenhum cookie é gravado e o script do
+            Google não chega a ser baixado.
+          </p>
+          <p>
+            A finalidade é uma só: saber quais conteúdos deste site levam a uma conversa
+            útil, para escrever mais dos que ajudam. Não há publicidade, remarketing,
+            pixel de rede social nem venda de dados, e o armazenamento de publicidade
+            permanece negado mesmo para quem aceita.
+          </p>
+          <p>
+            Os dados que o Google recebe são de comportamento no site — páginas vistas,
+            origem da visita, cliques nos botões de WhatsApp, tipo de dispositivo,
+            localização aproximada derivada do IP. <strong>Nada do que você digita no
+            construtor de orçamento é enviado</strong> junto: os eventos registram que um
+            botão foi usado e em que página, nunca o conteúdo dos campos.
+          </p>
+          <p>
+            A tabela completa, com nome, duração e finalidade de cada cookie, está na{' '}
+            <Link href="/politica-de-cookies/">política de cookies</Link> — junto com o
+            controle para mudar a sua escolha a qualquer momento.
           </p>
 
           <h2 id="terceiros">Quem mais recebe dados</h2>
@@ -219,11 +260,19 @@ export default function Privacidade() {
                 <td>Seu número, seu perfil e o conteúdo da conversa</td>
                 <td>É o aplicativo onde o atendimento acontece</td>
               </tr>
+              <tr>
+                <td>Google (Analytics 4)</td>
+                <td>
+                  Comportamento no site e IP — <strong>apenas se você aceitar</strong>
+                </td>
+                <td>Medir quais conteúdos geram conversa</td>
+              </tr>
             </tbody>
           </table>
           <p>
-            É a lista inteira. Não há CRM, não há plataforma de automação, não há
-            ferramenta de análise e não há gateway de pagamento — o site não vende online.
+            É a lista inteira. Não há CRM, não há plataforma de automação, não há gateway
+            de pagamento — o site não vende online — e a única ferramenta de análise é a
+            que está na linha do Google, condicionada ao seu aceite.
           </p>
           <p>
             Ao abrir o WhatsApp você entra em um serviço de terceiro, com política de
@@ -232,10 +281,15 @@ export default function Privacidade() {
 
           <h2 id="internacional">Fora do Brasil</h2>
           <p>
-            Tanto a hospedagem do site quanto o WhatsApp são serviços de empresas
-            estrangeiras, e o tratamento pode ocorrer em servidores fora do Brasil. A LGPD
-            admite transferência internacional em hipóteses específicas, e a adequação
-            dessa transferência depende dos termos de cada fornecedor.
+            A hospedagem do site, o WhatsApp e o Google Analytics são serviços de empresas
+            estrangeiras, e o tratamento pode ocorrer em servidores fora do Brasil —
+            inclusive nos Estados Unidos. A LGPD admite transferência internacional em
+            hipóteses específicas, e a adequação dessa transferência depende dos termos de
+            cada fornecedor.
+          </p>
+          <p>
+            No caso do Google Analytics, essa transferência só acontece se você aceitar a
+            medição — e deixa de acontecer a partir do momento em que você recusar.
           </p>
           <p className="text-sm">
             <strong>[VALIDAÇÃO JURÍDICA]</strong> — a hipótese legal aplicável a essas

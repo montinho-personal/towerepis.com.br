@@ -64,3 +64,37 @@ disparada por `requestAnimationFrame`; uma versão anterior deste script
 esperava 60ms, leu a barra no meio do caminho e reportou gatilho de 78% onde o
 real era 30%, além de "nunca apareceu" em dez páginas onde ela aparece.
 Medição rápida demais mede o próprio atraso.
+
+## Privacidade e consentimento
+
+```
+npm run build && npx next start -p 3000
+node docs/ferramentas/qa-privacidade.mjs        # site sem medição
+NEXT_PUBLIC_GA_ID=G-XXXXXXX npm run build       # e de novo, com medição
+```
+
+Percorre nove rotas em navegador real e mede o que sobra no navegador. Com
+`NEXT_PUBLIC_GA_ID` definida ele roda **três trilhas**, porque uma só mente:
+
+1. **sem responder ao banner** — tem de ser zero cookie e zero host externo;
+2. **depois de recusar** — idem, senão a recusa não é recusa;
+3. **depois de aceitar** — o `gtag.js` tem de ser pedido, com o ID certo.
+
+As trilhas 1 e 2 são as que sustentam o que `/politica-de-cookies/` afirma por
+escrito. Se qualquer uma delas acusar cookie ou host externo, **o defeito é do
+código, não do texto** — o texto está certo e o site é que parou de cumpri-lo.
+
+A trilha 3 sai como INCONCLUSIVA em ambiente sem saída para o Google (sandbox,
+CI fechado): o pedido é feito e morre no proxy. O script separa esse caso de
+uma falha real, e nesse caso afirma só o que mediu — que o pedido só existiu
+depois do aceite e usou o ID configurado. O cookie em si precisa ser conferido
+com saída para a internet, ou no relatório de tempo real da propriedade.
+
+### A variável
+
+`NEXT_PUBLIC_GA_ID` é lida no build e inlinada. **Sem ela, não existe banner,
+não existe cookie e nada é enviado ao Google** — e as páginas legais mostram
+sozinhas um aviso dizendo que a medição descrita ainda não está ligada.
+Defina-a apenas no ambiente de produção da Vercel: em prévia e em
+desenvolvimento ela deve ficar em branco, para não sujar a propriedade com
+tráfego que não é de visitante.

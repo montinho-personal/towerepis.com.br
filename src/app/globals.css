@@ -255,6 +255,41 @@
     background: var(--color-tower-red);
   }
 
+  /* Tabela dentro de texto corrido.
+     Vira bloco rolante porque tabela não encolhe: a de medição da política de
+     cookies pede 363px de largura mínima, e num visor de 320 ela empurrava a
+     PÁGINA inteira para o lado — não a si mesma. Com `display: block` o
+     estouro fica dentro da própria caixa, que é onde ele não incomoda.
+     O resto destas regras existe porque não existia nenhuma: as tabelas das
+     páginas legais vinham com o estilo padrão do navegador, fora da régua
+     tipográfica do resto do texto. */
+  .prose-tower table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+    font-family: var(--font-display);
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  .prose-tower th,
+  .prose-tower td {
+    text-align: left;
+    vertical-align: top;
+    padding: 0.6rem 1.1rem 0.6rem 0;
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .prose-tower th {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-ink-3);
+    white-space: nowrap;
+  }
+  .prose-tower th:last-child,
+  .prose-tower td:last-child { padding-right: 0; }
+
   /* --- Faixa e régua ---------------------------------------- */
   /* --- Superfícies -----------------------------------------
      Cada uma tem função declarada: papel onde se lê, creme para

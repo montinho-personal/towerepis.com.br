@@ -5,6 +5,7 @@ import './globals.css'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { BarraContextual } from '@/components/BarraContextual'
+import { Medicao } from '@/components/Medicao'
 import { JsonLd, schemaOrganizacao, schemaSite } from '@/lib/schema'
 import { empresa } from '@/config/empresa'
 
@@ -58,6 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main id="conteudo">{children}</main>
         <Footer />
         <BarraContextual />
+        <Medicao />
       </body>
     </html>
   )

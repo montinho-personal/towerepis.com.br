@@ -183,8 +183,8 @@ export default function TermosDeUso() {
             O tratamento de dados está descrito na{' '}
             <Link href="/politica-de-privacidade/">política de privacidade</Link> e na{' '}
             <Link href="/politica-de-cookies/">política de cookies</Link>. Em resumo: o
-            site não usa cookies, não tem cadastro e não guarda o que você digita no
-            formulário.
+            site não tem cadastro, não guarda o que você digita no formulário e só grava
+            cookie de medição de audiência se você aceitar.
           </p>
 
           <h2 id="alteracoes">Alterações</h2>

@@ -75,7 +75,22 @@ npm run build      # build de produção
 npm run typecheck  # checagem de tipos
 ```
 
-Deploy na Vercel: o projeto é Next.js padrão, sem variável de ambiente obrigatória.
+Deploy na Vercel: o projeto é Next.js padrão, sem variável de ambiente
+obrigatória.
+
+### `NEXT_PUBLIC_GA_ID` — a única variável
+
+Liga o Google Analytics 4. Formato `G-XXXXXXXXXX`, lida no build e inlinada.
+
+**Defina só no ambiente de produção.** Em prévia e em desenvolvimento ela deve
+ficar em branco, senão o tráfego de teste entra na propriedade.
+
+Sem ela o site não tem banner, não grava cookie nenhum e não contata o Google —
+e as páginas legais mostram sozinhas um aviso de que a medição descrita ainda
+não está ligada. Com ela, o banner pergunta e **o `gtag.js` só é baixado depois
+do aceite**: quem recusa ou ignora navega sem nenhum cookie.
+
+Conferir depois de mexer: `docs/ferramentas/qa-privacidade.mjs`.
 
 ### Onde mexer
 
