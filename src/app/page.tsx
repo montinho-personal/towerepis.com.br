@@ -171,25 +171,28 @@ export default function Home() {
         </div>
       </Secao>
 
-      {/* 5b. MARCAS — a ÚNICA faixa vermelha da página. É o momento de
-             energia: o vermelho como superfície, não como marca de 11px.
-             Uma por página, para não perder o impacto. */}
-      <section className="band-red ritmo-normal">
+      {/* 5b. MARCAS — o momento de energia da home. Era a única faixa
+             vermelha da página; deixou de ser quando o cabeçalho virou
+             vermelho e passou a encostar nela na rolagem, as duas lendo como
+             uma massa só. O vermelho agora é a moldura do site, e esta faixa
+             se afirma no grafite: o "Bompel" gigante em branco não perdeu
+             nada, e o vermelho voltou como acento no rótulo. */}
+      <section className="band-ink ritmo-normal">
         <div className="wrap">
           <div className="grid gap-10 lg:grid-cols-[auto_1fr] lg:items-end lg:gap-20">
             <div>
-              <p className="eyebrow">Principal parceria em calçado</p>
+              <p className="eyebrow eyebrow-red">Principal parceria em calçado</p>
               <p className="numeral mt-4 text-6xl sm:text-7xl">Bompel</p>
             </div>
             <div className="lg:pb-3">
-              <p className="max-w-lg text-lg leading-relaxed text-white/90">
+              <p className="max-w-lg text-lg leading-relaxed text-paper/80">
                 Fabricante brasileiro com quase quatro décadas, em calçado de segurança e
                 ocupacional. É a linha que mais atendemos e a que conhecemos com mais
                 profundidade.
               </p>
               <Link
                 href="/marcas/bompel/"
-                className="mt-7 inline-flex items-center gap-2 border-b-2 border-white pb-1 font-display text-sm font-bold text-white transition-opacity hover:opacity-70"
+                className="mt-7 inline-flex items-center gap-2 border-b-2 border-tower-red-light pb-1 font-display text-sm font-bold text-paper transition-opacity hover:opacity-70"
               >
                 Ver a linha Bompel <IconeSeta />
               </Link>

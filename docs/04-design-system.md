@@ -541,10 +541,15 @@ o cursor é o trecho branco da régua, não um cinza mais claro.
 ### A regra que mudou
 
 Era "uma faixa vermelha por página". Agora **o vermelho é a moldura do site**:
-o cabeçalho é vermelho em toda página, e uma faixa vermelha de conteúdo passa a
-disputar com ele em vez de se destacar. A faixa da Bompel na home é a única que
-existe — quando a rolagem junta as duas, elas leem como uma massa vermelha só,
-separadas por uma linha de 2px.
+o cabeçalho é vermelho em toda página, e uma faixa vermelha de conteúdo disputa
+com ele em vez de se destacar.
+
+A faixa da Bompel na home era a única que existia, e a rolagem juntava as duas
+numa massa vermelha só, separadas por 2px de linha. Ela **passou para o
+grafite**, com o rótulo em vermelho claro e a linha do link em vermelho: o
+"Bompel" gigante em branco não perdeu força nenhuma, e o vermelho voltou como
+acento. Nenhuma superfície de conteúdo é vermelha; o vermelho é do cabeçalho, do
+botão e dos acentos.
 
 ---
 
