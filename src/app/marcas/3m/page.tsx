@@ -4,9 +4,9 @@ import { Trilha, CabecalhoPagina, Secao, LinksIrmaos } from '@/components/Blocos
 import { FechamentoCta } from '@/components/WhatsAppCta'
 
 export const metadata: Metadata = {
-  title: 'A relação da Tower com a 3M',
+  title: { absolute: 'A 3M e a origem da Tower, em 1995' },
   description:
-    'A Tower nasceu de um convite da 3M para desenvolver o mercado de proteção no Ceará, em 1995. E recebeu depois o reconhecimento de Distribuidor Regional.',
+    'A Tower nasceu de um convite da 3M para desenvolver o mercado de proteção no Ceará. Hoje a linha tem disponibilidade sob consulta — a história continua aqui.',
   alternates: { canonical: '/marcas/3m/' },
 }
 
@@ -58,15 +58,16 @@ export default function Marca3M() {
 
             <h2>Hoje</h2>
             <p>
-              A Tower continua trabalhando com a linha 3M, com destaque para proteção
-              respiratória — a categoria em que a relação começou e onde a exigência
-              técnica é maior, porque o dano da escolha errada é invisível e cumulativo.
+              A relação continua, mas a disponibilidade de produto 3M na Tower hoje é
+              limitada — a parceria principal em volume é a Bompel, em calçado. Se o
+              item que você precisa é 3M, pergunte: informamos disponibilidade e prazo
+              antes de qualquer coisa, e se não tivermos, dizemos na hora.
             </p>
           </div>
 
           <aside className="space-y-6">
             <div className="border border-rule bg-paper-2 p-6">
-              <p className="eyebrow">Linhas que trabalhamos</p>
+              <p className="eyebrow">Linhas, sob consulta</p>
               <ul className="mt-4 space-y-2 text-[0.95rem] text-ink-2">
                 <li>Proteção respiratória</li>
                 <li>Proteção auditiva</li>

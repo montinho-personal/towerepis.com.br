@@ -51,7 +51,9 @@ function Renderizar({ bloco }: { bloco: Bloco }) {
     case 'destaque':
       return (
         <div className="border-l-4 border-tower-red bg-tower-red-soft px-6 py-5 not-prose">
-          <p className="eyebrow eyebrow-red">Em uma frase</p>
+          {/* h2, e não p: é a resposta direta do artigo. Ficou de fora do Lote
+              1 porque o artigo renderiza por outro caminho. */}
+          <h2 className="eyebrow eyebrow-red">Em uma frase</h2>
           <p className="mt-2 text-lg leading-relaxed">{bloco.texto}</p>
         </div>
       )

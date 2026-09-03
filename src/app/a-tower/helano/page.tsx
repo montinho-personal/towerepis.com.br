@@ -9,7 +9,7 @@ import { ARTIGOS } from '@/content/artigos'
 export const metadata: Metadata = {
   title: 'Helano — Técnico de Segurança do Trabalho',
   description:
-    'Sócio-proprietário da Tower EPI’s e técnico de segurança do trabalho. Responsável pela revisão do conteúdo técnico do site. Fortaleza, desde 1995.',
+    'Sócio-proprietário e técnico de segurança do trabalho. Revisa todo o conteúdo técnico do site. Antes de 1995, treinava equipes dentro das empresas em São Paulo.',
   alternates: { canonical: '/a-tower/helano/' },
 }
 

@@ -33,9 +33,9 @@ const PERGUNTAS = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Como a Tower atende empresas',
+  title: 'Como funciona o fornecimento para empresas',
   description:
-    'Orçamento, prazo, CA dos itens, entrega em Fortaleza e reposição. Como funciona o atendimento a empresas na Tower EPI’s, desde 1995.',
+    'Você conta o que a equipe faz, a gente confere o que é adequado e o orçamento sai com o CA de cada item. Prazo combinado antes de fechar, reposição simples.',
   alternates: { canonical: '/empresas/como-atendemos/' },
 }
 

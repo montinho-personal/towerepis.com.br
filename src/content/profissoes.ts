@@ -36,7 +36,7 @@ export const PROFISSOES: Profissao[] = [
       'Piso molhado, gordura, respingo quente e muitas horas em pé. O solado decide quase tudo.',
     titleSeo: 'Calçado para cozinha: como escolher',
     descricaoSeo:
-      'Piso molhado, gordura e jornada em pé. Veja o que observar num calçado para trabalhar em cozinha e fale com quem entende. Tower EPI’s, Fortaleza, desde 1995.',
+      'Piso molhado, gordura e jornada em pé. O que observar no solado e na cobertura do pé — e por que a biqueira quase nunca é necessária. Fortaleza e região.',
     h1: 'Calçado para quem trabalha em cozinha',
     resumo:
       'Cozinha profissional junta três coisas que quase nenhum outro ambiente junta: piso molhado com gordura, respingo quente e jornada longa em pé. Isso muda completamente o critério de escolha do calçado.',
@@ -136,7 +136,7 @@ export const PROFISSOES: Profissao[] = [
       'Plantão longo, piso liso, risco biológico e a exigência de higienizar sempre.',
     titleSeo: 'Calçado e EPI para enfermagem e área da saúde',
     descricaoSeo:
-      'Plantão longo, piso liso e risco de respingo. Veja o que observar no calçado e nos EPIs para a área da saúde. Tower EPI’s, Fortaleza, desde 1995.',
+      'Plantão longo, piso liso e respingo. Por que modelo aberto em cima não serve e o que o material precisa permitir. Calçado e EPI para saúde em Fortaleza.',
     h1: 'Proteção para quem trabalha na saúde',
     resumo:
       'Plantão de doze horas, piso liso recém-lavado, corrida para atender e risco de respingo de material biológico. O calçado da área da saúde precisa resolver conforto e proteção ao mesmo tempo.',
@@ -230,7 +230,7 @@ export const PROFISSOES: Profissao[] = [
       'Produto químico nas mãos, piso molhado o tempo todo e trabalho em pé.',
     titleSeo: 'EPI para limpeza e conservação: o que observar',
     descricaoSeo:
-      'Luva certa para o produto químico, calçado antiderrapante e proteção para os olhos. Veja o que observar. Tower EPI’s, Fortaleza, desde 1995.',
+      'A luva muda conforme o produto químico. O que observar na luva, no calçado antiderrapante e nos óculos. Para quem trabalha com limpeza em Fortaleza.',
     h1: 'Proteção para quem trabalha com limpeza e conservação',
     resumo:
       'Quem limpa passa o dia com produto químico na mão e piso molhado sob o pé. São dois riscos diferentes que exigem duas decisões diferentes — e a luva é onde mais se erra.',
@@ -314,7 +314,7 @@ export const PROFISSOES: Profissao[] = [
       'Risco mecânico, poeira, altura e sol. Aqui a biqueira deixa de ser opcional.',
     titleSeo: 'EPI para construção civil: o que a obra exige',
     descricaoSeo:
-      'Calçado de segurança com biqueira, capacete, luva e proteção respiratória para poeira. Veja o que observar. Tower EPI’s, Fortaleza, desde 1995.',
+      'Calçado com biqueira, capacete, luva e proteção para poeira. O que muda entre alvenaria, acabamento e estrutura — com técnico de segurança, em Fortaleza.',
     h1: 'Proteção para quem trabalha na construção',
     resumo:
       'Obra é o ambiente com maior variedade de risco simultâneo: queda de objeto, perfuração, poeira, ruído, sol e trabalho em altura. É onde o conjunto de EPI precisa ser mais completo — e onde a biqueira de proteção deixa de ser opcional.',
@@ -408,7 +408,7 @@ export const PROFISSOES: Profissao[] = [
       'Ruído, particulado, risco mecânico e turnos longos no mesmo posto.',
     titleSeo: 'EPI para indústria: o que observar na escolha',
     descricaoSeo:
-      'Proteção auditiva, respiratória, calçado de segurança e luva conforme o processo. Veja o que observar. Tower EPI’s, Fortaleza, desde 1995.',
+      'Proteção auditiva, respiratória, calçado e luva conforme o processo. Por que o respirador depende do agente e o que decide entre plug e concha. Fortaleza.',
     h1: 'Proteção para quem trabalha na indústria',
     resumo:
       'Na indústria o risco costuma ser constante e previsível — o que muda tudo: o equipamento fica no corpo o turno inteiro, todos os dias. Aqui, conforto não é luxo, é o que determina se a proteção será realmente usada.',
@@ -497,7 +497,7 @@ export const PROFISSOES: Profissao[] = [
       'Carga em movimento, empilhadeira e muitos quilômetros caminhados por dia.',
     titleSeo: 'EPI para logística e estoque: o que observar',
     descricaoSeo:
-      'Calçado de segurança para movimentação de carga, luva de manuseio e sinalização. Veja o que observar. Tower EPI’s, Fortaleza, desde 1995.',
+      'Queda de caixa e prensagem pedem biqueira; quilômetros por dia pedem conforto. O que observar no calçado e na luva de manuseio. Logística em Fortaleza.',
     h1: 'Proteção para quem trabalha com logística e estoque',
     resumo:
       'Armazém junta duas coisas: risco mecânico de carga em movimento e uma quilometragem diária que poucas funções têm. O calçado precisa proteger e aguentar caminhada.',
@@ -581,7 +581,7 @@ export const PROFISSOES: Profissao[] = [
       'Risco que muda a cada chamado: elétrico, mecânico, altura, químico.',
     titleSeo: 'EPI para manutenção: o que observar',
     descricaoSeo:
-      'Manutenção enfrenta riscos diferentes a cada chamado. Veja o que observar na escolha do conjunto de EPI. Tower EPI’s, Fortaleza, desde 1995.',
+      'Elétrica, altura, piso variado: cada chamado muda o risco. O que observar para montar um conjunto que cubra a rotina inteira. Manutenção em Fortaleza.',
     h1: 'Proteção para quem trabalha com manutenção',
     resumo:
       'Manutenção é a função em que o risco muda mais vezes por dia. De manhã pode ser elétrico, à tarde mecânico, e no meio disso aparece trabalho em altura ou contato com produto químico. O conjunto precisa ser pensado por tarefa, não por cargo.',

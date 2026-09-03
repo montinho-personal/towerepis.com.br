@@ -6,9 +6,9 @@ import { FechamentoCta } from '@/components/WhatsAppCta'
 import { ComoAtendemos, ComQuemVoceFala, ErroCaro } from '@/components/BlocosB2B'
 
 export const metadata: Metadata = {
-  title: 'EPI para empresas em Fortaleza',
+  title: { absolute: 'Fornecedor de EPI para empresas em Fortaleza' },
   description:
-    'Fornecimento de EPI para equipes em Fortaleza e no Ceará. Orçamento com CA dos itens, entrega na região e reposição sem recomeçar do zero. Desde 1995.',
+    'Fornecimento para equipes em Fortaleza e no Ceará, com o CA de cada item no orçamento. Sem CNPJ para começar a conversa — quem responde é um dos dois sócios.',
   alternates: { canonical: '/empresas/' },
 }
 

@@ -47,7 +47,7 @@ export const ARTIGOS: Artigo[] = [
     resumo:
       'Piso molhado com gordura, respingo quente e jornada em pé mudam completamente o critério. O que realmente importa na escolha.',
     descricaoSeo:
-      'Piso molhado, gordura e muitas horas em pé. Veja o que observar num calçado para cozinha e por que a biqueira nem sempre é necessária.',
+      'Piso molhado, gordura e horas em pé mudam o critério. O que observar no solado e na cobertura, e quando a biqueira entra — revisado por técnico de segurança.',
     publicado: '2026-08-30',
     atualizado: '2026-08-30',
     atualizadoExibicao: 'agosto de 2026',
@@ -75,7 +75,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Vale saber que "antiderrapante" não é uma característica única. Os ensaios de resistência ao escorregamento são feitos em superfícies e contaminantes diferentes, e o desempenho em piso cerâmico molhado não é o mesmo que em piso com resíduo oleoso. Como a cozinha combina água e gordura, é essa combinação que interessa. A marcação do modelo e o Certificado de Aprovação trazem essa informação.',
+          'Vale saber que <a href="/calcados/antiderrapantes/">"antiderrapante"</a> não é uma característica única. Os ensaios de resistência ao escorregamento são feitos em superfícies e contaminantes diferentes, e o desempenho em piso cerâmico molhado não é o mesmo que em piso com resíduo oleoso. Como a cozinha combina água e gordura, é essa combinação que interessa. A marcação do modelo e o Certificado de Aprovação trazem essa informação.',
       },
       {
         tipo: 'h2',
@@ -116,7 +116,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Ou seja: a pergunta não é "qual protege mais", e sim "existe risco de algo pesado cair sobre o pé na minha rotina?". Se existe, a conversa muda para calçado de segurança. Se não existe, um calçado ocupacional bem escolhido tende a proteger melhor no que importa aqui — aderência — e a ser mais leve para a jornada em pé.',
+          'Ou seja: a pergunta não é "qual protege mais", e sim "existe risco de algo pesado cair sobre o pé na minha rotina?". Se existe, a conversa muda para <a href="/calcados/seguranca/">calçado de segurança</a>, e calçado de segurança. Se não existe, um calçado ocupacional bem escolhido tende a proteger melhor no que importa aqui — aderência — e a ser mais leve para a jornada em pé.',
       },
       {
         tipo: 'h2',
@@ -200,7 +200,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Um respirador aprovado para material particulado não protege contra vapor orgânico. Uma luva aprovada para um tipo de risco pode não ter resistência ao produto químico que você usa. Um calçado de segurança pode ter biqueira e não ter proteção contra perfuração do solado. Todas essas informações constam no certificado.',
+          'Um <a href="/protecao/respiratoria/">respirador aprovado para material particulado</a> não protege contra vapor orgânico. Uma luva aprovada para um tipo de risco pode não ter resistência ao produto químico que você usa. Um calçado de segurança pode ter biqueira e não ter proteção contra perfuração do solado. Todas essas informações constam no certificado.',
       },
       {
         tipo: 'h2',
@@ -209,7 +209,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'A consulta é feita no portal do Governo Federal, no serviço do Ministério do Trabalho e Emprego destinado aos Certificados de Aprovação de EPI. Com o número do CA é possível verificar o equipamento, o fabricante ou importador, a validade e a descrição do que foi aprovado.',
+          'A consulta é feita no sistema CAEPI do Ministério do Trabalho e Emprego — o caminho oficial está na <a href="https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca" target="_blank" rel="noopener noreferrer">página do serviço no gov.br</a>, citada nas fontes. Com o número do CA é possível verificar o equipamento, o fabricante ou importador, a validade e a descrição do que foi aprovado.',
       },
       {
         tipo: 'lista',
@@ -258,11 +258,11 @@ export const ARTIGOS: Artigo[] = [
   {
     slug: 'calcado-ocupacional-ou-de-seguranca',
     titulo: 'Calçado ocupacional ou de segurança: qual é o seu caso?',
-    tituloSeo: 'Calçado ocupacional ou de segurança?',
+    tituloSeo: 'NBR ISO 20345 e 20347: o que muda no calçado',
     resumo:
       'A diferença está na biqueira e nas normas que cada um atende. Como saber qual serve para a sua atividade.',
     descricaoSeo:
-      'A diferença entre calçado ocupacional (NBR ISO 20347) e calçado de segurança (NBR ISO 20345), e como saber qual é o indicado para o seu trabalho.',
+      'As duas normas do calçado profissional, o que cada uma exige da biqueira, e a pergunta que resolve a dúvida na maioria dos casos.',
     publicado: '2026-08-30',
     atualizado: '2026-08-30',
     atualizadoExibicao: 'agosto de 2026',
@@ -276,7 +276,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'É a dúvida que mais chega até nós, e a confusão é compreensível: os dois são calçados profissionais, os dois podem ter solado antiderrapante e os dois podem ter Certificado de Aprovação. A diferença está em qual risco cada um foi feito para enfrentar.',
+          'É a dúvida que mais chega até nós, e a confusão é compreensível: <a href="/calcados/ocupacionais/">calçado ocupacional</a> e <a href="/calcados/seguranca/">calçado de segurança</a> são ambos calçados profissionais, os dois podem ter solado antiderrapante e os dois podem ter Certificado de Aprovação. A diferença está em qual risco cada um foi feito para enfrentar.',
       },
       {
         tipo: 'h2',
@@ -366,7 +366,7 @@ export const ARTIGOS: Artigo[] = [
     resumo:
       'Quem fornece, quem paga, o que precisa constar e o que costuma ser cobrado em fiscalização.',
     descricaoSeo:
-      'Obrigações da empresa quanto ao fornecimento de EPI segundo a norma regulamentadora, com fonte oficial. Guia direto para quem compra e gerencia.',
+      'Fornecimento gratuito, CA válido, ficha de entrega, treinamento e o erro mais comum de quem compra. Resumo prático da norma, com o texto oficial citado.',
     publicado: '2026-08-30',
     atualizado: '2026-08-30',
     atualizadoExibicao: 'agosto de 2026',
@@ -398,7 +398,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'O equipamento de proteção individual, nacional ou importado, só pode ser posto à venda ou utilizado com a indicação do Certificado de Aprovação expedido pelo órgão nacional competente em segurança e saúde no trabalho. Isso vale tanto para quem vende quanto para quem compra e fornece à equipe.',
+          'O equipamento de proteção individual, nacional ou importado, só pode ser posto à venda ou utilizado com a indicação do <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a> expedido pelo órgão nacional competente em segurança e saúde no trabalho. Isso vale tanto para quem vende quanto para quem compra e fornece à equipe.',
       },
       {
         tipo: 'h2',
@@ -432,7 +432,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Comprar pelo preço e descobrir depois que o equipamento não é adequado ao risco. Um respirador aprovado para poeira não resolve exposição a vapor químico; uma luva aprovada para manuseio geral não substitui resistência química específica. O CA descreve para que o equipamento foi aprovado — é esse texto que precisa bater com a avaliação de riscos da empresa.',
+          'Comprar pelo preço e descobrir depois que o equipamento não é adequado ao risco. Um <a href="/protecao/respiratoria/">respirador aprovado para poeira</a> não resolve exposição a vapor químico; uma luva aprovada para manuseio geral não substitui resistência química específica. O CA descreve para que o equipamento foi aprovado — é esse texto que precisa bater com a avaliação de riscos da empresa.',
       },
       {
         tipo: 'p',
@@ -534,7 +534,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Vale lembrar que a aderência é uma relação entre duas superfícies. O calçado responde por uma parte; o piso e a limpeza respondem pela outra. Piso muito liso, acúmulo de gordura e limpeza inadequada reduzem o desempenho de qualquer solado. O calçado é uma proteção individual — não substitui a correção do ambiente quando ela é possível.',
+          'Vale lembrar — sobretudo em <a href="/para-seu-trabalho/cozinha/">cozinha</a> — que a aderência é uma relação entre duas superfícies. O calçado responde por uma parte; o piso e a limpeza respondem pela outra. Piso muito liso, acúmulo de gordura e limpeza inadequada reduzem o desempenho de qualquer solado. O calçado é uma proteção individual — não substitui a correção do ambiente quando ela é possível.',
       },
     ],
     fontes: [

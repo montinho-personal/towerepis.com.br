@@ -29,9 +29,9 @@ export const SETORES: Setor[] = [
     slug: 'alimentacao',
     nome: 'Alimentação',
     resumoCurto: 'Restaurantes, hotéis, cozinhas industriais e serviços de alimentação.',
-    titleSeo: 'EPI para restaurante e cozinha industrial',
+    titleSeo: 'EPI para restaurantes e cozinhas em Fortaleza',
     descricaoSeo:
-      'Calçado antiderrapante, luva e proteção para equipes de cozinha. Fornecimento para restaurantes, hotéis e cozinhas industriais em Fortaleza.',
+      'Calçado antiderrapante, luva e proteção para equipes de cozinha. Orçamento com o CA de cada item, grade de numeração e entrega em Fortaleza.',
     h1: 'EPI para equipes de cozinha e alimentação',
     resumo:
       'Cozinha tem rotatividade alta, numeração variada e um problema específico: o calçado que a equipe não usa. Padronizar aqui é menos sobre catálogo e mais sobre acertar o modelo que as pessoas aceitam calçar todo dia.',
@@ -91,9 +91,9 @@ export const SETORES: Setor[] = [
     slug: 'saude',
     nome: 'Saúde',
     resumoCurto: 'Clínicas, hospitais, laboratórios e serviços de assistência.',
-    titleSeo: 'EPI para clínicas, hospitais e laboratórios',
+    titleSeo: 'EPI para clínicas e hospitais em Fortaleza',
     descricaoSeo:
-      'Calçado ocupacional, luvas e proteção respiratória para equipes de saúde. Fornecimento em Fortaleza e no Ceará.',
+      'Calçado ocupacional fechado, luva e proteção respiratória para equipes de saúde. Orçamento com o CA de cada item e entrega em Fortaleza e região.',
     h1: 'EPI para equipes da área da saúde',
     resumo:
       'Turno longo, piso liso, risco biológico e exigência de higienização. Na saúde, a especificação precisa ser precisa e a reposição precisa ser confiável — porque falta de EPI aqui interrompe atendimento.',
@@ -113,7 +113,7 @@ export const SETORES: Setor[] = [
       {
         titulo: 'Proteção respiratória conforme o protocolo',
         texto:
-          'A classe da peça filtrante depende do protocolo do serviço e da avaliação de riscos. Trabalhamos com linha 3M, com quem a Tower tem relação desde 1995.',
+          'A classe da peça filtrante depende do protocolo do serviço e da avaliação de riscos. Informamos disponibilidade e prazo por item antes de fechar.',
       },
       {
         titulo: 'Luvas por finalidade',
@@ -148,9 +148,9 @@ export const SETORES: Setor[] = [
     slug: 'industria',
     nome: 'Indústria',
     resumoCurto: 'Produção, manutenção, logística e áreas de apoio.',
-    titleSeo: 'EPI para indústria: fornecimento em Fortaleza',
+    titleSeo: 'Fornecedor de EPI para indústria em Fortaleza',
     descricaoSeo:
-      'Proteção auditiva, respiratória, calçado de segurança e luvas por posto de trabalho. Fornecimento para indústrias no Ceará.',
+      'Proteção auditiva, respiratória, calçado e luva definidos por posto de trabalho. Orçamento com o CA de cada item, entrega no Ceará e reposição sem recomeçar.',
     h1: 'EPI para indústria, por posto de trabalho',
     resumo:
       'Na indústria a exposição é constante e o consumo é previsível — o que torna a padronização por posto de trabalho o maior ganho possível. É também onde a especificação errada tem consequência mais séria.',
@@ -175,7 +175,7 @@ export const SETORES: Setor[] = [
       {
         titulo: 'Proteção respiratória conforme o agente',
         texto:
-          'Particulado e vapor exigem equipamentos distintos. A definição vem da avaliação de riscos. Trabalhamos com linha 3M, com quem a Tower tem relação desde a fundação.',
+          'Particulado e vapor exigem equipamentos distintos. A definição vem da avaliação de riscos, e a disponibilidade de cada item é confirmada no orçamento.',
       },
       {
         titulo: 'Calçado de segurança adequado ao piso e à carga',
@@ -210,9 +210,9 @@ export const SETORES: Setor[] = [
     slug: 'construcao',
     nome: 'Construção',
     resumoCurto: 'Construtoras, empreiteiras e prestadores de serviço em obra.',
-    titleSeo: 'EPI para construtoras e obras em Fortaleza',
+    titleSeo: 'Fornecedor de EPI para obras em Fortaleza',
     descricaoSeo:
-      'Calçado de segurança, capacete, luva e proteção respiratória para equipes de obra. Fornecimento em Fortaleza e no Ceará.',
+      'Calçado com biqueira, capacete, luva e proteção respiratória para obra. Orçamento com o CA de cada item, entrega em Fortaleza e reposição sem recomeçar.',
     h1: 'EPI para equipes de obra',
     resumo:
       'Obra tem a maior variedade de risco simultâneo e a maior rotatividade de equipe. Isso torna a padronização e a velocidade de reposição mais importantes do que em qualquer outro setor.',
@@ -272,9 +272,9 @@ export const SETORES: Setor[] = [
     slug: 'facilities-e-limpeza',
     nome: 'Facilities e limpeza',
     resumoCurto: 'Empresas de limpeza, conservação, portaria e serviços terceirizados.',
-    titleSeo: 'EPI para empresas de limpeza e conservação',
+    titleSeo: 'EPI para empresas de limpeza em Fortaleza',
     descricaoSeo:
-      'Luva adequada ao produto químico, calçado antiderrapante e proteção para os olhos. Fornecimento para empresas de limpeza em Fortaleza.',
+      'Luva adequada ao produto, calçado antiderrapante e proteção para os olhos. Orçamento com o CA de cada item e entrega para empresas de limpeza em Fortaleza.',
     h1: 'EPI para equipes de limpeza e conservação',
     resumo:
       'Empresa de limpeza atende postos diferentes com produtos diferentes — e a luva costuma ser padronizada por preço, não por risco. É o erro mais comum e mais fácil de corrigir do setor.',

@@ -22,9 +22,19 @@ export function metadados(dados: {
   descricao: string
   canonical: string
   artigo?: { publicado: string; atualizado: string }
+  /**
+   * Emite o título sem o sufixo de marca do template.
+   *
+   * O template acrescenta " · Tower EPI's" — 14 caracteres — a toda página.
+   * Em consulta local comercial, esses caracteres valem mais carregando "em
+   * Fortaleza": a marca já está na URL, logo acima do título, e no perfil do
+   * Google. Nas páginas navegacionais e informacionais o sufixo fica, porque
+   * ali ele ajuda o reconhecimento e não disputa espaço com termo nenhum.
+   */
+  absoluto?: boolean
 }): Metadata {
   return {
-    title: dados.titulo,
+    title: dados.absoluto ? { absolute: dados.titulo } : dados.titulo,
     description: dados.descricao,
     alternates: { canonical: dados.canonical },
     openGraph: {

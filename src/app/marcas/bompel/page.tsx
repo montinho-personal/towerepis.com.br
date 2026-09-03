@@ -37,7 +37,7 @@ const PERGUNTAS = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Bompel na Tower EPI’s',
+  title: { absolute: 'Bompel: a linha que a Tower mais atende' },
   description:
     'A Bompel é hoje a principal parceria da Tower em calçado profissional. Veja o que a linha cobre, o que observar na escolha e como pedir.',
   alternates: { canonical: '/marcas/bompel/' },

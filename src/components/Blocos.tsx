@@ -475,15 +475,16 @@ export function Ponte({
  * Faixa de autoridade.
  *
  * Grafite, compacta e densa — é a seção que afirma. São só quatro
- * números porque só existem quatro verdadeiros: 1995, o prêmio 3M, os
+ * números porque só existem quatro verdadeiros: 1995 (e a 3M na origem), a
+ * Bompel como parceria de hoje, os
  * dois sócios e o estado. Quatro números grandes e verdadeiros valem
  * mais que oito inventados, e a regra do projeto proíbe métrica
  * fabricada.
  */
 export function BarraProva({ continua = false }: { continua?: boolean }) {
   const fatos = [
-    { destaque: '1995', texto: 'No mercado de proteção do Ceará' },
-    { destaque: '3M', texto: 'Distribuidor Regional premiado' },
+    { destaque: '1995', texto: 'Fundada a convite da 3M, no Ceará' },
+    { destaque: 'Bompel', texto: 'Principal parceria em calçado, hoje' },
     { destaque: '2', texto: 'Sócios — você fala direto com eles' },
     { destaque: 'CE', texto: 'Fortaleza e região' },
   ]

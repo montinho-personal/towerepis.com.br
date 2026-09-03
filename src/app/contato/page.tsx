@@ -28,9 +28,9 @@ const PERGUNTAS = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Contato — Tower EPI’s, Fortaleza',
+  title: { absolute: 'Fale com a Tower EPI’s — Fortaleza' },
   description:
-    'Fale com a Tower EPI’s pelo WhatsApp. Atendimento por Helano e Cristina, os sócios, com entrega em Fortaleza e região. Desde 1995.',
+    'WhatsApp direto com Helano e Cristina, os dois sócios. Atendimento em Fortaleza, região metropolitana e Ceará, com prazo combinado antes de fechar.',
   alternates: { canonical: '/contato/' },
 }
 

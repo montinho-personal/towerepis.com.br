@@ -32,9 +32,9 @@ export const PROTECOES: Protecao[] = [
     nome: 'Proteção respiratória',
     resumoCurto:
       'Poeira, névoa, vapor. O agente presente define o equipamento — e errar aqui é grave.',
-    titleSeo: 'Proteção respiratória: PFF1, PFF2 e PFF3',
+    titleSeo: 'PFF1, PFF2 e PFF3: qual usar para cada risco',
     descricaoSeo:
-      'Entenda a diferença entre PFF1, PFF2 e PFF3, quando cada uma se aplica e por que máscara para partícula não protege contra vapor. Tower EPI’s, Fortaleza.',
+      'O que decide não é o número da máscara, é o agente presente. Quando cada classe se aplica, e por que peça para poeira não protege contra vapor.',
     h1: 'Proteção respiratória',
     resumo:
       'É a categoria em que o erro custa mais caro, porque o dano é invisível e cumulativo. Foi também a categoria que deu origem à Tower: em 1995, o trabalho era convencer as empresas do Ceará a trocar o equipamento reutilizável pela proteção descartável adequada.',
@@ -102,7 +102,7 @@ export const PROTECOES: Protecao[] = [
       'Corte, químico, calor, abrasão. Uma luva só quase nunca resolve tudo.',
     titleSeo: 'Luvas de proteção: como escolher pelo risco',
     descricaoSeo:
-      'Corte, produto químico, calor ou abrasão exigem luvas diferentes. Veja o que observar antes de escolher. Tower EPI’s, Fortaleza, desde 1995.',
+      'Corte, produto químico, calor e abrasão pedem luvas diferentes. Como ler o risco antes de escolher — e por que luva que escorrega ou aperta acaba fora da mão.',
     h1: 'Proteção das mãos',
     resumo:
       'A mão é a parte do corpo que mais se acidenta no trabalho, e a luva é o EPI em que mais se erra — porque parece que qualquer uma serve. Não serve: a luva se escolhe pelo risco específico da tarefa.',
@@ -165,7 +165,7 @@ export const PROTECOES: Protecao[] = [
       'A perda é silenciosa e não volta. O que protege é o que a pessoa usa o turno inteiro.',
     titleSeo: 'Proteção auditiva: plug ou concha?',
     descricaoSeo:
-      'Diferenças entre protetor de inserção e tipo concha, atenuação e conforto no uso contínuo. Tower EPI’s, Fortaleza, desde 1995.',
+      'Plug ou concha: depende de quanto tempo fica no ouvido e de como se combina com outros EPIs. O que a atenuação do CA diz, e o que ela não diz.',
     h1: 'Proteção auditiva',
     resumo:
       'A perda auditiva ocupacional é gradual, indolor e irreversível. Quando é percebida, já aconteceu. Por isso, nesta categoria, adesão ao uso é tão determinante quanto a especificação técnica.',
@@ -228,7 +228,7 @@ export const PROTECOES: Protecao[] = [
       'Partícula projetada e respingo químico. O acidente mais comum e mais evitável.',
     titleSeo: 'Óculos de proteção e protetor facial',
     descricaoSeo:
-      'Proteção contra projeção de partícula, respingo químico e radiação. O que observar antes de escolher. Tower EPI’s, Fortaleza, desde 1995.',
+      'Óculos de segurança, protetor facial ou os dois: depende de partícula, respingo ou radiação. O que cada um cobre e quando um não substitui o outro.',
     h1: 'Proteção para olhos e face',
     resumo:
       'Lesão ocular no trabalho costuma acontecer em tarefas curtas — aquele corte rápido, aquela diluição de produto. É justamente quando o equipamento não está no rosto.',
@@ -290,7 +290,7 @@ export const PROTECOES: Protecao[] = [
     resumoCurto: 'Capacete: classes diferentes para riscos diferentes.',
     titleSeo: 'Capacete de segurança: classes e uso',
     descricaoSeo:
-      'Classes de capacete, quando cada uma se aplica e o que conferir no Certificado de Aprovação. Tower EPI’s, Fortaleza, desde 1995.',
+      'Classes de capacete, o que a suspensão interna faz, e o que conferir no Certificado de Aprovação para trabalho em altura e proximidade elétrica.',
     h1: 'Proteção da cabeça',
     resumo:
       'Capacete não é item genérico. Existem classes com características diferentes, inclusive para atividade com risco elétrico, e a escolha errada dá proteção que não corresponde ao risco presente.',
@@ -353,7 +353,7 @@ export const PROTECOES: Protecao[] = [
       'Avental, macacão, alta visibilidade e uniforme conforme a exposição.',
     titleSeo: 'Vestimentas de proteção e alta visibilidade',
     descricaoSeo:
-      'Avental, macacão e vestimenta de alta visibilidade: o que observar conforme a exposição. Tower EPI’s, Fortaleza, desde 1995.',
+      'Avental, macacão e alta visibilidade: o que muda com respingo, calor e circulação de empilhadeira. Como escolher sem sacrificar o conforto no clima quente.',
     h1: 'Vestimentas de proteção',
     resumo:
       'A vestimenta cobre a maior área do corpo e é o equipamento que mais afeta o conforto térmico. Em Fortaleza, isso não é detalhe: peça que dá calor demais é peça que sai do corpo.',

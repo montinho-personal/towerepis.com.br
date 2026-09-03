@@ -5,7 +5,7 @@ import { Ferramenta } from '@/components/Ferramenta'
 export const metadata: Metadata = {
   title: 'Encontre o EPI certo para o seu trabalho',
   description:
-    'Quatro perguntas simples para orientar a escolha do equipamento de proteção. Uma orientação inicial, não um laudo técnico. Tower EPI’s, Fortaleza.',
+    'Quatro perguntas sobre a sua rotina, e no fim o que costuma merecer atenção no seu caso. Orientação inicial, não laudo — e o contexto já pronto para o WhatsApp.',
   alternates: { canonical: '/encontrar-epi/' },
 }
 

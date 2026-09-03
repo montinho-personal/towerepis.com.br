@@ -4,9 +4,9 @@ import { Trilha, CabecalhoPagina, GradeLinks, Secao } from '@/components/Blocos'
 import { FechamentoCta } from '@/components/WhatsAppCta'
 
 export const metadata: Metadata = {
-  title: 'Proteção por parte do corpo',
+  title: 'EPI por parte do corpo: o que cada um protege',
   description:
-    'Proteção respiratória, luvas, protetor auricular, óculos, capacete e vestimentas. O que observar em cada categoria. Tower EPI’s, Fortaleza, desde 1995.',
+    'Respiração, mãos, audição, olhos, cabeça, corpo e pés. O que observar em cada categoria antes de escolher, com critério de técnico de segurança do trabalho.',
   alternates: { canonical: '/protecao/' },
 }
 

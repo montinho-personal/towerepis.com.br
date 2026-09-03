@@ -5,7 +5,7 @@ import { FechamentoCta } from '@/components/WhatsAppCta'
 import { PROFISSOES } from '@/content/profissoes'
 
 export const metadata: Metadata = {
-  title: 'Calçados de segurança e ocupacionais',
+  title: { absolute: 'Calçado de segurança e ocupacional em Fortaleza' },
   description:
     'Calçado de segurança com biqueira, ocupacional e antiderrapante em Fortaleza. Entenda a diferença com quem é técnico de segurança do trabalho.',
   alternates: { canonical: '/calcados/' },
@@ -128,11 +128,6 @@ export default function HubCalcados() {
             <p className="numeral mt-3 text-2xl">Sticky Shoes</p>
             <p className="mt-2 text-[0.95rem] leading-relaxed text-ink-2">
               Calçado ocupacional impermeável, para cozinha, alimentação e saúde.
-            </p>
-            <p className="numeral mt-6 text-2xl">3M</p>
-            <p className="mt-2 text-[0.95rem] leading-relaxed text-ink-2">
-              Proteção respiratória, auditiva e visual. É a marca com que a Tower nasceu,
-              em 1995.
             </p>
             <Link
               href="/marcas/"

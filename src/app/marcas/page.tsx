@@ -4,9 +4,9 @@ import { Trilha, CabecalhoPagina, Secao } from '@/components/Blocos'
 import { FechamentoCta } from '@/components/WhatsAppCta'
 
 export const metadata: Metadata = {
-  title: 'Marcas que a Tower trabalha',
+  title: { absolute: 'Marcas de EPI que a Tower trabalha' },
   description:
-    'A Bompel é hoje a principal parceria da Tower em calçado profissional. Trabalhamos também com 3M e Sticky Shoes, entre outras.',
+    'A Bompel é a principal parceria em calçado profissional. Também Sticky Shoes e, com disponibilidade sob consulta, a 3M — a marca com que a Tower nasceu.',
   alternates: { canonical: '/marcas/' },
 }
 
@@ -92,13 +92,13 @@ export default function Marcas() {
           <div className="mt-6 grid gap-px border border-ink bg-ink lg:grid-cols-2">
             <div className="bg-paper p-7 sm:p-9">
               <p className="numeral text-3xl">3M</p>
-              <p className="eyebrow mt-3">Proteção respiratória, auditiva e visual</p>
+              <p className="eyebrow mt-3">A origem da Tower · disponibilidade sob consulta</p>
               <p className="mt-5 text-ink-2">
-                A 3M é a origem da Tower: foi ela que, em 1995, procurava alguém para
-                desenvolver o mercado de proteção no Ceará e ofereceu a distribuição ao
-                Helano. A empresa recebeu depois o reconhecimento de Distribuidor
-                Regional. Continuamos trabalhando a linha, com destaque para proteção
-                respiratória.
+                Foi a 3M que, em 1995, procurava alguém para desenvolver o mercado de
+                proteção no Ceará e ofereceu a distribuição ao Helano. A empresa recebeu
+                depois o reconhecimento de Distribuidor Regional. Hoje a linha tem
+                disponibilidade limitada: pergunte pelo item e informamos prazo antes de
+                qualquer coisa.
               </p>
               <Link
                 href="/marcas/3m/"

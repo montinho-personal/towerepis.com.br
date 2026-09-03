@@ -31,7 +31,7 @@ export async function generateMetadata({
   const { slug } = await params
   const s = buscarSetor(slug)
   if (!s) return {}
-  return metadados({ titulo: s.titleSeo, descricao: s.descricaoSeo, canonical: `/empresas/${s.slug}/` })
+  return metadados({ titulo: s.titleSeo, descricao: s.descricaoSeo, canonical: `/empresas/${s.slug}/`, absoluto: true })
 }
 
 export default async function PaginaSetor({

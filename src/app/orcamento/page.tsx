@@ -34,9 +34,9 @@ const PERGUNTAS = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Pedir orçamento de EPI',
+  title: { absolute: 'Orçamento de EPI em Fortaleza, sem cadastro' },
   description:
-    'Monte seu orçamento de EPI item a item, com grade de numeração para calçado, e envie pronto pelo WhatsApp. Sem cadastro. Tower EPI’s, Fortaleza.',
+    'Escolha os itens, informe a grade de numeração e envie pronto pelo WhatsApp. Não pedimos e-mail nem CNPJ. Quem responde é um dos dois donos, desde 1995.',
   alternates: { canonical: '/orcamento/' },
 }
 

@@ -23,7 +23,7 @@ export const CALCADOS: TipoCalcado[] = [
     nome: 'Calçados ocupacionais',
     titleSeo: 'Calçados ocupacionais em Fortaleza',
     descricaoSeo:
-      'Calçado ocupacional sem biqueira, para atividades sem risco mecânico: cozinha, saúde, limpeza e serviços. Veja o que observar. Tower EPI’s, Fortaleza.',
+      'Sem biqueira, para atividades sem risco de queda de objeto: cozinha, saúde, limpeza e serviços. O que observar no solado, na cobertura e na numeração.',
     h1: 'Calçados ocupacionais',
     resumo:
       'É o calçado profissional destinado a atividades sem risco de impacto sobre os dedos do pé. Atende à ABNT NBR ISO 20347 e é o mais usado em cozinha, saúde, limpeza, comércio e serviços — justamente onde o problema real é piso escorregadio e jornada longa em pé.',
@@ -88,7 +88,7 @@ export const CALCADOS: TipoCalcado[] = [
     nome: 'Calçados de segurança',
     titleSeo: 'Calçados de segurança em Fortaleza',
     descricaoSeo:
-      'Calçado de segurança com biqueira de proteção contra impacto, para indústria, construção, logística e manutenção. Tower EPI’s, Fortaleza, desde 1995.',
+      'Biqueira de aço ou composite, solado resistente e a classe certa para o piso. O que observar antes de definir a grade da equipe.',
     h1: 'Calçados de segurança',
     resumo:
       'É o calçado com biqueira de proteção contra impacto, destinado a atividades com risco mecânico sobre os dedos do pé. Atende à ABNT NBR ISO 20345 e é o padrão em indústria, construção, logística e manutenção.',
@@ -153,7 +153,7 @@ export const CALCADOS: TipoCalcado[] = [
     nome: 'Calçados antiderrapantes',
     titleSeo: 'Sapato antiderrapante em Fortaleza',
     descricaoSeo:
-      'O que significa solado antiderrapante, como o desempenho é medido e como escolher para piso molhado ou oleoso. Tower EPI’s, Fortaleza, desde 1995.',
+      'Antiderrapante não é uma coisa só: o ensaio muda com o piso e o contaminante. Como ler a marcação, escolher para molhado ou oleoso e conferir o desgaste.',
     h1: 'Calçados antiderrapantes',
     resumo:
       'Escorregamento é o acidente mais comum em cozinha, área da saúde e limpeza. Mas "antiderrapante" não é uma característica única: o desempenho é medido em superfícies diferentes, e é isso que precisa bater com o seu piso.',

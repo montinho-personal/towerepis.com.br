@@ -316,7 +316,7 @@ export default function Home() {
               {
                 ano: 'Hoje',
                 texto:
-                  'Menor, e com os mesmos clientes. Distribuidor Regional premiado pela 3M, atendendo Fortaleza e o Ceará.',
+                  'Menor, e com os mesmos clientes. A parceria principal hoje é a Bompel, em calçado; o prêmio de Distribuidor Regional da 3M ficou na história.',
               },
             ].map((item) => (
               <li key={item.ano} className="bg-grafite-800 p-6 sm:p-7">

@@ -41,9 +41,9 @@ const PERGUNTAS = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Calçado ocupacional ou de segurança?',
+  title: 'Ocupacional ou de segurança: qual é o seu caso',
   description:
-    'A diferença entre NBR ISO 20347 e NBR ISO 20345, o que a biqueira faz e o que ela não faz, e como descobrir qual dos dois serve para o seu trabalho.',
+    'Queda de objeto, tipo de piso e horas em pé: o que pesa na escolha entre os dois, o que a biqueira faz e o que ela não faz.',
   alternates: { canonical: '/calcados/comparativo/' },
 }
 
