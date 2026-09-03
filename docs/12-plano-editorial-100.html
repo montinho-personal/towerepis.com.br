@@ -1,0 +1,465 @@
+<title>Cem pautas para a Tower EPI's</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+  :root {
+    --papel: #fcfbf9; --papel-2: #f0ebe3; --tinta: #1f2124; --tinta-2: #3d4147; --tinta-3: #6b7078;
+    --regua: #ddd7cd; --regua-forte: #b9b2a6; --vermelho: #b4111b; --vermelho-fundo: #fdf0ef;
+    --p0: #8f1a1e; --p0-fundo: #f7e6e5;
+    --p1: #8a5a08; --p1-fundo: #f7eeda;
+    --p2: #1f5c3d; --p2-fundo: #e8f1ec;
+    --p3: #4a5058; --p3-fundo: #eceae6;
+    --display: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+    --corpo: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --papel: #191a1c; --papel-2: #212326; --tinta: #f0ede8; --tinta-2: #c3bfb8; --tinta-3: #8d8983;
+      --regua: #34373b; --regua-forte: #4c5055; --vermelho: #f2686e; --vermelho-fundo: #2b1a1b;
+      --p0: #ef8a8a; --p0-fundo: #2b1b1b;
+      --p1: #e0b45f; --p1-fundo: #2a2213;
+      --p2: #7fc9a1; --p2-fundo: #16241d;
+      --p3: #a8adb5; --p3-fundo: #25272a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --papel: #191a1c; --papel-2: #212326; --tinta: #f0ede8; --tinta-2: #c3bfb8; --tinta-3: #8d8983;
+    --regua: #34373b; --regua-forte: #4c5055; --vermelho: #f2686e; --vermelho-fundo: #2b1a1b;
+    --p0: #ef8a8a; --p0-fundo: #2b1b1b;
+    --p1: #e0b45f; --p1-fundo: #2a2213;
+    --p2: #7fc9a1; --p2-fundo: #16241d;
+    --p3: #a8adb5; --p3-fundo: #25272a;
+  }
+
+  * { box-sizing: border-box; }
+  body { background: var(--papel); color: var(--tinta); font-family: var(--corpo); font-size: 1.0625rem; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+  .env { max-width: 68rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+  .col { max-width: 42rem; }
+
+  h1, h2, h3, h4 { font-family: var(--display); line-height: 1.15; text-wrap: balance; margin: 0; }
+  h1 { font-size: clamp(2rem, 5.5vw, 3.1rem); font-weight: 700; letter-spacing: -0.02em; }
+  h2 { font-size: clamp(1.45rem, 3.4vw, 1.9rem); font-weight: 700; letter-spacing: -0.015em; }
+  h3 { font-size: 1.15rem; font-weight: 600; }
+  p { margin: 0; }
+
+  .rotulo { font-family: var(--display); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--tinta-3); }
+  .rotulo-vermelho { color: var(--vermelho); }
+
+  header.capa { padding: 4rem 0 2.5rem; display: flex; flex-direction: column; gap: 1.25rem; }
+  header.capa p.sub { font-size: 1.2rem; color: var(--tinta-2); max-width: 38rem; }
+  .meta { font-family: var(--display); font-size: 0.78rem; color: var(--tinta-3); display: flex; flex-wrap: wrap; gap: 0.4rem 1.25rem; }
+
+  section { padding-block: 3rem; border-top: 1px solid var(--regua); }
+  section > * + * { margin-top: 1.15rem; }
+  .num { font-family: var(--display); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; color: var(--vermelho); display: block; margin-bottom: 0.6rem; }
+
+  .destaque { background: var(--vermelho-fundo); border-left: 3px solid var(--vermelho); padding: 1.25rem 1.4rem; display: flex; flex-direction: column; gap: 0.7rem; }
+  .destaque h3 { color: var(--vermelho); }
+  .quadro { background: var(--papel-2); padding: 1.25rem 1.4rem; display: flex; flex-direction: column; gap: 0.7rem; }
+
+  ul, ol { margin: 0; padding-left: 1.15rem; display: flex; flex-direction: column; gap: 0.45rem; }
+  li::marker { color: var(--tinta-3); }
+  a { color: inherit; text-decoration-color: var(--regua-forte); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--vermelho); }
+  a:focus-visible { outline: 2px solid var(--vermelho); outline-offset: 2px; }
+
+  .rolagem { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-family: var(--display); font-size: 0.83rem; font-variant-numeric: tabular-nums; }
+  th, td { text-align: left; padding: 0.55rem 0.85rem 0.55rem 0; border-bottom: 1px solid var(--regua); vertical-align: top; }
+  th { font-weight: 700; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--tinta-3); white-space: nowrap; }
+  td:last-child, th:last-child { padding-right: 0; }
+  td.n { color: var(--tinta-3); font-size: 0.75rem; white-space: nowrap; }
+  td.pq { font-family: var(--corpo); font-size: 0.92rem; line-height: 1.55; color: var(--tinta-2); }
+  td.url { font-size: 0.75rem; color: var(--tinta-3); word-break: break-all; }
+
+  .p { display: inline-block; font-family: var(--display); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; padding: 0.2rem 0.42rem; white-space: nowrap; }
+  .P0 { background: var(--p0-fundo); color: var(--p0); }
+  .P1 { background: var(--p1-fundo); color: var(--p1); }
+  .P2 { background: var(--p2-fundo); color: var(--p2); }
+  .P3 { background: var(--p3-fundo); color: var(--p3); }
+
+  .cluster { border-top: 2px solid var(--tinta); padding-top: 1.5rem; margin-top: 2.75rem; }
+  .cluster h3 { font-size: 1.3rem; }
+  .cluster .serp { max-width: 44rem; margin-top: 0.7rem; font-size: 0.98rem; color: var(--tinta-2); }
+  .cluster .rolagem { margin-top: 1.3rem; }
+
+  footer { border-top: 2px solid var(--tinta); padding-top: 1.5rem; margin-top: 3rem; font-family: var(--display); font-size: 0.8rem; color: var(--tinta-3); }
+</style>
+
+<div class="env">
+
+<header class="capa">
+  <p class="rotulo rotulo-vermelho">Plano editorial — pesquisa antes da produção</p>
+  <h1>Cem pautas para a Tower EPI's</h1>
+  <p class="sub">Cada uma com a razão de existir, o formato que a SERP pede, a página comercial que ela alimenta e a prioridade. Nenhuma foi escolhida por parecer interessante.</p>
+  <p class="meta"><span>3 de setembro de 2026</span><span>51 URLs auditadas</span><span>5 artigos existentes</span><span>100 pautas priorizadas</span></p>
+</header>
+
+<section>
+  <span class="num">Resumo executivo</span>
+  <h2>O que a SERP mostrou</h2>
+  <div class="col" style="display:flex;flex-direction:column;gap:1.1rem;margin-top:1.5rem">
+    <div class="destaque">
+      <h3>Ninguém assina o conteúdo de EPI no Brasil</h3>
+      <p>As SERPs de PFF, luva, biqueira e solado são ocupadas por blogs de distribuidoras — Safetline, Astro, WorkEPIs, Safetytrab, Macboot, Dinmap — com textos intercambiáveis, <strong>sem autor, sem revisor técnico e sem data de revisão</strong>. A Tower tem um sócio que é técnico de segurança do trabalho desde 1995. Isso é a vantagem competitiva mais barata de explorar que existe neste mercado.</p>
+    </div>
+    <div class="destaque">
+      <h3>As dúvidas de dor são respondidas por blog de moda</h3>
+      <p>“Botina apertada”, “sapato que machuca o calcanhar”, “como amaciar” — a primeira página é Corello, Oscar Calçados, Melania Benett e vídeo de truque caseiro. <strong>Ninguém responde do ponto de vista ocupacional:</strong> numeração de calçado de segurança, biqueira que não amacia porque não deve amaciar, e o que fazer quando o problema é a grade e não o pé. É a maior lacuna comercial que encontrei, e quem pesquisa isso já comprou o calçado errado.</p>
+    </div>
+    <div class="destaque">
+      <h3>A pergunta jurídica é respondida só por advogado</h3>
+      <p>“Empresa pode descontar EPI do salário”, “quem paga o EPI”, “EPI extraviado” caem em Jusbrasil, Jus.com.br e escritórios de advocacia. Falta a leitura operacional: <strong>o que resolve na prática é o registro de entrega</strong>, e quem entrega EPI todo mês sabe disso. Aqui a Tower cita a norma e a fonte oficial, e não dá parecer jurídico.</p>
+    </div>
+  </div>
+
+  <div class="quadro col" style="margin-top:1.5rem">
+    <h3>O que já foi verificado nas auditorias anteriores</h3>
+    <ul>
+      <li>Local: as SERPs de <em>EPI + cidade</em> são ocupadas por doorway pages de fora do estado e por diretórios. Barra baixa, risco alto de virar mais uma.</li>
+      <li>Calçado: não há player local disputando <em>calçado de segurança Fortaleza</em>; e-commerce português domina as buscas de cozinha.</li>
+      <li><em>Botina Fortaleza</em> é marketplace puro — consulta transacional que não vale perseguir com conteúdo.</li>
+      <li>NR-6: os concorrentes carimbam “[2026]” no title. Não recomendo copiar — envelhece sozinho e obriga a reeditar todo ano.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <span class="num">Fase 1</span>
+  <h2>O que o site já tem — e a regra que isso impõe</h2>
+  <p class="col">Cinco artigos, e todos com boa cobertura. O plano abaixo <strong>não repete nenhum deles</strong>: onde a pauta encostaria, a ação é expandir o texto existente.</p>
+  <div class="rolagem" style="margin-top:1.3rem">
+    <table>
+      <thead><tr><th>Artigo</th><th>Cobre</th><th>O que fazer</th></tr></thead>
+      <tbody>
+        <tr><td>Calçado para cozinha</td><td>Escolha do calçado em ambiente molhado e engordurado</td><td>Vira o hub do cluster de cozinha. Recebe links das novas pautas.</td></tr>
+        <tr><td>O que é o CA</td><td>Definição e consulta do Certificado de Aprovação</td><td>Expandir com CA vencido, CA falso e onde o número fica no produto.</td></tr>
+        <tr><td>Ocupacional ou de segurança</td><td>A diferença da biqueira</td><td>Resolver a duplicação com <code>/calcados/comparativo/</code> antes de qualquer coisa.</td></tr>
+        <tr><td>NR-6</td><td>Obrigações do empregador e do trabalhador</td><td>Vira o hub de normas. Expandir com registro de entrega e fiscalização.</td></tr>
+        <tr><td>Solado antiderrapante</td><td>O que a marcação significa</td><td>Expandir com os ensaios e a leitura da marcação SRA/SRB/SRC.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="destaque col" style="margin-top:1.5rem">
+    <h3>A regra que mais corta pauta: profissão já é página, não artigo</h3>
+    <p>O site tem sete páginas em <code>/para-seu-trabalho/</code> (cozinha, enfermagem, limpeza, construção, indústria, logística, manutenção) e cinco em <code>/empresas/</code>. Escrever “EPI para cozinheiro” como artigo criaria uma disputa direta com <code>/para-seu-trabalho/cozinha/</code>, que já está posicionada.</p>
+    <p><strong>Por isso as pautas de profissão abaixo são de profissões que o site ainda NÃO tem</strong> — soldador, eletricista, mecânico, frigorífico, pintor, jardinagem, motorista — e a ação para as sete existentes é expandir a página, nunca criar artigo paralelo.</p>
+  </div>
+</section>
+
+<section>
+  <span class="num">Fases 3 e 5</span>
+  <h2>Como o formato foi decidido</h2>
+  <p class="col">A SERP decide, não o gosto. Cinco padrões apareceram:</p>
+  <div class="rolagem" style="margin-top:1.3rem">
+    <table>
+      <thead><tr><th>Quando a SERP mostra</th><th>Formato recomendado</th><th>Exemplo neste plano</th></tr></thead>
+      <tbody>
+        <tr><td>Blogs de distribuidora explicando um conceito</td><td>Artigo com autor, revisor e fonte oficial</td><td>Biqueira composite ou aço</td></tr>
+        <tr><td>Marketplace e loja</td><td>Página comercial, não artigo</td><td>Botina de segurança (já é <code>/calcados/seguranca/</code>)</td></tr>
+        <tr><td>Blog de moda respondendo dúvida de trabalhador</td><td>Artigo de problema, com CTA de troca/orçamento</td><td>Botina que machuca</td></tr>
+        <tr><td>Escritório de advocacia</td><td>Artigo operacional citando a norma, sem parecer jurídico</td><td>Desconto de EPI em folha</td></tr>
+        <tr><td>Tabela ou comparação no snippet</td><td>Comparativo com tabela real</td><td>PFF1 × PFF2 × PFF3</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="col" style="margin-top:1.2rem"><strong>Sobre volume:</strong> não tenho ferramenta de volume neste ambiente, então não invento número. A coluna de demanda é qualitativa — muito alta, alta, média, baixa — inferida da riqueza da SERP, do autocompletar e da quantidade de concorrentes disputando.</p>
+</section>
+
+<section>
+  <span class="num">Fases 19, 20 e 24</span>
+  <h2>As cem pautas</h2>
+  <p class="col">Organizadas por cluster, porque artigo solto não constrói autoridade. Cada cluster abre com o que a SERP mostrou e alimenta uma página comercial específica.</p>
+
+  <!-- 1 -->
+  <div class="cluster">
+    <h3>1. Calçado — decisão de compra <span style="color:var(--tinta-3);font-weight:400">(18 pautas)</span></h3>
+    <p class="serp">É o núcleo comercial da Tower e onde ela tem trinta anos de repertório. A SERP é ocupada por fabricante e por blog de distribuidora; ninguém escreve do ponto de vista de quem entrega a grade de numeração e ouve a reclamação depois. Alimenta <code>/calcados/</code> e as três páginas de tipo.</p>
+    <div class="rolagem">
+      <table>
+        <thead><tr><th></th><th>Pauta</th><th>Consulta</th><th>Demanda</th><th>Por que existe</th></tr></thead>
+        <tbody>
+          <tr><td class="n"><span class="p P0">P0</span> 1</td><td>Biqueira de composite ou de aço: qual escolher</td><td class="n">biqueira composite ou aço</td><td class="n">Alta</td><td class="pq">SERP inteira é distribuidora sem autor. A Tower responde pela função — risco elétrico, peso na jornada, detector de metal — e não pelo material.</td></tr>
+          <tr><td class="n"><span class="p P0">P0</span> 2</td><td>Como definir a grade de numeração de uma equipe</td><td class="n">grade de numeração calçado equipe</td><td class="n">Média</td><td class="pq">Ninguém escreve isso, e é a primeira coisa que a Tower pergunta em todo orçamento. Conteúdo original puro.</td></tr>
+          <tr><td class="n"><span class="p P0">P0</span> 3</td><td>Quantos pares por ano: como calcular a reposição</td><td class="n">quantos pares de botina por ano</td><td class="n">Média</td><td class="pq">Pergunta de comprador B2B, sem resposta boa na SERP. Leva direto ao orçamento.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 4</td><td>Botina, bota ou sapato de segurança: quando cada um</td><td class="n">botina ou sapato de segurança</td><td class="n">Alta</td><td class="pq">Comparativo que a SERP premia e que o site ainda não cobre por formato de cano.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 5</td><td>Bota de PVC: quando ela é a resposta certa</td><td class="n">bota pvc trabalho</td><td class="n">Alta</td><td class="pq">Categoria grande e mal explicada. Frigorífico, limpeza pesada e agro dependem dela.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 6</td><td>Couro, microfibra ou EVA: o cabedal decide o conforto</td><td class="n">calçado de segurança em couro ou microfibra</td><td class="n">Média</td><td class="pq">Comparação de material com consequência prática: higienização, peso e durabilidade.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 7</td><td>Solado PU, EVA ou borracha: o que muda no chão</td><td class="n">solado pu ou eva</td><td class="n">Média</td><td class="pq">Complementa o artigo de antiderrapante, que fala de aderência mas não de material.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 8</td><td>Palmilha de aço: quando o risco é perfuração</td><td class="n">palmilha antiperfurante</td><td class="n">Média</td><td class="pq">Item que obra e reforma pedem e que quase ninguém explica. Liga a construção.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 9</td><td>Calçado impermeável × hidrorrepelente: não é a mesma coisa</td><td class="n">calçado impermeável trabalho</td><td class="n">Média</td><td class="pq">Confusão que gera devolução. Cozinha e agro compram um achando que é o outro.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 10</td><td>Calçado de segurança para quem trabalha em pé o dia todo</td><td class="n">calçado para trabalhar em pé</td><td class="n">Alta</td><td class="pq">Consulta de dor, alto volume, e a resposta certa é ocupacional — o que puxa a categoria.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 11</td><td>Calçado antiestático e ESD: para eletrônica e ambiente inflamável</td><td class="n">calçado antiestático</td><td class="n">Baixa</td><td class="pq">Nicho técnico com pouca concorrência boa. Boa cauda longa.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 12</td><td>Calçado dielétrico: o que ele protege e o que não protege</td><td class="n">calçado dielétrico eletricista</td><td class="n">Média</td><td class="pq">Assunto com muita informação errada. Exige fonte e cautela — e é onde autor técnico pesa.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 13</td><td>Calçado feminino de segurança: por que a numeração importa</td><td class="n">botina feminina de segurança</td><td class="n">Média</td><td class="pq">Demanda real e mal atendida. Equipe mista com grade única é reclamação garantida.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 14</td><td>Como medir o pé para comprar calçado profissional</td><td class="n">como medir o pé numeração</td><td class="n">Alta</td><td class="pq">Cauda longa com alta intenção. Simples de fazer melhor que a SERP atual.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 15</td><td>Calçado de segurança para pé largo ou com joanete</td><td class="n">botina para pé largo</td><td class="n">Baixa</td><td class="pq">Cauda de dor, quase sem concorrência, e chega no orçamento com nome e sobrenome.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 16</td><td>O que muda entre calçado nacional e importado</td><td class="n">botina nacional ou importada</td><td class="n">Baixa</td><td class="pq">Pergunta de comprador que compara preço. Permite falar de CA e de reposição.</td></tr>
+          <tr><td class="n"><span class="p P3">P3</span> 17</td><td>Meia de trabalho: o EPI que ninguém lembra</td><td class="n">meia para botina de segurança</td><td class="n">Baixa</td><td class="pq">Cauda longa curiosa, ligada a conforto e a bolha. Reforça o cluster de conforto.</td></tr>
+          <tr><td class="n"><span class="p P3">P3</span> 18</td><td>Palmilha de conforto em calçado de segurança: pode?</td><td class="n">palmilha em botina de segurança</td><td class="n">Baixa</td><td class="pq">Dúvida real de quem sente dor. Tem resposta técnica e evita improviso perigoso.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="cluster">
+    <h3>2. Calçado — problema, uso e manutenção <span style="color:var(--tinta-3);font-weight:400">(12 pautas)</span></h3>
+    <p class="serp">O cluster com a maior lacuna que encontrei. Quem pesquisa aqui <em>já comprou</em> — e está insatisfeito. A SERP entrega blog de moda e truque caseiro. Uma distribuidora respondendo isso captura a troca, a próxima compra e a reposição da equipe inteira.</p>
+    <div class="rolagem">
+      <table>
+        <thead><tr><th></th><th>Pauta</th><th>Consulta</th><th>Demanda</th><th>Por que existe</th></tr></thead>
+        <tbody>
+          <tr><td class="n"><span class="p P0">P0</span> 19</td><td>Botina que machuca: é o calçado ou é a numeração?</td><td class="n">botina apertada machuca</td><td class="n">Muito alta</td><td class="pq">SERP dominada por blog de calçado social. Ninguém diz que biqueira não amacia — e que insistir arruína o pé e o par.</td></tr>
+          <tr><td class="n"><span class="p P0">P0</span> 20</td><td>Quando trocar o calçado de segurança</td><td class="n">quando trocar botina de segurança</td><td class="n">Alta</td><td class="pq">Pergunta de gestor e de trabalhador ao mesmo tempo. Resposta objetiva vira snippet e leva à reposição.</td></tr>
+          <tr><td class="n"><span class="p P0">P0</span> 21</td><td>Botina escorrega: o que fazer antes de trocar</td><td class="n">botina escorregando</td><td class="n">Alta</td><td class="pq">Liga direto ao artigo de solado e à categoria de antiderrapantes. Problema com risco de acidente.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 22</td><td>Como limpar e conservar calçado de segurança</td><td class="n">como limpar botina de segurança</td><td class="n">Alta</td><td class="pq">Consulta de manutenção com bom volume. Conservação é obrigação da NR-6 — liga norma e produto.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 23</td><td>Calçado de segurança pode molhar?</td><td class="n">botina de segurança pode molhar</td><td class="n">Média</td><td class="pq">Pergunta direta, resposta direta, forte candidata a resposta destacada.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 24</td><td>Chulé e odor em calçado fechado: o que resolve de verdade</td><td class="n">como tirar cheiro da botina</td><td class="n">Alta</td><td class="pq">Assunto que ninguém trata com seriedade técnica e que faz a equipe deixar de usar o calçado.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 25</td><td>Bolha no pé no trabalho: causa, prevenção e o que ela indica</td><td class="n">bolha no pé botina</td><td class="n">Média</td><td class="pq">Sintoma de numeração ou modelo errado. Ponte natural para orientação de escolha.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 26</td><td>Quanto tempo dura um calçado de segurança</td><td class="n">durabilidade botina de segurança</td><td class="n">Média</td><td class="pq">Pergunta de custo. Permite falar de troca programada sem prometer prazo.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 27</td><td>Calçado com biqueira exposta ou solado descolado: pode continuar usando?</td><td class="n">botina com bico aparecendo</td><td class="n">Baixa</td><td class="pq">Situação de campo com resposta clara: EPI danificado não protege, e a NR-6 fala disso.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 28</td><td>Amaciar botina nova: o que funciona e o que estraga</td><td class="n">como amaciar botina</td><td class="n">Alta</td><td class="pq">A SERP ensina truque de secador e amaciante. Faltava alguém dizer o que isso faz com o couro e a costura.</td></tr>
+          <tr><td class="n"><span class="p P3">P3</span> 29</td><td>Guardar EPI de calçado: o erro do armário fechado</td><td class="n">como guardar botina</td><td class="n">Baixa</td><td class="pq">Complementa conservação e é conhecimento de quem entrega e recolhe.</td></tr>
+          <tr><td class="n"><span class="p P3">P3</span> 30</td><td>Calçado molhado todo dia: o rodízio de pares compensa?</td><td class="n">dois pares de botina rodízio</td><td class="n">Baixa</td><td class="pq">Cálculo prático que aumenta ticket e é honesto: dois pares duram mais que dois pares.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="cluster">
+    <h3>3. Proteção das mãos <span style="color:var(--tinta-3);font-weight:400">(10 pautas)</span></h3>
+    <p class="serp">A SERP de luva é a mais intercambiável de todas — dez blogs repetindo a mesma lista de materiais. O diferencial disponível é o método: escolher pelo <em>risco e pelo produto químico</em>, não pelo material. Alimenta <code>/protecao/maos/</code>.</p>
+    <div class="rolagem">
+      <table>
+        <thead><tr><th></th><th>Pauta</th><th>Consulta</th><th>Demanda</th><th>Por que existe</th></tr></thead>
+        <tbody>
+          <tr><td class="n"><span class="p P0">P0</span> 31</td><td>Como escolher luva pelo produto químico que você manuseia</td><td class="n">luva para produto químico qual usar</td><td class="n">Alta</td><td class="pq">O método que ninguém publica: partir da ficha do produto. Conteúdo de referência, altamente citável por IA.</td></tr>
+          <tr><td class="n"><span class="p P0">P0</span> 32</td><td>Luva de procedimento não é luva de limpeza</td><td class="n">luva de procedimento para limpeza</td><td class="n">Alta</td><td class="pq">Erro de compra caríssimo em saúde e facilities, e já é argumento das páginas de Teresina e de limpeza.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 33</td><td>Nitrílica, látex, vinílica ou neoprene: a tabela que resolve</td><td class="n">tipos de luva de proteção</td><td class="n">Muito alta</td><td class="pq">Consulta de maior volume do cluster. Tabela real disputa snippet e AI Overview.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 34</td><td>Luva anticorte: como ler o nível de resistência</td><td class="n">luva anticorte nível</td><td class="n">Média</td><td class="pq">Assunto normativo com pouca explicação boa. Serve frigorífico, vidro e fábrica de calçado.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 35</td><td>Alergia a látex na equipe: o que trocar</td><td class="n">alergia a luva de látex</td><td class="n">Média</td><td class="pq">Problema real com solução de produto. Alta intenção e quase sem concorrência técnica.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 36</td><td>Luva de vaqueta e raspa: onde ainda fazem sentido</td><td class="n">luva de vaqueta para que serve</td><td class="n">Média</td><td class="pq">Categoria tradicional em obra, com dúvida real sobre limite de uso.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 37</td><td>Luva térmica: calor de contato não é calor de forno</td><td class="n">luva térmica cozinha industrial</td><td class="n">Média</td><td class="pq">Cozinha industrial compra errado com frequência. Liga alimentação.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 38</td><td>Tamanho de luva: por que a numeração muda o risco</td><td class="n">tamanho de luva de segurança</td><td class="n">Baixa</td><td class="pq">Luva folgada engancha, luva apertada cansa. Mesmo raciocínio da grade de calçado.</td></tr>
+          <tr><td class="n"><span class="p P3">P3</span> 39</td><td>Luva descartável pode ser reutilizada?</td><td class="n">reutilizar luva descartável</td><td class="n">Média</td><td class="pq">Resposta curta e direta, candidata a snippet, com consequência sanitária.</td></tr>
+          <tr><td class="n"><span class="p P3">P3</span> 40</td><td>Creme de proteção é EPI?</td><td class="n">creme de proteção EPI CA</td><td class="n">Baixa</td><td class="pq">Dúvida frequente de SESMT. Tem resposta normativa e exige fonte.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="cluster">
+    <h3>4. Proteção respiratória <span style="color:var(--tinta-3);font-weight:400">(9 pautas)</span></h3>
+    <p class="serp">Cluster com vocabulário técnico e muita gente comprando errado — PFF para vapor químico é o erro clássico. A página <code>/protecao/respiratoria/</code> já disputa PFF1/2/3; as pautas abaixo a cercam.</p>
+    <div class="rolagem">
+      <table>
+        <thead><tr><th></th><th>Pauta</th><th>Consulta</th><th>Demanda</th><th>Por que existe</th></tr></thead>
+        <tbody>
+          <tr><td class="n"><span class="p P0">P0</span> 41</td><td>Máscara descartável não protege de vapor químico</td><td class="n">pff2 serve para produto químico</td><td class="n">Alta</td><td class="pq">O erro mais perigoso do setor. Resposta direta, autocontida, com forte potencial de citação por IA.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 42</td><td>Respirador com filtro: como escolher o cartucho</td><td class="n">filtro para respirador qual escolher</td><td class="n">Alta</td><td class="pq">Continuação natural do anterior e a parte que a SERP trata superficialmente.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 43</td><td>Teste de vedação: o respirador que não sela não protege</td><td class="n">teste de vedação respirador</td><td class="n">Média</td><td class="pq">Prática que quase ninguém publica e que muda o resultado do EPI. Autoridade técnica pura.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 44</td><td>Barba e respirador: por que a vedação falha</td><td class="n">barba respirador vedação</td><td class="n">Média</td><td class="pq">Assunto polêmico em equipe, com resposta técnica clara. Gera discussão e link.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 45</td><td>Quando trocar a máscara PFF</td><td class="n">validade máscara pff2</td><td class="n">Alta</td><td class="pq">Pergunta objetiva de alto volume. Resposta curta ganha snippet.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 46</td><td>Com ou sem válvula: qual a diferença real</td><td class="n">pff2 com válvula ou sem</td><td class="n">Alta</td><td class="pq">Comparação simples e muito buscada, hoje respondida por e-commerce.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 47</td><td>Poeira de cimento, farinha e madeira: qual classe usar</td><td class="n">máscara para poeira de cimento</td><td class="n">Média</td><td class="pq">Cruza três setores reais da carteira e leva à página de respiratória.</td></tr>
+          <tr><td class="n"><span class="p P3">P3</span> 48</td><td>Máscara cirúrgica × PFF: não são a mesma proteção</td><td class="n">máscara cirúrgica ou pff2</td><td class="n">Média</td><td class="pq">Confusão persistente em saúde. Resposta direta e verificável.</td></tr>
+          <tr><td class="n"><span class="p P3">P3</span> 49</td><td>Higienização e guarda do respirador reutilizável</td><td class="n">como limpar respirador</td><td class="n">Baixa</td><td class="pq">Conservação é exigência da norma e prolonga a vida do equipamento.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="cluster">
+    <h3>5. Auditiva, ocular, facial e cabeça <span style="color:var(--tinta-3);font-weight:400">(11 pautas)</span></h3>
+    <p class="serp">Categorias menores em volume, mas com dúvidas muito específicas e concorrência fraca. Alimentam quatro páginas de <code>/protecao/</code> que hoje recebem pouco link editorial.</p>
+    <div class="rolagem">
+      <table>
+        <thead><tr><th></th><th>Pauta</th><th>Consulta</th><th>Demanda</th><th>Por que existe</th></tr></thead>
+        <tbody>
+          <tr><td class="n"><span class="p P1">P1</span> 50</td><td>Plug ou concha: qual protetor auditivo usar</td><td class="n">protetor auditivo plug ou concha</td><td class="n">Alta</td><td class="pq">Comparativo clássico do cluster, com resposta que depende do ruído e da jornada.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 51</td><td>Como ler a atenuação (NRRsf) no CA</td><td class="n">nrrsf o que significa</td><td class="n">Média</td><td class="pq">Número que aparece em todo CA e que quase ninguém sabe usar. Muito citável.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 52</td><td>Proteção demais também é problema: superproteção auditiva</td><td class="n">protetor auditivo atenuação alta demais</td><td class="n">Baixa</td><td class="pq">Contraintuitivo, verdadeiro e memorável. O tipo de conteúdo que gera link.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 53</td><td>Óculos de segurança embaça: como resolver</td><td class="n">óculos de segurança embaçando</td><td class="n">Alta</td><td class="pq">Problema diário, resposta prática, e leva a antiembaçante e a modelo certo.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 54</td><td>Quem usa óculos de grau: sobrepor ou lente de grau?</td><td class="n">óculos de segurança para quem usa grau</td><td class="n">Média</td><td class="pq">Situação comum sem boa resposta na SERP, com solução de produto clara.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 55</td><td>Lente clara, cinza ou in-out: qual usar onde</td><td class="n">lente de óculos de segurança cinza</td><td class="n">Média</td><td class="pq">Escolha por ambiente, não por estética. Serve obra, pátio e indústria.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 56</td><td>Protetor facial não substitui óculos</td><td class="n">protetor facial ou óculos de segurança</td><td class="n">Média</td><td class="pq">Erro de compra com consequência séria. Resposta normativa e direta.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 57</td><td>Capacete: classe A ou B, aba total ou frontal</td><td class="n">capacete classe a ou b</td><td class="n">Alta</td><td class="pq">Consulta forte de construção, hoje respondida por e-commerce sem critério.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 58</td><td>Jugular: quando o capacete precisa dela</td><td class="n">jugular capacete obrigatório</td><td class="n">Média</td><td class="pq">Pergunta normativa recorrente em obra, com fonte oficial disponível.</td></tr>
+          <tr><td class="n"><span class="p P3">P3</span> 59</td><td>Validade do capacete: por que ele vence sem quebrar</td><td class="n">validade do capacete de segurança</td><td class="n">Média</td><td class="pq">Fato contraintuitivo e verificável no CA. Bom para snippet.</td></tr>
+          <tr><td class="n"><span class="p P3">P3</span> 60</td><td>Adesivo e tinta no capacete: pode?</td><td class="n">pode colar adesivo no capacete</td><td class="n">Baixa</td><td class="pq">Dúvida frequente de encarregado, com resposta técnica sobre o casco.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="cluster">
+    <h3>6. Normas, CA e responsabilidades <span style="color:var(--tinta-3);font-weight:400">(14 pautas)</span></h3>
+    <p class="serp">A SERP é de advogado e de consultoria de SST. A Tower não deve dar parecer jurídico — deve dar a leitura operacional, citando a norma e a fonte oficial. Todo o cluster pendura no artigo de NR-6, que vira hub.</p>
+    <div class="rolagem">
+      <table>
+        <thead><tr><th></th><th>Pauta</th><th>Consulta</th><th>Demanda</th><th>Por que existe</th></tr></thead>
+        <tbody>
+          <tr><td class="n"><span class="p P0">P0</span> 61</td><td>Ficha de entrega de EPI: o que precisa constar</td><td class="n">ficha de entrega de epi modelo</td><td class="n">Muito alta</td><td class="pq">Consulta de altíssimo volume e intenção. É o documento que resolve a fiscalização — e a Tower vê ficha todo mês.</td></tr>
+          <tr><td class="n"><span class="p P0">P0</span> 62</td><td>A empresa pode descontar EPI do salário?</td><td class="n">desconto de epi em folha</td><td class="n">Alta</td><td class="pq">SERP só de advocacia. Entra pela operação — o que evita o problema é registro e orientação —, cita a norma e não dá parecer.</td></tr>
+          <tr><td class="n"><span class="p P0">P0</span> 63</td><td>CA vencido: o EPI pode continuar em uso?</td><td class="n">ca vencido pode usar</td><td class="n">Alta</td><td class="pq">Pergunta objetiva com resposta que quase todo mundo erra. Expande o artigo de CA e disputa snippet.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 64</td><td>Funcionário recusa usar EPI: o que a empresa faz</td><td class="n">funcionário se recusa a usar epi</td><td class="n">Alta</td><td class="pq">Dor real de encarregado. Resposta operacional antes da disciplinar — e quase sempre o EPI é desconfortável.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 65</td><td>Como saber se um CA é verdadeiro</td><td class="n">como verificar ca do epi</td><td class="n">Alta</td><td class="pq">Complementa o artigo existente com o passo a passo da consulta oficial.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 66</td><td>EPI usado ou de segunda mão: pode?</td><td class="n">epi usado pode ser reutilizado</td><td class="n">Média</td><td class="pq">Pergunta com resposta normativa clara e consequência de segurança.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 67</td><td>Quem escolhe o EPI: SESMT, CIPA ou compras?</td><td class="n">quem define o epi na empresa</td><td class="n">Média</td><td class="pq">Organiza a decisão de compra e posiciona a Tower como apoio, não como quem decide.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 68</td><td>EPI em contrato de terceirizados: de quem é a obrigação</td><td class="n">epi terceirizado quem fornece</td><td class="n">Média</td><td class="pq">Dúvida de facilities e construção, os dois setores mais terceirizados da carteira.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 69</td><td>Treinamento de uso de EPI: o que a norma exige</td><td class="n">treinamento de epi obrigatório</td><td class="n">Média</td><td class="pq">Obrigação frequentemente ignorada, e a Tower orienta sem vender treinamento.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 70</td><td>Fiscalização de EPI: o que costuma ser pedido</td><td class="n">fiscalização do trabalho epi</td><td class="n">Média</td><td class="pq">Conteúdo de preparação, alto valor para o comprador B2B.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 71</td><td>EPI e eSocial: o que entra no S-2240</td><td class="n">epi esocial s-2240</td><td class="n">Média</td><td class="pq">Assunto técnico de RH que gera busca constante. Exige fonte oficial e cuidado.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 72</td><td>EPI × EPC: quando o coletivo vem primeiro</td><td class="n">epi ou epc diferença</td><td class="n">Alta</td><td class="pq">Comparativo conceitual muito buscado, e a hierarquia certa é EPC antes de EPI.</td></tr>
+          <tr><td class="n"><span class="p P3">P3</span> 73</td><td>Insalubridade: EPI reduz ou elimina o adicional?</td><td class="n">epi elimina insalubridade</td><td class="n">Alta</td><td class="pq">Alta demanda, mas terreno jurídico. Só publicar com fonte e sem afirmação categórica.</td></tr>
+          <tr><td class="n"><span class="p P3">P3</span> 74</td><td>Onde fica o número do CA em cada tipo de EPI</td><td class="n">onde fica o ca no epi</td><td class="n">Média</td><td class="pq">Guia visual simples, útil no dia a dia, e alimenta o artigo de CA.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 7 -->
+  <div class="cluster">
+    <h3>7. Compra corporativa e gestão de EPI <span style="color:var(--tinta-3);font-weight:400">(10 pautas)</span></h3>
+    <p class="serp">O cluster mais comercial de todos e o mais vazio na SERP — quem escreve sobre EPI escreve para o usuário, não para quem compra. Alimenta <code>/empresas/</code>, <code>/empresas/como-atendemos/</code> e <code>/orcamento/</code>.</p>
+    <div class="rolagem">
+      <table>
+        <thead><tr><th></th><th>Pauta</th><th>Consulta</th><th>Demanda</th><th>Por que existe</th></tr></thead>
+        <tbody>
+          <tr><td class="n"><span class="p P0">P0</span> 75</td><td>Como escolher um fornecedor de EPI</td><td class="n">como escolher fornecedor de epi</td><td class="n">Média</td><td class="pq">Única pauta da sua lista original sem equivalente no site. Sem cidade no título, para servir a todas.</td></tr>
+          <tr><td class="n"><span class="p P0">P0</span> 76</td><td>Como montar o primeiro pedido de EPI de uma equipe</td><td class="n">como comprar epi para empresa</td><td class="n">Média</td><td class="pq">Conteúdo BOFU puro, que termina naturalmente no orçamento.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 77</td><td>Matriz de EPI por função: como montar a sua</td><td class="n">matriz de epi por função</td><td class="n">Média</td><td class="pq">Documento que toda empresa precisa e poucas têm. Candidato a material âncora.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 78</td><td>Estoque mínimo de EPI: quanto guardar sem empatar dinheiro</td><td class="n">estoque de epi empresa</td><td class="n">Baixa</td><td class="pq">Assunto de comprador, sem concorrência, e a Tower tem trinta anos de padrão de consumo.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 79</td><td>O erro de comprar EPI pelo menor preço</td><td class="n">epi barato vale a pena</td><td class="n">Média</td><td class="pq">Argumento comercial legítimo quando sustentado por custo de troca e de acidente.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 80</td><td>Padronizar EPI em equipe com alta rotatividade</td><td class="n">padronização de epi equipe</td><td class="n">Baixa</td><td class="pq">Dor de cozinha, limpeza e logística — três setores da carteira.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 81</td><td>Personalizar EPI com logo: o que pode e o que anula o CA</td><td class="n">personalizar epi com logo</td><td class="n">Média</td><td class="pq">Pergunta comercial comum com resposta técnica importante.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 82</td><td>Descarte de EPI usado: o que fazer com o que sai de uso</td><td class="n">descarte de epi usado</td><td class="n">Média</td><td class="pq">Tema ambiental crescente, com pouca resposta boa e responsabilidade da empresa.</td></tr>
+          <tr><td class="n"><span class="p P3">P3</span> 83</td><td>Comprar EPI por licitação: o que muda</td><td class="n">licitação de epi</td><td class="n">Baixa</td><td class="pq">Nicho relevante para hospital público e prefeitura — presentes nas cidades atendidas.</td></tr>
+          <tr><td class="n"><span class="p P3">P3</span> 84</td><td>Uniforme é EPI?</td><td class="n">uniforme é epi</td><td class="n">Média</td><td class="pq">Confusão conceitual frequente, com resposta normativa curta.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 8 -->
+  <div class="cluster">
+    <h3>8. Profissões que o site ainda não cobre <span style="color:var(--tinta-3);font-weight:400">(8 pautas)</span></h3>
+    <p class="serp">As sete profissões já publicadas <strong>não entram aqui</strong> — para elas a ação é expandir a página, nunca criar artigo. Estas oito são profissões novas, e cada uma abre caminho para virar página se o tráfego justificar.</p>
+    <div class="rolagem">
+      <table>
+        <thead><tr><th></th><th>Pauta</th><th>Consulta</th><th>Demanda</th><th>Por que existe</th></tr></thead>
+        <tbody>
+          <tr><td class="n"><span class="p P1">P1</span> 85</td><td>EPI para eletricista</td><td class="n">epi para eletricista</td><td class="n">Muito alta</td><td class="pq">Alto volume. A Tower atende a parte de calçado, luva e óculos e diz com clareza o que não fornece — altura e arco elétrico.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 86</td><td>EPI para soldador</td><td class="n">epi para soldador</td><td class="n">Alta</td><td class="pq">Cluster com vocabulário próprio e pouca sobreposição com as páginas atuais.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 87</td><td>EPI para frigorífico e câmara fria</td><td class="n">epi para frigorífico</td><td class="n">Alta</td><td class="pq">Frio, umidade e corte ao mesmo tempo. Setor forte no Nordeste e ausente do site.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 88</td><td>EPI para mecânico de oficina</td><td class="n">epi para mecânico</td><td class="n">Alta</td><td class="pq">Público grande, com risco químico e de impacto, e nenhuma página atual atende.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 89</td><td>EPI para pintor</td><td class="n">epi para pintor</td><td class="n">Média</td><td class="pq">Respiratória com filtro é o centro — liga ao cluster mais técnico do site.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 90</td><td>EPI para jardinagem e roçada</td><td class="n">epi para roçadeira</td><td class="n">Média</td><td class="pq">Condomínio e prefeitura compram isso e ninguém escreve direito.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 91</td><td>EPI para motorista e entregador</td><td class="n">epi para motorista</td><td class="n">Média</td><td class="pq">Ligação natural com logística, que já é página, sem canibalizar.</td></tr>
+          <tr><td class="n"><span class="p P3">P3</span> 92</td><td>EPI para trabalho ao ar livre: sol e calor</td><td class="n">proteção solar trabalhador epi</td><td class="n">Média</td><td class="pq">Assunto crescente, com forte encaixe no agro do Vale do Açu.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 9 -->
+  <div class="cluster">
+    <h3>9. Local — só onde há razão verdadeira <span style="color:var(--tinta-3);font-weight:400">(4 pautas)</span></h3>
+    <p class="serp">Sua Fase 7 proíbe artigo local artificial, e eu concordo. Das dezenas de combinações possíveis, só quatro passam no teste: existe atividade econômica real, e o conteúdo seria diferente sem o nome da cidade. As páginas de <code>/epi-por-cidade/</code> já cobrem o resto.</p>
+    <div class="rolagem">
+      <table>
+        <thead><tr><th></th><th>Pauta</th><th>Consulta</th><th>Demanda</th><th>Por que existe</th></tr></thead>
+        <tbody>
+          <tr><td class="n"><span class="p P1">P1</span> 93</td><td>EPI para fábrica de calçado: o guia do polo do Cariri</td><td class="n">epi fábrica de calçado</td><td class="n">Baixa</td><td class="pq">Assunto nacional com âncora local verdadeira. Sustenta a página de Barbalha e não existe em lugar nenhum.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 94</td><td>EPI para fruticultura irrigada</td><td class="n">epi para aplicação de defensivo</td><td class="n">Média</td><td class="pq">Categoria mal servida na internet, sustenta a página de Assú e tem regra própria: a bula manda.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 95</td><td>EPI para hotel e pousada de litoral</td><td class="n">epi para hotelaria</td><td class="n">Baixa</td><td class="pq">Areia, maresia e sazonalidade mudam a compra. Sustenta Parnaíba e Natal.</td></tr>
+          <tr><td class="n"><span class="p P2">P2</span> 96</td><td>EPI para indústria têxtil</td><td class="n">epi para indústria têxtil</td><td class="n">Média</td><td class="pq">O setor do cliente mais antigo da Tower. Experiência real de três décadas, e sustenta Natal.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 10 -->
+  <div class="cluster">
+    <h3>10. Conteúdos-fosso <span style="color:var(--tinta-3);font-weight:400">(4 peças)</span></h3>
+    <p class="serp">Não são artigos. São peças difíceis de copiar, que atraem link e que a concorrência de blog não consegue reproduzir — e o site já tem a base técnica para todas.</p>
+    <div class="rolagem">
+      <table>
+        <thead><tr><th></th><th>Peça</th><th>Formato</th><th>Demanda</th><th>Por que existe</th></tr></thead>
+        <tbody>
+          <tr><td class="n"><span class="p P0">P0</span> 97</td><td>Tabela de EPI por função</td><td class="n">Tabela navegável</td><td class="n">Média</td><td class="pq">Cruza função × risco × EPI num só lugar. Material de referência que o setor inteiro consulta e cita.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 98</td><td>Checklist de fiscalização de EPI</td><td class="n">Checklist imprimível</td><td class="n">Média</td><td class="pq">Item de valor imediato para SESMT e RH. Gera compartilhamento e link natural.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 99</td><td>Calculadora de reposição de calçado</td><td class="n">Ferramenta</td><td class="n">Baixa</td><td class="pq">Complementa o <code>/encontrar-epi/</code> que já existe e termina em orçamento com número na mão.</td></tr>
+          <tr><td class="n"><span class="p P1">P1</span> 100</td><td>Glossário de EPI e segurança do trabalho</td><td class="n">Glossário com âncoras</td><td class="n">Média</td><td class="pq">Definições curtas e autocontidas são o formato que mecanismos generativos mais citam. Distribui link para todo o site.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <span class="num">Fase 21</span>
+  <h2>Top 10 absolutas — se der para fazer só dez</h2>
+  <p class="col">Ordenadas por retorno esperado, cruzando lacuna real na SERP, intenção comercial e o que a Tower consegue escrever melhor que qualquer concorrente.</p>
+  <div class="rolagem" style="margin-top:1.3rem">
+    <table>
+      <thead><tr><th>#</th><th>Pauta</th><th>Por que está no topo</th></tr></thead>
+      <tbody>
+        <tr><td class="n">1</td><td>Ficha de entrega de EPI</td><td class="pq">Maior volume com intenção B2B do plano inteiro, e a Tower vê essa ficha todo mês.</td></tr>
+        <tr><td class="n">2</td><td>Botina que machuca</td><td class="pq">SERP entregue a blog de moda. Quem pesquisa já comprou errado — e vai comprar de novo.</td></tr>
+        <tr><td class="n">3</td><td>Biqueira composite ou aço</td><td class="pq">Comparativo mais buscado do núcleo comercial, hoje sem nenhum autor técnico.</td></tr>
+        <tr><td class="n">4</td><td>Luva de procedimento não é luva de limpeza</td><td class="pq">Erro caro em saúde e facilities, e já é argumento de duas páginas do site.</td></tr>
+        <tr><td class="n">5</td><td>Máscara descartável não protege de vapor químico</td><td class="pq">O erro mais perigoso do setor. Resposta curta e altamente citável.</td></tr>
+        <tr><td class="n">6</td><td>Quando trocar o calçado de segurança</td><td class="pq">Gestor e trabalhador buscam a mesma coisa, e a resposta leva à reposição.</td></tr>
+        <tr><td class="n">7</td><td>Desconto de EPI em folha</td><td class="pq">SERP só de advogado. A leitura operacional é território livre.</td></tr>
+        <tr><td class="n">8</td><td>CA vencido pode usar?</td><td class="pq">Expande um artigo que já existe e disputa resposta destacada.</td></tr>
+        <tr><td class="n">9</td><td>Como escolher fornecedor de EPI</td><td class="pq">A única da sua lista original sem equivalente no site. BOFU puro.</td></tr>
+        <tr><td class="n">10</td><td>Tabela de EPI por função</td><td class="pq">A peça que vira referência e atrai link — o que nenhum artigo isolado faz.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <span class="num">Fase 25</span>
+  <h2>Calendário 30 / 60 / 90</h2>
+  <div class="col" style="display:flex;flex-direction:column;gap:1.1rem;margin-top:1.5rem">
+    <div class="quadro">
+      <h3>30 dias — quick wins e a base do site</h3>
+      <p>Antes de qualquer artigo novo: <strong>o Lote 2</strong>, que engorda os hubs de 59 a 207 palavras, e <strong>resolver a duplicação</strong> entre <code>/calcados/comparativo/</code> e o artigo de ocupacional × segurança. Publicar as pautas 61, 19, 31 e 41 — as quatro maiores lacunas com resposta pronta na cabeça do Helano.</p>
+    </div>
+    <div class="quadro">
+      <h3>60 dias — fechar os clusters comerciais</h3>
+      <p>Calçado (1–10 e 20–24) e mãos (32–35). É onde a busca vira orçamento. Em paralelo, expandir os cinco artigos existentes com o que ficou de fora.</p>
+    </div>
+    <div class="quadro">
+      <h3>90 dias — autoridade e fosso</h3>
+      <p>Normas (63–68), profissões novas (85–88), as quatro pautas locais e as peças-fosso. É a fase que constrói o que a concorrência não copia.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <span class="num">Fase 30</span>
+  <h2>O que eu não recomendo criar</h2>
+  <p class="col">Faz parte do trabalho dizer o que fica de fora, e por quê.</p>
+  <ul class="col" style="margin-top:1.2rem">
+    <li><strong>Artigo para as sete profissões que já são página.</strong> Cozinha, enfermagem, limpeza, construção, indústria, logística e manutenção já têm URL posicionada. Artigo paralelo é canibalização.</li>
+    <li><strong>“Botina de segurança Fortaleza” e afins.</strong> A SERP é marketplace puro. Conteúdo não ganha essa consulta; o que ganha é preço e prazo.</li>
+    <li><strong>Nada com “[2026]” no título.</strong> É o que os concorrentes de NR-6 fazem. Envelhece sozinho e obriga a reeditar tudo todo ano.</li>
+    <li><strong>Artigo local sem razão.</strong> “Curiosidades sobre EPI em Natal” não existe neste plano — as quatro pautas locais têm atividade econômica real por trás.</li>
+    <li><strong>Parecer jurídico.</strong> Insalubridade e desconto em folha entram citando norma e fonte, e dizendo quando a pergunta é para o advogado da empresa.</li>
+    <li><strong>Altura, NR-10 e arco elétrico como cluster.</strong> Não é o que a Tower distribui. Aparecem como “o que não fornecemos”, que é E-E-A-T e não perda.</li>
+  </ul>
+</section>
+
+<footer>
+  <p>Pesquisa e priorização — nenhum artigo foi produzido. Demanda é estimativa qualitativa: não há ferramenta de volume neste ambiente, e número inventado seria pior que nenhum.</p>
+</footer>
+
+</div>
