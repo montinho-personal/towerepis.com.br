@@ -174,6 +174,10 @@ export const ARTIGOS: Artigo[] = [
     ctaTitulo: 'Trabalha em cozinha e ainda está em dúvida?',
     ctaTexto:
       'Conte como é a sua rotina: tipo de cozinha, como fica o piso e quantas horas você passa em pé. A gente mostra as opções que fazem sentido e explica a diferença entre elas.',
+    imagem: {
+      alt:
+        'Calçado de cozinha preto, fechado e sem cadarço, sobre fundo claro com blocos vermelho e preto, e o título: qual o melhor calçado para trabalhar em cozinha.',
+    },
   },
   {
     slug: 'o-que-e-ca-certificado-de-aprovacao',

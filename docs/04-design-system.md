@@ -588,14 +588,22 @@ ela estiver no dado estruturado, mesmo já estando na página.
 **A capa vem depois do título**, não antes: quem chegou veio com uma dúvida, e
 quem responde a dúvida é o texto. Ela carrega com `priority`, porque é o LCP.
 
-### Uma capa ficou de fora
+### A borda que não podia ser estendida
 
-`Qual-o-melhor-calçado.png` (cozinha) traz **uma marca que não é a da Tower**:
-um monograma "TT", "TOWER EPIS" sem apóstrofo, e um selo circular inventado no
-canto inferior. As outras quatro trazem o logotipo correto. Publicar marca
-inventada é pior que não ter capa, então o artigo de cozinha segue sem imagem
-até chegar uma versão corrigida. O arquivo está guardado em
-`docs/originais/artigos/calcado-cozinha-LOGO-INCORRETO.png`.
+A primeira versão da arte de cozinha trazia uma marca que não era a da Tower —
+monograma "TT", "TOWER EPIS" sem apóstrofo, selo circular inventado. Ficou de
+fora e foi substituída por uma versão com o logotipo correto.
+
+A nova trouxe um problema técnico que as outras não tinham: **blocos vermelho e
+preto encostam na borda direita**. Estender o cinza claro ali deixaria uma tira
+visível ao lado do bloco. O script mede a amplitude de cor de cada borda antes
+de decidir — 6 pixels de largura, borda uniforme é amplitude ≤ 12 — e distribui
+a folga só para os lados que aguentam. Nesta arte: amplitude 9 à esquerda, 242
+à direita, então os 255px foram todos para a esquerda. Nas outras quatro, as
+duas bordas são uniformes e a folga se divide ao meio.
+
+Se nenhuma borda for uniforme, o script corta pelo centro em vez de inventar
+fundo. Nenhuma das cinco caiu nesse caso.
 
 ---
 
