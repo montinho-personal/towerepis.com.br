@@ -446,6 +446,59 @@ páginas).
 
 ---
 
+## O DESTAQUE DEIXOU DE SER SEMPRE UM NÚMERO
+
+A barra de prova nasceu com quatro números. Quando "Bompel" entrou no lugar de
+um deles — a parceria de hoje, que o cliente pediu para destacar —, o slot do
+numeral passou a receber seis letras onde antes cabiam quatro dígitos
+tabulares. A 52px, "Bompel" pede 178px e a coluna de celular tem 128 a 174.
+
+**Estourava a página inteira abaixo de 360px**, e estourava de novo **em
+1024px**, onde a grade vira quatro colunas com o container ainda estreito — a
+coluna encolhe de 288 para 218px justamente quando o tipo cresce para 68px.
+
+O tamanho agora acompanha a coluna, fluido, e os quatro destaques escalam
+juntos: uma linha só de tamanho em qualquer largura, que é o que faz a barra
+parecer composta e não montada.
+
+```
+text-[clamp(2.1rem,calc(11.5vw-6px),3.25rem)]   sm:text-[4.25rem]
+lg:text-[clamp(3.5rem,5.5vw,4.25rem)]
+```
+
+Os tetos — 3,25rem e 4,25rem — são exatamente `text-5xl` e `text-6xl`, os
+tamanhos de antes. Onde já cabia, nada mudou: de 505px para cima no celular e
+de 1236px para cima no desktop, o tamanho é o mesmo de sempre. A fórmula da
+base é a largura real da coluna (`0,5·vw − 32`) dividida pelo avanço da fonte,
+com folga; a de `lg` idem, sobre a coluna de quatro.
+
+**A regra que fica:** destaque com palavra não é destaque com número. Antes de
+pôr uma palavra no slot do numeral, medir a coluna mais estreita em que ela vai
+cair — que quase nunca é a do celular, e quase sempre é a do primeiro
+breakpoint de várias colunas.
+
+### A armadilha de grade, segunda aparição
+
+A coluna de texto dos artigos (`prose-tower`) é item de grade, e item de grade
+tem `min-width: auto`. A tabela comparativa dentro dela — mesmo tendo o próprio
+`overflow-x-auto`, que deveria bastar — empurrava a coluna para 337px dentro de
+uma tela de 320. `min-w-0` no item resolve. É a mesma armadilha do retrato do
+Helano, no mesmo projeto, pela segunda vez: **toda vez que algo largo entra num
+item de grade, o item precisa de `min-w-0`.**
+
+### O que a QA aprendeu
+
+A QA media 390 e 1440. Os dois defeitos acima passaram nas duas: um vive
+abaixo de 360, o outro em 1024. Duas larguras não são uma amostra — são dois
+pontos escolhidos por hábito. `docs/ferramentas/qa-larguras.mjs` agora varre as
+42 rotas em doze larguras, de 320 a 1440, procurando página que rola na
+horizontal e texto que não cabe na própria caixa.
+
+Falso positivo conhecido e registrado no próprio arquivo: o "1995" decorativo
+do rodapé transborda a coluna de propósito, para a calha vazia ao lado.
+
+---
+
 ## AINDA FALTA
 
 O sistema está desenhado para mais fotografia do que tem.

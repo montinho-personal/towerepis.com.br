@@ -146,7 +146,10 @@ export default async function Artigo({ params }: { params: Promise<{ slug: strin
 
         <div className="wrap">
           <div className="grid gap-12 lg:grid-cols-[1fr_20rem] lg:gap-16">
-            <div className="prose-tower max-w-2xl">
+            {/* `min-w-0`: item de grade tem `min-width: auto`, então a tabela
+                comparativa — mesmo dentro do seu próprio `overflow-x-auto` —
+                empurrava a coluna inteira para além da tela em 320px. */}
+            <div className="prose-tower min-w-0 max-w-2xl">
               {a.blocos.map((bloco, i) => (
                 <Renderizar key={i} bloco={bloco} />
               ))}

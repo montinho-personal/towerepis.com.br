@@ -498,7 +498,16 @@ export function BarraProva({ continua = false }: { continua?: boolean }) {
         <ul className="grid grid-cols-2 gap-x-6 gap-y-9 lg:grid-cols-4">
           {fatos.map((f) => (
             <li key={f.destaque}>
-              <p className="numeral text-5xl text-tower-red-light sm:text-6xl">
+              {/* Fluido, e não um degrau por breakpoint: o destaque deixou de
+                  ser sempre um número. "Bompel" ocupa seis letras onde "1995"
+                  ocupa quatro dígitos tabulares, e a 52px ele não cabe em
+                  coluna de celular — estourava a página inteira abaixo de
+                  360px, e estourava de novo em 1024px, onde a grade vira
+                  quatro colunas com o container ainda estreito. O tamanho
+                  agora acompanha a coluna: os tetos (3,25rem e 4,25rem) são
+                  exatamente os tamanhos de antes, então nada mudou onde já
+                  cabia. */}
+              <p className="numeral text-[clamp(2.1rem,calc(11.5vw-6px),3.25rem)] text-tower-red-light sm:text-[4.25rem] lg:text-[clamp(3.5rem,5.5vw,4.25rem)]">
                 {f.destaque}
               </p>
               <p className="mt-4 max-w-[16ch] text-[0.9rem] leading-snug text-paper/70">
