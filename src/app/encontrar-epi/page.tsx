@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
-import { Trilha, CabecalhoPagina, Secao } from '@/components/Blocos'
+import Link from 'next/link'
+import { Trilha, CabecalhoPagina, EmUmaFrase, Secao } from '@/components/Blocos'
 import { Ferramenta } from '@/components/Ferramenta'
 
 export const metadata: Metadata = {
@@ -34,6 +35,55 @@ export default function EncontrarEpi() {
         </div>
 
         <Ferramenta />
+      </Secao>
+
+      {/* A página tinha 59 palavras: era a ferramenta e mais nada. Uma página
+          que só carrega um componente não responde a busca nenhuma, e esta é
+          a porta de entrada de quem não sabe nomear o que precisa. */}
+      <Secao className="wrap" ritmo="normal">
+        <EmUmaFrase>
+          Esta ferramenta faz quatro perguntas sobre a sua rotina de trabalho — o ambiente,
+          o que passa pelas mãos, o piso e o tempo em pé — e devolve as categorias de
+          Equipamento de Proteção Individual (EPI) que costumam merecer atenção nesse
+          perfil. É uma orientação inicial para você saber o que perguntar; não substitui a
+          avaliação de riscos da empresa, que é feita por profissional habilitado.
+        </EmUmaFrase>
+
+        <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:gap-16">
+          <div className="space-y-4 text-[1.02rem] leading-relaxed text-ink-2">
+            <h2 className="eyebrow text-ink">Para que ela serve</h2>
+            <p>
+              Para quem sabe descrever o trabalho, mas não sabe o nome do equipamento.
+              Muita gente chega dizendo “preciso de um sapato que não escorregue” ou “uma
+              luva para produto de limpeza” — e a partir daí a conversa anda.
+            </p>
+            <p>
+              No fim, você pode mandar o resultado pelo WhatsApp com o contexto já pronto,
+              sem precisar repetir tudo.
+            </p>
+          </div>
+          <div className="space-y-4 text-[1.02rem] leading-relaxed text-ink-2">
+            <h2 className="eyebrow text-ink">Se preferir ir direto</h2>
+            <p>
+              Já sabe a sua atividade? Vá por{' '}
+              <Link href="/para-seu-trabalho/" className="underline underline-offset-4 hover:text-tower-red">
+                profissão
+              </Link>
+              . Já sabe o que precisa proteger? Vá por{' '}
+              <Link href="/protecao/" className="underline underline-offset-4 hover:text-tower-red">
+                parte do corpo
+              </Link>
+              .
+            </p>
+            <p>
+              É calçado e a dúvida é entre os dois tipos?{' '}
+              <Link href="/calcados/comparativo/" className="underline underline-offset-4 hover:text-tower-red">
+                Ocupacional ou de segurança
+              </Link>{' '}
+              responde em uma frase.
+            </p>
+          </div>
+        </div>
       </Secao>
     </>
   )

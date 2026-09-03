@@ -73,6 +73,10 @@ export default function Comparativo() {
       </Secao>
 
       <Secao className="wrap pt-0">
+        {/* O par que canibalizava. Esta página decide a COMPRA; o artigo
+            explica a NORMA. Antes as duas tinham o mesmo H1 e disputavam a
+            mesma consulta — duas páginas boas gastando uma. O link explicita
+            a divisão para o leitor e para o buscador. */}
         <h2 className="eyebrow">A distinção normativa</h2>
         <div className="mt-6">
           <Comparacao
@@ -100,6 +104,18 @@ export default function Comparativo() {
             }}
           />
         </div>
+        <p className="mt-8 measure text-[0.95rem] leading-relaxed text-ink-2">
+          Esta página existe para você <strong>decidir qual comprar</strong>. Se o que você
+          precisa é entender as duas normas — o que cada uma exige da biqueira e como isso
+          aparece na marcação do produto —, isso está em{' '}
+          <Link
+            href="/conhecimento/calcado-ocupacional-ou-de-seguranca/"
+            className="underline underline-offset-4 hover:text-tower-red"
+          >
+            NBR ISO 20345 e 20347: o que muda no calçado profissional
+          </Link>
+          .
+        </p>
       </Secao>
 
       {/* SE / ENTÃO — a pergunta que resolve, em vez de "qual é melhor". */}

@@ -275,10 +275,15 @@ export const ARTIGOS: Artigo[] = [
   },
   {
     slug: 'calcado-ocupacional-ou-de-seguranca',
-    titulo: 'Calçado ocupacional ou de segurança: qual é o seu caso?',
+    // H1 SEPARADO POR INTENÇÃO. Este artigo e /calcados/comparativo/ tinham o
+    // mesmo H1 — "qual é o seu caso?" — e 0,74 de sobreposição na auditoria.
+    // Duas páginas boas disputando a mesma consulta é uma página desperdiçada.
+    // A decisão de compra ficou com a página comercial; aqui fica a norma, que
+    // é o que este texto realmente explica.
+    titulo: 'NBR ISO 20345 e 20347: o que muda no calçado profissional',
     tituloSeo: 'NBR ISO 20345 e 20347: o que muda no calçado',
     resumo:
-      'A diferença está na biqueira e nas normas que cada um atende. Como saber qual serve para a sua atividade.',
+      'As duas normas que separam o calçado de segurança do ocupacional, o que cada uma exige da biqueira e como ler isso na marcação do produto.',
     descricaoSeo:
       'As duas normas do calçado profissional, o que cada uma exige da biqueira, e a pergunta que resolve a dúvida na maioria dos casos.',
     publicado: '2026-08-30',
@@ -313,24 +318,31 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
-        texto: 'A pergunta que resolve',
+        texto: 'Como saber qual norma um calçado atende',
       },
       {
         tipo: 'p',
         texto:
-          'Em vez de tentar decidir qual é "melhor", faça a pergunta certa: <strong>na minha rotina, existe risco de algo pesado cair ou prensar o meu pé?</strong>',
-      },
-      {
-        tipo: 'lista',
-        itens: [
-          'Se existe — movimentação de carga, ferramenta pesada, peça, palete, empilhadeira — o caso é de calçado de segurança.',
-          'Se não existe, e o problema real é piso escorregadio, líquido e jornada longa em pé, o calçado ocupacional tende a atender melhor.',
-        ],
+          'A norma não se descobre pela aparência. Um calçado ocupacional e um de segurança podem ser visualmente parecidos, e a biqueira de proteção nem sempre aparece por fora — existe inclusive a chamada biqueira de conformação, que dá forma ao bico mas não é biqueira de proteção.',
       },
       {
         tipo: 'p',
         texto:
-          'Note que "melhor" aqui não significa "mais protegido em geral". Significa mais adequado ao risco que existe. Um calçado de segurança usado numa cozinha sem risco mecânico adiciona peso sem adicionar proteção onde ela é necessária — e peso, numa jornada de dez horas em pé, tem consequência.',
+          'O que resolve é a informação que acompanha o produto: a marcação no próprio calçado e o Certificado de Aprovação. O CA é emitido para um modelo e um uso determinados, e é nele que se confirma a que o equipamento foi aprovado — <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">como consultar o CA está explicado aqui</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na prática, ao pedir um orçamento, o caminho mais curto é pedir o CA de cada item junto com a proposta. Se o fornecedor não informa, é sinal de que a conversa vai ser difícil depois.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'E qual dos dois comprar?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Essa é uma decisão de compra, e ela depende de existir ou não risco mecânico sobre os dedos na sua rotina. O site tem uma página só para isso, com a pergunta que resolve e os casos típicos de cada lado: <a href="/calcados/comparativo/">ocupacional ou de segurança, qual é o seu caso</a>.',
       },
       {
         tipo: 'h2',
