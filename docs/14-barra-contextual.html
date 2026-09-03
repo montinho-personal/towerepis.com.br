@@ -1,0 +1,283 @@
+<title>Matriz da barra contextual</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+  :root {
+    --papel: #fcfbf9; --papel-2: #f0ebe3; --tinta: #1f2124; --tinta-2: #3d4147; --tinta-3: #6b7078;
+    --regua: #ddd7cd; --regua-forte: #b9b2a6; --vermelho: #b4111b; --vermelho-fundo: #fdf0ef;
+    --ok: #1f5c3d; --ok-fundo: #e8f1ec;
+    --atencao: #8a5a08; --atencao-fundo: #f7eeda;
+    --trilho: #e2ddd3;
+    --display: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+    --corpo: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --papel: #191a1c; --papel-2: #212326; --tinta: #f0ede8; --tinta-2: #c3bfb8; --tinta-3: #8d8983;
+      --regua: #34373b; --regua-forte: #4c5055; --vermelho: #f2686e; --vermelho-fundo: #2b1a1b;
+      --ok: #7fc9a1; --ok-fundo: #16241d;
+      --atencao: #e0b45f; --atencao-fundo: #2a2213;
+      --trilho: #34373b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --papel: #191a1c; --papel-2: #212326; --tinta: #f0ede8; --tinta-2: #c3bfb8; --tinta-3: #8d8983;
+    --regua: #34373b; --regua-forte: #4c5055; --vermelho: #f2686e; --vermelho-fundo: #2b1a1b;
+    --ok: #7fc9a1; --ok-fundo: #16241d;
+    --atencao: #e0b45f; --atencao-fundo: #2a2213;
+    --trilho: #34373b;
+  }
+
+  * { box-sizing: border-box; }
+  body { background: var(--papel); color: var(--tinta); font-family: var(--corpo); font-size: 1.0625rem; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+  .env { max-width: 68rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+  .col { max-width: 42rem; }
+
+  h1, h2, h3 { font-family: var(--display); line-height: 1.15; text-wrap: balance; margin: 0; }
+  h1 { font-size: clamp(2rem, 5.5vw, 3.1rem); font-weight: 700; letter-spacing: -0.02em; }
+  h2 { font-size: clamp(1.45rem, 3.4vw, 1.9rem); font-weight: 700; letter-spacing: -0.015em; }
+  p { margin: 0; }
+
+  .rotulo { font-family: var(--display); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--tinta-3); }
+  .rotulo-vermelho { color: var(--vermelho); }
+
+  header.capa { padding: 4rem 0 2.5rem; display: flex; flex-direction: column; gap: 1.25rem; }
+  header.capa p.sub { font-size: 1.2rem; color: var(--tinta-2); max-width: 38rem; }
+  .meta { font-family: var(--display); font-size: 0.78rem; color: var(--tinta-3); display: flex; flex-wrap: wrap; gap: 0.4rem 1.25rem; }
+
+  section { padding-block: 3rem; border-top: 1px solid var(--regua); }
+  section > * + * { margin-top: 1.15rem; }
+  .num { font-family: var(--display); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; color: var(--vermelho); display: block; margin-bottom: 0.6rem; }
+
+  .destaque { background: var(--vermelho-fundo); border-left: 3px solid var(--vermelho); padding: 1.25rem 1.4rem; display: flex; flex-direction: column; gap: 0.7rem; max-width: 42rem; }
+  .quadro { background: var(--papel-2); padding: 1.25rem 1.4rem; display: flex; flex-direction: column; gap: 0.7rem; max-width: 42rem; }
+
+  ul, ol { margin: 0; padding-left: 1.15rem; display: flex; flex-direction: column; gap: 0.45rem; max-width: 42rem; }
+  li::marker { color: var(--tinta-3); }
+  code { font-family: var(--display); font-size: 0.85em; background: var(--papel-2); padding: 0.1em 0.35em; }
+
+  /* Números medidos, lado a lado. Sem caixa: são leitura corrida em coluna. */
+  .numeros { display: grid; grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr)); gap: 1.5rem 2rem; border-top: 1px solid var(--regua); padding-top: 1.4rem; }
+  .numeros div { display: flex; flex-direction: column; gap: 0.15rem; }
+  .numeros b { font-family: var(--display); font-size: 1.9rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1; font-variant-numeric: tabular-nums; }
+  .numeros span { font-family: var(--display); font-size: 0.75rem; color: var(--tinta-3); line-height: 1.35; }
+
+  .rolagem { overflow-x: auto; margin-top: 0.6rem; }
+  table { border-collapse: collapse; width: 100%; font-family: var(--display); font-size: 0.82rem; }
+  th, td { text-align: left; padding: 0.6rem 0.9rem 0.6rem 0; border-bottom: 1px solid var(--regua); vertical-align: top; }
+  th { font-weight: 700; font-size: 0.66rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--tinta-3); white-space: nowrap; }
+  td:last-child, th:last-child { padding-right: 0; }
+  td.url { font-size: 0.75rem; color: var(--tinta-3); white-space: nowrap; }
+  td.frase { font-family: var(--corpo); font-size: 0.95rem; line-height: 1.5; min-width: 15rem; }
+  td.botao { white-space: nowrap; color: var(--ok); font-weight: 600; }
+  td.msg { font-family: var(--corpo); font-size: 0.86rem; line-height: 1.5; color: var(--tinta-2); min-width: 20rem; }
+  tr.muda td { color: var(--tinta-3); }
+  td.silencio { font-family: var(--corpo); font-style: italic; font-size: 0.9rem; }
+
+  /* O gatilho como trilho de rolagem: a leitura vertical da coluna mostra a
+     página comercial disparando cedo e o artigo disparando tarde. */
+  th.tg, td.tg { width: 6.5rem; min-width: 6.5rem; white-space: nowrap; }
+  .trilho { display: block; position: relative; height: 3px; background: var(--trilho); margin: 0.45rem 0 0.3rem; }
+  .marca { position: absolute; top: -2.5px; width: 3px; height: 8px; background: var(--vermelho); }
+  .pct { font-size: 0.72rem; color: var(--tinta-3); font-variant-numeric: tabular-nums; }
+
+  h3.grupo { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.5rem 1rem; font-size: 1.05rem; font-weight: 700; margin-top: 2.4rem; padding-bottom: 0.4rem; border-bottom: 2px solid var(--tinta); }
+  h3.grupo:first-of-type { margin-top: 0.5rem; }
+  .tags { display: flex; gap: 0.4rem; }
+  .selo { display: inline-block; font-family: var(--display); font-size: 0.63rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.2rem 0.45rem; white-space: nowrap; }
+  .s-int { background: var(--papel-2); color: var(--tinta-2); }
+  .s-p0 { background: var(--vermelho-fundo); color: var(--vermelho); }
+  .s-p1 { background: var(--atencao-fundo); color: var(--atencao); }
+  .s-p2 { background: var(--ok-fundo); color: var(--ok); }
+
+  footer { border-top: 2px solid var(--tinta); padding-top: 1.5rem; margin-top: 3rem; font-family: var(--display); font-size: 0.8rem; color: var(--tinta-3); max-width: 42rem; }
+  a { color: inherit; text-decoration-color: var(--regua-forte); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--vermelho); }
+  a:focus-visible { outline: 2px solid var(--vermelho); outline-offset: 2px; }
+</style>
+
+<div class="env">
+  <header class="capa">
+    <p class="rotulo rotulo-vermelho">Tower EPI&rsquo;s &middot; conversão</p>
+    <h1>A barra contextual, página por página</h1>
+    <p class="sub">O botão flutuante estava sempre disponível e nunca dizia por que falar agora. A barra diz — e diz uma coisa diferente em cada uma das 52 páginas onde aparece.</p>
+    <p class="meta"><span>Setembro de 2026</span><span>58 rotas auditadas</span><span>Medido em navegador, não lido da fonte</span></p>
+  </header>
+
+  <section>
+    <span class="num">O que mudou</span>
+    <h2>Substitui o botão flutuante — não soma a ele</h2>
+    <p class="col">O site já tinha CTA no meio do texto, CTA de fechamento e o círculo verde. Uma barra por cima seria a quarta camada da mesma pilha, que é exatamente o empilhamento que a gente decidiu não ter. A barra faz o que o círculo fazia — atalho sempre disponível — e faz o que ele não fazia: dizer por que a conversa é útil <em>agora</em>, naquela página.</p>
+    <p class="col">A mensagem que sai no WhatsApp continua vindo do motor que já existia. Não há dois sistemas: o que a barra acrescentou foi a frase.</p>
+    <div class="numeros">
+      <div><b>52</b><span>frases distintas em 52 páginas — nenhuma repetida</span></div>
+      <div><b>48</b><span>mensagens de WhatsApp distintas</span></div>
+      <div><b>6</b><span>páginas em silêncio, de propósito</span></div>
+      <div><b>0</b><span>cookies, hosts externos ou dados no navegador</span></div>
+      <div><b>0,003</b><span>CLS — o mesmo de uma página sem barra</span></div>
+    </div>
+  </section>
+
+  <section>
+    <span class="num">A regra</span>
+    <h2>A frase sai do conteúdo, não de uma lista por URL</h2>
+    <p class="col">Regra escrita por URL vira dívida: página nova nasce sem regra e ninguém lembra. Aqui a frase é derivada do próprio conteúdo — uma cidade nova, uma profissão nova ou um artigo novo entram sozinhos. A resolução obedece a esta ordem de prioridade:</p>
+    <ol>
+      <li><strong>Página singular</strong> — 14 páginas com frase escrita à mão.</li>
+      <li><strong>Cidade</strong>, depois <strong>estado</strong> — contexto geográfico sem sugerir presença física.</li>
+      <li><strong>Profissão</strong> — a pessoa, não a empresa. Tom mais próximo.</li>
+      <li><strong>Setor</strong> — quem lê é quem compra para a equipe.</li>
+      <li><strong>Artigo</strong> — continua o problema do texto.</li>
+      <li><strong>Categoria de calçado</strong>, depois <strong>parte do corpo</strong>.</li>
+      <li><strong>Padrão</strong> — nunca alcançado hoje: as regras acima cobrem as 52 páginas.</li>
+    </ol>
+    <div class="quadro">
+      <p class="rotulo">Onde a derivação foi desligada</p>
+      <p>A montagem automática produziu &ldquo;proteção de respiração&rdquo; e a mesma frase nos três tipos de calçado. Essas dez frases passaram a ser escritas à mão. Derivar é bom para nome próprio — cidade, profissão. É ruim para preposição.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="num">O silêncio</span>
+    <h2>Seis páginas não têm barra</h2>
+    <p class="col">Em <code>/orcamento/</code>, <code>/encontrar-epi/</code> e <code>/contato/</code> a página inteira já é o CTA: uma barra fixa por cima competiria com o próprio fluxo que a página construiu. Nas três páginas legais — privacidade, cookies e termos — quem está lendo foi ali resolver uma dúvida sobre dados, e vender no meio disso contradiz o texto.</p>
+    <div class="destaque">
+      <p class="rotulo rotulo-vermelho">A barra também recolhe sozinha</p>
+      <p>Enquanto qualquer botão de WhatsApp do conteúdo está na tela, a barra sai. Isso apareceu numa captura de tela: no fechamento de um artigo a barra repetia palavra por palavra o título do bloco de fechamento, com dois botões verdes visíveis ao mesmo tempo. A barra existe para quem está longe de um CTA; perto de um, ela é eco.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="num">O gatilho</span>
+    <h2>Cedo em quem já decidiu, tarde em quem está lendo</h2>
+    <p class="col">A barra entra por profundidade de rolagem, e a profundidade é escolhida pela intenção da página. Quem chega numa página de setor ou de cidade já sabe o que quer: 20% a 25%. Quem está lendo um artigo técnico está consumindo justamente o texto que a Tower escreveu para ele — interromper aos 20% seria trabalhar contra a própria página, então lá são 50%. Numa página curta demais para ter rolagem própria, a barra entra depois de seis segundos de leitura.</p>
+    <p class="col">Os percentuais da tabela abaixo <strong>foram medidos no navegador</strong>, rolando cada página até a barra aparecer. Não foram lidos do código. Se a regra e o comportamento divergirem, é o comportamento que aparece aqui.</p>
+  </section>
+
+  <section>
+    <span class="num">A matriz</span>
+    <h2>As 58 rotas</h2>
+    <p class="col">Agrupadas por tipo de página, porque é o tipo que decide a regra. A marca vermelha na coluna de gatilho é o ponto da rolagem em que a barra entra.</p>
+<h3 class="grupo"><span>Home</span><span class="tags"><span class="selo s-int">Descoberta</span><span class="selo s-p1">P1</span></span></h3>
+<div class="rolagem"><table><thead><tr><th>URL</th><th>Frase da barra</th><th>Botão</th><th class="tg">Gatilho</th><th>Mensagem que sai no WhatsApp</th></tr></thead><tbody>
+<tr><td class="url">/</td><td class="frase">Precisa de EPI para a sua equipe?</td><td class="botao">Conversar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:25%"></span></span><span class="pct">25%</span></td><td class="msg">Olá! Vim pelo site da Tower. Gostaria de uma orientação sobre qual EPI é o mais indicado para o meu caso.</td></tr>
+</tbody></table></div>
+<h3 class="grupo"><span>Hub</span><span class="tags"><span class="selo s-int">Navegação</span><span class="selo s-p2">P2</span></span></h3>
+<div class="rolagem"><table><thead><tr><th>URL</th><th>Frase da barra</th><th>Botão</th><th class="tg">Gatilho</th><th>Mensagem que sai no WhatsApp</th></tr></thead><tbody>
+<tr class="muda"><td class="url">/orcamento/</td><td colspan="4" class="silencio">sem barra — a página inteira já é o CTA</td></tr>
+<tr><td class="url">/calcados/</td><td class="frase">Não sabe qual calçado atende a sua operação?</td><td class="botao">Pedir orientação</td><td class="tg"><span class="trilho"><span class="marca" style="left:20%"></span></span><span class="pct">20%</span></td><td class="msg">Olá! Vim pelo site da Tower. Estou procurando um calçado profissional e gostaria de ajuda para escolher o modelo certo.</td></tr>
+<tr><td class="url">/protecao/</td><td class="frase">Não sabe qual proteção a sua atividade exige?</td><td class="botao">Perguntar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:35%"></span></span><span class="pct">35%</span></td><td class="msg">Olá! Vim pelo site da Tower. Gostaria de uma orientação sobre qual EPI é o mais indicado para o meu caso.</td></tr>
+<tr><td class="url">/para-seu-trabalho/</td><td class="frase">Não achou a sua atividade?</td><td class="botao">Perguntar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:30%"></span></span><span class="pct">30%</span></td><td class="msg">Olá! Vim pelo site da Tower. Gostaria de uma orientação sobre qual EPI é o mais indicado para o meu caso.</td></tr>
+<tr class="muda"><td class="url">/encontrar-epi/</td><td colspan="4" class="silencio">sem barra — a página inteira já é o CTA</td></tr>
+<tr><td class="url">/marcas/</td><td class="frase">Procura uma marca específica?</td><td class="botao">Perguntar disponibilidade</td><td class="tg"><span class="trilho"><span class="marca" style="left:30%"></span></span><span class="pct">30%</span></td><td class="msg">Olá! Vim pelo site da Tower. Gostaria de saber quais marcas vocês trabalham e o que têm disponível.</td></tr>
+<tr class="muda"><td class="url">/contato/</td><td colspan="4" class="silencio">sem barra — a página inteira já é o CTA</td></tr>
+<tr class="muda"><td class="url">/politica-de-privacidade/</td><td colspan="4" class="silencio">sem barra — a página inteira já é o CTA</td></tr>
+<tr class="muda"><td class="url">/politica-de-cookies/</td><td colspan="4" class="silencio">sem barra — a página inteira já é o CTA</td></tr>
+<tr class="muda"><td class="url">/termos-de-uso/</td><td colspan="4" class="silencio">sem barra — a página inteira já é o CTA</td></tr>
+</tbody></table></div>
+<h3 class="grupo"><span>Categoria produto</span><span class="tags"><span class="selo s-int">Comercial — escolha</span><span class="selo s-p0">P0</span></span></h3>
+<div class="rolagem"><table><thead><tr><th>URL</th><th>Frase da barra</th><th>Botão</th><th class="tg">Gatilho</th><th>Mensagem que sai no WhatsApp</th></tr></thead><tbody>
+<tr><td class="url">/calcados/comparativo/</td><td class="frase">Ainda em dúvida entre os dois?</td><td class="botao">Pedir orientação</td><td class="tg"><span class="trilho"><span class="marca" style="left:35%"></span></span><span class="pct">35%</span></td><td class="msg">Olá! Vim pelo site da Tower. Estou em dúvida entre calçado ocupacional e calçado de segurança e gostaria de saber qual serve para o meu trabalho.</td></tr>
+<tr><td class="url">/calcados/ocupacionais/</td><td class="frase">Quer ajuda para escolher um calçado ocupacional?</td><td class="botao">Pedir orientação</td><td class="tg"><span class="trilho"><span class="marca" style="left:25%"></span></span><span class="pct">25%</span></td><td class="msg">Olá! Vim pelo site da Tower. Estou procurando um calçado ocupacional e gostaria de conhecer as opções.</td></tr>
+<tr><td class="url">/calcados/seguranca/</td><td class="frase">Precisa de calçado com biqueira para a sua equipe?</td><td class="botao">Pedir orçamento</td><td class="tg"><span class="trilho"><span class="marca" style="left:30%"></span></span><span class="pct">30%</span></td><td class="msg">Olá! Vim pelo site da Tower. Preciso de um calçado de segurança com biqueira e gostaria de conhecer as opções.</td></tr>
+<tr><td class="url">/calcados/antiderrapantes/</td><td class="frase">Quer escolher pelo piso onde a equipe trabalha?</td><td class="botao">Pedir orientação</td><td class="tg"><span class="trilho"><span class="marca" style="left:25%"></span></span><span class="pct">25%</span></td><td class="msg">Olá! Vim pelo site da Tower. Preciso de um calçado antiderrapante e gostaria de ajuda para escolher.</td></tr>
+</tbody></table></div>
+<h3 class="grupo"><span>Categoria proteção</span><span class="tags"><span class="selo s-int">Comercial — escolha</span><span class="selo s-p0">P0</span></span></h3>
+<div class="rolagem"><table><thead><tr><th>URL</th><th>Frase da barra</th><th>Botão</th><th class="tg">Gatilho</th><th>Mensagem que sai no WhatsApp</th></tr></thead><tbody>
+<tr><td class="url">/protecao/respiratoria/</td><td class="frase">Não sabe qual máscara ou respirador usar?</td><td class="botao">Perguntar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:30%"></span></span><span class="pct">30%</span></td><td class="msg">Olá! Vim pelo site da Tower. Preciso de proteção respiratória e gostaria de orientação sobre qual modelo usar.</td></tr>
+<tr><td class="url">/protecao/maos/</td><td class="frase">Não sabe qual luva serve para o seu risco?</td><td class="botao">Perguntar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:30%"></span></span><span class="pct">30%</span></td><td class="msg">Olá! Vim pelo site da Tower. Preciso de luvas de proteção e gostaria de ajuda para escolher o tipo certo.</td></tr>
+<tr><td class="url">/protecao/auditiva/</td><td class="frase">Precisa de proteção auditiva para o seu nível de ruído?</td><td class="botao">Perguntar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:35%"></span></span><span class="pct">35%</span></td><td class="msg">Olá! Vim pelo site da Tower. Preciso de proteção auditiva e gostaria de orientação.</td></tr>
+<tr><td class="url">/protecao/olhos-e-face/</td><td class="frase">Precisa proteger olhos ou rosto na sua atividade?</td><td class="botao">Perguntar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:30%"></span></span><span class="pct">30%</span></td><td class="msg">Olá! Vim pelo site da Tower. Preciso de proteção para os olhos e gostaria de conhecer as opções.</td></tr>
+<tr><td class="url">/protecao/cabeca/</td><td class="frase">Precisa de capacete para a sua equipe?</td><td class="botao">Perguntar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:35%"></span></span><span class="pct">35%</span></td><td class="msg">Olá! Vim pelo site da Tower. Preciso de capacete ou proteção para a cabeça e gostaria de orientação.</td></tr>
+<tr><td class="url">/protecao/corpo/</td><td class="frase">Precisa de vestimenta de proteção?</td><td class="botao">Perguntar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:30%"></span></span><span class="pct">30%</span></td><td class="msg">Olá! Vim pelo site da Tower. Preciso de vestimenta de proteção e gostaria de conhecer as opções.</td></tr>
+</tbody></table></div>
+<h3 class="grupo"><span>Setor</span><span class="tags"><span class="selo s-int">Comercial B2B</span><span class="selo s-p0">P0</span></span></h3>
+<div class="rolagem"><table><thead><tr><th>URL</th><th>Frase da barra</th><th>Botão</th><th class="tg">Gatilho</th><th>Mensagem que sai no WhatsApp</th></tr></thead><tbody>
+<tr><td class="url">/empresas/alimentacao/</td><td class="frase">Precisa de calçado para a sua equipe de cozinha?</td><td class="botao">Solicitar atendimento</td><td class="tg"><span class="trilho"><span class="marca" style="left:20%"></span></span><span class="pct">20%</span></td><td class="msg">Olá! Vim pelo site da Tower. Tenho um negócio na área de alimentação e gostaria de um orçamento de EPIs para a equipe.</td></tr>
+<tr><td class="url">/empresas/saude/</td><td class="frase">Vai padronizar o EPI da sua unidade?</td><td class="botao">Solicitar atendimento</td><td class="tg"><span class="trilho"><span class="marca" style="left:25%"></span></span><span class="pct">25%</span></td><td class="msg">Olá! Vim pelo site da Tower. Trabalho em uma instituição de saúde e gostaria de um orçamento de EPIs para a equipe.</td></tr>
+<tr><td class="url">/empresas/industria/</td><td class="frase">Precisa padronizar o EPI da sua operação?</td><td class="botao">Solicitar atendimento</td><td class="tg"><span class="trilho"><span class="marca" style="left:25%"></span></span><span class="pct">25%</span></td><td class="msg">Olá! Vim pelo site da Tower. Sou responsável pela compra de EPIs em uma indústria e gostaria de um orçamento.</td></tr>
+<tr><td class="url">/empresas/construcao/</td><td class="frase">Vai equipar uma equipe de obra?</td><td class="botao">Solicitar atendimento</td><td class="tg"><span class="trilho"><span class="marca" style="left:25%"></span></span><span class="pct">25%</span></td><td class="msg">Olá! Vim pelo site da Tower. Sou responsável pela compra de EPIs em uma construtora e gostaria de um orçamento.</td></tr>
+<tr><td class="url">/empresas/facilities-e-limpeza/</td><td class="frase">Vai equipar a sua equipe de limpeza?</td><td class="botao">Solicitar atendimento</td><td class="tg"><span class="trilho"><span class="marca" style="left:20%"></span></span><span class="pct">20%</span></td><td class="msg">Olá! Vim pelo site da Tower. Sou responsável pela compra de EPIs em uma empresa de limpeza e gostaria de um orçamento.</td></tr>
+</tbody></table></div>
+<h3 class="grupo"><span>Institucional B2B</span><span class="tags"><span class="selo s-int">Comercial B2B</span><span class="selo s-p0">P0</span></span></h3>
+<div class="rolagem"><table><thead><tr><th>URL</th><th>Frase da barra</th><th>Botão</th><th class="tg">Gatilho</th><th>Mensagem que sai no WhatsApp</th></tr></thead><tbody>
+<tr><td class="url">/empresas/</td><td class="frase">Vai equipar uma equipe?</td><td class="botao">Solicitar atendimento</td><td class="tg"><span class="trilho"><span class="marca" style="left:25%"></span></span><span class="pct">25%</span></td><td class="msg">Olá! Vim pelo site da Tower. Vim pela área de empresas e gostaria de solicitar um orçamento de EPIs para nossa equipe.</td></tr>
+<tr><td class="url">/empresas/como-atendemos/</td><td class="frase">Quer começar um orçamento?</td><td class="botao">Pedir orçamento</td><td class="tg"><span class="trilho"><span class="marca" style="left:25%"></span></span><span class="pct">25%</span></td><td class="msg">Olá! Vim pelo site da Tower. Vim pela área de empresas e gostaria de solicitar um orçamento de EPIs para nossa equipe.</td></tr>
+</tbody></table></div>
+<h3 class="grupo"><span>Cidade</span><span class="tags"><span class="selo s-int">Comercial local</span><span class="selo s-p0">P0</span></span></h3>
+<div class="rolagem"><table><thead><tr><th>URL</th><th>Frase da barra</th><th>Botão</th><th class="tg">Gatilho</th><th>Mensagem que sai no WhatsApp</th></tr></thead><tbody>
+<tr><td class="url">/epi-por-cidade/barbalha-ce/</td><td class="frase">Precisa de EPI para uma equipe em Barbalha?</td><td class="botao">Solicitar atendimento</td><td class="tg"><span class="trilho"><span class="marca" style="left:30%"></span></span><span class="pct">30%</span></td><td class="msg">Olá! Vim pelo site. Sou de Barbalha (ou do Cariri) e gostaria de um orçamento de EPI para a minha empresa.</td></tr>
+<tr><td class="url">/epi-por-cidade/teresina-pi/</td><td class="frase">Precisa de EPI para uma equipe em Teresina?</td><td class="botao">Solicitar atendimento</td><td class="tg"><span class="trilho"><span class="marca" style="left:25%"></span></span><span class="pct">25%</span></td><td class="msg">Olá! Vim pelo site. Sou de Teresina e gostaria de um orçamento de EPI para a minha equipe.</td></tr>
+<tr><td class="url">/epi-por-cidade/parnaiba-pi/</td><td class="frase">Precisa de EPI para uma equipe em Parnaíba?</td><td class="botao">Solicitar atendimento</td><td class="tg"><span class="trilho"><span class="marca" style="left:30%"></span></span><span class="pct">30%</span></td><td class="msg">Olá! Vim pelo site. Sou de Parnaíba e gostaria de um orçamento de EPI para a minha equipe.</td></tr>
+<tr><td class="url">/epi-por-cidade/natal-rn/</td><td class="frase">Precisa de EPI para uma equipe em Natal?</td><td class="botao">Solicitar atendimento</td><td class="tg"><span class="trilho"><span class="marca" style="left:25%"></span></span><span class="pct">25%</span></td><td class="msg">Olá! Vim pelo site. Sou de Natal e gostaria de um orçamento de EPI para a minha empresa.</td></tr>
+<tr><td class="url">/epi-por-cidade/assu-rn/</td><td class="frase">Precisa de EPI para uma equipe em Assú?</td><td class="botao">Solicitar atendimento</td><td class="tg"><span class="trilho"><span class="marca" style="left:30%"></span></span><span class="pct">30%</span></td><td class="msg">Olá! Vim pelo site. Sou de Assú (Vale do Açu) e gostaria de um orçamento de EPI para a minha empresa.</td></tr>
+</tbody></table></div>
+<h3 class="grupo"><span>Estado</span><span class="tags"><span class="selo s-int">Comercial local</span><span class="selo s-p0">P0</span></span></h3>
+<div class="rolagem"><table><thead><tr><th>URL</th><th>Frase da barra</th><th>Botão</th><th class="tg">Gatilho</th><th>Mensagem que sai no WhatsApp</th></tr></thead><tbody>
+<tr><td class="url">/epi-por-cidade/ceara/</td><td class="frase">Precisa de EPI para uma equipe no Ceará?</td><td class="botao">Solicitar atendimento</td><td class="tg"><span class="trilho"><span class="marca" style="left:30%"></span></span><span class="pct">30%</span></td><td class="msg">Olá! Vim pelo site da Tower. Tenho uma equipe no Ceará e gostaria de um orçamento de EPI.</td></tr>
+<tr><td class="url">/epi-por-cidade/piaui/</td><td class="frase">Precisa de EPI para uma equipe no Piauí?</td><td class="botao">Solicitar atendimento</td><td class="tg"><span class="trilho"><span class="marca" style="left:30%"></span></span><span class="pct">30%</span></td><td class="msg">Olá! Vim pelo site da Tower. Tenho uma equipe no Piauí e gostaria de um orçamento de EPI.</td></tr>
+<tr><td class="url">/epi-por-cidade/rio-grande-do-norte/</td><td class="frase">Precisa de EPI para uma equipe no Rio Grande do Norte?</td><td class="botao">Solicitar atendimento</td><td class="tg"><span class="trilho"><span class="marca" style="left:30%"></span></span><span class="pct">30%</span></td><td class="msg">Olá! Vim pelo site da Tower. Tenho uma equipe no Rio Grande do Norte e gostaria de um orçamento de EPI.</td></tr>
+</tbody></table></div>
+<h3 class="grupo"><span>Hub local</span><span class="tags"><span class="selo s-int">Comercial local</span><span class="selo s-p0">P0</span></span></h3>
+<div class="rolagem"><table><thead><tr><th>URL</th><th>Frase da barra</th><th>Botão</th><th class="tg">Gatilho</th><th>Mensagem que sai no WhatsApp</th></tr></thead><tbody>
+<tr><td class="url">/epi-por-cidade/</td><td class="frase">Quer saber se a Tower atende a sua cidade?</td><td class="botao">Perguntar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:25%"></span></span><span class="pct">25%</span></td><td class="msg">Olá! Vim pelo site da Tower. Gostaria de saber se vocês atendem a minha cidade.</td></tr>
+</tbody></table></div>
+<h3 class="grupo"><span>Profissão</span><span class="tags"><span class="selo s-int">Informacional B2C</span><span class="selo s-p1">P1</span></span></h3>
+<div class="rolagem"><table><thead><tr><th>URL</th><th>Frase da barra</th><th>Botão</th><th class="tg">Gatilho</th><th>Mensagem que sai no WhatsApp</th></tr></thead><tbody>
+<tr><td class="url">/para-seu-trabalho/cozinha/</td><td class="frase">Quer ajuda para escolher o EPI de cozinha e alimentação?</td><td class="botao">Perguntar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:30%"></span></span><span class="pct">30%</span></td><td class="msg">Olá! Vim pelo site da Tower. Trabalho em cozinha e estou procurando um calçado antiderrapante. Pode me ajudar a escolher?</td></tr>
+<tr><td class="url">/para-seu-trabalho/enfermagem-e-saude/</td><td class="frase">Quer ajuda para escolher o EPI de enfermagem e saúde?</td><td class="botao">Perguntar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:30%"></span></span><span class="pct">30%</span></td><td class="msg">Olá! Vim pelo site da Tower. Trabalho na área da saúde e estou procurando um calçado para o plantão. Pode me ajudar a escolher?</td></tr>
+<tr><td class="url">/para-seu-trabalho/limpeza-e-conservacao/</td><td class="frase">Quer ajuda para escolher o EPI de limpeza e conservação?</td><td class="botao">Perguntar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:30%"></span></span><span class="pct">30%</span></td><td class="msg">Olá! Vim pelo site da Tower. Trabalho com limpeza e conservação e preciso de EPI. Pode me orientar?</td></tr>
+<tr><td class="url">/para-seu-trabalho/construcao/</td><td class="frase">Quer ajuda para escolher o EPI de construção?</td><td class="botao">Perguntar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:30%"></span></span><span class="pct">30%</span></td><td class="msg">Olá! Vim pelo site da Tower. Trabalho na construção e preciso de EPI. Pode me orientar sobre o que é indicado?</td></tr>
+<tr><td class="url">/para-seu-trabalho/industria/</td><td class="frase">Quer ajuda para escolher o EPI de indústria?</td><td class="botao">Perguntar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:30%"></span></span><span class="pct">30%</span></td><td class="msg">Olá! Vim pelo site da Tower. Trabalho na indústria e preciso de EPI. Pode me orientar?</td></tr>
+<tr><td class="url">/para-seu-trabalho/logistica-e-estoque/</td><td class="frase">Quer ajuda para escolher o EPI de logística e estoque?</td><td class="botao">Perguntar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:35%"></span></span><span class="pct">35%</span></td><td class="msg">Olá! Vim pelo site da Tower. Trabalho com logística e estoque e preciso de EPI. Pode me orientar?</td></tr>
+<tr><td class="url">/para-seu-trabalho/manutencao/</td><td class="frase">Quer ajuda para escolher o EPI de manutenção?</td><td class="botao">Perguntar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:35%"></span></span><span class="pct">35%</span></td><td class="msg">Olá! Vim pelo site da Tower. Trabalho com manutenção e preciso de EPI. Pode me orientar?</td></tr>
+</tbody></table></div>
+<h3 class="grupo"><span>Marca</span><span class="tags"><span class="selo s-int">Comercial — disponibilidade</span><span class="selo s-p1">P1</span></span></h3>
+<div class="rolagem"><table><thead><tr><th>URL</th><th>Frase da barra</th><th>Botão</th><th class="tg">Gatilho</th><th>Mensagem que sai no WhatsApp</th></tr></thead><tbody>
+<tr><td class="url">/marcas/bompel/</td><td class="frase">Quer ver a linha Bompel para a sua equipe?</td><td class="botao">Pedir orçamento</td><td class="tg"><span class="trilho"><span class="marca" style="left:30%"></span></span><span class="pct">30%</span></td><td class="msg">Olá! Vim pelo site da Tower. Vi a página da Bompel e gostaria de um orçamento da linha para a minha equipe.</td></tr>
+<tr><td class="url">/marcas/3m/</td><td class="frase">Precisa de proteção respiratória?</td><td class="botao">Consultar disponibilidade</td><td class="tg"><span class="trilho"><span class="marca" style="left:35%"></span></span><span class="pct">35%</span></td><td class="msg">Olá! Vim pelo site da Tower. Preciso de proteção respiratória e gostaria de consultar o que vocês têm disponível.</td></tr>
+</tbody></table></div>
+<h3 class="grupo"><span>Institucional</span><span class="tags"><span class="selo s-int">Confiança</span><span class="selo s-p2">P2</span></span></h3>
+<div class="rolagem"><table><thead><tr><th>URL</th><th>Frase da barra</th><th>Botão</th><th class="tg">Gatilho</th><th>Mensagem que sai no WhatsApp</th></tr></thead><tbody>
+<tr><td class="url">/a-tower/</td><td class="frase">Quer falar direto com um dos sócios?</td><td class="botao">Falar com a Tower</td><td class="tg"><span class="trilho"><span class="marca" style="left:40%"></span></span><span class="pct">40%</span></td><td class="msg">Olá! Vim pelo site da Tower. Gostaria de falar com vocês sobre proteção para o trabalho.</td></tr>
+<tr><td class="url">/a-tower/helano/</td><td class="frase">Tem uma dúvida técnica sobre EPI?</td><td class="botao">Perguntar ao Helano</td><td class="tg"><span class="trilho"><span class="marca" style="left:45%"></span></span><span class="pct">45%</span></td><td class="msg">Olá! Vim pelo site da Tower. Gostaria de falar com vocês sobre proteção para o trabalho.</td></tr>
+</tbody></table></div>
+<h3 class="grupo"><span>Artigo</span><span class="tags"><span class="selo s-int">Informacional</span><span class="selo s-p2">P2</span></span></h3>
+<div class="rolagem"><table><thead><tr><th>URL</th><th>Frase da barra</th><th>Botão</th><th class="tg">Gatilho</th><th>Mensagem que sai no WhatsApp</th></tr></thead><tbody>
+<tr><td class="url">/conhecimento/calcado-para-cozinha-como-escolher/</td><td class="frase">Precisa escolher calçado para uma equipe de cozinha?</td><td class="botao">Pedir orientação</td><td class="tg"><span class="trilho"><span class="marca" style="left:50%"></span></span><span class="pct">50%</span></td><td class="msg">Olá! Vim pelo site da Tower. Li o texto sobre calçado para cozinha e queria ajuda para escolher o modelo certo para a minha rotina.</td></tr>
+<tr><td class="url">/conhecimento/o-que-e-ca-certificado-de-aprovacao/</td><td class="frase">Quer conferir o CA dos EPIs que a sua equipe usa?</td><td class="botao">Mandar a lista</td><td class="tg"><span class="trilho"><span class="marca" style="left:50%"></span></span><span class="pct">50%</span></td><td class="msg">Olá! Vim pelo site da Tower. Li o texto sobre o CA e gostaria de ajuda para conferir se os EPIs que usamos hoje estão adequados.</td></tr>
+<tr><td class="url">/conhecimento/calcado-ocupacional-ou-de-seguranca/</td><td class="frase">Quer saber qual dos dois serve para a sua rotina?</td><td class="botao">Pedir orientação</td><td class="tg"><span class="trilho"><span class="marca" style="left:50%"></span></span><span class="pct">50%</span></td><td class="msg">Olá! Vim pelo site da Tower. Li o texto sobre calçado ocupacional e de segurança e continuo em dúvida sobre qual serve para o meu caso.</td></tr>
+<tr><td class="url">/conhecimento/nr-6-o-que-a-empresa-precisa-saber/</td><td class="frase">Precisa saber qual EPI a sua atividade exige?</td><td class="botao">Conversar com a equipe</td><td class="tg"><span class="trilho"><span class="marca" style="left:50%"></span></span><span class="pct">50%</span></td><td class="msg">Olá! Vim pelo site da Tower. Li o texto sobre a NR-6 e gostaria de ajuda para organizar o EPI da nossa equipe.</td></tr>
+<tr><td class="url">/conhecimento/solado-antiderrapante-o-que-significa/</td><td class="frase">Quer ajuda para escolher pelo tipo de piso?</td><td class="botao">Perguntar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:50%"></span></span><span class="pct">50%</span></td><td class="msg">Olá! Vim pelo site da Tower. Li o texto sobre solado antiderrapante e queria saber qual modelo serve para o piso onde eu trabalho.</td></tr>
+<tr><td class="url">/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/</td><td class="frase">Precisa do CA de cada item para preencher a ficha?</td><td class="botao">Pedir orçamento com CA</td><td class="tg"><span class="trilho"><span class="marca" style="left:50%"></span></span><span class="pct">50%</span></td><td class="msg">Olá! Vim pelo site da Tower. Li o texto sobre ficha de entrega de EPI e gostaria de ajuda para organizar o fornecimento da nossa equipe.</td></tr>
+<tr><td class="url">/conhecimento/botina-que-machuca-calcado-ou-numeracao/</td><td class="frase">O calçado da sua equipe está machucando?</td><td class="botao">Pedir orientação</td><td class="tg"><span class="trilho"><span class="marca" style="left:50%"></span></span><span class="pct">50%</span></td><td class="msg">Olá! Vim pelo site da Tower. O calçado que a gente usa está machucando e queria ajuda para descobrir se é numeração ou modelo.</td></tr>
+<tr><td class="url">/conhecimento/luva-de-procedimento-nao-e-luva-de-limpeza/</td><td class="frase">Quer conferir se a luva da sua equipe é a certa?</td><td class="botao">Perguntar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:50%"></span></span><span class="pct">50%</span></td><td class="msg">Olá! Vim pelo site da Tower. Li o texto sobre luva de procedimento e luva química e queria conferir se a luva que usamos hoje está certa.</td></tr>
+<tr><td class="url">/conhecimento/mascara-descartavel-nao-protege-de-vapor-quimico/</td><td class="frase">Quer conferir o respirador que a sua equipe usa?</td><td class="botao">Perguntar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:50%"></span></span><span class="pct">50%</span></td><td class="msg">Olá! Vim pelo site da Tower. Li o texto sobre máscara e vapor químico e queria conferir se o respirador que usamos está correto.</td></tr>
+</tbody></table></div>
+<h3 class="grupo"><span>Hub editorial</span><span class="tags"><span class="selo s-int">Informacional</span><span class="selo s-p2">P2</span></span></h3>
+<div class="rolagem"><table><thead><tr><th>URL</th><th>Frase da barra</th><th>Botão</th><th class="tg">Gatilho</th><th>Mensagem que sai no WhatsApp</th></tr></thead><tbody>
+<tr><td class="url">/conhecimento/</td><td class="frase">Sua dúvida não está aqui?</td><td class="botao">Perguntar no WhatsApp</td><td class="tg"><span class="trilho"><span class="marca" style="left:45%"></span></span><span class="pct">45%</span></td><td class="msg">Olá! Vim pelo site da Tower. Li um conteúdo no site e fiquei com uma dúvida. Pode me ajudar?</td></tr>
+</tbody></table></div>  </section>
+
+  <section>
+    <span class="num">Privacidade</span>
+    <h2>A barra não grava nada no navegador</h2>
+    <p class="col">Quem fecha a barra numa página não fica sem barra no site inteiro: fechar é &ldquo;agora não&rdquo;, não é &ldquo;nunca mais&rdquo;. O fechamento vive em estado de React — sobrevive à navegação dentro do site e some num recarregamento.</p>
+    <p class="col">Dava para guardar isso em <code>sessionStorage</code>, e não guarda de propósito. A política de privacidade e a de cookies afirmam, com medição publicada, que o site não grava nada no navegador. Gastar essa afirmação para lembrar que alguém fechou uma barra é troca ruim. Medido de novo depois desta mudança: zero cookies, zero hosts de terceiros, <code>localStorage</code> e <code>sessionStorage</code> vazios.</p>
+    <p class="col">Nenhuma mensagem carrega dado pessoal na URL — o que vai é o assunto da página, e a pessoa revisa e edita antes de enviar.</p>
+  </section>
+
+  <section>
+    <span class="num">Limites</span>
+    <h2>O que esta matriz não prova</h2>
+    <ul>
+      <li><strong>Não há dado de conversão ainda.</strong> Os eventos <code>barra_exibida</code>, <code>barra_clique</code> e <code>barra_fechada</code> estão emitidos e prontos, mas o site não tem ferramenta de medição instalada — e instalar uma muda a política de cookies e exige banner de consentimento. Hoje o que existe é a régua, não a leitura.</li>
+      <li><strong>Os gatilhos são escolha, não otimização.</strong> 20% em página comercial e 50% em artigo vêm de raciocínio sobre intenção, não de teste A/B. São o ponto de partida a revisar quando houver amostra.</li>
+      <li><strong>Quatro grupos de páginas ainda dividem a mesma mensagem de WhatsApp</strong> — os hubs genéricos (<code>/</code>, <code>/protecao/</code>, <code>/para-seu-trabalho/</code>; <code>/empresas/</code> e <code>/empresas/como-atendemos/</code>; <code>/a-tower/</code> e a página do Helano; o hub de cidades e nada mais). Nesses casos a página é genérica de propósito e a mensagem acompanha.</li>
+      <li><strong>Nenhuma frase sugere loja, filial, endereço, estoque local ou entrega própria</strong> nas cidades atendidas — verificado em varredura sobre as 52 frases e as 48 mensagens.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Medições reproduzíveis em <code>docs/ferramentas/qa-barra.mjs</code>, <code>qa-larguras.mjs</code> e <code>qa-privacidade.mjs</code>. Varredura de estouro horizontal em 12 larguras, de 320px a 1440px, sem rolagem lateral em nenhuma das 58 rotas.</p>
+  </footer>
+</div>

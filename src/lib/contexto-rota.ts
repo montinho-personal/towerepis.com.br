@@ -31,8 +31,19 @@ const MAPA: Record<string, Destino> = {
   '/orcamento/': { contexto: 'orcamento' },
   '/encontrar-epi/': { contexto: 'ferramenta' },
   '/marcas/': { contexto: 'marcas' },
-  '/marcas/bompel/': { contexto: 'marcas' },
-  '/marcas/3m/': { contexto: 'marcas' },
+  '/marcas/bompel/': {
+    contexto: 'marcas',
+    mensagem:
+      'Olá! Vim pelo site da Tower. Vi a página da Bompel e gostaria de um orçamento da linha para a minha equipe.',
+  },
+  // 3M entra como consulta, nunca como promessa de estoque: a página trata a
+  // 3M como história da Tower, e a mensagem não pode prometer o que a página
+  // não promete.
+  '/marcas/3m/': {
+    contexto: 'marcas',
+    mensagem:
+      'Olá! Vim pelo site da Tower. Preciso de proteção respiratória e gostaria de consultar o que vocês têm disponível.',
+  },
   '/a-tower/': { contexto: 'historia' },
   '/a-tower/helano/': { contexto: 'historia' },
   '/conhecimento/': { contexto: 'artigo' },
@@ -44,7 +55,16 @@ const MAPA: Record<string, Destino> = {
     CIDADES.map((c) => [`/epi-por-cidade/${c.slug}/`, { contexto: c.contexto, mensagem: c.mensagemWhats }]),
   ),
   ...Object.fromEntries(
-    ESTADOS.map((e) => [`/epi-por-cidade/${e.slug}/`, { contexto: 'epi-por-cidade' as const }]),
+    // O estado entra pelo nome. Sem isso as três páginas de estado mandavam a
+    // mesma frase do hub — "vocês atendem a minha cidade?" — e a Tower recebia
+    // de volta menos contexto do que a página tinha acabado de dar.
+    ESTADOS.map((e) => [
+      `/epi-por-cidade/${e.slug}/`,
+      {
+        contexto: 'epi-por-cidade' as const,
+        mensagem: `Olá! Vim pelo site da Tower. Tenho uma equipe ${e.uf === 'CE' ? 'no Ceará' : e.uf === 'PI' ? 'no Piauí' : 'no Rio Grande do Norte'} e gostaria de um orçamento de EPI.`,
+      },
+    ]),
   ),
   ...Object.fromEntries(PROFISSOES.map((p) => [`/para-seu-trabalho/${p.slug}/`, { contexto: p.contexto }])),
   ...Object.fromEntries(PROTECOES.map((p) => [`/protecao/${p.slug}/`, { contexto: p.contexto }])),
