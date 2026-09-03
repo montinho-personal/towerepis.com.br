@@ -129,9 +129,18 @@ export function Footer() {
             © {new Date().getFullYear()} {empresa.nome}
             {empresa.cnpj ? ` · CNPJ ${empresa.cnpj}` : ''} · Fortaleza — CE
           </p>
-          <Link href="/politica-de-privacidade/" className="hover:text-paper">
-            Política de privacidade
-          </Link>
+          {/* Documentos legais visíveis, sem virar lista de palavra-chave. */}
+          <nav aria-label="Documentos legais" className="flex flex-wrap gap-x-5 gap-y-2">
+            <Link href="/politica-de-privacidade/" className="hover:text-paper">
+              Privacidade
+            </Link>
+            <Link href="/politica-de-cookies/" className="hover:text-paper">
+              Cookies
+            </Link>
+            <Link href="/termos-de-uso/" className="hover:text-paper">
+              Termos de uso
+            </Link>
+          </nav>
         </div>
 
         <p className="mt-8 max-w-3xl text-xs leading-relaxed text-paper/55">

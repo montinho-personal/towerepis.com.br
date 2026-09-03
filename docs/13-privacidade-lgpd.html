@@ -1,0 +1,324 @@
+<title>Privacidade e LGPD na Tower EPI's</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+  :root {
+    --papel: #fcfbf9; --papel-2: #f0ebe3; --tinta: #1f2124; --tinta-2: #3d4147; --tinta-3: #6b7078;
+    --regua: #ddd7cd; --regua-forte: #b9b2a6; --vermelho: #b4111b; --vermelho-fundo: #fdf0ef;
+    --ok: #1f5c3d; --ok-fundo: #e8f1ec;
+    --atencao: #8a5a08; --atencao-fundo: #f7eeda;
+    --falta: #8f1a1e; --falta-fundo: #f7e6e5;
+    --display: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+    --corpo: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --papel: #191a1c; --papel-2: #212326; --tinta: #f0ede8; --tinta-2: #c3bfb8; --tinta-3: #8d8983;
+      --regua: #34373b; --regua-forte: #4c5055; --vermelho: #f2686e; --vermelho-fundo: #2b1a1b;
+      --ok: #7fc9a1; --ok-fundo: #16241d;
+      --atencao: #e0b45f; --atencao-fundo: #2a2213;
+      --falta: #ef8a8a; --falta-fundo: #2b1b1b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --papel: #191a1c; --papel-2: #212326; --tinta: #f0ede8; --tinta-2: #c3bfb8; --tinta-3: #8d8983;
+    --regua: #34373b; --regua-forte: #4c5055; --vermelho: #f2686e; --vermelho-fundo: #2b1a1b;
+    --ok: #7fc9a1; --ok-fundo: #16241d;
+    --atencao: #e0b45f; --atencao-fundo: #2a2213;
+    --falta: #ef8a8a; --falta-fundo: #2b1b1b;
+  }
+
+  * { box-sizing: border-box; }
+  body { background: var(--papel); color: var(--tinta); font-family: var(--corpo); font-size: 1.0625rem; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+  .env { max-width: 64rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+  .col { max-width: 42rem; }
+
+  h1, h2, h3 { font-family: var(--display); line-height: 1.15; text-wrap: balance; margin: 0; }
+  h1 { font-size: clamp(2rem, 5.5vw, 3.1rem); font-weight: 700; letter-spacing: -0.02em; }
+  h2 { font-size: clamp(1.45rem, 3.4vw, 1.9rem); font-weight: 700; letter-spacing: -0.015em; }
+  h3 { font-size: 1.15rem; font-weight: 600; }
+  p { margin: 0; }
+
+  .rotulo { font-family: var(--display); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--tinta-3); }
+  .rotulo-vermelho { color: var(--vermelho); }
+
+  header.capa { padding: 4rem 0 2.5rem; display: flex; flex-direction: column; gap: 1.25rem; }
+  header.capa p.sub { font-size: 1.2rem; color: var(--tinta-2); max-width: 38rem; }
+  .meta { font-family: var(--display); font-size: 0.78rem; color: var(--tinta-3); display: flex; flex-wrap: wrap; gap: 0.4rem 1.25rem; }
+
+  section { padding-block: 3rem; border-top: 1px solid var(--regua); }
+  section > * + * { margin-top: 1.15rem; }
+  .num { font-family: var(--display); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; color: var(--vermelho); display: block; margin-bottom: 0.6rem; }
+
+  .destaque { background: var(--vermelho-fundo); border-left: 3px solid var(--vermelho); padding: 1.25rem 1.4rem; display: flex; flex-direction: column; gap: 0.7rem; }
+  .destaque h3 { color: var(--vermelho); }
+  .quadro { background: var(--papel-2); padding: 1.25rem 1.4rem; display: flex; flex-direction: column; gap: 0.7rem; }
+
+  ul, ol { margin: 0; padding-left: 1.15rem; display: flex; flex-direction: column; gap: 0.45rem; }
+  li::marker { color: var(--tinta-3); }
+  a { color: inherit; text-decoration-color: var(--regua-forte); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--vermelho); }
+  a:focus-visible { outline: 2px solid var(--vermelho); outline-offset: 2px; }
+  code { font-family: var(--display); font-size: 0.85em; background: var(--papel-2); padding: 0.1em 0.35em; }
+
+  .rolagem { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-family: var(--display); font-size: 0.83rem; }
+  th, td { text-align: left; padding: 0.55rem 0.85rem 0.55rem 0; border-bottom: 1px solid var(--regua); vertical-align: top; }
+  th { font-weight: 700; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--tinta-3); white-space: nowrap; }
+  td:last-child, th:last-child { padding-right: 0; }
+  td.pq { font-family: var(--corpo); font-size: 0.92rem; line-height: 1.55; color: var(--tinta-2); }
+
+  .selo { display: inline-block; font-family: var(--display); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.2rem 0.45rem; white-space: nowrap; }
+  .s-ok { background: var(--ok-fundo); color: var(--ok); }
+  .s-atencao { background: var(--atencao-fundo); color: var(--atencao); }
+  .s-falta { background: var(--falta-fundo); color: var(--falta); }
+
+  .check { display: flex; flex-direction: column; gap: 0; }
+  .item { display: grid; grid-template-columns: 6.5rem 1fr; gap: 0.4rem 1rem; padding-block: 0.7rem; border-bottom: 1px solid var(--regua); align-items: start; }
+  .item .desc { font-size: 0.97rem; }
+  .item .desc small { display: block; color: var(--tinta-3); font-family: var(--display); font-size: 0.78rem; margin-top: 0.15rem; }
+
+  footer { border-top: 2px solid var(--tinta); padding-top: 1.5rem; margin-top: 3rem; font-family: var(--display); font-size: 0.8rem; color: var(--tinta-3); }
+</style>
+
+<div class="env">
+
+<header class="capa">
+  <p class="rotulo rotulo-vermelho">Auditoria de privacidade e implementação</p>
+  <h1>Privacidade e LGPD na Tower EPI's</h1>
+  <p class="sub">O que o site realmente coleta — medido em navegador, não presumido —, os três documentos publicados, e a decisão de não colocar banner de cookies.</p>
+  <p class="meta"><span>3 de setembro de 2026</span><span>8 rotas auditadas em navegador real</span><span>3 páginas legais publicadas</span></p>
+</header>
+
+<section>
+  <span class="num">A conclusão primeiro</span>
+  <h2>O site não coleta quase nada — e isso muda tudo</h2>
+  <div class="col" style="display:flex;flex-direction:column;gap:1.1rem;margin-top:1.5rem">
+    <div class="destaque">
+      <h3>Zero cookies. Zero terceiros. Zero armazenamento.</h3>
+      <p>Abri oito páginas em navegador real, com tudo carregado até o fim, e medi: <strong>nenhum cookie gravado, nenhum host de terceiro contatado, localStorage e sessionStorage vazios.</strong> Não há Google Analytics, Tag Manager, pixel de rede social, mapa, chat, reCAPTCHA nem fonte externa — as fontes são servidas pelo próprio site.</p>
+    </div>
+    <div class="destaque">
+      <h3>Por isso não coloquei banner de cookies</h3>
+      <p>Um banner que pergunta se você aceita cookies num site que não usa cookies não protege ninguém. Só treina as pessoas a clicar em "aceitar" sem ler, ocupa a tela no celular e cria uma aparência de conformidade que não corresponde a nada. <strong>É a recomendação, não um esquecimento</strong> — e ela se inverte no dia em que entrar a primeira ferramenta de medição.</p>
+    </div>
+    <div class="destaque">
+      <h3>A política antiga afirmava algo falso</h3>
+      <p>O texto que estava publicado dizia: <em>"Utilizamos ferramenta de análise de audiência"</em>. O site não usa. Num documento legal, uma afirmação errada sobre tratamento de dados é pior que uma omissão — ela descreve um tratamento que não existe e, se existisse, exigiria consentimento. Reescrito.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <span class="num">Fases 1 e 2</span>
+  <h2>Mapa de dados</h2>
+  <p class="col">Só o que existe. Nenhuma linha aqui foi preenchida por analogia com outros sites.</p>
+  <div class="rolagem" style="margin-top:1.5rem">
+    <table>
+      <thead><tr><th>Dado</th><th>Origem</th><th>Finalidade</th><th>Base legal provável</th><th>Destino</th><th>Retenção</th><th>Risco</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Itens, quantidade, numeração, cidade, prazo</td>
+          <td>Construtor de orçamento</td>
+          <td>Montar a mensagem</td>
+          <td>—</td>
+          <td class="pq">Nenhum. Fica no navegador</td>
+          <td>Até fechar a aba</td>
+          <td><span class="selo s-ok">Nulo</span></td>
+        </tr>
+        <tr>
+          <td>Nome e empresa (opcionais)</td>
+          <td>Construtor de orçamento</td>
+          <td>Identificar quem pede</td>
+          <td class="pq">Procedimentos preliminares de contrato</td>
+          <td class="pq">Vai no texto da mensagem, se o usuário enviar</td>
+          <td>Até fechar a aba</td>
+          <td><span class="selo s-ok">Baixo</span></td>
+        </tr>
+        <tr>
+          <td>Respostas da ferramenta de orientação</td>
+          <td>/encontrar-epi/</td>
+          <td>Sugerir categorias</td>
+          <td>—</td>
+          <td class="pq">Nenhum. Memória da página</td>
+          <td>Até fechar a aba</td>
+          <td><span class="selo s-ok">Nulo</span></td>
+        </tr>
+        <tr>
+          <td>Telefone, perfil e conteúdo da conversa</td>
+          <td>WhatsApp</td>
+          <td>Atendimento e orçamento</td>
+          <td class="pq">Procedimentos preliminares / execução de contrato</td>
+          <td>Meta (WhatsApp)</td>
+          <td class="pq">Enquanto útil ao relacionamento</td>
+          <td><span class="selo s-atencao">Médio</span></td>
+        </tr>
+        <tr>
+          <td>IP, data/hora, página, user-agent</td>
+          <td>Requisição HTTP</td>
+          <td>Operação e segurança</td>
+          <td>Legítimo interesse</td>
+          <td>Vercel (hospedagem)</td>
+          <td class="pq">Definido pelo provedor</td>
+          <td><span class="selo s-atencao">Médio</span></td>
+        </tr>
+        <tr>
+          <td>Documentos de uma venda</td>
+          <td>Fora do site</td>
+          <td>Obrigação fiscal</td>
+          <td>Obrigação legal</td>
+          <td>Tower e contabilidade</td>
+          <td class="pq">Prazo legal aplicável</td>
+          <td><span class="selo s-atencao">Fora do escopo do site</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="quadro col" style="margin-top:1.5rem">
+    <h3>O que o site não tem, e por isso não aparece no mapa</h3>
+    <p>Cadastro, login, newsletter, checkout, pagamento, CRM, automação de marketing, remarketing, pixel, mapa incorporado, vídeo incorporado, chat, reCAPTCHA e upload de arquivo. Nenhum desses existe — e um mapa de dados que os listasse "por precaução" seria ficção.</p>
+  </div>
+</section>
+
+<section>
+  <span class="num">Fases 3, 4, 10 e 12</span>
+  <h2>O que foi publicado</h2>
+  <div class="rolagem" style="margin-top:1.5rem">
+    <table>
+      <thead><tr><th>Página</th><th>Estado</th><th>O que mudou</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><code>/politica-de-privacidade/</code></td>
+          <td><span class="selo s-ok">Reescrita</span></td>
+          <td class="pq">Catorze seções com sumário clicável. Descreve o que existe, com as bases legais candidatas e a ressalva de que a classificação final é jurídica. Saiu a afirmação falsa sobre analytics.</td>
+        </tr>
+        <tr>
+          <td><code>/politica-de-cookies/</code></td>
+          <td><span class="selo s-ok">Criada</span></td>
+          <td class="pq">Existe justamente porque a resposta é "nenhum". Publica a medição, explica por que não há banner e deixa escrito o que muda se um dia houver.</td>
+        </tr>
+        <tr>
+          <td><code>/termos-de-uso/</code></td>
+          <td><span class="selo s-ok">Criada</span></td>
+          <td class="pq">Catorze seções. Cobre o que se aplica a um site que não vende online: conteúdo informativo, orçamento sem preço firme, WhatsApp de terceiro, propriedade do material e limites de responsabilidade — sem cláusula que tente afastar direito do consumidor.</td>
+        </tr>
+        <tr>
+          <td><code>/configuracoes-de-cookies/</code></td>
+          <td><span class="selo s-falta">Não criada</span></td>
+          <td class="pq">Não há preferência a configurar. Criar a página seria dar a impressão de escolha onde não existe escolha.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="margin-top:2.5rem">Outras mudanças no site</h3>
+  <ul class="col" style="margin-top:1rem">
+    <li><strong>Rodapé</strong> — os três documentos ficam visíveis, em nav própria, sem virar lista de palavra-chave.</li>
+    <li><strong>Aviso no formulário</strong>, junto do botão e não escondido: o que você digitou fica no navegador, nada sai até você tocar, e quem recebe é o WhatsApp.</li>
+    <li><strong>Aviso de terceiro no CTA de fechamento</strong> — uma linha, sem modal e sem confirmação. Barreira num CTA que é o único canal de conversão custaria mais do que informa.</li>
+    <li><strong>Robots</strong> — a política de privacidade estava em <code>disallow</code>, o oposto do que ela existe para fazer. Liberada e incluída no sitemap com prioridade baixa.</li>
+    <li><strong>Cabeçalhos</strong> — entraram <code>Permissions-Policy</code> (câmera, microfone e geolocalização desligados) e <code>X-DNS-Prefetch-Control: off</code>, somando aos três que já existiam.</li>
+  </ul>
+</section>
+
+<section>
+  <span class="num">Fases 5 e 6</span>
+  <h2>Banner e Consent Mode: a decisão e o gatilho</h2>
+  <div class="quadro col" style="margin-top:1.5rem">
+    <h3>Hoje: nenhum dos dois</h3>
+    <p>Sem cookies e sem Google, não há consentimento a coletar nem sinal de consentimento a enviar. Consent Mode sem tag do Google instalada não faz nada.</p>
+  </div>
+  <div class="destaque col" style="margin-top:1rem">
+    <h3>O gatilho, escrito para não se perder</h3>
+    <p>O arquivo <code>src/lib/analytics.ts</code> já existe e está inerte — sem provedor configurado, as funções são no-op. <strong>No dia em que alguém configurar GA4, GTM ou pixel, três coisas passam a ser necessárias ao mesmo tempo, e antes de a ferramenta ir ao ar:</strong></p>
+    <ol>
+      <li>Banner com <strong>aceitar, recusar e configurar no mesmo peso visual</strong>, sem caixa pré-marcada e sem linguagem que empurre.</li>
+      <li>Google Consent Mode v2 em modo negado por padrão, com <code>analytics_storage</code>, <code>ad_storage</code>, <code>ad_user_data</code> e <code>ad_personalization</code> só liberados após escolha registrada.</li>
+      <li>Tabela real de cookies na política, com nome, fornecedor, finalidade e duração — e o registro do consentimento, com data e versão do texto.</li>
+    </ol>
+    <p>O aviso está no comentário das duas páginas legais e no <code>analytics.ts</code>, para quem mexer no código encontrar sem procurar.</p>
+  </div>
+</section>
+
+<section>
+  <span class="num">Fases 15 e 16</span>
+  <h2>Segurança e terceiros</h2>
+  <div class="rolagem" style="margin-top:1.5rem">
+    <table>
+      <thead><tr><th>Item</th><th>Estado</th><th>Observação</th></tr></thead>
+      <tbody>
+        <tr><td>HTTPS</td><td><span class="selo s-ok">OK</span></td><td class="pq">Servido só por conexão criptografada.</td></tr>
+        <tr><td>Cookies Secure / HttpOnly / SameSite</td><td><span class="selo s-ok">Não se aplica</span></td><td class="pq">Não há cookies para configurar.</td></tr>
+        <tr><td>X-Content-Type-Options, X-Frame-Options, Referrer-Policy</td><td><span class="selo s-ok">OK</span></td><td class="pq">Já existiam.</td></tr>
+        <tr><td>Permissions-Policy, X-DNS-Prefetch-Control</td><td><span class="selo s-ok">Adicionados</span></td><td class="pq">Nesta rodada.</td></tr>
+        <tr><td>Content-Security-Policy</td><td><span class="selo s-atencao">Recomendado</span></td><td class="pq">Ganho real, e hoje seria fácil: sem terceiros, a política pode ser bem restritiva. Deixei de fora desta rodada para não arriscar quebrar algo sem teste dedicado.</td></tr>
+        <tr><td>Área administrativa exposta</td><td><span class="selo s-ok">Não existe</span></td><td class="pq">Site estático. Não há login nem painel.</td></tr>
+        <tr><td>Banco de dados de visitantes</td><td><span class="selo s-ok">Não existe</span></td><td class="pq">Nada é gravado.</td></tr>
+        <tr><td>Chaves ou segredos no código</td><td><span class="selo s-ok">Nenhum</span></td><td class="pq">Não há variável de ambiente sensível em uso no cliente.</td></tr>
+        <tr><td>Proteção contra spam em formulário</td><td><span class="selo s-ok">Não se aplica</span></td><td class="pq">O formulário não submete a servidor nenhum — não há endpoint para abusar.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="margin-top:2.5rem">Terceiros: a lista inteira tem dois nomes</h3>
+  <div class="rolagem" style="margin-top:1rem">
+    <table>
+      <thead><tr><th>Serviço</th><th>Dado compartilhado</th><th>Papel aproximado</th><th>Fora do Brasil?</th></tr></thead>
+      <tbody>
+        <tr><td>Vercel (hospedagem)</td><td>Dados técnicos da requisição, incluindo IP</td><td class="pq">Operador, por conta da Tower</td><td>Provável</td></tr>
+        <tr><td>WhatsApp / Meta</td><td>Telefone, perfil e conteúdo da conversa</td><td class="pq">Serviço de comunicação de terceiro</td><td>Provável</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="col" style="margin-top:1.2rem">Escrevi "provável" de propósito: a região de processamento de cada fornecedor precisa ser confirmada nos termos deles antes de a política afirmar qualquer coisa. A seção de transferência internacional está publicada com essa ressalva marcada.</p>
+</section>
+
+<section>
+  <span class="num">Fase 21</span>
+  <h2>Checklist</h2>
+  <div class="check col" style="margin-top:1.5rem">
+    <div class="item"><span class="selo s-ok">Feito</span><span class="desc">Política de privacidade<small>Reescrita a partir da medição</small></span></div>
+    <div class="item"><span class="selo s-ok">Feito</span><span class="desc">Política de cookies<small>Publica a medição e a decisão sobre o banner</small></span></div>
+    <div class="item"><span class="selo s-ok">Feito</span><span class="desc">Termos de uso<small>Sem cláusula abusiva</small></span></div>
+    <div class="item"><span class="selo s-ok">Feito</span><span class="desc">Footer com os três documentos</small></span></div>
+    <div class="item"><span class="selo s-ok">Feito</span><span class="desc">Texto de privacidade no formulário<small>Junto do botão</small></span></div>
+    <div class="item"><span class="selo s-ok">Feito</span><span class="desc">Aviso de terceiro no WhatsApp<small>Uma linha, sem barreira</small></span></div>
+    <div class="item"><span class="selo s-ok">Feito</span><span class="desc">Direitos do titular documentados<small>Os onze direitos e o fluxo de atendimento</small></span></div>
+    <div class="item"><span class="selo s-ok">Feito</span><span class="desc">Retenção por finalidade</small></span></div>
+    <div class="item"><span class="selo s-ok">Feito</span><span class="desc">Robots e sitemap das páginas legais</small></span></div>
+    <div class="item"><span class="selo s-ok">Feito</span><span class="desc">Cabeçalhos de segurança adicionais</small></span></div>
+    <div class="item"><span class="selo s-ok">Feito</span><span class="desc">Disclaimer de conteúdo técnico<small>Já existia no rodapé; reforçado nos termos</small></span></div>
+    <div class="item"><span class="selo s-ok">Feito</span><span class="desc">Minimização nos formulários<small>Nome e empresa já eram opcionais</small></span></div>
+    <div class="item"><span class="selo s-ok">Verificado</span><span class="desc">Analytics, pixels e scripts de terceiros<small>Nenhum instalado</small></span></div>
+    <div class="item"><span class="selo s-ok">N/A</span><span class="desc">Banner e preferências de cookies<small>Não há cookies. Gatilho documentado</small></span></div>
+    <div class="item"><span class="selo s-ok">N/A</span><span class="desc">Consent Mode<small>Não há tag do Google</small></span></div>
+    <div class="item"><span class="selo s-ok">N/A</span><span class="desc">Consentimento de newsletter<small>Não existe newsletter</small></span></div>
+    <div class="item"><span class="selo s-falta">Falta</span><span class="desc">Razão social e CNPJ<small>Identificação do controlador. Marcado na página</small></span></div>
+    <div class="item"><span class="selo s-falta">Falta</span><span class="desc">Canal de privacidade dedicado<small>Hoje é o WhatsApp, que é real. E-mail no domínio é a boa prática</small></span></div>
+    <div class="item"><span class="selo s-falta">Falta</span><span class="desc">Indicação de quem responde por proteção de dados</small></span></div>
+    <div class="item"><span class="selo s-atencao">Recomendado</span><span class="desc">Content-Security-Policy<small>Fácil agora, difícil depois de entrar terceiro</small></span></div>
+    <div class="item"><span class="selo s-atencao">Recomendado</span><span class="desc">Confirmar região de processamento dos fornecedores</small></span></div>
+  </div>
+</section>
+
+<section>
+  <span class="num">O que eu não decido</span>
+  <h2>Pontos que precisam de validação jurídica</h2>
+  <p class="col">Escrevi os documentos com cuidado e diferenciei o que é obrigação, boa prática e recomendação técnica. Estes cinco pontos, porém, são de advogado, e estão marcados nas próprias páginas:</p>
+  <ol class="col" style="margin-top:1.2rem">
+    <li><strong>A classificação definitiva das bases legais.</strong> Indiquei as candidatas e escrevi que a definição é jurídica.</li>
+    <li><strong>A hipótese legal da transferência internacional</strong> para hospedagem e WhatsApp, e a redação dessa seção.</li>
+    <li><strong>Se o WhatsApp basta como canal de exercício de direitos</strong>, e como a Tower deve indicar formalmente quem responde por proteção de dados sendo uma empresa de duas pessoas.</li>
+    <li><strong>Os prazos de retenção</strong> de documentos fiscais e de conversa comercial, que dependem da legislação aplicável ao negócio.</li>
+    <li><strong>A cláusula de foro</strong> nos termos de uso, que deixei em aberto em vez de escrever por hábito.</li>
+  </ol>
+  <div class="destaque col" style="margin-top:1.5rem">
+    <h3>Uma coisa que não fiz de propósito</h3>
+    <p>Não copiei política de nenhum outro site, e não preenchi campo nenhum com dado inventado. Onde falta informação da empresa, a página publica <strong>[INFORMAÇÃO NECESSÁRIA]</strong> no lugar. É feio, e é melhor que um CNPJ errado num documento legal.</p>
+  </div>
+</section>
+
+<footer>
+  <p>Auditoria medida em navegador real, em 8 rotas, com todos os recursos carregados. O verificador está no repositório e roda a cada mudança relevante. QA das 58 rotas do site sem problemas.</p>
+</footer>
+
+</div>

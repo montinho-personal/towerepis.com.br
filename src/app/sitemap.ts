@@ -48,5 +48,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...ESTADOS.map((e) => url(`/epi-por-cidade/${e.slug}/`, 0.75, 'monthly')),
     ...CIDADES.map((c) => url(`/epi-por-cidade/${c.slug}/`, 0.85, 'monthly')),
     url('/contato/', 0.8, 'monthly'),
+    // Páginas legais entram no sitemap: documento de transparência que o
+    // buscador não acha é menos transparente. Prioridade baixa porque elas
+    // não disputam consulta comercial nenhuma.
+    url('/politica-de-privacidade/', 0.3, 'monthly'),
+    url('/politica-de-cookies/', 0.3, 'monthly'),
+    url('/termos-de-uso/', 0.3, 'monthly'),
   ]
 }

@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useMemo, useState } from 'react'
 import {
   CATEGORIAS_COTACAO,
@@ -363,6 +364,22 @@ export function FormularioCotacao() {
                 assim nada se perde.
               </p>
             )}
+
+            {/* AVISO DE PRIVACIDADE junto do botão, e não escondido no rodapé.
+                O texto diz a verdade verificada: nada sai do navegador até
+                você mandar, e quem recebe é o WhatsApp. */}
+            <p className="mt-6 max-w-prose text-[0.85rem] leading-relaxed text-ink-3">
+              O que você digitou fica no seu navegador. Nada é enviado para a Tower até
+              você tocar no botão — e, quando toca, o que segue é a mensagem acima, pelo
+              WhatsApp, que é um serviço de terceiro. Nome e empresa são opcionais.{' '}
+              <Link
+                href="/politica-de-privacidade/"
+                className="underline underline-offset-4 hover:text-tower-red"
+              >
+                Política de privacidade
+              </Link>
+              .
+            </p>
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               {!longaDemais && (

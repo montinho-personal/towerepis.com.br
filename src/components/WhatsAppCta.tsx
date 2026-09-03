@@ -1,5 +1,7 @@
 'use client'
 
+import Link from 'next/link'
+
 import { linkWhatsApp, mensagemDoContexto, type ContextoWhatsApp } from '@/lib/whatsapp'
 import { rastrearWhatsApp } from '@/lib/analytics'
 import { IconeWhatsApp } from './Icones'
@@ -172,6 +174,20 @@ export function FechamentoCta({
               <span className="eyebrow">Sua mensagem já vai assim</span>
               <span className="mt-2 block italic">
                 &ldquo;{mensagem ?? mensagemDoContexto(contexto)}&rdquo;
+              </span>
+              {/* Aviso de terceiro, uma linha, junto do botão. Não é modal e
+                  não pede confirmação: virar barreira num CTA que é o único
+                  canal de conversão do site custaria mais do que informa. */}
+              <span className="mt-4 block text-paper/45">
+                O botão abre o WhatsApp, um serviço de terceiro. Você revisa e edita antes
+                de enviar — nada é enviado automaticamente.{' '}
+                <Link
+                  href="/politica-de-privacidade/"
+                  className="underline underline-offset-2 hover:text-paper/70"
+                >
+                  Privacidade
+                </Link>
+                .
               </span>
             </p>
           </div>

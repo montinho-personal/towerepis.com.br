@@ -422,6 +422,33 @@ export function Perguntas({
 }
 
 /** Assinatura técnica — E-E-A-T visível para o leitor, não só para o robô. */
+/**
+ * Sumário das páginas legais.
+ *
+ * Documento legal sem índice é documento que ninguém lê até o fim — e a
+ * transparência que a LGPD pede depende de a pessoa ACHAR a parte que
+ * interessa. Âncora simples, sem JavaScript.
+ */
+export function SumarioLegal({ itens }: { itens: { id: string; rotulo: string }[] }) {
+  return (
+    <nav aria-label="Nesta página" className="not-prose mb-12 border-y border-rule py-6">
+      <h2 className="eyebrow">Nesta página</h2>
+      <ol className="mt-4 grid gap-x-10 gap-y-2 sm:grid-cols-2">
+        {itens.map((i, n) => (
+          <li key={i.id} className="flex gap-3 text-[0.95rem]">
+            <span className="font-display text-xs font-bold text-tower-red">
+              {String(n + 1).padStart(2, '0')}
+            </span>
+            <a href={`#${i.id}`} className="underline underline-offset-4 hover:text-tower-red">
+              {i.rotulo}
+            </a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+  )
+}
+
 export function AssinaturaTecnica({ atualizado }: { atualizado: string }) {
   return (
     <aside className="border border-rule bg-paper-2 p-6">
