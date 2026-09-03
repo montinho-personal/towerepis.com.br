@@ -10,7 +10,7 @@ type Props = {
   children: React.ReactNode
   publico?: 'b2b' | 'b2c'
   categoria?: string
-  variante?: 'zap' | 'ink' | 'ghost'
+  variante?: 'zap' | 'ink' | 'ghost' | 'linha'
   bloco?: boolean
   mensagem?: string
 }
@@ -34,6 +34,9 @@ export function WhatsAppCta({
     zap: 'btn btn-zap',
     ink: 'btn btn-ink',
     ghost: 'btn btn-ghost',
+    // Sobre superfície escura ou sobre o vermelho da marca, onde o verde do
+    // WhatsApp brigaria com o fundo em vez de se destacar dele.
+    linha: 'btn btn-linha',
   }[variante]
 
   return (

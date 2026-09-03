@@ -202,6 +202,12 @@
 
   /* Contorno sobre superfície escura. O fantasma padrão usa texto em
      tinta e desaparece no grafite — o que só se descobre olhando. */
+  /* Sobre o vermelho da marca: o botao branco com o vermelho profundo no
+     rotulo. Botao vermelho sobre fundo vermelho nao existe, e o pedido de
+     orcamento nao pode deixar de ser a acao mais forte da tela. */
+  .btn-papel { background: var(--color-paper); color: var(--color-tower-red-deep); }
+  .btn-papel:hover { background: #fff; color: #000; }
+
   .btn-linha {
     background: transparent;
     color: var(--color-paper);
@@ -266,6 +272,18 @@
      vermelho no escuro renderiza cinza — e sem nenhum erro visível. */
   .band-ink .eyebrow { color: #9aa0a8; }
   .band-ink .eyebrow-red { color: var(--color-tower-red-light); }
+
+  /* --- O degrade da marca -------------------------------------
+     Nao e um vermelho inventado: sao os doze passos do degrade que preenche
+     o O do logotipo, amostrados da curva t^1.61383 do arquivo original, na
+     mesma direcao (escuro a esquerda, claro a direita). O cabecalho passou
+     a ser esse degrade em tamanho grande. */
+  .degrade-marca {
+    background-image: linear-gradient(96deg,
+      #991d21 0%, #9a1d21 9%, #9e1d22 18%, #a21d23 27%, #a71d24 36%,
+      #ad1d25 45%, #b41d26 55%, #bb1d28 64%, #c31e29 73%, #cc1e2b 82%,
+      #d61e2d 91%, #e01e2f 100%);
+  }
 
   .band-red {
     background: var(--color-tower-red);

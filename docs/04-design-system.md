@@ -499,6 +499,55 @@ do rodapé transborda a coluna de propósito, para a calha vazia ao lado.
 
 ---
 
+## O CABEÇALHO VERMELHO — O DEGRADÊ DA MARCA EM TAMANHO GRANDE
+
+Decisão do cliente, depois do teste que eu tinha feito e reprovado. O que o
+teste apontou continua verdade; cada ponto virou uma escolha explícita em vez
+de um motivo para não fazer.
+
+**O vermelho não é escolhido, é extraído.** São os doze passos do degradê que
+preenche o O do logotipo — amostrados da curva `t^1.61383` do arquivo original
+— na mesma direção: escuro à esquerda (#991d21), claro à direita (#e01e2f). A
+classe é `.degrade-marca`. O cabeçalho é o degradê da marca em tamanho grande,
+e não um vermelho novo.
+
+**A marca vai em recorte branco.** `tom="vermelho"` no `Logo` pinta tudo em
+papel, o O incluído. Não é preferência: o O é vermelho, e vermelho sobre
+vermelho não se lê. Toda marca com cor própria tem a versão de recorte, e é
+ela que aparece quando o fundo é a própria cor.
+
+**O botão inverte.** Branco com o rótulo em vermelho profundo (`.btn-papel`),
+10,45:1. Botão vermelho sobre fundo vermelho não existe, e pedir orçamento
+tem que continuar sendo a ação mais forte da tela.
+
+**O WhatsApp do menu no celular perde o verde** e vira contorno claro
+(`variante="linha"`): verde sobre vermelho briga em vez de destacar. O botão
+flutuante segue verde — ele fica sobre a página, não sobre a faixa.
+
+**A régua continua, agora clara.** A linha da navegação é papel a 35%, e o
+trecho que acende sob o item é papel sólido. Vermelho sobre vermelho não
+marcaria nada.
+
+### Texto opaco, sempre — medido
+
+Papel a 85% de opacidade marca **4,49:1** no trecho claro do degradê, e o
+telefone da fita marca **3,90:1**. Reprova. Opaco, o pior ponto possível do
+degradê (#e01e2f) ainda dá **4,62:1**, e os rótulos reais ficam entre 5,4 e
+7,8:1.
+
+**Não existe hierarquia por opacidade neste cabeçalho.** Quem marca o item sob
+o cursor é o trecho branco da régua, não um cinza mais claro.
+
+### A regra que mudou
+
+Era "uma faixa vermelha por página". Agora **o vermelho é a moldura do site**:
+o cabeçalho é vermelho em toda página, e uma faixa vermelha de conteúdo passa a
+disputar com ele em vez de se destacar. A faixa da Bompel na home é a única que
+existe — quando a rolagem junta as duas, elas leem como uma massa vermelha só,
+separadas por uma linha de 2px.
+
+---
+
 ## AINDA FALTA
 
 O sistema está desenhado para mais fotografia do que tem.

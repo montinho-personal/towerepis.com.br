@@ -26,11 +26,20 @@ import { linkWhatsApp } from '@/lib/whatsapp'
  * fica a 53,2% dela (REGUA_DA_MARCA). Assim o alinhamento é geometria, não
  * pixel ajustado à mão — e continua certo quando o cabeçalho encolhe.
  *
- * Fundo de papel, e não vermelho: testei o vermelho. Com o selo, a marca
- * some no próprio fundo; com o tipo em branco, funciona, mas o botão de
- * orçamento perde o vermelho e deixa de ser a ação mais forte da tela, e o
- * verde do WhatsApp briga com a faixa no celular. O vermelho da marca já
- * está no O.
+ * TEXTO OPACO, SEMPRE. Sobre o degradê da marca, papel a 85% de opacidade
+ * marca 4,49:1 no trecho claro e o telefone da fita marca 3,90:1 — reprova.
+ * Opaco, o pior ponto do degradê (#e01e2f) ainda dá 4,62:1. Não existe
+ * hierarquia por opacidade neste cabeçalho; quem marca o item sob o cursor é
+ * o trecho branco da régua.
+ *
+ * FUNDO VERMELHO, decidido pelo cliente depois do teste. O que o teste
+ * tinha apontado continua verdade, e cada ponto virou uma escolha explícita:
+ * a marca vai em recorte branco (o O vermelho não se lê sobre vermelho); o
+ * botão de orçamento inverte para branco com o rótulo em vermelho profundo,
+ * para seguir sendo a ação mais forte da tela; e o WhatsApp do menu no
+ * celular deixa o verde e vira contorno claro, porque verde sobre vermelho
+ * briga em vez de destacar. O botão flutuante segue verde: ele fica sobre a
+ * página, não sobre a faixa.
  */
 const NAV = [
   { href: '/calcados/', rotulo: 'Calçados' },
@@ -57,14 +66,14 @@ export function Header() {
   const linha = { top: `${REGUA_DA_MARCA * 100}%` }
 
   return (
-    <header className="sticky top-0 z-30 border-b-2 border-ink bg-paper/95 backdrop-blur-sm">
+    <header className="degrade-marca sticky top-0 z-30 border-b-2 border-ink text-paper">
       {/* FITA */}
       <div
-        className={`overflow-hidden bg-grafite-800 text-paper transition-[max-height,opacity] duration-200 ${
+        className={`overflow-hidden bg-black/25 transition-[max-height,opacity] duration-200 ${
           rolou ? 'max-h-0 opacity-0' : 'max-h-10 opacity-100'
         }`}
       >
-        <div className="wrap flex h-8 items-center justify-between gap-4 font-display text-[0.66rem] font-bold uppercase tracking-[0.16em] text-paper/75">
+        <div className="wrap flex h-8 items-center justify-between gap-4 font-display text-[0.66rem] font-bold uppercase tracking-[0.16em] text-paper">
           <p className="m-0 truncate">
             <span className="hidden sm:inline">Fortaleza — CE · </span>Desde {empresa.fundacao}
           </p>
@@ -72,7 +81,7 @@ export function Header() {
             href={linkWhatsApp('header')}
             target="_blank"
             rel="noopener noreferrer"
-            className="shrink-0 transition-colors hover:text-tower-red-light"
+            className="shrink-0 transition-colors hover:text-white"
           >
             <span className="hidden sm:inline">WhatsApp </span>{empresa.whatsapp.exibicao}
           </a>
@@ -86,24 +95,24 @@ export function Header() {
         }`}
       >
         <Link href="/" className="shrink-0" aria-label="Tower EPI's, página inicial">
-          <Logo prefixo="cabecalho" className={`w-auto transition-[height] duration-200 ${alturaMarca}`} />
+          <Logo prefixo="cabecalho" tom="vermelho" className={`w-auto transition-[height] duration-200 ${alturaMarca}`} />
         </Link>
 
         <nav aria-label="Principal" className="hidden flex-1 lg:block">
           <ul className={`relative flex items-start gap-8 ${alturaMarca}`}>
             {/* a régua do logo, continuada */}
-            <span aria-hidden="true" className="pointer-events-none absolute inset-x-0 h-px bg-rule-strong" style={linha} />
+            <span aria-hidden="true" className="pointer-events-none absolute inset-x-0 h-px bg-paper/35" style={linha} />
             {NAV.map((item) => (
               <li key={item.href} className="group relative h-full">
                 <Link
                   href={item.href}
-                  className="flex h-full items-start pt-[0.35rem] font-display text-[0.8125rem] font-semibold text-ink-2 transition-colors group-hover:text-ink"
+                  className="flex h-full items-start pt-[0.35rem] font-display text-[0.8125rem] font-semibold text-paper transition-colors"
                 >
                   {item.rotulo}
                 </Link>
                 <span
                   aria-hidden="true"
-                  className="pointer-events-none absolute inset-x-0 h-[3px] -translate-y-px scale-x-0 bg-tower-red transition-transform duration-200 group-hover:scale-x-100"
+                  className="pointer-events-none absolute inset-x-0 h-[3px] -translate-y-px scale-x-0 bg-paper transition-transform duration-200 group-hover:scale-x-100"
                   style={linha}
                 />
               </li>
@@ -112,7 +121,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Link href="/orcamento/" className="btn btn-red hidden sm:inline-flex">
+          <Link href="/orcamento/" className="btn btn-papel hidden sm:inline-flex">
             Pedir orçamento
           </Link>
           <button
@@ -120,7 +129,7 @@ export function Header() {
             onClick={() => setAberto((v) => !v)}
             aria-expanded={aberto}
             aria-controls="menu-mobile"
-            className="flex h-11 w-11 items-center justify-center border border-rule-strong lg:hidden"
+            className="flex h-11 w-11 items-center justify-center border border-paper/45 lg:hidden"
           >
             <span className="sr-only">{aberto ? 'Fechar menu' : 'Abrir menu'}</span>
             <svg viewBox="0 0 20 20" className="h-5 w-5" aria-hidden="true">
@@ -135,8 +144,8 @@ export function Header() {
       </div>
 
       {aberto && (
-        <nav id="menu-mobile" aria-label="Principal, celular" className="border-t border-rule lg:hidden">
-          <ul className="wrap divide-y divide-rule py-1">
+        <nav id="menu-mobile" aria-label="Principal, celular" className="border-t border-paper/25 lg:hidden">
+          <ul className="wrap divide-y divide-paper/15 py-1">
             {NAV.map((item) => (
               <li key={item.href}>
                 <Link href={item.href} onClick={() => setAberto(false)} className="block py-4 font-display text-base font-semibold">
@@ -145,10 +154,10 @@ export function Header() {
               </li>
             ))}
             <li className="space-y-3 py-4">
-              <Link href="/orcamento/" onClick={() => setAberto(false)} className="btn btn-red btn-block">
+              <Link href="/orcamento/" onClick={() => setAberto(false)} className="btn btn-papel btn-block">
                 Pedir orçamento
               </Link>
-              <WhatsAppCta contexto="header" secao="menu-mobile" bloco>
+              <WhatsAppCta contexto="header" secao="menu-mobile" variante="linha" bloco>
                 Falar no WhatsApp
               </WhatsAppCta>
             </li>
