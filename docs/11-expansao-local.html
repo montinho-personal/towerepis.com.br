@@ -1,0 +1,570 @@
+<title>Expansão local da Tower EPI's</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+  :root {
+    --papel: #fcfbf9;
+    --papel-2: #f0ebe3;
+    --tinta: #1f2124;
+    --tinta-2: #3d4147;
+    --tinta-3: #6b7078;
+    --regua: #ddd7cd;
+    --regua-forte: #b9b2a6;
+    --vermelho: #b4111b;
+    --vermelho-fundo: #fdf0ef;
+    --sim: #1f5c3d;
+    --sim-fundo: #e8f1ec;
+    --talvez: #8a5a08;
+    --talvez-fundo: #f7eeda;
+    --nao: #8f1a1e;
+    --nao-fundo: #f7e6e5;
+    --display: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+    --corpo: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --papel: #191a1c;
+      --papel-2: #212326;
+      --tinta: #f0ede8;
+      --tinta-2: #c3bfb8;
+      --tinta-3: #8d8983;
+      --regua: #34373b;
+      --regua-forte: #4c5055;
+      --vermelho: #f2686e;
+      --vermelho-fundo: #2b1a1b;
+      --sim: #7fc9a1;
+      --sim-fundo: #16241d;
+      --talvez: #e0b45f;
+      --talvez-fundo: #2a2213;
+      --nao: #ef8a8a;
+      --nao-fundo: #2b1b1b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --papel: #191a1c;
+    --papel-2: #212326;
+    --tinta: #f0ede8;
+    --tinta-2: #c3bfb8;
+    --tinta-3: #8d8983;
+    --regua: #34373b;
+    --regua-forte: #4c5055;
+    --vermelho: #f2686e;
+    --vermelho-fundo: #2b1a1b;
+    --sim: #7fc9a1;
+    --sim-fundo: #16241d;
+    --talvez: #e0b45f;
+    --talvez-fundo: #2a2213;
+    --nao: #ef8a8a;
+    --nao-fundo: #2b1b1b;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--papel);
+    color: var(--tinta);
+    font-family: var(--corpo);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .env { max-width: 60rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+  .col { max-width: 42rem; }
+
+  h1, h2, h3, h4 { font-family: var(--display); line-height: 1.15; text-wrap: balance; margin: 0; }
+  h1 { font-size: clamp(2rem, 5.5vw, 3.1rem); font-weight: 700; letter-spacing: -0.02em; }
+  h2 { font-size: clamp(1.5rem, 3.6vw, 2rem); font-weight: 700; letter-spacing: -0.015em; }
+  h3 { font-size: 1.2rem; font-weight: 600; }
+  h4 { font-size: 0.95rem; font-weight: 600; }
+  p { margin: 0; }
+
+  .rotulo {
+    font-family: var(--display); font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--tinta-3);
+  }
+  .rotulo-vermelho { color: var(--vermelho); }
+
+  header.capa { padding: 4rem 0 2.5rem; display: flex; flex-direction: column; gap: 1.25rem; }
+  header.capa p.sub { font-size: 1.2rem; color: var(--tinta-2); max-width: 36rem; }
+  .meta { font-family: var(--display); font-size: 0.78rem; color: var(--tinta-3); display: flex; flex-wrap: wrap; gap: 0.4rem 1.25rem; }
+
+  section { padding-block: 3rem; border-top: 1px solid var(--regua); }
+  section > * + * { margin-top: 1.15rem; }
+  section h2 + p, section h2 + .col { margin-top: 1.5rem; }
+
+  .num {
+    font-family: var(--display); font-size: 0.72rem; font-weight: 700;
+    letter-spacing: 0.14em; color: var(--vermelho); display: block; margin-bottom: 0.6rem;
+  }
+
+  .destaque {
+    background: var(--vermelho-fundo); border-left: 3px solid var(--vermelho);
+    padding: 1.25rem 1.4rem; display: flex; flex-direction: column; gap: 0.7rem;
+  }
+  .destaque h3 { color: var(--vermelho); }
+
+  .quadro { background: var(--papel-2); padding: 1.25rem 1.4rem; display: flex; flex-direction: column; gap: 0.7rem; }
+
+  ul, ol { margin: 0; padding-left: 1.15rem; display: flex; flex-direction: column; gap: 0.45rem; }
+  li::marker { color: var(--tinta-3); }
+
+  a { color: inherit; text-decoration-color: var(--regua-forte); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--vermelho); }
+  a:focus-visible { outline: 2px solid var(--vermelho); outline-offset: 2px; }
+
+  .rolagem { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-family: var(--display); font-size: 0.86rem; font-variant-numeric: tabular-nums; }
+  th, td { text-align: left; padding: 0.6rem 0.9rem 0.6rem 0; border-bottom: 1px solid var(--regua); vertical-align: top; }
+  th { font-weight: 700; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--tinta-3); white-space: nowrap; }
+  td:last-child, th:last-child { padding-right: 0; }
+
+  .selo {
+    display: inline-block; font-family: var(--display); font-size: 0.66rem; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase; padding: 0.22rem 0.5rem; white-space: nowrap;
+  }
+  .s-sim { background: var(--sim-fundo); color: var(--sim); }
+  .s-talvez { background: var(--talvez-fundo); color: var(--talvez); }
+  .s-nao { background: var(--nao-fundo); color: var(--nao); }
+
+  .cidades { display: flex; flex-direction: column; gap: 0; }
+  .cidade { border-top: 1px solid var(--regua); padding-block: 1.75rem; display: grid; gap: 1rem 2.5rem; grid-template-columns: 1fr; }
+  @media (min-width: 46rem) { .cidade { grid-template-columns: 13rem 1fr; } }
+  .cidade .lado { display: flex; flex-direction: column; gap: 0.55rem; align-items: flex-start; }
+  .cidade .lado .pop { font-family: var(--display); font-size: 0.78rem; color: var(--tinta-3); }
+  .cidade .corpo { display: flex; flex-direction: column; gap: 0.8rem; }
+  .cidade h3 span { color: var(--tinta-3); font-weight: 400; }
+
+  .fontes { font-family: var(--display); font-size: 0.75rem; color: var(--tinta-3); line-height: 1.6; }
+  .fontes a { color: var(--tinta-2); }
+
+  pre.arvore {
+    font-family: var(--display); font-size: 0.8rem; line-height: 1.85; margin: 0;
+    background: var(--papel-2); padding: 1.25rem 1.4rem; overflow-x: auto; white-space: pre;
+  }
+  pre.arvore b { font-weight: 700; }
+  pre.arvore i { font-style: normal; color: var(--tinta-3); }
+
+  .pares { display: flex; flex-direction: column; gap: 0; }
+  .par { display: grid; gap: 0.3rem 1.5rem; padding-block: 0.85rem; border-bottom: 1px solid var(--regua); grid-template-columns: 1fr; }
+  @media (min-width: 46rem) { .par { grid-template-columns: 18rem 1fr; } }
+  .par .de { font-family: var(--display); font-size: 0.82rem; font-weight: 600; }
+  .par .pq { font-size: 0.95rem; color: var(--tinta-2); }
+
+  .perguntas { counter-reset: q; display: flex; flex-direction: column; gap: 0; }
+  .pergunta { border-top: 1px solid var(--regua); padding-block: 1.1rem; display: flex; gap: 1rem; }
+  .pergunta::before {
+    counter-increment: q; content: counter(q);
+    font-family: var(--display); font-size: 0.8rem; font-weight: 700; color: var(--vermelho);
+    flex: none; width: 1.5rem; padding-top: 0.2rem;
+  }
+  .pergunta div { display: flex; flex-direction: column; gap: 0.3rem; }
+  .pergunta .porque { font-size: 0.95rem; color: var(--tinta-2); }
+
+  footer { border-top: 2px solid var(--tinta); padding-top: 1.5rem; margin-top: 3rem; font-family: var(--display); font-size: 0.8rem; color: var(--tinta-3); }
+</style>
+
+<div class="env">
+
+<header class="capa">
+  <p class="rotulo rotulo-vermelho">Diagnóstico e arquitetura — antes de criar qualquer página</p>
+  <h1>Expansão local da Tower EPI's</h1>
+  <p class="sub">Auditoria das 43 páginas atuais, pesquisa real das seis cidades e a arquitetura que eu recomendo — com uma pergunta de fato que precisa ser respondida antes da primeira linha de código.</p>
+  <p class="meta"><span>3 de setembro de 2026</span><span>43 URLs rastreadas em navegador real</span><span>Nenhuma alteração feita no site</span></p>
+</header>
+
+<section>
+  <span class="num">O essencial</span>
+  <h2>Três conclusões, antes do detalhe</h2>
+  <div class="col" style="display:flex;flex-direction:column;gap:1.1rem;margin-top:1.5rem">
+    <div class="destaque">
+      <h3>1. Fortaleza não precisa de página de cidade</h3>
+      <p>Quinze das 43 páginas já carregam “Fortaleza” no title, e não por enfeite: a home disputa <em>EPI em Fortaleza</em>, <code>/empresas/</code> disputa <em>fornecedor de EPI para empresas em Fortaleza</em>, <code>/calcados/</code> disputa <em>calçado de segurança em Fortaleza</em>. Criar <code>/epi-por-cidade/fortaleza-ce/</code> colocaria uma página nova para brigar com três páginas que já estão posicionadas para exatamente essas consultas. É canibalização por construção.</p>
+    </div>
+    <div class="destaque">
+      <h3>2. Quatro das seis cidades estão fora da área que o site declara</h3>
+      <p>O site diz, hoje, que a Tower atende Fortaleza, a Região Metropolitana e o Ceará. Teresina, Parnaíba, Natal e Assú estão fora disso — e a pergunta “qual é a área de entrega real hoje” está aberta desde o início do projeto, registrada como pendência 7 em <code>docs/03-fatos-verificados.md</code>. Nada se publica sobre essas cidades antes dessa resposta.</p>
+    </div>
+    <div class="destaque">
+      <h3>3. A concorrência nessas cidades é exatamente o que você me pediu para não fazer</h3>
+      <p>Quem ocupa a primeira página de <em>EPI Teresina</em> e <em>EPI Natal</em> são páginas programáticas de empresas de São Paulo — “Distribuidora de EPI Teresina PI”, “Revendedor de EPI Natal RN”, o mesmo texto com a cidade trocada — mais diretórios como Telelistas e GuiaMais. A barra está baixa. Mas se a Tower publicar seis páginas iguais com a cidade trocada, ela vira a sétima doorway, e não a alternativa.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <span class="num">Fase 1</span>
+  <h2>Diagnóstico: o que existe hoje</h2>
+  <p class="col">Rastreei as 43 URLs em navegador real, a partir da home, seguindo cada link — não pelo sitemap. Isso mede profundidade de clique de verdade.</p>
+
+  <div class="rolagem" style="margin-top:1.5rem">
+    <table>
+      <thead><tr><th>O que medi</th><th>Resultado</th><th>Leitura</th></tr></thead>
+      <tbody>
+        <tr><td>URLs rastreadas</td><td>43 (sitemap: 42)</td><td>A 43ª é a página 404, correta fora do sitemap.</td></tr>
+        <tr><td>Status HTTP</td><td>200 em todas</td><td>Sem link quebrado, sem redirect em cadeia.</td></tr>
+        <tr><td>Profundidade de clique</td><td>1 na profundidade 0, 32 na 1, 10 na 2</td><td>Nada enterrado. O crawler alcança tudo sem depender do sitemap.</td></tr>
+        <tr><td>Sinal local no title/H1</td><td>15 de 43</td><td>Fortaleza já está coberta por intenção, não por página de cidade.</td></tr>
+        <tr><td>Páginas órfãs de link editorial</td><td>2 (<code>/contato/</code>, <code>/politica-de-privacidade/</code>)</td><td>Aceitável: são páginas de menu e rodapé.</td></tr>
+        <tr><td>H1 duplicado</td><td>1 par</td><td><code>/calcados/comparativo/</code> e o artigo de ocupacional × segurança.</td></tr>
+        <tr><td>Páginas rasas (&lt; 250 palavras)</td><td>6</td><td>Cinco delas são hubs — ver abaixo.</td></tr>
+        <tr><td>Schema por página</td><td>Organization + LocalBusiness + WebSite em todas; BreadcrumbList, FAQPage e BlogPosting onde cabe</td><td>Base sólida. O <code>LocalBusiness</code> é emitido sem <code>streetAddress</code>, só com cidade, estado e <code>areaServed</code>.</td></tr>
+        <tr><td>Links externos</td><td>10× gov.br, 3× normas.com.br, 2× bompel</td><td>Fontes reais, citadas onde a afirmação exige fonte.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="margin-top:2.5rem">O problema estrutural que já existe, antes de qualquer cidade nova</h3>
+  <div class="quadro col">
+    <p><strong>Os hubs estão rasos.</strong> <code>/encontrar-epi/</code> tem 59 palavras. <code>/para-seu-trabalho/</code> tem 146. <code>/protecao/</code> tem 151. <code>/conhecimento/</code> tem 207. São exatamente as páginas que deveriam concentrar autoridade e distribuí-la para as folhas.</p>
+    <p>Construir seis páginas de cidade em cima de hubs de 150 palavras é levantar o segundo andar antes da laje. O Lote 2 da auditoria anterior — que trata justamente disso — continua parado esperando o seu sinal.</p>
+  </div>
+
+  <h3 style="margin-top:2rem">Canibalização que já existe e que a expansão multiplicaria</h3>
+  <p class="col">A análise de cosseno sobre title, H1 e headings mostra as páginas de setor muito próximas entre si:</p>
+  <div class="rolagem">
+    <table>
+      <thead><tr><th>Sobreposição</th><th>Par</th><th>Situação</th></tr></thead>
+      <tbody>
+        <tr><td>0,76</td><td><code>/empresas/alimentacao/</code> × <code>/empresas/saude/</code></td><td>Vigiar</td></tr>
+        <tr><td>0,74</td><td><code>/calcados/comparativo/</code> × artigo de ocupacional × segurança</td><td>Disputa real, já conhecida</td></tr>
+        <tr><td>0,74</td><td><code>/empresas/alimentacao/</code> × <code>/empresas/construcao/</code></td><td>Vigiar</td></tr>
+        <tr><td>0,73</td><td><code>/empresas/alimentacao/</code> × <code>/empresas/facilities-e-limpeza/</code></td><td>Vigiar</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="col" style="margin-top:1.2rem">Cinco páginas de setor já se sobrepõem entre 0,70 e 0,76. Seis páginas de cidade que repitam a mesma lista de setores criariam trinta novas combinações no mesmo intervalo. <strong>Por isso a página de cidade não pode ser uma lista de setores.</strong> Ela precisa falar da cidade, e apontar para o setor.</p>
+</section>
+
+<section>
+  <span class="num">O fato que decide tudo</span>
+  <h2>A Tower atende essas cidades?</h2>
+  <p class="col">Eu não sei, e o projeto também não. O que está registrado é o seguinte:</p>
+  <ul class="col" style="margin-top:1.2rem">
+    <li><code>src/config/empresa.ts</code> declara <code>areaAtendida: ['Fortaleza', 'Região Metropolitana de Fortaleza', 'Ceará']</code>. Esse dado alimenta o <code>areaServed</code> do schema em todas as páginas.</li>
+    <li><code>docs/03-fatos-verificados.md</code> registra como pendência 7: <em>“Área de entrega real hoje e se o motorista continua”</em>. Nunca foi respondida.</li>
+    <li>A empresa opera de casa desde 2018, com motorista de entrega, sem loja física — o que a caracteriza como <em>service-area business</em>, e não como estabelecimento com endereço.</li>
+  </ul>
+  <div class="destaque col" style="margin-top:1.5rem">
+    <h3>O que isso significa na prática</h3>
+    <p>Uma página dizendo “EPIs para empresas em Natal” quando a Tower não entrega em Natal não é uma aposta de SEO. É uma promessa que o cliente cobra no WhatsApp — e o WhatsApp é o único canal de conversão do site. O custo de errar aqui não é ranking: é a conversa que chega e não pode ser atendida.</p>
+    <p>Existe um caminho honesto para cidade que a Tower atende <em>por transportadora, sob consulta</em>. Ele só é diferente do caminho de cidade onde o motorista chega. As duas coisas precisam de páginas diferentes, com linguagem diferente — e nenhuma das duas pode ser inventada.</p>
+  </div>
+</section>
+
+<section>
+  <span class="num">Fase 2</span>
+  <h2>As seis cidades, uma a uma</h2>
+  <p class="col">Pesquisa individual. Nenhuma cidade recebeu o texto da outra. Cada uma tem um perfil ocupacional próprio, e é dele que sai o EPI que faz sentido — não de uma lista genérica.</p>
+
+  <div class="cidades" style="margin-top:2rem">
+
+    <article class="cidade">
+      <div class="lado">
+        <h3>Fortaleza <span>· CE</span></h3>
+        <p class="pop">~2,4 milhões · RMF ~4 milhões</p>
+        <span class="selo s-sim">Já é a base</span>
+      </div>
+      <div class="corpo">
+        <p>Sede da empresa desde 1995. É a única cidade onde a Tower tem trinta anos de operação, clientes antigos e um sócio que é técnico de segurança do trabalho atendendo pessoalmente.</p>
+        <p><strong>O que o site já faz:</strong> quinze páginas com Fortaleza no title, cobrindo calçado, proteção por parte do corpo, sete profissões, cinco setores e o orçamento.</p>
+        <p><strong>Recomendação:</strong> não criar página de cidade. Fortalecer os hubs rasos e configurar o Perfil da Empresa no Google como <em>service-area business</em> — isso vale mais para <em>EPI Fortaleza</em> do que qualquer página nova.</p>
+      </div>
+    </article>
+
+    <article class="cidade">
+      <div class="lado">
+        <h3>Barbalha <span>· CE</span></h3>
+        <p class="pop">~81 mil · Cariri/Crajubar ~600 mil</p>
+        <span class="selo s-talvez">Dentro do Ceará, a confirmar</span>
+      </div>
+      <div class="corpo">
+        <p>Cidade do Cariri, a cerca de 550 km de Fortaleza. Economia com base em comércio e agricultura, mas com indústria de peso regional: a <strong>FARMACE</strong>, química e farmacêutica, e a antiga Indústria Barbalhense de Cimento Portland, hoje Itapuí. O Cariri concentra ainda o polo calçadista do Crajubar — Crato, Juazeiro do Norte e Barbalha —, com muitas micro, pequenas e médias fábricas de calçado.</p>
+        <p><strong>O EPI que essa economia pede:</strong> em fábrica de calçado, luva de corte e produtos químicos (colas e solventes), proteção respiratória para vapor orgânico e proteção auditiva; em cimento, respiratória para poeira e proteção ocular; em química e farmacêutica, luva de proteção química e vestimenta.</p>
+        <p><strong>O ângulo que só a Tower tem:</strong> ela é distribuidora de calçado de segurança falando com um polo que <em>fabrica</em> calçado. É um assunto que a Tower conhece dos dois lados, e nenhum concorrente programático tem como escrever.</p>
+        <p class="fontes">Fontes a citar na página: <a href="https://cidades.ibge.gov.br/brasil/ce/barbalha/panorama">IBGE Cidades — Barbalha</a>; <a href="https://www.ipece.ce.gov.br/wp-content/uploads/sites/45/2014/02/TD_101.pdf">IPECE — Panorama da indústria cearense de calçados</a> (2012, dado antigo: usar só para o fato do polo, não para números).</p>
+      </div>
+    </article>
+
+    <article class="cidade">
+      <div class="lado">
+        <h3>Teresina <span>· PI</span></h3>
+        <p class="pop">~870 mil</p>
+        <span class="selo s-nao">Fora da área declarada</span>
+      </div>
+      <div class="corpo">
+        <p>A característica dominante não é indústria: é <strong>saúde</strong>. Teresina é a capital que mais recebe pacientes de outros municípios para atendimento de alta complexidade, com cerca de 800 unidades médicas e pacientes vindos de pelo menos 300 municípios. Serviços respondem por 60,6% do valor adicionado; indústria, 17%; agropecuária, 0,3%.</p>
+        <p><strong>O EPI que essa economia pede:</strong> a cadeia hospitalar inteira, que quase ninguém escreve direito — luva de procedimento e luva química para higienização, calçado ocupacional antiderrapante para plantão longo em piso liso, proteção respiratória em isolamento, EPI de lavanderia hospitalar e de cozinha hospitalar. É exatamente o cruzamento de <code>/empresas/saude/</code> com <code>/empresas/alimentacao/</code>, que a Tower já escreveu.</p>
+        <p><strong>Concorrência:</strong> a primeira página é ocupada por diretórios (GuiaMais, Telelistas, OLX) e por páginas programáticas de fora do estado — <a href="https://www.originalepi.com.br/distribuidora-de-epi-teresina-pi-original-epi">“Distribuidora de EPI Teresina PI”</a> e similares, de uma empresa com telefone (11). Há espaço para conteúdo real.</p>
+        <p class="fontes">Fontes: <a href="https://cidades.ibge.gov.br/brasil/pi/teresina/panorama">IBGE Cidades — Teresina</a>; dado do polo de saúde atribuído ao IBGE por <a href="https://portalodia.com/noticias/piaui/teresina-e-o-maior-polo-de-saude-de-alta-complexidade-do-pais,-diz-ibge-376222.html">imprensa local</a> — <strong>confirmar na fonte primária antes de publicar</strong>.</p>
+      </div>
+    </article>
+
+    <article class="cidade">
+      <div class="lado">
+        <h3>Parnaíba <span>· PI</span></h3>
+        <p class="pop">~169 mil · 2ª do estado</p>
+        <span class="selo s-nao">Fora da área declarada</span>
+      </div>
+      <div class="corpo">
+        <p>Cidade litorânea, uma das quatro do litoral piauiense, com perfil de comércio, serviços e turismo, e uma Zona de Processamento de Exportação no radar do estado. PIB por habitante de R$ 19,3 mil, acima da média da região do Parnaíba (R$ 13 mil).</p>
+        <p><strong>O EPI que essa economia pede:</strong> hotelaria e restaurante — cozinha industrial, camareira, manutenção predial —, além de pesca, beneficiamento e logística portuária. O carro-chefe aqui é calçado antiderrapante para cozinha, que a Tower já tem página e artigo.</p>
+        <p><strong>Ressalva honesta:</strong> é a menor demanda de busca das seis. Uma página só se sustenta se houver relação comercial real; caso contrário, Parnaíba cabe como seção dentro de uma página do Piauí, não como URL própria.</p>
+        <p class="fontes">Fontes: <a href="https://cidades.ibge.gov.br/brasil/pi/parnaiba/panorama">IBGE Cidades — Parnaíba</a>; <a href="https://investepiaui.com/wp-content/uploads/2022/11/Folder_ZPE.pdf">Invest Piauí — perfil de negócios de Parnaíba</a>.</p>
+      </div>
+    </article>
+
+    <article class="cidade">
+      <div class="lado">
+        <h3>Natal <span>· RN</span></h3>
+        <p class="pop">~750 mil</p>
+        <span class="selo s-nao">Fora da área declarada</span>
+      </div>
+      <div class="corpo">
+        <p>Turismo nacional e internacional, comércio e <strong>indústria têxtil</strong> — que movimenta cerca de R$ 4,7 bilhões por ano no Rio Grande do Norte e é a maior do Nordeste. A construção civil responde por quase 25% do PIB industrial do estado. O RN tem ainda a maior matriz eólica do país, com mais de 245 parques.</p>
+        <p><strong>O EPI que essa economia pede:</strong> têxtil (proteção auditiva, respiratória para fibras, luva de corte) e hotelaria de grande porte (cozinha, camareira, manutenção, piscina). A eólica é tentadora e eu <em>não</em> recomendaria entrar nela: trabalho em altura e NR-10 são um mercado técnico e especializado, com exigência de treinamento e linha de vida, que não corresponde ao que a Tower distribui hoje.</p>
+        <p><strong>Ângulo de venda cruzada:</strong> têxtil é o setor do cliente mais antigo da Tower — uma indústria têxtil do Ceará compra com ela desde os anos 1990. A experiência é real e transferível, e pode ser dita sem nomear o cliente.</p>
+        <p class="fontes">Fontes: <a href="https://pt.wikipedia.org/wiki/Economia_de_Natal">panorama econômico de Natal</a> (secundária — substituir por IBGE/FIERN na redação); <a href="https://www.rn.sesi.org.br/dia-da-industria-amaro-sales-destaca-potenciais-do-setor-e-a-atuacao-do-sistema-fiern-para-o-desenvolvimento-potiguar/">Sistema FIERN/SESI-RN</a>.</p>
+      </div>
+    </article>
+
+    <article class="cidade">
+      <div class="lado">
+        <h3>Assú <span>· RN</span></h3>
+        <p class="pop">~59 mil · 9ª do estado</p>
+        <span class="selo s-nao">Fora da área declarada</span>
+      </div>
+      <div class="corpo">
+        <p>Centro do Vale do Açu. Fruticultura irrigada — banana, manga, mamão, castanha —, com a maior concentração de estabelecimentos com irrigação entre as microrregiões do RN, além de petróleo, gás e energia eólica na região.</p>
+        <p><strong>O EPI que essa economia pede:</strong> agro é um assunto com EPI próprio e pouco bem escrito na internet — aplicação de defensivo (macacão hidrorrepelente, luva nitrílica, respirador com filtro combinado, viseira), colheita (luva, proteção solar, calçado), e packing house (piso molhado, antiderrapante, frio).</p>
+        <p><strong>Ressalva honesta:</strong> volume de busca baixíssimo para <em>EPI Assú</em>. A página só se justifica se houver cliente ou entrega real. Como conteúdo, o assunto “EPI para fruticultura irrigada” vale mais como artigo regional do que como página de cidade.</p>
+        <p class="fontes">Fontes: <a href="https://cidades.ibge.gov.br/brasil/rn/assu/panorama">IBGE Cidades — Assú</a>; <a href="https://www.corecon-rn.org.br/2018/06/04/a-modernizacao-da-fruticultura-irrigada-e-seus-impactos-socioeconomicos-e-ambientais-no-vale-do-acu/">CORECON-RN — fruticultura irrigada no Vale do Açu</a>.</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section>
+  <span class="num">Fase 4</span>
+  <h2>Arquitetura recomendada</h2>
+  <p class="col">Mantive o <code>/epi-por-cidade/</code> que você propôs — é o que o usuário reconhece na SERP. Mudei três coisas: Fortaleza entra no hub sem página própria; o hub estadual só existe com duas cidades reais; e cidade de relação fraca vira <em>seção</em>, não URL.</p>
+
+  <pre class="arvore" style="margin-top:1.5rem">/                                  <i>← já disputa “EPI em Fortaleza”</i>
+├── /epi-por-cidade/               <b>CRIAR</b> — hub regional, editorial
+│   ├── /epi-por-cidade/ceara/     <b>CRIAR</b> se Barbalha entrar
+│   │   ├── Fortaleza              <i>seção no hub → aponta para / e /empresas/</i>
+│   │   └── /epi-por-cidade/barbalha-ce/     <b>SE CONFIRMADO</b>
+│   ├── /epi-por-cidade/piaui/     <b>SE CONFIRMADO</b> (2 cidades)
+│   │   ├── /epi-por-cidade/teresina-pi/     <b>SE CONFIRMADO</b>
+│   │   └── Parnaíba               <i>seção, até haver relação real</i>
+│   └── /epi-por-cidade/rio-grande-do-norte/ <b>SE CONFIRMADO</b>
+│       ├── /epi-por-cidade/natal-rn/        <b>SE CONFIRMADO</b>
+│       └── Assú                   <i>seção, até haver relação real</i>
+├── /empresas/                     <i>MELHORAR — recebe as cidades</i>
+├── /calcados/                     <i>MANTER</i>
+├── /protecao/                     <i>MELHORAR — hub de 151 palavras</i>
+├── /para-seu-trabalho/            <i>MELHORAR — hub de 146 palavras</i>
+└── /conhecimento/                 <i>MELHORAR — hub de 207 palavras</i></pre>
+
+  <div class="quadro col" style="margin-top:1.5rem">
+    <h4>Por que hub estadual só com duas cidades</h4>
+    <p>Um hub “Piauí” com um único link para Teresina não é um hub: é um clique a mais entre o usuário e a resposta, e uma página sem conteúdo próprio para o Google indexar. Se só uma cidade do estado for real, a página da cidade pendura direto no hub nacional.</p>
+  </div>
+
+  <div class="quadro col" style="margin-top:1rem">
+    <h4>O teste da Fase 17, aplicado antes de escrever</h4>
+    <p>“Se eu apagar o nome da cidade, esta página continua diferente das outras?” Com a pesquisa acima, sim — a de Teresina fala de cadeia hospitalar, a de Barbalha fala de fábrica de calçado e cimento, a de Assú fala de defensivo e packing house, a de Natal fala de têxtil e hotelaria. Nenhuma frase serve para duas. <strong>Esse teste passa a ser condição de publicação, e eu vou aplicá-lo página por página antes de subir.</strong></p>
+  </div>
+</section>
+
+<section>
+  <span class="num">Fase 3</span>
+  <h2>Mapa de intenção por cidade</h2>
+  <p class="col">Termo principal, variações comerciais e cauda longa, com a página alvo de cada bloco. Onde a página alvo já existe, o mapa aponta para ela — não para uma página nova.</p>
+  <div class="rolagem" style="margin-top:1.5rem">
+    <table>
+      <thead><tr><th>Cidade</th><th>Principal</th><th>Comerciais</th><th>Cauda longa</th><th>Página alvo</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Fortaleza</strong></td>
+          <td>EPI em Fortaleza</td>
+          <td>fornecedor de EPI Fortaleza · empresa de EPI Fortaleza · calçado de segurança Fortaleza · botina de segurança Fortaleza</td>
+          <td>onde comprar calçado de segurança em Fortaleza · EPI para restaurante em Fortaleza · EPI para construção civil em Fortaleza</td>
+          <td><code>/</code> · <code>/empresas/</code> · <code>/calcados/</code> · setores — <strong>tudo já existe</strong></td>
+        </tr>
+        <tr>
+          <td><strong>Barbalha</strong></td>
+          <td>EPI em Barbalha</td>
+          <td>EPI Cariri · fornecedor de EPI Juazeiro do Norte · calçado de segurança Cariri</td>
+          <td>EPI para fábrica de calçado · luva para manuseio de cola e solvente · EPI para indústria de cimento</td>
+          <td><code>/epi-por-cidade/barbalha-ce/</code></td>
+        </tr>
+        <tr>
+          <td><strong>Teresina</strong></td>
+          <td>EPI em Teresina</td>
+          <td>distribuidora de EPI Teresina · fornecedor de EPI Teresina · calçado de segurança Teresina</td>
+          <td>EPI para hospital em Teresina · calçado antiderrapante para plantão · EPI para lavanderia hospitalar</td>
+          <td><code>/epi-por-cidade/teresina-pi/</code> → <code>/empresas/saude/</code></td>
+        </tr>
+        <tr>
+          <td><strong>Parnaíba</strong></td>
+          <td>EPI em Parnaíba</td>
+          <td>fornecedor de EPI Parnaíba · calçado de segurança Parnaíba</td>
+          <td>EPI para restaurante · calçado antiderrapante para cozinha · EPI para hotel</td>
+          <td>Seção no hub do Piauí → <code>/empresas/alimentacao/</code></td>
+        </tr>
+        <tr>
+          <td><strong>Natal</strong></td>
+          <td>EPI em Natal</td>
+          <td>distribuidora de EPI Natal · fornecedor de EPI Natal RN · botina de segurança Natal</td>
+          <td>EPI para indústria têxtil · EPI para hotel e cozinha industrial · EPI para obra em Natal</td>
+          <td><code>/epi-por-cidade/natal-rn/</code> → <code>/empresas/industria/</code></td>
+        </tr>
+        <tr>
+          <td><strong>Assú</strong></td>
+          <td>EPI em Assú</td>
+          <td>EPI Vale do Açu · calçado de segurança Assú</td>
+          <td>EPI para aplicação de defensivo agrícola · EPI para fruticultura · EPI para packing house</td>
+          <td>Seção no hub do RN → artigo regional de agro</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="col" style="margin-top:1.2rem">Nenhuma dessas expressões entra repetida no texto. Elas definem o <em>assunto</em> de cada bloco; a redação usa linguagem natural, entidades explícitas (“Equipamento de Proteção Individual (EPI)”, “Certificado de Aprovação (CA)”) e sinônimos.</p>
+</section>
+
+<section>
+  <span class="num">Fase 20</span>
+  <h2>Plano de páginas</h2>
+  <div class="rolagem" style="margin-top:1.5rem">
+    <table>
+      <thead><tr><th>Decisão</th><th>Página</th><th>Motivo</th></tr></thead>
+      <tbody>
+        <tr><td><span class="selo s-sim">Criar</span></td><td><code>/epi-por-cidade/</code></td><td>Hub editorial: quem a Tower atende, como funciona o atendimento, o que muda de uma cidade para outra. Vale mesmo com poucas cidades.</td></tr>
+        <tr><td><span class="selo s-talvez">Criar se confirmado</span></td><td><code>/epi-por-cidade/barbalha-ce/</code></td><td>Dentro do Ceará, que o site já declara. Precisa da confirmação de entrega no Cariri.</td></tr>
+        <tr><td><span class="selo s-talvez">Criar se confirmado</span></td><td><code>/epi-por-cidade/teresina-pi/</code>, <code>/natal-rn/</code></td><td>Maior demanda fora do CE, concorrência fraca, perfil econômico próprio. Depende inteiramente da relação comercial real.</td></tr>
+        <tr><td><span class="selo s-nao">Não criar agora</span></td><td><code>/epi-por-cidade/fortaleza-ce/</code></td><td>Canibaliza a home, <code>/empresas/</code> e <code>/calcados/</code>, que já disputam essas consultas.</td></tr>
+        <tr><td><span class="selo s-nao">Não criar agora</span></td><td>Páginas de Parnaíba e Assú</td><td>Demanda baixa e relação não estabelecida. Entram como seção no hub estadual.</td></tr>
+        <tr><td><span class="selo s-sim">Melhorar</span></td><td><code>/protecao/</code>, <code>/para-seu-trabalho/</code>, <code>/conhecimento/</code>, <code>/encontrar-epi/</code></td><td>Hubs de 59 a 207 palavras. É o Lote 2 já diagnosticado, e vale mais que qualquer página nova.</td></tr>
+        <tr><td><span class="selo s-sim">Melhorar</span></td><td><code>/empresas/</code></td><td>Passa a receber os links das cidades e a ser o destino comercial do funil local.</td></tr>
+        <tr><td><span class="selo s-sim">Melhorar</span></td><td><code>src/config/empresa.ts</code> → <code>areaAtendida</code></td><td>Se a área real for maior que “Ceará”, o <code>areaServed</code> do schema cresce junto — dado verdadeiro, uma linha, todas as páginas.</td></tr>
+        <tr><td><span class="selo s-sim">Manter</span></td><td>As 43 URLs atuais</td><td>Nenhum redirecionamento é necessário. Nenhuma URL importante muda.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <span class="num">Fases 7 e 15</span>
+  <h2>Links internos e conteúdo satélite</h2>
+
+  <h3>Onde os links vão, e por quê</h3>
+  <div class="pares col" style="margin-top:1rem">
+    <div class="par"><span class="de">Home → /epi-por-cidade/</span><span class="pq">Um link de corpo, não só de rodapé. Link de menu aponta para tudo e não sinaliza nada.</span></div>
+    <div class="par"><span class="de">/epi-por-cidade/ → cidade</span><span class="pq">Âncora com a cidade, dentro de frase sobre o que ela tem — não uma lista de nomes.</span></div>
+    <div class="par"><span class="de">Cidade → setor correspondente</span><span class="pq">Teresina → <code>/empresas/saude/</code>. Barbalha → <code>/empresas/industria/</code>. É o link que converte.</span></div>
+    <div class="par"><span class="de">Cidade → guia técnico</span><span class="pq">Antiderrapante, CA, NR-6, ocupacional × segurança. Já existem, e é onde a dúvida real é respondida.</span></div>
+    <div class="par"><span class="de">Artigo → cidade</span><span class="pq">Só quando houver relação verdadeira. O artigo de cozinha aponta para Parnaíba se, e só se, a Tower atender Parnaíba.</span></div>
+    <div class="par"><span class="de">Cidade ↔ cidade do mesmo estado</span><span class="pq">Uma frase no fim, não um bloco de links. Rodapé não vira lista de palavra-chave.</span></div>
+  </div>
+
+  <h3 style="margin-top:2.5rem">Os artigos satélite que você sugeriu — cinco dos seis já existem</h3>
+  <p class="col">Verifiquei cada um contra o conteúdo atual antes de propor qualquer texto novo.</p>
+  <div class="rolagem" style="margin-top:1.2rem">
+    <table>
+      <thead><tr><th>Sugestão</th><th>Situação</th><th>Ação</th></tr></thead>
+      <tbody>
+        <tr><td>Como consultar o CA de um EPI</td><td>Existe: <code>/conhecimento/o-que-e-ca-certificado-de-aprovacao/</code></td><td><span class="selo s-nao">Não criar</span> — linkar</td></tr>
+        <tr><td>Calçado ocupacional ou de segurança</td><td>Existe duas vezes, e é a canibalização real do site</td><td><span class="selo s-nao">Não criar</span> — resolver o par</td></tr>
+        <tr><td>Calçado antiderrapante para cozinhas</td><td>Existe: artigo de cozinha + <code>/calcados/antiderrapantes/</code></td><td><span class="selo s-nao">Não criar</span> — fortalecer</td></tr>
+        <tr><td>Quais EPIs na construção civil</td><td>Existe: <code>/empresas/construcao/</code> + <code>/para-seu-trabalho/construcao/</code></td><td><span class="selo s-nao">Não criar</span> — fortalecer</td></tr>
+        <tr><td>Como comprar EPI para uma equipe</td><td>Existe: <code>/empresas/como-atendemos/</code> + <code>/orcamento/</code></td><td><span class="selo s-nao">Não criar</span> — fortalecer</td></tr>
+        <tr><td>Como escolher fornecedor de EPI</td><td>Não existe equivalente</td><td><span class="selo s-sim">Criar</span> — e sem cidade no título, para servir a todas</td></tr>
+        <tr><td>— <em>proposta minha</em> — EPI para fruticultura irrigada</td><td>Não existe. Assunto mal servido na internet.</td><td><span class="selo s-talvez">Avaliar</span> — vale mais que a página de Assú</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <span class="num">Fases 10, 11 e 12</span>
+  <h2>Schema, E-E-A-T e conteúdo para IA</h2>
+
+  <h3>Dados estruturados — o que muda e o que não muda</h3>
+  <ul class="col" style="margin-top:1rem">
+    <li><strong>Nenhum <code>LocalBusiness</code> por cidade.</strong> A Tower tem um estabelecimento, não seis. O que cresce é o <code>areaServed</code> da organização única — e só até onde for verdade.</li>
+    <li><strong>Nenhum endereço, avaliação ou <code>aggregateRating</code> novo.</strong> A decisão de não publicar endereço continua valendo.</li>
+    <li><code>BreadcrumbList</code> nas páginas de cidade, seguindo a hierarquia real do hub.</li>
+    <li><code>FAQPage</code> continua sendo emitido pelo accordion que já existe. <strong>Não prometo rich result</strong> — o Google restringiu FAQ a sites de governo e saúde. O accordion se justifica pela experiência do usuário e pela extração por IA, não pelo enfeite na SERP.</li>
+    <li><code>Product</code> e <code>Offer</code> continuam fora: sem preço e sem oferta, o markup fica frágil e gera aviso no Search Console.</li>
+  </ul>
+
+  <h3 style="margin-top:2rem">E-E-A-T: o que já está de pé e o que falta</h3>
+  <p class="col">O site já tem autor e revisor técnico declarados (Helano, técnico de segurança do trabalho, com <code>Person</code> em schema), data de publicação e de atualização, história da empresa, fontes oficiais nos artigos e o prêmio da 3M como <code>award</code>. Continuam pendentes, e são do seu lado: razão social e CNPJ, e-mail comercial, horário real e a confirmação do WhatsApp.</p>
+
+  <h3 style="margin-top:2rem">O que torna essas páginas citáveis por IA</h3>
+  <ul class="col" style="margin-top:1rem">
+    <li><strong>Resposta direta sob heading interrogativo.</strong> O site já faz isso com o bloco “Em uma frase”, que virou <code>h2</code> no Lote 1. As páginas de cidade herdam o padrão.</li>
+    <li><strong>Trecho autocontido.</strong> Cada resposta precisa fazer sentido arrancada da página — o que proíbe “como vimos acima” e pronome solto.</li>
+    <li><strong>Entidade escrita por extenso</strong> nos pontos que importam: “Tower EPI's”, “Certificado de Aprovação (CA)”, “Equipamento de Proteção Individual (EPI)”, “NR-6”.</li>
+    <li><strong>Comparação em tabela</strong> onde a dúvida é comparativa — o site já tem a de ocupacional × segurança.</li>
+    <li><strong>Informação que não sai de resumir dez concorrentes:</strong> o que a Tower vê no orçamento, o erro que o comprador comete, o que o setor daquela cidade pede. É isso que uma IA não consegue reescrever a partir de outra fonte.</li>
+  </ul>
+</section>
+
+<section>
+  <span class="num">Fases 13, 14, 18 e 19</span>
+  <h2>Conversão, UX, técnico e medição</h2>
+
+  <h3>CTA por momento de leitura</h3>
+  <div class="pares col" style="margin-top:1rem">
+    <div class="par"><span class="de">Depois da abertura</span><span class="pq">Link discreto para orçamento. Quem já sabe o que quer não precisa ler a página inteira.</span></div>
+    <div class="par"><span class="de">Depois do bloco de setor</span><span class="pq">“Precisa equipar sua equipe?” — WhatsApp com mensagem que já diz o setor e a cidade.</span></div>
+    <div class="par"><span class="de">Depois de “como escolher”</span><span class="pq">“Não sabe qual atende sua operação?” — a dúvida técnica é o gatilho, e quem responde é técnico de segurança.</span></div>
+    <div class="par"><span class="de">Fechamento</span><span class="pq">O <code>FechamentoCta</code> que já existe, com prévia da mensagem. Nada novo a construir.</span></div>
+  </div>
+
+  <h3 style="margin-top:2rem">Medição — falta um campo, só isso</h3>
+  <p class="col">O evento <code>whatsapp_click</code> já carrega <code>contexto</code>, <code>pagina</code>, <code>secao</code>, <code>publico</code> e <code>categoria</code>. Falta <code>cidade</code>. Com esse campo dá para responder a pergunta que interessa: <strong>cidade → página → CTA → conversa</strong>. No Search Console, cada cidade vira um filtro de página, e a comparação certa é impressão e posição por consulta com nome de cidade.</p>
+
+  <h3 style="margin-top:2rem">Técnico — o que já está resolvido</h3>
+  <p class="col">Todas as URLs respondem 200, com canonical próprio, <code>robots: index, follow</code>, breadcrumb e sitemap. As imagens passaram a ser servidas em AVIF pelo <code>next/image</code> (52KB no desktop, 15KB no celular, contra 2MB do original) e a capa de artigo carrega com <code>priority</code>, que é o LCP. A varredura de doze larguras, de 320px a 1440px, não acusa estouro horizontal em nenhuma das 42 rotas. As páginas novas nascem dentro desse mesmo padrão, e são alcançadas por link de corpo — não só pelo sitemap.</p>
+</section>
+
+<section>
+  <span class="num">Antes da primeira linha de código</span>
+  <h2>O que eu preciso de você</h2>
+  <p class="col">São perguntas de fato. Não dá para inferir nenhuma delas do site, e cada uma muda o que se publica.</p>
+
+  <div class="perguntas col" style="margin-top:1.5rem">
+    <div class="pergunta"><div>
+      <p><strong>Qual é a área de entrega real hoje?</strong></p>
+      <p class="porque">O motorista chega até onde? Fortaleza e RMF, ou o interior do Ceará também? É a pendência 7, aberta desde o começo do projeto.</p>
+    </div></div>
+    <div class="pergunta"><div>
+      <p><strong>A Tower já vendeu para empresa em Teresina, Natal, Parnaíba ou Assú?</strong></p>
+      <p class="porque">Um cliente real em uma dessas cidades muda tudo: a página deixa de ser aposta e passa a ser descrição.</p>
+    </div></div>
+    <div class="pergunta"><div>
+      <p><strong>Vocês despacham por transportadora para fora do Ceará?</strong></p>
+      <p class="porque">Se sim, existe página honesta para essas cidades — com a linguagem de envio, não de loja. Se não, não existe página nenhuma.</p>
+    </div></div>
+    <div class="pergunta"><div>
+      <p><strong>Barbalha e o Cariri: há atendimento ou intenção real?</strong></p>
+      <p class="porque">É a única das cinco que já está dentro da área que o site declara. Seria a primeira a subir.</p>
+    </div></div>
+    <div class="pergunta"><div>
+      <p><strong>Quer que eu faça o Lote 2 antes?</strong></p>
+      <p class="porque">Os hubs de 59 a 207 palavras rendem mais, hoje, do que qualquer página de cidade — e valem para Fortaleza, que é onde a Tower realmente atende.</p>
+    </div></div>
+  </div>
+
+  <div class="destaque col" style="margin-top:2rem">
+    <h3>O que eu faço enquanto isso, se você quiser</h3>
+    <p>Duas coisas não dependem de resposta nenhuma: <strong>o hub <code>/epi-por-cidade/</code></strong>, que descreve honestamente o atendimento regional a partir do que já é verdade, e <strong>o Lote 2</strong>, que engorda os hubs rasos. Qualquer página de cidade fora do Ceará fica parada até as respostas chegarem.</p>
+  </div>
+</section>
+
+<footer>
+  <p>Documento de diagnóstico — nenhuma alteração foi feita no site. Auditoria repetível por <code>docs/ferramentas/auditoria-rastrear.mjs</code>, <code>auditoria-analisar.mjs</code> e <code>auditoria-canibalizacao.mjs</code>.</p>
+</footer>
+
+</div>

@@ -1,6 +1,6 @@
-import { chromium } from 'playwright'
+import { chromium } from '/opt/node22/lib/node_modules/playwright/index.mjs'
 import fs from 'fs'
-const BASE = 'http://127.0.0.1:3111'
+const BASE = 'http://127.0.0.1:3122'
 const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' })
 const pg = await b.newPage({ viewport: { width: 1280, height: 900 } })
 
