@@ -35,9 +35,14 @@ como branch de produção por padrão — sem ele, todo push gerava apenas previ
 produção só mudava com promoção manual, o que fez o site ficar três entregas
 atrasado sem ninguém perceber.
 
-O domínio `towerepis.com.br` ainda **não** aponta para a Vercel — hoje resolve
-para `162.240.81.81`. Enquanto isso, o deploy é de preview e a Vercel envia
-`x-robots-tag: noindex`, então nada é indexado antes da hora.
+O domínio `towerepis.com.br` **já aponta para a Vercel** (setembro de 2026):
+resolve para `216.150.1.1`, e `www` para o CNAME da Vercel. O deploy de `main`
+é de produção e o site está publicamente acessível.
+
+A Vercel continua enviando `x-robots-tag: noindex` nas URLs `*.vercel.app` — é
+comportamento padrão dela para não indexar a URL do deploy em duplicidade, e
+não se aplica ao domínio próprio. Se houver dúvida sobre indexação, conferir o
+cabeçalho direto em `https://towerepis.com.br/` e o Search Console.
 
 ## Estado atual
 

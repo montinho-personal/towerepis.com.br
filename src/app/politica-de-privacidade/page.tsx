@@ -88,8 +88,10 @@ export default function Privacidade() {
             </li>
           </ul>
           <p>
-            Isso foi verificado em navegador, em oito páginas do site, e não é promessa: se
-            um dia mudar, esta página muda junto e a data lá embaixo muda também.
+            Isso foi verificado em navegador, em nove páginas do site e nas três situações
+            possíveis — sem responder ao banner, depois de recusar e depois de aceitar. Não
+            é promessa: se um dia mudar, esta página muda junto e a data lá embaixo muda
+            também.
           </p>
 
           <h2 id="quem">Quem é o responsável</h2>
