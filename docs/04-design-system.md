@@ -323,7 +323,7 @@ sem pedir é o mesmo erro do ponto, de outro tamanho.
 criaria dependência de uma fonte comercial que o site não licencia, e a marca
 quebraria em qualquer máquina sem Museo instalado.
 
-**O selo é quadrado, e quem chama define o lado.** O cabeçalho encolhe ao rolar
+**O selo é quadrado, e quem chama define o lado.** *(Histórico: o selo saiu do cabeçalho na correção seguinte, abaixo.)* O cabeçalho encolhe ao rolar
 (88px → 64px), então o logo encolhe junto. `h-13`/`w-13` não existem no Tailwind
 deste projeto — teriam falhado em silêncio, com o logo sem tamanho ao rolar. As
 medidas fora da escala vão como valor explícito.
@@ -360,6 +360,89 @@ só aceitam CFF dentro de um invólucro OpenType, e o que estava lá era CFF pur
 — 1,3 KB. Interpretar os charstrings Type 2 direto deu menos trabalho do que
 montar um OTF mínimo em volta. O interpretador está em
 `docs/ferramentas/cff.py`.
+
+---
+
+## O LOGOTIPO, SEGUNDA CORREÇÃO — A MARCA PRETA
+
+Chegaram mais dois arquivos: `LOGO TOWER PRETA.ai` e `Tower epis.jpg`. A marca
+preta é o logotipo sem o selo: "TOWER" em preto com a régua embaixo, "EPI's"
+em preto, e **o O em degradê vermelho** — dez preenchimentos e um shading, que
+o JPG confirma.
+
+**Eu tinha errado duas vezes.** Primeiro inventei um disco vermelho no lugar do
+O. Depois, vendo o selo, declarei o O "comum". A marca preta mostra a verdade:
+o O é a própria letra, preenchida com o degradê vermelho da marca. Nem disco,
+nem comum. A correção está registrada no comentário do `Logo.tsx` para não se
+perder.
+
+**Esta é a versão que vai no cabeçalho e no rodapé.** O selo quadrado exigia
+um bloco vermelho encostado no papel — e a régua do próprio logotipo dá ao
+cabeçalho a ideia que ele precisava (abaixo). O selo continua sendo a marca
+para favicon, prévia de link, ícone do iOS e dados estruturados, porque nesses
+lugares o quadrado vermelho é o que reconhece.
+
+**Como funciona o componente:**
+- `tom="claro"` (fundo papel) ou `tom="escuro"` (fundo grafite): o tipo herda
+  `currentColor`; o O carrega o próprio degradê, que é arte da marca e por isso
+  é o único degradê permitido no sistema.
+- `REGUA_DA_MARCA = 0.532` — a régua entre TOWER e EPI's fica a 53,2% da altura
+  da marca, medida na bbox justa (`535.8 343.27 854.09 396.86`). O cabeçalho
+  usa esse número.
+- `prefixo` continua obrigatório: clip-path e degradê precisam de id único por
+  instância.
+- Extração: `docs/ferramentas/selo.py` ganhou um irmão para o `.ai` preto
+  (`m/l/c/v/y/h/re/W n/cm/q/Q/sh`); o shading axial com expoente 1,61383 virou
+  doze paradas, com `gradientUnits="userSpaceOnUse"` e a matriz do PDF em
+  `gradientTransform`.
+
+| Arquivo | Onde |
+|---|---|
+| `Logo.tsx` (inline) | cabeçalho (`tom="claro"`) e rodapé (`tom="escuro"`) |
+| `public/marca-tower-preta.svg` | asset solto da marca preta |
+| `docs/originais/logo-tower-preta.ai`, `tower-epis-foto.jpg` | arquivos-fonte, fora de `public/` |
+
+---
+
+## O CABEÇALHO — A RÉGUA QUE CONTINUA
+
+O pedido foi "mais bonito, artístico". O teste do cabeçalho todo vermelho já
+tinha mostrado o limite: o selo não lê sobre vermelho, e o tipo branco sobre
+vermelho custa o botão vermelho e briga com o botão verde flutuante. O caminho
+não era mais cor. Era um gesto que só esta marca pode fazer.
+
+**A ideia:** o logotipo tem uma régua entre "TOWER" e "EPI's". A navegação tem
+uma linha fina exatamente na mesma altura. A régua da marca continua por baixo
+dos rótulos até o botão. No hover, o trecho da linha sob o item vira vermelho —
+3px, com `scale-x` da esquerda — e o rótulo escurece. O menu deixa de ser uma
+fileira de links e passa a ser a marca estendida.
+
+**Como está montado:**
+- **Fita** de 32px em grafite por cima: "Fortaleza — CE · Desde 1995" à
+  esquerda, o WhatsApp à direita. No celular sobra só "Desde 1995" e o número.
+  Some ao rolar (`max-h-0 opacity-0`), sem mexer no layout.
+- **Masthead** de 72px (88px em `sm`) que encolhe para 56/64 ao rolar. A marca
+  vai de `h-11 sm:h-14` a `h-9 sm:h-10`.
+- **A lista de navegação tem a mesma altura da marca** (`items-start` + a
+  classe de altura da marca), e a linha fina é um `span` absoluto em
+  `top: 53.2%` — o mesmo `REGUA_DA_MARCA`. Como as duas caixas têm a mesma
+  altura e o mesmo topo, a régua bate por construção, em qualquer tamanho.
+  Medido: 77,79px na marca, 77,78px na linha, no topo; 33,28 e 33,27 rolado.
+- O botão "Pedir orçamento" continua vermelho, único vermelho sólido do
+  cabeçalho, e a fita grafite é a superfície escura da abertura — a hero de
+  cada página continua sendo o que era.
+- No celular a régua da marca fica sozinha, sem continuação: não há rótulos
+  para ela seguir, e desenhar uma linha até o botão do menu seria decoração.
+
+**O que não foi feito, de propósito:** nenhum degradê, sombra ou animação além
+do trecho vermelho. O cabeçalho tem duas surpresas — a linha que continua e o
+vermelho que acende — e é o suficiente.
+
+**Duas superfícies escuras:** a fita é grafite e encosta na hero de papel, não
+em outra superfície escura. Nas páginas de hub, cuja `Trilha` é escura, a
+fita e o masthead de papel ficam entre elas: a regra "duas superfícies escuras
+nunca se encostam" continua valendo, e o QA confirmou (0 problemas em 42
+páginas).
 
 ---
 

@@ -2,17 +2,35 @@
 
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { Logo } from './Logo'
+import { Logo, REGUA_DA_MARCA } from './Logo'
 import { WhatsAppCta } from './WhatsAppCta'
+import { empresa } from '@/config/empresa'
+import { linkWhatsApp } from '@/lib/whatsapp'
 
 /**
- * Os rótulos seguem uma lógica só: cada um nomeia o que está atrás do link.
+ * Cabeçalho em duas linhas, como um cabeçalho de jornal.
  *
- * "Empresas" nomeava um tipo de cliente, não um conteúdo — e ninguém se
- * identifica como "Empresa" ao procurar calçado para a cozinha. "Para equipes"
- * nomeia a situação, que é como a pessoa realmente pensa.
+ * FITA (grafite, some ao rolar): os dois fatos que mais pesam e que não
+ * cabem num logo — "Fortaleza — CE · Desde 1995" à esquerda, o WhatsApp à
+ * direita. A direção de arte pediu o 1995 como ativo visual; aqui ele
+ * abre toda página, em cima de tudo, sem gritar.
  *
- * O orçamento não está aqui: é a conversão principal e vive no botão.
+ * MASTHEAD (papel): a marca em preto com o O vermelho, a navegação e o
+ * botão de orçamento. O gesto que faz o cabeçalho ser desenhado, e não
+ * montado, é a linha: a marca tem uma régua entre TOWER e EPI's, e a
+ * navegação tem uma linha fina exatamente na mesma altura — a régua do
+ * logo continua por baixo dos rótulos até o botão. No hover, o trecho da
+ * linha sob o item fica vermelho. Uma ideia, tirada do próprio material.
+ *
+ * A altura da lista de navegação é igual à altura da marca, e a linha
+ * fica a 53,2% dela (REGUA_DA_MARCA). Assim o alinhamento é geometria, não
+ * pixel ajustado à mão — e continua certo quando o cabeçalho encolhe.
+ *
+ * Fundo de papel, e não vermelho: testei o vermelho. Com o selo, a marca
+ * some no próprio fundo; com o tipo em branco, funciona, mas o botão de
+ * orçamento perde o vermelho e deixa de ser a ação mais forte da tela, e o
+ * verde do WhatsApp briga com a faixa no celular. O vermelho da marca já
+ * está no O.
  */
 const NAV = [
   { href: '/calcados/', rotulo: 'Calçados' },
@@ -27,8 +45,6 @@ export function Header() {
   const [aberto, setAberto] = useState(false)
   const [rolou, setRolou] = useState(false)
 
-  /* Compacta a altura ao rolar. Não esconde e não reaparece saltando —
-     header que some e volta é desorientador e faz o layout pular. */
   useEffect(() => {
     const aoRolar = () => setRolou(window.scrollY > 24)
     aoRolar()
@@ -36,44 +52,69 @@ export function Header() {
     return () => window.removeEventListener('scroll', aoRolar)
   }, [])
 
+  // Marca e lista de navegação compartilham a altura; a linha fica na régua.
+  const alturaMarca = rolou ? 'h-9 sm:h-10' : 'h-11 sm:h-14'
+  const linha = { top: `${REGUA_DA_MARCA * 100}%` }
+
   return (
     <header className="sticky top-0 z-30 border-b-2 border-ink bg-paper/95 backdrop-blur-sm">
+      {/* FITA */}
       <div
-        className={`wrap flex items-center justify-between gap-4 transition-[height] duration-200 ${
-          rolou ? 'h-14 sm:h-16' : 'h-18 sm:h-22'
+        className={`overflow-hidden bg-grafite-800 text-paper transition-[max-height,opacity] duration-200 ${
+          rolou ? 'max-h-0 opacity-0' : 'max-h-10 opacity-100'
+        }`}
+      >
+        <div className="wrap flex h-8 items-center justify-between gap-4 font-display text-[0.66rem] font-bold uppercase tracking-[0.16em] text-paper/75">
+          <p className="m-0 truncate">
+            <span className="hidden sm:inline">Fortaleza — CE · </span>Desde {empresa.fundacao}
+          </p>
+          <a
+            href={linkWhatsApp('header')}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 transition-colors hover:text-tower-red-light"
+          >
+            <span className="hidden sm:inline">WhatsApp </span>{empresa.whatsapp.exibicao}
+          </a>
+        </div>
+      </div>
+
+      {/* MASTHEAD */}
+      <div
+        className={`wrap flex items-center justify-between gap-6 transition-[height] duration-200 ${
+          rolou ? 'h-14 sm:h-16' : 'h-[4.5rem] sm:h-[5.5rem]'
         }`}
       >
         <Link href="/" className="shrink-0" aria-label="Tower EPI's, página inicial">
-          <Logo
-            prefixo="cabecalho"
-            className={`transition-[width,height] duration-200 ${
-              rolou ? 'h-11 w-11 sm:h-[3.25rem] sm:w-[3.25rem]' : 'h-14 w-14 sm:h-[4.3rem] sm:w-[4.3rem]'
-            }`}
-          />
+          <Logo prefixo="cabecalho" className={`w-auto transition-[height] duration-200 ${alturaMarca}`} />
         </Link>
 
-        <nav aria-label="Principal" className="hidden lg:block">
-          <ul className="flex items-center gap-7">
+        <nav aria-label="Principal" className="hidden flex-1 lg:block">
+          <ul className={`relative flex items-start gap-8 ${alturaMarca}`}>
+            {/* a régua do logo, continuada */}
+            <span aria-hidden="true" className="pointer-events-none absolute inset-x-0 h-px bg-rule-strong" style={linha} />
             {NAV.map((item) => (
-              <li key={item.href}>
+              <li key={item.href} className="group relative h-full">
                 <Link
                   href={item.href}
-                  className="font-display text-[0.8125rem] font-semibold text-ink-2 transition-colors hover:text-tower-red"
+                  className="flex h-full items-start pt-[0.35rem] font-display text-[0.8125rem] font-semibold text-ink-2 transition-colors group-hover:text-ink"
                 >
                   {item.rotulo}
                 </Link>
+                <span
+                  aria-hidden="true"
+                  className="pointer-events-none absolute inset-x-0 h-[3px] -translate-y-px scale-x-0 bg-tower-red transition-transform duration-200 group-hover:scale-x-100"
+                  style={linha}
+                />
               </li>
             ))}
           </ul>
         </nav>
 
         <div className="flex items-center gap-2">
-          {/* Ação primária do site. O WhatsApp continua a um toque, pelo
-              botão flutuante e pelos CTAs de cada página. */}
           <Link href="/orcamento/" className="btn btn-red hidden sm:inline-flex">
             Pedir orçamento
           </Link>
-
           <button
             type="button"
             onClick={() => setAberto((v) => !v)}
@@ -98,21 +139,13 @@ export function Header() {
           <ul className="wrap divide-y divide-rule py-1">
             {NAV.map((item) => (
               <li key={item.href}>
-                <Link
-                  href={item.href}
-                  onClick={() => setAberto(false)}
-                  className="block py-4 font-display text-base font-semibold"
-                >
+                <Link href={item.href} onClick={() => setAberto(false)} className="block py-4 font-display text-base font-semibold">
                   {item.rotulo}
                 </Link>
               </li>
             ))}
             <li className="space-y-3 py-4">
-              <Link
-                href="/orcamento/"
-                onClick={() => setAberto(false)}
-                className="btn btn-red btn-block"
-              >
+              <Link href="/orcamento/" onClick={() => setAberto(false)} className="btn btn-red btn-block">
                 Pedir orçamento
               </Link>
               <WhatsAppCta contexto="header" secao="menu-mobile" bloco>
