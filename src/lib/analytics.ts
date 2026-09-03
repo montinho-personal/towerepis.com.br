@@ -52,6 +52,27 @@ export function rastrearWhatsApp(params: {
   enviar('whatsapp_click', params)
 }
 
+/**
+ * Barra contextual. Três eventos, e todos carregam a frase exibida — é ela
+ * que a gente vai querer comparar quando existir Search Console e teste A/B.
+ */
+export const rastrearBarra = (
+  evento: 'barra_exibida' | 'barra_clique' | 'barra_fechada',
+  params: { pagina: string; chamada: string },
+) =>
+  enviar(evento, {
+    ...params,
+    dispositivo: typeof window !== 'undefined' && window.innerWidth < 640 ? 'celular' : 'desktop',
+    scroll:
+      typeof window !== 'undefined'
+        ? Math.round(
+            (window.scrollY /
+              Math.max(1, document.documentElement.scrollHeight - window.innerHeight)) *
+              100,
+          )
+        : undefined,
+  })
+
 export const rastrearCta = (nome: string, pagina: string) =>
   enviar('cta_click', { nome, pagina })
 

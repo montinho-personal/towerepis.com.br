@@ -4,7 +4,7 @@ import './globals.css'
 
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
-import { BotaoFlutuante } from '@/components/BotaoFlutuante'
+import { BarraContextual } from '@/components/BarraContextual'
 import { JsonLd, schemaOrganizacao, schemaSite } from '@/lib/schema'
 import { empresa } from '@/config/empresa'
 
@@ -57,7 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main id="conteudo">{children}</main>
         <Footer />
-        <BotaoFlutuante />
+        <BarraContextual />
       </body>
     </html>
   )
