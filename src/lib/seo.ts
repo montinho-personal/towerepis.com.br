@@ -32,6 +32,12 @@ export function metadados(dados: {
    * ali ele ajuda o reconhecimento e não disputa espaço com termo nenhum.
    */
   absoluto?: boolean
+  /**
+   * Imagem própria do card de compartilhamento. Sem ela, todo link do site
+   * chega no WhatsApp com o mesmo selo — e o card do artigo passa a valer o
+   * mesmo que o da home. Com ela, a prévia mostra o assunto do texto.
+   */
+  imagem?: { url: string; alt: string }
 }): Metadata {
   return {
     title: dados.absoluto ? { absolute: dados.titulo } : dados.titulo,
@@ -43,7 +49,7 @@ export function metadados(dados: {
       url: dados.canonical,
       siteName: "Tower EPI's",
       locale: 'pt_BR',
-      images: [OG],
+      images: [dados.imagem ? { ...dados.imagem, width: 1200, height: 630 } : OG],
       ...(dados.artigo
         ? {
             type: 'article' as const,

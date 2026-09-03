@@ -37,6 +37,16 @@ export type Artigo = {
   mensagemWhats: string
   ctaTitulo: string
   ctaTexto: string
+  /**
+   * Capa do artigo. O arquivo deriva do slug — `/fotos/artigos/<slug>.webp`
+   * e `-og.jpg` — para não existir a possibilidade de apontar para o arquivo
+   * de outro texto. O `alt` descreve a imagem e carrega o texto que está
+   * dentro dela, que um leitor de tela não alcança de outro jeito.
+   *
+   * Opcional: artigo sem capa simplesmente não mostra nenhuma, e continua
+   * usando a imagem de compartilhamento padrão do site.
+   */
+  imagem?: { alt: string }
 }
 
 export const ARTIGOS: Artigo[] = [
@@ -254,6 +264,10 @@ export const ARTIGOS: Artigo[] = [
     ctaTitulo: 'Precisa conferir o CA dos EPIs que a sua equipe usa?',
     ctaTexto:
       'Mande a lista do que vocês usam hoje. A gente ajuda a verificar se o que está em uso corresponde ao risco da atividade e o que vale substituir.',
+    imagem: {
+      alt:
+        'Etiqueta de Certificado de Aprovação do Ministério do Trabalho ao lado de um calçado de segurança preto, com o título: o que é o CA do EPI e como consultar.',
+    },
   },
   {
     slug: 'calcado-ocupacional-ou-de-seguranca',
@@ -358,6 +372,10 @@ export const ARTIGOS: Artigo[] = [
     ctaTitulo: 'Ainda em dúvida sobre qual é o seu caso?',
     ctaTexto:
       'Descreva a sua rotina de trabalho: onde você fica, como é o piso e se há movimentação de carga. A gente diz qual dos dois faz sentido e por quê.',
+    imagem: {
+      alt:
+        'Um sapato ocupacional e uma botina de segurança lado a lado sobre fundo claro, com o título: calçado ocupacional ou de segurança, qual é o seu caso.',
+    },
   },
   {
     slug: 'nr-6-o-que-a-empresa-precisa-saber',
@@ -460,6 +478,10 @@ export const ARTIGOS: Artigo[] = [
     ctaTitulo: 'Precisa organizar o EPI da sua equipe?',
     ctaTexto:
       'Conte quantas pessoas são e o que elas fazem. A gente ajuda a montar o conjunto por atividade e a verificar se o que vocês usam hoje corresponde ao risco.',
+    imagem: {
+      alt:
+        'Capacete, óculos e luvas de proteção pretos sobre fundo claro, com o título: NR-6, o que a empresa precisa saber sobre EPI.',
+    },
   },
   {
     slug: 'solado-antiderrapante-o-que-significa',
@@ -557,6 +579,10 @@ export const ARTIGOS: Artigo[] = [
     ctaTitulo: 'Quer saber se o modelo serve para o seu piso?',
     ctaTexto:
       'Descreva como é o chão onde você trabalha e o que costuma cair nele. A gente verifica a marcação dos modelos e indica o que faz sentido.',
+    imagem: {
+      alt:
+        'Solado de um calçado de segurança visto por baixo, com a marcação SRC slip resistant, e o título: solado antiderrapante, o que realmente significa.',
+    },
   },
 ]
 

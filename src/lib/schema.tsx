@@ -102,12 +102,16 @@ export function schemaArtigo(dados: {
   url: string
   publicado: string
   atualizado: string
+  imagem?: string
 }) {
   return {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: dados.titulo,
     description: dados.descricao,
+    // O Google só considera o artigo para resultado com imagem se a imagem
+    // estiver declarada aqui, mesmo já estando na página.
+    ...(dados.imagem ? { image: urlAbsoluta(dados.imagem) } : {}),
     mainEntityOfPage: urlAbsoluta(dados.url),
     datePublished: dados.publicado,
     dateModified: dados.atualizado,

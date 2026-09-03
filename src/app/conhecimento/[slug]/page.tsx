@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { metadados } from '@/lib/seo'
+import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
@@ -28,6 +29,9 @@ export async function generateMetadata({
     descricao: a.descricaoSeo,
     canonical: `/conhecimento/${a.slug}/`,
     artigo: { publicado: a.publicado, atualizado: a.atualizado },
+    ...(a.imagem
+      ? { imagem: { url: `/fotos/artigos/${a.slug}-og.jpg`, alt: a.imagem.alt } }
+      : {}),
   })
 }
 
@@ -121,6 +125,7 @@ export default async function Artigo({ params }: { params: Promise<{ slug: strin
           url: `/conhecimento/${a.slug}/`,
           publicado: a.publicado,
           atualizado: a.atualizado,
+          imagem: a.imagem ? `/fotos/artigos/${a.slug}.webp` : undefined,
         })}
       />
       <Trilha
@@ -143,6 +148,23 @@ export default async function Artigo({ params }: { params: Promise<{ slug: strin
             · {a.atualizadoExibicao}
           </p>
         </header>
+
+        {/* A capa vem depois do título, não antes: o leitor chegou por uma
+            dúvida, e o que responde a dúvida é o texto. A imagem é o maior
+            elemento da tela, então carrega com `priority` — ela é o LCP. */}
+        {a.imagem && (
+          <figure className="wrap mb-12 min-w-0">
+            <Image
+              src={`/fotos/artigos/${a.slug}.webp`}
+              alt={a.imagem.alt}
+              width={1536}
+              height={1024}
+              priority
+              sizes="(min-width: 1320px) 1200px, 92vw"
+              className="h-auto w-full max-w-full border border-rule"
+            />
+          </figure>
+        )}
 
         <div className="wrap">
           <div className="grid gap-12 lg:grid-cols-[1fr_20rem] lg:gap-16">

@@ -553,6 +553,52 @@ botão e dos acentos.
 
 ---
 
+## AS CAPAS DOS ARTIGOS — PESO E FORMATO
+
+Chegaram cinco artes, uma por artigo, em PNG de 1536×1024 pesando cerca de
+**2MB cada**. Nesse peso, a capa sozinha custaria mais que o resto da página
+inteira, e a capa é o maior elemento da tela — ou seja, é o LCP.
+
+**O que foi feito com cada arquivo:**
+
+| Uso | Formato | Tamanho | Peso |
+|---|---|---|---|
+| Original | PNG | 1536×1024 | ~2MB → `docs/originais/artigos/` |
+| Capa na página | WebP q86 | 1536×1024 | ~125KB |
+| Card de compartilhamento | JPEG q86 | 1200×630 | ~78KB |
+| **Entregue ao navegador** | AVIF (`next/image`) | conforme a tela | **52KB no desktop, 15KB no celular** |
+
+Do original ao que o visitante baixa: **97% a menos no desktop, 99% no
+celular.** O `next/image` faz a conversão final; o que o repositório guarda é
+uma fonte já enxuta, porque re-otimizar a partir de 2MB custa a cada build e
+não melhora nada.
+
+**O card não foi cortado, foi estendido.** A arte é 3:2 e o card de link é
+1,91:1. Cortar comeria a marca no topo e o endereço no rodapé — as duas coisas
+que fazem a prévia parecer da Tower. Em vez disso, o próprio fundo da arte é
+amostrado no canto e estendido nas laterais até 1200×630. A emenda não existe:
+é a mesma cor.
+
+**Por que isso é SEO e não capricho.** O card de link é o que aparece quando
+alguém encaminha a página no WhatsApp — o canal de conversão do site inteiro.
+Antes, todo artigo chegava com o mesmo selo genérico. E a imagem foi declarada
+no `BlogPosting`: o Google só considera o artigo para resultado com imagem se
+ela estiver no dado estruturado, mesmo já estando na página.
+
+**A capa vem depois do título**, não antes: quem chegou veio com uma dúvida, e
+quem responde a dúvida é o texto. Ela carrega com `priority`, porque é o LCP.
+
+### Uma capa ficou de fora
+
+`Qual-o-melhor-calçado.png` (cozinha) traz **uma marca que não é a da Tower**:
+um monograma "TT", "TOWER EPIS" sem apóstrofo, e um selo circular inventado no
+canto inferior. As outras quatro trazem o logotipo correto. Publicar marca
+inventada é pior que não ter capa, então o artigo de cozinha segue sem imagem
+até chegar uma versão corrigida. O arquivo está guardado em
+`docs/originais/artigos/calcado-cozinha-LOGO-INCORRETO.png`.
+
+---
+
 ## AINDA FALTA
 
 O sistema está desenhado para mais fotografia do que tem.
