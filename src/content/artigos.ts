@@ -600,6 +600,456 @@ export const ARTIGOS: Artigo[] = [
         'Solado de um calçado de segurança visto por baixo, com a marcação SRC slip resistant, e o título: solado antiderrapante, o que realmente significa.',
     },
   },
+  {
+    slug: 'ficha-de-entrega-de-epi-o-que-precisa-constar',
+    titulo: 'Ficha de entrega de EPI: o que precisa constar',
+    tituloSeo: 'Ficha de entrega de EPI: o que precisa constar',
+    resumo:
+      'O registro do fornecimento é o que comprova que a empresa entregou. Veja o que ele precisa trazer e os erros que aparecem em fiscalização.',
+    descricaoSeo:
+      'A NR-6 obriga a registrar a entrega do EPI. Veja o que a ficha precisa conter, os erros mais comuns no preenchimento e como organizar isso numa equipe grande.',
+    publicado: '2026-09-03',
+    atualizado: '2026-09-03',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Normas',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'A NR-6 estabelece que o empregador registre o fornecimento do EPI ao trabalhador, e admite que esse registro seja feito em livro, ficha ou sistema eletrônico. Na prática, a ficha de entrega é a prova de que a empresa cumpriu a obrigação — e é o primeiro documento pedido quando alguém pergunta.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A norma não publica um modelo oficial de ficha. O que ela exige é que o fornecimento fique registrado. Isso dá liberdade de formato e cria a dúvida que chega até nós com frequência: <em>o que precisa estar escrito ali?</em>',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que a ficha precisa trazer',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Um registro serve para responder, meses depois, a quatro perguntas: quem recebeu, o que recebeu, quando, e se foi orientado. Tudo o mais é organização interna.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Identificação do trabalhador e da função — a função importa porque é ela que justifica o EPI escolhido.',
+          'Descrição do equipamento entregue, com o número do Certificado de Aprovação (CA).',
+          'Quantidade e data da entrega.',
+          'Motivo, quando for substituição: desgaste, dano, extravio ou troca por outro modelo.',
+          'Assinatura ou confirmação de recebimento do trabalhador.',
+          'Registro de que houve orientação sobre uso, guarda e conservação.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O CA é o campo que mais some das fichas, e é o que dá sentido ao resto: sem ele, o documento comprova que algo foi entregue, mas não que era o equipamento aprovado para aquele risco. <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Como consultar o CA está explicado aqui</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Os erros que a gente mais vê',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Ficha assinada em branco no dia da admissão, para ser preenchida depois. Isso não registra entrega nenhuma.',
+          'Uma única linha para "kit de EPI", sem discriminar os itens nem os CAs.',
+          'CA anotado uma vez e repetido nas entregas seguintes, mesmo quando o modelo mudou.',
+          'Substituição registrada sem motivo, o que apaga o histórico de desgaste da função.',
+          'Ficha guardada só na pasta do RH, longe de quem entrega no dia a dia — o registro atrasa e depois ninguém lembra.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Em equipe grande, o problema não é a ficha',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É a rotina. Quando a entrega acontece no corredor, no meio do turno, o registro fica para depois — e depois vira nunca. O que costuma funcionar é amarrar a entrega a um momento que já existe: a troca programada, o início do mês, a reposição de numeração.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Ajuda também padronizar por função em vez de por pessoa. Quando a <a href="/para-seu-trabalho/">atividade define a lista</a>, quem entrega não precisa decidir nada na hora, e a ficha vira conferência em vez de redação.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A ficha não substitui a escolha certa',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale dizer o óbvio, porque ele se perde: o registro comprova a entrega, não a adequação. Um EPI registrado com todas as assinaturas continua sendo o EPI errado se não protege do risco daquela atividade. A definição do que é adequado vem da avaliação de riscos da empresa, feita por profissional habilitado.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O resto das obrigações — quem fornece, quem paga, quem exige o uso — está reunido no texto sobre <a href="/conhecimento/nr-6-o-que-a-empresa-precisa-saber/">o que a empresa precisa saber sobre EPI</a>.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto atualizado)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/',
+      rotulo: 'Ver como a Tower atende empresas',
+    },
+    contexto: 'empresas',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Li o texto sobre ficha de entrega de EPI e gostaria de ajuda para organizar o fornecimento da nossa equipe.',
+    ctaTitulo: 'Precisa do CA de cada item para preencher a ficha?',
+    ctaTexto:
+      'A Tower manda o Certificado de Aprovação junto com o orçamento, item por item. Conte qual é a atividade e a quantidade.',
+  },
+  {
+    slug: 'botina-que-machuca-calcado-ou-numeracao',
+    titulo: 'Botina que machuca: é o calçado ou é a numeração?',
+    tituloSeo: 'Botina que machuca: o que fazer antes de trocar',
+    resumo:
+      'Quase sempre é numeração, forma ou modelo errado para a atividade — e não falta de tempo de uso. O que dá para resolver e o que não dá.',
+    descricaoSeo:
+      'Por que a biqueira não amacia, como saber se o problema é a numeração ou a forma do calçado, e quando insistir só piora. Sem truque caseiro.',
+    publicado: '2026-09-03',
+    atualizado: '2026-09-03',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Calçados',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Calçado de segurança que machuca raramente é falta de amaciar. Na maioria dos casos é numeração errada, forma incompatível com o pé ou modelo inadequado para a atividade — e nenhum dos três se resolve com uso.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É uma das reclamações que mais chegam, e quase sempre depois da compra de uma equipe inteira. Vale começar pela parte que mais surpreende quem procura no Google: <strong>a biqueira de proteção não amacia</strong>. Ela é uma peça rígida, de aço ou de material composto, e a função dela é justamente não ceder ao impacto. Se o dedo bate nela, vai continuar batendo no mês que vem.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Onde dói diz o que aconteceu',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O ponto do incômodo é o melhor diagnóstico disponível sem tirar o calçado do pé.',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Onde incomoda', 'Causa provável', 'Tem solução?'],
+        linhas: [
+          ['Ponta dos dedos, batendo', 'Numeração curta, ou biqueira começando cedo demais para o formato do pé', 'Não com uso. Troca de numeração ou de modelo'],
+          ['Em cima dos dedos, pressionando', 'Calçado baixo no peito do pé, ou pé alto para aquela forma', 'Não. É forma do calçado'],
+          ['Calcanhar, esfregando', 'Calçado folgado, que sobe e desce ao andar', 'Às vezes. Meia mais grossa ou palmilha podem resolver se a folga for pequena'],
+          ['Laterais, apertando', 'Pé largo em forma estreita', 'Não. É forma do calçado'],
+          ['Sola do pé, ardendo no fim do turno', 'Amortecimento insuficiente para a jornada, ou calçado pesado demais', 'Parcial. Palmilha ajuda; modelo mais leve resolve'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'A numeração de calçado profissional não é a do tênis',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Muita gente compra pelo número que usa no dia a dia e estranha. Calçado de segurança costuma calçar diferente por dois motivos: a forma é mais reta e o cabedal é mais firme, então ele acomoda menos que um calçado macio; e existe a meia de trabalho, geralmente mais grossa que a meia comum, que ocupa espaço real.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Por isso a prova vale mais que o número. Quando a compra é para uma equipe, o caminho que funciona é experimentar antes de fechar a grade — um par de amostra por faixa de numeração evita a troca de vinte pares depois.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que os truques da internet fazem com o calçado',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Secador, jornal molhado, amaciante de roupa e congelador aparecem em toda busca sobre sapato apertado. São dicas de calçado social, e o efeito num calçado profissional é outro: calor concentrado resseca o couro e descola adesivo de solado; umidade dentro do calçado ataca costura e forro; produto químico em couro tratado mancha e enfraquece.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'E nada disso muda a biqueira. No fim, o par volta a machucar com uma vida útil menor do que tinha.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quando o problema é o modelo, não o tamanho',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Existe um caso frequente e que ninguém considera: o calçado está certo, mas é do tipo errado para a atividade. Biqueira de proteção só faz sentido onde há risco de impacto sobre os dedos. Em cozinha, em serviço de limpeza, em atendimento de saúde e em boa parte do comércio, esse risco não existe — e o peso extra da biqueira, numa jornada de dez horas em pé, cobra caro.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Se for esse o caso, o problema não se resolve trocando de numeração: resolve-se trocando de categoria. A dúvida está respondida em <a href="/calcados/comparativo/">ocupacional ou de segurança, qual é o seu caso</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O EPI que a pessoa tira não protege ninguém',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale registrar por que isso importa além do desconforto. Calçado que machuca sai do pé — no almoço, no fim do turno, no dia em que ninguém está olhando. A norma trata o EPI como equipamento de uso obrigatório onde ele é necessário, e o uso depende de a pessoa conseguir usar. Conforto, aqui, é condição de proteção, não capricho.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Se o calçado já está danificado, com biqueira aparecendo ou solado descolando, o caso é de substituição — <a href="/conhecimento/nr-6-o-que-a-empresa-precisa-saber/">a NR-6 fala da conservação e da troca</a>.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto atualizado)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Requisitos para calçados de segurança e ocupacionais — Target Normas',
+        url: 'https://www.normas.com.br/visualizar/artigo-tecnico/2532/os-requisitos-para-os-calcados-de-seguranca-e-ocupacionais',
+      },
+    ],
+    paginaComercial: {
+      href: '/calcados/',
+      rotulo: 'Ver os calçados que a Tower trabalha',
+    },
+    contexto: 'calcados',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. O calçado que a gente usa está machucando e queria ajuda para descobrir se é numeração ou modelo.',
+    ctaTitulo: 'O calçado da sua equipe está machucando?',
+    ctaTexto:
+      'Conte onde incomoda e qual é a atividade. Dá para descobrir se o caso é numeração, forma ou categoria errada antes de trocar tudo.',
+  },
+  {
+    slug: 'luva-de-procedimento-nao-e-luva-de-limpeza',
+    titulo: 'Luva de procedimento não é luva de limpeza',
+    tituloSeo: 'Luva de procedimento serve para limpeza? Não',
+    resumo:
+      'São categorias diferentes, com CAs diferentes e resistências diferentes. Trocar uma pela outra é o erro de compra mais comum em saúde e facilities.',
+    descricaoSeo:
+      'Por que a luva descartável não protege de saneante, como escolher a luva pelo produto químico manuseado e o que muda entre nitrílica, látex e PVC.',
+    publicado: '2026-09-03',
+    atualizado: '2026-09-03',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Luva de procedimento é descartável e foi feita para barreira biológica em contato breve. Luva de proteção química é mais espessa, reutilizável e escolhida pelo produto que vai ser manuseado. Usar a primeira para higienização não protege as mãos de quem limpa.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O erro é fácil de entender: as duas são luvas, as duas podem ser de nitrila, e a de procedimento é mais barata e já está no almoxarifado. Só que a espessura, o tempo de resistência e o uso previsto são outros — e é aí que a proteção acaba.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A diferença que importa',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['', 'Luva de procedimento', 'Luva de proteção química'],
+        linhas: [
+          ['Uso previsto', 'Barreira biológica em contato breve', 'Manuseio de produto químico'],
+          ['Espessura', 'Fina, para manter a sensibilidade tátil', 'Maior, dimensionada para resistir ao produto'],
+          ['Reutilização', 'Descartável', 'Reutilizável, com higienização e inspeção'],
+          ['Como se escolhe', 'Pelo tamanho e pelo material', 'Pelo produto químico manuseado e pelo tempo de contato'],
+          ['Punho', 'Curto', 'Longo, quando há risco de respingo no antebraço'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'A luva se escolhe pelo produto, não pelo material',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Esta é a parte que quase nenhum material sobre luvas diz com todas as letras. Não existe uma luva que resista a tudo. Cada material — nitrílica, látex, neoprene, PVC, butílica — tem comportamento diferente diante de cada substância, e a mesma luva pode ser adequada para um produto e inadequada para outro.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O caminho certo é começar pela ficha do produto químico que a equipe usa e pela indicação do fabricante da luva para aquele tipo de substância. Quem tem a ficha em mãos resolve a escolha em minutos; quem parte do catálogo erra com frequência.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Onde a troca de categoria mais acontece',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Higienização hospitalar: a equipe de limpeza recebe a mesma caixa de luva descartável da assistência, e manuseia saneante concentrado com ela.',
+          'Cozinha industrial: luva de procedimento para lavar louça e para produto de limpeza pesada, quando o caso pede luva química de punho longo.',
+          'Facilities e conservação: diluição de produto feita com a luva errada, que é exatamente o momento de maior concentração.',
+          'Lavanderia: contato prolongado com produto e calor, dois fatores que a luva fina não aguenta.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Nesses quatro casos, o custo de corrigir é baixo: são funções específicas, não a equipe inteira. O que costuma faltar é alguém perceber que são duas compras diferentes.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Cada uma tem o seu CA',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Todo EPI comercializado no Brasil precisa de Certificado de Aprovação, e o CA é emitido para um uso determinado. Uma luva aprovada como barreira biológica não passa a ser luva química porque foi usada assim. Conferir o CA é o jeito mais rápido de saber se o item corresponde ao que a função exige — <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">o texto sobre o CA explica como consultar</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Os critérios de escolha por tipo de risco estão reunidos na página de <a href="/protecao/maos/">proteção das mãos</a>.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+    ],
+    paginaComercial: {
+      href: '/protecao/maos/',
+      rotulo: 'Ver proteção das mãos',
+    },
+    contexto: 'protecao-maos',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Li o texto sobre luva de procedimento e luva química e queria conferir se a luva que usamos hoje está certa.',
+    ctaTitulo: 'Quer conferir se a luva da sua equipe é a certa?',
+    ctaTexto:
+      'Diga qual produto químico é manuseado e por quanto tempo. Dá para verificar se o material da luva corresponde — e o CA vem junto no orçamento.',
+  },
+  {
+    slug: 'mascara-descartavel-nao-protege-de-vapor-quimico',
+    titulo: 'Máscara descartável não protege de vapor químico',
+    tituloSeo: 'PFF2 serve para produto químico? Não, e o motivo',
+    resumo:
+      'A PFF retém partícula. Vapor e gás exigem respirador com filtro químico. São equipamentos diferentes, com CAs diferentes.',
+    descricaoSeo:
+      'Por que a máscara PFF não retém vapor químico, o que é preciso usar no lugar e como identificar se o respirador da sua equipe está correto.',
+    publicado: '2026-09-03',
+    atualizado: '2026-09-03',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'A peça facial filtrante (PFF) retém material particulado: poeira, névoa, fumo. Ela não retém vapor nem gás químico. Para isso é preciso respirador com filtro químico apropriado à substância — outro equipamento, com outro Certificado de Aprovação.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É o erro mais perigoso que aparece na nossa rotina, e o mais silencioso: a pessoa está usando máscara, a empresa entregou EPI, a ficha está assinada — e a proteção contra o risco que existe ali é zero. Como vapor químico nem sempre tem cheiro forte, a falha só aparece em exame ou em sintoma.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Partícula e vapor são coisas diferentes',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A PFF funciona como uma peneira muito fina: o material do filtro segura partículas sólidas e líquidas suspensas no ar. Vapor químico não é partícula — são moléculas em fase gasosa, e elas atravessam esse material sem resistência.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Reter vapor exige outro princípio: um filtro químico, com material que adsorve aquele tipo de substância. É por isso que filtro químico tem indicação de uso e vida útil próprias, e não serve para qualquer produto.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Onde o erro mais aparece',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Pintura e aplicação com solvente, inclusive em manutenção predial e funilaria.',
+          'Manuseio de cola e solvente em fábrica de calçado e em marcenaria.',
+          'Diluição e aplicação de produto de limpeza concentrado, sobretudo em ambiente fechado.',
+          'Aplicação de defensivo agrícola, onde a exigência vem do próprio rótulo do produto.',
+          'Serviços de desinfecção e sanitização com produto químico nebulizado.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Nesses casos, a PFF pode até ser necessária para a parte particulada da exposição — mas não substitui o filtro químico, e a combinação certa depende da substância.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Como saber se o respirador da equipe está certo',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Identifique o produto: nome comercial e ficha de informações de segurança.',
+          'Veja se a exposição é a partícula, a vapor ou a ambos — isso define a classe do equipamento.',
+          'Confira o Certificado de Aprovação do respirador e do filtro, que são emitidos para usos determinados.',
+          'Verifique a vedação: respirador que não sela no rosto não protege, por melhor que seja o filtro.',
+          'Estabeleça a troca do filtro. Filtro químico tem saturação, e ela não se vê.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A definição do equipamento adequado para exposição química depende da avaliação de riscos da empresa, com medição quando for o caso, feita por profissional habilitado. O que este texto resolve é a confusão de categoria — e ela sozinha já responde por boa parte dos casos que chegam até nós.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A classe da PFF não muda isso',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Uma dúvida que aparece em seguida: "e se eu usar uma PFF3, que é mais protetora?". A classe da PFF indica eficiência de filtração de partículas — subir de classe aumenta a retenção de particulado, e não cria capacidade de reter vapor. É outra dimensão do problema.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'As classes e o que cada uma resolve estão explicadas na página de <a href="/protecao/respiratoria/">proteção respiratória</a>.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+    ],
+    paginaComercial: {
+      href: '/protecao/respiratoria/',
+      rotulo: 'Ver proteção respiratória',
+    },
+    contexto: 'protecao-respiratoria',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Li o texto sobre máscara e vapor químico e queria conferir se o respirador que usamos está correto.',
+    ctaTitulo: 'Quer conferir o respirador que a sua equipe usa?',
+    ctaTexto:
+      'Diga qual produto é manuseado e em que ambiente. Dá para verificar se a categoria está certa — e o CA vem junto no orçamento.',
+  },
 ]
 
 export const buscarArtigo = (slug: string) => ARTIGOS.find((a) => a.slug === slug)
