@@ -1215,7 +1215,7 @@ export const ARTIGOS: Artigo[] = [
   {
     slug: 'grade-de-numeracao-como-definir-para-a-equipe',
     titulo: 'Como definir a grade de numeração de uma equipe',
-    tituloSeo: 'Grade de numeração de calçado: como definir para a equipe',
+    tituloSeo: 'Grade de numeração de calçado para equipe',
     resumo:
       'É o dado que mais falta num pedido de calçado para equipe, e o que mais gera troca depois. Como levantar número por número, provar antes e deixar uma reserva certa.',
     descricaoSeo:
@@ -1369,7 +1369,7 @@ export const ARTIGOS: Artigo[] = [
   {
     slug: 'quando-trocar-o-calcado-de-seguranca',
     titulo: 'Quando trocar o calçado de segurança',
-    tituloSeo: 'Quando trocar o calçado de segurança: os sinais',
+    tituloSeo: 'Quando trocar o calçado de segurança',
     resumo:
       'Não existe prazo em norma: a troca é por condição. Os sinais que pedem substituição, o que a validade do CA realmente significa e como montar a conferência.',
     descricaoSeo:
@@ -1524,7 +1524,7 @@ export const ARTIGOS: Artigo[] = [
   {
     slug: 'luva-para-produto-quimico-como-escolher',
     titulo: 'Como escolher luva pelo produto químico que você manuseia',
-    tituloSeo: 'Luva para produto químico: como escolher a certa',
+    tituloSeo: 'Luva para produto químico: como escolher',
     resumo:
       'Não existe luva que resista a tudo. O método é partir da ficha do produto — e não do catálogo. Como ler, o que perguntar e onde a escolha costuma falhar.',
     descricaoSeo:
