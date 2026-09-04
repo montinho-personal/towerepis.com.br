@@ -98,3 +98,30 @@ sozinhas um aviso dizendo que a medição descrita ainda não está ligada.
 Defina-a apenas no ambiente de produção da Vercel: em prévia e em
 desenvolvimento ela deve ficar em branco, para não sujar a propriedade com
 tráfego que não é de visitante.
+
+## FAQ dos artigos
+
+```
+npm run build && npx next start -p 3000
+node docs/ferramentas/qa-faq.mjs
+```
+
+**Todo artigo tem FAQ, e essa regra é cobrada pelo compilador**: `perguntas` é
+campo obrigatório do tipo `Artigo`, então artigo novo sem FAQ não compila
+(`error TS2741`). Isso garante que o campo existe — não que o conteúdo preste.
+
+Este script cuida da outra metade: confere que todo artigo emite `FAQPage` com
+pelo menos três perguntas, que **a resposta do schema é exatamente a que está
+visível na página** — exigência do dado estruturado, e o motivo de o
+componente usar `<details>` com o texto já no HTML — e que nenhuma pergunta se
+repete entre páginas diferentes.
+
+A última checagem existe por um defeito real: na primeira leva de FAQ nos
+artigos, quatro perguntas saíram idênticas a perguntas que já existiam em
+outras páginas. Duas páginas do mesmo site disputando o mesmo resultado é o
+pior uso possível de FAQPage, e passou despercebido porque cada página, lida
+sozinha, estava correta.
+
+As páginas de cidade são exceção declarada: "a Tower atende empresas em X?"
+é a mesma forma de pergunta sobre lugares diferentes, e não conta como
+repetição.

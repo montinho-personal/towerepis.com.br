@@ -5,10 +5,10 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
 import { ARTIGOS, buscarArtigo, type Bloco } from '@/content/artigos'
-import { Trilha, AssinaturaTecnica, Secao } from '@/components/Blocos'
+import { Trilha, AssinaturaTecnica, Perguntas, Secao } from '@/components/Blocos'
 import { FechamentoCta } from '@/components/WhatsAppCta'
 import { IconeSeta } from '@/components/Icones'
-import { JsonLd, schemaArtigo } from '@/lib/schema'
+import { JsonLd, schemaArtigo, schemaFaq } from '@/lib/schema'
 import { Ampliar } from '@/components/Ampliar'
 
 export const dynamicParams = false
@@ -120,14 +120,20 @@ export default async function Artigo({ params }: { params: Promise<{ slug: strin
   return (
     <>
       <JsonLd
-        dados={schemaArtigo({
-          titulo: a.titulo,
-          descricao: a.descricaoSeo,
-          url: `/conhecimento/${a.slug}/`,
-          publicado: a.publicado,
-          atualizado: a.atualizado,
-          imagem: a.imagem ? `/fotos/artigos/${a.slug}.webp` : undefined,
-        })}
+        dados={[
+          schemaArtigo({
+            titulo: a.titulo,
+            descricao: a.descricaoSeo,
+            url: `/conhecimento/${a.slug}/`,
+            publicado: a.publicado,
+            atualizado: a.atualizado,
+            imagem: a.imagem ? `/fotos/artigos/${a.slug}.webp` : undefined,
+          }),
+          // Só é emitido porque as perguntas estão visíveis na página, logo
+          // abaixo do texto. FAQPage sem a resposta no HTML é dado estruturado
+          // que não corresponde à página.
+          schemaFaq(a.perguntas),
+        ]}
       />
       <Trilha
         itens={[
@@ -176,7 +182,8 @@ export default async function Artigo({ params }: { params: Promise<{ slug: strin
             {/* `min-w-0`: item de grade tem `min-width: auto`, então a tabela
                 comparativa — mesmo dentro do seu próprio `overflow-x-auto` —
                 empurrava a coluna inteira para além da tela em 320px. */}
-            <div className="prose-tower min-w-0 max-w-2xl">
+            <div className="min-w-0">
+            <div className="prose-tower max-w-2xl">
               {a.blocos.map((bloco, i) => (
                 <Renderizar key={i} bloco={bloco} />
               ))}
@@ -196,6 +203,14 @@ export default async function Artigo({ params }: { params: Promise<{ slug: strin
                 de proteção. Não substitui a avaliação de riscos do ambiente de trabalho,
                 que deve ser feita por profissional habilitado quando necessária.
               </p>
+            </div>
+
+            {/* Fora do `.prose-tower` de propósito: o h2 do texto corrido tem
+                régua em cima e escala própria, e o bloco de perguntas tem a
+                sua. Dentro, um cancelaria o outro. */}
+            <div className="mt-14 max-w-2xl border-t-2 border-ink pt-8">
+              <Perguntas perguntas={a.perguntas} nome={`faq-${a.slug}`} />
+            </div>
             </div>
 
             <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">

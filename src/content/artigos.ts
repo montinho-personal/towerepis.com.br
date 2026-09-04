@@ -8,6 +8,9 @@ import type { ContextoWhatsApp } from '@/lib/whatsapp'
  * nasce da intenção daquele texto — nunca um "entre em contato" genérico.
  *
  * Todo conteúdo normativo cita fonte oficial e traz data de revisão.
+ *
+ * Todo artigo tem FAQ — o campo `perguntas` é obrigatório de propósito, e a
+ * explicação do que entra nele está na declaração do tipo, abaixo.
  */
 export type Bloco =
   | { tipo: 'p'; texto: string }
@@ -37,6 +40,26 @@ export type Artigo = {
   mensagemWhats: string
   ctaTitulo: string
   ctaTexto: string
+  /**
+   * REGRA DO PROJETO: TODO ARTIGO TEM FAQ. Por isso este campo não é
+   * opcional — artigo novo sem perguntas não compila, e a regra é cobrada
+   * pelo compilador em vez de por lembrança.
+   *
+   * O QUE ENTRA AQUI: pergunta que o leitor faria em voz alta e que o corpo
+   * do texto não responde de forma curta e destacável. A resposta precisa
+   * ficar de pé sozinha, porque é ela que vai para o dado estruturado e é
+   * ela que um resumo de IA cita — e precisa ser verdadeira sem o resto do
+   * artigo em volta.
+   *
+   * O QUE NÃO ENTRA: resumo do que o texto já disse em três parágrafos, e
+   * pergunta inventada para encher. Três boas valem mais que seis mornas.
+   *
+   * O schema FAQPage exige a resposta VISÍVEL na página. O componente
+   * `Perguntas` usa `<details>` com o texto no HTML desde o primeiro
+   * carregamento; acordeão que injeta a resposta só no clique quebraria
+   * isso.
+   */
+  perguntas: { pergunta: string; resposta: string }[]
   /**
    * Capa do artigo. O arquivo deriva do slug — `/fotos/artigos/<slug>.webp`
    * e `-og.jpg` — para não existir a possibilidade de apontar para o arquivo
@@ -171,6 +194,23 @@ export const ARTIGOS: Artigo[] = [
     contexto: 'profissao-cozinha',
     mensagemWhats:
       'Olá! Vim pelo site da Tower. Li o texto sobre calçado para cozinha e queria ajuda para escolher o modelo certo para a minha rotina.',
+    perguntas: [
+      {
+        pergunta: 'Calçado furado ou tipo babuche serve para cozinha?',
+        resposta:
+          'Não. A cobertura fechada existe para respingo quente e derramamento de líquido, e o furo no cabedal anula isso exatamente onde o risco está: em cima do pé. Em cozinha, calçado vazado é conforto comprado com a proteção que motivou a compra.',
+      },
+      {
+        pergunta: 'Calçado de couro aguenta a rotina de cozinha?',
+        resposta:
+          'Aguenta menos do que se espera. O couro absorve gordura e sofre com a higienização frequente que a cozinha exige, e o par envelhece por dentro antes de parecer gasto por fora. Material que suporta lavagem costuma durar mais nesse ambiente.',
+      },
+      {
+        pergunta: 'A área de lavagem pede calçado diferente do resto da cozinha?',
+        resposta:
+          'Pede o mesmo tipo, com critério mais rígido de solado. É o ponto mais molhado da operação e onde o escorregamento mais acontece. Se a pessoa passa a maior parte do turno ali, a aderência pesa mais que qualquer outro fator na escolha.',
+      },
+    ],
     ctaTitulo: 'Trabalha em cozinha e ainda está em dúvida?',
     ctaTexto:
       'Conte como é a sua rotina: tipo de cozinha, como fica o piso e quantas horas você passa em pé. A gente mostra as opções que fazem sentido e explica a diferença entre elas.',
@@ -265,6 +305,23 @@ export const ARTIGOS: Artigo[] = [
     contexto: 'empresas',
     mensagemWhats:
       'Olá! Vim pelo site da Tower. Li o texto sobre o CA e gostaria de ajuda para conferir se os EPIs que usamos hoje estão adequados.',
+    perguntas: [
+      {
+        pergunta: 'Onde consultar o número do CA de um EPI?',
+        resposta:
+          'No sistema do Ministério do Trabalho e Emprego, informando o número do CA. O caminho oficial está no link ao final deste texto. A consulta mostra o equipamento, o fabricante ou importador, a validade e a descrição do que foi aprovado.',
+      },
+      {
+        pergunta: 'EPI sem CA pode ser usado?',
+        resposta:
+          'Não. A NR-6 condiciona o fornecimento de EPI à existência de Certificado de Aprovação. Equipamento sem CA não cumpre a exigência, mesmo que pareça adequado.',
+      },
+      {
+        pergunta: 'O CA fica no produto ou só na nota fiscal?',
+        resposta:
+          'No próprio equipamento, marcado de forma legível e indelével. É por isso que dá para conferir o CA olhando o par que está no pé de alguém, sem depender do documento da compra.',
+      },
+    ],
     ctaTitulo: 'Precisa conferir o CA dos EPIs que a sua equipe usa?',
     ctaTexto:
       'Mande a lista do que vocês usam hoje. A gente ajuda a verificar se o que está em uso corresponde ao risco da atividade e o que vale substituir.',
@@ -385,6 +442,23 @@ export const ARTIGOS: Artigo[] = [
     contexto: 'calcados-comparativo',
     mensagemWhats:
       'Olá! Vim pelo site da Tower. Li o texto sobre calçado ocupacional e de segurança e continuo em dúvida sobre qual serve para o meu caso.',
+    perguntas: [
+      {
+        pergunta: 'Como sei qual das duas normas o calçado atende?',
+        resposta:
+          'Pela descrição do Certificado de Aprovação do modelo, e não pela aparência. Um calçado ocupacional pode ser visualmente parecido com um de segurança; o que separa os dois é a biqueira de proteção, e é o CA que diz se ela existe.',
+      },
+      {
+        pergunta: 'Na dúvida, qual dos dois é a escolha mais segura?',
+        resposta:
+          'Não existe escolha segura por padrão, e é isso que torna a pergunta armadilha. Biqueira onde não há risco de impacto é peso que faz o calçado sair do pé no meio do turno. Falta de biqueira onde há impacto é exposição. Quem decide é a avaliação de riscos da atividade, não o instinto de pegar o mais reforçado.',
+      },
+      {
+        pergunta: 'Posso usar ocupacional na indústria?',
+        resposta:
+          'Depende da atividade, não do setor. Uma linha de montagem com movimentação de carga pede biqueira; uma sala de controle na mesma fábrica não. Quem decide é a avaliação de riscos da empresa.',
+      },
+    ],
     ctaTitulo: 'Ainda em dúvida sobre qual é o seu caso?',
     ctaTexto:
       'Descreva a sua rotina de trabalho: onde você fica, como é o piso e se há movimentação de carga. A gente diz qual dos dois faz sentido e por quê.',
@@ -491,6 +565,23 @@ export const ARTIGOS: Artigo[] = [
     contexto: 'empresas',
     mensagemWhats:
       'Olá! Vim pelo site da Tower. Li o texto sobre a NR-6 e gostaria de ajuda para organizar o EPI da nossa equipe.',
+    perguntas: [
+      {
+        pergunta: 'O que a NR-6 exige além de entregar o EPI?',
+        resposta:
+          'Entregar é uma das obrigações, não todas. A norma trata também da adequação ao risco, do Certificado de Aprovação válido, do estado de conservação e funcionamento, do treinamento sobre uso e guarda, da higienização e da substituição imediata quando o equipamento é danificado.',
+      },
+      {
+        pergunta: 'O trabalhador é obrigado a usar o EPI?',
+        resposta:
+          'Sim. A norma coloca o uso para a finalidade a que se destina como obrigação do trabalhador, e cabe à empresa exigir esse uso. As duas obrigações existem ao mesmo tempo.',
+      },
+      {
+        pergunta: 'A empresa precisa treinar quem usa EPI?',
+        resposta:
+          'Sim. Orientar e treinar sobre uso adequado, guarda e conservação faz parte das obrigações do empregador — não basta entregar o equipamento e registrar a entrega.',
+      },
+    ],
     ctaTitulo: 'Precisa organizar o EPI da sua equipe?',
     ctaTexto:
       'Conte quantas pessoas são e o que elas fazem. A gente ajuda a montar o conjunto por atividade e a verificar se o que vocês usam hoje corresponde ao risco.',
@@ -592,6 +683,23 @@ export const ARTIGOS: Artigo[] = [
     contexto: 'calcados-antiderrapantes',
     mensagemWhats:
       'Olá! Vim pelo site da Tower. Li o texto sobre solado antiderrapante e queria saber qual modelo serve para o piso onde eu trabalho.',
+    perguntas: [
+      {
+        pergunta: 'Todo calçado antiderrapante serve para qualquer piso?',
+        resposta:
+          'Não. O desempenho é medido em superfícies e contaminantes específicos, e um calçado que vai bem em piso cerâmico molhado pode ir mal em piso com óleo. É por isso que a marcação importa mais que a palavra antiderrapante na embalagem.',
+      },
+      {
+        pergunta: 'Como sei se o solado ainda está bom?',
+        resposta:
+          'Comparando o relevo da área de maior apoio com o de uma lateral que quase não toca o chão. Se a diferença é grande, o relevo já se foi — e é ele que garante a aderência.',
+      },
+      {
+        pergunta: 'Calçado antiderrapante evita queda?',
+        resposta:
+          'Reduz o risco, não elimina. A aderência é uma relação entre duas superfícies: o calçado responde por uma parte, o piso e a rotina de limpeza respondem pela outra.',
+      },
+    ],
     ctaTitulo: 'Quer saber se o modelo serve para o seu piso?',
     ctaTexto:
       'Descreva como é o chão onde você trabalha e o que costuma cair nele. A gente verifica a marcação dos modelos e indica o que faz sentido.',
@@ -708,6 +816,23 @@ export const ARTIGOS: Artigo[] = [
     contexto: 'empresas',
     mensagemWhats:
       'Olá! Vim pelo site da Tower. Li o texto sobre ficha de entrega de EPI e gostaria de ajuda para organizar o fornecimento da nossa equipe.',
+    perguntas: [
+      {
+        pergunta: 'A ficha de entrega de EPI pode ser digital?',
+        resposta:
+          'A norma não exige papel. O que a ficha precisa é identificar quem recebeu, o que recebeu e quando, e permitir comprovar a entrega. A forma de assinatura eletrônica aceitável deve ser confirmada com o responsável pela segurança do trabalho da empresa.',
+      },
+      {
+        pergunta: 'Precisa anotar a numeração do calçado na ficha?',
+        resposta:
+          'Não é exigência da norma, e vale a pena mesmo assim: com a numeração registrada, a reposição sai sem ninguém precisar experimentar de novo.',
+      },
+      {
+        pergunta: 'Por quanto tempo guardar as fichas?',
+        resposta:
+          'A norma de EPI não fixa um prazo para esta ficha. A prática é manter enquanto durar o vínculo e pelos prazos de guarda de documentos trabalhistas, que devem ser confirmados com o responsável pela área na empresa.',
+      },
+    ],
     ctaTitulo: 'Precisa do CA de cada item para preencher a ficha?',
     ctaTexto:
       'A Tower manda o Certificado de Aprovação junto com o orçamento, item por item. Conte qual é a atividade e a quantidade.',
@@ -829,6 +954,23 @@ export const ARTIGOS: Artigo[] = [
     contexto: 'calcados',
     mensagemWhats:
       'Olá! Vim pelo site da Tower. O calçado que a gente usa está machucando e queria ajuda para descobrir se é numeração ou modelo.',
+    perguntas: [
+      {
+        pergunta: 'Biqueira de proteção amacia com o uso?',
+        resposta:
+          'Não. Ela é uma peça rígida, e a função dela é justamente não ceder ao impacto. Se o dedo bate nela hoje, vai continuar batendo no mês que vem.',
+      },
+      {
+        pergunta: 'Devo comprar um número maior para não apertar?',
+        resposta:
+          'Não como regra. O caminho é provar com a meia de trabalho, de preferência no fim de um turno. Calçado folgado sobe e desce ao andar e machuca o calcanhar, que é trocar um problema por outro.',
+      },
+      {
+        pergunta: 'Quanto tempo leva para a botina assentar no pé?',
+        resposta:
+          'O cabedal cede um pouco nas primeiras semanas. A biqueira e a forma do calçado não cedem nunca — então incômodo na ponta dos dedos ou nas laterais não é questão de tempo.',
+      },
+    ],
     ctaTitulo: 'O calçado da sua equipe está machucando?',
     ctaTexto:
       'Conte onde incomoda e qual é a atividade. Dá para descobrir se o caso é numeração, forma ou categoria errada antes de trocar tudo.',
@@ -935,6 +1077,23 @@ export const ARTIGOS: Artigo[] = [
     contexto: 'protecao-maos',
     mensagemWhats:
       'Olá! Vim pelo site da Tower. Li o texto sobre luva de procedimento e luva química e queria conferir se a luva que usamos hoje está certa.',
+    perguntas: [
+      {
+        pergunta: 'Posso usar luva de procedimento para limpeza?',
+        resposta:
+          'Para limpeza com produto químico, não. A luva de procedimento é fina, descartável e feita para contato biológico de curta duração. Saneante concentrado atravessa ou degrada esse material antes do fim da tarefa.',
+      },
+      {
+        pergunta: 'Luva descartável serve para produto químico?',
+        resposta:
+          'Depende do produto e do que consta no Certificado de Aprovação da luva. Existem descartáveis com resistência química declarada para situações específicas — o que não existe é descartável que sirva para qualquer produto.',
+      },
+      {
+        pergunta: 'Qual luva usar na higienização hospitalar?',
+        resposta:
+          'Luva de proteção química, mais espessa, reutilizável e com punho compatível com o alcance do contato — escolhida a partir do produto que a equipe usa, e não da caixa que já está no almoxarifado.',
+      },
+    ],
     ctaTitulo: 'Quer conferir se a luva da sua equipe é a certa?',
     ctaTexto:
       'Diga qual produto químico é manuseado e por quanto tempo. Dá para verificar se o material da luva corresponde — e o CA vem junto no orçamento.',
@@ -1046,6 +1205,23 @@ export const ARTIGOS: Artigo[] = [
     contexto: 'protecao-respiratoria',
     mensagemWhats:
       'Olá! Vim pelo site da Tower. Li o texto sobre máscara e vapor químico e queria conferir se o respirador que usamos está correto.',
+    perguntas: [
+      {
+        pergunta: 'Como sei se preciso de PFF ou de filtro químico?',
+        resposta:
+          'Pelo agente, não pelo produto. Poeira, névoa e fumo são partículas e pedem PFF. Vapor e gás atravessam a PFF e pedem filtro químico específico. Qual é o caso da sua atividade vem da ficha do produto e da avaliação de exposição da empresa.',
+      },
+      {
+        pergunta: 'Uma PFF3 resolve vapor químico?',
+        resposta:
+          'Não. A classe da PFF indica eficiência de filtração de partículas: subir de classe aumenta a retenção de particulado e não cria capacidade de reter vapor. É outra dimensão do problema.',
+      },
+      {
+        pergunta: 'O que usar contra vapor químico?',
+        resposta:
+          'Respirador com filtro químico adequado à substância, definido a partir da ficha do produto e da avaliação de exposição da empresa, com o uso indicado constando no Certificado de Aprovação.',
+      },
+    ],
     ctaTitulo: 'Quer conferir o respirador que a sua equipe usa?',
     ctaTexto:
       'Diga qual produto é manuseado e em que ambiente. Dá para verificar se a categoria está certa — e o CA vem junto no orçamento.',
@@ -1208,6 +1384,23 @@ export const ARTIGOS: Artigo[] = [
     contexto: 'calcados-seguranca',
     mensagemWhats:
       'Olá! Vim pelo site da Tower. Li o texto sobre biqueira de composite e de aço e queria saber qual serve para a minha atividade.',
+    perguntas: [
+      {
+        pergunta: 'Biqueira de composite pode trincar sem aparecer?',
+        resposta:
+          'Pode, e é a diferença que mais importa depois de um impacto forte. A biqueira de aço amassa e passa a pressionar os dedos, o que a pessoa percebe. A de composite pode perder resistência sem nenhum sinal por fora. Nos dois casos o par sai de uso.',
+      },
+      {
+        pergunta: 'Biqueira de composite torna o calçado isolante elétrico?',
+        resposta:
+          'Não. O composite não conduz eletricidade, mas isolamento elétrico é propriedade do calçado inteiro, ensaiada e declarada no Certificado de Aprovação como requisito próprio. Se a atividade exige calçado isolante, é isso que precisa constar no CA.',
+      },
+      {
+        pergunta: 'Qual biqueira passa no detector de metal?',
+        resposta:
+          'A de composite. Em linha de alimentos, farmacêutica ou qualquer entrada com portal detector, a de aço acusa a cada passagem.',
+      },
+    ],
     ctaTitulo: 'Em dúvida entre composite e aço para a sua atividade?',
     ctaTexto:
       'Diga onde a equipe trabalha, se há frio, eletricidade ou detector de metal, e quanto se caminha. A resposta vem com o modelo e o CA correspondente.',
@@ -1362,6 +1555,23 @@ export const ARTIGOS: Artigo[] = [
     contexto: 'calcados',
     mensagemWhats:
       'Olá! Vim pelo site da Tower. Li o texto sobre grade de numeração e já tenho a lista da minha equipe. Posso mandar a grade para orçamento?',
+    perguntas: [
+      {
+        pergunta: 'O que é grade de numeração?',
+        resposta:
+          'É a lista de quantos pares de cada número a equipe precisa. Não é o total do pedido: doze pares sem a grade não dizem quantos são 38 e quantos são 42.',
+      },
+      {
+        pergunta: 'Dá para pedir orçamento sem a grade?',
+        resposta:
+          'Dá, e a resposta sai estimada. Com a grade preenchida, o preço e o prazo vêm já na primeira mensagem; sem ela, a troca costuma chegar junto com a entrega.',
+      },
+      {
+        pergunta: 'Preciso separar forma feminina na grade?',
+        resposta:
+          'Sim, quando a equipe tem mulheres. Calçado de segurança em forma feminina tem numeração e largura próprias — um modelo masculino em numeração pequena sobra na largura e aperta no peito do pé.',
+      },
+    ],
     ctaTitulo: 'Já tem a grade da sua equipe?',
     ctaTexto:
       'Mande os números par a par, pelo construtor ou direto aqui. Com a grade na mão a resposta vem com preço e prazo na primeira mensagem — e sem grade, é a primeira coisa que vamos perguntar.',
@@ -1517,6 +1727,23 @@ export const ARTIGOS: Artigo[] = [
     contexto: 'calcados',
     mensagemWhats:
       'Olá! Vim pelo site da Tower. Li o texto sobre quando trocar o calçado de segurança e queria ajuda para avaliar os pares da minha equipe.',
+    perguntas: [
+      {
+        pergunta: 'Calçado de segurança tem prazo de validade?',
+        resposta:
+          'Não existe prazo fixo em norma. A substituição é por condição: a norma exige o EPI em perfeito estado de conservação e funcionamento, e a troca imediata quando ele estiver danificado.',
+      },
+      {
+        pergunta: 'Se o CA do modelo vencer, preciso trocar o calçado?',
+        resposta:
+          'A validade do CA é da aprovação daquele modelo, e define o período em que ele pode ser comercializado como EPI aprovado. Não é a vida útil do par que já está em uso, que segue sendo decidida pelo estado do calçado.',
+      },
+      {
+        pergunta: 'Quanto tempo dura uma botina de segurança?',
+        resposta:
+          'Depende inteiramente da atividade. Um par de obra pode acabar em seis meses e um de manutenção leve durar dois anos. Por isso a resposta útil é a lista do que olhar, e não um número de meses.',
+      },
+    ],
     ctaTitulo: 'Na dúvida se o par já passou da hora?',
     ctaTexto:
       'Mande uma foto do solado e diga há quanto tempo está em uso e em que atividade. Dá para dizer se é caso de troca — e, se for, já sai com a reposição.',
@@ -1689,6 +1916,23 @@ export const ARTIGOS: Artigo[] = [
     contexto: 'protecao-maos',
     mensagemWhats:
       'Olá! Vim pelo site da Tower. Preciso de luva para produto químico e queria ajuda para escolher a partir do produto que a gente usa.',
+    perguntas: [
+      {
+        pergunta: 'Onde consigo a ficha do produto químico?',
+        resposta:
+          'Com o fornecedor do produto. A FISPQ é obrigação de quem fabrica ou importa, e a seção de controle de exposição e proteção individual é a que traz as recomendações de EPI.',
+      },
+      {
+        pergunta: 'Como sei por quanto tempo a luva aguenta o produto?',
+        resposta:
+          'Na tabela de resistência química do fabricante, que informa o tempo estimado até a substância atravessar aquele material. Se esse tempo é menor que a exposição real da tarefa, a luva está errada para o caso — mesmo sendo uma boa luva.',
+      },
+      {
+        pergunta: 'Posso reutilizar luva que já teve contato com produto químico?',
+        resposta:
+          'Depois de passado o tempo de resistência daquele material àquela substância, não. A substância já está dentro do material, e lavar por fora não devolve a proteção.',
+      },
+    ],
     ctaTitulo: 'Diga qual produto a sua equipe manuseia',
     ctaTexto:
       'Com o nome do produto, a concentração e o tipo de contato, dá para indicar o material e o punho certos — e conferir o CA junto. Se tiver a FISPQ, mande que ela adianta metade.',
