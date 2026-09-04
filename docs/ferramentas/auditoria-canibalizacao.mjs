@@ -57,7 +57,10 @@ vazias.slice(0,8).forEach(v=>console.log('   '+v))
 
 // --- distribuição de links de corpo ---
 console.log('\n\n# DISTRIBUIÇÃO DE LINKS EDITORIAIS (corpo)\n')
-const ord = rotas.map(r=>[entraCorpo[r].length, r]).sort((a,b)=>a[0]-b[0])
+// `entraCorpo` só traz rota que recebeu link de corpo — página órfã não
+// aparece na chave. Ler direto quebrava a ferramenta justamente no caso que
+// ela existe para denunciar: zero é resposta, não erro.
+const ord = rotas.map(r=>[(entraCorpo[r] ?? []).length, r]).sort((a,b)=>a[0]-b[0])
 console.log('menos linkadas:')
 ord.slice(0,12).forEach(([n,r]) => console.log(`  ${String(n).padStart(2)}  ${r}`))
 console.log('mais linkadas:')

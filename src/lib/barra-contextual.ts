@@ -206,6 +206,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'A sua equipe está escorregando?',
     rotulo: 'Descobrir a causa',
   },
+  'empresa-pode-descontar-epi-do-salario': {
+    chamada: 'A reposição de EPI está virando discussão?',
+    rotulo: 'Organizar a entrega',
+  },
+  'ca-vencido-o-epi-pode-continuar-em-uso': {
+    chamada: 'Achou um CA vencido no seu estoque?',
+    rotulo: 'Mandar a lista de CAs',
+  },
 }
 
 /**

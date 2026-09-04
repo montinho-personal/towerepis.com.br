@@ -281,7 +281,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'A validade do CA está ligada à autorização do equipamento no mercado. Na prática, para quem gerencia EPI numa empresa, isso significa acompanhar os certificados dos itens em uso e verificar com o fornecedor a situação de cada modelo. Equipamento cujo certificado deixou de ser válido precisa ser tratado junto ao fabricante ou substituído por modelo com certificado vigente.',
+          'A validade do CA está ligada à autorização daquele modelo no mercado, e por isso ela pesa mais na compra do que na prateleira. Item que ainda vai ser adquirido ou entregue precisa ter certificado vigente. Item que já está em uso é uma pergunta com resposta mais longa, e ela está em <a href="/conhecimento/ca-vencido-o-epi-pode-continuar-em-uso/">CA vencido: o EPI pode continuar em uso?</a>.',
       },
       {
         tipo: 'p',
@@ -517,7 +517,7 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'lista',
         itens: [
           'Fornecer o equipamento adequado ao risco da atividade, e não um equipamento genérico.',
-          'Fornecer gratuitamente — o custo não pode ser repassado ao trabalhador.',
+          '<a href="/conhecimento/empresa-pode-descontar-epi-do-salario/">Fornecer gratuitamente</a> — o custo não pode ser repassado ao trabalhador.',
           'Fornecer em perfeito estado de conservação e funcionamento.',
           'Orientar e treinar sobre o uso adequado, a guarda e a conservação.',
           'Substituir imediatamente quando danificado ou extraviado.',
@@ -1626,7 +1626,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Na prática, isso significa duas coisas ao mesmo tempo. Um calçado comprado com CA válido continua sendo o EPI adequado enquanto estiver em condições de uso, mesmo que o CA daquele modelo venha a vencer depois. E um calçado com o CA em dia pode estar impróprio hoje, se o solado estiver liso ou o cabedal rasgado. O CA responde por "este modelo foi aprovado"; o estado do par responde por "este calçado ainda protege".',
+          'Na prática, isso significa duas coisas ao mesmo tempo — e uma delas com menos margem do que costuma parecer. Um calçado com o CA em dia pode estar impróprio hoje, se o solado estiver liso ou o cabedal rasgado: aí não há dúvida nenhuma, e a troca é pelo estado. Na direção contrária, o vencimento do CA daquele modelo não funciona como ordem de recolher o par do pé de quem já o usa — mas também não é assunto encerrado, e <a href="/conhecimento/ca-vencido-o-epi-pode-continuar-em-uso/">merece uma leitura à parte</a>. O CA responde por "este modelo foi aprovado"; o estado do par responde por "este calçado ainda protege".',
       },
       {
         tipo: 'h2',
@@ -1735,9 +1735,9 @@ export const ARTIGOS: Artigo[] = [
           'Não existe prazo fixo em norma. A substituição é por condição: a norma exige o EPI em perfeito estado de conservação e funcionamento, e a troca imediata quando ele estiver danificado.',
       },
       {
-        pergunta: 'Se o CA do modelo vencer, preciso trocar o calçado?',
+        pergunta: 'Quem decide a hora da troca?',
         resposta:
-          'A validade do CA é da aprovação daquele modelo, e define o período em que ele pode ser comercializado como EPI aprovado. Não é a vida útil do par que já está em uso, que segue sendo decidida pelo estado do calçado.',
+          'Na prática, a segurança do trabalho ou a chefia direta, com a informação de quem calça. A pessoa percebe o solado escorregando e o desconforto antes de qualquer inspeção — e o par só chega ao ponto de acidente quando essa informação não tem para onde ir.',
       },
       {
         pergunta: 'Quanto tempo dura uma botina de segurança?',
@@ -2268,6 +2268,314 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Escorregar é sempre problema do calçado?',
         resposta:
           'Não. Aderência é uma relação entre o solado, o piso e o que estiver entre os dois. Sola engordurada, película de produto de limpeza mal enxaguado e contaminante novo no processo derrubam a aderência de qualquer calçado aprovado.',
+      },
+    ],
+  },
+  {
+    slug: 'empresa-pode-descontar-epi-do-salario',
+    titulo: 'A empresa pode descontar EPI do salário?',
+    tituloSeo: 'Pode descontar EPI do salário?',
+    resumo:
+      'A parte que a NR-6 responde não tem margem: o EPI é fornecido gratuitamente. A discussão sobre desconto começa depois disso — e quase sempre onde falta registro.',
+    descricaoSeo:
+      'O que a NR-6 resolve sem margem, o que fica para o direito do trabalho e o que evita a discussão no dia a dia. Sem parecer jurídico, com a fonte oficial.',
+    publicado: '2026-09-04',
+    atualizado: '2026-09-04',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Normas',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'O EPI é fornecido gratuitamente, e isso não depende de acordo: o custo do equipamento adequado ao risco não é do trabalhador. A discussão sobre desconto começa fora da NR-6, tem regra própria e não suspende a obrigação de fornecer nem a de substituir.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A pergunta chega dos dois lados. Do gestor que viu o terceiro par sumir no mesmo semestre e quer saber até onde pode ir, e da pessoa que recebeu o contracheque com uma linha que não reconhece. As duas versões que circulam — "pode descontar" e "nunca pode descontar nada" — tratam como uma pergunta só o que são duas, com respostas de qualidade bem diferente.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A parte que a norma responde, e responde sem margem',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A <a href="/conhecimento/nr-6-o-que-a-empresa-precisa-saber/">NR-6</a> obriga a empresa a fornecer ao empregado, gratuitamente, o EPI adequado ao risco da atividade e em perfeito estado de conservação e funcionamento. "Gratuitamente" está no texto da norma, e não é uma condição que se negocia: o custo do equipamento é da empresa porque a obrigação de proteger é da empresa.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O que decorre disso, e costuma ser esquecido, é que a gratuidade não termina na primeira entrega:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'O equipamento adequado ao risco — não o mais barato que existe, o adequado.',
+          'A substituição imediata quando o EPI é danificado ou extraviado.',
+          'A higienização e a manutenção periódica.',
+          'A orientação e o treinamento sobre uso, guarda e conservação.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Nenhum desses quatro é despesa do trabalhador, e nenhum deles fica suspenso enquanto a empresa decide o que fazer a respeito de um par perdido.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'De onde nasce a dúvida',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A mesma NR-6 atribui deveres a quem usa: usar o equipamento apenas para a finalidade a que se destina, responsabilizar-se pela guarda e pela conservação, comunicar qualquer alteração que o torne impróprio para uso. É daí que sai o raciocínio de que, se a guarda é do trabalhador, a perda também seria — e é aí que o salto acontece.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-6 não trata de desconto em folha. Ela diz o que a empresa fornece e o que o trabalhador faz com o que recebeu. Se um valor pode ou não ser descontado, em que hipótese e com qual formalidade, é matéria de direito do trabalho — e a resposta depende do caso, do que está escrito no contrato e do que a convenção coletiva da categoria estabelece.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          '<strong>Este texto não é parecer jurídico e não substitui um.</strong> A Tower vende EPI e ajuda a especificar EPI; a decisão sobre desconto em folha é do advogado da empresa, com o caso concreto na mão.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que não muda em nenhuma hipótese',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Mesmo que a empresa entenda que tem base para cobrar, a obrigação de substituir imediatamente o EPI danificado ou extraviado continua de pé. São duas decisões separadas, e elas não têm a mesma urgência: repor é hoje, porque enquanto não houver reposição existe alguém trabalhando exposto ao risco que o equipamento cobria. Discutir o valor é depois.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Essa é também a leitura prática de quem fiscaliza. Um trabalhador sem o EPI da função é constatável na hora; o motivo pelo qual ele está sem, não.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que resolve isso antes de virar discussão',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na operação, a conversa sobre desconto quase sempre aparece onde falta registro ou onde o item entregue não era o certo. Vale olhar a causa antes da cobrança — na maioria dos casos ela é barata de corrigir e não volta.',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Onde a discussão nasce', 'O que costuma estar por trás', 'O que evita'],
+        linhas: [
+          ['"Ele perde um par por mês"', 'Numeração errada ou modelo desconfortável — o par não foi perdido, foi abandonado', 'Conferir a numeração e ouvir a queixa antes de repor o mesmo item'],
+          ['"Sumiu e ninguém sabe"', 'Não existe registro de quem recebeu o quê, quando e com qual CA', 'Ficha de entrega assinada, com data e número do CA'],
+          ['"Estragou em um mês"', 'Modelo incompatível com o ambiente, e não mau uso', 'Rever a especificação pelo risco real da atividade'],
+          ['"Levou para casa e não trouxe"', 'A orientação sobre guarda nunca foi dada nem registrada', 'Registrar a orientação junto com a entrega'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Os quatro se resolvem no mesmo lugar. A <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega de EPI</a> é o documento que mostra o que foi entregue a quem e em que data, e é ele que transforma "sumiu" em um fato verificável. Quando a queixa é de par que machuca ou que dura pouco, o caminho costuma passar por <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">acertar a grade de numeração</a> antes de qualquer outra coisa.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quando a pergunta é para o advogado',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Quando existe intenção de descontar valor por dano, perda ou não devolução.',
+          'Quando o desconto está previsto — ou proibido — em acordo individual, acordo coletivo ou convenção coletiva da categoria.',
+          'Quando a discussão aparece na rescisão.',
+          'Quando já existe reclamação, notificação ou processo em curso.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Em todos esses casos a resposta certa depende de documento, e o documento que mais pesa é o registro de entrega. Empresa que entrega EPI com ficha assinada, na numeração certa e com orientação registrada chega nessa conversa em outra posição — e, na prática, chega nela muito menos vezes.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/como-atendemos/',
+      rotulo: 'Ver como a Tower atende empresas',
+    },
+    contexto: 'empresas',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Queria organizar a entrega e a reposição de EPI da equipe para não ter discussão de perda e de desconto.',
+    ctaTitulo: 'A reposição está virando discussão?',
+    ctaTexto:
+      'Conte como é a entrega hoje e quantas pessoas recebem EPI. Dá para ajustar especificação, numeração e periodicidade de reposição antes de o assunto chegar ao contracheque.',
+    perguntas: [
+      {
+        pergunta: 'E se o funcionário perder ou danificar o EPI?',
+        resposta:
+          'A substituição continua sendo obrigação da empresa, e imediata — a NR-6 manda substituir quando o EPI é danificado ou extraviado, sem condicionar isso a apurar culpa antes. Se cabe alguma cobrança pelo valor é uma segunda pergunta, de direito do trabalho, e ela não adia a reposição.',
+      },
+      {
+        pergunta: 'Descontar muda a obrigação de substituir o item?',
+        resposta:
+          'Não. São decisões separadas e com urgências diferentes. Enquanto não houver reposição existe uma pessoa trabalhando sem a proteção que a atividade exige, e é isso que uma fiscalização constata na hora.',
+      },
+      {
+        pergunta: 'O que evita a discussão sobre desconto no dia a dia?',
+        resposta:
+          'Registro e especificação certa. Ficha de entrega assinada com data e número do CA, numeração conferida com cada pessoa e orientação de guarda registrada junto com a entrega. A maior parte dos casos de "sumiu" e "estragou rápido" tem uma dessas três causas.',
+      },
+    ],
+  },
+  {
+    slug: 'ca-vencido-o-epi-pode-continuar-em-uso',
+    titulo: 'CA vencido: o EPI pode continuar em uso?',
+    tituloSeo: 'CA vencido: pode continuar usando?',
+    resumo:
+      'A resposta muda conforme o momento. Comprar com CA vencido está fora de questão; um item já entregue e íntegro é uma pergunta mais longa — e a resposta honesta não é um sim seco.',
+    descricaoSeo:
+      'O que o vencimento do CA significa na compra, na prateleira e no par que já está no pé de alguém. Com a consulta oficial e o que fazer em cada situação.',
+    publicado: '2026-09-04',
+    atualizado: '2026-09-04',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Normas',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Depende de onde o item está. Comprar ou entregar EPI com o CA vencido está fora de questão. Um par já entregue e em bom estado não vira impróprio na data em que o CA do modelo vence — mas essa data é o aviso de que a reposição daquele modelo precisa ser resolvida, e não um assunto encerrado.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Esta é uma pergunta que parece ter resposta de sim ou não e não tem. Boa parte do que se lê por aí escolhe um dos dois extremos: ou "vencido não pode, recolhe tudo hoje", ou "o CA é do modelo, então em uso não muda nada". O primeiro gera descarte de equipamento íntegro; o segundo trata como resolvido um ponto que a norma simplesmente não enfrenta.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Primeiro, o que o CA é',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a> é do modelo, não do par. Ele diz que aquele equipamento, daquele fabricante ou importador, foi aprovado para uma finalidade descrita — e tem um prazo. Esse prazo é da aprovação do modelo no mercado. Não é uma data de vencimento estampada no item que a pessoa calça, veste ou respira.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Confundir os dois prazos é o erro que faz a pergunta parecer difícil. Um item pode ter CA em dia e já não proteger; e o CA de um modelo pode vencer com um par inteiro dentro da caixa.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A parte da resposta que não tem dúvida',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'EPI só pode ser posto à venda ou utilizado com a indicação do Certificado de Aprovação. Isso vale para quem vende e para quem compra e fornece à equipe. Na prática: <strong>item que ainda vai ser adquirido, recebido ou entregue precisa ter certificado vigente</strong>. Aqui não há leitura alternativa, e é o ponto que mais aparece em fiscalização, porque é o mais fácil de verificar — basta a nota, a ficha e a consulta.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A parte que exige cuidado',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O que a NR-6 exige do EPI em uso é outra coisa: que seja adequado ao risco, que esteja em perfeito estado de conservação e funcionamento e que seja substituído imediatamente quando danificado ou extraviado. São critérios de adequação e de estado, e o vencimento do CA do modelo não aparece entre eles.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale dizer com clareza o que isso é e o que não é. <strong>Não existe na norma um dispositivo que autorize expressamente seguir usando o que já foi entregue.</strong> O que existe é ausência de regra mandando recolher — e ausência de proibição não é a mesma coisa que permissão escrita. Por isso a resposta honesta é que o vencimento do CA não funciona como gatilho de recolhimento imediato, e não que "pode usar até acabar".',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O que costuma decidir a questão, quando ela é levantada, é outro dado: se o certificado estava vigente no momento da compra e da entrega. É esse registro que mostra que a empresa forneceu equipamento aprovado — e é ele que a <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega</a> guarda, quando traz o número do CA e a data.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que fazer quando o CA de um item em uso vence',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Consultar a situação atual no sistema oficial</strong>, pelo número do CA. É o primeiro passo e o mais pulado — a informação que circula internamente costuma estar velha.',
+          '<strong>Confirmar com o fornecedor ou o fabricante</strong> qual é a situação daquele modelo e o que ele indica no lugar.',
+          '<strong>Conferir o estado do par</strong>, que é uma verificação independente e pode tornar a discussão desnecessária: se ele já está gasto, a troca acontece por outro motivo.',
+          '<strong>Programar a reposição por modelo com certificado vigente</strong>, em vez de improvisar. Reposição planejada evita tanto o descarte precoce quanto a compra às pressas do que estiver disponível.',
+          '<strong>Registrar a decisão e a data</strong>, junto com a ficha. O que não está escrito não conta depois.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O erro na direção contrária',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Tão comum quanto recolher item bom é o oposto: tratar o CA em dia como prova de que o equipamento ainda protege. Não é. O ensaio que aprovou o modelo foi feito com o produto novo, e <a href="/conhecimento/solado-antiderrapante-o-que-significa/">o relevo do solado é justamente o que desgasta com o uso</a>. Um calçado com CA vigente e sola lisa é um calçado que não protege, com certificado válido. Os sinais que pedem troca estão em <a href="/conhecimento/quando-trocar-o-calcado-de-seguranca/">quando trocar o calçado de segurança</a>.',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Situação', 'O que ela diz', 'O que fazer'],
+        linhas: [
+          ['CA vigente, item íntegro', 'Modelo aprovado e equipamento em condições', 'Nada — é o estado esperado'],
+          ['CA vigente, item gasto ou danificado', 'A aprovação é do modelo; este exemplar já não cumpre', 'Substituir pelo estado'],
+          ['CA vencido, item ainda em estoque', 'Não pode ser fornecido nesse estado', 'Consultar a situação e falar com o fornecedor antes de entregar'],
+          ['CA vencido, item em uso e íntegro', 'Não é gatilho de recolhimento, é aviso de reposição', 'Conferir se houve renovação e programar a substituição do modelo'],
+          ['CA vencido e item gasto', 'As duas razões apontam para o mesmo lado', 'Substituir'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A leitura que atravessa a tabela inteira é sempre a mesma: o CA responde por "este modelo foi aprovado", e o estado do item responde por "isto ainda protege". As duas perguntas precisam de resposta, e nenhuma das duas responde pela outra.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/',
+      rotulo: 'Ver soluções para empresas',
+    },
+    contexto: 'empresas',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Encontrei EPI com o CA vencido aqui e queria ajuda para saber o que substituir e por qual modelo.',
+    ctaTitulo: 'Encontrou um CA vencido no seu estoque?',
+    ctaTexto:
+      'Mande a lista dos itens e dos números de CA. A gente ajuda a separar o que precisa de reposição agora do que só precisa entrar no próximo pedido.',
+    perguntas: [
+      {
+        pergunta: 'Dá para comprar EPI com o CA vencido?',
+        resposta:
+          'Não. A NR-6 condiciona a venda e o fornecimento de EPI à indicação de Certificado de Aprovação, então item sem certificado vigente não pode ser adquirido nem entregue à equipe — mesmo que seja o mesmo modelo que a empresa já usa há anos.',
+      },
+      {
+        pergunta: 'Um certificado vencido pode voltar a ficar válido?',
+        resposta:
+          'A situação de cada certificado é um dado do sistema oficial do Ministério do Trabalho e Emprego, e é lá que ela precisa ser conferida — não na nota fiscal nem na memória de quem comprou. Consultar antes de concluir qualquer coisa evita tanto descartar equipamento bom quanto encomendar um modelo que já não pode ser fornecido.',
+      },
+      {
+        pergunta: 'O número do CA precisa aparecer no registro de entrega?',
+        resposta:
+          'É o que torna o registro útil depois. Anotado com a data, ele mostra qual equipamento foi entregue e que o certificado estava vigente naquele momento — que é exatamente o dado pedido quando a pergunta sobre vencimento aparece meses ou anos mais tarde.',
       },
     ],
   },
