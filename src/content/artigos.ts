@@ -563,7 +563,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Na prática, isso significa incluir a conferência do solado na rotina — olhar o relevo, verificar se está liso nas áreas de maior apoio. Em ambientes onde o escorregamento é o risco principal, esse é o critério de troca mais importante, mais até do que a aparência geral do calçado.',
+          'Na prática, isso significa incluir a conferência do solado na rotina — olhar o relevo, verificar se está liso nas áreas de maior apoio. Em ambientes onde o escorregamento é o risco principal, esse é o critério de troca mais importante, mais até do que a aparência geral do calçado. Os demais sinais estão reunidos em <a href="/conhecimento/quando-trocar-o-calcado-de-seguranca/">quando trocar o calçado de segurança</a>.',
       },
       {
         tipo: 'h2',
@@ -809,7 +809,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Se o calçado já está danificado, com biqueira aparecendo ou solado descolando, o caso é de substituição — <a href="/conhecimento/nr-6-o-que-a-empresa-precisa-saber/">a NR-6 fala da conservação e da troca</a>.',
+          'Se o calçado já está danificado, com biqueira aparecendo ou solado descolando, o caso é de substituição — <a href="/conhecimento/nr-6-o-que-a-empresa-precisa-saber/">a NR-6 fala da conservação e da troca</a>, e a lista completa de sinais está em <a href="/conhecimento/quando-trocar-o-calcado-de-seguranca/">quando trocar o calçado de segurança</a>.',
       },
     ],
     fontes: [
@@ -883,7 +883,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'O caminho certo é começar pela ficha do produto químico que a equipe usa e pela indicação do fabricante da luva para aquele tipo de substância. Quem tem a ficha em mãos resolve a escolha em minutos; quem parte do catálogo erra com frequência.',
+          'O caminho certo é começar pela ficha do produto químico que a equipe usa e pela indicação do fabricante da luva para aquele tipo de substância. Quem tem a ficha em mãos resolve a escolha em minutos; quem parte do catálogo erra com frequência. O passo a passo está em <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">como escolher luva pelo produto químico</a>.',
       },
       {
         tipo: 'h2',
@@ -1365,6 +1365,333 @@ export const ARTIGOS: Artigo[] = [
     ctaTitulo: 'Já tem a grade da sua equipe?',
     ctaTexto:
       'Mande os números par a par, pelo construtor ou direto aqui. Com a grade na mão a resposta vem com preço e prazo na primeira mensagem — e sem grade, é a primeira coisa que vamos perguntar.',
+  },
+  {
+    slug: 'quando-trocar-o-calcado-de-seguranca',
+    titulo: 'Quando trocar o calçado de segurança',
+    tituloSeo: 'Quando trocar o calçado de segurança: os sinais',
+    resumo:
+      'Não existe prazo em norma: a troca é por condição. Os sinais que pedem substituição, o que a validade do CA realmente significa e como montar a conferência.',
+    descricaoSeo:
+      'A norma não dá prazo — dá condição. Os sinais que pedem troca, por que a validade do CA não é a vida útil do par e como incluir a conferência na rotina.',
+    publicado: '2026-09-04',
+    atualizado: '2026-09-04',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Calçados',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Não existe prazo fixo em norma para trocar calçado de segurança. A substituição é por condição, não por calendário — e a data de validade que aparece no Certificado de Aprovação não é a vida útil do par que está no pé de alguém.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É a pergunta que chega dos dois lados: do gestor que precisa programar a reposição e da pessoa que desconfia que o par dela já era. As duas respostas que circulam por aí — "um ano" e "quando vencer o CA" — estão erradas, e a segunda mais do que a primeira.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A norma não dá prazo, dá condição',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A <a href="/conhecimento/nr-6-o-que-a-empresa-precisa-saber/">NR-6</a> exige que o EPI seja fornecido em perfeito estado de conservação e funcionamento, e que seja substituído imediatamente quando danificado ou extraviado. Isso é um critério de estado, não de tempo. Um par que rodou seis meses numa obra pode estar vencido antes de um que rodou dois anos num escritório de manutenção.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Por isso a resposta útil não é um número de meses: é uma lista do que olhar, e a disciplina de olhar.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Validade do CA não é vida útil do calçado',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Essa confusão é a mais comum e a mais cara. O <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a> tem prazo de validade, e esse prazo é da aprovação <em>daquele modelo</em> — é o período em que ele pode ser comercializado como EPI aprovado. Não é uma data de vencimento estampada no par que a pessoa calça.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na prática, isso significa duas coisas ao mesmo tempo. Um calçado comprado com CA válido continua sendo o EPI adequado enquanto estiver em condições de uso, mesmo que o CA daquele modelo venha a vencer depois. E um calçado com o CA em dia pode estar impróprio hoje, se o solado estiver liso ou o cabedal rasgado. O CA responde por "este modelo foi aprovado"; o estado do par responde por "este calçado ainda protege".',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Os sinais que pedem troca',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['O que observar', 'Por que importa', 'Quando trocar'],
+        linhas: [
+          ['Relevo do solado liso nas áreas de apoio', 'É o relevo que garante a aderência. Liso, o calçado escorrega em piso que antes segurava', 'Imediato onde escorregamento é o risco principal'],
+          ['Solado descolando do cabedal', 'Entra água e produto, e o descolamento progride rápido', 'Imediato'],
+          ['Biqueira à mostra ou deformada', 'Perdeu o revestimento ou levou impacto. Deformada, ela passa a pressionar os dedos', 'Imediato'],
+          ['Furo, rasgo ou costura aberta no cabedal', 'Deixa de proteger contra respingo, perfurante lateral e entrada de material', 'Imediato'],
+          ['Amortecimento sem resposta, sola interna achatada', 'A fadiga cresce e a pessoa começa a evitar o calçado', 'Programar a troca'],
+          ['Contrafortes e forro internos rompidos', 'Machucam o calcanhar e o pé passa a se deslocar dentro do calçado', 'Programar a troca'],
+          ['Calçado que levou impacto forte na biqueira', 'A proteção pode ter sido consumida sem sinal visível', 'Imediato, mesmo parecendo inteiro'],
+          ['Contato com produto químico agressivo', 'Couro e adesivo podem estar comprometidos por dentro', 'Avaliar; na dúvida, trocar'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O sinal mais importante é o que ninguém olha',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O solado é o item que mais decide a troca e o que menos se confere, porque fica virado para baixo. O ensaio de resistência ao escorregamento é feito com o calçado novo: <a href="/conhecimento/solado-antiderrapante-o-que-significa/">o relevo é justamente o que desgasta com o uso</a>. Em cozinha, em área da saúde e em limpeza, onde o escorregamento é o acidente mais provável, esse é o critério de troca mais importante — mais do que a aparência geral do par.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale o hábito simples: virar o calçado e comparar o relevo da área de maior apoio com o da lateral, que quase não toca o chão. Se a diferença é grande, o par já perdeu boa parte do que tinha.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Depois de uma pancada forte, troque',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Calçado que recebeu impacto real na biqueira sai de circulação, mesmo aparentando estar inteiro. Uma biqueira de aço amassada passa a pressionar os dedos, o que a pessoa percebe. Uma de composite pode ter trincado por dentro sem nenhum sinal por fora — a diferença entre as duas está em <a href="/conhecimento/biqueira-de-composite-ou-de-aco-qual-escolher/">biqueira de composite ou de aço</a>. Nos dois casos, a proteção já foi usada uma vez e não se recupera.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que encurta a vida do par',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Secar no sol forte ou perto de fonte de calor: resseca o couro e descola o solado.',
+          'Lavar por dentro com frequência e guardar úmido: ataca costura, forro e adesivo.',
+          'Usar o mesmo par todos os dias sem intervalo de secagem, em atividade que molha ou faz suar muito.',
+          'Guardar amassado ou empilhado, que deforma o cabedal.',
+          'Produto químico de limpeza pesada aplicado no calçado sem indicação do fabricante.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Conservação não é detalhe doméstico: a NR-6 trata a higienização e a manutenção como parte da obrigação, e um par bem cuidado dura mais — o que muda o custo anual da equipe inteira.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Uma conferência que cabe na rotina',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Não precisa de sistema. Precisa de periodicidade e de alguém responsável. Uma conferência visual por mês, feita junto com outra rotina que já existe, resolve: virar o calçado e olhar o solado, olhar biqueira e costuras, e perguntar à pessoa se está incomodando. Essa última pergunta encontra mais problema que as outras duas juntas — e quando a resposta é sim, <a href="/conhecimento/botina-que-machuca-calcado-ou-numeracao/">nem sempre o caso é troca por desgaste</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Na hora de repor',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A troca entra na <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega de EPI</a>, com data e motivo — é o registro que demonstra que a substituição aconteceu quando precisava. E se a numeração da pessoa já estiver anotada na <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">grade da equipe</a>, o pedido sai sem ninguém precisar experimentar de novo.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto atualizado)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+      {
+        titulo: 'Requisitos para calçados de segurança e ocupacionais — Target Normas',
+        url: 'https://www.normas.com.br/visualizar/artigo-tecnico/2532/os-requisitos-para-os-calcados-de-seguranca-e-ocupacionais',
+      },
+    ],
+    paginaComercial: {
+      href: '/calcados/',
+      rotulo: 'Ver os calçados que a Tower trabalha',
+    },
+    contexto: 'calcados',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Li o texto sobre quando trocar o calçado de segurança e queria ajuda para avaliar os pares da minha equipe.',
+    ctaTitulo: 'Na dúvida se o par já passou da hora?',
+    ctaTexto:
+      'Mande uma foto do solado e diga há quanto tempo está em uso e em que atividade. Dá para dizer se é caso de troca — e, se for, já sai com a reposição.',
+  },
+  {
+    slug: 'luva-para-produto-quimico-como-escolher',
+    titulo: 'Como escolher luva pelo produto químico que você manuseia',
+    tituloSeo: 'Luva para produto químico: como escolher a certa',
+    resumo:
+      'Não existe luva que resista a tudo. O método é partir da ficha do produto — e não do catálogo. Como ler, o que perguntar e onde a escolha costuma falhar.',
+    descricaoSeo:
+      'O método que parte da ficha do produto químico, não do material da luva: concentração, tempo de contato, permeação e o que conferir no CA antes de comprar.',
+    publicado: '2026-09-04',
+    atualizado: '2026-09-04',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Não existe luva que resista a todo produto químico. A escolha certa começa na ficha do produto que a equipe usa — com nome, concentração e tempo de contato — e não no catálogo da luva. Quem parte do catálogo erra com frequência, e o erro não aparece: luva química falha por dentro, sem furo e sem sinal.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A <a href="/protecao/maos/">página de proteção das mãos</a> diz que a luva se escolhe pelo risco, e o texto sobre <a href="/conhecimento/luva-de-procedimento-nao-e-luva-de-limpeza/">luva de procedimento e luva de limpeza</a> diz que ela se escolhe pelo produto. Este aqui é o método: como sair de "usamos um saneante concentrado" para "esta luva, deste material, com este punho".',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Por que o material sozinho não responde',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Nitrílica, látex, neoprene, PVC, butílica e outras se comportam de forma diferente diante de cada substância. Uma nitrílica que segura bem um solvente pode se degradar rápido em contato com outro. E existem dois fenômenos distintos, que muita gente trata como um só:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Degradação</strong> — o material se altera visivelmente: incha, endurece, amolece, fica pegajoso ou muda de cor. Dá para ver.',
+          '<strong>Permeação</strong> — a substância atravessa a luva em nível molecular, sem furo e sem alterar a aparência. Não dá para ver, e é a que mais machuca porque a pessoa continua confiando na luva.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Fabricantes de luva publicam tabelas de resistência química por produto, com o tempo estimado até a substância atravessar o material. É esse tempo que define por quanto tempo aquela luva serve para aquela tarefa — e é ele que ninguém consulta.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O método, em cinco passos',
+      },
+      {
+        tipo: 'h3',
+        texto: '1. Ter a ficha do produto em mãos',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Todo produto químico usado no trabalho deve ter uma FISPQ — Ficha de Informações de Segurança de Produtos Químicos, fornecida pelo fabricante. Ela tem uma seção específica de controle de exposição e proteção individual, e é ali que estão as recomendações de EPI para aquele produto. Se a empresa não tem a FISPQ dos produtos que usa, esse é o primeiro problema a resolver — e é o fornecedor do produto que deve entregá-la.',
+      },
+      {
+        tipo: 'h3',
+        texto: '2. Anotar o que muda a resposta',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quatro informações mudam completamente a luva indicada, e nenhuma delas está no nome do produto:',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Informação', 'Por que muda a escolha'],
+        linhas: [
+          ['Produto e concentração', 'O mesmo produto diluído e concentrado exige resistências diferentes'],
+          ['Tipo de contato', 'Respingo eventual e imersão da mão são cenários distintos'],
+          ['Tempo de contato por vez', 'É o que se compara com o tempo de resistência da luva'],
+          ['Temperatura', 'Calor acelera a permeação e reduz o tempo útil'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Sem essas quatro, qualquer recomendação é chute — inclusive a nossa. É por isso que a primeira resposta da Tower a um pedido de luva química costuma ser uma pergunta.',
+      },
+      {
+        tipo: 'h3',
+        texto: '3. Cruzar com a tabela de resistência do fabricante da luva',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Com produto e concentração na mão, consulta-se a tabela de resistência química do modelo. O que se procura é o comportamento daquele material diante daquela substância e o tempo estimado de resistência. Se o tempo é menor que a exposição real da tarefa, a luva está errada para o caso — mesmo sendo uma boa luva.',
+      },
+      {
+        tipo: 'h3',
+        texto: '4. Definir espessura e comprimento do punho',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Espessura maior costuma dar mais tempo de resistência e menos sensibilidade — é uma troca, não uma melhoria pura. O punho se define pelo alcance do contato: respingo na palma pede uma coisa; imersão até o antebraço, ou trabalho acima da linha do ombro, pede punho longo. Luva curta em tarefa de imersão faz o produto entrar por cima, e aí a luva vira o recipiente.',
+      },
+      {
+        tipo: 'h3',
+        texto: '5. Conferir no Certificado de Aprovação',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">CA</a> descreve para que o equipamento foi aprovado. Luva aprovada para manuseio geral não é luva aprovada para proteção química — são aprovações diferentes, e a descrição do CA diz qual é qual. É a conferência que fecha a escolha, e a que mais evita surpresa numa fiscalização.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Onde a escolha costuma falhar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>A diluição.</strong> É o momento de maior concentração do produto e o de menor cuidado: quase sempre feito com a luva do dia a dia, não com a luva do concentrado.',
+          '<strong>A mistura.</strong> Luva adequada para dois produtos separadamente pode não ser adequada para a mistura dos dois.',
+          '<strong>Reutilizar luva já exposta.</strong> Depois do tempo de resistência, a substância está dentro do material. Lavar por fora não devolve a proteção.',
+          '<strong>Guardar molhada por dentro.</strong> Vira exposição contínua da pele no uso seguinte.',
+          '<strong>Uma luva para a operação inteira.</strong> Tarefas diferentes, com produtos diferentes, quase nunca se resolvem com um modelo só.',
+          '<strong>Trocar de marca sem reconferir.</strong> Mesmo material, fabricante diferente, tabela de resistência diferente.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'A luva que a pessoa tira não protege',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale repetir aqui o que vale para todo EPI: luva que escorrega, que aperta ou que tira a sensibilidade sai da mão na hora da tarefa delicada — que costuma ser justamente a de maior contato. Tamanho e pegada não são conforto, são condição para a proteção existir. Peça amostra e deixe a equipe usar antes de fechar a compra.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que mandar para o fornecedor',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Com isto, a resposta vem certa na primeira mensagem: o nome do produto químico e a concentração, se o contato é respingo ou imersão, quanto tempo dura o contato de cada vez, se há calor envolvido e quantas pessoas fazem a tarefa. Se tiver a FISPQ, mande junto — ela responde metade das perguntas sozinha.',
+      },
+      {
+        tipo: 'destaque',
+        texto:
+          'Este texto é o método de escolha, e não substitui a avaliação de riscos da sua operação nem a orientação do profissional de segurança do trabalho responsável. Exposição química é assunto em que a ficha do produto e o laudo da empresa mandam mais que qualquer texto geral — inclusive este.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto atualizado)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+      {
+        titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
+      },
+    ],
+    paginaComercial: {
+      href: '/protecao/maos/',
+      rotulo: 'Ver proteção para as mãos',
+    },
+    contexto: 'protecao-maos',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Preciso de luva para produto químico e queria ajuda para escolher a partir do produto que a gente usa.',
+    ctaTitulo: 'Diga qual produto a sua equipe manuseia',
+    ctaTexto:
+      'Com o nome do produto, a concentração e o tipo de contato, dá para indicar o material e o punho certos — e conferir o CA junto. Se tiver a FISPQ, mande que ela adianta metade.',
   },
 ]
 

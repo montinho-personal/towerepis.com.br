@@ -190,6 +190,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Já tem a grade da sua equipe?',
     rotulo: 'Mandar a grade',
   },
+  'quando-trocar-o-calcado-de-seguranca': {
+    chamada: 'Na dúvida se o par da sua equipe já passou da hora?',
+    rotulo: 'Mandar foto do solado',
+  },
+  'luva-para-produto-quimico-como-escolher': {
+    chamada: 'Sabe qual produto a sua equipe manuseia?',
+    rotulo: 'Pedir a luva certa',
+  },
 }
 
 /**
