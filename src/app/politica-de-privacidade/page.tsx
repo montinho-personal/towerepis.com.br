@@ -96,14 +96,16 @@ export default function Privacidade() {
 
           <h2 id="quem">Quem é o responsável</h2>
           <p>
-            {empresa.nomeCompleto}, distribuidora de equipamentos de proteção individual em
+            O controlador dos dados é <strong>{empresa.razaoSocial}</strong>, inscrita no
+            CNPJ sob o nº {empresa.cnpj}, que atua sob o nome fantasia{' '}
+            {empresa.nome} — distribuidora de equipamentos de proteção individual em
             Fortaleza, Ceará, em atividade desde {empresa.fundacao}. O site é{' '}
             {empresa.site}.
           </p>
           <p>
-            <strong>[INFORMAÇÃO NECESSÁRIA]</strong> — razão social e CNPJ ainda não foram
-            informados para publicação. A identificação completa do controlador precisa
-            constar aqui, e este parágrafo deve ser substituído por ela.
+            A empresa tem duas pessoas, Helano e Cristina, e qualquer pedido sobre dados
+            chega direto a uma delas. Não há departamento nem intermediário — o que é uma
+            vantagem para quem pergunta, e a razão de o canal abaixo ser o e-mail dos dois.
           </p>
 
           <h2 id="dados">Que dados são tratados</h2>
@@ -350,10 +352,23 @@ export default function Privacidade() {
           </ul>
 
           <h2 id="exercer">Como exercer</h2>
+          <p>Por qualquer um destes canais, dizendo o que você quer:</p>
+          <ul>
+            <li>
+              <strong>E-mail</strong> —{' '}
+              <a href={`mailto:${empresa.email.helano}`}>{empresa.email.helano}</a> ou{' '}
+              <a href={`mailto:${empresa.email.cristina}`}>{empresa.email.cristina}</a>. É o
+              caminho recomendado quando o assunto é dado pessoal, porque fica registrado
+              dos dois lados.
+            </li>
+            <li>
+              <strong>WhatsApp</strong> — {empresa.whatsapp.exibicao}, que é onde a Tower
+              atende todos os dias.
+            </li>
+          </ul>
           <p>
-            Pelo WhatsApp {empresa.whatsapp.exibicao}, dizendo o que você quer. O pedido é
-            recebido por um dos dois sócios — a empresa tem duas pessoas, e não há
-            intermediário.
+            O pedido é recebido por um dos dois sócios — a empresa tem duas pessoas, e não
+            há intermediário.
           </p>
           <p>
             O que acontece depois: confirmamos o recebimento, verificamos se conseguimos
@@ -361,11 +376,12 @@ export default function Privacidade() {
             apagamos o que estiver sob nosso controle e explicamos o que precisar ser
             mantido por obrigação legal.
           </p>
-          <p>
-            <strong>[INFORMAÇÃO NECESSÁRIA]</strong> — recomendamos criar um e-mail no
-            domínio para servir de canal de privacidade, e indicar formalmente quem
-            responde por proteção de dados na empresa. Enquanto isso não existe, o WhatsApp
-            acima é o canal, e ele é real: é onde a Tower atende todos os dias.
+          <p className="text-sm">
+            <strong>[VALIDAÇÃO JURÍDICA]</strong> — a LGPD trata da indicação de um
+            encarregado pelo tratamento de dados, e há regra específica da ANPD para
+            agentes de tratamento de pequeno porte. Se essa indicação formal se aplica à
+            Tower, e em que termos, é questão a conferir com profissional da área. O canal
+            de comunicação acima existe e funciona independentemente disso.
           </p>
 
           <h2 id="menores">Crianças e adolescentes</h2>

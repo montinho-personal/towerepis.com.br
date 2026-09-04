@@ -11,9 +11,20 @@
 export const empresa = {
   nome: "Tower EPI's",
   nomeCompleto: "Tower EPI's — Equipamentos de Proteção Individual",
-  // PENDENTE: razão social e CNPJ para rodapé e dados estruturados.
-  razaoSocial: null as string | null,
-  cnpj: null as string | null,
+
+  /**
+   * Identificação legal, informada por Helano em setembro de 2026.
+   *
+   * "Tower EPI's" é nome fantasia; a razão social é a de baixo. As páginas
+   * legais precisam da razão social e do CNPJ para identificar o controlador
+   * e a parte contratante — nome fantasia não identifica ninguém num pedido
+   * de LGPD nem num termo de uso.
+   *
+   * O CNPJ foi conferido pelos dígitos verificadores antes de ser publicado
+   * (4 e 0, batem). CNPJ errado em página legal é pior que CNPJ ausente.
+   */
+  razaoSocial: 'Helano G. De Alencar Araripe Com. ME',
+  cnpj: '26.684.642/0001-40',
 
   assinatura: 'Proteção para o trabalho desde 1995.',
   descricaoCurta:
@@ -38,8 +49,20 @@ export const empresa = {
     confirmado: false,
   },
 
-  // PENDENTE: e-mail comercial.
-  email: null as string | null,
+  /**
+   * E-mails dos dois sócios, no domínio `tower-ce.com.br` — que é anterior a
+   * este site e não é o domínio da Vercel. Nada aqui exige mexer no DNS de
+   * towerepis.com.br, que não recebe e-mail e não deve receber.
+   *
+   * Servem também como canal de privacidade: a empresa tem duas pessoas e o
+   * pedido chega direto a uma delas, que é o que a política já dizia sobre o
+   * WhatsApp. Agora existe também o caminho escrito, que é o que um titular
+   * costuma querer quando o assunto é dado pessoal.
+   */
+  email: {
+    helano: 'helano@tower-ce.com.br',
+    cristina: 'cristina@tower-ce.com.br',
+  },
 
   /**
    * A Tower não tem loja física desde 2018 (home office).

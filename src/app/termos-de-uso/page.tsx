@@ -56,9 +56,10 @@ export default function TermosDeUso() {
 
           <h2 id="objetivo">Para que este site serve</h2>
           <p>
-            {empresa.site} é o site institucional da {empresa.nome}, distribuidora de
-            equipamentos de proteção individual em Fortaleza, Ceará, em atividade desde{' '}
-            {empresa.fundacao}. Ele apresenta as categorias de produto que a empresa
+            {empresa.site} é o site institucional de <strong>{empresa.razaoSocial}</strong>,
+            CNPJ {empresa.cnpj}, que atua sob o nome fantasia {empresa.nome} —
+            distribuidora de equipamentos de proteção individual em Fortaleza, Ceará, em
+            atividade desde {empresa.fundacao}. Ele apresenta as categorias de produto que a empresa
             trabalha, publica material técnico sobre escolha de EPI e encaminha o
             atendimento para o WhatsApp.
           </p>
@@ -196,14 +197,16 @@ export default function TermosDeUso() {
           <h2 id="lei">Lei aplicável e contato</h2>
           <p>
             Aplica-se a legislação brasileira. Para qualquer questão sobre estes termos,
-            fale com a Tower pelo WhatsApp {empresa.whatsapp.exibicao} ou pela{' '}
+            fale com a Tower pelo WhatsApp {empresa.whatsapp.exibicao}, por{' '}
+            <a href={`mailto:${empresa.email.helano}`}>{empresa.email.helano}</a> ou pela{' '}
             <Link href="/contato/">página de contato</Link>.
           </p>
-          <p>
-            <strong>[INFORMAÇÃO NECESSÁRIA]</strong> — razão social, CNPJ e foro de eleição
-            não foram informados para publicação. A identificação completa da empresa
-            precisa constar aqui, e a cláusula de foro deve ser redigida com validação
-            jurídica.
+          <p className="text-sm">
+            <strong>[VALIDAÇÃO JURÍDICA]</strong> — não há cláusula de eleição de foro
+            nestes termos. Ela só deve ser incluída com redação de profissional da área:
+            foro escolhido de forma a dificultar o acesso do consumidor à justiça é nulo, e
+            escrever uma cláusula dessas por conta própria criaria risco em vez de
+            proteção. Sem ela, valem as regras de competência da legislação.
           </p>
 
           <p className="text-sm text-ink-3">Última atualização: setembro de 2026.</p>

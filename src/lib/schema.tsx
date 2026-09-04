@@ -23,6 +23,12 @@ export function schemaOrganizacao() {
     '@id': `${SITE}/#organizacao`,
     name: empresa.nome,
     alternateName: 'Tower EPIs',
+    // Razão social e CNPJ como dado, não só como texto no rodapé. É o que
+    // permite ao Google casar este site com o registro da empresa em vez de
+    // tratar "Tower EPI's" como nome solto.
+    legalName: empresa.razaoSocial,
+    taxID: empresa.cnpj,
+    email: empresa.email.helano,
     description: empresa.descricaoCurta,
     url: `${SITE}/`,
     foundingDate: String(empresa.fundacao),
