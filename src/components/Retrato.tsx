@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { Ampliar } from './Ampliar'
 
 /**
  * Retrato fotográfico.
@@ -38,15 +39,24 @@ export function Retrato({
     // passa a valer 100% de 2046px, e a página inteira rola de lado no
     // celular — sem nenhum erro, só uma barra horizontal que ninguém quer.
     <figure className="min-w-0">
-      <Image
+      {/* Retrato também amplia: a foto aparece em coluna estreita, e quem
+          quer ver o rosto de quem vai responder no WhatsApp merece ver. */}
+      <Ampliar
         src={src}
         alt={alt}
-        width={largura}
-        height={altura}
-        sizes={tamanhos}
-        priority={prioridade}
-        className="h-auto w-full max-w-full"
-      />
+        larguraReal={largura}
+        legenda={typeof legenda === 'string' ? legenda : alt}
+      >
+        <Image
+          src={src}
+          alt={alt}
+          width={largura}
+          height={altura}
+          sizes={tamanhos}
+          priority={prioridade}
+          className="h-auto w-full max-w-full"
+        />
+      </Ampliar>
       {legenda && (
         <figcaption className="mt-4 border-t-2 border-ink pt-3 text-[0.85rem] leading-snug text-ink-2">
           {legenda}

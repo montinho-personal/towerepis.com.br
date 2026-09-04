@@ -9,6 +9,7 @@ import { Trilha, AssinaturaTecnica, Secao } from '@/components/Blocos'
 import { FechamentoCta } from '@/components/WhatsAppCta'
 import { IconeSeta } from '@/components/Icones'
 import { JsonLd, schemaArtigo } from '@/lib/schema'
+import { Ampliar } from '@/components/Ampliar'
 
 export const dynamicParams = false
 
@@ -154,15 +155,19 @@ export default async function Artigo({ params }: { params: Promise<{ slug: strin
             elemento da tela, então carrega com `priority` — ela é o LCP. */}
         {a.imagem && (
           <figure className="wrap mb-12 min-w-0">
-            <Image
-              src={`/fotos/artigos/${a.slug}.webp`}
-              alt={a.imagem.alt}
-              width={1536}
-              height={1024}
-              priority
-              sizes="(min-width: 1320px) 1200px, 92vw"
-              className="h-auto w-full max-w-full border border-rule"
-            />
+            {/* A capa é um infográfico: tem texto dentro. No celular ele fica
+                em corpo ilegível, então a imagem abre ampliada ao toque. */}
+            <Ampliar src={`/fotos/artigos/${a.slug}.webp`} alt={a.imagem.alt} larguraReal={1536}>
+              <Image
+                src={`/fotos/artigos/${a.slug}.webp`}
+                alt={a.imagem.alt}
+                width={1536}
+                height={1024}
+                priority
+                sizes="(min-width: 1320px) 1200px, 92vw"
+                className="h-auto w-full max-w-full border border-rule"
+              />
+            </Ampliar>
           </figure>
         )}
 
