@@ -356,7 +356,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'O composite é mais leve e não conduz calor nem frio, o que faz diferença em ambiente muito quente ou muito frio e para quem caminha muito. O aço costuma ter custo menor. Existe ainda a chamada biqueira de conformação, que dá forma ao calçado mas não é biqueira de proteção — atenção a essa diferença, porque o nome parecido gera confusão.',
+          'O composite é mais leve e não conduz calor nem frio, o que faz diferença em ambiente muito quente ou muito frio e para quem caminha muito. O aço costuma ter custo menor. Existe ainda a chamada biqueira de conformação, que dá forma ao calçado mas não é biqueira de proteção — atenção a essa diferença, porque o nome parecido gera confusão. A decisão atividade por atividade — frio, eletricidade, detector de metal, quilometragem — está em <a href="/conhecimento/biqueira-de-composite-ou-de-aco-qual-escolher/">biqueira de composite ou de aço</a>.',
       },
       {
         tipo: 'h2',
@@ -767,7 +767,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Por isso a prova vale mais que o número. Quando a compra é para uma equipe, o caminho que funciona é experimentar antes de fechar a grade — um par de amostra por faixa de numeração evita a troca de vinte pares depois.',
+          'Por isso a prova vale mais que o número. Quando a compra é para uma equipe, o caminho que funciona é experimentar antes de fechar a grade — um par de amostra por faixa de numeração evita a troca de vinte pares depois. O método inteiro está em <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">como definir a grade de numeração de uma equipe</a>.',
       },
       {
         tipo: 'h2',
@@ -1049,6 +1049,322 @@ export const ARTIGOS: Artigo[] = [
     ctaTitulo: 'Quer conferir o respirador que a sua equipe usa?',
     ctaTexto:
       'Diga qual produto é manuseado e em que ambiente. Dá para verificar se a categoria está certa — e o CA vem junto no orçamento.',
+  },
+  {
+    slug: 'biqueira-de-composite-ou-de-aco-qual-escolher',
+    titulo: 'Biqueira de composite ou de aço: qual escolher?',
+    tituloSeo: 'Biqueira de composite ou de aço: qual escolher',
+    resumo:
+      'As duas protegem igual quando atendem à norma. O que decide é a atividade: eletricidade, detector de metal, frio, quanto se caminha — e o que acontece depois de um impacto.',
+    descricaoSeo:
+      'Composite e aço protegem os dedos do mesmo jeito pela norma. A escolha é pela atividade: risco elétrico, detector de metal, frio, peso na jornada e custo.',
+    publicado: '2026-09-04',
+    atualizado: '2026-09-04',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Calçados',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Pela norma, biqueira de composite e biqueira de aço protegem os dedos do mesmo jeito: as duas precisam resistir ao mesmo impacto e à mesma compressão para o calçado ser de segurança. A pergunta certa não é qual protege mais — é o que mais acontece no ambiente onde a pessoa trabalha.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quase tudo o que se lê sobre esse assunto compara material. É o jeito errado de decidir, porque a proteção contra impacto está garantida nos dois pelo <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a>. O que muda entre uma biqueira e outra é o resto: o que ela faz com eletricidade, com o frio, com um detector de metal, com o peso de quem caminha o dia inteiro — e o que sobra dela depois de uma pancada forte.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que a norma exige das duas',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A ABNT NBR ISO 20345 define o calçado de segurança pela biqueira de proteção, com requisito de resistência a impacto de 200 joules e a compressão. O requisito é o mesmo para qualquer material. Uma biqueira de composite aprovada não é uma versão mais fraca da de aço: ela passou no mesmo ensaio.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Isso significa que, se o Certificado de Aprovação do modelo é de calçado de segurança, a proteção dos dedos está resolvida — seja qual for o material. Tudo o que vem abaixo é sobre o que acontece <em>além</em> do impacto.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Onde cada uma se comporta diferente',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Situação', 'Aço', 'Composite'],
+        linhas: [
+          ['Proteção contra impacto e compressão', 'Atende à norma', 'Atende à norma — o mesmo ensaio'],
+          ['Peso do calçado', 'Mais pesado', 'Mais leve'],
+          ['Frio e calor', 'Conduz: em câmara fria, o dedo sente', 'Não conduz'],
+          ['Eletricidade', 'Conduz', 'Não conduz — mas isso não torna o calçado isolante'],
+          ['Detector de metal', 'Acusa', 'Passa'],
+          ['Volume da biqueira', 'Mais fina', 'Mais grossa: pode mudar como o calçado veste'],
+          ['Depois de um impacto forte', 'Pode ficar deformada, pressionando os dedos', 'Pode perder resistência sem sinal visível'],
+          ['Preço', 'Costuma custar menos', 'Costuma custar mais'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Decidindo pela atividade',
+      },
+      {
+        tipo: 'h3',
+        texto: 'Câmara fria, frigorífico, ambiente climatizado',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O aço conduz temperatura. Em câmara fria, a biqueira esfria junto com o ambiente e os dedos ficam encostados em metal gelado durante o turno inteiro. É desconforto que vira reclamação e, com o tempo, calçado tirado do pé. Composite resolve isso sem abrir mão da norma.',
+      },
+      {
+        tipo: 'h3',
+        texto: 'Indústria de alimentos, farmacêutica, áreas com detector de metal',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Onde a linha tem detector de metais, ou onde a entrada passa por portal, biqueira de aço acusa a cada passagem. Composite é a escolha por eliminação. O mesmo vale para quem trabalha em aeroporto e passa por controle várias vezes ao dia.',
+      },
+      {
+        tipo: 'h3',
+        texto: 'Trabalho perto de eletricidade',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Aqui mora o erro mais perigoso deste assunto. A biqueira de composite não conduz eletricidade — <strong>e isso não transforma o calçado em calçado isolante</strong>. Isolamento elétrico é uma propriedade do calçado inteiro, ensaiada e declarada no Certificado de Aprovação como requisito próprio. Um calçado de segurança comum com biqueira de composite é um calçado de segurança comum. Se a atividade exige calçado isolante, é isso que tem de estar no CA, e a biqueira sozinha não resolve.',
+      },
+      {
+        tipo: 'h3',
+        texto: 'Logística, manutenção, quem caminha o dia inteiro',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A diferença de peso entre as duas é pequena por passo e enorme por jornada. Quem percorre um galpão o dia todo sente o calçado mais pesado no fim do turno — e calçado pesado é o segundo motivo mais comum de a pessoa preferir o tênis. Para quem caminha muito, composite costuma ser a escolha certa mesmo custando mais, porque o calçado que fica no pé é o único que protege.',
+      },
+      {
+        tipo: 'h3',
+        texto: 'Obra, movimentação de carga pesada, oficina',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Onde o risco é de impacto de verdade — material caindo, carga em movimento, peça pesada — as duas protegem igual, e o aço costuma ser a resposta mais econômica. Vale lembrar que biqueira não protege a sola: se há prego e ferro no chão, a proteção contra perfuração é outro requisito, presente só em modelos específicos, e também precisa constar no CA.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que acontece depois da pancada',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Ninguém pensa nisso na compra, e é onde as duas mais diferem. Uma biqueira de aço que recebeu um impacto forte pode ficar amassada — e amassada ela fica pressionando os dedos, o que a pessoa nota. Uma biqueira de composite pode trincar ou perder resistência sem nenhum sinal por fora.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A conclusão é a mesma para as duas: calçado que levou pancada forte na biqueira precisa ser substituído, mesmo que pareça inteiro. No composite, especialmente, "parece inteiro" não quer dizer nada.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A biqueira mais grossa muda a forma',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para chegar à mesma resistência do aço, o composite precisa de mais material. A biqueira fica mais volumosa, e isso pode mudar como o calçado veste na ponta — o mesmo número de um modelo com aço e de um com composite pode calçar diferente. Numa compra para equipe, é mais um motivo para provar antes de fechar a grade; o caminho está em <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">como definir a grade de numeração</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Como conferir qual é a biqueira',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O material da biqueira consta na descrição do Certificado de Aprovação do modelo. É ali que se confere, e não na embalagem. Se a atividade tem uma exigência específica — isolamento elétrico, proteção contra perfuração —, ela também precisa estar escrita no CA; a categoria "calçado de segurança" sozinha não garante nenhum dos dois.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'Requisitos para calçados de segurança e ocupacionais (ABNT NBR ISO 20345 e 20347) — Target Normas',
+        url: 'https://www.normas.com.br/visualizar/artigo-tecnico/2532/os-requisitos-para-os-calcados-de-seguranca-e-ocupacionais',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto atualizado)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/calcados/seguranca/',
+      rotulo: 'Ver os calçados de segurança',
+    },
+    contexto: 'calcados-seguranca',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Li o texto sobre biqueira de composite e de aço e queria saber qual serve para a minha atividade.',
+    ctaTitulo: 'Em dúvida entre composite e aço para a sua atividade?',
+    ctaTexto:
+      'Diga onde a equipe trabalha, se há frio, eletricidade ou detector de metal, e quanto se caminha. A resposta vem com o modelo e o CA correspondente.',
+  },
+  {
+    slug: 'grade-de-numeracao-como-definir-para-a-equipe',
+    titulo: 'Como definir a grade de numeração de uma equipe',
+    tituloSeo: 'Grade de numeração de calçado: como definir para a equipe',
+    resumo:
+      'É o dado que mais falta num pedido de calçado para equipe, e o que mais gera troca depois. Como levantar número por número, provar antes e deixar uma reserva certa.',
+    descricaoSeo:
+      'Como levantar a numeração pessoa a pessoa, provar antes de fechar, montar a grade com reserva e registrar — para o pedido sair certo na primeira vez.',
+    publicado: '2026-09-04',
+    atualizado: '2026-09-04',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Calçados',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Grade de numeração é a lista de quantos pares de cada número a equipe precisa. É a primeira coisa que a gente pergunta em todo orçamento de calçado — e a que mais vem estimada, com "uns 40, uns 42". Grade estimada vira troca depois da entrega.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Num pedido de calçado para equipe, o item e a quantidade costumam vir certos. O que falta é o resto: doze pares, mas de que número? Sem a grade, o fornecedor não consegue responder preço e prazo — e, quando responde com uma grade chutada, a devolução chega junto com a entrega. Este texto é o método que usamos há trinta anos, para você fazer antes de pedir.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Por que estimar não funciona',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Três coisas fazem a estimativa errar, e as três aparecem juntas. A numeração de calçado de segurança não é a do tênis — <a href="/conhecimento/botina-que-machuca-calcado-ou-numeracao/">a forma é mais reta e o cabedal mais firme</a>, então o número que a pessoa "sabe que usa" costuma não servir. A meia de trabalho é mais grossa que a comum e ocupa espaço real. E o pé de fim de turno, depois de horas em pé, não é o mesmo do começo da manhã.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O resultado de estimar é conhecido: parte da equipe recebe calçado que aperta, tira do pé no meio do turno, e o EPI que ficou no armário não protege ninguém.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O método, em cinco passos',
+      },
+      {
+        tipo: 'h3',
+        texto: '1. Levantar pessoa a pessoa, não por lembrança',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Pergunte a cada pessoa o número — e, sempre que der, meça com a meia que ela vai usar no trabalho, de preferência no fim de um turno. Anote nome e número numa lista. Parece burocracia para uma equipe de oito; deixa de parecer no dia em que três pares voltam.',
+      },
+      {
+        tipo: 'h3',
+        texto: '2. Provar antes de fechar',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Peça ao fornecedor um par de amostra do modelo escolhido por faixa de numeração e deixe a equipe experimentar. É o passo que ninguém quer fazer e o que mais evita troca: cada modelo tem uma forma, e o mesmo número pode calçar diferente de um modelo para outro — inclusive entre biqueira de aço e de composite, porque <a href="/conhecimento/biqueira-de-composite-ou-de-aco-qual-escolher/">a de composite é mais volumosa</a>.',
+      },
+      {
+        tipo: 'h3',
+        texto: '3. Separar forma feminina, quando houver',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Calçado de segurança em forma feminina existe, com numeração e largura próprias. Quando a equipe tem mulheres, isso entra na grade como item separado — não como "o mesmo modelo no 35". Um modelo de forma masculina em numeração pequena costuma sobrar na largura e apertar no peito do pé.',
+      },
+      {
+        tipo: 'h3',
+        texto: '4. Somar por número: essa é a grade',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Com a lista pronta, some quantas pessoas usam cada número. O resultado é a grade — e é ela que vai no pedido, não o total. Um exemplo, para ficar claro o formato:',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Número', 'Pares', 'Quem'],
+        linhas: [
+          ['37', '1', 'Ana'],
+          ['38', '2', 'Carlos, Denise'],
+          ['39', '2', 'Eduardo, Fátima'],
+          ['40', '3', 'Gustavo, Henrique, Ítalo'],
+          ['41', '2', 'João, Kátia'],
+          ['42', '1', 'Lucas'],
+          ['43', '1', 'Marcos'],
+          ['Total', '12', ''],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Os nomes são de exemplo. A coluna "quem" não vai para o fornecedor — fica com você, porque é ela que resolve a entrega e a troca sem ninguém experimentar de novo.',
+      },
+      {
+        tipo: 'h3',
+        texto: '5. Deixar uma reserva certa, não uma reserva genérica',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Reserva serve para admissão e para troca por dano. A regra que funciona é um par a mais nos números mais frequentes <em>da sua equipe</em> — os que a grade acima mostra —, e nenhum a mais nas pontas. Reserva "de um par de cada número" é a maneira mais cara de guardar calçado que ninguém vai usar.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Registrar junto com a entrega',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A lista de nome e número é a mesma que alimenta a <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega de EPI</a>. Anotar a numeração ali evita o segundo levantamento na reposição: quando o par de alguém vencer ou estragar, o número já está registrado, e o pedido de troca sai sem perguntar de novo.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Revisar a cada reposição',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Grade não é fixa. Gente entra, gente sai, e um modelo trocado pode calçar diferente do anterior. A cada pedido de reposição, confira a lista contra a equipe de hoje — leva minutos e é o que mantém a grade certa depois da primeira compra.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Como mandar a grade',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Número por número, com a quantidade de pares de cada um. O <a href="/orcamento/">construtor de orçamento</a> deste site pede exatamente isso, par a par, e monta a mensagem pronta para o WhatsApp — com a grade preenchida, a resposta já vem com preço e prazo na primeira mensagem.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto atualizado)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Requisitos para calçados de segurança e ocupacionais — Target Normas',
+        url: 'https://www.normas.com.br/visualizar/artigo-tecnico/2532/os-requisitos-para-os-calcados-de-seguranca-e-ocupacionais',
+      },
+    ],
+    paginaComercial: {
+      href: '/orcamento/',
+      rotulo: 'Montar o orçamento com a sua grade',
+    },
+    contexto: 'calcados',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Li o texto sobre grade de numeração e já tenho a lista da minha equipe. Posso mandar a grade para orçamento?',
+    ctaTitulo: 'Já tem a grade da sua equipe?',
+    ctaTexto:
+      'Mande os números par a par, pelo construtor ou direto aqui. Com a grade na mão a resposta vem com preço e prazo na primeira mensagem — e sem grade, é a primeira coisa que vamos perguntar.',
   },
 ]
 

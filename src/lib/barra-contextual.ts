@@ -182,6 +182,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Quer conferir o respirador que a sua equipe usa?',
     rotulo: 'Perguntar no WhatsApp',
   },
+  'biqueira-de-composite-ou-de-aco-qual-escolher': {
+    chamada: 'Em dúvida entre composite e aço para a sua atividade?',
+    rotulo: 'Pedir orientação',
+  },
+  'grade-de-numeracao-como-definir-para-a-equipe': {
+    chamada: 'Já tem a grade da sua equipe?',
+    rotulo: 'Mandar a grade',
+  },
 }
 
 /**
