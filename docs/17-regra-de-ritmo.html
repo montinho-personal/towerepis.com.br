@@ -1,0 +1,217 @@
+<title>O que vai junto e o que espera</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+  :root {
+    --papel:#fcfbf9; --papel-2:#f0ebe3; --tinta:#1f2124; --tinta-2:#3d4147; --tinta-3:#6b7078;
+    --regua:#ddd7cd; --regua-forte:#b9b2a6; --vermelho:#b4111b; --vermelho-fundo:#fdf0ef;
+    --ok:#1f5c3d; --ok-fundo:#e8f1ec; --atencao:#8a5a08; --atencao-fundo:#f7eeda;
+    --frio:#2b4a6f; --frio-fundo:#e7edf4; --trilho:#e6e1d8;
+    --display:'Archivo','Helvetica Neue',Arial,sans-serif;
+    --corpo:'Source Serif 4',Georgia,'Times New Roman',serif;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --papel:#191a1c; --papel-2:#212326; --tinta:#f0ede8; --tinta-2:#c3bfb8; --tinta-3:#8d8983;
+    --regua:#34373b; --regua-forte:#4c5055; --vermelho:#f2686e; --vermelho-fundo:#2b1a1b;
+    --ok:#7fc9a1; --ok-fundo:#16241d; --atencao:#e0b45f; --atencao-fundo:#2a2213;
+    --frio:#8fb4dd; --frio-fundo:#182430; --trilho:#2e3134;
+  } }
+  :root[data-theme="dark"] {
+    --papel:#191a1c; --papel-2:#212326; --tinta:#f0ede8; --tinta-2:#c3bfb8; --tinta-3:#8d8983;
+    --regua:#34373b; --regua-forte:#4c5055; --vermelho:#f2686e; --vermelho-fundo:#2b1a1b;
+    --ok:#7fc9a1; --ok-fundo:#16241d; --atencao:#e0b45f; --atencao-fundo:#2a2213;
+    --frio:#8fb4dd; --frio-fundo:#182430; --trilho:#2e3134;
+  }
+
+  * { box-sizing:border-box; }
+  body { background:var(--papel); color:var(--tinta); font-family:var(--corpo);
+         font-size:1.0625rem; line-height:1.7; -webkit-font-smoothing:antialiased; }
+  .env { max-width:66rem; margin:0 auto; padding:0 1.5rem 6rem; }
+  .col { max-width:42rem; }
+
+  h1,h2,h3 { font-family:var(--display); line-height:1.15; text-wrap:balance; margin:0; }
+  h1 { font-size:clamp(2rem,5.5vw,3.1rem); font-weight:700; letter-spacing:-0.02em; }
+  h2 { font-size:clamp(1.45rem,3.4vw,1.9rem); font-weight:700; letter-spacing:-0.015em; }
+  h3 { font-size:1.05rem; font-weight:700; }
+  p { margin:0; }
+
+  .rotulo { font-family:var(--display); font-size:0.7rem; font-weight:700; letter-spacing:0.16em;
+            text-transform:uppercase; color:var(--tinta-3); }
+  .rotulo-vermelho { color:var(--vermelho); }
+
+  header.capa { padding:4rem 0 2.5rem; display:flex; flex-direction:column; gap:1.25rem; }
+  header.capa p.sub { font-size:1.2rem; color:var(--tinta-2); max-width:38rem; }
+  .meta { font-family:var(--display); font-size:0.78rem; color:var(--tinta-3);
+          display:flex; flex-wrap:wrap; gap:0.4rem 1.25rem; }
+
+  section { padding-block:3rem; border-top:1px solid var(--regua); }
+  section > * + * { margin-top:1.15rem; }
+  .num-sec { font-family:var(--display); font-size:0.72rem; font-weight:700; letter-spacing:0.14em;
+             color:var(--vermelho); display:block; margin-bottom:0.6rem; }
+
+  .destaque { background:var(--vermelho-fundo); border-left:3px solid var(--vermelho);
+              padding:1.4rem 1.5rem; display:flex; flex-direction:column; gap:0.8rem; max-width:42rem; }
+  .quadro { background:var(--papel-2); padding:1.25rem 1.4rem; display:flex; flex-direction:column;
+            gap:0.7rem; max-width:42rem; }
+  ul,ol { margin:0; padding-left:1.15rem; display:flex; flex-direction:column; gap:0.5rem; max-width:42rem; }
+  li::marker { color:var(--tinta-3); }
+  code { font-family:var(--display); font-size:0.85em; background:var(--papel-2); padding:0.1em 0.35em; }
+
+  /* As tres perguntas: numeradas porque a ordem decide — a primeira que
+     responder "dividir" encerra a avaliacao. */
+  .perguntas { display:flex; flex-direction:column; gap:0; max-width:44rem; }
+  .pergunta { display:grid; grid-template-columns:2.5rem 1fr; gap:0.3rem 1.1rem;
+              padding-block:1.3rem; border-bottom:1px solid var(--regua); }
+  .pergunta b.n { font-family:var(--display); font-size:1.5rem; font-weight:700; color:var(--vermelho);
+                  line-height:1; font-variant-numeric:tabular-nums; }
+  .pergunta h3 { grid-column:2; }
+  .pergunta div { grid-column:2; display:flex; flex-direction:column; gap:0.5rem;
+                  font-size:0.98rem; color:var(--tinta-2); }
+
+  .rolagem { overflow-x:auto; margin-top:0.9rem; }
+  table { border-collapse:collapse; width:100%; font-family:var(--display); font-size:0.82rem; }
+  th,td { text-align:left; padding:0.75rem 0.9rem 0.75rem 0; border-bottom:1px solid var(--regua);
+          vertical-align:top; }
+  th { font-weight:700; font-size:0.66rem; letter-spacing:0.1em; text-transform:uppercase;
+       color:var(--tinta-3); white-space:nowrap; }
+  td:last-child, th:last-child { padding-right:0; }
+  td.tarefa { font-family:var(--corpo); font-size:0.98rem; line-height:1.4; min-width:14rem; font-weight:600; }
+  td.vered { white-space:nowrap; min-width:9rem; }
+  td.vered .curto { display:block; font-size:0.72rem; color:var(--tinta-3); margin-top:0.35rem;
+                    white-space:normal; }
+  td.motivo { font-family:var(--corpo); font-size:0.92rem; line-height:1.55; color:var(--tinta-2);
+              min-width:20rem; }
+
+  .selo { display:inline-block; font-family:var(--display); font-size:0.63rem; font-weight:700;
+          letter-spacing:0.08em; text-transform:uppercase; padding:0.22rem 0.45rem; white-space:nowrap; }
+  .s-junto { background:var(--ok-fundo); color:var(--ok); }
+  .s-dividido { background:var(--atencao-fundo); color:var(--atencao); }
+  .s-sozinho { background:var(--frio-fundo); color:var(--frio); }
+  .s-bloqueado { background:var(--papel-2); color:var(--tinta-3); }
+
+  /* O calendario: uma faixa por fase, com a cor do veredito na borda. */
+  .calendario { display:flex; flex-direction:column; gap:1px; background:var(--regua);
+                border:1px solid var(--regua); margin-top:1rem; }
+  .fase { background:var(--papel); padding:1.1rem 1.3rem; display:grid;
+          grid-template-columns:minmax(9rem,14rem) 1fr; gap:0.4rem 1.5rem;
+          border-left:4px solid var(--trilho); }
+  .fase.f-junto { border-left-color:var(--ok); }
+  .fase.f-dividido { border-left-color:var(--atencao); }
+  .fase.f-sozinho { border-left-color:var(--frio); }
+  .fase.f-bloqueado { border-left-color:var(--regua-forte); }
+  .fase .quando { font-family:var(--display); font-weight:700; font-size:0.95rem; }
+  .fase .oque { font-family:var(--display); font-size:0.75rem; color:var(--tinta-3);
+                grid-column:1; margin-top:-0.2rem; }
+  .fase ul { grid-column:2; grid-row:1 / span 2; gap:0.35rem; font-size:0.95rem; }
+  @media (max-width:640px) {
+    .fase { grid-template-columns:1fr; }
+    .fase ul { grid-column:1; grid-row:auto; margin-top:0.5rem; }
+  }
+
+  footer { border-top:2px solid var(--tinta); padding-top:1.5rem; margin-top:3rem;
+           font-family:var(--display); font-size:0.8rem; color:var(--tinta-3); max-width:42rem; }
+  a { color:inherit; text-decoration-color:var(--regua-forte); text-underline-offset:3px; }
+  a:hover { text-decoration-color:var(--vermelho); }
+  a:focus-visible { outline:2px solid var(--vermelho); outline-offset:2px; }
+</style>
+
+<div class="env">
+  <header class="capa">
+    <p class="rotulo rotulo-vermelho">Tower EPI&rsquo;s &middot; regra de ritmo</p>
+    <h1>O que vai junto e o que espera</h1>
+    <p class="sub">Doze tarefas na fila, avaliadas uma a uma: quais podem ir de uma vez, quais precisam ser divididas e por qu&ecirc;. Come&ccedil;ando por corrigir a premissa da pergunta.</p>
+    <p class="meta"><span>4 de setembro de 2026</span><span>12 tarefas avaliadas</span><span>Regra em docs/16-regra-de-ritmo.md</span></p>
+  </header>
+
+  <section>
+    <span class="num-sec">Antes de tudo</span>
+    <h2>O Google n&atilde;o penaliza por ritmo</h2>
+    <p class="col">Preciso come&ccedil;ar por aqui, porque a pergunta trazia essa premissa e ela muda toda a an&aacute;lise. <strong>N&atilde;o existe limite de p&aacute;ginas por dia, e publicar dez artigos num dia n&atilde;o &eacute;, por si, um sinal negativo.</strong> Portal de not&iacute;cia publica centenas por dia h&aacute; vinte anos. Tratar &ldquo;publiquei demais de uma vez&rdquo; como causa de queda &eacute; diagn&oacute;stico errado &mdash; e leva a atrasar trabalho bom por medo de um risco que n&atilde;o existe.</p>
+    <p class="col">O que existe de verdade &eacute; outra coisa, e vale distinguir com cuidado:</p>
+    <ul>
+      <li><strong>Abuso de conte&uacute;do em escala.</strong> A pol&iacute;tica de spam do Google mira conte&uacute;do produzido em massa cujo prop&oacute;sito principal &eacute; manipular ranqueamento. O julgamento &eacute; sobre <em>valor e inten&ccedil;&atilde;o</em>, n&atilde;o sobre velocidade &mdash; cem textos rasos publicados ao longo de um ano continuam sendo cem textos rasos.</li>
+      <li><strong>Dilui&ccedil;&atilde;o da qualidade m&eacute;dia.</strong> &Eacute; sinal de site inteiro: acrescentar p&aacute;ginas fracas a um site bom pesa contra o site bom. De novo, qualidade.</li>
+      <li><strong>Or&ccedil;amento de rastreamento.</strong> S&oacute; vira assunto na casa dos milhares de URLs. Com 62 p&aacute;ginas, &eacute; irrelevante aqui.</li>
+    </ul>
+    <div class="destaque">
+      <p class="rotulo rotulo-vermelho">O limite honesto desta afirma&ccedil;&atilde;o</p>
+      <p>N&atilde;o consegui conferir a documenta&ccedil;&atilde;o oficial deste ambiente, que bloqueia sa&iacute;da de rede. O par&aacute;grafo acima vem de conhecimento do assunto e deve ser confirmado no Search Central antes de virar argumento com terceiros. Prefiro dizer isso a apresentar como verificado o que n&atilde;o verifiquei.</p>
+    </div>
+    <p class="col"><strong>Ent&atilde;o ritmo n&atilde;o &eacute; o eixo de risco.</strong> Dividir tarefa por medo de penalidade &eacute; supersti&ccedil;&atilde;o. Dividir pelos motivos abaixo &eacute; engenharia &mdash; e v&aacute;rios itens da sua fila realmente precisam ser divididos, por raz&otilde;es que n&atilde;o t&ecirc;m nada a ver com puni&ccedil;&atilde;o.</p>
+  </section>
+
+  <section>
+    <span class="num-sec">A regra</span>
+    <h2>Tr&ecirc;s perguntas, nesta ordem</h2>
+    <p class="col">A primeira que responder &ldquo;dividir&rdquo; encerra a avalia&ccedil;&atilde;o. A ordem importa: a segunda pergunta anula a primeira em boa parte dos casos deste projeto.</p>
+    <div class="perguntas">
+      <div class="pergunta">
+        <b class="n">1</b>
+        <h3>Cria URL nova, ou mexe em URL que j&aacute; existe?</h3>
+        <div>
+          <p>URL nova, conte&uacute;do bom, sem tocar no que existe: <strong>vai junto</strong>. Espalhar n&atilde;o compra nada.</p>
+          <p>Mexer em p&aacute;gina j&aacute; indexada &mdash; t&iacute;tulo, description, canonical, estrutura de links, texto que j&aacute; posiciona: <strong>divide</strong>. N&atilde;o por penalidade: porque um erro sistem&aacute;tico atinge o site inteiro antes de algu&eacute;m ver, e porque mudar vinte p&aacute;ginas no mesmo dia torna imposs&iacute;vel saber qual mudan&ccedil;a moveu o qu&ecirc;.</p>
+          <p>Mudan&ccedil;a de URL, redirecionamento ou canonical em massa: <strong>divide sempre</strong>. &Eacute; a &uacute;nica categoria com risco t&eacute;cnico real de perda tempor&aacute;ria de posi&ccedil;&atilde;o.</p>
+        </div>
+      </div>
+      <div class="pergunta">
+        <b class="n">2</b>
+        <h3>D&aacute; para medir o efeito?</h3>
+        <div>
+          <p>Dividir serve para atribuir causa. <strong>Sem medi&ccedil;&atilde;o, dividir n&atilde;o compra nada &mdash; &eacute; atraso puro.</strong></p>
+          <p>Hoje o site n&atilde;o tem Search Console nem GA4 ligado. Nesse estado, fasear por motivo de medi&ccedil;&atilde;o &eacute; encena&ccedil;&atilde;o: divide-se em tr&ecirc;s semanas e no fim n&atilde;o se sabe nada a mais do que se saberia num dia. Primeiro liga a medi&ccedil;&atilde;o; depois faseia o que precisa ser medido.</p>
+        </div>
+      </div>
+      <div class="pergunta">
+        <b class="n">3</b>
+        <h3>O erro &eacute; barato de desfazer?</h3>
+        <div>
+          <p>Barato &mdash; texto, imagem, schema, FAQ: pode ir junto, porque um commit desfaz.</p>
+          <p>Caro &mdash; URL, redirecionamento, canonical, arquitetura de navega&ccedil;&atilde;o: divide e observa entre os lotes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="num-sec">O veredito</span>
+    <h2>As doze tarefas da fila</h2>
+    <div class="rolagem">
+      <table>
+        <thead><tr><th>Tarefa</th><th>Veredito</th><th>Por qu&ecirc;</th></tr></thead>
+        <tbody><tr><td class="tarefa">Search Console e envio do sitemap</td><td class="vered"><span class="selo s-junto">De uma vez</span><span class="curto">Pré-requisito de tudo</span></td><td class="motivo">Não é conteúdo: é o instrumento. Sem ele não existe atribuição, e fasear qualquer outra coisa vira atraso sem contrapartida. É a primeira tarefa da fila por consequência, não por importância.</td></tr><tr><td class="tarefa">Identificador do GA4 na Vercel</td><td class="vered"><span class="selo s-junto">De uma vez</span><span class="curto">Configuração</span></td><td class="motivo">Uma variável de ambiente. Não cria URL, não muda página, não é lido pelo buscador. Dividir isso não teria em quantas partes.</td></tr><tr><td class="tarefa">Capas dos 8 artigos sem imagem</td><td class="vered"><span class="selo s-junto">De uma vez</span><span class="curto">Invisível ao ranqueamento</span></td><td class="motivo">Imagem de capa alimenta o compartilhamento e o campo <code>image</code> do BlogPosting. Não cria URL nem muda texto indexado. As oito de uma vez, com a mesma varredura de peso e formato que as cinco anteriores.</td></tr><tr><td class="tarefa">7 perguntas repetidas entre páginas comerciais</td><td class="vered"><span class="selo s-junto">De uma vez</span><span class="curto">Correção de defeito</span></td><td class="motivo">Duas páginas do mesmo site com a mesma pergunta de FAQ competem entre si hoje, todo dia. Defeito não tem lote: adiar é manter o dano no ar. Duas delas são idênticas palavra por palavra.</td></tr><tr><td class="tarefa">Perfil no Google Empresas como área de atendimento</td><td class="vered"><span class="selo s-junto">De uma vez</span><span class="curto">Fora do site</span></td><td class="motivo">Não toca uma linha do repositório. Corre em paralelo a qualquer lote.</td></tr><tr><td class="tarefa">6 artigos P0 pendentes (nº 3, 21, 62, 63, 75, 76)</td><td class="vered"><span class="selo s-dividido">Dividido</span><span class="curto">3 lotes de 2</span></td><td class="motivo">O Google não cobra nada por publicar seis de uma vez. Quem cobra é a revisão: dois é o tamanho que ainda cabe numa conferência honesta de canibalização e de FAQ. Auditoria completa entre os lotes.</td></tr><tr><td class="tarefa">Peça nº 97 — tabela de EPI por função</td><td class="vered"><span class="selo s-sozinho">Sozinho</span><span class="curto">Formato novo</span></td><td class="motivo">Não é artigo: é peça de referência, navegável, que cruza função, risco e equipamento. Vocabulário vem dos artigos, então entra depois deles — e sozinha, porque é a única do site nesse formato.</td></tr><tr><td class="tarefa">10 pautas P1 dos clusters comerciais</td><td class="vered"><span class="selo s-dividido">Dividido</span><span class="curto">5 lotes de 2</span></td><td class="motivo">Mesmo raciocínio dos P0. Só começa depois de os P0 estarem no ar e medidos.</td></tr><tr><td class="tarefa">Diferenciar as 5 páginas de /empresas/</td><td class="vered"><span class="selo s-dividido">Dividido</span><span class="curto">1 por semana, e só com medição</span></td><td class="motivo">O único item da lista que mexe em página já indexada e já posicionada. Reescrever as cinco no mesmo dia torna impossível saber qual mudança moveu o quê — e um erro de abordagem atinge as cinco antes de alguém ver. Espera o Search Console.</td></tr><tr><td class="tarefa">Cabeçalho Content-Security-Policy</td><td class="vered"><span class="selo s-sozinho">Sozinho</span><span class="curto">Erro quebra recurso</span></td><td class="motivo">Invisível para o buscador, mas uma diretiva errada bloqueia script ou fonte sem aviso na tela. Vai sozinho, com a varredura de privacidade e a de larguras rodando depois.</td></tr><tr><td class="tarefa">Revisão de título, description e CTR</td><td class="vered"><span class="selo s-bloqueado">Bloqueado</span><span class="curto">Congelado até 1º/11</span></td><td class="motivo">Regra própria do projeto, em docs/10. A rotina agendada dispara sozinha em 1º de novembro às 12h UTC. Mexer antes destrói a linha de base que ela existe para comparar.</td></tr><tr><td class="tarefa">3 marcações [VALIDAÇÃO JURÍDICA]</td><td class="vered"><span class="selo s-bloqueado">Bloqueado</span><span class="curto">Depende de advogado</span></td><td class="motivo">Transferência internacional, foro de eleição e indicação de encarregado. Não são decisões que eu deva tomar, e não têm ritmo — têm um profissional.</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <span class="num-sec">A sequ&ecirc;ncia</span>
+    <h2>Como isso cai no calend&aacute;rio</h2>
+    <p class="col">As semanas contam a partir do momento em que o Search Console estiver configurado &mdash; que &eacute; o marco zero de qualquer coisa que precise ser medida.</p>
+    <div class="calendario"><div class="fase f-junto"><p class="quando">Agora</p><p class="oque">Instrumento, defeito e invisível</p><ul><li>Search Console e sitemap</li><li>Identificador do GA4</li><li>As 8 capas</li><li>As 7 perguntas repetidas</li><li>Google Empresas</li></ul></div><div class="fase f-dividido"><p class="quando">Semanas 1 a 3</p><p class="oque">P0 em lotes de dois</p><ul><li>nº 3 e nº 21 — reposição e botina que escorrega</li><li>nº 62 e nº 63 — desconto em folha e CA vencido</li><li>nº 75 e nº 76 — fornecedor e primeiro pedido</li></ul></div><div class="fase f-sozinho"><p class="quando">Semana 4</p><p class="oque">A peça de referência</p><ul><li>nº 97 — tabela de EPI por função</li></ul></div><div class="fase f-dividido"><p class="quando">Semanas 5 a 9</p><p class="oque">P1 comerciais, mesmo ritmo</p><ul><li>Calçado nº 4 a 10</li><li>Mãos nº 33 a 35</li></ul></div><div class="fase f-dividido"><p class="quando">Em paralelo, a partir da semana 1</p><p class="oque">Só depois do Search Console</p><ul><li>Uma página de /empresas/ por semana, medindo entre elas</li></ul></div><div class="fase f-bloqueado"><p class="quando">1º de novembro</p><p class="oque">A rotina dispara sozinha</p><ul><li>Revisão de título, description e CTR</li></ul></div></div>
+  </section>
+
+  <section>
+    <span class="num-sec">O que morde de verdade</span>
+    <h2>O limite &eacute; a revis&atilde;o, n&atilde;o o buscador</h2>
+    <p class="col">A raz&atilde;o real para dividir conte&uacute;do novo neste projeto n&atilde;o est&aacute; em nenhuma pol&iacute;tica do Google. Est&aacute; no registro do que aconteceu nesta semana de trabalho, e por isso ficou escrito na regra:</p>
+    <div class="quadro">
+      <p class="rotulo">Duas falhas minhas, do mesmo tipo</p>
+      <p>Numa leva de <strong>treze FAQs escritas de uma vez</strong>, quatro perguntas sa&iacute;ram id&ecirc;nticas a perguntas que j&aacute; existiam em outras p&aacute;ginas do site &mdash; duas p&aacute;ginas do mesmo dom&iacute;nio disputando o mesmo resultado.</p>
+      <p>Numa leva de <strong>dois artigos</strong>, um t&iacute;tulo foi publicado com 71 caracteres renderizados, porque eu media o t&iacute;tulo sem o sufixo que o site acrescenta.</p>
+      <p>Nos dois casos, cada pe&ccedil;a lida sozinha estava correta. <strong>O defeito s&oacute; existia no conjunto</strong> &mdash; e o conjunto n&atilde;o cabia numa revis&atilde;o s&oacute;.</p>
+    </div>
+    <p class="col">Da&iacute; o lote de dois para conte&uacute;do novo. N&atilde;o &eacute; cautela com o Google: &eacute; o tamanho que ainda cabe numa confer&ecirc;ncia honesta de canibaliza&ccedil;&atilde;o e de duplica&ccedil;&atilde;o de FAQ entre as 137 perguntas que o site j&aacute; tem.</p>
+    <p class="col">E a contrapartida vale igual: <strong>corre&ccedil;&atilde;o de defeito n&atilde;o tem lote.</strong> As sete perguntas repetidas nas p&aacute;ginas comerciais causam dano hoje, todo dia. Dividir a corre&ccedil;&atilde;o em tr&ecirc;s semanas seria escolher manter o defeito no ar por mais duas.</p>
+  </section>
+
+  <section>
+    <span class="num-sec">Uma nota de calend&aacute;rio</span>
+    <h2>O site &eacute; novo, e isso muda uma coisa s&oacute;</h2>
+    <p class="col">O dom&iacute;nio passou a apontar para a hospedagem em setembro. Para um site nesse est&aacute;gio, o cuidado &uacute;til <strong>n&atilde;o &eacute; publicar devagar</strong> &mdash; &eacute; n&atilde;o ficar mexendo nos sinais que j&aacute; foram enviados enquanto o Google ainda est&aacute; formando a leitura do site.</p>
+    <p class="col">&Eacute; exatamente o que a regra de avalia&ccedil;&atilde;o j&aacute; determina, ao congelar t&iacute;tulo, description e H1 at&eacute; 1&ordm; de novembro. As duas regras dizem a mesma coisa por caminhos diferentes: <strong>conte&uacute;do novo pode ir; sinal estabelecido n&atilde;o se mexe sem dado.</strong></p>
+  </section>
+
+  <footer>
+    <p>A regra completa est&aacute; em <code>docs/16-regra-de-ritmo.md</code>, e o resumo operacional entrou no <code>CLAUDE.md</code> do reposit&oacute;rio &mdash; que &eacute; o arquivo lido no in&iacute;cio de cada sess&atilde;o, para a avalia&ccedil;&atilde;o passar a acontecer sozinha em toda tarefa nova, sem depender de algu&eacute;m lembrar.</p>
+  </footer>
+</div>
