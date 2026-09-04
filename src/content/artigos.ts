@@ -1,4 +1,5 @@
 import type { ContextoWhatsApp } from '@/lib/whatsapp'
+import { empresa } from '@/config/empresa'
 
 /**
  * Central de conhecimento.
@@ -663,7 +664,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Vale lembrar — sobretudo em <a href="/para-seu-trabalho/cozinha/">cozinha</a> — que a aderência é uma relação entre duas superfícies. O calçado responde por uma parte; o piso e a limpeza respondem pela outra. Piso muito liso, acúmulo de gordura e limpeza inadequada reduzem o desempenho de qualquer solado. O calçado é uma proteção individual — não substitui a correção do ambiente quando ela é possível.',
+          'Vale lembrar — sobretudo em <a href="/para-seu-trabalho/cozinha/">cozinha</a> — que a aderência é uma relação entre duas superfícies, e é por isso que <a href="/conhecimento/botina-escorrega-o-que-fazer-antes-de-trocar/">nem toda queixa de escorregamento se resolve trocando o calçado</a>. O calçado responde por uma parte; o piso e a limpeza respondem pela outra. Piso muito liso, acúmulo de gordura e limpeza inadequada reduzem o desempenho de qualquer solado. O calçado é uma proteção individual — não substitui a correção do ambiente quando ela é possível.',
       },
     ],
     fontes: [
@@ -1526,7 +1527,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Grade não é fixa. Gente entra, gente sai, e um modelo trocado pode calçar diferente do anterior. A cada pedido de reposição, confira a lista contra a equipe de hoje — leva minutos e é o que mantém a grade certa depois da primeira compra.',
+          'Grade não é fixa. Gente entra, gente sai, e um modelo trocado pode calçar diferente do anterior. Essa mesma rotatividade é uma das três parcelas de <a href="/conhecimento/quantos-pares-por-ano-calcular-a-reposicao/">quantos pares comprar no ano</a>. A cada pedido de reposição, confira a lista contra a equipe de hoje — leva minutos e é o que mantém a grade certa depois da primeira compra.',
       },
       {
         tipo: 'h2',
@@ -1652,7 +1653,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'O solado é o item que mais decide a troca e o que menos se confere, porque fica virado para baixo. O ensaio de resistência ao escorregamento é feito com o calçado novo: <a href="/conhecimento/solado-antiderrapante-o-que-significa/">o relevo é justamente o que desgasta com o uso</a>. Em cozinha, em área da saúde e em limpeza, onde o escorregamento é o acidente mais provável, esse é o critério de troca mais importante — mais do que a aparência geral do par.',
+          'O solado é o item que mais decide a troca e o que menos se confere, porque fica virado para baixo. O ensaio de resistência ao escorregamento é feito com o calçado novo: <a href="/conhecimento/solado-antiderrapante-o-que-significa/">o relevo é justamente o que desgasta com o uso</a>. Se a queixa é de escorregamento, vale <a href="/conhecimento/botina-escorrega-o-que-fazer-antes-de-trocar/">separar antes o que é desgaste do que é ambiente</a>. Em cozinha, em área da saúde e em limpeza, onde o escorregamento é o acidente mais provável, esse é o critério de troca mais importante — mais do que a aparência geral do par.',
       },
       {
         tipo: 'p',
@@ -1703,7 +1704,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'A troca entra na <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega de EPI</a>, com data e motivo — é o registro que demonstra que a substituição aconteceu quando precisava. E se a numeração da pessoa já estiver anotada na <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">grade da equipe</a>, o pedido sai sem ninguém precisar experimentar de novo.',
+          'A troca entra na <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega de EPI</a>, com data e motivo — é o registro que demonstra que a substituição aconteceu quando precisava, e é dele que sai <a href="/conhecimento/quantos-pares-por-ano-calcular-a-reposicao/">o número de pares do ano seguinte</a>. E se a numeração da pessoa já estiver anotada na <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">grade da equipe</a>, o pedido sai sem ninguém precisar experimentar de novo.',
       },
     ],
     fontes: [
@@ -1937,6 +1938,386 @@ export const ARTIGOS: Artigo[] = [
     ctaTexto:
       'Com o nome do produto, a concentração e o tipo de contato, dá para indicar o material e o punho certos — e conferir o CA junto. Se tiver a FISPQ, mande que ela adianta metade.',
   },
+  {
+    slug: 'quantos-pares-por-ano-calcular-a-reposicao',
+    titulo: 'Quantos pares por ano: como calcular a reposição',
+    tituloSeo: 'Quantos pares de calçado por ano para a equipe',
+    resumo:
+      'Não existe número universal, e quem promete um está chutando. O número sai da sua própria operação — e ele já está na ficha de entrega, se ela estiver preenchida.',
+    descricaoSeo:
+      'A conta tem três parcelas: reposição programada, troca eventual e entrada de pessoal. Como tirar o número do seu próprio histórico e o que fazer no primeiro ano.',
+    publicado: '2026-09-04',
+    atualizado: '2026-09-04',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Calçados',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Não existe "tantos pares por pessoa por ano". A vida útil depende da atividade, do piso, da jornada e da conservação, e varia mais entre duas funções da mesma empresa do que entre duas empresas do mesmo setor. O número certo é o da SUA operação — e, se a ficha de entrega estiver preenchida, ele já está lá.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A pergunta chega sempre na mesma hora: montando o orçamento do ano. E a resposta que circula — um par por pessoa por ano — erra nos dois sentidos ao mesmo tempo, o que é raro e caro.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Por que "um par por ano" erra dos dois lados',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Numa equipe de obra ou de manutenção pesada, um par por ano costuma faltar: o calçado sai de uso antes, e quem não previu a segunda troca acaba deixando alguém trabalhando com o par vencido enquanto a compra não sai. Numa equipe administrativa com calçado ocupacional, um par por ano costuma sobrar: par novo entregue com o anterior ainda em condição de uso é dinheiro parado no armário.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O mesmo número, aplicado às duas, produz falta de um lado e desperdício do outro. E as duas equipes costumam estar na mesma empresa.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A conta tem três parcelas, não uma',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A maioria dos orçamentos só considera a primeira, e é por isso que estoura no meio do ano.',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Parcela', 'O que é', 'Como estimar'],
+        linhas: [
+          ['Reposição programada', 'A troca que acontece porque o par chegou ao fim da vida útil', 'Pelo histórico: quantas trocas por função aconteceram no último ano'],
+          ['Troca eventual', 'Dano, perda, acidente, produto químico derramado', 'Também pelo histórico. Costuma ser a parcela mais esquecida'],
+          ['Entrada de pessoal', 'Admissão e substituição ao longo do ano', 'Pela rotatividade da função, com a área de pessoal'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Somadas por função, e não pela empresa inteira, as três dão o número do ano. Somar pela empresa inteira devolve uma média que não descreve ninguém.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'De onde tirar o número: o seu próprio histórico',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Se a <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega de EPI</a> registra data e motivo de cada entrega, a resposta já existe. Basta contar, por função, quantas entregas de calçado aconteceram nos últimos doze meses e dividir pelo número de pessoas naquela função.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É o dado mais confiável que existe sobre a sua operação, porque foi medido nela. Nenhuma estimativa de fornecedor, inclusive a nossa, chega perto disso — e é por isso que a ficha bem preenchida vale muito além da fiscalização.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que puxa a vida útil para cada lado',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Sem números, porque número sem medição na sua operação seria invenção. O que segue é a direção de cada fator, para você saber o que olhar quando duas funções derem resultados diferentes.',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Fator', 'Encurta a vida do par', 'Prolonga'],
+        linhas: [
+          ['Piso', 'Abrasivo, irregular, com material perfurante', 'Liso e íntegro'],
+          ['Jornada', 'Muitas horas em pé e alta quilometragem diária', 'Deslocamento curto'],
+          ['Umidade', 'Molha todo dia e não seca entre os turnos', 'Ambiente seco, ou dois pares em rodízio'],
+          ['Produto químico', 'Contato frequente com solvente, óleo ou saneante', 'Sem contato'],
+          ['Conservação', 'Secagem no sol, guarda amassado, limpeza agressiva', 'Rotina de limpeza e secagem adequada'],
+          ['Adequação do modelo', 'Calçado errado para a atividade, que se desgasta fora do previsto', 'Modelo compatível com o uso real'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'E no primeiro ano, sem histórico?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Aí a estimativa é inevitável — e o jeito de errar menos é começar pela função mais exigente e não pela média. Estime a reposição das funções de campo separadamente das administrativas, deixe a reserva calculada sobre as primeiras, e trate o primeiro ano como o ano de levantar o dado, não de acertar o número.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Isso significa registrar cada entrega com data e motivo desde o primeiro par. No ano seguinte, a conta deixa de ser estimativa.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Os dois erros que estouram o orçamento no meio do ano',
+      },
+      {
+        tipo: 'p',
+        texto:
+          '<strong>Não contar a entrada de pessoal.</strong> Numa função com rotatividade alta, a admissão pode responder por uma parcela grande do consumo anual, e ela não aparece em nenhuma conta que parta só do quadro atual.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          '<strong>Reserva genérica.</strong> Guardar um par de cada número parece prudente e é a maneira mais cara de estocar calçado que ninguém vai usar. A reserva útil se concentra nos números mais frequentes da sua equipe, que a <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">grade de numeração</a> mostra de imediato.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Comprar o ano inteiro de uma vez?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Costuma não valer. Além de imobilizar capital, trava a grade num retrato da equipe que muda — quem entra e quem sai ao longo do ano muda a distribuição de numeração, e o estoque comprado em janeiro pode não servir a quem chegou em julho. Compra parcelada com a grade revisada a cada pedido acompanha a equipe real.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Antes de somar, confira se a troca era necessária',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Uma parte do consumo anual costuma ser troca antecipada: par substituído por incômodo que era numeração errada, ou por escorregamento que era do piso e não do solado. Vale conferir os critérios em <a href="/conhecimento/quando-trocar-o-calcado-de-seguranca/">quando trocar o calçado de segurança</a> antes de fechar o número do ano — às vezes a reposição cai sem ninguém comprar nada.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto atualizado)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
+      },
+    ],
+    paginaComercial: {
+      href: '/orcamento/',
+      rotulo: 'Montar o pedido de reposição',
+    },
+    contexto: 'orcamento',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Li o texto sobre reposição e queria ajuda para dimensionar a compra de calçado do ano da minha equipe.',
+    ctaTitulo: 'Precisa fechar o número do ano?',
+    ctaTexto:
+      'Diga as funções, quantas pessoas em cada uma e como é o ambiente. Dá para chegar a uma estimativa de reposição junto — e ela melhora muito se você tiver o histórico das entregas.',
+    perguntas: [
+      {
+        pergunta: 'Quantos pares de calçado por funcionário por ano?',
+        resposta:
+          'Não existe número universal, e quem dá um está chutando. Depende da atividade, do piso, da jornada e da conservação. O número da sua operação sai do histórico de entregas dos últimos doze meses, contado por função e não pela empresa inteira.',
+      },
+      {
+        pergunta: 'Vale comprar o ano inteiro de uma vez?',
+        resposta:
+          'Costuma não valer. Imobiliza capital e trava a grade num retrato da equipe que vai mudar: quem entra e quem sai ao longo do ano muda a distribuição de numeração, e o que foi comprado em janeiro pode não servir a quem chegou em julho.',
+      },
+      {
+        pergunta: 'Como sei se a equipe está trocando cedo demais?',
+        resposta:
+          'Comparando o motivo registrado na ficha com os critérios de troca por condição. Boa parte da troca antecipada é par substituído por incômodo que era numeração errada, ou por escorregamento que vinha do piso e não do solado.',
+      },
+    ],
+  },
+  {
+    slug: 'botina-escorrega-o-que-fazer-antes-de-trocar',
+    titulo: 'Botina escorrega: o que fazer antes de trocar',
+    tituloSeo: 'Botina escorregando: antes de trocar',
+    resumo:
+      'Escorregar quase nunca começa no calçado. Começa no piso, no produto de limpeza ou na gordura acumulada na própria sola — e dá para descobrir hoje, sem comprar nada.',
+    descricaoSeo:
+      'A ordem de investigação quando o calçado passa a escorregar: o que mudou, limpar a sola, o produto do piso, e só então o calçado. Com o que não resolve.',
+    publicado: '2026-09-04',
+    atualizado: '2026-09-04',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Calçados',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Quando um calçado que segurava passa a escorregar, alguma coisa mudou — e na maioria das vezes não foi o calçado. Antes de trocar, vale descobrir o quê: a investigação leva minutos, e a troca sem ela pode repetir o problema com um par novo.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Aderência é uma relação entre duas superfícies, com o que estiver entre elas. Isso significa três suspeitos, não um: o calçado, o piso e o que está no meio — água, gordura, poeira ou resíduo de produto de limpeza. Trocar o calçado resolve um terço dos casos possíveis, e é o mais caro dos três.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A pergunta que abre a investigação: o que mudou?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Se antes segurava e agora não segura, houve mudança em algum ponto. A resposta costuma estar nesta lista.',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['O que investigar', 'Sinal de que é isso', 'O que fazer'],
+        linhas: [
+          ['Sola suja ou engordurada', 'Escorrega em qualquer piso, inclusive fora do trabalho', 'Limpar a sola a fundo e testar de novo'],
+          ['Produto de limpeza do piso', 'Começou depois que a empresa trocou de produto ou de fornecedor', 'Conferir diluição e enxágue com a equipe de limpeza'],
+          ['Diluição errada do mesmo produto', 'Piso "brilhoso" ou pegajoso depois de seco', 'Rever a dosagem: excesso deixa película'],
+          ['Piso novo ou reformado', 'Coincide com obra, troca de revestimento ou impermeabilização', 'O calçado pode não ser o certo para o piso novo'],
+          ['Contaminante novo no processo', 'Passou a haver óleo, farinha, pó ou água onde não havia', 'Rever o modelo para o contaminante atual'],
+          ['Desgaste do solado', 'O relevo está liso nas áreas de maior apoio', 'Aí sim é troca de calçado'],
+          ['Modelo errado desde o início', 'Escorrega desde o primeiro dia, não "passou a escorregar"', 'Rever a classe contra o piso e o contaminante'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Limpe a sola antes de julgá-la',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É o passo mais simples e o mais pulado. Gordura, resíduo de produto e poeira compactada preenchem o relevo do solado e anulam exatamente a parte que gera aderência — o desenho continua lá, mas está entupido. Em cozinha e em área de produção isso acontece em semanas.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Lave a sola com escova e detergente comum, enxágue e deixe secar. Se a aderência volta, o problema era esse, e a solução é rotina de limpeza da sola — não par novo.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O produto de limpeza do piso é suspeito frequente',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Produto em excesso, ou aplicado sem enxágue, deixa uma película no piso que reduz a aderência de qualquer solado. É a causa que mais passa despercebida porque ninguém liga uma coisa à outra: a troca de fornecedor de saneante aconteceu no mês passado, e a queixa de escorregamento chegou esta semana.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale conversar com quem limpa antes de comprar calçado. Diluição correta e enxágue costumam devolver o piso ao que era, e saem de graça.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O teste que dá para fazer hoje',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Vire o calçado e compare o relevo da área de maior apoio com o de uma lateral que quase não toca o chão. Diferença grande é desgaste, e desgaste é troca.',
+          'Passe a mão no piso já seco depois da limpeza. Se ficar sensação de película ou de escorregadio, o suspeito é o produto, não o calçado.',
+          'Teste o mesmo calçado num piso diferente. Se lá segura, o problema está no piso ou no que há sobre ele.',
+          'Pergunte se a queixa é de uma pessoa ou da equipe. Uma pessoa aponta para o par dela; a equipe inteira aponta para o ambiente.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que não resolve, e o que piora',
+      },
+      {
+        tipo: 'p',
+        texto:
+          '<strong>Lixar a sola não melhora a aderência.</strong> O que segura é o desenho do relevo e o material da superfície de contato; lixar remove os dois e deixa uma superfície mais lisa do que a original. É a dica ruim mais repetida sobre o assunto.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Spray, fita e produtos aplicados no solado também não. Nenhum deles é ensaiado com o calçado, nenhum consta no Certificado de Aprovação e todos alteram a superfície que foi aprovada. Se o solado não serve mais, o caminho é o par novo — improviso em EPI é risco somado ao risco.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quando é o calçado mesmo',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Duas situações. A primeira é desgaste, que a comparação do relevo mostra. A segunda é modelo incompatível desde o começo — nesse caso o calçado nunca segurou, e a queixa não é "passou a escorregar", é "sempre escorregou". Aí a pergunta é qual ensaio o modelo atende contra o piso e o contaminante reais, e isso está explicado em <a href="/conhecimento/solado-antiderrapante-o-que-significa/">o que significa antiderrapante</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Se for troca por desgaste, os demais sinais que pedem substituição estão em <a href="/conhecimento/quando-trocar-o-calcado-de-seguranca/">quando trocar o calçado de segurança</a> — vale conferir o par inteiro de uma vez, e não só a sola.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'Requisitos para calçados de segurança e ocupacionais — Target Normas',
+        url: 'https://www.normas.com.br/visualizar/artigo-tecnico/2532/os-requisitos-para-os-calcados-de-seguranca-e-ocupacionais',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto atualizado)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/calcados/antiderrapantes/',
+      rotulo: 'Ver os calçados antiderrapantes',
+    },
+    contexto: 'calcados-antiderrapantes',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. O calçado da equipe está escorregando e queria ajuda para descobrir se é desgaste, piso ou modelo errado.',
+    ctaTitulo: 'A equipe está escorregando?',
+    ctaTexto:
+      'Diga como é o piso, o que cai nele e há quanto tempo o par está em uso. Dá para separar o que é desgaste do que é ambiente antes de trocar par nenhum.',
+    perguntas: [
+      {
+        pergunta: 'Lixar a sola melhora a aderência?',
+        resposta:
+          'Não, piora. O que segura é o desenho do relevo e a superfície de contato do solado; lixar remove os dois e deixa o calçado mais liso do que era. É a dica ruim mais repetida sobre o assunto.',
+      },
+      {
+        pergunta: 'Calçado novo pode escorregar?',
+        resposta:
+          'Pode, e nesse caso a queixa não é "passou a escorregar" e sim "sempre escorregou". Aponta para modelo incompatível com o piso ou com o contaminante do ambiente, e não para desgaste. A verificação é qual ensaio o modelo atende.',
+      },
+      {
+        pergunta: 'Escorregar é sempre problema do calçado?',
+        resposta:
+          'Não. Aderência é uma relação entre o solado, o piso e o que estiver entre os dois. Sola engordurada, película de produto de limpeza mal enxaguado e contaminante novo no processo derrubam a aderência de qualquer calçado aprovado.',
+      },
+    ],
+  },
 ]
+
+/**
+ * GUARDA DE BUILD: comprimento do title renderizado.
+ *
+ * Existe porque eu errei isto duas vezes, do mesmo jeito. O `tituloSeo` de
+ * cada artigo é publicado com o sufixo do site somado — `%s · Tower EPI's`,
+ * quatorze caracteres. Medindo o `tituloSeo` sozinho, ele cabia; o que o
+ * buscador corta é o renderizado, e saíram títulos de 71 e de 62 caracteres.
+ *
+ * O laço abaixo roda na importação do módulo, que acontece na geração
+ * estática: título longo demais derruba o build em vez de ir para produção e
+ * esperar alguém medir depois.
+ *
+ * 60 é o limite prático usual antes do corte no resultado de busca. Não é
+ * número de norma — é convenção de ofício, e por isso a mensagem de erro diz o
+ * que fazer em vez de só recusar.
+ *
+ * A EXCEÇÃO, E POR QUE ELA EXPIRA SOZINHA. Dois títulos publicados antes desta
+ * guarda estouram por um e por dois caracteres, e fazem parte da linha de base
+ * congelada até a revisão de 1º de novembro de 2026
+ * (`docs/10-regra-de-avaliacao.md`). Mexer neles agora sujaria a comparação que
+ * a rotina agendada existe para fazer — então a guarda os tolera até lá.
+ *
+ * Depois dessa data a tolerância acaba por conta própria e o build passa a
+ * recusá-los. É de propósito: exceção sem prazo vira permanente, e ninguém
+ * lembra de remover a que já não se justifica.
+ */
+const SUFIXO_DO_TITLE = ` · ${empresa.nome}`.length
+
+/** Congelados até a revisão. Ver o comentário acima. */
+const TOLERADOS_ATE = new Date('2026-11-01T12:00:00Z')
+const CONGELADOS = new Set([
+  'botina-que-machuca-calcado-ou-numeracao',
+  'mascara-descartavel-nao-protege-de-vapor-quimico',
+])
+
+for (const a of ARTIGOS) {
+  const total = a.tituloSeo.length + SUFIXO_DO_TITLE
+  if (CONGELADOS.has(a.slug) && Date.now() < TOLERADOS_ATE.getTime()) continue
+  if (total > 60) {
+    throw new Error(
+      `Artigo "${a.slug}": tituloSeo tem ${a.tituloSeo.length} caracteres e ` +
+        `renderiza com ${total} (o site soma ${SUFIXO_DO_TITLE} de sufixo). ` +
+        `Encurte para no máximo ${60 - SUFIXO_DO_TITLE} caracteres.`,
+    )
+  }
+}
 
 export const buscarArtigo = (slug: string) => ARTIGOS.find((a) => a.slug === slug)

@@ -169,7 +169,11 @@ export function BarraContextual() {
         aria-hidden={!mostrando}
       >
         <div className="wrap flex items-center gap-3 py-3 sm:gap-6 sm:py-3.5">
-          <p className="min-w-0 flex-1 text-[0.92rem] leading-snug sm:text-[1rem]">
+          {/* `break-words` não é enfeite: em 320px a coluna de texto tem 96px,
+              e "escorregando?" pede 101px. Sem isso, uma palavra longa empurra
+              a barra inteira para fora da tela. Português tem muitas — a
+              correção é da caixa, não da frase. */}
+          <p className="min-w-0 flex-1 break-words text-[0.92rem] leading-snug sm:text-[1rem]">
             {barra.chamada}
           </p>
 

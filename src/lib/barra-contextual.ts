@@ -198,6 +198,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Sabe qual produto a sua equipe manuseia?',
     rotulo: 'Pedir a luva certa',
   },
+  'quantos-pares-por-ano-calcular-a-reposicao': {
+    chamada: 'Precisa fechar o número de calçado do ano?',
+    rotulo: 'Dimensionar a compra',
+  },
+  'botina-escorrega-o-que-fazer-antes-de-trocar': {
+    chamada: 'A sua equipe está escorregando?',
+    rotulo: 'Descobrir a causa',
+  },
 }
 
 /**
