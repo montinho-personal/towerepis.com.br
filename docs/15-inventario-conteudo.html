@@ -1,0 +1,236 @@
+<title>Inventário da Tower EPI's</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+  :root {
+    --papel:#fcfbf9; --papel-2:#f0ebe3; --tinta:#1f2124; --tinta-2:#3d4147; --tinta-3:#6b7078;
+    --regua:#ddd7cd; --regua-forte:#b9b2a6; --vermelho:#b4111b; --vermelho-fundo:#fdf0ef;
+    --ok:#1f5c3d; --ok-fundo:#e8f1ec; --atencao:#8a5a08; --atencao-fundo:#f7eeda;
+    --falta:#8f1a1e; --falta-fundo:#f7e6e5; --trilho:#e6e1d8;
+    --display:'Archivo','Helvetica Neue',Arial,sans-serif;
+    --corpo:'Source Serif 4',Georgia,'Times New Roman',serif;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --papel:#191a1c; --papel-2:#212326; --tinta:#f0ede8; --tinta-2:#c3bfb8; --tinta-3:#8d8983;
+    --regua:#34373b; --regua-forte:#4c5055; --vermelho:#f2686e; --vermelho-fundo:#2b1a1b;
+    --ok:#7fc9a1; --ok-fundo:#16241d; --atencao:#e0b45f; --atencao-fundo:#2a2213;
+    --falta:#ef8a8a; --falta-fundo:#2b1b1b; --trilho:#2e3134;
+  } }
+  :root[data-theme="dark"] {
+    --papel:#191a1c; --papel-2:#212326; --tinta:#f0ede8; --tinta-2:#c3bfb8; --tinta-3:#8d8983;
+    --regua:#34373b; --regua-forte:#4c5055; --vermelho:#f2686e; --vermelho-fundo:#2b1a1b;
+    --ok:#7fc9a1; --ok-fundo:#16241d; --atencao:#e0b45f; --atencao-fundo:#2a2213;
+    --falta:#ef8a8a; --falta-fundo:#2b1b1b; --trilho:#2e3134;
+  }
+
+  * { box-sizing:border-box; }
+  body { background:var(--papel); color:var(--tinta); font-family:var(--corpo);
+         font-size:1.0625rem; line-height:1.7; -webkit-font-smoothing:antialiased; }
+  .env { max-width:66rem; margin:0 auto; padding:0 1.5rem 6rem; }
+  .col { max-width:42rem; }
+
+  h1,h2,h3 { font-family:var(--display); line-height:1.15; text-wrap:balance; margin:0; }
+  h1 { font-size:clamp(2rem,5.5vw,3.1rem); font-weight:700; letter-spacing:-0.02em; }
+  h2 { font-size:clamp(1.45rem,3.4vw,1.9rem); font-weight:700; letter-spacing:-0.015em; }
+  h3 { font-size:1.05rem; font-weight:700; }
+  p { margin:0; }
+
+  .rotulo { font-family:var(--display); font-size:0.7rem; font-weight:700; letter-spacing:0.16em;
+            text-transform:uppercase; color:var(--tinta-3); }
+  .rotulo-vermelho { color:var(--vermelho); }
+
+  header.capa { padding:4rem 0 2.5rem; display:flex; flex-direction:column; gap:1.25rem; }
+  header.capa p.sub { font-size:1.2rem; color:var(--tinta-2); max-width:38rem; }
+  .meta { font-family:var(--display); font-size:0.78rem; color:var(--tinta-3);
+          display:flex; flex-wrap:wrap; gap:0.4rem 1.25rem; }
+
+  section { padding-block:3rem; border-top:1px solid var(--regua); }
+  section > * + * { margin-top:1.15rem; }
+  .num-sec { font-family:var(--display); font-size:0.72rem; font-weight:700; letter-spacing:0.14em;
+             color:var(--vermelho); display:block; margin-bottom:0.6rem; }
+
+  .numeros { display:grid; grid-template-columns:repeat(auto-fit,minmax(9rem,1fr)); gap:1.5rem 2rem;
+             border-top:1px solid var(--regua); padding-top:1.4rem; }
+  .numeros div { display:flex; flex-direction:column; gap:0.15rem; }
+  .numeros b { font-family:var(--display); font-size:1.9rem; font-weight:700; letter-spacing:-0.02em;
+               line-height:1; font-variant-numeric:tabular-nums; }
+  .numeros span { font-family:var(--display); font-size:0.75rem; color:var(--tinta-3); line-height:1.35; }
+
+  .rolagem { overflow-x:auto; margin-top:0.8rem; }
+  table { border-collapse:collapse; width:100%; font-family:var(--display); font-size:0.82rem; }
+  th,td { text-align:left; padding:0.6rem 0.9rem 0.6rem 0; border-bottom:1px solid var(--regua);
+          vertical-align:top; }
+  th { font-weight:700; font-size:0.66rem; letter-spacing:0.1em; text-transform:uppercase;
+       color:var(--tinta-3); white-space:nowrap; }
+  td:last-child, th:last-child { padding-right:0; }
+  td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  td.tit { font-family:var(--corpo); font-size:0.95rem; line-height:1.4; min-width:16rem; }
+  td.tit .slug { font-family:var(--display); font-size:0.7rem; color:var(--tinta-3); margin-top:0.15rem; }
+
+  /* Barra na escala real da coluna: o maior valor ocupa a largura inteira. */
+  td.barra, th.barra { width:8rem; min-width:6rem; }
+  /* O trilho existe para que uma barra de 0% leia como "zero de um total",
+     e nao como celula vazia — e a coluna de cobertura tem varios zeros. */
+  td.barra .trilho { display:block; height:6px; background:var(--trilho); }
+  td.barra .trilho span { display:block; height:6px; background:var(--vermelho); }
+  th.barra { font-weight:400; text-transform:none; letter-spacing:0; }
+
+  .selos { white-space:nowrap; }
+  .selo { display:inline-block; font-family:var(--display); font-size:0.62rem; font-weight:700;
+          letter-spacing:0.07em; text-transform:uppercase; padding:0.2rem 0.4rem; margin-right:0.3rem; }
+  .s-plano { background:var(--ok-fundo); color:var(--ok); }
+  .s-antes { background:var(--papel-2); color:var(--tinta-3); }
+  .s-falta { background:var(--atencao-fundo); color:var(--atencao); }
+
+  /* As 15 P0 do plano, uma célula cada. Cheia = publicada. */
+  .grade-p0 { display:grid; grid-template-columns:repeat(auto-fill,minmax(11rem,1fr)); gap:1px;
+              background:var(--regua); border:1px solid var(--regua); margin-top:0.9rem; }
+  .p0 { background:var(--papel); padding:0.7rem 0.8rem; display:flex; flex-direction:column; gap:0.25rem;
+        border-left:3px solid var(--trilho); }
+  .p0.feita { border-left-color:var(--ok); }
+  .p0.aberta { border-left-color:var(--vermelho); }
+  .p0 b { font-family:var(--display); font-size:0.95rem; font-variant-numeric:tabular-nums; }
+  .p0.feita b { color:var(--ok); }
+  .p0.aberta b { color:var(--vermelho); }
+  .p0 span { font-family:var(--display); font-size:0.72rem; line-height:1.3; color:var(--tinta-2); }
+
+  .check { display:flex; flex-direction:column; }
+  .item { display:grid; grid-template-columns:5.5rem 1fr; gap:0.4rem 1rem; padding-block:0.65rem;
+          border-bottom:1px solid var(--regua); align-items:baseline; }
+  .item .v { font-family:var(--display); font-size:0.8rem; font-weight:700; font-variant-numeric:tabular-nums; }
+  .item .v.bom { color:var(--ok); } .item .v.aviso { color:var(--atencao); }
+  .item .d { font-size:0.97rem; }
+  .item .d small { display:block; color:var(--tinta-3); font-family:var(--display);
+                   font-size:0.76rem; margin-top:0.15rem; line-height:1.4; }
+
+  .destaque { background:var(--vermelho-fundo); border-left:3px solid var(--vermelho);
+              padding:1.25rem 1.4rem; display:flex; flex-direction:column; gap:0.7rem; max-width:42rem; }
+  .quadro { background:var(--papel-2); padding:1.25rem 1.4rem; display:flex; flex-direction:column;
+            gap:0.7rem; max-width:42rem; }
+  ul,ol { margin:0; padding-left:1.15rem; display:flex; flex-direction:column; gap:0.5rem; max-width:42rem; }
+  li::marker { color:var(--tinta-3); }
+  code { font-family:var(--display); font-size:0.85em; background:var(--papel-2); padding:0.1em 0.35em; }
+  a { color:inherit; text-decoration-color:var(--regua-forte); text-underline-offset:3px; }
+  a:hover { text-decoration-color:var(--vermelho); }
+  a:focus-visible { outline:2px solid var(--vermelho); outline-offset:2px; }
+  footer { border-top:2px solid var(--tinta); padding-top:1.5rem; margin-top:3rem;
+           font-family:var(--display); font-size:0.8rem; color:var(--tinta-3); max-width:42rem; }
+</style>
+
+<div class="env">
+  <header class="capa">
+    <p class="rotulo rotulo-vermelho">Tower EPI&rsquo;s &middot; conte&uacute;do e SEO</p>
+    <h1>O que existe no site hoje</h1>
+    <p class="sub">Sessenta e duas p&aacute;ginas, treze artigos e quarenta mil palavras. Este &eacute; o invent&aacute;rio medido &mdash; rastreado em navegador, p&aacute;gina por p&aacute;gina, n&atilde;o contado de mem&oacute;ria.</p>
+    <p class="meta"><span>4 de setembro de 2026</span><span>62 rotas rastreadas</span><span>Sitemap: 62</span></p>
+  </header>
+
+  <section>
+    <span class="num-sec">O resumo</span>
+    <h2>Os n&uacute;meros</h2>
+    <div class="numeros">
+      <div><b>62</b><span>p&aacute;ginas indexáveis, todas no sitemap</span></div>
+      <div><b>40.218</b><span>palavras de conte&uacute;do no site</span></div>
+      <div><b>13</b><span>artigos publicados</span></div>
+      <div><b>798</b><span>palavras por artigo, em m&eacute;dia</span></div>
+      <div><b>8/15</b><span>pautas P0 do plano j&aacute; publicadas</span></div>
+    </div>
+    <p class="col">O site n&atilde;o &eacute; um blog com p&aacute;ginas em volta: os artigos s&atilde;o 21% das p&aacute;ginas e 26% das palavras. O resto &eacute; conte&uacute;do comercial &mdash; categoria, profiss&atilde;o, setor e cidade &mdash; que &eacute; onde a busca vira or&ccedil;amento.</p>
+  </section>
+
+  <section>
+    <span class="num-sec">Invent&aacute;rio</span>
+    <h2>As 62 p&aacute;ginas, por tipo</h2>
+    <p class="col">Ordenado por volume de texto. A barra est&aacute; na escala real da coluna: a linha mais longa &eacute; a maior do site.</p>
+    <div class="rolagem">
+      <table>
+        <thead><tr><th>Tipo de p&aacute;gina</th><th class="num">P&aacute;gs</th><th class="num">Palavras</th><th class="num">M&eacute;dia</th><th class="barra">Volume</th></tr></thead>
+        <tbody><tr><td>Artigos</td><td class="num">13</td><td class="num">10.378</td><td class="num">798</td><td class="barra"><span class="trilho"><span style="width:100%"></span></span></td></tr><tr><td>Profissões</td><td class="num">7</td><td class="num">4.228</td><td class="num">604</td><td class="barra"><span class="trilho"><span style="width:41%"></span></span></td></tr><tr><td>Setores</td><td class="num">5</td><td class="num">3.778</td><td class="num">756</td><td class="barra"><span class="trilho"><span style="width:36%"></span></span></td></tr><tr><td>Cidades</td><td class="num">5</td><td class="num">4.114</td><td class="num">823</td><td class="barra"><span class="trilho"><span style="width:40%"></span></span></td></tr><tr><td>Categorias de proteção</td><td class="num">6</td><td class="num">2.577</td><td class="num">430</td><td class="barra"><span class="trilho"><span style="width:25%"></span></span></td></tr><tr><td>Categorias de calçado</td><td class="num">4</td><td class="num">2.294</td><td class="num">574</td><td class="barra"><span class="trilho"><span style="width:22%"></span></span></td></tr><tr><td>Hubs de navegação</td><td class="num">5</td><td class="num">2.600</td><td class="num">520</td><td class="barra"><span class="trilho"><span style="width:25%"></span></span></td></tr><tr><td>Legais</td><td class="num">3</td><td class="num">3.206</td><td class="num">1.069</td><td class="barra"><span class="trilho"><span style="width:31%"></span></span></td></tr><tr><td>Institucionais</td><td class="num">3</td><td class="num">1.805</td><td class="num">602</td><td class="barra"><span class="trilho"><span style="width:17%"></span></span></td></tr><tr><td>Estados</td><td class="num">3</td><td class="num">877</td><td class="num">292</td><td class="barra"><span class="trilho"><span style="width:8%"></span></span></td></tr><tr><td>Conversão</td><td class="num">3</td><td class="num">903</td><td class="num">301</td><td class="barra"><span class="trilho"><span style="width:9%"></span></span></td></tr><tr><td>Marcas</td><td class="num">2</td><td class="num">1.164</td><td class="num">582</td><td class="barra"><span class="trilho"><span style="width:11%"></span></span></td></tr><tr><td>Hub editorial</td><td class="num">1</td><td class="num">787</td><td class="num">787</td><td class="barra"><span class="trilho"><span style="width:8%"></span></span></td></tr><tr><td>Hub local</td><td class="num">1</td><td class="num">592</td><td class="num">592</td><td class="barra"><span class="trilho"><span style="width:6%"></span></span></td></tr><tr><td>Home</td><td class="num">1</td><td class="num">915</td><td class="num">915</td><td class="barra"><span class="trilho"><span style="width:9%"></span></span></td></tr></tbody>
+      </table>
+    </div>
+    <p class="col">As tr&ecirc;s p&aacute;ginas legais somam 3.206 palavras &mdash; mais que as quatro categorias de cal&ccedil;ado juntas. N&atilde;o &eacute; desequil&iacute;brio: pol&iacute;tica de privacidade, de cookies e termos de uso s&atilde;o documentos, e a extens&atilde;o deles n&atilde;o disputa nada na busca.</p>
+  </section>
+
+  <section>
+    <span class="num-sec">Blog</span>
+    <h2>Os treze artigos</h2>
+    <p class="col">&ldquo;Entra&rdquo; &eacute; quantos links de <em>corpo de texto</em> apontam para o artigo &mdash; s&oacute; os que est&atilde;o dentro do conte&uacute;do, sem contar men&uacute;, rodap&eacute; e listagem. &Eacute; o n&uacute;mero que diz se o texto est&aacute; integrado ao site ou pendurado nele.</p>
+    <div class="rolagem">
+      <table>
+        <thead><tr><th>Artigo</th><th class="num">Palavras</th><th class="barra">&nbsp;</th><th class="num">Entra</th><th>Origem</th></tr></thead>
+        <tbody><tr><td class="tit">Luva para produto químico: como escolher<div class="slug">/luva-para-produto-quimico-como-escolher/</div></td><td class="num">1.123</td><td class="barra"><span class="trilho"><span style="width:100%"></span></span></td><td class="num">4</td><td class="selos"><span class="selo s-plano">nº 31</span><span class="selo s-falta">sem capa</span></td></tr><tr><td class="tit">Quando trocar o calçado de segurança<div class="slug">/quando-trocar-o-calcado-de-seguranca/</div></td><td class="num">1.099</td><td class="barra"><span class="trilho"><span style="width:98%"></span></span></td><td class="num">6</td><td class="selos"><span class="selo s-plano">nº 20</span><span class="selo s-falta">sem capa</span></td></tr><tr><td class="tit">Biqueira de composite ou de aço: qual escolher<div class="slug">/biqueira-de-composite-ou-de-aco-qual-escolher/</div></td><td class="num">1.053</td><td class="barra"><span class="trilho"><span style="width:94%"></span></span></td><td class="num">9</td><td class="selos"><span class="selo s-plano">nº 1</span><span class="selo s-falta">sem capa</span></td></tr><tr><td class="tit">Grade de numeração de calçado para equipe<div class="slug">/grade-de-numeracao-como-definir-para-a-equipe/</div></td><td class="num">914</td><td class="barra"><span class="trilho"><span style="width:81%"></span></span></td><td class="num">6</td><td class="selos"><span class="selo s-plano">nº 2</span><span class="selo s-falta">sem capa</span></td></tr><tr><td class="tit">Botina que machuca: o que fazer antes de trocar<div class="slug">/botina-que-machuca-calcado-ou-numeracao/</div></td><td class="num">833</td><td class="barra"><span class="trilho"><span style="width:74%"></span></span></td><td class="num">8</td><td class="selos"><span class="selo s-plano">nº 19</span><span class="selo s-falta">sem capa</span></td></tr><tr><td class="tit">Qual o melhor calçado para cozinha?<div class="slug">/calcado-para-cozinha-como-escolher/</div></td><td class="num">800</td><td class="barra"><span class="trilho"><span style="width:71%"></span></span></td><td class="num">8</td><td class="selos"><span class="selo s-antes">anterior</span></td></tr><tr><td class="tit">NBR ISO 20345 e 20347: o que muda no calçado<div class="slug">/calcado-ocupacional-ou-de-seguranca/</div></td><td class="num">721</td><td class="barra"><span class="trilho"><span style="width:64%"></span></span></td><td class="num">9</td><td class="selos"><span class="selo s-antes">anterior</span></td></tr><tr><td class="tit">Ficha de entrega de EPI: o que precisa constar<div class="slug">/ficha-de-entrega-de-epi-o-que-precisa-constar/</div></td><td class="num">681</td><td class="barra"><span class="trilho"><span style="width:61%"></span></span></td><td class="num">6</td><td class="selos"><span class="selo s-plano">nº 61</span><span class="selo s-falta">sem capa</span></td></tr><tr><td class="tit">Luva de procedimento serve para limpeza? Não<div class="slug">/luva-de-procedimento-nao-e-luva-de-limpeza/</div></td><td class="num">653</td><td class="barra"><span class="trilho"><span style="width:58%"></span></span></td><td class="num">4</td><td class="selos"><span class="selo s-plano">nº 32</span><span class="selo s-falta">sem capa</span></td></tr><tr><td class="tit">PFF2 serve para produto químico? Não. e o motivo<div class="slug">/mascara-descartavel-nao-protege-de-vapor-quimico/</div></td><td class="num">647</td><td class="barra"><span class="trilho"><span style="width:58%"></span></span></td><td class="num">4</td><td class="selos"><span class="selo s-plano">nº 41</span><span class="selo s-falta">sem capa</span></td></tr><tr><td class="tit">Solado antiderrapante: o que significa<div class="slug">/solado-antiderrapante-o-que-significa/</div></td><td class="num">624</td><td class="barra"><span class="trilho"><span style="width:56%"></span></span></td><td class="num">9</td><td class="selos"><span class="selo s-antes">anterior</span></td></tr><tr><td class="tit">NR-6: o que a empresa precisa saber sobre EPI<div class="slug">/nr-6-o-que-a-empresa-precisa-saber/</div></td><td class="num">624</td><td class="barra"><span class="trilho"><span style="width:56%"></span></span></td><td class="num">8</td><td class="selos"><span class="selo s-antes">anterior</span></td></tr><tr><td class="tit">O que é o CA do EPI e como consultar<div class="slug">/o-que-e-ca-certificado-de-aprovacao/</div></td><td class="num">606</td><td class="barra"><span class="trilho"><span style="width:54%"></span></span></td><td class="num">12</td><td class="selos"><span class="selo s-antes">anterior</span></td></tr></tbody>
+      </table>
+    </div>
+    <div class="quadro">
+      <p class="rotulo">O que a coluna &ldquo;origem&rdquo; diz</p>
+      <p><strong>N&ordm;</strong> &eacute; a pauta correspondente no plano das 100. <strong>Anterior</strong> s&atilde;o os cinco textos que existiam antes de o plano ser escrito &mdash; eles n&atilde;o est&atilde;o entre as 100 justamente porque j&aacute; existiam, e o plano os trata como material a expandir, n&atilde;o a criar.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="num-sec">Plano</span>
+    <h2>Cobertura das 100 pautas</h2>
+    <p class="col">O plano editorial tem 100 itens: 96 pautas em nove clusters e quatro pe&ccedil;as-fosso, que n&atilde;o s&atilde;o artigos. A prioridade se distribui em <strong>15 P0</strong>, 37 P1, 33 P2 e 15 P3.</p>
+    <h3>As 15 pautas P0, uma a uma</h3>
+    <div class="grade-p0"><div class="p0 feita"><b>1</b><span>Biqueira de composite ou de aço: qual escolher</span></div><div class="p0 feita"><b>2</b><span>Como definir a grade de numeração de uma equipe</span></div><div class="p0 aberta"><b>3</b><span>Quantos pares por ano: como calcular a reposição</span></div><div class="p0 feita"><b>19</b><span>Botina que machuca: é o calçado ou é a numeração?</span></div><div class="p0 feita"><b>20</b><span>Quando trocar o calçado de segurança</span></div><div class="p0 aberta"><b>21</b><span>Botina escorrega: o que fazer antes de trocar</span></div><div class="p0 feita"><b>31</b><span>Como escolher luva pelo produto químico que você manuseia</span></div><div class="p0 feita"><b>32</b><span>Luva de procedimento não é luva de limpeza</span></div><div class="p0 feita"><b>41</b><span>Máscara descartável não protege de vapor químico</span></div><div class="p0 feita"><b>61</b><span>Ficha de entrega de EPI: o que precisa constar</span></div><div class="p0 aberta"><b>62</b><span>A empresa pode descontar EPI do salário?</span></div><div class="p0 aberta"><b>63</b><span>CA vencido: o EPI pode continuar em uso?</span></div><div class="p0 aberta"><b>75</b><span>Como escolher um fornecedor de EPI</span></div><div class="p0 aberta"><b>76</b><span>Como montar o primeiro pedido de EPI de uma equipe</span></div><div class="p0 aberta"><b>97</b><span>Tabela de EPI por função</span></div></div>
+    <p class="col" style="margin-top:1.2rem">Verde &eacute; publicada, vermelho &eacute; aberta. <strong>Oito de quinze.</strong> As sete abertas concentram-se em compra corporativa e em normas &mdash; que &eacute; onde a busca tem inten&ccedil;&atilde;o de gestor, e onde o site ainda n&atilde;o responde.</p>
+    <div class="rolagem">
+      <table>
+        <thead><tr><th>Cluster</th><th class="num">Pautas</th><th class="num">Feitas</th><th class="barra">Cobertura</th></tr></thead>
+        <tbody><tr><td>Calçado — decisão de compra</td><td class="num">18</td><td class="num">2</td><td class="barra"><span class="trilho"><span style="width:11%"></span></span></td></tr><tr><td>Calçado — problema, uso e manutenção</td><td class="num">12</td><td class="num">2</td><td class="barra"><span class="trilho"><span style="width:17%"></span></span></td></tr><tr><td>Proteção das mãos</td><td class="num">10</td><td class="num">2</td><td class="barra"><span class="trilho"><span style="width:20%"></span></span></td></tr><tr><td>Proteção respiratória</td><td class="num">9</td><td class="num">1</td><td class="barra"><span class="trilho"><span style="width:11%"></span></span></td></tr><tr><td>Auditiva, ocular, facial e cabeça</td><td class="num">11</td><td class="num">0</td><td class="barra"><span class="trilho"><span style="width:0%"></span></span></td></tr><tr><td>Normas, CA e responsabilidades</td><td class="num">14</td><td class="num">1</td><td class="barra"><span class="trilho"><span style="width:7%"></span></span></td></tr><tr><td>Compra corporativa e gestão de EPI</td><td class="num">10</td><td class="num">0</td><td class="barra"><span class="trilho"><span style="width:0%"></span></span></td></tr><tr><td>Profissões que o site ainda não cobre</td><td class="num">8</td><td class="num">0</td><td class="barra"><span class="trilho"><span style="width:0%"></span></span></td></tr><tr><td>Local — só onde há razão verdadeira</td><td class="num">4</td><td class="num">0</td><td class="barra"><span class="trilho"><span style="width:0%"></span></span></td></tr><tr><td>Conteúdos-fosso (não são artigos)</td><td class="num">4</td><td class="num">0</td><td class="barra"><span class="trilho"><span style="width:0%"></span></span></td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <span class="num-sec">Sa&uacute;de t&eacute;cnica</span>
+    <h2>O que a auditoria mede</h2>
+    <div class="check">
+      <div class="item"><span class="v bom">62/62</span><span class="d">Respondem 200, com canonical, description e um &uacute;nico H1<small>Nenhuma p&aacute;gina quebrada, duplicada ou sem identifica&ccedil;&atilde;o.</small></span></div>
+      <div class="item"><span class="v bom">0</span><span class="d">P&aacute;ginas com <code>noindex</code><small>Tudo o que est&aacute; no ar est&aacute; liberado para indexa&ccedil;&atilde;o.</small></span></div>
+      <div class="item"><span class="v bom">0</span><span class="d">P&aacute;ginas &oacute;rf&atilde;s<small>Toda p&aacute;gina recebe pelo menos um link de corpo de texto. Nenhuma depende s&oacute; do men&uacute; para ser encontrada.</small></span></div>
+      <div class="item"><span class="v bom">2</span><span class="d">Cliques de dist&acirc;ncia, no m&aacute;ximo<small>38 p&aacute;ginas a um clique da home, 23 a dois. Nada enterrado.</small></span></div>
+      <div class="item"><span class="v aviso">2/62</span><span class="d">T&iacute;tulos acima de 60 caracteres<small>Eram cinco esta manh&atilde;. Tr&ecirc;s foram encurtados hoje; os outros dois est&atilde;o a um e dois caracteres do limite e fazem parte da linha de base congelada at&eacute; a revis&atilde;o de 1&ordm; de novembro.</small></span></div>
+      <div class="item"><span class="v aviso">1/62</span><span class="d">Descri&ccedil;&otilde;es acima de 160 caracteres<small>A pol&iacute;tica de privacidade, com 182. &Eacute; p&aacute;gina legal, e n&atilde;o disputa clique.</small></span></div>
+      <div class="item"><span class="v bom">13/13</span><span class="d">Artigos com <code>BlogPosting</code> e imagem de compartilhamento<small>Mais Organization, LocalBusiness, WebSite e BreadcrumbList em todas as p&aacute;ginas.</small></span></div>
+      <div class="item"><span class="v aviso">0/13</span><span class="d">Artigos com <code>FAQPage</code><small>As categorias t&ecirc;m; os artigos n&atilde;o. &Eacute; a oportunidade t&eacute;cnica mais barata da lista &mdash; v&aacute;rios artigos j&aacute; t&ecirc;m as perguntas no texto.</small></span></div>
+    </div>
+  </section>
+
+  <section>
+    <span class="num-sec">Canibaliza&ccedil;&atilde;o</span>
+    <h2>Nenhum artigo disputa com outro</h2>
+    <p class="col">A medi&ccedil;&atilde;o cruza todas as p&aacute;ginas duas a duas por similaridade de vocabul&aacute;rio, com peso maior em t&iacute;tulo e subt&iacute;tulos. Acima de 0,80 &eacute; disputa real; entre 0,55 e 0,70 &eacute; padr&atilde;o a vigiar.</p>
+    <p class="col"><strong>Nenhum dos treze artigos aparece em par acima de 0,35.</strong> Isso inclui os casos de risco: o texto de luva qu&iacute;mica com o de luva de procedimento, e o de quando trocar o cal&ccedil;ado com o de solado antiderrapante. Nos dois casos o texto antigo recebeu link para o novo, em vez de competir com ele.</p>
+    <div class="destaque">
+      <p class="rotulo rotulo-vermelho">O que existe, e n&atilde;o &eacute; do blog</p>
+      <p>Cinco pares acima de 0,70, todos entre p&aacute;ginas de <code>/empresas/</code>: alimenta&ccedil;&atilde;o &times; sa&uacute;de em <strong>0,76</strong>, e mais quatro combina&ccedil;&otilde;es entre alimenta&ccedil;&atilde;o, sa&uacute;de, constru&ccedil;&atilde;o, ind&uacute;stria e limpeza.</p>
+      <p>Est&atilde;o abaixo do limiar de disputa e s&atilde;o anteriores a este trabalho &mdash; mas s&atilde;o o par mais alto do site, e a raz&atilde;o &eacute; estrutural: as cinco p&aacute;ginas de setor seguem o mesmo molde e falam do mesmo assunto para p&uacute;blicos diferentes. &Eacute; o pr&oacute;ximo trabalho de diferencia&ccedil;&atilde;o, e n&atilde;o urgente.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="num-sec">Pend&ecirc;ncias</span>
+    <h2>O que falta, em ordem de custo</h2>
+    <ul>
+      <li><strong>Oito dos treze artigos n&atilde;o t&ecirc;m capa.</strong> Sem capa, o artigo n&atilde;o tem imagem pr&oacute;pria no compartilhamento nem no dado estruturado &mdash; usa a imagem padr&atilde;o do site. &Eacute; a pend&ecirc;ncia com maior efeito por hora de trabalho, e n&atilde;o depende de ningu&eacute;m de fora.</li>
+      <li><strong>O GA4 est&aacute; instalado e desligado</strong>, esperando o identificador na Vercel. Enquanto isso, nenhum n&uacute;mero deste relat&oacute;rio tem contraparte de audi&ecirc;ncia: sabemos o que existe, n&atilde;o o que &eacute; lido.</li>
+      <li><strong>Search Console e envio do sitemap.</strong> Sem isso n&atilde;o h&aacute; consulta real, e a estimativa de demanda do plano continua sendo julgamento, n&atilde;o medi&ccedil;&atilde;o.</li>
+      <li><strong>Sete pautas P0 abertas</strong>, sendo uma delas a tabela de EPI por fun&ccedil;&atilde;o &mdash; que n&atilde;o &eacute; artigo, &eacute; pe&ccedil;a de refer&ecirc;ncia.</li>
+      <li><strong>FAQ nos artigos</strong>, onde as perguntas j&aacute; existem no texto.</li>
+    </ul>
+  </section>
+
+  <section>
+    <span class="num-sec">Limites</span>
+    <h2>O que este relat&oacute;rio n&atilde;o diz</h2>
+    <ul>
+      <li><strong>Nada sobre tr&aacute;fego.</strong> Sem GA4 ligado e sem Search Console, n&atilde;o existe visita, impress&atilde;o, posi&ccedil;&atilde;o nem clique aqui. Tudo o que est&aacute; acima &eacute; invent&aacute;rio e sa&uacute;de t&eacute;cnica.</li>
+      <li><strong>A demanda das pautas &eacute; qualitativa.</strong> O plano das 100 estima demanda por julgamento, sem ferramenta de volume &mdash; e n&uacute;mero inventado seria pior que nenhum.</li>
+      <li><strong>Contagem de palavras &eacute; do texto vis&iacute;vel</strong> de cada p&aacute;gina, medido no navegador com o conte&uacute;do carregado. Inclui cabe&ccedil;alho e rodap&eacute; comuns, ent&atilde;o serve para comparar p&aacute;ginas entre si, n&atilde;o como n&uacute;mero absoluto de reda&ccedil;&atilde;o.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Medi&ccedil;&otilde;es repet&iacute;veis no reposit&oacute;rio: <code>auditoria-rastrear.mjs</code> percorre o site em navegador real a partir da home, <code>auditoria-analisar.mjs</code> monta o invent&aacute;rio e <code>auditoria-canibalizacao.mjs</code> cruza as p&aacute;ginas duas a duas. O plano completo est&aacute; em <em>Cem pautas para a Tower EPI&rsquo;s</em>.</p>
+  </footer>
+</div>
