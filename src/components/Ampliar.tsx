@@ -16,23 +16,17 @@ import { useCallback, useEffect, useRef, useState } from 'react'
  * contextual (z-40) nem com o banner de consentimento (z-50). Empilhar
  * `z-index` até ganhar é o tipo de solução que quebra na próxima camada.
  *
- * DOIS PASSOS DE ZOOM, não um. Abrir só "em tela cheia" não resolve o caso
- * que motivou isto: no celular a tela cheia tem a mesma largura que os 92vw
- * de antes. Então o primeiro passo encaixa a imagem inteira na tela, e o
- * segundo amplia além da largura do visor, com rolagem nos dois eixos para
- * arrastar. É o que a pessoa faria com dois dedos, disponível também para
- * quem clica com o mouse.
+ * DOIS PASSOS DE ZOOM, e SEMPRE COMEÇA PELA IMAGEM INTEIRA. Abrir é para ver
+ * o todo; aproximar é o passo seguinte, num toque, pelo botão ou pela própria
+ * imagem. Aproximado, ela passa da largura do visor e se arrasta nos dois
+ * eixos.
  *
- * E ÀS VEZES O PRIMEIRO PASSO É INÚTIL. Medido: num visor de 390px a capa de
- * artigo ocupa 350px na página e 366px encaixada — 1,05x. O retrato no
- * desktop vai de 426px para 479px, 1,1x, porque ali quem limita é a ALTURA e
- * não a largura. Abrir nesses casos seria pedir um toque para não mudar nada.
- *
- * Então o componente calcula o encaixe antes de abrir, com as dimensões reais
- * da imagem, e abre aproximado sempre que encaixar renderia menos de 1,4x. O
- * botão "Ver inteira" continua ali para quem quiser o oposto. Uma regra só
- * sobre largura não daria conta: era o que eu tinha, e ela deixava o retrato
- * abrindo em 1,1x.
+ * UMA VERSÃO ANTERIOR ABRIA JÁ APROXIMADA quando calculava que encaixar
+ * renderia pouco — num visor de 390px a capa vai de 350px na página para
+ * 366px encaixada, 1,05x, e a conta dizia que não valia o toque. A conta
+ * estava certa e a decisão estava errada: abrir cortado parece defeito, não
+ * recurso. Quem toca numa imagem quer vê-la, e só depois decide se quer chegar
+ * perto. Ganho medido não justifica primeira impressão de tela quebrada.
  *
  * O ZOOM NÃO PASSA DA RESOLUÇÃO DO ARQUIVO, e é por isso que `larguraReal`
  * é uma propriedade em vez de ser lida da imagem. O `naturalWidth` do
@@ -46,9 +40,6 @@ import { useCallback, useEffect, useRef, useState } from 'react'
  * o mesmo arquivo que o `next/image` já baixou, então abrir costuma vir do
  * cache.
  */
-/** Altura aproximada da barra de cima mais a legenda, para calcular o encaixe. */
-const CHROME = 130
-
 export function Ampliar({
   src,
   alt,
@@ -74,27 +65,11 @@ export function Ampliar({
   const [larguraPerto, setLarguraPerto] = useState(0)
 
   const abrir = useCallback(() => {
-    const botao = gatilho.current
-    const img = botao?.querySelector('img')
-    const naPagina = botao?.getBoundingClientRect().width ?? 0
-    // Proporção pode vir da miniatura; resolução, não. Ver o cabeçalho.
-    const nw = img?.naturalWidth ?? 0
-    const nh = img?.naturalHeight ?? 0
-
-    // Área livre dentro do diálogo: a tela menos a barra de cima e a legenda.
     const largura = window.innerWidth
-    const altura = Math.max(120, window.innerHeight - CHROME)
-
-    // Quanto a imagem mede encaixada — limitada pela largura OU pela altura,
-    // o que apertar primeiro.
-    const encaixada = nw && nh ? Math.min(largura, (altura * nw) / nh) : largura
-
     // Aproximar não passa da resolução do arquivo, e nunca fica menor que a
     // tela: acima disso o navegador só interpola pixel que não existe.
     setLarguraPerto(Math.max(largura, Math.min(largura * 2.5, larguraReal || largura * 2.5)))
-
-    // Encaixar que rende menos de 1,4x não vale o toque.
-    setPerto(naPagina > 0 && encaixada / naPagina < 1.4)
+    setPerto(false)
     setAberto(true)
     caixa.current?.showModal()
   }, [larguraReal])
@@ -187,18 +162,37 @@ export function Ampliar({
               }}
               className={`min-h-0 flex-1 ${perto ? 'overflow-auto' : 'flex cursor-zoom-out items-center justify-center overflow-hidden p-3'}`}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={src}
-                alt={alt}
-                onClick={() => setPerto((v) => !v)}
-                className={
-                  perto
-                    ? 'max-w-none cursor-zoom-out'
-                    : 'max-h-full max-w-full cursor-zoom-in object-contain'
-                }
-                style={perto && larguraPerto ? { width: larguraPerto } : undefined}
-              />
+              {perto ? (
+                /* eslint-disable-next-line @next/next/no-img-element */
+                <img
+                  src={src}
+                  alt={alt}
+                  onClick={() => setPerto(false)}
+                  className="max-w-none cursor-zoom-out"
+                  style={larguraPerto ? { width: larguraPerto } : undefined}
+                />
+              ) : (
+                /* Numa tela em pé com imagem deitada, encaixar sobra altura e
+                   não sobra largura — a imagem fica pequena e o espaço vazio
+                   embaixo parece erro. A dica ocupa esse espaço dizendo o que
+                   fazer em seguida, que é exatamente o que a pessoa quer
+                   saber ao chegar aqui. */
+                <div className="flex max-h-full flex-col items-center gap-4">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={src}
+                    alt={alt}
+                    onClick={() => setPerto(true)}
+                    className="min-h-0 max-w-full cursor-zoom-in object-contain"
+                  />
+                  <p className="shrink-0 text-center text-[0.8rem] text-paper/55">
+                    <span className="sm:hidden">Toque na imagem para ver de perto</span>
+                    <span className="hidden sm:inline">
+                      Clique na imagem para ver de perto
+                    </span>
+                  </p>
+                </div>
+              )}
             </div>
 
             {/* Perto, a altura vale mais que a descrição: quem aproximou está
