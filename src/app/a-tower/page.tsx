@@ -13,11 +13,40 @@ export const metadata: Metadata = {
 }
 
 /**
- * PENDENTE: fotos históricas. O questionário confirma que existem fotos dos
- * fundadores, da primeira sede e dos logotipos antigos. Enquanto não chegam,
- * a página é resolvida tipograficamente — nunca com banco de imagens.
+ * AS FOTOS CHEGARAM, e mudam o que esta página é.
+ *
+ * Antes ela era uma história contada só com tipografia, porque a alternativa
+ * seria banco de imagem — e foto genérica de "equipe sorrindo" custaria mais
+ * credibilidade do que a ausência custava. Agora três fotos do acervo entram
+ * na linha do tempo, cada uma no marco a que pertence.
+ *
+ * A REGRA DA LEGENDA AQUI: ela não descreve a foto, que quem enxerga já viu.
+ * Ela diz o que a foto PROVA. O marco de 1995 afirma "estoque embaixo,
+ * escritório em cima" e "a 3M ofereceu uma distribuição"; a foto do estoque
+ * mostra a prateleira de caixas da 3M do Brasil, e a frase deixa de ser
+ * release e vira coisa que aconteceu.
+ *
+ * O QUE NÃO ESTÁ AQUI, e por quê: as três fotos de premiação que vieram no
+ * mesmo lote. Nelas aparecem pessoas de fora da Tower, identificáveis, e o
+ * guia de fotos deste projeto exige autorização de quem aparece. Ficam fora
+ * até haver essa autorização — a regra não vale menos quando a foto é boa.
  */
-const MARCOS = [
+
+/** Foto do acervo, colada ao marco a que pertence. */
+type FotoMarco = {
+  arquivo: string
+  alt: string
+  legenda: React.ReactNode
+  largura: number
+  altura: number
+}
+const MARCOS: {
+  ano: string
+  titulo: string
+  texto: string
+  link?: { href: string; rotulo: string }
+  fotos?: FotoMarco[]
+}[] = [
   {
     ano: '1994',
     titulo: 'São Paulo, antes de tudo',
@@ -27,12 +56,69 @@ const MARCOS = [
   {
     ano: '1995',
     titulo: 'O convite e o começo, no Montese',
+    fotos: [
+      {
+        arquivo: 'escritorio-montese-1995.jpg',
+        alt:
+          'Escritório da Tower no prédio do Montese, em 1995: um homem sentado a uma mesa de madeira com monitor de tubo, teclado e impressora matricial, numa sala de parede lisa.',
+        legenda: (
+          <>
+            <strong className="font-semibold text-ink">O escritório de cima.</strong>{' '}
+            Uma mesa, um monitor de tubo e uma impressora matricial. Não havia mais nada:
+            este cômodo era o administrativo, o comercial e a diretoria da empresa
+            inteira.
+          </>
+        ),
+        largura: 1600,
+        altura: 1180,
+      },
+      {
+        arquivo: 'estoque-montese-1995.jpg',
+        alt:
+          'Estoque da Tower no Montese, em 1995: prateleiras de aço do chão ao teto, cheias de caixas de papelão com a marca 3M, e uma pessoa em pé no corredor à esquerda.',
+        legenda: (
+          <>
+            <strong className="font-semibold text-ink">E o estoque de baixo.</strong>{' '}
+            As caixas nas prateleiras são da 3M do Brasil. É a parte da história que mais
+            soa a release — &ldquo;a 3M ofereceu uma distribuição&rdquo; — vista do jeito
+            que ela chegava de verdade: em papelão, empilhada até o teto.
+          </>
+        ),
+        largura: 1600,
+        altura: 1266,
+      },
+    ],
     texto:
       'A 3M procurava alguém que fizesse esse mesmo trabalho no Ceará e ofereceu uma distribuição ao Helano. Ele queria voltar ao estado natal, e aceitou. A Tower começou num prédio pequeno alugado no Montese, em Fortaleza: estoque embaixo, escritório em cima. Eram só os dois. Cristina no administrativo e nas vendas internas; Helano no desenvolvimento de clientes, no treinamento e na entrega das mercadorias.',
   },
   {
     ano: 'Os primeiros anos',
     titulo: 'Vender o que ainda não tinha demanda',
+    fotos: [
+      {
+        arquivo: 'helano-campanha-ca-seminario.jpg',
+        alt:
+          'Helano em pé diante de uma faixa de seminário que diz: Trabalhador abra o olho — usar, vender ou comprar EPI sem C.A. é crime! O C.A. é a sua garantia de qualidade. À direita da faixa, os nomes Tower, 3M, Bompel, Mapa e Mucambo.',
+        legenda: (
+          <>
+            <strong className="font-semibold text-ink">
+              &ldquo;Trabalhador abra o olho.&rdquo;
+            </strong>{' '}
+            É isto que &ldquo;explicar antes de vender&rdquo; queria dizer na prática:
+            pendurar uma faixa sobre Certificado de Aprovação na porta de um seminário.
+            A frase é dura do jeito que campanha de rua era naquela época — o que a norma
+            estabelece hoje, com a fonte oficial, está no{' '}
+            <Link href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">
+              texto sobre o CA
+            </Link>
+            . E repare em quem assina embaixo do nome da Tower: 3M e Bompel, as duas
+            marcas que a Tower continua trabalhando trinta anos depois.
+          </>
+        ),
+        largura: 1410,
+        altura: 870,
+      },
+    ],
     texto:
       'A maior dificuldade não foi concorrência. Foi cultura: o mercado local ainda usava material que durava muito tempo, e a proteção descartável precisava ser explicada antes de ser vendida. Somava-se a falta de capital de giro e a tarefa de conquistar clientela do zero, numa praça onde ninguém os conhecia.',
   },
@@ -98,6 +184,30 @@ export default function ATower() {
               <div>
                 <h2 className="font-display text-xl font-bold sm:text-2xl">{m.titulo}</h2>
                 <p className="mt-3 max-w-2xl text-ink-2">{m.texto}</p>
+                {/* Duas fotos do mesmo marco ficam lado a lado a partir de
+                    640px: são o andar de cima e o de baixo do mesmo prédio, e
+                    empilhadas perderiam a relação entre elas. */}
+                {m.fotos && (
+                  <div
+                    className={`mt-8 grid gap-8 ${m.fotos.length > 1 ? 'sm:grid-cols-2 sm:gap-7' : 'max-w-2xl'}`}
+                  >
+                    {m.fotos.map((f) => (
+                      <Retrato
+                        key={f.arquivo}
+                        src={`/fotos/historia/${f.arquivo}`}
+                        alt={f.alt}
+                        largura={f.largura}
+                        altura={f.altura}
+                        legenda={f.legenda}
+                        tamanhos={
+                          m.fotos!.length > 1
+                            ? '(min-width: 1024px) 30vw, (min-width: 640px) 42vw, 92vw'
+                            : '(min-width: 1024px) 42rem, 92vw'
+                        }
+                      />
+                    ))}
+                  </div>
+                )}
                 {m.link && (
                   <p className="mt-4">
                     <Link

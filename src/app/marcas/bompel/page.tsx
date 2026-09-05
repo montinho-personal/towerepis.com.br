@@ -10,6 +10,7 @@ import {
   Secao,
   LinksIrmaos,
 } from '@/components/Blocos'
+import { Retrato } from '@/components/Retrato'
 import { FechamentoCta } from '@/components/WhatsAppCta'
 import { JsonLd, schemaFaq } from '@/lib/schema'
 
@@ -164,6 +165,31 @@ export default function MarcaBompel() {
               </p>
             </a>
           </aside>
+        </div>
+      </Secao>
+
+      {/* "PRINCIPAL PARCERIA" É UMA AFIRMAÇÃO FRACA sem idade. Qualquer
+          distribuidora escreve isso sobre o fornecedor do mês. A faixa mostra
+          o nome da Bompel ao lado do da Tower numa campanha dos primeiros anos
+          — o que a frase acima não consegue provar, esta foto prova sozinha. */}
+      <Secao className="wrap pt-0">
+        <div className="max-w-2xl">
+          <Retrato
+            src="/fotos/historia/helano-campanha-ca-seminario.jpg"
+            alt="Faixa de seminário dos primeiros anos da Tower, com os dizeres: Trabalhador abra o olho — usar, vender ou comprar EPI sem C.A. é crime! À direita, os nomes Tower, 3M, Bompel, Mapa e Mucambo."
+            largura={1410}
+            altura={870}
+            tamanhos="(min-width: 1024px) 42rem, 92vw"
+            legenda={
+              <>
+                <strong className="font-semibold text-ink">A parceria não é nova.</strong>{' '}
+                Numa faixa de seminário dos primeiros anos da Tower, o nome da Bompel já
+                aparece ao lado do da 3M. &ldquo;Principal parceria&rdquo; é uma frase
+                que qualquer distribuidora escreve sobre o fornecedor do mês; esta é a
+                versão datada dela.
+              </>
+            }
+          />
         </div>
       </Secao>
 

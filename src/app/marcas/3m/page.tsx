@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Trilha, CabecalhoPagina, Secao, LinksIrmaos } from '@/components/Blocos'
+import { Retrato } from '@/components/Retrato'
 import { FechamentoCta } from '@/components/WhatsAppCta'
 
 export const metadata: Metadata = {
@@ -88,6 +89,34 @@ export default function Marca3M() {
               </p>
             </Link>
           </aside>
+        </div>
+      </Secao>
+
+      {/* A PROVA DA PÁGINA. O texto acima diz que a Tower nasceu de um convite
+          da 3M em 1995 e que hoje a disponibilidade é limitada. As duas coisas
+          são verdade, e a segunda é fácil de acreditar; a primeira, não. Esta
+          foto resolve isso sem uma linha a mais — e fica aqui, e não no topo,
+          porque ela responde ao texto em vez de anunciá-lo. */}
+      <Secao className="wrap pt-0">
+        <div className="max-w-2xl">
+          <Retrato
+            src="/fotos/historia/estoque-montese-1995.jpg"
+            alt="Estoque da Tower no Montese, em 1995: prateleiras de aço do chão ao teto, cheias de caixas de papelão com a marca 3M, e uma pessoa em pé no corredor à esquerda."
+            largura={1600}
+            altura={1266}
+            tamanhos="(min-width: 1024px) 42rem, 92vw"
+            legenda={
+              <>
+                <strong className="font-semibold text-ink">
+                  O estoque da Tower no Montese, em 1995.
+                </strong>{' '}
+                Prateleira de caixas da 3M do Brasil, do chão ao teto. É o convite desta
+                página visto por dentro — e é também a medida honesta do que mudou: hoje
+                a linha 3M na Tower é sob consulta, e a prateleira que se parece com esta
+                é de calçado.
+              </>
+            }
+          />
         </div>
       </Secao>
 
