@@ -45,7 +45,7 @@ export default function Conhecimento() {
               {
                 titulo: 'A pauta nasce de uma pergunta real',
                 texto:
-                  'Nenhum texto aqui foi escolhido por volume de busca. Cada um responde a uma dúvida que chegou mais de uma vez no WhatsApp da Tower — e é por isso que eles são específicos, e não panoramas gerais sobre segurança do trabalho.',
+                  'Nenhum texto aqui foi escolhido por volume de busca. Cada um responde a uma dúvida que chegou mais de uma vez no WhatsApp da Tower. E é por isso que eles são específicos, e não panoramas gerais sobre segurança do trabalho.',
               },
               {
                 titulo: 'Quem escreve conhece a operação',

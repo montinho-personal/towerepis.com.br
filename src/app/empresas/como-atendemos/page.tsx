@@ -8,7 +8,7 @@ const PERGUNTAS = [
   {
     pergunta: 'Vocês têm pedido mínimo?',
     resposta:
-      'Atendemos desde reposição pontual até equipes maiores. Conte o que você precisa que a gente diz na hora se conseguimos atender bem — e se não conseguirmos, dizemos isso também.',
+      'Atendemos desde reposição pontual até equipes maiores. Conte o que você precisa que a gente diz na hora se conseguimos atender bem, e se não conseguirmos, dizemos isso também.',
   },
   {
     pergunta: 'Vocês informam o CA dos produtos?',

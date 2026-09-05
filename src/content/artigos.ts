@@ -119,7 +119,7 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'lista',
         itens: [
           'O peito do pé precisa estar coberto: respingo de líquido quente e de gordura é rotina em linha de produção.',
-          'Modelos com perfuração de ventilação na parte de cima deixam passar líquido — não servem para a área de produção.',
+          'Modelos com perfuração de ventilação na parte de cima deixam passar líquido, não servem para a área de produção.',
           'O material precisa suportar limpeza diária sem absorver resíduo, e secar antes do turno seguinte.',
           'Costuras e frisos que acumulam sujeira dificultam a higienização e são um problema em ambiente de manipulação de alimento.',
         ],
@@ -286,7 +286,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Vale separar duas coisas que costumam ser confundidas: a validade do certificado, que é um dado do modelo, e a vida útil do equipamento em uso, que depende do desgaste. Um calçado com CA válido pode estar com o solado gasto e já não proteger — e nesse caso a troca é necessária de qualquer forma.',
+          'Vale separar duas coisas que costumam ser confundidas: a validade do certificado, que é um dado do modelo, e a vida útil do equipamento em uso, que depende do desgaste. Um calçado com CA válido pode estar com o solado gasto e já não proteger. E nesse caso a troca é necessária de qualquer forma.',
       },
     ],
     fontes: [
@@ -423,7 +423,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'A biqueira protege os dedos contra impacto e compressão. Ela não protege a sola contra perfuração. Se na sua atividade há prego, ferro ou material perfurante no chão, a proteção contra perfuração é um requisito adicional, presente apenas em modelos específicos — e isso precisa ser conferido no Certificado de Aprovação.',
+          'A biqueira protege os dedos contra impacto e compressão. Ela não protege a sola contra perfuração. Se na sua atividade há prego, ferro ou material perfurante no chão, a proteção contra perfuração é um requisito adicional, presente apenas em modelos específicos. E isso precisa ser conferido no Certificado de Aprovação.',
       },
     ],
     fontes: [
@@ -596,7 +596,7 @@ export const ARTIGOS: Artigo[] = [
     titulo: 'Solado antiderrapante: o que realmente significa',
     tituloSeo: 'Solado antiderrapante: o que significa',
     resumo:
-      'Não existe "antiderrapante" genérico. O desempenho é medido em superfícies diferentes — e isso muda a escolha.',
+      'Não existe "antiderrapante" genérico. O desempenho é medido em superfícies diferentes, e isso muda a escolha.',
     descricaoSeo:
       'Entenda o que é medido no ensaio de resistência ao escorregamento, o que significam as marcações e como escolher para piso molhado ou oleoso.',
     publicado: '2026-08-30',
@@ -725,7 +725,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'destaque',
         texto:
-          'A NR-6 estabelece que o empregador registre o fornecimento do EPI ao trabalhador, e admite que esse registro seja feito em livro, ficha ou sistema eletrônico. Na prática, a ficha de entrega é a prova de que a empresa cumpriu a obrigação — e é o primeiro documento pedido quando alguém pergunta.',
+          'A NR-6 estabelece que o empregador registre o fornecimento do EPI ao trabalhador, e admite que esse registro seja feito em livro, ficha ou sistema eletrônico. Na prática, a ficha de entrega é a prova de que a empresa cumpriu a obrigação. E é o primeiro documento pedido quando alguém pergunta.',
       },
       {
         tipo: 'p',
@@ -778,7 +778,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'É a rotina. Quando a entrega acontece no corredor, no meio do turno, o registro fica para depois — e depois vira nunca. O que costuma funcionar é amarrar a entrega a um momento que já existe: a troca programada, o início do mês, a reposição de numeração.',
+          'É a rotina. Quando a entrega acontece no corredor, no meio do turno, o registro fica para depois, e depois vira nunca. O que costuma funcionar é amarrar a entrega a um momento que já existe: a troca programada, o início do mês, a reposição de numeração.',
       },
       {
         tipo: 'p',
@@ -843,7 +843,7 @@ export const ARTIGOS: Artigo[] = [
     titulo: 'Botina que machuca: é o calçado ou é a numeração?',
     tituloSeo: 'Botina que machuca: o que fazer antes de trocar',
     resumo:
-      'Quase sempre é numeração, forma ou modelo errado para a atividade — e não falta de tempo de uso. O que dá para resolver e o que não dá.',
+      'Quase sempre é numeração, forma ou modelo errado para a atividade, e não falta de tempo de uso. O que dá para resolver e o que não dá.',
     descricaoSeo:
       'Por que a biqueira não amacia, como saber se o problema é a numeração ou a forma do calçado, e quando insistir só piora. Sem truque caseiro.',
     publicado: '2026-09-03',
@@ -854,7 +854,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'destaque',
         texto:
-          'Calçado de segurança que machuca raramente é falta de amaciar. Na maioria dos casos é numeração errada, forma incompatível com o pé ou modelo inadequado para a atividade — e nenhum dos três se resolve com uso.',
+          'Calçado de segurança que machuca raramente é falta de amaciar. Na maioria dos casos é numeração errada, forma incompatível com o pé ou modelo inadequado para a atividade, e nenhum dos três se resolve com uso.',
       },
       {
         tipo: 'p',
@@ -916,7 +916,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Existe um caso frequente e que ninguém considera: o calçado está certo, mas é do tipo errado para a atividade. Biqueira de proteção só faz sentido onde há risco de impacto sobre os dedos. Em cozinha, em serviço de limpeza, em atendimento de saúde e em boa parte do comércio, esse risco não existe — e o peso extra da biqueira, numa jornada de dez horas em pé, cobra caro.',
+          'Existe um caso frequente e que ninguém considera: o calçado está certo, mas é do tipo errado para a atividade. Biqueira de proteção só faz sentido onde há risco de impacto sobre os dedos. Em cozinha, em serviço de limpeza, em atendimento de saúde e em boa parte do comércio, esse risco não existe. E o peso extra da biqueira, numa jornada de dez horas em pé, cobra caro.',
       },
       {
         tipo: 'p',
@@ -997,7 +997,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'O erro é fácil de entender: as duas são luvas, as duas podem ser de nitrila, e a de procedimento é mais barata e já está no almoxarifado. Só que a espessura, o tempo de resistência e o uso previsto são outros — e é aí que a proteção acaba.',
+          'O erro é fácil de entender: as duas são luvas, as duas podem ser de nitrila, e a de procedimento é mais barata e já está no almoxarifado. Só que a espessura, o tempo de resistência e o uso previsto são outros, e é aí que a proteção acaba.',
       },
       {
         tipo: 'h2',
@@ -1097,7 +1097,7 @@ export const ARTIGOS: Artigo[] = [
     ],
     ctaTitulo: 'Quer conferir se a luva da sua equipe é a certa?',
     ctaTexto:
-      'Diga qual produto químico é manuseado e por quanto tempo. Dá para verificar se o material da luva corresponde — e o CA vem junto no orçamento.',
+      'Diga qual produto químico é manuseado e por quanto tempo. Dá para verificar se o material da luva corresponde, e o CA vem junto no orçamento.',
   },
   {
     slug: 'mascara-descartavel-nao-protege-de-vapor-quimico',
@@ -1225,14 +1225,14 @@ export const ARTIGOS: Artigo[] = [
     ],
     ctaTitulo: 'Quer conferir o respirador que a sua equipe usa?',
     ctaTexto:
-      'Diga qual produto é manuseado e em que ambiente. Dá para verificar se a categoria está certa — e o CA vem junto no orçamento.',
+      'Diga qual produto é manuseado e em que ambiente. Dá para verificar se a categoria está certa, e o CA vem junto no orçamento.',
   },
   {
     slug: 'biqueira-de-composite-ou-de-aco-qual-escolher',
     titulo: 'Biqueira de composite ou de aço: qual escolher?',
     tituloSeo: 'Biqueira de composite ou de aço: qual escolher',
     resumo:
-      'As duas protegem igual quando atendem à norma. O que decide é a atividade: eletricidade, detector de metal, frio, quanto se caminha — e o que acontece depois de um impacto.',
+      'As duas protegem igual quando atendem à norma. O que decide é a atividade: eletricidade, detector de metal, frio, quanto se caminha, e o que acontece depois de um impacto.',
     descricaoSeo:
       'Composite e aço protegem os dedos do mesmo jeito pela norma. A escolha é pela atividade: risco elétrico, detector de metal, frio, peso na jornada e custo.',
     publicado: '2026-09-04',
@@ -1248,7 +1248,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Quase tudo o que se lê sobre esse assunto compara material. É o jeito errado de decidir, porque a proteção contra impacto está garantida nos dois pelo <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a>. O que muda entre uma biqueira e outra é o resto: o que ela faz com eletricidade, com o frio, com um detector de metal, com o peso de quem caminha o dia inteiro — e o que sobra dela depois de uma pancada forte.',
+          'Quase tudo o que se lê sobre esse assunto compara material. É o jeito errado de decidir, porque a proteção contra impacto está garantida nos dois pelo <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a>. O que muda entre uma biqueira e outra é o resto: o que ela faz com eletricidade, com o frio, com um detector de metal, com o peso de quem caminha o dia inteiro. E o que sobra dela depois de uma pancada forte.',
       },
       {
         tipo: 'h2',
@@ -1275,7 +1275,7 @@ export const ARTIGOS: Artigo[] = [
           ['Proteção contra impacto e compressão', 'Atende à norma', 'Atende à norma — o mesmo ensaio'],
           ['Peso do calçado', 'Mais pesado', 'Mais leve'],
           ['Frio e calor', 'Conduz: em câmara fria, o dedo sente', 'Não conduz'],
-          ['Eletricidade', 'Conduz', 'Não conduz — mas isso não torna o calçado isolante'],
+          ['Eletricidade', 'Conduz', 'Não conduz, mas isso não torna o calçado isolante'],
           ['Detector de metal', 'Acusa', 'Passa'],
           ['Volume da biqueira', 'Mais fina', 'Mais grossa: pode mudar como o calçado veste'],
           ['Depois de um impacto forte', 'Pode ficar deformada, pressionando os dedos', 'Pode perder resistência sem sinal visível'],
@@ -1320,7 +1320,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'A diferença de peso entre as duas é pequena por passo e enorme por jornada. Quem percorre um galpão o dia todo sente o calçado mais pesado no fim do turno — e calçado pesado é o segundo motivo mais comum de a pessoa preferir o tênis. Para quem caminha muito, composite costuma ser a escolha certa mesmo custando mais, porque o calçado que fica no pé é o único que protege.',
+          'A diferença de peso entre as duas é pequena por passo e enorme por jornada. Quem percorre um galpão o dia todo sente o calçado mais pesado no fim do turno. E calçado pesado é o segundo motivo mais comum de a pessoa preferir o tênis. Para quem caminha muito, composite costuma ser a escolha certa mesmo custando mais, porque o calçado que fica no pé é o único que protege.',
       },
       {
         tipo: 'h3',
@@ -1338,7 +1338,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Ninguém pensa nisso na compra, e é onde as duas mais diferem. Uma biqueira de aço que recebeu um impacto forte pode ficar amassada — e amassada ela fica pressionando os dedos, o que a pessoa nota. Uma biqueira de composite pode trincar ou perder resistência sem nenhum sinal por fora.',
+          'Ninguém pensa nisso na compra, e é onde as duas mais diferem. Uma biqueira de aço que recebeu um impacto forte pode ficar amassada. E amassada ela fica pressionando os dedos, o que a pessoa nota. Uma biqueira de composite pode trincar ou perder resistência sem nenhum sinal por fora.',
       },
       {
         tipo: 'p',
@@ -1422,12 +1422,12 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'destaque',
         texto:
-          'Grade de numeração é a lista de quantos pares de cada número a equipe precisa. É a primeira coisa que a gente pergunta em todo orçamento de calçado — e a que mais vem estimada, com "uns 40, uns 42". Grade estimada vira troca depois da entrega.',
+          'Grade de numeração é a lista de quantos pares de cada número a equipe precisa. É a primeira coisa que a gente pergunta em todo orçamento de calçado. E a que mais vem estimada, com "uns 40, uns 42". Grade estimada vira troca depois da entrega.',
       },
       {
         tipo: 'p',
         texto:
-          'Num pedido de calçado para equipe, o item e a quantidade costumam vir certos. O que falta é o resto: doze pares, mas de que número? Sem a grade, o fornecedor não consegue responder preço e prazo — e, quando responde com uma grade chutada, a devolução chega junto com a entrega. Este texto é o método que usamos há trinta anos, para você fazer antes de pedir.',
+          'Num pedido de calçado para equipe, o item e a quantidade costumam vir certos. O que falta é o resto: doze pares, mas de que número? Sem a grade, o fornecedor não consegue responder preço e prazo. E quando responde com uma grade chutada, a devolução chega junto com a entrega. Este texto é o método que usamos há trinta anos, para você fazer antes de pedir.',
       },
       {
         tipo: 'h2',
@@ -1454,7 +1454,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Pergunte a cada pessoa o número — e, sempre que der, meça com a meia que ela vai usar no trabalho, de preferência no fim de um turno. Anote nome e número numa lista. Parece burocracia para uma equipe de oito; deixa de parecer no dia em que três pares voltam.',
+          'Pergunte a cada pessoa o número. E sempre que der, meça com a meia que ela vai usar no trabalho, de preferência no fim de um turno. Anote nome e número numa lista. Parece burocracia para uma equipe de oito; deixa de parecer no dia em que três pares voltam.',
       },
       {
         tipo: 'h3',
@@ -1472,7 +1472,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Calçado de segurança em forma feminina existe, com numeração e largura próprias. Quando a equipe tem mulheres, isso entra na grade como item separado — não como "o mesmo modelo no 35". Um modelo de forma masculina em numeração pequena costuma sobrar na largura e apertar no peito do pé.',
+          'Calçado de segurança em forma feminina existe, com numeração e largura próprias. Quando a equipe tem mulheres, isso entra na grade como item separado, não como "o mesmo modelo no 35". Um modelo de forma masculina em numeração pequena costuma sobrar na largura e apertar no peito do pé.',
       },
       {
         tipo: 'h3',
@@ -1481,7 +1481,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Com a lista pronta, some quantas pessoas usam cada número. O resultado é a grade — e é ela que vai no pedido, não o total. Um exemplo, para ficar claro o formato:',
+          'Com a lista pronta, some quantas pessoas usam cada número. O resultado é a grade. E é ela que vai no pedido, não o total. Um exemplo, para ficar claro o formato:',
       },
       {
         tipo: 'tabela',
@@ -1575,7 +1575,7 @@ export const ARTIGOS: Artigo[] = [
     ],
     ctaTitulo: 'Já tem a grade da sua equipe?',
     ctaTexto:
-      'Mande os números par a par, pelo construtor ou direto aqui. Com a grade na mão a resposta vem com preço e prazo na primeira mensagem — e sem grade, é a primeira coisa que vamos perguntar.',
+      'Mande os números par a par, pelo construtor ou direto aqui. Com a grade na mão a resposta vem com preço e prazo na primeira mensagem. E sem grade, é a primeira coisa que vamos perguntar.',
   },
   {
     slug: 'quando-trocar-o-calcado-de-seguranca',
@@ -1593,7 +1593,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'destaque',
         texto:
-          'Não existe prazo fixo em norma para trocar calçado de segurança. A substituição é por condição, não por calendário — e a data de validade que aparece no Certificado de Aprovação não é a vida útil do par que está no pé de alguém.',
+          'Não existe prazo fixo em norma para trocar calçado de segurança. A substituição é por condição, não por calendário. E a data de validade que aparece no Certificado de Aprovação não é a vida útil do par que está no pé de alguém.',
       },
       {
         tipo: 'p',
@@ -1626,7 +1626,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Na prática, isso significa duas coisas ao mesmo tempo — e uma delas com menos margem do que costuma parecer. Um calçado com o CA em dia pode estar impróprio hoje, se o solado estiver liso ou o cabedal rasgado: aí não há dúvida nenhuma, e a troca é pelo estado. Na direção contrária, o vencimento do CA daquele modelo não funciona como ordem de recolher o par do pé de quem já o usa — mas também não é assunto encerrado, e <a href="/conhecimento/ca-vencido-o-epi-pode-continuar-em-uso/">merece uma leitura à parte</a>. O CA responde por "este modelo foi aprovado"; o estado do par responde por "este calçado ainda protege".',
+          'Na prática, isso significa duas coisas ao mesmo tempo. E uma delas com menos margem do que costuma parecer. Um calçado com o CA em dia pode estar impróprio hoje, se o solado estiver liso ou o cabedal rasgado: aí não há dúvida nenhuma, e a troca é pelo estado. Na direção contrária, o vencimento do CA daquele modelo não funciona como ordem de recolher o par do pé de quem já o usa. Mas também não é assunto encerrado, e <a href="/conhecimento/ca-vencido-o-epi-pode-continuar-em-uso/">merece uma leitura à parte</a>. O CA responde por "este modelo foi aprovado"; o estado do par responde por "este calçado ainda protege".',
       },
       {
         tipo: 'h2',
@@ -1695,7 +1695,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Não precisa de sistema. Precisa de periodicidade e de alguém responsável. Uma conferência visual por mês, feita junto com outra rotina que já existe, resolve: virar o calçado e olhar o solado, olhar biqueira e costuras, e perguntar à pessoa se está incomodando. Essa última pergunta encontra mais problema que as outras duas juntas — e quando a resposta é sim, <a href="/conhecimento/botina-que-machuca-calcado-ou-numeracao/">nem sempre o caso é troca por desgaste</a>.',
+          'Não precisa de sistema. Precisa de periodicidade e de alguém responsável. Uma conferência visual por mês, feita junto com outra rotina que já existe, resolve: virar o calçado e olhar o solado, olhar biqueira e costuras, e perguntar à pessoa se está incomodando. Essa última pergunta encontra mais problema que as outras duas juntas. E quando a resposta é sim, <a href="/conhecimento/botina-que-machuca-calcado-ou-numeracao/">nem sempre o caso é troca por desgaste</a>.',
       },
       {
         tipo: 'h2',
@@ -1737,7 +1737,7 @@ export const ARTIGOS: Artigo[] = [
       {
         pergunta: 'Quem decide a hora da troca?',
         resposta:
-          'Na prática, a segurança do trabalho ou a chefia direta, com a informação de quem calça. A pessoa percebe o solado escorregando e o desconforto antes de qualquer inspeção — e o par só chega ao ponto de acidente quando essa informação não tem para onde ir.',
+          'Na prática, a segurança do trabalho ou a chefia direta, com a informação de quem calça. A pessoa percebe o solado escorregando e o desconforto antes de qualquer inspeção. E o par só chega ao ponto de acidente quando essa informação não tem para onde ir.',
       },
       {
         pergunta: 'Quanto tempo dura uma botina de segurança?',
@@ -1747,14 +1747,14 @@ export const ARTIGOS: Artigo[] = [
     ],
     ctaTitulo: 'Na dúvida se o par já passou da hora?',
     ctaTexto:
-      'Mande uma foto do solado e diga há quanto tempo está em uso e em que atividade. Dá para dizer se é caso de troca — e, se for, já sai com a reposição.',
+      'Mande uma foto do solado e diga há quanto tempo está em uso e em que atividade. Dá para dizer se é caso de troca, e, se for, já sai com a reposição.',
   },
   {
     slug: 'luva-para-produto-quimico-como-escolher',
     titulo: 'Como escolher luva pelo produto químico que você manuseia',
     tituloSeo: 'Luva para produto químico: como escolher',
     resumo:
-      'Não existe luva que resista a tudo. O método é partir da ficha do produto — e não do catálogo. Como ler, o que perguntar e onde a escolha costuma falhar.',
+      'Não existe luva que resista a tudo. O método é partir da ficha do produto, e não do catálogo. Como ler, o que perguntar e onde a escolha costuma falhar.',
     descricaoSeo:
       'O método que parte da ficha do produto químico, não do material da luva: concentração, tempo de contato, permeação e o que conferir no CA antes de comprar.',
     publicado: '2026-09-04',
@@ -1791,7 +1791,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Fabricantes de luva publicam tabelas de resistência química por produto, com o tempo estimado até a substância atravessar o material. É esse tempo que define por quanto tempo aquela luva serve para aquela tarefa — e é ele que ninguém consulta.',
+          'Fabricantes de luva publicam tabelas de resistência química por produto, com o tempo estimado até a substância atravessar o material. É esse tempo que define por quanto tempo aquela luva serve para aquela tarefa, e é ele que ninguém consulta.',
       },
       {
         tipo: 'h2',
@@ -1804,7 +1804,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Todo produto químico usado no trabalho deve ter uma FISPQ — Ficha de Informações de Segurança de Produtos Químicos, fornecida pelo fabricante. Ela tem uma seção específica de controle de exposição e proteção individual, e é ali que estão as recomendações de EPI para aquele produto. Se a empresa não tem a FISPQ dos produtos que usa, esse é o primeiro problema a resolver — e é o fornecedor do produto que deve entregá-la.',
+          'Todo produto químico usado no trabalho deve ter uma FISPQ — Ficha de Informações de Segurança de Produtos Químicos, fornecida pelo fabricante. Ela tem uma seção específica de controle de exposição e proteção individual, e é ali que estão as recomendações de EPI para aquele produto. Se a empresa não tem a FISPQ dos produtos que usa, esse é o primeiro problema a resolver. E é o fornecedor do produto que deve entregá-la.',
       },
       {
         tipo: 'h3',
@@ -1936,14 +1936,14 @@ export const ARTIGOS: Artigo[] = [
     ],
     ctaTitulo: 'Diga qual produto a sua equipe manuseia',
     ctaTexto:
-      'Com o nome do produto, a concentração e o tipo de contato, dá para indicar o material e o punho certos — e conferir o CA junto. Se tiver a FISPQ, mande que ela adianta metade.',
+      'Com o nome do produto, a concentração e o tipo de contato, dá para indicar o material e o punho certos, e conferir o CA junto. Se tiver a FISPQ, mande que ela adianta metade.',
   },
   {
     slug: 'quantos-pares-por-ano-calcular-a-reposicao',
     titulo: 'Quantos pares por ano: como calcular a reposição',
     tituloSeo: 'Quantos pares de calçado por ano para a equipe',
     resumo:
-      'Não existe número universal, e quem promete um está chutando. O número sai da sua própria operação — e ele já está na ficha de entrega, se ela estiver preenchida.',
+      'Não existe número universal, e quem promete um está chutando. O número sai da sua própria operação. E ele já está na ficha de entrega, se ela estiver preenchida.',
     descricaoSeo:
       'A conta tem três parcelas: reposição programada, troca eventual e entrada de pessoal. Como tirar o número do seu próprio histórico e o que fazer no primeiro ano.',
     publicado: '2026-09-04',
@@ -1954,7 +1954,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'destaque',
         texto:
-          'Não existe "tantos pares por pessoa por ano". A vida útil depende da atividade, do piso, da jornada e da conservação, e varia mais entre duas funções da mesma empresa do que entre duas empresas do mesmo setor. O número certo é o da SUA operação — e, se a ficha de entrega estiver preenchida, ele já está lá.',
+          'Não existe "tantos pares por pessoa por ano". A vida útil depende da atividade, do piso, da jornada e da conservação, e varia mais entre duas funções da mesma empresa do que entre duas empresas do mesmo setor. O número certo é o da SUA operação. E se a ficha de entrega estiver preenchida, ele já está lá.',
       },
       {
         tipo: 'p',
@@ -2010,7 +2010,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'É o dado mais confiável que existe sobre a sua operação, porque foi medido nela. Nenhuma estimativa de fornecedor, inclusive a nossa, chega perto disso — e é por isso que a ficha bem preenchida vale muito além da fiscalização.',
+          'É o dado mais confiável que existe sobre a sua operação, porque foi medido nela. Nenhuma estimativa de fornecedor, inclusive a nossa, chega perto disso. E é por isso que a ficha bem preenchida vale muito além da fiscalização.',
       },
       {
         tipo: 'h2',
@@ -2040,7 +2040,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Aí a estimativa é inevitável — e o jeito de errar menos é começar pela função mais exigente e não pela média. Estime a reposição das funções de campo separadamente das administrativas, deixe a reserva calculada sobre as primeiras, e trate o primeiro ano como o ano de levantar o dado, não de acertar o número.',
+          'Aí a estimativa é inevitável. E o jeito de errar menos é começar pela função mais exigente e não pela média. Estime a reposição das funções de campo separadamente das administrativas, deixe a reserva calculada sobre as primeiras, e trate o primeiro ano como o ano de levantar o dado, não de acertar o número.',
       },
       {
         tipo: 'p',
@@ -2099,7 +2099,7 @@ export const ARTIGOS: Artigo[] = [
       'Olá! Vim pelo site da Tower. Li o texto sobre reposição e queria ajuda para dimensionar a compra de calçado do ano da minha equipe.',
     ctaTitulo: 'Precisa fechar o número do ano?',
     ctaTexto:
-      'Diga as funções, quantas pessoas em cada uma e como é o ambiente. Dá para chegar a uma estimativa de reposição junto — e ela melhora muito se você tiver o histórico das entregas.',
+      'Diga as funções, quantas pessoas em cada uma e como é o ambiente. Dá para chegar a uma estimativa de reposição junto. E ela melhora muito se você tiver o histórico das entregas.',
     perguntas: [
       {
         pergunta: 'Quantos pares de calçado por funcionário por ano?',
@@ -2123,7 +2123,7 @@ export const ARTIGOS: Artigo[] = [
     titulo: 'Botina escorrega: o que fazer antes de trocar',
     tituloSeo: 'Botina escorregando: antes de trocar',
     resumo:
-      'Escorregar quase nunca começa no calçado. Começa no piso, no produto de limpeza ou na gordura acumulada na própria sola — e dá para descobrir hoje, sem comprar nada.',
+      'Escorregar quase nunca começa no calçado. Começa no piso, no produto de limpeza ou na gordura acumulada na própria sola, e dá para descobrir hoje, sem comprar nada.',
     descricaoSeo:
       'A ordem de investigação quando o calçado passa a escorregar: o que mudou, limpar a sola, o produto do piso, e só então o calçado. Com o que não resolve.',
     publicado: '2026-09-04',
@@ -2134,7 +2134,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'destaque',
         texto:
-          'Quando um calçado que segurava passa a escorregar, alguma coisa mudou — e na maioria das vezes não foi o calçado. Antes de trocar, vale descobrir o quê: a investigação leva minutos, e a troca sem ela pode repetir o problema com um par novo.',
+          'Quando um calçado que segurava passa a escorregar, alguma coisa mudou. E na maioria das vezes não foi o calçado. Antes de trocar, vale descobrir o quê: a investigação leva minutos, e a troca sem ela pode repetir o problema com um par novo.',
       },
       {
         tipo: 'p',
@@ -2175,7 +2175,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Lave a sola com escova e detergente comum, enxágue e deixe secar. Se a aderência volta, o problema era esse, e a solução é rotina de limpeza da sola — não par novo.',
+          'Lave a sola com escova e detergente comum, enxágue e deixe secar. Se a aderência volta, o problema era esse, e a solução é rotina de limpeza da sola, não par novo.',
       },
       {
         tipo: 'h2',
@@ -2276,7 +2276,7 @@ export const ARTIGOS: Artigo[] = [
     titulo: 'A empresa pode descontar EPI do salário?',
     tituloSeo: 'Pode descontar EPI do salário?',
     resumo:
-      'A parte que a NR-6 responde não tem margem: o EPI é fornecido gratuitamente. A discussão sobre desconto começa depois disso — e quase sempre onde falta registro.',
+      'A parte que a NR-6 responde não tem margem: o EPI é fornecido gratuitamente. A discussão sobre desconto começa depois disso, e quase sempre onde falta registro.',
     descricaoSeo:
       'O que a NR-6 resolve sem margem, o que fica para o direito do trabalho e o que evita a discussão no dia a dia. Sem parecer jurídico, com a fonte oficial.',
     publicado: '2026-09-04',
@@ -2311,7 +2311,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'lista',
         itens: [
-          'O equipamento adequado ao risco — não o mais barato que existe, o adequado.',
+          'O equipamento adequado ao risco, não o mais barato que existe, o adequado.',
           'A substituição imediata quando o EPI é danificado ou extraviado.',
           'A higienização e a manutenção periódica.',
           'A orientação e o treinamento sobre uso, guarda e conservação.',
@@ -2329,12 +2329,12 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'A mesma NR-6 atribui deveres a quem usa: usar o equipamento apenas para a finalidade a que se destina, responsabilizar-se pela guarda e pela conservação, comunicar qualquer alteração que o torne impróprio para uso. É daí que sai o raciocínio de que, se a guarda é do trabalhador, a perda também seria — e é aí que o salto acontece.',
+          'A mesma NR-6 atribui deveres a quem usa: usar o equipamento apenas para a finalidade a que se destina, responsabilizar-se pela guarda e pela conservação, comunicar qualquer alteração que o torne impróprio para uso. É daí que sai o raciocínio de que, se a guarda é do trabalhador, a perda também seria, e é aí que o salto acontece.',
       },
       {
         tipo: 'p',
         texto:
-          'A NR-6 não trata de desconto em folha. Ela diz o que a empresa fornece e o que o trabalhador faz com o que recebeu. Se um valor pode ou não ser descontado, em que hipótese e com qual formalidade, é matéria de direito do trabalho — e a resposta depende do caso, do que está escrito no contrato e do que a convenção coletiva da categoria estabelece.',
+          'A NR-6 não trata de desconto em folha. Ela diz o que a empresa fornece e o que o trabalhador faz com o que recebeu. Se um valor pode ou não ser descontado, em que hipótese e com qual formalidade, é matéria de direito do trabalho. E a resposta depende do caso, do que está escrito no contrato e do que a convenção coletiva da categoria estabelece.',
       },
       {
         tipo: 'p',
@@ -2395,7 +2395,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Em todos esses casos a resposta certa depende de documento, e o documento que mais pesa é o registro de entrega. Empresa que entrega EPI com ficha assinada, na numeração certa e com orientação registrada chega nessa conversa em outra posição — e, na prática, chega nela muito menos vezes.',
+          'Em todos esses casos a resposta certa depende de documento, e o documento que mais pesa é o registro de entrega. Empresa que entrega EPI com ficha assinada, na numeração certa e com orientação registrada chega nessa conversa em outra posição, e, na prática, chega nela muito menos vezes.',
       },
     ],
     fontes: [
@@ -2441,7 +2441,7 @@ export const ARTIGOS: Artigo[] = [
     titulo: 'CA vencido: o EPI pode continuar em uso?',
     tituloSeo: 'CA vencido: pode continuar usando?',
     resumo:
-      'A resposta muda conforme o momento. Comprar com CA vencido está fora de questão; um item já entregue e íntegro é uma pergunta mais longa — e a resposta honesta não é um sim seco.',
+      'A resposta muda conforme o momento. Comprar com CA vencido está fora de questão; um item já entregue e íntegro é uma pergunta mais longa. E a resposta honesta não é um sim seco.',
     descricaoSeo:
       'O que o vencimento do CA significa na compra, na prateleira e no par que já está no pé de alguém. Com a consulta oficial e o que fazer em cada situação.',
     publicado: '2026-09-04',
@@ -2452,7 +2452,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'destaque',
         texto:
-          'Depende de onde o item está. Comprar ou entregar EPI com o CA vencido está fora de questão. Um par já entregue e em bom estado não vira impróprio na data em que o CA do modelo vence — mas essa data é o aviso de que a reposição daquele modelo precisa ser resolvida, e não um assunto encerrado.',
+          'Depende de onde o item está. Comprar ou entregar EPI com o CA vencido está fora de questão. Um par já entregue e em bom estado não vira impróprio na data em que o CA do modelo vence. Mas essa data é o aviso de que a reposição daquele modelo precisa ser resolvida, e não um assunto encerrado.',
       },
       {
         tipo: 'p',
@@ -2466,7 +2466,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'O <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a> é do modelo, não do par. Ele diz que aquele equipamento, daquele fabricante ou importador, foi aprovado para uma finalidade descrita — e tem um prazo. Esse prazo é da aprovação do modelo no mercado. Não é uma data de vencimento estampada no item que a pessoa calça, veste ou respira.',
+          'O <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a> é do modelo, não do par. Ele diz que aquele equipamento, daquele fabricante ou importador, foi aprovado para uma finalidade descrita, e tem um prazo. Esse prazo é da aprovação do modelo no mercado. Não é uma data de vencimento estampada no item que a pessoa calça, veste ou respira.',
       },
       {
         tipo: 'p',
@@ -2494,12 +2494,12 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Vale dizer com clareza o que isso é e o que não é. <strong>Não existe na norma um dispositivo que autorize expressamente seguir usando o que já foi entregue.</strong> O que existe é ausência de regra mandando recolher — e ausência de proibição não é a mesma coisa que permissão escrita. Por isso a resposta honesta é que o vencimento do CA não funciona como gatilho de recolhimento imediato, e não que "pode usar até acabar".',
+          'Vale dizer com clareza o que isso é e o que não é. <strong>Não existe na norma um dispositivo que autorize expressamente seguir usando o que já foi entregue.</strong> O que existe é ausência de regra mandando recolher. E ausência de proibição não é a mesma coisa que permissão escrita. Por isso a resposta honesta é que o vencimento do CA não funciona como gatilho de recolhimento imediato, e não que "pode usar até acabar".',
       },
       {
         tipo: 'p',
         texto:
-          'O que costuma decidir a questão, quando ela é levantada, é outro dado: se o certificado estava vigente no momento da compra e da entrega. É esse registro que mostra que a empresa forneceu equipamento aprovado — e é ele que a <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega</a> guarda, quando traz o número do CA e a data.',
+          'O que costuma decidir a questão, quando ela é levantada, é outro dado: se o certificado estava vigente no momento da compra e da entrega. É esse registro que mostra que a empresa forneceu equipamento aprovado. E é ele que a <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega</a> guarda, quando traz o número do CA e a data.',
       },
       {
         tipo: 'h2',
@@ -2570,7 +2570,7 @@ export const ARTIGOS: Artigo[] = [
       {
         pergunta: 'Um certificado vencido pode voltar a ficar válido?',
         resposta:
-          'A situação de cada certificado é um dado do sistema oficial do Ministério do Trabalho e Emprego, e é lá que ela precisa ser conferida — não na nota fiscal nem na memória de quem comprou. Consultar antes de concluir qualquer coisa evita tanto descartar equipamento bom quanto encomendar um modelo que já não pode ser fornecido.',
+          'A situação de cada certificado é um dado do sistema oficial do Ministério do Trabalho e Emprego, e é lá que ela precisa ser conferida. Não na nota fiscal nem na memória de quem comprou. Consultar antes de concluir qualquer coisa evita tanto descartar equipamento bom quanto encomendar um modelo que já não pode ser fornecido.',
       },
       {
         pergunta: 'O número do CA precisa aparecer no registro de entrega?',

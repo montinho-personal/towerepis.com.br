@@ -211,7 +211,7 @@ export default function MarcaBompel() {
               {
                 titulo: 'Proteção contra perfuração, se houver material no chão',
                 texto:
-                  'A biqueira não protege a sola. Se há prego ou ferro no piso da sua atividade, é preciso um modelo com proteção contra perfuração — e isso consta no CA.',
+                  'A biqueira não protege a sola. Se há prego ou ferro no piso da sua atividade, é preciso um modelo com proteção contra perfuração, e isso consta no CA.',
               },
               {
                 titulo: 'O solado certo para o seu piso',
@@ -221,7 +221,7 @@ export default function MarcaBompel() {
               {
                 titulo: 'Numeração e largura',
                 texto:
-                  'Prove pensando no fim do expediente, quando o pé está inchado. A largura da forma pesa tanto quanto o número — e é a causa mais comum de calçado abandonado na segunda semana.',
+                  'Prove pensando no fim do expediente, quando o pé está inchado. A largura da forma pesa tanto quanto o número. E é a causa mais comum de calçado abandonado na segunda semana.',
               },
             ]}
           />

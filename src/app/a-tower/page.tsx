@@ -189,7 +189,7 @@ const MARCOS: {
       },
     ],
     texto:
-      'O reconhecimento de que Helano e Cristina mais se orgulham. Veio do trabalho e do volume de vendas — e da mesma empresa que, anos antes, tinha feito o convite que deu origem a tudo.',
+      'O reconhecimento de que Helano e Cristina mais se orgulham. Veio do trabalho e do volume de vendas. E da mesma empresa que, anos antes, tinha feito o convite que deu origem a tudo.',
     link: { href: '/marcas/3m/', rotulo: 'A relação da Tower com a 3M' },
   },
   {
@@ -202,7 +202,7 @@ const MARCOS: {
     ano: 'Hoje',
     titulo: 'Os mesmos dois, e os mesmos clientes',
     texto:
-      'Trinta anos depois, quem atende continua sendo quem começou. Sem intermediário, sem vendedor de comissão. E há clientes dos anos 90 que atravessaram todas essas fases junto com a Tower — e continuam comprando.',
+      'Trinta anos depois, quem atende continua sendo quem começou. Sem intermediário, sem vendedor de comissão. E há clientes dos anos 90 que atravessaram todas essas fases junto com a Tower, e continuam comprando.',
   },
 ]
 

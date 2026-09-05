@@ -6,7 +6,7 @@ import { Ferramenta } from '@/components/Ferramenta'
 export const metadata: Metadata = {
   title: 'Encontre o EPI certo para o seu trabalho',
   description:
-    'Quatro perguntas sobre a sua rotina, e no fim o que costuma merecer atenção no seu caso. Orientação inicial, não laudo — e o contexto já pronto para o WhatsApp.',
+    'Quatro perguntas sobre a sua rotina, e no fim o que costuma merecer atenção no seu caso. Orientação inicial, não laudo, e o contexto já pronto para o WhatsApp.',
   alternates: { canonical: '/encontrar-epi/' },
 }
 

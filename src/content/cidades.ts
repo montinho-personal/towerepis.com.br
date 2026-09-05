@@ -82,7 +82,7 @@ export const ESTADOS: Estado[] = [
       'A Tower é de Fortaleza e atende o Ceará desde 1995. Veja o que muda entre a capital e o Cariri, e fale direto com quem é técnico de segurança do trabalho.',
     h1: 'EPI no Ceará: de Fortaleza ao Cariri',
     resumo:
-      'O Ceará é a casa da Tower. A empresa nasceu em Fortaleza em 1995, a convite da 3M, para desenvolver o mercado de proteção no estado — e é aqui que estão os clientes mais antigos.',
+      'O Ceará é a casa da Tower. A empresa nasceu em Fortaleza em 1995, a convite da 3M, para desenvolver o mercado de proteção no estado. E é aqui que estão os clientes mais antigos.',
     emUmaFrase:
       'A Tower EPI’s atende empresas em todo o Ceará, com base em Fortaleza, desde 1995. O pedido nasce no WhatsApp e quem responde é um dos dois sócios.',
     contexto: [
@@ -148,7 +148,7 @@ export const CIDADES: Cidade[] = [
     economia: [
       'A base econômica de Barbalha é comércio e agricultura, mas o que define o risco ocupacional da cidade é a indústria: a FARMACE, do ramo químico e farmacêutico, e a fábrica de cimento herdeira da antiga Indústria Barbalhense de Cimento Portland.',
       'Em volta, o Cariri concentra um polo calçadista formado por muitas micro, pequenas e médias fábricas, distribuídas entre Crato, Juazeiro do Norte e a própria Barbalha — o conjunto que a região chama de Crajubar.',
-      'Há uma ironia útil nisso: a Tower é distribuidora de calçado de segurança para uma região que fabrica calçado. Quem monta sapato o dia inteiro também precisa de sapato — e o que a fábrica pede não é o que ela produz.',
+      'Há uma ironia útil nisso: a Tower é distribuidora de calçado de segurança para uma região que fabrica calçado. Quem monta sapato o dia inteiro também precisa de sapato. E o que a fábrica pede não é o que ela produz.',
     ],
     fontes: [
       { titulo: 'IBGE Cidades — Barbalha (CE)', url: 'https://cidades.ibge.gov.br/brasil/ce/barbalha/panorama' },
@@ -161,7 +161,7 @@ export const CIDADES: Cidade[] = [
       {
         titulo: 'Fábrica de calçado',
         texto:
-          'É o setor com mais risco escondido da região. Cola e solvente pedem luva com resistência química de verdade, não a luva de látex do almoxarifado — e pedem proteção respiratória para vapor orgânico, que é filtro, não máscara descartável. O corte pede luva anticorte. E a máquina de bater solado gera ruído contínuo, que é o dano que ninguém percebe acontecendo.',
+          'É o setor com mais risco escondido da região. Cola e solvente pedem luva com resistência química de verdade, não a luva de látex do almoxarifado. E pedem proteção respiratória para vapor orgânico, que é filtro, não máscara descartável. O corte pede luva anticorte. E a máquina de bater solado gera ruído contínuo, que é o dano que ninguém percebe acontecendo.',
       },
       {
         titulo: 'Cimento',
@@ -250,7 +250,7 @@ export const CIDADES: Cidade[] = [
       'Atendimento a empresas de Teresina: calçado ocupacional antiderrapante, luvas e proteção, com o CA de cada item e orientação técnica no orçamento.',
     h1: 'EPI em Teresina: proteção para a rede de serviços e saúde',
     resumo:
-      'Teresina é uma capital de serviços, e o serviço que organiza a cidade é a saúde. Isso muda o EPI que a cidade consome — e muda principalmente para quem trabalha no hospital sem ser da assistência.',
+      'Teresina é uma capital de serviços, e o serviço que organiza a cidade é a saúde. Isso muda o EPI que a cidade consome. E muda principalmente para quem trabalha no hospital sem ser da assistência.',
     emUmaFrase:
       'A Tower EPI’s atende empresas em Teresina, no Piauí, com calçado ocupacional e de segurança, luvas, proteção respiratória e proteção auditiva. A empresa é de Fortaleza, atua desde 1995, e o orçamento traz o Certificado de Aprovação (CA) de cada item.',
     economia: [
@@ -264,7 +264,7 @@ export const CIDADES: Cidade[] = [
       {
         titulo: 'A luva que erra de categoria',
         texto:
-          'A compra hospitalar costuma tratar luva como item único. Só que a luva de procedimento, descartável, protege o paciente e o profissional do contato biológico — e não protege ninguém do saneante usado na limpeza. Quem higieniza precisa de luva de proteção química, mais espessa e reutilizável. É o erro mais comum e o mais barato de corrigir.',
+          'A compra hospitalar costuma tratar luva como item único. Só que a luva de procedimento, descartável, protege o paciente e o profissional do contato biológico. E não protege ninguém do saneante usado na limpeza. Quem higieniza precisa de luva de proteção química, mais espessa e reutilizável. É o erro mais comum e o mais barato de corrigir.',
       },
       {
         titulo: 'O calçado do plantão',
@@ -279,7 +279,7 @@ export const CIDADES: Cidade[] = [
       {
         titulo: 'Manutenção predial',
         texto:
-          'A equipe que atende a estrutura do hospital trabalha com eletricidade, altura e ferramenta — e costuma ser a última a ser lembrada na hora de padronizar o EPI.',
+          'A equipe que atende a estrutura do hospital trabalha com eletricidade, altura e ferramenta. E costuma ser a última a ser lembrada na hora de padronizar o EPI.',
       },
     ],
     setores: [
@@ -308,7 +308,7 @@ export const CIDADES: Cidade[] = [
       {
         href: '/conhecimento/calcado-ocupacional-ou-de-seguranca/',
         titulo: 'Ocupacional ou de segurança?',
-        texto: 'A diferença é a biqueira — e ela decide qual dos dois serve para o plantão.',
+        texto: 'A diferença é a biqueira. E ela decide qual dos dois serve para o plantão.',
       },
       {
         href: '/protecao/maos/',
@@ -356,7 +356,7 @@ export const CIDADES: Cidade[] = [
       'Atendimento a empresas de Parnaíba e do litoral piauiense. Calçado antiderrapante para cozinha, luvas e proteção, com orientação técnica antes do orçamento.',
     h1: 'EPI em Parnaíba: proteção para hotelaria, cozinha e serviços',
     resumo:
-      'Segunda maior cidade do Piauí e a única com porto e litoral. Aqui o EPI que mais decide é o calçado — e o problema não é escolher o modelo, é escolher o modelo que a equipe aceita calçar.',
+      'Segunda maior cidade do Piauí e a única com porto e litoral. Aqui o EPI que mais decide é o calçado. E o problema não é escolher o modelo, é escolher o modelo que a equipe aceita calçar.',
     emUmaFrase:
       'A Tower EPI’s atende empresas em Parnaíba, no litoral do Piauí, com calçado antiderrapante para cozinha, calçado ocupacional, luvas e proteção. O orçamento sai com o Certificado de Aprovação (CA) de cada item.',
     economia: [
@@ -481,7 +481,7 @@ export const CIDADES: Cidade[] = [
       {
         titulo: 'Indústria têxtil',
         texto:
-          'Três riscos que andam juntos e costumam ser tratados como um só. Ruído contínuo de tear e máquina, que pede proteção auditiva com atenuação compatível — e não o protetor mais barato da caixa. Poeira e fibra em suspensão, que pedem proteção respiratória para particulado. E corte, na parte de acabamento e no manuseio de lâmina.',
+          'Três riscos que andam juntos e costumam ser tratados como um só. Ruído contínuo de tear e máquina, que pede proteção auditiva com atenuação compatível, e não o protetor mais barato da caixa. Poeira e fibra em suspensão, que pedem proteção respiratória para particulado. E corte, na parte de acabamento e no manuseio de lâmina.',
       },
       {
         titulo: 'Hotelaria de grande porte',
@@ -520,7 +520,7 @@ export const CIDADES: Cidade[] = [
       {
         href: '/protecao/respiratoria/',
         titulo: 'PFF1, PFF2 e PFF3',
-        texto: 'Qual classe usar para cada risco — e por que a escolha não é pelo preço.',
+        texto: 'Qual classe usar para cada risco. E por que a escolha não é pelo preço.',
       },
       {
         href: '/calcados/seguranca/',
@@ -569,7 +569,7 @@ export const CIDADES: Cidade[] = [
       'Atendimento a empresas do Vale do Açu. EPI para aplicação de defensivo, colheita e galpão de embalagem, com o CA de cada item e orientação técnica.',
     h1: 'EPI em Assú: proteção para a fruticultura do Vale do Açu',
     resumo:
-      'O Vale do Açu é uma das regiões mais irrigadas do Rio Grande do Norte. O EPI de lá é agrícola — e é a categoria em que a escolha errada tem consequência mais imediata.',
+      'O Vale do Açu é uma das regiões mais irrigadas do Rio Grande do Norte. O EPI de lá é agrícola. E é a categoria em que a escolha errada tem consequência mais imediata.',
     emUmaFrase:
       'A Tower EPI’s atende empresas em Assú e no Vale do Açu, no Rio Grande do Norte, com EPI para aplicação de defensivo, colheita e galpão de embalagem, além de calçado de segurança e ocupacional.',
     economia: [
@@ -592,7 +592,7 @@ export const CIDADES: Cidade[] = [
       {
         titulo: 'Colheita',
         texto:
-          'Sol o dia inteiro, ferramenta de corte e contato com folha e seiva. Luva, proteção da pele e calçado firme — e a atenção real aqui é o conforto, porque EPI desconfortável em jornada de campo simplesmente para de ser usado depois das primeiras horas.',
+          'Sol o dia inteiro, ferramenta de corte e contato com folha e seiva. Luva, proteção da pele e calçado firme. E a atenção real aqui é o conforto, porque EPI desconfortável em jornada de campo simplesmente para de ser usado depois das primeiras horas.',
       },
       {
         titulo: 'Galpão de embalagem',
@@ -630,7 +630,7 @@ export const CIDADES: Cidade[] = [
       },
     ],
     atendimento:
-      'No agro o pedido começa pela bula. Se você disser qual defensivo é aplicado, a Tower parte da exigência do próprio produto, que é o que manda — e não de uma lista de catálogo. Para colheita e galpão de embalagem, o que resolve é dizer quantas pessoas e em que ambiente.',
+      'No agro o pedido começa pela bula. Se você disser qual defensivo é aplicado, a Tower parte da exigência do próprio produto, que é o que manda, e não de uma lista de catálogo. Para colheita e galpão de embalagem, o que resolve é dizer quantas pessoas e em que ambiente.',
     ondeNaoSomos: null,
     perguntas: [
       {
@@ -641,7 +641,7 @@ export const CIDADES: Cidade[] = [
       {
         pergunta: 'Como saber qual EPI usar na aplicação de um defensivo?',
         resposta:
-          'A indicação está no rótulo e na bula do próprio produto, que especificam o equipamento de proteção exigido para o manuseio e a aplicação. Como cada produto tem exigência própria, o caminho é partir da bula e escolher os itens a partir dela — e não o contrário.',
+          'A indicação está no rótulo e na bula do próprio produto, que especificam o equipamento de proteção exigido para o manuseio e a aplicação. Como cada produto tem exigência própria, o caminho é partir da bula e escolher os itens a partir dela, e não o contrário.',
       },
       {
         pergunta: 'Qual calçado usar em galpão de embalagem?',

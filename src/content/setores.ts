@@ -46,7 +46,7 @@ export const SETORES: Setor[] = [
       {
         titulo: 'Calçado ocupacional antiderrapante',
         texto:
-          'É o item central do setor. Fechado, impermeável, fácil de higienizar e com solado adequado a piso molhado com gordura. Na maior parte das cozinhas, biqueira de proteção não é necessária — e retirá-la reduz peso e aumenta a adesão ao uso.',
+          'É o item central do setor. Fechado, impermeável, fácil de higienizar e com solado adequado a piso molhado com gordura. Na maior parte das cozinhas, biqueira de proteção não é necessária. E retirá-la reduz peso e aumenta a adesão ao uso.',
       },
       {
         titulo: 'Luvas conforme a tarefa',
@@ -96,7 +96,7 @@ export const SETORES: Setor[] = [
       'Calçado ocupacional fechado, luva e proteção respiratória para equipes de saúde. Orçamento com o CA de cada item e entrega em Fortaleza e região.',
     h1: 'EPI para equipes da área da saúde',
     resumo:
-      'Turno longo, piso liso, risco biológico e exigência de higienização. Na saúde, a especificação precisa ser precisa e a reposição precisa ser confiável — porque falta de EPI aqui interrompe atendimento.',
+      'Turno longo, piso liso, risco biológico e exigência de higienização. Na saúde, a especificação precisa ser precisa e a reposição precisa ser confiável, porque falta de EPI aqui interrompe atendimento.',
     problemas: [
       'Plantões longos exigem conforto real, não apenas conformidade.',
       'Piso liso e molhado durante boa parte do dia.',
@@ -277,7 +277,7 @@ export const SETORES: Setor[] = [
       'Luva adequada ao produto, calçado antiderrapante e proteção para os olhos. Orçamento com o CA de cada item e entrega para empresas de limpeza em Fortaleza.',
     h1: 'EPI para equipes de limpeza e conservação',
     resumo:
-      'Empresa de limpeza atende postos diferentes com produtos diferentes — e a luva costuma ser padronizada por preço, não por risco. É o erro mais comum e mais fácil de corrigir do setor.',
+      'Empresa de limpeza atende postos diferentes com produtos diferentes. E a luva costuma ser padronizada por preço, não por risco. É o erro mais comum e mais fácil de corrigir do setor.',
     problemas: [
       'Postos diferentes, com produtos químicos diferentes.',
       'Equipe distribuída em vários endereços de clientes.',

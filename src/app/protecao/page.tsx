@@ -32,7 +32,7 @@ const PERGUNTAS = [
   {
     pergunta: 'O que vem antes do EPI?',
     resposta:
-      'A proteção coletiva. A norma trata o Equipamento de Proteção Individual como a medida a adotar quando não é possível eliminar o risco ou protegê-lo coletivamente — ou enquanto essas medidas estão sendo implantadas. Exaustão, enclausuramento de máquina e guarda-corpo protegem todo mundo ao mesmo tempo; o EPI protege uma pessoa de cada vez.',
+      'A proteção coletiva. A norma trata o Equipamento de Proteção Individual como a medida a adotar quando não é possível eliminar o risco ou protegê-lo coletivamente, ou enquanto essas medidas estão sendo implantadas. Exaustão, enclausuramento de máquina e guarda-corpo protegem todo mundo ao mesmo tempo; o EPI protege uma pessoa de cada vez.',
   },
   {
     pergunta: 'Um EPI pode substituir outro?',
@@ -81,7 +81,7 @@ export default function HubProtecao() {
               {
                 titulo: 'Proteção coletiva vem antes',
                 texto:
-                  'O EPI é a medida individual, e ele entra quando não dá para eliminar o risco na fonte nem protegê-lo coletivamente. Exaustão em vez de máscara, guarda em vez de luva, isolamento acústico em vez de protetor: quando é possível, é sempre melhor — porque protege quem esqueceu de colocar o equipamento.',
+                  'O EPI é a medida individual, e ele entra quando não dá para eliminar o risco na fonte nem protegê-lo coletivamente. Exaustão em vez de máscara, guarda em vez de luva, isolamento acústico em vez de protetor: quando é possível, é sempre melhor, porque protege quem esqueceu de colocar o equipamento.',
               },
               {
                 titulo: 'A categoria certa, não a parecida',
@@ -91,7 +91,7 @@ export default function HubProtecao() {
               {
                 titulo: 'O EPI que não é usado não protege',
                 texto:
-                  'Conforto não é luxo nesta conta: calçado que machuca sai do pé, óculos que embaça sobe para a testa, protetor que incomoda fica no bolso. Na prática, o equipamento mais protetor é o que a equipe aceita usar a jornada inteira — e isso se descobre antes de comprar para todo mundo.',
+                  'Conforto não é luxo nesta conta: calçado que machuca sai do pé, óculos que embaça sobe para a testa, protetor que incomoda fica no bolso. Na prática, o equipamento mais protetor é o que a equipe aceita usar a jornada inteira. E isso se descobre antes de comprar para todo mundo.',
               },
             ]}
           />
@@ -115,7 +115,7 @@ export default function HubProtecao() {
               href: '/calcados/',
               titulo: 'Pés',
               texto:
-                'Calçados ocupacionais e de segurança. A categoria que mais gera dúvida — e onde o erro sai mais caro.',
+                'Calçados ocupacionais e de segurança. A categoria que mais gera dúvida, e onde o erro sai mais caro.',
             },
             ...PROTECOES.map((p) => ({
               href: `/protecao/${p.slug}/`,

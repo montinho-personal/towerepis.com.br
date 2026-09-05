@@ -97,7 +97,7 @@ const RESULTADOS: Record<string, Resultado> = {
   poeira: {
     titulo: 'É preciso saber qual agente está no ar antes de escolher',
     atencao: [
-      'Máscara para partícula não protege contra vapor ou gás — e vice-versa.',
+      'Máscara para partícula não protege contra vapor ou gás, e vice-versa.',
       'A classe da peça filtrante depende do agente e do nível de exposição.',
       'Equipamento que não veda no rosto não protege, independentemente da classe.',
       'Essa definição vem da avaliação de riscos do ambiente, não da aparência do equipamento.',
@@ -127,7 +127,7 @@ const RESULTADOS: Record<string, Resultado> = {
   pe: {
     titulo: 'Aqui o conforto é critério de proteção, não de preferência',
     atencao: [
-      'Calçado que machuca é retirado no meio do turno — e aí não protege mais nada.',
+      'Calçado que machuca é retirado no meio do turno, e aí não protege mais nada.',
       'Peso e amortecimento importam tanto quanto a proteção declarada.',
       'O pé incha ao longo do dia: prove pensando no fim do expediente.',
       'Se não há risco de impacto sobre os dedos, um calçado ocupacional tende a ser mais adequado.',

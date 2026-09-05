@@ -36,7 +36,7 @@ export const PROFISSOES: Profissao[] = [
       'Piso molhado, gordura, respingo quente e muitas horas em pé. O solado decide quase tudo.',
     titleSeo: 'Calçado para cozinha: como escolher',
     descricaoSeo:
-      'Piso molhado, gordura e jornada em pé. O que observar no solado e na cobertura do pé — e por que a biqueira quase nunca é necessária. Fortaleza e região.',
+      'Piso molhado, gordura e jornada em pé. O que observar no solado e na cobertura do pé. E por que a biqueira quase nunca é necessária. Fortaleza e região.',
     h1: 'Calçado para quem trabalha em cozinha',
     resumo:
       'Cozinha profissional junta três coisas que quase nenhum outro ambiente junta: piso molhado com gordura, respingo quente e jornada longa em pé. Isso muda completamente o critério de escolha do calçado.',
@@ -67,7 +67,7 @@ export const PROFISSOES: Profissao[] = [
       {
         titulo: 'Conforto para a jornada inteira',
         texto:
-          'Esse é o item que faz o equipamento ser usado ou abandonado. Peso, amortecimento e a forma do calçado importam tanto quanto a proteção — porque calçado que machuca sai do pé no meio do turno.',
+          'Esse é o item que faz o equipamento ser usado ou abandonado. Peso, amortecimento e a forma do calçado importam tanto quanto a proteção, porque calçado que machuca sai do pé no meio do turno.',
       },
       {
         titulo: 'Biqueira: só se houver risco mecânico',
@@ -77,7 +77,7 @@ export const PROFISSOES: Profissao[] = [
       {
         titulo: 'Numeração e forma do pé',
         texto:
-          'Calçado apertado no fim do turno é calçado errado. O pé incha ao longo do dia, então a prova precisa considerar isso — e a largura da forma importa tanto quanto o número.',
+          'Calçado apertado no fim do turno é calçado errado. O pé incha ao longo do dia, então a prova precisa considerar isso. E a largura da forma importa tanto quanto o número.',
       },
     ],
     categorias: [
@@ -167,7 +167,7 @@ export const PROFISSOES: Profissao[] = [
       {
         titulo: 'Peso e amortecimento',
         texto:
-          'Doze horas em pé cobram do corpo. Calçado leve, com amortecimento adequado e boa acomodação do pé, reduz a fadiga — e é o que faz a pessoa continuar usando.',
+          'Doze horas em pé cobram do corpo. Calçado leve, com amortecimento adequado e boa acomodação do pé, reduz a fadiga. E é o que faz a pessoa continuar usando.',
       },
       {
         titulo: 'Silêncio do solado',
@@ -233,7 +233,7 @@ export const PROFISSOES: Profissao[] = [
       'A luva muda conforme o produto químico. O que observar na luva, no calçado antiderrapante e nos óculos. Para quem trabalha com limpeza em Fortaleza.',
     h1: 'Proteção para quem trabalha com limpeza e conservação',
     resumo:
-      'Quem limpa passa o dia com produto químico na mão e piso molhado sob o pé. São dois riscos diferentes que exigem duas decisões diferentes — e a luva é onde mais se erra.',
+      'Quem limpa passa o dia com produto químico na mão e piso molhado sob o pé. São dois riscos diferentes que exigem duas decisões diferentes, e a luva é onde mais se erra.',
     reconhecimento: [
       'Contato repetido com produto químico de limpeza.',
       'Piso molhado durante boa parte do expediente.',
@@ -241,12 +241,12 @@ export const PROFISSOES: Profissao[] = [
       'Trabalho em pé, com movimentação constante.',
     ],
     emUmaFrase:
-      'A luva precisa ser escolhida pelo produto químico que você usa, não pela aparência — e o calçado precisa de solado antiderrapante, porque o piso está molhado o tempo todo.',
+      'A luva precisa ser escolhida pelo produto químico que você usa, não pela aparência. E o calçado precisa de solado antiderrapante, porque o piso está molhado o tempo todo.',
     oQueObservar: [
       {
         titulo: 'A luva se escolhe pelo produto, não pelo preço',
         texto:
-          'Materiais diferentes resistem a produtos diferentes. Uma luva adequada a um detergente pode se degradar rapidamente em contato com solvente ou desinfetante concentrado. Para definir com segurança é preciso saber qual produto químico é usado e em que concentração — e conferir isso no Certificado de Aprovação da luva.',
+          'Materiais diferentes resistem a produtos diferentes. Uma luva adequada a um detergente pode se degradar rapidamente em contato com solvente ou desinfetante concentrado. Para definir com segurança é preciso saber qual produto químico é usado e em que concentração. E conferir isso no Certificado de Aprovação da luva.',
       },
       {
         titulo: 'Comprimento do punho',
@@ -290,7 +290,7 @@ export const PROFISSOES: Profissao[] = [
       {
         pergunta: 'Qualquer luva serve para produto de limpeza?',
         resposta:
-          'Não. A resistência química varia conforme o material da luva e o produto usado. Uma luva pode ser adequada a um produto e se degradar em contato com outro. Para indicar com segurança é preciso saber quais produtos você usa — e essa informação consta no Certificado de Aprovação da luva.',
+          'Não. A resistência química varia conforme o material da luva e o produto usado. Uma luva pode ser adequada a um produto e se degradar em contato com outro. Para indicar com segurança é preciso saber quais produtos você usa. E essa informação consta no Certificado de Aprovação da luva.',
       },
       {
         pergunta: 'Preciso de óculos de proteção para limpar?',
@@ -317,7 +317,7 @@ export const PROFISSOES: Profissao[] = [
       'Calçado com biqueira, capacete, luva e proteção para poeira. O que muda entre alvenaria, acabamento e estrutura — com técnico de segurança, em Fortaleza.',
     h1: 'Proteção para quem trabalha na construção',
     resumo:
-      'Obra é o ambiente com maior variedade de risco simultâneo: queda de objeto, perfuração, poeira, ruído, sol e trabalho em altura. É onde o conjunto de EPI precisa ser mais completo — e onde a biqueira de proteção deixa de ser opcional.',
+      'Obra é o ambiente com maior variedade de risco simultâneo: queda de objeto, perfuração, poeira, ruído, sol e trabalho em altura. É onde o conjunto de EPI precisa ser mais completo. E onde a biqueira de proteção deixa de ser opcional.',
     reconhecimento: [
       'Queda de material e ferramenta sobre o pé.',
       'Prego, ferro e material perfurante no chão.',
@@ -345,7 +345,7 @@ export const PROFISSOES: Profissao[] = [
       {
         titulo: 'Proteção respiratória para poeira',
         texto:
-          'Corte de material, demolição e manuseio de cimento geram poeira fina. Máscara para partícula tem classificações diferentes de eficiência de filtração — e não protege contra vapor químico.',
+          'Corte de material, demolição e manuseio de cimento geram poeira fina. Máscara para partícula tem classificações diferentes de eficiência de filtração, e não protege contra vapor químico.',
       },
       {
         titulo: 'Luva conforme a tarefa',
@@ -419,7 +419,7 @@ export const PROFISSOES: Profissao[] = [
       'O mesmo equipamento no corpo por oito horas ou mais.',
     ],
     emUmaFrase:
-      'Na indústria o conjunto se define pelo processo — e a escolha depende da avaliação de riscos do posto de trabalho, que é o documento que diz a que você está exposto.',
+      'Na indústria o conjunto se define pelo processo. E a escolha depende da avaliação de riscos do posto de trabalho, que é o documento que diz a que você está exposto.',
     oQueObservar: [
       {
         titulo: 'A avaliação de riscos vem antes do catálogo',
@@ -429,7 +429,7 @@ export const PROFISSOES: Profissao[] = [
       {
         titulo: 'Proteção auditiva: atenuação e uso contínuo',
         texto:
-          'Protetor tipo plug e tipo concha têm características diferentes de atenuação e de conforto. O que atenua mais no papel nem sempre é o que a pessoa consegue usar oito horas seguidas — e protetor que fica no bolso não protege ninguém.',
+          'Protetor tipo plug e tipo concha têm características diferentes de atenuação e de conforto. O que atenua mais no papel nem sempre é o que a pessoa consegue usar oito horas seguidas. E protetor que fica no bolso não protege ninguém.',
       },
       {
         titulo: 'Proteção respiratória conforme o agente',
@@ -449,7 +449,7 @@ export const PROFISSOES: Profissao[] = [
       {
         titulo: 'Compatibilidade entre equipamentos',
         texto:
-          'Capacete, protetor auricular, óculos e respirador são usados juntos. Combinação mal escolhida faz um atrapalhar o outro — e a pessoa acaba tirando um deles.',
+          'Capacete, protetor auricular, óculos e respirador são usados juntos. Combinação mal escolhida faz um atrapalhar o outro, e a pessoa acaba tirando um deles.',
       },
     ],
     categorias: [
@@ -508,7 +508,7 @@ export const PROFISSOES: Profissao[] = [
       'Manuseio constante de material com quina e borda cortante.',
     ],
     emUmaFrase:
-      'Onde há movimentação de carga, o calçado é de segurança, com biqueira — mas como se caminha muito, peso e conforto pesam tanto quanto a proteção.',
+      'Onde há movimentação de carga, o calçado é de segurança, com biqueira. Mas como se caminha muito, peso e conforto pesam tanto quanto a proteção.',
     oQueObservar: [
       {
         titulo: 'Biqueira de proteção',
@@ -592,7 +592,7 @@ export const PROFISSOES: Profissao[] = [
       'Eventual trabalho em altura ou em painel elétrico.',
     ],
     emUmaFrase:
-      'Em manutenção, o conjunto se monta por tarefa — e atividades com eletricidade e com altura têm norma própria, treinamento próprio e não se resolvem por catálogo.',
+      'Em manutenção, o conjunto se monta por tarefa. E atividades com eletricidade e com altura têm norma própria, treinamento próprio e não se resolvem por catálogo.',
     oQueObservar: [
       {
         titulo: 'Risco elétrico exige equipamento específico',

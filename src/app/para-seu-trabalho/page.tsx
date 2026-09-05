@@ -8,7 +8,7 @@ import { JsonLd, schemaFaq } from '@/lib/schema'
 export const metadata: Metadata = {
   title: 'EPI por profissão em Fortaleza',
   description:
-    'Cozinha, enfermagem, limpeza, construção, indústria, logística e manutenção. O que observar na escolha do EPI para cada rotina — e por onde começar.',
+    'Cozinha, enfermagem, limpeza, construção, indústria, logística e manutenção. O que observar na escolha do EPI para cada rotina, e por onde começar.',
   alternates: { canonical: '/para-seu-trabalho/' },
 }
 

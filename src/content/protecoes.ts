@@ -31,7 +31,7 @@ export const PROTECOES: Protecao[] = [
     parte: 'Respiração',
     nome: 'Proteção respiratória',
     resumoCurto:
-      'Poeira, névoa, vapor. O agente presente define o equipamento — e errar aqui é grave.',
+      'Poeira, névoa, vapor. O agente presente define o equipamento, e errar aqui é grave.',
     titleSeo: 'PFF1, PFF2 e PFF3: qual usar para cada risco',
     descricaoSeo:
       'O que decide não é o número da máscara, é o agente presente. Quando cada classe se aplica, e por que peça para poeira não protege contra vapor.',
@@ -49,7 +49,7 @@ export const PROTECOES: Protecao[] = [
       {
         titulo: 'A classificação das peças filtrantes',
         texto:
-          'No Brasil, as peças semifaciais filtrantes para partículas são classificadas em PFF1, PFF2 e PFF3, com eficiências mínimas de filtração crescentes. A classe adequada depende do agente e do nível de exposição — não é uma escolha de preferência.',
+          'No Brasil, as peças semifaciais filtrantes para partículas são classificadas em PFF1, PFF2 e PFF3, com eficiências mínimas de filtração crescentes. A classe adequada depende do agente e do nível de exposição, não é uma escolha de preferência.',
       },
       {
         titulo: 'Vedação no rosto',
@@ -102,10 +102,10 @@ export const PROTECOES: Protecao[] = [
       'Corte, químico, calor, abrasão. Uma luva só quase nunca resolve tudo.',
     titleSeo: 'Luvas de proteção: como escolher pelo risco',
     descricaoSeo:
-      'Corte, produto químico, calor e abrasão pedem luvas diferentes. Como ler o risco antes de escolher — e por que luva que escorrega ou aperta acaba fora da mão.',
+      'Corte, produto químico, calor e abrasão pedem luvas diferentes. Como ler o risco antes de escolher. E por que luva que escorrega ou aperta acaba fora da mão.',
     h1: 'Proteção das mãos',
     resumo:
-      'A mão é a parte do corpo que mais se acidenta no trabalho, e a luva é o EPI em que mais se erra — porque parece que qualquer uma serve. Não serve: a luva se escolhe pelo risco específico da tarefa.',
+      'A mão é a parte do corpo que mais se acidenta no trabalho, e a luva é o EPI em que mais se erra, porque parece que qualquer uma serve. Não serve: a luva se escolhe pelo risco específico da tarefa.',
     emUmaFrase:
       'A luva se escolhe pelo risco: corte, produto químico, calor e abrasão exigem materiais e construções diferentes, e uma luva boa para um risco pode ser inútil para outro.',
     oQueObservar: [
@@ -175,7 +175,7 @@ export const PROTECOES: Protecao[] = [
       {
         titulo: 'O nível de ruído e o tempo de exposição',
         texto:
-          'A escolha depende de quanto ruído existe e por quanto tempo a pessoa fica exposta. Essa informação vem da avaliação do ambiente, feita com medição — não de estimativa.',
+          'A escolha depende de quanto ruído existe e por quanto tempo a pessoa fica exposta. Essa informação vem da avaliação do ambiente, feita com medição, não de estimativa.',
       },
       {
         titulo: 'Inserção ou concha',

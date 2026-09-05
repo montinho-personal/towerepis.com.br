@@ -93,7 +93,7 @@ export const CALCADOS: TipoCalcado[] = [
     resumo:
       'É o calçado com biqueira de proteção contra impacto, destinado a atividades com risco mecânico sobre os dedos do pé. Atende à ABNT NBR ISO 20345 e é o padrão em indústria, construção, logística e manutenção.',
     emUmaFrase:
-      'O que define esse calçado é a biqueira com resistência a impacto de 200 joules — e é importante saber que ela protege os dedos, mas não protege a sola contra perfuração.',
+      'O que define esse calçado é a biqueira com resistência a impacto de 200 joules. E é importante saber que ela protege os dedos, mas não protege a sola contra perfuração.',
     oQueObservar: [
       {
         titulo: 'O material da biqueira',
@@ -183,7 +183,7 @@ export const CALCADOS: TipoCalcado[] = [
       {
         titulo: 'O piso também responde pela aderência',
         texto:
-          'Aderência é relação entre duas superfícies. Piso muito liso, acúmulo de gordura e limpeza inadequada reduzem o desempenho de qualquer solado. O calçado é proteção individual — não substitui a correção do ambiente quando ela é possível.',
+          'Aderência é relação entre duas superfícies. Piso muito liso, acúmulo de gordura e limpeza inadequada reduzem o desempenho de qualquer solado. O calçado é proteção individual. Não substitui a correção do ambiente quando ela é possível.',
       },
     ],
     paraQuem: [
