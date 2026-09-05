@@ -501,6 +501,13 @@ export function Ponte({
 /**
  * Faixa de autoridade.
  *
+ * SEM VÍRGULA ANTES DO COMPLEMENTO FINAL. As duas primeiras liam
+ * "Fundada a convite da 3M, no Ceará" e "Principal parceria em calçado,
+ * hoje" — a vírgula separava o que era uma frase só e dava um tom de
+ * legenda de foto a um rótulo de quatro palavras. Aqui o texto quebra em
+ * três linhas por conta da coluna estreita; a pausa já vem da quebra, e
+ * somar vírgula é pontuar duas vezes.
+ *
  * Grafite, compacta e densa — é a seção que afirma. São só quatro
  * números porque só existem quatro verdadeiros: 1995 (e a 3M na origem), a
  * Bompel como parceria de hoje, os
@@ -510,8 +517,8 @@ export function Ponte({
  */
 export function BarraProva({ continua = false }: { continua?: boolean }) {
   const fatos = [
-    { destaque: '1995', texto: 'Fundada a convite da 3M, no Ceará' },
-    { destaque: 'Bompel', texto: 'Principal parceria em calçado, hoje' },
+    { destaque: '1995', texto: 'Fundada no Ceará a convite da 3M' },
+    { destaque: 'Bompel', texto: 'Principal parceria em calçado hoje' },
     { destaque: '2', texto: 'Sócios — você fala direto com eles' },
     { destaque: 'CE', texto: 'Fortaleza e região' },
   ]

@@ -214,7 +214,7 @@ export default function MarcaBompel() {
                   'A biqueira não protege a sola. Se há prego ou ferro no piso da sua atividade, é preciso um modelo com proteção contra perfuração — e isso consta no CA.',
               },
               {
-                titulo: 'O solado, para o seu piso',
+                titulo: 'O solado certo para o seu piso',
                 texto:
                   'Solado bidensidade em poliuretano é comum na linha. Mas o que importa é o desempenho em resistência ao escorregamento no tipo de piso onde você trabalha, e isso varia por modelo.',
               },
