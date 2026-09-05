@@ -40,6 +40,27 @@ export const metadata: Metadata = {
     url: `${empresa.site}/`,
   },
   robots: { index: true, follow: true },
+
+  /**
+   * VERIFICAÇÃO DE PROPRIEDADE DO GOOGLE SEARCH CONSOLE.
+   *
+   * NÃO REMOVER. O Google reconfere esta etiqueta periodicamente; se ela
+   * sumir, a propriedade é desverificada e o histórico do Search Console
+   * para de ser coletado — inclusive a linha de base que a revisão de 1º de
+   * novembro de 2026 (`docs/10-regra-de-avaliacao.md`) existe para comparar.
+   *
+   * O token é público por natureza: ele vai no HTML de todas as páginas e não
+   * dá acesso a nada. Ele só prova que quem o colocou controla o site — por
+   * isso fica no código, versionado, e não numa variável de ambiente que
+   * ninguém lembra de reconfigurar.
+   *
+   * Fica no layout raiz de propósito. O Google só exige na página inicial,
+   * mas emitir em todas custa 84 bytes por página e sobrevive a qualquer
+   * mudança futura de qual URL é verificada.
+   */
+  verification: {
+    google: 'p3bVQRUfbZ7eNaD_vpUkB4sDKxaEcHiJ8_THNntkXIE',
+  },
 }
 
 export const viewport: Viewport = {
