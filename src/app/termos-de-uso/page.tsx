@@ -57,11 +57,11 @@ export default function TermosDeUso() {
           <h2 id="objetivo">Para que este site serve</h2>
           <p>
             {empresa.site} é o site institucional de <strong>{empresa.razaoSocial}</strong>,
-            CNPJ {empresa.cnpj}, que atua sob o nome fantasia {empresa.nome} —
+            CNPJ {empresa.cnpj}, que atua sob o nome fantasia {empresa.nome}. É uma
             distribuidora de equipamentos de proteção individual em Fortaleza, Ceará, em
-            atividade desde {empresa.fundacao}. Ele apresenta as categorias de produto que a empresa
-            trabalha, publica material técnico sobre escolha de EPI e encaminha o
-            atendimento para o WhatsApp.
+            atividade desde {empresa.fundacao}. O site apresenta as categorias de produto
+            que a empresa trabalha, publica material técnico sobre escolha de EPI e
+            encaminha o atendimento para o WhatsApp.
           </p>
           <p>
             <strong>Não é uma loja virtual.</strong> Não há carrinho, pagamento, cadastro,
@@ -71,21 +71,22 @@ export default function TermosDeUso() {
           <h2 id="aceitacao">Aceitação</h2>
           <p>
             Ao usar o site você concorda com estes termos. Se não concordar com algum
-            ponto, o caminho é não utilizar o site — e, se quiser, falar com a gente sobre
-            o ponto.
+            ponto, o caminho é não usar o site. E, se quiser, falar com a gente sobre esse
+            ponto.
           </p>
 
           <h2 id="conteudo">O conteúdo é informativo</h2>
           <p>
-            Os textos técnicos deste site são escritos e revisados por técnico de segurança
-            do trabalho e citam fonte oficial quando tratam de norma. Ainda assim,{' '}
-            <strong>eles têm caráter informativo e não substituem</strong> a avaliação de
-            riscos do seu ambiente de trabalho, laudo, programa de segurança ou a
-            orientação de profissional habilitado que conheça a sua operação.
+            Os textos técnicos deste site são escritos e revisados por técnico de
+            segurança do trabalho, e citam fonte oficial quando tratam de norma. Ainda
+            assim, <strong>eles têm caráter informativo e não substituem</strong> a
+            avaliação de riscos do seu ambiente de trabalho, o laudo, o programa de
+            segurança nem a orientação de profissional habilitado que conheça a sua
+            operação.
           </p>
           <p>
-            A definição do que é obrigatório em cada função depende dessa avaliação, e não
-            de um texto genérico — inclusive dos nossos.
+            O que é obrigatório em cada função depende dessa avaliação, e não de um texto
+            genérico. Os nossos inclusive.
           </p>
           <p>
             Normas técnicas e regulamentadoras são atualizadas. Sempre que uma informação
@@ -108,9 +109,8 @@ export default function TermosDeUso() {
           <p>
             Os botões de WhatsApp levam você para fora deste site, para um aplicativo
             operado por terceiro, com termos e política de privacidade próprios. A mensagem
-            já aparece escrita para poupar seu tempo, e{' '}
-            <strong>você pode revisar, editar ou apagar antes de enviar</strong> — nada é
-            enviado automaticamente.
+            já aparece escrita para poupar seu tempo. <strong>Você pode revisar, editar
+            ou apagar antes de enviar</strong>, e quem envia é você.
           </p>
 
           <h2 id="propriedade">Propriedade do material</h2>
@@ -153,8 +153,8 @@ export default function TermosDeUso() {
             controle. Não garantimos disponibilidade ininterrupta.
           </p>
           <p>
-            O conteúdo também pode ser alterado, atualizado ou removido a qualquer momento
-            — o que é frequente em material técnico, e desejável.
+            O conteúdo também pode ser alterado, atualizado ou removido a qualquer
+            momento. Em material técnico isso é frequente, e é desejável.
           </p>
 
           <h2 id="externos">Links externos</h2>
@@ -202,10 +202,10 @@ export default function TermosDeUso() {
             <Link href="/contato/">página de contato</Link>.
           </p>
           <p className="text-sm">
-            <strong>[VALIDAÇÃO JURÍDICA]</strong> — não há cláusula de eleição de foro
-            nestes termos. Ela só deve ser incluída com redação de profissional da área:
-            foro escolhido de forma a dificultar o acesso do consumidor à justiça é nulo, e
-            escrever uma cláusula dessas por conta própria criaria risco em vez de
+            <strong>[VALIDAÇÃO JURÍDICA]</strong> Não há cláusula de eleição de foro
+            nestes termos, e ela só deve ser incluída com redação de profissional da área.
+            Foro escolhido de forma a dificultar o acesso do consumidor à justiça é nulo,
+            então escrever uma cláusula dessas por conta própria criaria risco em vez de
             proteção. Sem ela, valem as regras de competência da legislação.
           </p>
 

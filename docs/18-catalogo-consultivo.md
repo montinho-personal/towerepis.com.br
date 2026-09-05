@@ -1,4 +1,19 @@
-# Catálogo consultivo — auditoria e arquitetura
+# Catálogo consultivo — auditoria, arquitetura e a decisão de não fazer
+
+> **DECIDIDO EM 5 DE SETEMBRO DE 2026: a Tower não vai de catálogo.**
+>
+> A auditoria abaixo foi feita, a arquitetura foi desenhada e o modelo de dados
+> chegou a ser escrito e a compilar. Diante do custo à vista, o cliente decidiu
+> seguir com a estratégia atual — conteúdo e conhecimento levando ao WhatsApp.
+>
+> **Este documento fica.** Ele é a resposta pronta para quando a pergunta
+> voltar, e ela volta: "por que o site não tem catálogo?". A resposta está aqui,
+> com o levantamento que a sustenta.
+>
+> O `src/content/produtos.ts` foi removido no mesmo dia, porque modelo de dados
+> sem uso é dívida. Ele está no commit `46e3ab3`, pronto para voltar se a
+> decisão mudar.
+
 
 Auditoria de 5 de setembro de 2026, feita antes de qualquer alteração de código,
 como o próprio pedido determinava. O relatório legível está no artefato

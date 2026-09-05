@@ -68,7 +68,7 @@ export default function Privacidade() {
             <li>
               <strong>Só usa cookie se você aceitar.</strong> São dois, os do Google
               Analytics, e servem para medir audiência. Enquanto você não responder ao
-              banner, e para sempre se você recusar, não há cookie nenhum — nem de
+              banner, e para sempre se você recusar, não há cookie nenhum. Nem de
               marketing, nem de preferência.
             </li>
             <li>
@@ -83,14 +83,14 @@ export default function Privacidade() {
             </li>
             <li>
               <strong>Não guarda o que você escreve.</strong> O construtor de orçamento
-              monta a mensagem no seu próprio navegador. Nada é enviado para servidor nosso
-              — nem quando você preenche, nem quando desiste.
+              monta a mensagem no seu próprio navegador. Nada é enviado para servidor
+              nosso. Nem quando você preenche, nem quando desiste.
             </li>
           </ul>
           <p>
-            Isso foi verificado em navegador, em nove páginas do site e nas três situações
-            possíveis — sem responder ao banner, depois de recusar e depois de aceitar. Não
-            é promessa: se um dia mudar, esta página muda junto e a data lá embaixo muda
+            Isso foi verificado em navegador, em nove páginas do site, nas três situações
+            possíveis: sem responder ao banner, depois de recusar e depois de aceitar. Não
+            é promessa. Se um dia mudar, esta página muda junto, e a data lá embaixo
             também.
           </p>
 
@@ -98,14 +98,14 @@ export default function Privacidade() {
           <p>
             O controlador dos dados é <strong>{empresa.razaoSocial}</strong>, inscrita no
             CNPJ sob o nº {empresa.cnpj}, que atua sob o nome fantasia{' '}
-            {empresa.nome} — distribuidora de equipamentos de proteção individual em
+            {empresa.nome}. É uma distribuidora de equipamentos de proteção individual em
             Fortaleza, Ceará, em atividade desde {empresa.fundacao}. O site é{' '}
             {empresa.site}.
           </p>
           <p>
             A empresa tem duas pessoas, Helano e Cristina, e qualquer pedido sobre dados
-            chega direto a uma delas. Não há departamento nem intermediário — o que é uma
-            vantagem para quem pergunta, e a razão de o canal abaixo ser o e-mail dos dois.
+            chega direto a uma delas. Não há departamento nem intermediário. É bom para
+            quem pergunta, e é a razão de o canal abaixo ser o e-mail dos dois.
           </p>
 
           <h2 id="dados">Que dados são tratados</h2>
@@ -132,18 +132,18 @@ export default function Privacidade() {
           <h3>O que o servidor registra sozinho</h3>
           <p>
             Como qualquer site, este é servido por uma infraestrutura de hospedagem que
-            registra dados técnicos das requisições — endereço IP, data e hora, página
-            solicitada, tipo de navegador. Esse registro é do provedor de hospedagem, tem
-            finalidade de operação e segurança, e a Tower não o usa para identificar
-            visitantes nem para montar perfil.
+            registra dados técnicos das requisições: endereço IP, data e hora, página
+            solicitada, tipo de navegador. Esse registro é do provedor de hospedagem e
+            serve para operação e segurança. A Tower não o usa para identificar visitantes
+            nem para montar perfil.
           </p>
 
           <h3>O que a conversa no WhatsApp cria</h3>
           <p>
             Quando você clica em um botão de WhatsApp, passa a existir uma conversa: o seu
             número de telefone, o nome do seu perfil e o conteúdo do que vocês trocarem. É
-            aí que os seus dados de contato realmente chegam à Tower — e é o único ponto
-            do site em que isso acontece.
+            aí que os seus dados de contato realmente chegam à Tower, e é o único ponto do
+            site em que isso acontece.
           </p>
 
           <h2 id="finalidades">Para que servem</h2>
@@ -153,7 +153,7 @@ export default function Privacidade() {
               principal, e praticamente a única.
             </li>
             <li>
-              <strong>Continuar o atendimento comercial</strong> — acompanhar um pedido,
+              <strong>Continuar o atendimento comercial:</strong> acompanhar um pedido,
               tirar dúvida sobre item entregue, fazer reposição.
             </li>
             <li>
@@ -161,13 +161,13 @@ export default function Privacidade() {
               técnicos do provedor de hospedagem.
             </li>
             <li>
-              <strong>Cumprir obrigação legal</strong>, quando a lei exigir guardar
+              <strong>Cumprir obrigação legal</strong>, quando a lei mandar guardar
               documento fiscal ou informação de uma venda.
             </li>
           </ul>
           <p>
             Não fazemos publicidade comportamental, não vendemos base de contatos e não
-            enviamos e-mail marketing — não temos lista de e-mail.
+            enviamos e-mail marketing. Nem temos lista de e-mail.
           </p>
 
           <h2 id="bases">Bases legais</h2>
@@ -177,24 +177,24 @@ export default function Privacidade() {
           </p>
           <ul>
             <li>
-              <strong>Procedimentos preliminares relacionados a contrato</strong> — quando
-              você pede um orçamento, o tratamento dos dados dessa conversa existe para
-              atender ao seu próprio pedido.
+              <strong>Procedimentos preliminares relacionados a contrato.</strong> Quando
+              você pede um orçamento, tratar os dados daquela conversa serve para atender
+              ao seu próprio pedido.
             </li>
             <li>
-              <strong>Execução de contrato</strong> — quando a conversa vira uma compra.
+              <strong>Execução de contrato.</strong> Quando a conversa vira uma compra.
             </li>
             <li>
-              <strong>Cumprimento de obrigação legal ou regulatória</strong> — guarda de
+              <strong>Cumprimento de obrigação legal ou regulatória.</strong> Guarda de
               documentos fiscais e afins.
             </li>
             <li>
-              <strong>Legítimo interesse</strong> — registros técnicos de segurança e
-              operação do site, que são os menos invasivos possíveis e não servem para
+              <strong>Legítimo interesse.</strong> Os registros técnicos de segurança e
+              operação do site. São os menos invasivos possíveis e não servem para
               perfilar ninguém.
             </li>
             <li>
-              <strong>Consentimento</strong> — a medição de audiência, e só ela.
+              <strong>Consentimento.</strong> A medição de audiência, e só ela.
             </li>
           </ul>
           <p>
@@ -207,10 +207,9 @@ export default function Privacidade() {
           </p>
           <p>
             A Tower <strong>não</strong> apoia a medição em legítimo interesse, que seria
-            o caminho para não precisar perguntar. A leitura do Guia Orientativo sobre
-            Cookies da ANPD é a de que cookie não essencial depende de consentimento, e
-            entre a leitura mais confortável e a mais protetiva a escolha aqui é a
-            segunda.
+            o caminho para não precisar perguntar. O Guia Orientativo sobre Cookies da
+            ANPD trata cookie não essencial como dependente de consentimento. Entre a
+            leitura mais confortável e a mais protetiva, a escolha aqui é a segunda.
           </p>
           <p className="text-sm">
             A classificação definitiva das bases legais é matéria jurídica e deve ser
@@ -220,7 +219,7 @@ export default function Privacidade() {
           <h2 id="cookies">Cookies e medição de audiência</h2>
           <AvisoMedicaoInativa />
           <p>
-            O site usa <strong>Google Analytics 4</strong> para medir audiência —{' '}
+            O site usa <strong>Google Analytics 4</strong> para medir audiência,{' '}
             <strong>e só depois de você aceitar</strong>. Enquanto você não responder ao
             banner, e para sempre se você recusar, nenhum cookie é gravado e o script do
             Google não chega a ser baixado.
@@ -232,15 +231,15 @@ export default function Privacidade() {
             permanece negado mesmo para quem aceita.
           </p>
           <p>
-            Os dados que o Google recebe são de comportamento no site — páginas vistas,
-            origem da visita, cliques nos botões de WhatsApp, tipo de dispositivo,
-            localização aproximada derivada do IP. <strong>Nada do que você digita no
-            construtor de orçamento é enviado</strong> junto: os eventos registram que um
-            botão foi usado e em que página, nunca o conteúdo dos campos.
+            O que o Google recebe é comportamento no site: páginas vistas, origem da
+            visita, cliques nos botões de WhatsApp, tipo de dispositivo e localização
+            aproximada derivada do IP. <strong>Nada do que você digita no construtor de
+            orçamento vai junto.</strong> Os eventos registram que um botão foi usado e em
+            que página, nunca o conteúdo dos campos.
           </p>
           <p>
             A tabela completa, com nome, duração e finalidade de cada cookie, está na{' '}
-            <Link href="/politica-de-cookies/">política de cookies</Link> — junto com o
+            <Link href="/politica-de-cookies/">política de cookies</Link>, junto com o
             controle para mudar a sua escolha a qualquer momento.
           </p>
 
@@ -267,16 +266,16 @@ export default function Privacidade() {
               <tr>
                 <td>Google (Analytics 4)</td>
                 <td>
-                  Comportamento no site e IP — <strong>apenas se você aceitar</strong>
+                  Comportamento no site e IP, <strong>apenas se você aceitar</strong>
                 </td>
                 <td>Medir quais conteúdos geram conversa</td>
               </tr>
             </tbody>
           </table>
           <p>
-            É a lista inteira. Não há CRM, não há plataforma de automação, não há gateway
-            de pagamento — o site não vende online — e a única ferramenta de análise é a
-            que está na linha do Google, condicionada ao seu aceite.
+            É a lista inteira. Não há CRM, não há plataforma de automação e não há
+            gateway de pagamento, porque o site não vende online. A única ferramenta de
+            análise é a da linha do Google, condicionada ao seu aceite.
           </p>
           <p>
             Ao abrir o WhatsApp você entra em um serviço de terceiro, com política de
@@ -286,17 +285,17 @@ export default function Privacidade() {
           <h2 id="internacional">Fora do Brasil</h2>
           <p>
             A hospedagem do site, o WhatsApp e o Google Analytics são serviços de empresas
-            estrangeiras, e o tratamento pode ocorrer em servidores fora do Brasil —
+            estrangeiras, e o tratamento pode ocorrer em servidores fora do Brasil,
             inclusive nos Estados Unidos. A LGPD admite transferência internacional em
-            hipóteses específicas, e a adequação dessa transferência depende dos termos de
-            cada fornecedor.
+            hipóteses específicas. A adequação de cada uma depende dos termos do
+            fornecedor.
           </p>
           <p>
             No caso do Google Analytics, essa transferência só acontece se você aceitar a
-            medição — e deixa de acontecer a partir do momento em que você recusar.
+            medição. E para no momento em que você recusar.
           </p>
           <p className="text-sm">
-            <strong>[VALIDAÇÃO JURÍDICA]</strong> — a hipótese legal aplicável a essas
+            <strong>[VALIDAÇÃO JURÍDICA]</strong> A hipótese legal aplicável a essas
             transferências e a redação desta seção devem ser conferidas por profissional
             da área.
           </p>
@@ -317,16 +316,16 @@ export default function Privacidade() {
               e comercial exigir.
             </li>
             <li>
-              <strong>Registros técnicos do provedor:</strong> pelo prazo definido por ele,
-              que não é controlado pela Tower.
+              <strong>Registros técnicos do provedor:</strong> pelo prazo que ele define.
+              A Tower não controla esse prazo.
             </li>
           </ul>
 
           <h2 id="seguranca">Segurança</h2>
           <p>
-            O site é servido apenas por conexão criptografada (HTTPS), não tem área
-            administrativa exposta, não tem banco de dados de visitantes e envia cabeçalhos
-            de segurança que reduzem tipos comuns de abuso. A superfície de risco é pequena
+            O site é servido apenas por conexão criptografada (HTTPS). Não tem área
+            administrativa exposta nem banco de dados de visitantes, e envia cabeçalhos de
+            segurança que reduzem tipos comuns de abuso. A superfície de risco é pequena
             porque a quantidade de dado tratado é pequena.
           </p>
           <p>
