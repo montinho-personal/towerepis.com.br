@@ -158,8 +158,13 @@ for (const rota of rotas) {
     // Fora do medidor: o que não é prosa — navegação, rótulo de botão,
     // tabela de dados, olho de seção. Escrevem-se de formas diferentes, e
     // misturar rótulo com parágrafo não mede nem um nem outro.
-    c.querySelectorAll('nav, table, script, style, [data-barra], .eyebrow, button').forEach(
-      (el) => el.remove(),
+    // A barra contextual não entra na lista porque ela vive FORA do <main>
+    // — foi conferido no DOM. O seletor `[data-barra]` que estava aqui não
+    // casava com nada: a barra se identifica por `aria-label`. Seletor morto
+    // num medidor é pior que seletor ausente, porque dá a impressão de que
+    // algo foi excluído quando não foi.
+    c.querySelectorAll('nav, table, script, style, .eyebrow, button').forEach((el) =>
+      el.remove(),
     )
     // Prosa é parágrafo e item de lista. Título fica de fora: é rótulo, não
     // leitura, e a contagem dele puxaria a média para baixo de graça.
