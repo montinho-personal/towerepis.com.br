@@ -281,7 +281,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'A validade do CA está ligada à autorização daquele modelo no mercado, e por isso ela pesa mais na compra do que na prateleira. Item que ainda vai ser adquirido ou entregue precisa ter certificado vigente. Item que já está em uso é uma pergunta com resposta mais longa, e ela está em <a href="/conhecimento/ca-vencido-o-epi-pode-continuar-em-uso/">CA vencido: o EPI pode continuar em uso?</a>.',
+          'A validade do CA está ligada à autorização daquele modelo no mercado, e por isso ela pesa mais na compra do que na prateleira. Na hora de comprar, o número deve ser <a href="/conhecimento/como-escolher-fornecedor-de-epi/">pedido já na proposta</a>. Item que ainda vai ser adquirido ou entregue precisa ter certificado vigente. Item que já está em uso é uma pergunta com resposta mais longa, e ela está em <a href="/conhecimento/ca-vencido-o-epi-pode-continuar-em-uso/">CA vencido: o EPI pode continuar em uso?</a>.',
       },
       {
         tipo: 'p',
@@ -1463,7 +1463,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Peça ao fornecedor um par de amostra do modelo escolhido por faixa de numeração e deixe a equipe experimentar. É o passo que ninguém quer fazer e o que mais evita troca: cada modelo tem uma forma, e o mesmo número pode calçar diferente de um modelo para outro — inclusive entre biqueira de aço e de composite, porque <a href="/conhecimento/biqueira-de-composite-ou-de-aco-qual-escolher/">a de composite é mais volumosa</a>.',
+          'Peça ao fornecedor um par de amostra do modelo escolhido por faixa de numeração e deixe a equipe experimentar. É o passo que ninguém quer fazer e o que mais evita troca, sobretudo <a href="/conhecimento/primeiro-pedido-de-epi-como-montar/">no primeiro pedido da equipe</a>: cada modelo tem uma forma, e o mesmo número pode calçar diferente de um modelo para outro — inclusive entre biqueira de aço e de composite, porque <a href="/conhecimento/biqueira-de-composite-ou-de-aco-qual-escolher/">a de composite é mais volumosa</a>.',
       },
       {
         tipo: 'h3',
@@ -2576,6 +2576,295 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'O número do CA precisa aparecer no registro de entrega?',
         resposta:
           'É o que torna o registro útil depois. Anotado com a data, ele mostra qual equipamento foi entregue e que o certificado estava vigente naquele momento — que é exatamente o dado pedido quando a pergunta sobre vencimento aparece meses ou anos mais tarde.',
+      },
+    ],
+  },
+  {
+    slug: 'como-escolher-fornecedor-de-epi',
+    titulo: 'Como escolher um fornecedor de EPI',
+    tituloSeo: 'Como escolher fornecedor de EPI',
+    resumo:
+      'Preço igual em três propostas quase nunca é preço do mesmo item. O que pedir antes de fechar, como conferir sozinho, e quando um fornecedor pequeno não é a melhor escolha.',
+    descricaoSeo:
+      'O que exigir de um fornecedor de EPI antes de fechar: CA na proposta, descrição do que foi aprovado, reposição e troca de numeração. Com os sinais de risco.',
+    publicado: '2026-09-05',
+    atualizado: '2026-09-05',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Compra',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Um fornecedor de EPI precisa provar três coisas: que o item tem Certificado de Aprovação vigente, que esse CA cobre o risco da sua atividade, e o que acontece quando a numeração não serve. Preço e tamanho de catálogo vêm depois disso.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem compra EPI pela primeira vez costuma cotar como cota material de escritório. Manda a lista, junta três preços, fecha no menor. O problema aparece depois, e quase sempre no mesmo lugar: o item chegou, mas não é o item.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Três propostas com o mesmo preço quase nunca são do mesmo produto. Uma pode ser de um modelo com solado ensaiado para piso oleoso, outra de um modelo aprovado só para piso seco. As duas se chamam "botina de segurança" na planilha.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que pedir antes de fechar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>O número do CA de cada item, na proposta.</strong> Não depois, na nota. Na proposta, para dar tempo de conferir.',
+          '<strong>A descrição do que aquele CA aprovou</strong>, e não só o número. É esse texto que precisa bater com o risco da sua atividade.',
+          '<strong>A grade de numeração disponível</strong> e o prazo de reposição de cada faixa. Numeração extrema costuma ser o que atrasa.',
+          '<strong>O que acontece quando um par não serve.</strong> Pergunte antes, por escrito, e antes de precisar.',
+          '<strong>Quem responde.</strong> Se a resposta técnica depende de escalar para o fabricante, o prazo da sua dúvida é o prazo dele.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Nenhum desses cinco custa dinheiro ao fornecedor. Um fornecedor que trava em qualquer um deles está dizendo alguma coisa.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Como conferir sozinho, em dois minutos',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Com o número do CA em mãos, a conferência é pública e independe do vendedor. A consulta oficial mostra o equipamento, o fabricante, a validade e a descrição do que foi aprovado. O caminho está em <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">o que é o CA e como consultar</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Confira dois pontos. Primeiro, se o certificado está vigente. Segundo, e mais importante, se a descrição bate com o seu risco. Um respirador aprovado para poeira tem CA em dia e não serve para vapor químico.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Os sinais de que vai dar problema',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['O sinal', 'O que costuma estar por trás', 'O que perguntar'],
+        linhas: [
+          ['A proposta não traz CA', 'Revenda que não sabe a procedência do que vende', 'Peça o CA de cada item por escrito'],
+          ['Preço muito abaixo dos outros dois', 'Modelo diferente, ou grade incompleta escondida no total', 'Qual modelo exato, e quais numerações entram'],
+          ['"Tem tudo, de todas as marcas"', 'Catálogo de intermediário, sem estoque próprio', 'Qual o prazo real para as numerações que você precisa'],
+          ['Resposta técnica demora dias', 'Não há ninguém de segurança do trabalho do outro lado', 'Quem responde dúvida técnica, e em quanto tempo'],
+          ['Troca de numeração "depende"', 'Não existe política, e você vai descobrir isso com o par no pé de alguém', 'Como funciona a troca, por escrito, antes de fechar'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quando um fornecedor pequeno não é a melhor escolha',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Esta parte é incômoda de escrever e é a mais útil do texto. A Tower é uma empresa de duas pessoas, e há casos em que a resposta honesta é procurar outro caminho.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Volume muito grande com prazo curto, do tipo que exige estoque parado esperando o seu pedido.',
+          'Operação em vários estados, com entrega simultânea e nota por unidade.',
+          'Exigência de estoque consignado dentro da sua empresa.',
+          'Item muito específico de uma linha que o fornecedor não trabalha. Nesse caso, comprar direto de quem representa aquela linha sai melhor.',
+          'Contrato que exige porte, certificação de fornecedor ou participação em pregão.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'E quando ele é',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Equipe pequena ou média, em que a dúvida técnica aparece mais que o volume.',
+          'Numeração que precisa de ajuste, e alguém disposto a resolver par a par.',
+          'Atividade em que a escolha errada é cara, e vale ter quem entenda do risco atendendo direto.',
+          'Reposição periódica, em que conhecer o histórico da equipe economiza tempo a cada pedido.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale dizer com todas as letras: preço importa. Só que preço de EPI só é comparável entre itens equivalentes, e a equivalência se estabelece pelo CA. Comparar antes disso é comparar duas coisas diferentes com o mesmo nome.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/como-atendemos/',
+      rotulo: 'Ver como a Tower atende empresas',
+    },
+    contexto: 'empresas',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Estou cotando EPI para a minha equipe e queria entender como vocês trabalham antes de pedir preço.',
+    ctaTitulo: 'Está cotando com mais de um fornecedor?',
+    ctaTexto:
+      'Conte o que a sua equipe faz e quantas pessoas são. A gente responde com o CA de cada item, e diz na hora se o que você precisa não é o nosso caso.',
+    perguntas: [
+      {
+        pergunta: 'O fornecedor tem que informar o CA na proposta?',
+        resposta:
+          'A NR-6 condiciona a venda e o fornecimento de EPI à indicação do Certificado de Aprovação, então o número existe e é identificável. Pedir na proposta, e não só na nota, é o que dá tempo de conferir antes de fechar. Fornecedor sério manda sem reclamar.',
+      },
+      {
+        pergunta: 'Vale pedir amostra antes de fechar?',
+        resposta:
+          'Em calçado, quase sempre vale. Cada modelo tem uma forma, e o mesmo número calça diferente de um modelo para outro. Um par de amostra por faixa de numeração evita a troca depois, que é o custo escondido do primeiro pedido.',
+      },
+      {
+        pergunta: 'Comparar três propostas pelo preço funciona?',
+        resposta:
+          'Só depois que as três forem do mesmo item. A equivalência se estabelece pelo número do CA e pela descrição do que ele aprovou. Duas botinas com o mesmo nome comercial e CAs diferentes podem ser aprovadas para riscos diferentes.',
+      },
+    ],
+  },
+  {
+    slug: 'primeiro-pedido-de-epi-como-montar',
+    titulo: 'Como montar o primeiro pedido de EPI da equipe',
+    tituloSeo: 'Primeiro pedido de EPI da equipe',
+    resumo:
+      'Cinco dados resolvem. Quatro deles você já sabe de cabeça, e o quinto é o que trava todo mundo: a numeração.',
+    descricaoSeo:
+      'Os cinco dados que fazem o primeiro pedido de EPI andar, na ordem em que se levantam. E o que não precisa estar pronto para pedir orçamento.',
+    publicado: '2026-09-05',
+    atualizado: '2026-09-05',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Compra',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'O primeiro pedido trava sempre no mesmo ponto: a grade de numeração. Levantar pessoa a pessoa antes de pedir preço evita a troca que vem depois. É a parte chata, e é a que mais economiza.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A primeira compra de EPI de uma equipe costuma começar por uma lista de itens e terminar em três semanas de troca de mensagens. Não porque seja difícil, mas porque os dados chegam picados.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Com cinco informações o pedido sai numa conversa só. Quatro você já sabe. A quinta dá trabalho.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Os cinco dados',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['O dado', 'A pergunta que resolve', 'Onde isso já está explicado'],
+        linhas: [
+          ['A atividade de cada função', 'O que essa pessoa faz durante o turno, e onde ela pisa', 'Comece pela função, não pela pessoa'],
+          ['O risco', 'O que pode acontecer com ela: queda de objeto, respingo, escorregamento, ruído', 'Vem da avaliação de riscos da empresa'],
+          ['Quantas pessoas por função', 'Não o total da empresa. O total de cada função', 'É o que separa dois itens diferentes'],
+          ['A grade de numeração', 'Quantos pares em cada número, par a par', 'Como definir a grade da equipe'],
+          ['O prazo', 'Para quando precisa, e se é tudo junto ou em etapas', 'Muda a forma de fechar o pedido'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Comece pela função, não pela pessoa',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Listar trinta nomes gera trinta linhas e nenhuma decisão. Listar seis funções gera seis decisões, e cada uma vale para todo mundo daquela função. A pessoa só volta a importar na hora da numeração.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Se duas funções pisam no mesmo chão e correm o mesmo risco, provavelmente usam o mesmo calçado. Se uma delas entra em câmara fria e a outra não, já são duas.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A grade é o passo que trava',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É o único dos cinco que não se resolve numa reunião. Precisa perguntar a cada pessoa, e de preferência conferir, porque muita gente informa o número que usa em tênis. O caminho completo está em <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">como definir a grade de numeração de uma equipe</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale o atalho: se a equipe é grande, comece pelas funções mais críticas e mande o resto depois. Meia grade certa anda mais rápido que a grade inteira estimada.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quanto pedir da primeira vez',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na primeira compra não existe histórico de desgaste, então a conta é diferente da reposição. O que costuma funcionar é fechar o necessário para todo mundo mais uma reserva pequena de numeração comum, e observar o desgaste real antes de definir a periodicidade. A conta completa está em <a href="/conhecimento/quantos-pares-por-ano-calcular-a-reposicao/">quantos pares por ano</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que não precisa estar pronto',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>O nome do produto.</strong> Descrever a atividade basta. Quem vende é que precisa saber o nome.',
+          '<strong>O número do CA.</strong> Ele vem no orçamento, e serve justamente para você conferir depois.',
+          '<strong>A grade inteira.</strong> Dá para pedir com o que já tem e completar antes de fechar.',
+          '<strong>Uma decisão sobre marca.</strong> A marca é consequência do risco, e não o contrário.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O que precisa estar pronto é o entendimento do risco. Isso vem da avaliação de riscos da sua empresa, feita por profissional habilitado, e nenhum fornecedor substitui esse documento.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
+      },
+    ],
+    paginaComercial: {
+      href: '/orcamento/',
+      rotulo: 'Montar o orçamento',
+    },
+    contexto: 'orcamento',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. É a primeira vez que compro EPI para a equipe e queria ajuda para montar o pedido.',
+    ctaTitulo: 'É o primeiro pedido da equipe?',
+    ctaTexto:
+      'Conte quantas funções existem e o que cada uma faz. A gente ajuda a montar a lista antes de falar em preço, e a grade pode chegar depois.',
+    perguntas: [
+      {
+        pergunta: 'Dá para começar só por uma função?',
+        resposta:
+          'Dá, e costuma ser o caminho mais rápido em equipe grande. Feche a função mais crítica primeiro, veja como o par se comporta em duas semanas de uso real, e use isso para decidir o resto. Errar em seis pares é barato; errar em sessenta, não.',
+      },
+      {
+        pergunta: 'Como levantar a numeração sem medir todo mundo?',
+        resposta:
+          'Perguntando, com uma ressalva. Muita gente informa o número que calça em tênis, e calçado profissional costuma calçar diferente. Um par de amostra por faixa, deixado com a equipe por alguns dias, resolve o que a lista sozinha não resolve.',
+      },
+      {
+        pergunta: 'Preciso saber o nome do produto para pedir?',
+        resposta:
+          'Não. Descrever o que a pessoa faz e onde ela trabalha é suficiente, e é uma informação melhor do que o nome do produto. Quem escolhe pelo nome que ouviu falar costuma escolher pelo item errado.',
       },
     ],
   },

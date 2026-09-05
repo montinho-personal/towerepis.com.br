@@ -214,6 +214,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Achou um CA vencido no seu estoque?',
     rotulo: 'Mandar a lista de CAs',
   },
+  'como-escolher-fornecedor-de-epi': {
+    chamada: 'Está cotando com mais de um fornecedor?',
+    rotulo: 'Pedir uma proposta',
+  },
+  'primeiro-pedido-de-epi-como-montar': {
+    chamada: 'É o primeiro pedido da sua equipe?',
+    rotulo: 'Montar a lista junto',
+  },
 }
 
 /**
