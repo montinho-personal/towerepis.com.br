@@ -95,7 +95,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Cozinha profissional reúne três condições que quase nenhum outro ambiente reúne ao mesmo tempo: piso permanentemente molhado e engordurado, risco de respingo de líquido quente e uma jornada longa passada quase inteiramente em pé. Cada uma dessas condições puxa a escolha do calçado para um lado diferente, e é por isso que a decisão costuma confundir.',
+          'Cozinha profissional junta três condições que quase nenhum outro ambiente junta ao mesmo tempo. Piso sempre molhado e engordurado. Risco de respingo quente. E uma jornada longa quase toda em pé. Cada uma puxa a escolha para um lado diferente, e é por isso que a decisão confunde.',
       },
       {
         tipo: 'h2',
@@ -104,7 +104,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'O acidente mais frequente em cozinha é a queda por escorregamento. Isso coloca a resistência ao escorregamento acima de qualquer outra característica — inclusive acima da biqueira, que muita gente considera sinônimo de proteção.',
+          'O acidente mais frequente em cozinha é a queda por escorregamento. Isso coloca a resistência ao escorregamento acima de qualquer outra característica. Inclusive acima da biqueira, que muita gente confunde com proteção.',
       },
       {
         tipo: 'p',
@@ -131,7 +131,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Este é o ponto que a maioria das listas ignora. Um calçado que machuca no meio do turno é retirado, trocado por chinelo ou substituído por um tênis comum na primeira oportunidade. A partir daí, a proteção deixa de existir — independentemente de quanto ela custou.',
+          'Este é o ponto que a maioria das listas ignora. Um calçado que machuca no meio do turno é retirado, trocado por chinelo ou substituído por um tênis comum na primeira oportunidade. A partir daí, a proteção deixa de existir. Não importa quanto ela custou.',
       },
       {
         tipo: 'p',
@@ -150,7 +150,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Ou seja: a pergunta não é "qual protege mais", e sim "existe risco de algo pesado cair sobre o pé na minha rotina?". Se existe, a conversa muda para <a href="/calcados/seguranca/">calçado de segurança</a>, e calçado de segurança. Se não existe, um calçado ocupacional bem escolhido tende a proteger melhor no que importa aqui — aderência — e a ser mais leve para a jornada em pé.',
+          'Ou seja: a pergunta não é "qual protege mais", e sim "existe risco de algo pesado cair sobre o pé na minha rotina?". Se existe, a conversa muda para <a href="/calcados/seguranca/">calçado de segurança</a>, e calçado de segurança. Se não existe, um calçado ocupacional bem escolhido protege melhor no que importa aqui: aderência. E pesa menos na jornada em pé.',
       },
       {
         tipo: 'h2',
@@ -175,7 +175,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Tênis de uso diário não é projetado para piso molhado com gordura, absorve líquido, é difícil de higienizar e não tem Certificado de Aprovação como equipamento de proteção individual. Quando o calçado é obrigatório na atividade, essa última parte deixa de ser detalhe e passa a ser exigência.',
+          'Tênis de uso diário não foi feito para piso molhado com gordura. Absorve líquido, é difícil de higienizar e não tem Certificado de Aprovação como EPI. Quando o calçado é obrigatório na atividade, essa última parte deixa de ser detalhe e vira exigência.',
       },
     ],
     fontes: [
@@ -498,7 +498,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'É todo dispositivo ou produto de uso individual utilizado pelo trabalhador, destinado à proteção contra riscos capazes de ameaçar a sua segurança e a sua saúde no trabalho. É por isso que uniforme comum e EPI não são a mesma coisa — a distinção aparece justamente na finalidade de proteção contra um risco.',
+          'É todo dispositivo ou produto de uso individual utilizado pelo trabalhador, destinado à proteção contra riscos capazes de ameaçar a sua segurança e a sua saúde no trabalho. É por isso que uniforme comum e EPI não são a mesma coisa. O que separa os dois é a finalidade de proteger contra um risco.',
       },
       {
         tipo: 'h2',
@@ -541,7 +541,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Comprar pelo preço e descobrir depois que o equipamento não é adequado ao risco. Um <a href="/protecao/respiratoria/">respirador aprovado para poeira</a> não resolve exposição a vapor químico; uma luva aprovada para manuseio geral não substitui resistência química específica. O CA descreve para que o equipamento foi aprovado — é esse texto que precisa bater com a avaliação de riscos da empresa.',
+          'Comprar pelo preço e descobrir depois que o equipamento não é adequado ao risco. Um <a href="/protecao/respiratoria/">respirador aprovado para poeira</a> não resolve exposição a vapor químico; uma luva aprovada para manuseio geral não substitui resistência química específica. O CA descreve para que o equipamento foi aprovado. É esse texto que precisa bater com a avaliação de riscos da empresa.',
       },
       {
         tipo: 'p',
@@ -580,7 +580,7 @@ export const ARTIGOS: Artigo[] = [
       {
         pergunta: 'A empresa precisa treinar quem usa EPI?',
         resposta:
-          'Sim. Orientar e treinar sobre uso adequado, guarda e conservação faz parte das obrigações do empregador — não basta entregar o equipamento e registrar a entrega.',
+          'Sim. Orientar e treinar sobre uso, guarda e conservação também é obrigação do empregador. Não basta entregar o equipamento e registrar a entrega.',
       },
     ],
     ctaTitulo: 'Precisa organizar o EPI da sua equipe?',
@@ -612,7 +612,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          '"Antiderrapante" virou palavra de anúncio. Na prática, ela descreve uma característica que é ensaiada, medida e registrada — e que varia conforme a superfície. Entender isso é o que separa uma compra que resolve de uma compra que decepciona no primeiro dia de chuva ou no primeiro turno de fritura.',
+          '"Antiderrapante" virou palavra de anúncio. Na prática, ela descreve uma característica que é ensaiada, medida e registrada. E que muda conforme a superfície. Entender isso separa a compra que resolve da que decepciona no primeiro dia de chuva.',
       },
       {
         tipo: 'h2',
@@ -621,7 +621,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Os ensaios de resistência ao escorregamento avaliam o atrito entre o solado e o piso na presença de um contaminante. As combinações mais usadas envolvem piso cerâmico com solução detergente e piso de aço com glicerol — situações que representam, respectivamente, ambiente molhado e ambiente oleoso.',
+          'Os ensaios de resistência ao escorregamento avaliam o atrito entre o solado e o piso na presença de um contaminante. As combinações mais usadas são piso cerâmico com solução detergente e piso de aço com glicerol. Uma representa ambiente molhado; a outra, ambiente oleoso.',
       },
       {
         tipo: 'p',
@@ -664,7 +664,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Vale lembrar — sobretudo em <a href="/para-seu-trabalho/cozinha/">cozinha</a> — que a aderência é uma relação entre duas superfícies, e é por isso que <a href="/conhecimento/botina-escorrega-o-que-fazer-antes-de-trocar/">nem toda queixa de escorregamento se resolve trocando o calçado</a>. O calçado responde por uma parte; o piso e a limpeza respondem pela outra. Piso muito liso, acúmulo de gordura e limpeza inadequada reduzem o desempenho de qualquer solado. O calçado é uma proteção individual — não substitui a correção do ambiente quando ela é possível.',
+          'Vale lembrar, sobretudo em <a href="/para-seu-trabalho/cozinha/">cozinha</a>, que a aderência é uma relação entre duas superfícies. É por isso que <a href="/conhecimento/botina-escorrega-o-que-fazer-antes-de-trocar/">nem toda queixa de escorregamento se resolve trocando o calçado</a>. O calçado responde por uma parte; o piso e a limpeza respondem pela outra. Piso muito liso, acúmulo de gordura e limpeza inadequada reduzem o desempenho de qualquer solado. O calçado é uma proteção individual. Não substitui corrigir o ambiente, quando dá para corrigir.',
       },
     ],
     fontes: [
@@ -693,7 +693,7 @@ export const ARTIGOS: Artigo[] = [
       {
         pergunta: 'Como sei se o solado ainda está bom?',
         resposta:
-          'Comparando o relevo da área de maior apoio com o de uma lateral que quase não toca o chão. Se a diferença é grande, o relevo já se foi — e é ele que garante a aderência.',
+          'Comparando o relevo da área de maior apoio com o de uma lateral que quase não toca o chão. Se a diferença é grande, o relevo já se foi. E é ele que garante a aderência.',
       },
       {
         pergunta: 'Calçado antiderrapante evita queda?',
@@ -1115,12 +1115,12 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'destaque',
         texto:
-          'A peça facial filtrante (PFF) retém material particulado: poeira, névoa, fumo. Ela não retém vapor nem gás químico. Para isso é preciso respirador com filtro químico apropriado à substância — outro equipamento, com outro Certificado de Aprovação.',
+          'A peça facial filtrante (PFF) retém material particulado: poeira, névoa, fumo. Ela não retém vapor nem gás químico. Para isso é preciso respirador com filtro químico apropriado à substância. Outro equipamento, com outro Certificado de Aprovação.',
       },
       {
         tipo: 'p',
         texto:
-          'É o erro mais perigoso que aparece na nossa rotina, e o mais silencioso: a pessoa está usando máscara, a empresa entregou EPI, a ficha está assinada — e a proteção contra o risco que existe ali é zero. Como vapor químico nem sempre tem cheiro forte, a falha só aparece em exame ou em sintoma.',
+          'É o erro mais perigoso da nossa rotina, e o mais silencioso. A pessoa está usando máscara, a empresa entregou EPI, a ficha está assinada. E a proteção contra o risco que existe ali é zero. Como vapor químico nem sempre tem cheiro forte, a falha só aparece em exame ou em sintoma.',
       },
       {
         tipo: 'h2',
@@ -1129,7 +1129,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'A PFF funciona como uma peneira muito fina: o material do filtro segura partículas sólidas e líquidas suspensas no ar. Vapor químico não é partícula — são moléculas em fase gasosa, e elas atravessam esse material sem resistência.',
+          'A PFF funciona como uma peneira muito fina: o material do filtro segura partículas sólidas e líquidas suspensas no ar. Vapor químico não é partícula. São moléculas em fase gasosa, e elas atravessam esse material sem resistência.',
       },
       {
         tipo: 'p',
@@ -1153,7 +1153,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Nesses casos, a PFF pode até ser necessária para a parte particulada da exposição — mas não substitui o filtro químico, e a combinação certa depende da substância.',
+          'Nesses casos a PFF pode ser necessária para a parte particulada da exposição. Mas não substitui o filtro químico, e a combinação certa depende da substância.',
       },
       {
         tipo: 'h2',
@@ -1172,7 +1172,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'A definição do equipamento adequado para exposição química depende da avaliação de riscos da empresa, com medição quando for o caso, feita por profissional habilitado. O que este texto resolve é a confusão de categoria — e ela sozinha já responde por boa parte dos casos que chegam até nós.',
+          'A definição do equipamento adequado para exposição química depende da avaliação de riscos da empresa, com medição quando for o caso, feita por profissional habilitado. O que este texto resolve é a confusão de categoria. Ela sozinha já responde por boa parte dos casos que chegam até nós.',
       },
       {
         tipo: 'h2',
@@ -1181,7 +1181,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Uma dúvida que aparece em seguida: "e se eu usar uma PFF3, que é mais protetora?". A classe da PFF indica eficiência de filtração de partículas — subir de classe aumenta a retenção de particulado, e não cria capacidade de reter vapor. É outra dimensão do problema.',
+          'Uma dúvida que aparece em seguida: "e se eu usar uma PFF3, que é mais protetora?". A classe da PFF indica eficiência de filtração de partículas. Subir de classe retém mais particulado, e não cria capacidade de reter vapor. É outra dimensão do problema.',
       },
       {
         tipo: 'p',
