@@ -72,7 +72,8 @@ export function Footer() {
           <div>
             <Logo prefixo="rodape" tom="escuro" className="h-14 w-auto" />
             <p className="mt-5 max-w-xs text-[0.95rem] leading-relaxed text-paper/70">
-              Equipamentos de proteção individual em Fortaleza e no Ceará.
+              Equipamentos de proteção individual em Fortaleza, na região metropolitana
+              e no Ceará.
             </p>
 
             <p className="mt-6 text-[0.95rem] text-paper/70">
