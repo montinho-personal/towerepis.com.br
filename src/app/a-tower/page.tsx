@@ -125,6 +125,26 @@ const MARCOS: {
   {
     ano: 'Anos 90',
     titulo: 'O primeiro grande cliente',
+    fotos: [
+      {
+        arquivo: 'carro-de-entrega-tower-fiec.jpg',
+        alt:
+          'Furgão Fiat Fiorino branco da Tower estacionado diante do prédio do FIEC/SESI Clube da Parceria, em Fortaleza. Na lateral do carro: Tower comércio & serviços ltda, produtos de segurança e fitas adesivas, selo de distribuidor especializado e um telefone de sete dígitos.',
+        legenda: (
+          <>
+            <strong className="font-semibold text-ink">
+              O carro da entrega, parado na porta do FIEC.
+            </strong>{' '}
+            &ldquo;Desenvolvimento de clientes&rdquo; tinha esta forma: um furgão pequeno,
+            um telefone de sete dígitos na lateral e um selo de distribuidor
+            especializado ao lado da porta. Repare no <em>O</em> vermelho de TOWER — é o
+            mesmo da faixa do seminário, acima.
+          </>
+        ),
+        largura: 1553,
+        altura: 1120,
+      },
+    ],
     texto:
       'Um grande grupo industrial do Ceará foi conquistado pelo trabalho de desenvolvimento feito pelo Helano. No auge, a Tower chegou a fornecer quarenta mil máscaras descartáveis a esse cliente. Do mesmo período vem uma indústria têxtil que compra com a gente até hoje.',
   },
@@ -137,6 +157,37 @@ const MARCOS: {
   {
     ano: 'O prêmio',
     titulo: 'Distribuidor Regional 3M',
+    fotos: [
+      {
+        arquivo: 'premiacao-3m-comemoracao.jpg',
+        alt:
+          'Cerca de doze pessoas em pé atrás de uma mesa de jantar, braços erguidos, comemorando. Três delas seguram placas emolduradas.',
+        legenda: (
+          <>
+            <strong className="font-semibold text-ink">A noite.</strong> Três placas na
+            mesa e o braço de todo mundo no ar. É a foto menos posada do acervo, e a
+            única em que dá para ver o tamanho que a Tower tinha chegado a ter.
+          </>
+        ),
+        largura: 1364,
+        altura: 822,
+      },
+      {
+        arquivo: 'premiacao-3m-placa.jpg',
+        alt:
+          'Três pessoas lado a lado num salão à noite, a do meio segurando uma placa emoldurada com um selo em vermelho.',
+        legenda: (
+          <>
+            <strong className="font-semibold text-ink">A mesma noite, mais cedo.</strong>{' '}
+            O reconhecimento veio da mesma empresa que, anos antes, tinha feito o convite
+            para abrir a Tower — e por isso é o que Helano e Cristina guardam com mais
+            cuidado.
+          </>
+        ),
+        largura: 1347,
+        altura: 843,
+      },
+    ],
     texto:
       'O reconhecimento de que Helano e Cristina mais se orgulham. Veio do trabalho e do volume de vendas — e da mesma empresa que, anos antes, tinha feito o convite que deu origem a tudo.',
     link: { href: '/marcas/3m/', rotulo: 'A relação da Tower com a 3M' },

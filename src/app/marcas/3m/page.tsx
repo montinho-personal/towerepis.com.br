@@ -98,22 +98,35 @@ export default function Marca3M() {
           foto resolve isso sem uma linha a mais — e fica aqui, e não no topo,
           porque ela responde ao texto em vez de anunciá-lo. */}
       <Secao className="wrap pt-0">
-        <div className="max-w-2xl">
+        <div className="grid gap-9 sm:grid-cols-2 sm:gap-7">
           <Retrato
             src="/fotos/historia/estoque-montese-1995.jpg"
             alt="Estoque da Tower no Montese, em 1995: prateleiras de aço do chão ao teto, cheias de caixas de papelão com a marca 3M, e uma pessoa em pé no corredor à esquerda."
             largura={1600}
             altura={1266}
-            tamanhos="(min-width: 1024px) 42rem, 92vw"
+            tamanhos="(min-width: 1024px) 30vw, (min-width: 640px) 42vw, 92vw"
             legenda={
               <>
-                <strong className="font-semibold text-ink">
-                  O estoque da Tower no Montese, em 1995.
-                </strong>{' '}
-                Prateleira de caixas da 3M do Brasil, do chão ao teto. É o convite desta
-                página visto por dentro — e é também a medida honesta do que mudou: hoje
-                a linha 3M na Tower é sob consulta, e a prateleira que se parece com esta
-                é de calçado.
+                <strong className="font-semibold text-ink">O convite, por dentro.</strong>{' '}
+                O estoque da Tower no Montese, em 1995: prateleira de caixas da 3M do
+                Brasil, do chão ao teto. É também a medida honesta do que mudou — hoje a
+                linha 3M na Tower é sob consulta, e a prateleira parecida com esta é de
+                calçado.
+              </>
+            }
+          />
+          <Retrato
+            src="/fotos/historia/premiacao-3m-grupo.jpg"
+            alt="Quatro pessoas lado a lado num salão à noite; duas delas seguram placas emolduradas com um selo em vermelho."
+            largura={1600}
+            altura={1324}
+            tamanhos="(min-width: 1024px) 30vw, (min-width: 640px) 42vw, 92vw"
+            legenda={
+              <>
+                <strong className="font-semibold text-ink">E o reconhecimento.</strong>{' '}
+                A noite da premiação, anos depois. As duas fotos desta página são as duas
+                pontas da mesma relação: o que chegou em papelão no começo, e o que voltou
+                em placa no fim da década.
               </>
             }
           />

@@ -26,23 +26,35 @@ risco do projeto e o mais rápido de resolver: basta abrir
 
 Configurado em `src/config/empresa.ts` — um campo muda o site todo.
 
-### 2. Fotografia
-O design foi feito para foto real e não tem nenhuma. O questionário confirma que
-existem: **fotos dos fundadores, da primeira sede e dos logotipos antigos**.
+### 2. Fotografia — parcialmente resolvido em 5 de setembro de 2026
+Chegaram sete fotos do acervo, todas publicadas: escritório e estoque do Montese
+em 1995, a faixa do seminário sobre CA, o furgão de entrega na porta do FIEC e
+três da noite da premiação. Estão em `public/fotos/historia/`.
 
-Prioridade:
-1. Helano e Cristina — vai para a Home, `/a-tower/` e `/a-tower/helano/`
-2. **Primeira sede no Montese, 1995** — o ativo visual mais valioso do projeto
-3. Logotipos antigos
-4. Produtos das linhas Sticky Shoes, Bompel e 3M
+A lista completa do que ainda falta, com o nome de arquivo de cada peça, está no
+artefato "As fotos que faltam" e resumida em `public/fotos/COMO-SUBIR.md`. Em
+ordem de valor, as que mais rendem hoje:
 
-Foto antiga de qualidade baixa vale mais que foto nova genérica. Se não houver
-acervo suficiente, produção fotográfica precisa entrar no escopo.
+1. **Cristina sozinha.** O site fala em "os dois sócios" em onze lugares e mostra
+   o rosto de um. É o buraco mais visível que restou.
+2. **O par solado gasto / solado novo.** Destrava três capas de artigo e sustenta
+   a afirmação técnica mais repetida do site.
+3. **A fachada** do prédio do Montese. O que veio foi o interior.
+4. **O número do CA marcado numa botina.** O artigo afirma que dá para conferir
+   olhando o pé de alguém, e não mostra.
+
+Foto antiga de qualidade baixa vale mais que foto nova genérica — as sete que
+chegaram provam isso.
 
 ### 3. Logo em vetor
 Reconstruí o logotipo tipograficamente a partir do selo do Instagram (TOWER com o
 ponto vermelho no lugar do O). Funciona, mas o ideal é o arquivo original em
 `.ai`, `.eps` ou `.svg`, ou PNG em alta com fundo transparente.
+
+**Novidade de 5/9/2026:** o O vermelho aparece em duas fotos dos anos 90 — na
+lateral do furgão (`carro-de-entrega-tower-fiec.jpg`, ali com "comércio &
+serviços ltda" embaixo) e na faixa do seminário. A reconstrução estava certa, e
+agora existe documento. Continua valendo pedir o vetor original.
 
 ---
 
@@ -63,9 +75,41 @@ que a lista não é completa, o que é honesto mas menos útil do que a lista re
 - E-mail comercial
 - Horário exato de atendimento (hoje está genérico: "segunda a sexta, em horário comercial")
 
-### 6. Ano e nome exato do prêmio de Distribuidor Regional da 3M
-Hoje o site diz "Distribuidor Regional premiado" sem data. Com o ano, fica mais forte.
-Se houver troféu ou certificado, vale fotografar.
+### 6. Nome e ano do prêmio da 3M — agora com três nomes diferentes em jogo
+**Subiu de prioridade em 5/9/2026.** As fotos do acervo trouxeram documento, e o
+documento não bate com o site. Hoje existem três termos:
+
+| Onde | O que está escrito |
+| --- | --- |
+| O site, em `empresa.ts`, `/a-tower/` e `/marcas/3m/` | **Distribuidor Regional** |
+| A placa, ampliada nas fotos da premiação | **Destaque Regional**, com um ano de quatro dígitos abaixo que parece **1998** |
+| O selo na lateral do furgão de entrega | **Distribuidor Especializado** |
+
+A hipótese mais provável é que sejam duas coisas distintas que o site fundiu numa
+só: *Distribuidor Especializado* como a categoria de revenda da 3M — a mesma
+palavra que o site já usa para descrever a Bereneli, onde os dois trabalhavam em
+São Paulo — e *Destaque Regional* como o nome do prêmio recebido. É hipótese, e
+por isso nada foi corrigido.
+
+**O que precisa ser confirmado:** qual é o nome do prêmio, qual é o ano, e se
+"Distribuidor Especializado" era a categoria. Com as três respostas eu acerto
+`empresa.ts`, o marco da linha do tempo e a seção "O reconhecimento" de
+`/marcas/3m/` de uma vez — é correção de defeito, e defeito não tem lote.
+
+As fotos da premiação **já estão no ar** (autorização das outras pessoas
+confirmada pelo cliente em 5/9/2026), com legenda sobre a noite e não sobre o
+nome do prêmio, justamente para não repetir um dado que pode estar errado.
+
+### 6b. Quem é quem nas fotos da premiação
+Nas três fotos da premiação não dá para identificar com segurança quem é Helano e
+quem é Cristina — numa delas há dois homens e duas mulheres, e o nome do arquivo
+cita os dois sem dizer quem é quem. As legendas no ar hoje falam da noite e não
+apontam ninguém. O mesmo vale para a foto do escritório de 1995: há um homem
+sentado à mesa, quase certamente o Helano, mas o nome do arquivo não afirmava
+isso e eu não afirmei por conta própria.
+
+Confirmado quem é quem, as legendas ficam bem melhores — e a foto do escritório
+passa a poder dizer "Helano, no escritório de cima" em vez de descrever um móvel.
 
 ### 7. Registro profissional do Helano
 Para a página de autor e o schema `Person`. Só publico credencial que possa ser
