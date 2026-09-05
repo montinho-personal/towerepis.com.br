@@ -160,6 +160,22 @@ que endereço nenhum** — o cliente vai lá e não encontra ninguém.
 - Existe site no ar hoje? Há URLs antigas que precisem de redirecionamento 301?
 - Quem controla o DNS? Precisaremos apontar para a Vercel.
 
-### 15. Contas
-- Vercel: em qual conta o projeto deve ser criado?
-- Google Analytics e Search Console: existem? Quem administra?
+### 15. Contas — resolvido em 5 de setembro de 2026
+- **Search Console:** propriedade `https://towerepis.com.br/` verificada por
+  etiqueta HTML, com o sitemap de 66 URLs enviado. O token está em
+  `src/app/layout.tsx`, com um comentário dizendo para não removê-lo.
+- **Google Analytics 4:** propriedade criada, identificador **`G-14E91VL3D3`**.
+  A etiqueta gtag que o Google oferece na tela de instalação **não foi colada
+  no site**, de propósito: colar aquele trecho carrega o gtag.js no primeiro
+  segundo, antes de qualquer consentimento, e é exatamente o que
+  `/politica-de-cookies/` promete por escrito que não acontece. O site usa o
+  código próprio em `src/components/Medicao.tsx`, que só baixa o script depois
+  do "Aceitar".
+- **Vercel:** o projeto já está lá, com deploy de produção a partir de `main`.
+  A variável `NEXT_PUBLIC_GA_ID` precisa existir **só no ambiente de
+  Production** — em Preview ela faria os deploys de teste medirem tráfego
+  falso na mesma propriedade.
+
+Lembrete que custa caro esquecer: `NEXT_PUBLIC_*` é inlinada no build, não lida
+em tempo de execução. Criar a variável não liga nada sozinho — só o próximo
+deploy é que passa a ter medição.
