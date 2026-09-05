@@ -72,8 +72,7 @@ export function Footer() {
           <div>
             <Logo prefixo="rodape" tom="escuro" className="h-14 w-auto" />
             <p className="mt-5 max-w-xs text-[0.95rem] leading-relaxed text-paper/70">
-              Equipamentos de proteção individual para Fortaleza, a região
-              metropolitana e o Ceará.
+              Equipamentos de proteção individual em Fortaleza e no Ceará.
             </p>
 
             <p className="mt-6 text-[0.95rem] text-paper/70">
@@ -144,10 +143,8 @@ export function Footer() {
         </div>
 
         <p className="mt-8 max-w-3xl text-xs leading-relaxed text-paper/55">
-          O conteúdo deste site tem finalidade informativa e orienta a escolha de
-          equipamentos de proteção individual. Ele não substitui a avaliação de riscos
-          do ambiente de trabalho, que deve ser feita por profissional habilitado
-          quando necessária.
+          O que está aqui ajuda a escolher EPI. Não substitui a avaliação de riscos do
+          ambiente de trabalho, que deve ser feita por profissional habilitado.
         </p>
       </div>
     </footer>

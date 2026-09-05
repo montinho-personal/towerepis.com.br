@@ -179,8 +179,8 @@ export function FechamentoCta({
                   não pede confirmação: virar barreira num CTA que é o único
                   canal de conversão do site custaria mais do que informa. */}
               <span className="mt-4 block text-paper/45">
-                O botão abre o WhatsApp, um serviço de terceiro. Você revisa e edita antes
-                de enviar — nada é enviado automaticamente.{' '}
+                O botão abre o WhatsApp, que é um serviço de terceiro. A mensagem vai
+                pronta, mas quem envia é você.{' '}
                 <Link
                   href="/politica-de-privacidade/"
                   className="underline underline-offset-2 hover:text-paper/70"
