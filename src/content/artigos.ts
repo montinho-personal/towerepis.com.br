@@ -1248,7 +1248,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Quase tudo o que se lê sobre esse assunto compara material. É o jeito errado de decidir, porque a proteção contra impacto está garantida nos dois pelo <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a>. O que muda entre uma biqueira e outra é o resto: o que ela faz com eletricidade, com o frio, com um detector de metal, com o peso de quem caminha o dia inteiro. E o que sobra dela depois de uma pancada forte.',
+          'Quase tudo o que se lê sobre esse assunto compara material. É o jeito errado de decidir, porque a proteção contra impacto está garantida nos dois pelo <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a>. Quem trabalha com eletricidade precisa de mais do que isso, e o assunto está em <a href="/conhecimento/epi-para-eletricista-o-que-muda/">EPI para eletricista</a>. O que muda entre uma biqueira e outra é o resto: o que ela faz com eletricidade, com o frio, com um detector de metal, com o peso de quem caminha o dia inteiro. E o que sobra dela depois de uma pancada forte.',
       },
       {
         tipo: 'h2',
@@ -2865,6 +2865,279 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Preciso saber o nome do produto para pedir?',
         resposta:
           'Não. Descrever o que a pessoa faz e onde ela trabalha é suficiente, e é uma informação melhor do que o nome do produto. Quem escolhe pelo nome que ouviu falar costuma escolher pelo item errado.',
+      },
+    ],
+  },
+  {
+    slug: 'protetor-auditivo-plug-ou-concha',
+    titulo: 'Plug ou concha: qual protetor auditivo usar',
+    tituloSeo: 'Protetor auditivo: plug ou concha?',
+    resumo:
+      'Os dois protegem. O que decide é o que acontece no meio do turno: quem tira, quem coloca errado, quem não escuta o colega. A escolha é de rotina, não de catálogo.',
+    descricaoSeo:
+      'Como decidir entre protetor de inserção e concha pela rotina real da equipe: calor, retirada frequente, óculos, comunicação e a atenuação que consta no CA.',
+    publicado: '2026-09-05',
+    atualizado: '2026-09-05',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Os dois tipos protegem quando a atenuação atende ao ruído medido. O que separa um do outro é a rotina: quantas vezes a pessoa tira e recoloca, se usa óculos ou capacete, se o ambiente é quente, e se ela precisa ouvir alguém. Protetor que sai da orelha no meio do turno tem atenuação zero.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A escolha entre inserção e concha costuma ser tratada como preferência pessoal. Não é bem isso. Cada um falha de um jeito diferente, e o jeito de falhar é que decide qual serve para a sua equipe.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Antes de qualquer comparação, um ponto que não se negocia: a atenuação necessária vem da medição de ruído da atividade, feita pela empresa. Nenhum catálogo substitui esse número, e ele é o que define quais modelos entram na conversa. O que consta no <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a> de cada protetor é a atenuação que ele foi aprovado para oferecer.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Como cada um falha',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['', 'Inserção (plug)', 'Concha (abafador)'],
+        linhas: [
+          ['A falha mais comum', 'Colocado sem vedar, o que a pessoa não percebe', 'Afastado da orelha por haste de óculos ou cabelo'],
+          ['Retirada frequente', 'Ruim: cada recolocação é uma chance de errar', 'Bom: sai e volta em um gesto'],
+          ['Ambiente quente', 'Bom: não abafa a cabeça', 'Ruim: esquenta, e é o que faz a pessoa tirar'],
+          ['Com óculos ou capacete', 'Não conflita', 'Conflita, a menos que seja modelo para capacete'],
+          ['Higiene', 'Exige mão limpa a cada colocação', 'Não entra no canal auditivo'],
+          ['Conferência pela chefia', 'Difícil ver de longe se está bem colocado', 'Fácil: ou está na cabeça, ou não está'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Repare que as duas colunas se invertem conforme a linha. É por isso que a pergunta "qual é melhor" não tem resposta fora do contexto da tarefa.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A regra prática que funciona',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Ruído contínuo, pessoa fixa num posto, ambiente quente:</strong> inserção costuma se sustentar melhor ao longo do turno.',
+          '<strong>Entra e sai da área ruidosa o tempo todo:</strong> concha, porque cada recolocação de plug é uma chance de vedar mal.',
+          '<strong>Já usa óculos de proteção ou capacete:</strong> confira a compatibilidade antes. Concha e haste de óculos disputam o mesmo espaço.',
+          '<strong>Precisa conversar ou ouvir alarme:</strong> esse é um critério de segurança por si só, e muda a escolha do modelo.',
+          '<strong>Dúvida real entre os dois:</strong> deixe as duas opções com a equipe por alguns dias. A que continua na orelha no fim do turno é a resposta.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O erro que anula os dois',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Protetor auditivo é o EPI que mais sai do corpo durante o trabalho. Sai para atender o rádio, para entender uma instrução, porque incomoda no calor, porque a pessoa vai ficar "só um minuto" na área.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Cada minuto sem proteção pesa muito mais do que parece, porque a exposição é cumulativa ao longo do turno. Um protetor de atenuação alta usado metade do tempo protege menos que um de atenuação adequada usado o tempo inteiro. É por isso que conforto entra aqui como critério técnico, e não como luxo.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'O nível de ruído medido na atividade. Sem ele, não há como saber se o modelo atende.',
+          'A atenuação que consta no CA do modelo, e não a do catálogo do fabricante.',
+          'A compatibilidade com os outros equipamentos que a pessoa já usa.',
+          'Se existe necessidade de comunicação, e como ela será resolvida.',
+          'Quantas vezes por turno a pessoa entra e sai da área ruidosa.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A perda auditiva induzida por ruído é gradual e não dói. Quando a pessoa percebe, o dano já aconteceu, e ele não volta. É a razão de este ser um dos EPIs em que a disciplina de uso vale mais que a especificação.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+    ],
+    paginaComercial: {
+      href: '/protecao/auditiva/',
+      rotulo: 'Ver proteção auditiva',
+    },
+    contexto: 'protecao-auditiva',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Preciso de protetor auditivo para a equipe e queria ajuda para decidir entre inserção e concha.',
+    ctaTitulo: 'Em dúvida entre plug e concha?',
+    ctaTexto:
+      'Conte o nível de ruído medido, quantas vezes a pessoa entra e sai da área, e o que mais ela usa na cabeça. Dá para resolver a escolha antes de comprar.',
+    perguntas: [
+      {
+        pergunta: 'Usar os dois ao mesmo tempo dobra a proteção?',
+        resposta:
+          'Não dobra. O uso combinado aumenta a atenuação, mas bem menos do que a soma dos dois, porque o som também chega por condução óssea. É uma decisão que depende do nível de ruído medido e não deve ser tomada por conta própria.',
+      },
+      {
+        pergunta: 'Algodão no ouvido serve para nada mesmo?',
+        resposta:
+          'Não serve, e é perigoso justamente por parecer que serve. Algodão não veda o canal auditivo, não tem atenuação ensaiada e não tem Certificado de Aprovação. A pessoa fica com a sensação de estar protegida, que é o pior resultado possível.',
+      },
+      {
+        pergunta: 'De quanto em quanto tempo troca?',
+        resposta:
+          'Depende do tipo. O de inserção reutilizável e a concha se avaliam pelo estado: espuma endurecida, haste frouxa e almofada ressecada param de vedar. O descartável é de uso único. Na dúvida, o critério é a vedação, não o calendário.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-para-eletricista-o-que-muda',
+    titulo: 'EPI para eletricista: o que muda na escolha',
+    tituloSeo: 'EPI para eletricista: o que muda',
+    resumo:
+      'Aqui a compra por aparência é mais perigosa que em qualquer outro EPI, porque a bota que isola e a que conduz são visualmente iguais. O que precisa estar resolvido antes de cotar.',
+    descricaoSeo:
+      'Por que EPI para eletricidade é uma compra diferente, o que a aparência não mostra, e o que precisa estar definido antes de pedir orçamento. Sem substituir a análise de risco.',
+    publicado: '2026-09-05',
+    atualizado: '2026-09-05',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Duas botinas podem ser idênticas na foto e ter comportamento elétrico oposto. Em trabalho com eletricidade, o que vale é o que o Certificado de Aprovação declara para aquele modelo, e a especificação vem da análise de risco feita por profissional habilitado. Este texto ajuda a chegar preparado nessa conversa, e não a substituí-la.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Começando pelo que este texto não faz. Ele não diz qual EPI a sua equipe deve usar. Trabalho com eletricidade é regido por norma própria, e a definição do equipamento depende do tipo de instalação, da tensão, do procedimento e do estudo de risco da sua empresa. Quem faz isso é profissional habilitado, não um site.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O que dá para adiantar é o que costuma dar errado na hora de comprar, e isso vale a leitura.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A aparência não diz nada',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Este é o ponto central. Em quase todo EPI, uma boa foto já elimina metade dos erros: dá para ver se a luva é de procedimento ou química, se a máscara tem filtro. Em eletricidade, não.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Uma botina com biqueira de composite não conduz eletricidade pela biqueira, e isso <a href="/conhecimento/biqueira-de-composite-ou-de-aco-qual-escolher/">não torna o calçado isolante</a>. São duas afirmações diferentes, e confundir as duas é o erro mais comum da categoria. Isolamento elétrico é uma característica ensaiada e declarada, não uma consequência do material da biqueira.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O mesmo vale para luva. Luva de vaqueta tem aparência robusta e não é luva isolante. Luva isolante para eletricidade é outra categoria, com ensaio próprio, e costuma ter regra de inspeção e de reteste que a luva comum não tem.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que precisa estar definido antes de cotar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Que tipo de trabalho é.</strong> Instalação predial, rede, painel, manutenção em campo. Cada um pede uma lista diferente.',
+          '<strong>Se há trabalho energizado</strong>, e em que condições. Isso muda a categoria do equipamento por completo.',
+          '<strong>A tensão envolvida.</strong> É o dado que separa classes de equipamento isolante.',
+          '<strong>O que a análise de risco da empresa já determinou.</strong> Se o documento existe, ele é a lista. Se não existe, é por aí que se começa, e não pelo orçamento.',
+          '<strong>Quem é o responsável técnico</strong> que assina a especificação.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Com esses cinco pontos, a cotação vira uma conversa de dez minutos. Sem eles, vira uma troca de mensagens que não conclui, porque ninguém do lado do fornecedor pode decidir por você.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que um distribuidor pode e não pode fazer',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Pode', 'Não pode'],
+        linhas: [
+          ['Informar o CA de cada item e o que ele declara', 'Definir qual EPI a sua atividade exige'],
+          ['Dizer para que aquele modelo foi aprovado', 'Substituir a análise de risco da empresa'],
+          ['Avisar quando o pedido não bate com a descrição do CA', 'Assinar responsabilidade técnica'],
+          ['Indicar quando o item pedido não é da linha que trabalha', 'Garantir adequação sem conhecer a instalação'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A Tower é distribuidora. A coluna da esquerda é o que a gente faz de verdade, e a da direita é o que nenhum fornecedor sério promete. Quando um vendedor afirma que determinado item "serve para eletricista" sem perguntar nada sobre a instalação, isso é informação de venda, não de segurança.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A parte que vale para qualquer EPI, e aqui mais ainda',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Confira o CA de cada item antes de aceitar a entrega, e confira o que ele descreve, não só o número. Um certificado vigente para uma finalidade que não é a sua é um certificado que não protege ninguém. O caminho da consulta está em <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">o que é o CA e como consultar</a>, e o número deve aparecer <a href="/conhecimento/como-escolher-fornecedor-de-epi/">já na proposta</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para saber exatamente o que a norma exige em cada situação de trabalho com eletricidade, o caminho é a norma regulamentadora específica do tema, publicada pelo Ministério do Trabalho e Emprego, junto com o profissional que responde tecnicamente pela sua operação.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/',
+      rotulo: 'Ver soluções para empresas',
+    },
+    contexto: 'empresas',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Preciso de EPI para equipe que trabalha com eletricidade e já tenho a especificação do responsável técnico.',
+    ctaTitulo: 'Já tem a especificação em mãos?',
+    ctaTexto:
+      'Mande o que o responsável técnico definiu. A gente responde com o CA de cada item e diz na hora se algum deles está fora da linha que trabalhamos.',
+    perguntas: [
+      {
+        pergunta: 'Biqueira de composite deixa a botina isolante?',
+        resposta:
+          'Não. Composite não conduz pela biqueira, o que é diferente de o calçado ser isolante. Isolamento elétrico é uma característica ensaiada e declarada no Certificado de Aprovação do modelo. Se o CA não declara, o calçado não tem, mesmo com biqueira de composite.',
+      },
+      {
+        pergunta: 'Quem define o EPI para trabalho com eletricidade?',
+        resposta:
+          'A análise de risco da empresa, conduzida por profissional habilitado, e não o fornecedor nem o catálogo. O distribuidor entra depois, informando o CA de cada item e o que ele declara. Fornecedor que define especificação de eletricidade sem conhecer a instalação está vendendo, não orientando.',
+      },
+      {
+        pergunta: 'Luva de vaqueta serve para trabalho elétrico?',
+        resposta:
+          'Vaqueta é couro, e couro não é material isolante ensaiado. Existe luva isolante para eletricidade, que é outra categoria, com ensaio próprio e regras de inspeção. A aparência robusta da vaqueta engana justamente por parecer proteção suficiente.',
       },
     ],
   },

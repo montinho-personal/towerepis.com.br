@@ -222,6 +222,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'É o primeiro pedido da sua equipe?',
     rotulo: 'Montar a lista junto',
   },
+  'protetor-auditivo-plug-ou-concha': {
+    chamada: 'Sabe o nível de ruído da sua área?',
+    rotulo: 'Escolher o protetor',
+  },
+  'epi-para-eletricista-o-que-muda': {
+    chamada: 'Já tem a especificação do responsável técnico?',
+    rotulo: 'Mandar a lista',
+  },
 }
 
 /**
