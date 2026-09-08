@@ -122,6 +122,11 @@ const SINGULARES: Record<string, Omit<Barra, 'contexto' | 'mensagem'>> = {
     rotulo: 'Pedir orçamento',
     gatilho: 0.3,
   },
+  '/marcas/sticky-shoes/': {
+    chamada: 'Sua equipe trabalha em piso molhado?',
+    rotulo: 'Pedir orçamento',
+    gatilho: 0.3,
+  },
   '/marcas/3m/': {
     chamada: 'Precisa de proteção respiratória?',
     rotulo: 'Consultar disponibilidade',

@@ -65,6 +65,29 @@ Todo conteúdo normativo cita fonte oficial e nenhuma afirmação foi feita por
 inferência. Mesmo assim, o conteúdo precisa da leitura dele antes de ir ao ar —
 é o nome dele que assina as páginas.
 
+### 4c. Sticky Shoes — duas coisas por confirmar (8/9/2026)
+
+A página `/marcas/sticky-shoes/` foi ao ar com o que o cliente informou: marca
+de calçado ocupacional de fábrica brasileira no Rio Grande do Sul, que a Tower
+compra e revende. Duas pontas ficaram de fora, de propósito.
+
+**1. O nome da fábrica.** O cliente informou que a fábrica se chama **Canadá** e
+que a marca do calçado é Sticky Shoes. Não publiquei: "Canadá" numa página de
+calçado brasileiro convida à leitura de produto importado, que é o contrário do
+que o texto diz. Entra se o cliente quiser, e fica melhor com a razão social
+confirmada.
+
+**2. O nome da marca, com ou sem "s".** O cliente escreveu "Sticky Shoe"; o
+domínio é `stickyshoes.com.br` e o site já publicava "Sticky Shoes" desde a
+construção. Ficou **Sticky Shoes**. Se a grafia correta for outra, é troca de
+uma linha em `src/config/empresa.ts` e do texto da página.
+
+**Não foi possível ler `stickyshoes.com.br`:** a rede do ambiente de
+desenvolvimento recusa saída para o domínio. Nada na página vem do site do
+fabricante — nem linha, nem modelo, nem CA. Se a Tower quiser detalhe de
+produto ali (linhas, materiais, numeração), precisa vir do cliente ou de uma
+leitura do catálogo feita fora deste ambiente.
+
 ### 4b. Lista completa das marcas trabalhadas hoje
 A Bompel já está no site como principal parceria, com 3M e Sticky Shoes ao lado.
 Se houver outras marcas relevantes, mandem que eu incluo — hoje a página diz

@@ -34,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/encontrar-epi/', 0.7, 'monthly'),
     url('/marcas/', 0.7, 'monthly'),
     url('/marcas/bompel/', 0.8, 'monthly'),
+    url('/marcas/sticky-shoes/', 0.7, 'monthly'),
     url('/marcas/3m/', 0.6, 'monthly'),
     url('/a-tower/', 0.8, 'monthly'),
     url('/a-tower/helano/', 0.7, 'monthly'),

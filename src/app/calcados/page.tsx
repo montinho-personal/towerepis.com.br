@@ -130,10 +130,10 @@ export default function HubCalcados() {
               Calçado ocupacional impermeável, para cozinha, alimentação e saúde.
             </p>
             <Link
-              href="/marcas/"
+              href="/marcas/sticky-shoes/"
               className="mt-6 inline-block font-display text-sm font-bold text-tower-red"
             >
-              Ver todas as marcas →
+              Ver a linha Sticky Shoes →
             </Link>
           </div>
         </div>

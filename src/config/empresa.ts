@@ -135,7 +135,12 @@ export const empresa = {
   marcas: [
     { nome: 'Bompel', slug: 'bompel', site: 'https://www.bompel.com.br/', principal: true },
     { nome: '3M', slug: '3m', site: null, principal: false },
-    { nome: 'Sticky Shoes', slug: null, site: null, principal: false },
+    {
+      nome: 'Sticky Shoes',
+      slug: 'sticky-shoes',
+      site: 'https://www.stickyshoes.com.br/',
+      principal: false,
+    },
   ],
 } as const
 

@@ -135,7 +135,10 @@ export default function Marca3M() {
 
       <LinksIrmaos
         rotulo="Outras marcas"
-        itens={[{ href: '/marcas/bompel/', nome: 'Bompel' }]}
+        itens={[
+          { href: '/marcas/bompel/', nome: 'Bompel' },
+          { href: '/marcas/sticky-shoes/', nome: 'Sticky Shoes' },
+        ]}
         hub={{ href: '/marcas/', rotulo: 'Ver todas as marcas que a Tower trabalha' }}
       />
 

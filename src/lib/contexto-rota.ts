@@ -39,6 +39,11 @@ const MAPA: Record<string, Destino> = {
   // 3M entra como consulta, nunca como promessa de estoque: a página trata a
   // 3M como história da Tower, e a mensagem não pode prometer o que a página
   // não promete.
+  '/marcas/sticky-shoes/': {
+    contexto: 'marcas',
+    mensagem:
+      'Olá! Vim pelo site da Tower. Queria saber sobre o calçado ocupacional Sticky Shoes para a minha equipe.',
+  },
   '/marcas/3m/': {
     contexto: 'marcas',
     mensagem:

@@ -117,10 +117,10 @@ export default function Marcas() {
                 para ambientes com padrão sanitário mais rígido.
               </p>
               <Link
-                href="/calcados/ocupacionais/"
+                href="/marcas/sticky-shoes/"
                 className="mt-6 inline-block font-display text-sm font-bold text-tower-red"
               >
-                Ver calçados ocupacionais →
+                Ver a linha Sticky Shoes →
               </Link>
             </div>
           </div>
