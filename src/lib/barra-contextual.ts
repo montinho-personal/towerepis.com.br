@@ -235,6 +235,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Já tem a especificação do responsável técnico?',
     rotulo: 'Mandar a lista',
   },
+  'tipos-de-luva-qual-material-escolher': {
+    chamada: 'Sabe o que a sua equipe manuseia?',
+    rotulo: 'Escolher a luva',
+  },
+  'respirador-como-escolher-o-filtro': {
+    chamada: 'Tem a ficha de segurança do produto?',
+    rotulo: 'Escolher o filtro',
+  },
 }
 
 /**

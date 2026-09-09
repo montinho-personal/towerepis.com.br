@@ -3141,6 +3141,344 @@ export const ARTIGOS: Artigo[] = [
       },
     ],
   },
+  {
+    slug: 'tipos-de-luva-qual-material-escolher',
+    titulo: 'Nitrílica, látex, vinílica ou neoprene: qual luva usar',
+    tituloSeo: 'Tipos de luva de proteção: qual usar',
+    resumo:
+      'Cada material falha de um jeito diferente. O que a comparação de tipos resolve, o que ela não resolve, e por que a escolha final não sai de nenhuma lista genérica.',
+    descricaoSeo:
+      'Nitrílica, látex, vinílica e neoprene comparadas por resistência, tato e modo de falha — e por que a escolha final depende do produto manuseado e do CA da luva.',
+    publicado: '2026-09-09',
+    atualizado: '2026-09-09',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'A comparação de materiais serve para eliminar opções, e não para escolher a luva. Ela mostra que látex não fica de pé diante de óleo e que vinílica não aguenta esforço. Qual modelo resiste ao produto que a sua equipe manuseia, só a tabela de compatibilidade daquele fabricante responde.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Toda busca por tipo de luva termina na mesma tabela colorida, repetida em dezenas de sites, com uma coluna de "indicações" que serve para tudo. O problema não é a tabela existir. É ela ser tratada como decisão, quando é só o primeiro corte.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O que segue é a comparação honesta dos quatro materiais que aparecem em quase todo pedido, com o modo de falha de cada um. Depois dela, o que a comparação não alcança.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Onde cada material é forte, e como cada um falha',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Material', 'Onde ele é forte', 'Como ele falha'],
+        linhas: [
+          [
+            'Nitrílica',
+            'Óleo, graxa e boa parte dos solventes. Boa resistência a furo e a rasgo, e sem a proteína que causa alergia ao látex.',
+            'Perde para o látex em tato fino e em elasticidade. E descartável fina continua sendo descartável: não é luva de esforço.',
+          ],
+          [
+            'Látex',
+            'Tato e elasticidade. Veste como segunda pele, e é boa em tarefa que exige sensibilidade nos dedos.',
+            'Não resiste a óleo nem a derivado de petróleo. A proteína natural é causa conhecida de alergia, e ela aparece na equipe com o uso repetido.',
+          ],
+          [
+            'Vinílica (PVC)',
+            'Preço, e ausência da proteína do látex. Serve para tarefa leve, curta e sem agressividade química.',
+            'Ajuste frouxo, resistência mecânica baixa e barreira que se rompe cedo. É a que mais engana, porque a caixa é barata e o consumo é alto.',
+          ],
+          [
+            'Neoprene',
+            'Faixa química ampla, com ácido, base e parte dos solventes, mantendo flexibilidade.',
+            'Custa mais. E o custo só se justifica quando a compatibilidade do produto mostra que as outras não atendem.',
+          ],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Nenhuma linha diz "a melhor". Elas se invertem conforme a tarefa, e é por isso que padronizar a equipe inteira num material só costuma sair caro: ou sobra proteção onde não precisa, ou falta onde precisava.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que a comparação não decide',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Resistência química não é propriedade do material sozinho. Ela depende do produto específico, da concentração, da temperatura, do tempo de contato e da espessura daquele modelo. O mesmo nitrílico resiste horas a um produto e minutos a outro.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Por isso a decisão final vem de dois documentos, e não de um artigo: a ficha de segurança do produto que a equipe manuseia, e a tabela de compatibilidade do modelo de luva. O caminho completo está em <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">como escolher luva pelo produto químico</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Espessura, punho e tamanho mudam mais do que parece',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Escolhido o material, ainda restam decisões que mudam o resultado tanto quanto ele:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Espessura.</strong> Aumenta o tempo até o produto atravessar e a resistência a furo, e reduz o tato. Luva grossa demais para serviço fino termina no bolso.',
+          '<strong>Comprimento do punho.</strong> Quem mergulha a mão em recipiente precisa de cano longo. Respingo que entra pela borda anula a luva inteira.',
+          '<strong>Textura da palma.</strong> Pegar peça molhada ou oleosa com luva lisa é como não usar luva: a pessoa aperta mais, cansa a mão e deixa cair.',
+          '<strong>Forro.</strong> Conforta em jornada longa e atrapalha em tarefa que exige precisão. Também muda a higienização.',
+          '<strong>Tamanho.</strong> Luva grande sobra na ponta e engancha; luva pequena rasga na costura e cansa a mão em meia hora.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O erro que aparece em quase todo estoque',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É comprar uma caixa grande de um material só e usá-la para tudo, porque estava na prateleira. Funciona até o dia em que a tarefa muda e ninguém repara que a luva não acompanha.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O sinal de que isso está acontecendo é fácil de ver: luva descartada antes do fim do turno em quantidade alta, gente trabalhando com a luva enrolada no punho, ou luva de procedimento aparecendo na limpeza pesada — um caso que tem <a href="/conhecimento/luva-de-procedimento-nao-e-luva-de-limpeza/">nome e consequência própria</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'O que a equipe manuseia, com nome de produto, e não só "produto de limpeza".',
+          'A ficha de segurança desse produto, se houver, e a compatibilidade do modelo de luva com ele.',
+          'Se alguém na equipe já teve reação a látex.',
+          'A espessura e o comprimento de punho que a tarefa pede.',
+          'O número do Certificado de Aprovação do modelo, que é o que torna aquela luva um EPI.',
+          'Se a luva é de uso único ou reutilizável, e quem faz a higienização quando é reutilizável.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale lembrar por que o CA aparece nessa lista: <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">o Certificado de Aprovação</a> é o que liga o modelo ao risco para o qual ele foi ensaiado. Luva sem CA pode ser uma boa luva de uso geral, e ainda assim não é a resposta quando existe risco a proteger.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+    ],
+    paginaComercial: {
+      href: '/protecao/maos/',
+      rotulo: 'Ver proteção para as mãos',
+    },
+    contexto: 'protecao-maos',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Queria ajuda para escolher o material de luva certo para o que a minha equipe manuseia.',
+    ctaTitulo: 'Na dúvida entre dois materiais?',
+    ctaTexto:
+      'Conte o que a equipe manuseia e por quanto tempo a mão fica em contato. A gente responde qual material atende e o que ainda falta confirmar antes de fechar a caixa.',
+    perguntas: [
+      {
+        pergunta: 'Luva mais grossa protege mais?',
+        resposta:
+          'Contra furo e abrasão, em geral sim. Contra produto químico não é tão simples: a espessura aumenta o tempo até o produto atravessar, mas o material errado atravessa de qualquer forma. E luva grossa demais tira o tato, o que faz a pessoa tirar a luva justamente na hora do serviço fino.',
+      },
+      {
+        pergunta: 'Por que a luva incha ou fica pegajosa durante o uso?',
+        resposta:
+          'É sinal de que o material está sendo atacado pelo produto. Inchaço, endurecimento, pegajosidade e mudança de cor são avisos de que a barreira já está comprometida. A luva sai de uso na hora, mesmo sem furo visível, e o material precisa ser revisto.',
+      },
+      {
+        pergunta: 'Luva sem CA serve para tarefa leve?',
+        resposta:
+          'Se ela está ali para proteger a pessoa de um risco, ela é EPI e precisa de Certificado de Aprovação. Existe luva de uso geral sem CA, para outras finalidades. O que define não é a tarefa parecer leve, e sim existir um risco de que a luva protege.',
+      },
+    ],
+  },
+  {
+    slug: 'respirador-como-escolher-o-filtro',
+    titulo: 'Respirador com filtro: como escolher o cartucho',
+    tituloSeo: 'Respirador: como escolher o filtro',
+    resumo:
+      'O cartucho certo depende do que está no ar, e não do que a loja tem em estoque. A sequência de decisão, e o ponto em que nenhum filtro serve.',
+    descricaoSeo:
+      'Como escolher o filtro do respirador a partir do contaminante, da forma dele no ar e da rotina da equipe — e por que cheiro não serve como critério de troca.',
+    publicado: '2026-09-09',
+    atualizado: '2026-09-09',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Filtro não fabrica ar. Ele limpa o ar que existe. Onde falta oxigênio, ou onde a concentração é alta demais, nenhum cartucho resolve e o equipamento passa a ser de ar mandado. Essa pergunta vem antes da escolha do filtro, e não depois.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem chega até aqui já costuma saber que <a href="/conhecimento/mascara-descartavel-nao-protege-de-vapor-quimico/">máscara descartável não protege de vapor químico</a>. A pergunta seguinte é a difícil: então qual filtro, e como saber quando ele acabou.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A sequência que decide o filtro',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>O que está no ar.</strong> Nome do produto, não categoria. "Solvente" não escolhe filtro; o nome do solvente escolhe.',
+          '<strong>Em que forma ele está.</strong> Poeira, névoa e fumo são partícula. Gás e vapor são outra coisa. Muita atividade tem os dois ao mesmo tempo.',
+          '<strong>Em que concentração, e por quanto tempo.</strong> É o que define se o filtro dura um turno ou vinte minutos, e é medição da empresa.',
+          '<strong>Se o ambiente tem oxigênio suficiente.</strong> Espaço confinado e tanque mudam a categoria de equipamento inteira.',
+          '<strong>Quem vai usar.</strong> Tamanho da peça facial e vedação no rosto entram aqui, e valem tanto quanto o cartucho.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Partícula, químico e combinado',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['O que está no ar', 'O que retém', 'O que não resolve'],
+        linhas: [
+          [
+            'Poeira, névoa e fumo',
+            'Filtro para partícula',
+            'Gás e vapor atravessam sem serem retidos',
+          ],
+          [
+            'Gás e vapor',
+            'Filtro químico, escolhido pela família do produto',
+            'Partícula satura o filtro sem ser o alvo dele',
+          ],
+          [
+            'Os dois juntos',
+            'Filtro químico com pré-filtro para partícula',
+            'Nenhum dos dois sozinho cobre a mistura',
+          ],
+          [
+            'Falta de oxigênio',
+            'Nenhum filtro. O equipamento é de ar mandado',
+            'Qualquer cartucho, em qualquer classe',
+          ],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A cor e a marcação impressas no cartucho ajudam a separar as famílias na prateleira, mas não são o critério de compra. O que vale é o que está na embalagem do modelo e no <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a> dele, porque é ali que consta para que aquele filtro foi ensaiado.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Cheiro não é critério de troca',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A prática mais comum em campo é trocar o cartucho quando começa a sentir o cheiro do produto. É uma prática ruim por dois motivos, e os dois são graves.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O primeiro é que sentir o cheiro significa que o produto já passou pelo filtro e chegou ao nariz. A proteção já falhou quando o aviso chega. O segundo é que nem todo produto tem cheiro perceptível na concentração em que já faz mal — há substância que não avisa nada antes de causar dano.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A troca se organiza por rotina, com o dado de vida útil do fabricante para aquela condição de uso, e não por percepção. Anotar a data de abertura no próprio cartucho é o jeito mais simples de a rotina existir de verdade.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A vedação decide mais do que o filtro',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Ar segue o caminho mais fácil. Se a borda da peça facial não sela no rosto, o ar entra por ali sem passar pelo filtro, e o cartucho mais caro do catálogo não muda esse resultado.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Isso coloca três coisas no mesmo nível de importância que a escolha do cartucho: o tamanho da peça facial ser o do rosto de quem usa, não haver pelo no caminho da borda de vedação, e a pessoa saber conferir a vedação antes de entrar na área.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'O nome do produto que gera o contaminante, e a ficha de segurança dele quando houver.',
+          'Se o contaminante está no ar como partícula, como gás ou vapor, ou como os dois.',
+          'A medição de concentração da atividade, que é o que define a vida útil do filtro.',
+          'Se existe risco de deficiência de oxigênio ou trabalho em espaço confinado.',
+          'O Certificado de Aprovação da peça facial e o do filtro, que são separados.',
+          'O tamanho da peça facial para cada pessoa, e não um tamanho único para a equipe.',
+          'A rotina de troca, de guarda em embalagem fechada e de higienização.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale a franqueza: essa é a família de EPI em que errar custa mais caro e demora mais a aparecer. Se a informação de concentração não existe, o certo é dizer isso e resolver a medição antes, e não escolher um filtro no escuro porque o pedido precisa fechar hoje.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+    ],
+    paginaComercial: {
+      href: '/protecao/respiratoria/',
+      rotulo: 'Ver proteção respiratória',
+    },
+    contexto: 'protecao-respiratoria',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Preciso de respirador com filtro e queria ajuda para escolher o cartucho a partir do produto que a equipe usa.',
+    ctaTitulo: 'Sabe o produto, mas não sabe o filtro?',
+    ctaTexto:
+      'Mande o nome do produto e a ficha de segurança, se tiver. A gente diz qual classe de filtro atende, e o que ainda falta medir antes de fechar.',
+    perguntas: [
+      {
+        pergunta: 'Dá para usar o mesmo cartucho por vários dias?',
+        resposta:
+          'Depende do produto, da concentração e do tempo de uso, e a conta vem do dado do fabricante, não do calendário. O que não funciona é guardar o cartucho aberto no armário entre um dia e outro: fora de embalagem fechada ele continua saturando com o ar do ambiente.',
+      },
+      {
+        pergunta: 'Barba impede o uso do respirador?',
+        resposta:
+          'Impede a vedação da peça facial no rosto, que é onde o ar entra sem passar pelo filtro. Pelo no caminho da borda de vedação compromete a proteção por mais adequado que seja o cartucho. Nesse caso a saída é outro tipo de equipamento, e não outro filtro.',
+      },
+      {
+        pergunta: 'Máscara com carvão ativado resolve vapor químico?',
+        resposta:
+          'Não. A camada de carvão dessas máscaras existe para incômodo de odor, e não tem a capacidade de retenção de um filtro químico. Ela continua sendo uma peça para partícula. Havendo vapor no ar, o caminho é respirador com filtro químico adequado ao produto.',
+      },
+    ],
+  },
 ]
 
 /**
