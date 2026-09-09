@@ -176,7 +176,15 @@ export default function Home() {
              vermelho e passou a encostar nela na rolagem, as duas lendo como
              uma massa só. O vermelho agora é a moldura do site, e esta faixa
              se afirma no grafite: o "Bompel" gigante em branco não perdeu
-             nada, e o vermelho voltou como acento no rótulo. */}
+             nada, e o vermelho voltou como acento no rótulo.
+
+             A Sticky Shoes entrou aqui em 8/9/2026, depois que o cliente
+             notou que a home não dava caminho nenhum até a marca — os
+             quatro links que existiam eram todos de página interna. Ela
+             entra abaixo da linha, em corpo menor: a regra 5 do projeto diz
+             que a parceria em destaque é a Bompel, então o nome gigante
+             continua sendo dela. São categorias diferentes, e o texto diz
+             isso — a Sticky é ocupacional, sem biqueira. */}
       <section className="band-ink ritmo-normal">
         <div className="wrap">
           <div className="grid gap-10 lg:grid-cols-[auto_1fr] lg:items-end lg:gap-20">
@@ -196,6 +204,28 @@ export default function Home() {
               >
                 Ver a linha Bompel <IconeSeta />
               </Link>
+            </div>
+          </div>
+
+          <div className="mt-12 border-t border-paper/15 pt-8 lg:mt-14">
+            <div className="grid gap-6 lg:grid-cols-[auto_1fr] lg:items-baseline lg:gap-20">
+              <div>
+                <p className="eyebrow text-paper/50">Também trabalhamos</p>
+                <p className="numeral mt-3 text-3xl sm:text-4xl">Sticky Shoes</p>
+              </div>
+              <div>
+                <p className="max-w-lg leading-relaxed text-paper/70">
+                  Calçado ocupacional impermeável, de fábrica brasileira. É a linha que
+                  indicamos para cozinha, alimentação e saúde, onde o risco do dia é piso
+                  molhado — e não queda de peso sobre o pé.
+                </p>
+                <Link
+                  href="/marcas/sticky-shoes/"
+                  className="mt-5 inline-flex items-center gap-2 border-b border-paper/40 pb-1 font-display text-sm font-bold text-paper/90 transition-opacity hover:opacity-70"
+                >
+                  Ver a linha Sticky Shoes <IconeSeta />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
