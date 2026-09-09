@@ -326,9 +326,9 @@ export const CIDADES: Cidade[] = [
           'Sim. A Tower EPI’s é de Fortaleza e atende empresas em Teresina, no Piauí. O atendimento começa por WhatsApp e o orçamento sai com o Certificado de Aprovação (CA) de cada item.',
       },
       {
-        pergunta: 'Qual calçado é indicado para plantão hospitalar?',
+        pergunta: 'A Tower tem loja em Teresina?',
         resposta:
-          'Calçado ocupacional fechado, com solado antiderrapante e material que suporte higienização frequente. Calçado de segurança com biqueira só é necessário quando existe risco de impacto ou queda de objeto sobre o pé, o que não é o caso da maior parte da assistência.',
+          'Não. A Tower não tem loja nem filial em nenhuma cidade: atende empresas de forma remota desde 2018. O contato começa no WhatsApp, a escolha é feita junto, e a entrega é combinada dentro do pedido.',
       },
       {
         pergunta: 'Luva de procedimento serve para limpeza hospitalar?',

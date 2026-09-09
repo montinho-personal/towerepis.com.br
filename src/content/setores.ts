@@ -66,9 +66,9 @@ export const SETORES: Setor[] = [
     ],
     perguntas: [
       {
-        pergunta: 'A equipe de cozinha precisa de calçado com biqueira?',
+        pergunta: 'O calçado da cozinha pode ser usado fora dela?',
         resposta:
-          'Depende da atividade. Cozinha de restaurante geralmente não tem risco de queda de objeto pesado sobre o pé, e nesse caso o calçado ocupacional atende melhor. Já cozinha industrial com movimentação de panelões, caixas e carrinhos pode ter esse risco. A definição deve seguir a avaliação de riscos da empresa.',
+          'O ideal é que não. Calçado que circula na rua, no estoque e na área suja entra na cozinha com o que pegou no caminho, e isso conflita com o padrão de higiene que a área exige. Onde a operação é mais rigorosa, o par fica no local e a troca acontece na entrada do turno.',
       },
       {
         pergunta: 'Como funciona a reposição para equipe com rotatividade alta?',

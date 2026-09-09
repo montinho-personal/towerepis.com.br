@@ -31,9 +31,9 @@ const PERGUNTAS = [
       'É o formato mais pedido por quem calça e descalça várias vezes ao dia, e por quem não quer lidar com cadarço solto. A firmeza depende do modelo e da numeração estar certa — elástico frouxo costuma ser sinal de número acima do ideal.',
   },
   {
-    pergunta: 'Como funciona a numeração?',
+    pergunta: 'Por que a Tower trabalha mais essa marca do que as outras?',
     resposta:
-      'Vale provar considerando o fim do expediente, não o começo: o pé incha ao longo do dia. A largura da forma importa tanto quanto o número. Se for compra para equipe, a gente ajuda a montar a grade e registra ela para as reposições seguintes.',
+      'Por profundidade, e não por exclusividade. É a linha que a Tower mais atende, então é a que ela conhece modelo a modelo: o que muda de um para o outro, o que costuma dar problema e o que não dá. Quando o risco da atividade pede outra coisa, a indicação é outra, mesmo que a Bompel esteja à mão.',
   },
 ]
 

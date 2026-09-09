@@ -288,9 +288,9 @@ export const PROFISSOES: Profissao[] = [
     ],
     perguntas: [
       {
-        pergunta: 'Qualquer luva serve para produto de limpeza?',
+        pergunta: 'A mesma luva pode ser usada no banheiro e na cozinha?',
         resposta:
-          'Não. A resistência química varia conforme o material da luva e o produto usado. Uma luva pode ser adequada a um produto e se degradar em contato com outro. Para indicar com segurança é preciso saber quais produtos você usa. E essa informação consta no Certificado de Aprovação da luva.',
+          'Não é boa prática. Luva que passou pelo sanitário leva contaminação para onde for depois, e por isso a separação por área é rotina em serviço de limpeza, normalmente resolvida com uma cor por setor. Vale combinar essa separação antes de comprar, porque ela muda a quantidade de pares do pedido.',
       },
       {
         pergunta: 'Preciso de óculos de proteção para limpar?',
@@ -377,14 +377,14 @@ export const PROFISSOES: Profissao[] = [
     ],
     perguntas: [
       {
-        pergunta: 'Biqueira de aço ou de composite: qual protege mais?',
+        pergunta: 'O mesmo calçado serve para a obra inteira?',
         resposta:
-          'Quando ambas atendem ao requisito da norma, a proteção contra impacto é equivalente. A diferença está em peso, condução de temperatura e detecção em detector de metal. O composite é mais leve e não conduz calor nem frio; o aço costuma custar menos.',
+          'Raramente. Concretagem, ferragem, alvenaria e acabamento têm pisos e riscos diferentes, e a frente de trabalho muda ao longo da obra. O caminho prático é agrupar as funções pelo risco que cada uma corre, e não pelo cargo, e só então definir quantos modelos a obra precisa de verdade.',
       },
       {
-        pergunta: 'Todo calçado de segurança protege contra prego?',
+        pergunta: 'Na concretagem, bota de borracha ou botina de couro?',
         resposta:
-          'Não. A biqueira protege os dedos contra impacto e compressão, mas não protege a sola. A proteção contra perfuração é um requisito adicional, presente apenas em modelos específicos. Confira essa informação no Certificado de Aprovação antes de comprar.',
+          'Onde o pé fica dentro do concreto fresco, couro não é o material: ele absorve, e o contato prolongado com concreto úmido é agressivo para a pele e para o próprio calçado. A bota de borracha de cano alto é o que resolve nessa frente. Terminada a concretagem, a botina volta a ser o calçado do dia.',
       },
       {
         pergunta: 'Quem é responsável por fornecer o EPI na obra?',
@@ -555,9 +555,9 @@ export const PROFISSOES: Profissao[] = [
     ],
     perguntas: [
       {
-        pergunta: 'Calçado de segurança precisa ser pesado?',
+        pergunta: 'Quem opera empilhadeira também precisa de calçado de segurança?',
         resposta:
-          'Não. A proteção vem da biqueira atender ao requisito da norma, não do peso do calçado. Modelos com biqueira de composite protegem conforme a norma e são mais leves, o que faz diferença real para quem caminha muito.',
+          'O risco não está em operar, está em descer. O operador circula pelo armazém a pé, confere carga junto de paleteira e de material empilhado, e é aí que o pé fica exposto. Quem define é a avaliação de riscos da empresa, mas na prática esse posto raramente fica de fora.',
       },
       {
         pergunta: 'Botina ou sapato para trabalho em armazém?',
