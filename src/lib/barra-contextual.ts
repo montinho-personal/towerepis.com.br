@@ -243,6 +243,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Tem a ficha de segurança do produto?',
     rotulo: 'Escolher o filtro',
   },
+  'bota-de-pvc-quando-e-a-resposta-certa': {
+    chamada: 'O pé da sua equipe fica dentro do molhado?',
+    rotulo: 'Decidir o calçado',
+  },
+  'funcionario-recusa-usar-epi-o-que-fazer': {
+    chamada: 'Tem item que a equipe não usa?',
+    rotulo: 'Descobrir o motivo',
+  },
 }
 
 /**

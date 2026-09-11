@@ -3479,6 +3479,340 @@ export const ARTIGOS: Artigo[] = [
       },
     ],
   },
+  {
+    slug: 'bota-de-pvc-quando-e-a-resposta-certa',
+    titulo: 'Bota de PVC: quando ela é a resposta certa',
+    tituloSeo: 'Bota de PVC: quando ela resolve',
+    resumo:
+      'Ela resolve um caso específico e cobra caro fora dele. A diferença entre o pé que fica dentro do líquido e o pé que só toma respingo muda o calçado inteiro.',
+    descricaoSeo:
+      'Quando a bota de PVC é a escolha certa, o que ela cobra em troca e como decidir entre ela e o calçado fechado impermeável — com o que conferir antes de comprar.',
+    publicado: '2026-09-11',
+    atualizado: '2026-09-11',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Calçados',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'A pergunta que decide não é "o ambiente é molhado?". É "o pé fica dentro do líquido?". Se fica, a bota de PVC é a resposta e quase nada substitui. Se não fica, ela costuma ser desconforto sem ganho, e um calçado fechado impermeável atende melhor.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A bota de PVC é uma das categorias mais compradas e menos explicadas do mercado de EPI. Ela é barata, todo mundo reconhece, e por isso acaba comprada por eliminação: molhou, põe bota. O resultado aparece duas semanas depois, com a equipe trabalhando de bota aberta no calcanhar ou de tênis escondido.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Onde ela ganha de qualquer outro calçado',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O ponto forte dela é ser uma peça só, sem costura e sem entrada. Não existe cadarço por onde o líquido entre, nem cabedal que absorva, nem forro que guarde umidade. Onde o pé fica submerso ou quase, isso não tem concorrente:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Lavagem de piso e de equipamento</strong>, em cozinha industrial, açougue e área de produção.',
+          '<strong>Câmara fria, pescado e abate</strong>, onde o chão é lavado o tempo todo e a água não é só água.',
+          '<strong>Concretagem</strong>, em que o pé fica dentro do concreto fresco e couro simplesmente não é material para isso.',
+          '<strong>Limpeza pesada</strong>, com produto diluído escorrendo pelo chão.',
+          '<strong>Irrigação, viveiro e lavagem de veículo</strong>, onde o dia inteiro é molhado por definição.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que ela cobra em troca',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Barreira total é barreira nos dois sentidos. O que impede o líquido de entrar também impede o suor de sair, e é daí que vêm quase todas as reclamações: pé encharcado por dentro no fim do turno, odor, e a sensação de peso que faz a pessoa arrastar o passo.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Some a isso o ajuste. A bota calça folgada por construção, e folga em jornada longa vira atrito, bolha e passo inseguro. Por isso ela é excelente por três horas de lavagem e questionável por oito horas de caminhada.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Como decidir entre as duas',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['O dia é assim', 'O que costuma resolver', 'Por quê'],
+        linhas: [
+          [
+            'O pé fica dentro da água ou do produto',
+            'Bota de PVC',
+            'É a única que não tem por onde entrar líquido',
+          ],
+          [
+            'Piso molhado, respingo, gordura, mas o pé não submerge',
+            'Calçado fechado impermeável',
+            'Protege do respingo e ainda deixa a jornada em pé viável',
+          ],
+          [
+            'Lava o piso por um turno e faz outra coisa no resto',
+            'Os dois, e a troca no meio do dia',
+            'Um par certo para cada parte do dia sai mais barato que um par errado o dia todo',
+          ],
+          [
+            'Existe risco de peso sobre o pé',
+            'Modelo com biqueira, confirmado no CA',
+            'Nem toda bota de PVC tem biqueira, e nenhuma tem por presunção',
+          ],
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Biqueira: existe, mas não venha supondo',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Bota de PVC existe nas duas versões, com e sem biqueira de proteção. A aparência não denuncia qual é qual, e a suposição errada é perigosa justamente porque o calçado parece robusto. A diferença entre as duas categorias está em <a href="/conhecimento/calcado-ocupacional-ou-de-seguranca/">calçado ocupacional ou de segurança</a>, e a confirmação está no <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a> do modelo.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O solado importa mais aqui do que em qualquer outro calçado',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem usa bota de PVC trabalha, por definição, no piso mais escorregadio que a empresa tem. E a palavra antiderrapante não descreve uma característica única: o desempenho é ensaiado em superfícies e contaminantes específicos, como explica <a href="/conhecimento/solado-antiderrapante-o-que-significa/">o que significa solado antiderrapante</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na prática isso quer dizer que água e gordura juntas pedem coisa diferente de água sozinha. É o dado que mais muda a escolha e o que mais falta quando o pedido chega.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A meia faz parte do equipamento',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Parece detalhe e não é. Como a bota não respira, o que gerencia a umidade dentro dela é a meia. Meia de algodão encharca e fica encharcada; meia mais grossa, de secagem rápida, muda a percepção de conforto mais do que trocar de marca de bota.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Onde o turno é longo e molhado, dois pares de meia por dia resolvem mais reclamação do que qualquer outra medida barata.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Se o pé realmente fica dentro do líquido, ou se o caso é de respingo.',
+          'Quantas horas do turno são assim. É o que decide entre um par e dois.',
+          'O que está no chão além da água: gordura, produto químico, resto orgânico.',
+          'Se existe risco de impacto sobre o pé, e portanto se o modelo precisa de biqueira.',
+          'Até onde o cano precisa chegar, considerando de onde o líquido vem.',
+          'O número do CA do modelo, que é o que liga aquela bota ao risco para o qual ela foi ensaiada.',
+          'Onde as botas ficam guardadas entre um turno e outro, e se secam de verdade.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale uma observação sobre produto químico: PVC resiste bem a muita coisa e mal a outras tantas, e isso depende do produto, da concentração e do tempo de contato. Quando a bota existe para proteger de um produto específico, e não da água, a compatibilidade daquele modelo com aquele produto precisa ser confirmada, do mesmo jeito que se faz com luva.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+    ],
+    paginaComercial: {
+      href: '/calcados/',
+      rotulo: 'Ver os calçados que a Tower trabalha',
+    },
+    contexto: 'calcados',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Queria saber se o caso da minha equipe é de bota de PVC ou de calçado fechado impermeável.',
+    ctaTitulo: 'Bota ou calçado fechado?',
+    ctaTexto:
+      'Conte quantas horas do turno o pé fica no molhado e o que escorre no chão além de água. Com isso dá para dizer qual das duas atende, e se o caso é de ter as duas.',
+    perguntas: [
+      {
+        pergunta: 'Bota de PVC serve para usar o dia inteiro?',
+        resposta:
+          'Serve, mas raramente é a melhor ideia. Como ela não respira, o pé termina o turno úmido por dentro mesmo sem ter entrado água. Onde só parte do dia é molhada, dois pares e uma troca no meio do expediente resolvem melhor do que insistir em um par só.',
+      },
+      {
+        pergunta: 'Dá para cortar o cano da bota para ficar mais fresca?',
+        resposta:
+          'Não. Cortar altera o produto, abre uma borda por onde o líquido entra e invalida a condição em que o modelo foi aprovado. Se o cano alto atrapalha, o caminho é um modelo de cano mais baixo, e não a adaptação do que já está no pé.',
+      },
+      {
+        pergunta: 'Por que a bota racha na dobra do pé?',
+        resposta:
+          'É o ponto que mais flexiona, e ele envelhece primeiro com sol, calor e guarda dobrada. Bota guardada em pé, à sombra e seca por dentro dura bem mais. Rachadura ali já é fim de vida do par: o líquido passa, mesmo que a bota pareça inteira.',
+      },
+    ],
+  },
+  {
+    slug: 'funcionario-recusa-usar-epi-o-que-fazer',
+    titulo: 'Funcionário se recusa a usar o EPI: o que fazer',
+    tituloSeo: 'Funcionário recusa usar EPI: o que fazer',
+    resumo:
+      'A resposta que a internet dá começa e termina em advertência. Antes disso existe uma pergunta que resolve a maior parte dos casos, e ela leva dez minutos.',
+    descricaoSeo:
+      'As causas reais da recusa de EPI, o que fazer em cada uma e como registrar — a leitura operacional, com o que a NR-6 coloca do lado do trabalhador e do empregador.',
+    publicado: '2026-09-11',
+    atualizado: '2026-09-11',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Normas',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Antes de tratar como indisciplina, vale gastar dez minutos descobrindo o porquê. Na maior parte dos casos a recusa tem causa física — o item não serve, machuca, embaça, esquenta ou atrapalha a tarefa — e causa física tem conserto. O que não tem conserto é insistir no item errado.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Procure essa dúvida e a primeira página inteira responde com medida disciplinar. A informação não está errada, mas ela começa no fim. Quem gerencia equipe sabe que advertir sem resolver a causa devolve o mesmo problema na semana seguinte, agora com uma relação pior.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que a norma coloca de cada lado',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-6 distribui obrigações nos dois sentidos. Do lado do empregador está fornecer o equipamento adequado ao risco, gratuitamente, em perfeito estado, orientar e treinar sobre o uso, e substituir quando danificado ou extraviado. Do lado do trabalhador está usar o equipamento apenas para a finalidade a que ele se destina, responsabilizar-se pela guarda e conservação, comunicar qualquer alteração que o torne impróprio e cumprir as determinações do empregador sobre o uso adequado.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Ou seja: o uso não é opcional, e a adequação também não. As duas coisas estão no mesmo texto, e é por isso que a conversa sobre recusa começa checando se a empresa cumpriu a parte dela. O texto oficial e atualizado está no portal do Ministério do Trabalho e Emprego, e está linkado nas fontes ao final.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'As causas que aparecem quase sempre',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Não serve.</strong> Numeração errada, largura errada, tamanho único para equipe inteira. É a campeã, de longe, e a que mais se conserta rápido.',
+          '<strong>Machuca ou incomoda o bastante.</strong> Bolha, calor, óculos que embaça, protetor que aperta. Dor vence regra em toda equipe do mundo.',
+          '<strong>Atrapalha a tarefa.</strong> Luva grossa demais para serviço fino, protetor que impede ouvir o colega. Aqui a pessoa tira para conseguir trabalhar.',
+          '<strong>Ninguém explicou o risco.</strong> Quando o dano é invisível e lento, como ruído e vapor, a proteção parece exagero de quem não está lá.',
+          '<strong>Não está disponível na hora.</strong> Acabou, está trancado, o responsável saiu. A recusa aqui nem é recusa, mas entra na conta como se fosse.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Repare que quatro das cinco não são sobre a pessoa. São sobre o item, sobre a informação ou sobre o processo de entrega.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que fazer, na ordem',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Perguntar, e ouvir a resposta inteira.</strong> "Por que você não está usando" é uma pergunta de diagnóstico, não de acusação. O tom muda o que você vai descobrir.',
+          '<strong>Testar a alternativa mais óbvia.</strong> Outro número, outro modelo, outro tipo. Boa parte dos casos morre aqui, no mesmo dia.',
+          '<strong>Explicar o risco com o que acontece, e não com o nome da norma.</strong> Perda auditiva não dói e não volta; isso convence mais que citar item de norma.',
+          '<strong>Registrar o que foi oferecido e o que foi recusado.</strong> Por escrito, com data e nome do item.',
+          '<strong>Só então tratar como questão disciplinar.</strong> Qual medida cabe, e quando, é decisão da empresa com a assessoria jurídica dela — e é uma conversa muito mais firme depois que as quatro anteriores estão documentadas.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O sinal de que o problema não é a pessoa',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É simples e vale mais que qualquer diagnóstico: se mais de uma pessoa recusa o mesmo item, o item é o problema. Recusa isolada pede conversa individual; recusa repetida no mesmo equipamento é aviso de compra errada, e insistir nela custa mais caro do que trocar.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O mesmo vale para o EPI que sai do corpo no meio do turno. Protetor auditivo pendurado no pescoço e óculos na testa não são desobediência aberta — são o item dizendo que não dá para usar oito horas.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O registro é o que sustenta qualquer caminho',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Seja para provar que a empresa forneceu, seja para mostrar que ofereceu alternativa antes de escalar, o que sustenta os dois é o mesmo documento. O que ele precisa trazer está em <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega de EPI</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale registrar também a recusa em si, com a data, o item, o motivo que a pessoa deu e o que foi oferecido no lugar. Não é burocracia contra o funcionário: na maioria das vezes esse registro é o que mostra, três meses depois, que o modelo comprado não servia para ninguém.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Onde isso vira uma questão de compra',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Recusa recorrente quase sempre nasce no pedido, e não no chão. Grade de numeração montada no olho, modelo escolhido pelo preço da caixa e equipe mista com um tamanho só produzem recusa de forma previsível.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É por isso que o assunto termina longe do RH e perto da compra: EPI que serve é usado, e EPI usado é o único que protege.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/como-atendemos/',
+      rotulo: 'Ver como a Tower atende empresas',
+    },
+    contexto: 'empresas',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. A equipe está resistindo a usar um EPI e queria ajuda para descobrir se o problema é o modelo.',
+    ctaTitulo: 'A equipe está deixando de usar algum item?',
+    ctaTexto:
+      'Conte qual é o item e o que as pessoas reclamam dele. Na maior parte das vezes dá para identificar se o caso é de numeração, de modelo ou de categoria errada.',
+    perguntas: [
+      {
+        pergunta: 'A empresa pode obrigar o uso do EPI?',
+        resposta:
+          'A NR-6 coloca o uso entre as obrigações do trabalhador, junto com conservar o equipamento e cumprir as determinações do empregador sobre o uso adequado. O que a norma não faz é dizer qual medida cabe em cada situação: isso é decisão da empresa, tomada com a assessoria jurídica dela.',
+      },
+      {
+        pergunta: 'Advertir resolve quando o EPI não serve?',
+        resposta:
+          'Não resolve, e costuma piorar. Se o item aperta, machuca ou impede a tarefa, a pessoa volta a tirar assim que ninguém olha, e agora com um desgaste a mais na relação. Trocar o item sai mais barato que repetir a advertência.',
+      },
+      {
+        pergunta: 'Como registrar uma recusa?',
+        resposta:
+          'Por escrito, com data, o nome do item, o motivo que a pessoa deu e o que a empresa ofereceu no lugar. Esse registro serve para os dois lados: mostra que a empresa cumpriu a parte dela e, quando a recusa se repete entre pessoas diferentes, mostra que o modelo comprado é que está errado.',
+      },
+    ],
+  },
 ]
 
 /**
