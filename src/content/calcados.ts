@@ -140,7 +140,7 @@ export const CALCADOS: TipoCalcado[] = [
       {
         pergunta: 'A biqueira protege contra prego no chão?',
         resposta:
-          'Não. A biqueira protege os dedos contra impacto e compressão. A proteção contra perfuração da sola é um requisito adicional, presente apenas em modelos específicos, e precisa constar no Certificado de Aprovação.',
+          'Não, porque ela cuida dos dedos e o prego entra pela sola. Proteção contra perfuração é um item à parte, que só existe em parte dos modelos. Onde há material perfurante no chão, ele precisa ser pedido por nome e conferido no Certificado de Aprovação.',
       },
     ],
     contexto: 'calcados-seguranca',

@@ -16,7 +16,7 @@ const PERGUNTAS = [
   {
     pergunta: 'Qual a diferença entre calçado ocupacional e calçado de segurança?',
     resposta:
-      'A diferença central é a biqueira de proteção contra impacto. O calçado de segurança, conforme a ABNT NBR ISO 20345, possui biqueira com resistência a impacto de 200 joules. O calçado ocupacional, conforme a ABNT NBR ISO 20347, não possui essa biqueira e é destinado a atividades sem risco mecânico sobre os dedos do pé.',
+      'Um tem biqueira de proteção contra impacto e o outro não, e cada um responde a uma norma própria: ABNT NBR ISO 20345 para o de segurança, 20347 para o ocupacional. Para efeito de compra, o que separa os dois é uma pergunta só — existe risco de algo pesado cair ou prensar o pé nessa atividade?',
   },
   {
     pergunta: 'Calçado ocupacional protege menos?',
@@ -26,7 +26,7 @@ const PERGUNTAS = [
   {
     pergunta: 'Biqueira de aço ou de composite: qual protege mais?',
     resposta:
-      'Quando ambas atendem ao requisito da norma, a proteção contra impacto é equivalente. A diferença está em peso, condução de temperatura e detecção em detector de metal. O composite é mais leve e não conduz calor nem frio; o aço costuma ter custo menor.',
+      'Nenhuma das duas protege mais que a outra quando ambas atendem ao requisito da norma. A escolha se faz por peso, por ambiente muito quente ou muito frio e por passagem em detector de metal — e por isso ela vem depois, modelo a modelo, com a categoria já definida.',
   },
   {
     pergunta: 'O que é biqueira de conformação?',
@@ -36,7 +36,7 @@ const PERGUNTAS = [
   {
     pergunta: 'Todo calçado de segurança protege contra perfuração?',
     resposta:
-      'Não. A biqueira protege os dedos contra impacto e compressão, mas não protege a sola. A proteção contra perfuração é um requisito adicional, presente apenas em modelos específicos, e precisa constar no Certificado de Aprovação.',
+      'Não. São dois requisitos diferentes, e o segundo só existe em parte dos modelos. Na hora de pedir, trate a proteção da sola como item separado e confirme no Certificado de Aprovação: bico reforçado não implica sola protegida.',
   },
 ]
 
@@ -66,9 +66,9 @@ export default function Comparativo() {
 
       <Secao className="wrap pt-0">
         <EmUmaFrase>
-          A diferença central é a biqueira de proteção contra impacto: o calçado de
-          segurança tem, o ocupacional não. Qual serve para você depende de existir, ou
-          não, risco de algo pesado cair sobre o seu pé.
+          A escolha não é entre mais e menos proteção: é entre dois tipos de risco. Esta
+          página serve para você identificar qual deles existe na sua rotina e sair daqui
+          com a categoria decidida.
         </EmUmaFrase>
       </Secao>
 
@@ -172,32 +172,35 @@ export default function Comparativo() {
       <Secao className="wrap">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="prose-tower">
-            <h2>Sobre a biqueira</h2>
+            <h2>Se o caso for calçado de segurança</h2>
             <p>
-              Quando o caso é de calçado de segurança, aparece a segunda dúvida: aço ou
-              composite. Quando ambas atendem ao requisito da norma, a proteção contra
-              impacto é equivalente. O que muda é outra coisa.
+              Aparece então a segunda escolha, entre biqueira de aço e de composite. Ela
+              não muda a categoria nem o que você precisa pedir: muda peso, comportamento
+              em ambiente muito quente ou muito frio e a passagem em detector de metal.
             </p>
-            <ul>
-              <li>
-                <strong>Composite</strong> — mais leve e não conduz calor nem frio. Faz
-                diferença em ambiente muito quente e para quem caminha muito.
-              </li>
-              <li>
-                <strong>Aço</strong> — costuma ter custo menor e é a opção mais difundida.
-              </li>
-              <li>
-                <strong>Biqueira de conformação</strong> — atenção: dá forma ao calçado,
-                mas <em>não</em> é biqueira de proteção. O nome parecido gera confusão.
-              </li>
-            </ul>
-
-            <h2>O que a biqueira não faz</h2>
             <p>
-              A biqueira protege os dedos contra impacto e compressão. Ela não protege a
-              sola contra perfuração. Se há prego, ferro ou material perfurante no chão da
-              sua atividade, a proteção contra perfuração é um requisito adicional — e
-              precisa ser conferida no Certificado de Aprovação do modelo.
+              É decisão de modelo, e não de categoria, então vale resolver depois desta
+              página. A comparação atividade por atividade está em{' '}
+              <Link href="/conhecimento/biqueira-de-composite-ou-de-aco-qual-escolher/">
+                biqueira de composite ou de aço
+              </Link>
+              .
+            </p>
+
+            <h2>O erro de pedido que aparece toda semana</h2>
+            <p>
+              Biqueira e proteção contra perfuração são requisitos separados, e pedir
+              &ldquo;botina com bico de aço&rdquo; não traz o segundo junto. Onde o chão
+              tem prego, ferro ou material perfurante, a proteção da sola precisa estar
+              escrita no pedido e confirmada no Certificado de Aprovação do modelo.
+            </p>
+            <p>
+              Por que os dois requisitos são separados, e o que mais a marcação do calçado
+              informa, está no texto sobre{' '}
+              <Link href="/conhecimento/calcado-ocupacional-ou-de-seguranca/">
+                as duas normas do calçado profissional
+              </Link>
+              .
             </p>
 
             <h2>E o solado?</h2>
@@ -250,7 +253,7 @@ export default function Comparativo() {
         contexto="calcados-comparativo"
         secao="comparativo-fechamento"
         titulo="Ainda não sabe qual é o seu caso?"
-        texto="Descreva a sua rotina: onde você fica, como é o piso e se há movimentação de carga. A gente diz qual dos dois faz sentido e explica por quê."
+        texto="Diga quantas pessoas são, o que elas fazem e como é o chão onde trabalham. A gente responde com a categoria certa e já ajuda a montar a grade, se for compra para equipe."
         rotulo="Tirar a dúvida no WhatsApp"
         categoria="calcados"
       />
