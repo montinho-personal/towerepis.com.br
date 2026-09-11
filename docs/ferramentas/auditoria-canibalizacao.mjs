@@ -3,6 +3,34 @@ const { paginas } = JSON.parse(fs.readFileSync('auditoria/paginas.json','utf8'))
 const { entraCorpo } = JSON.parse(fs.readFileSync('auditoria/grafo.json','utf8'))
 const rotas = Object.keys(paginas)
 
+/**
+ * GUARDA: grafo velho mente calado.
+ *
+ * Esta ferramenta LÊ `auditoria/grafo.json` e não o gera — quem gera é
+ * `auditoria-analisar.mjs`. Rodar rastrear e pular analisar deixa o grafo
+ * de uma execução anterior no disco, e a seção de links de corpo passa a
+ * descrever o site de outro dia. Página nova nem aparece no arquivo antigo,
+ * e o `?? []` mais abaixo a devolve como zero links — que é exatamente o
+ * tipo de resposta que parece certa.
+ *
+ * Aconteceu em 11/9/2026: três lotes de artigo foram relatados como "nascem
+ * sem link editorial de entrada" com base num grafo de 8/9. Eles tinham
+ * cinco ou seis links cada, gerados pelos blocos de artigos relacionados.
+ *
+ * Por isso a comparação de data aborta em vez de avisar: aviso em meio a
+ * cem linhas de relatório não é lido.
+ */
+{
+  const mtPaginas = fs.statSync('auditoria/paginas.json').mtimeMs
+  const mtGrafo = fs.statSync('auditoria/grafo.json').mtimeMs
+  if (mtGrafo < mtPaginas) {
+    const dia = (ms) => new Date(ms).toISOString().slice(0, 16).replace('T', ' ')
+    console.error(`grafo.json (${dia(mtGrafo)}) e mais velho que paginas.json (${dia(mtPaginas)}).`)
+    console.error('Rode  node docs/ferramentas/auditoria-analisar.mjs  antes desta.')
+    process.exit(1)
+  }
+}
+
 const PARAR = new Set('a o e de da do das dos para com que em no na nos nas um uma uns umas por se as os ao aos à às é são ser está mais como qual quais quando onde ou seu sua seus suas isso esse essa este esta pelo pela não sem sobre entre também já foi era tem têm ter pode podem deve devem'.split(' '))
 const termos = (t) => (t||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')
   .replace(/[^a-z0-9\s]/g,' ').split(/\s+/).filter((w) => w.length > 3 && !PARAR.has(w))

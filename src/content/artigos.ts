@@ -3813,6 +3813,377 @@ export const ARTIGOS: Artigo[] = [
       },
     ],
   },
+  {
+    slug: 'como-limpar-e-conservar-calcado-de-seguranca',
+    titulo: 'Como limpar e conservar calçado de segurança',
+    tituloSeo: 'Como limpar calçado de segurança',
+    resumo:
+      'O que encurta a vida do par quase nunca é o uso. É a secagem. A rotina que cabe em dois minutos por dia e o que estraga um calçado bom em um mês.',
+    descricaoSeo:
+      'A rotina de limpeza e secagem que faz o calçado de trabalho durar, o que nunca fazer com couro e solado, e por que alternar pares rende mais que qualquer produto.',
+    publicado: '2026-09-11',
+    atualizado: '2026-09-11',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Calçados',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'O que mata calçado de trabalho quase nunca é o uso: é a secagem. Par lavado por fora e guardado úmido envelhece por dentro antes de parecer gasto por fora. Secar direito e alternar pares fazem mais pela vida útil do que qualquer produto de prateleira.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Calçado de segurança é o EPI mais caro por pessoa na maioria das equipes, e o único que passa oito horas dentro de suor, água e sujeira todo dia. Ainda assim a conservação costuma ser a última coisa que alguém explica na entrega.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O que segue não é rotina de vitrine. É o mínimo que muda o resultado, e cabe em dois minutos no fim do turno.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A rotina diária, em dois minutos',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Tirar o excesso ainda no local.</strong> Barro, resto de produto e poeira saem fácil na hora e viram crosta no dia seguinte.',
+          '<strong>Olhar a sola.</strong> Pedra presa no desenho do solado tira a aderência de um lado só, e é uma das causas de <a href="/conhecimento/botina-escorrega-o-que-fazer-antes-de-trocar/">escorregão que ninguém atribui ao calçado</a>.',
+          '<strong>Afrouxar o cadarço e abrir a língua.</strong> Calçado fechado não seca por dentro, e é por dentro que ele apodrece.',
+          '<strong>Tirar a palmilha, quando for removível.</strong> Ela é a parte mais encharcada do conjunto e a que mais demora a secar presa lá dentro.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Secar: o passo que decide tudo',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Secagem é sombra e ar circulando, e é lenta por natureza. O erro clássico é tentar acelerar com calor, e ele cobra caro: calor direto resseca e trinca o couro, deforma a forma e ataca o adesivo que segura o solado. Descolamento de sola em calçado com pouco uso costuma ter essa origem.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Nunca:</strong> sol direto, estufa, secador, em cima de motor, perto de forno ou de aquecedor.',
+          '<strong>Sempre:</strong> local arejado, à sombra, com a língua aberta e a palmilha fora.',
+          '<strong>Encharcou de verdade:</strong> papel absorvente amassado dentro, trocado depois de algumas horas, puxa a água de onde o ar não chega.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Lavar: o que pode e o que estraga',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A regra muda com o material do cabedal, e é aqui que boa parte dos pares morre antes da hora.',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Material', 'O que funciona', 'O que estraga'],
+        linhas: [
+          [
+            'Couro',
+            'Pano úmido com sabão neutro, por fora, e secagem à sombra.',
+            'Imersão, máquina de lavar, água sanitária e solvente. Ressecam, endurecem e atacam a costura.',
+          ],
+          [
+            'Microfibra e sintético',
+            'Tolera pano úmido com mais frequência e seca mais rápido.',
+            'Calor para acelerar, que deforma antes de o material reclamar.',
+          ],
+          [
+            'PVC e borracha',
+            'Água corrente por fora, sempre que precisar.',
+            'Guardar molhado por dentro e dobrar o cano na hora de guardar.',
+          ],
+          [
+            'Solado, em qualquer caso',
+            'Escova e água para soltar o que está entalado no desenho.',
+            'Qualquer produto oleoso ou lustrante, que reduz aderência justamente onde ela importa.',
+          ],
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'A palmilha merece um parágrafo só dela',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É a peça que recebe o suor inteiro do turno e a primeira a acabar. Palmilha achatada perde o amortecimento e transfere o impacto para o calcanhar, o que costuma ser sentido como "a botina ficou dura" quando o problema é só ela.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Onde for removível, vale tirar todo dia para secar e trocar quando amassar. É a manutenção mais barata que existe em calçado de trabalho.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Guardar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Em pé, sem empilhar e sem outra coisa em cima, para não deformar a frente.',
+          'Fora de sacola plástica fechada e de armário abafado, que transformam umidade em mofo e odor.',
+          'Longe do sol e de fonte de calor, também no fim de semana.',
+          'Seco por dentro antes de guardar. Guardar úmido é o que produz o cheiro que ninguém consegue tirar depois.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Alternar pares é a medida que mais rende',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Um calçado precisa de um bom tempo parado para secar por completo por dentro, e quem usa o mesmo par todo dia nunca dá esse tempo a ele. Onde o turno é molhado, dois pares alternados não são luxo: cada um passa o dia seguinte secando de verdade, e o conjunto envelhece mais devagar.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale também para conforto. Par seco por dentro reduz atrito, e atrito é a origem de bolha e de calo.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Em cozinha e em serviço de saúde a lógica muda um pouco',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Ali a higienização é externa e frequente, porque o critério é sanitário e não estético. Material que não absorve é o que permite isso todo dia sem encharcar o par. Vale lembrar que impermeável descreve a barreira contra o líquido que vem de fora, e não uma autorização para lavar o calçado por dentro.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Conservar não adia a troca',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Cuidar bem faz o par chegar inteiro ao fim da vida útil dele, não faz a vida útil aumentar para sempre. Solado gasto, biqueira exposta e costura aberta continuam sendo critério de troca, e estão em <a href="/conhecimento/quando-trocar-o-calcado-de-seguranca/">quando trocar o calçado de segurança</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Em equipe, o ganho maior aparece de outro jeito: par conservado é par que a pessoa continua usando. E EPI usado é o único que protege.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/calcados/',
+      rotulo: 'Ver os calçados que a Tower trabalha',
+    },
+    contexto: 'calcados',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. O calçado da minha equipe está durando pouco e queria ajuda para entender se é uso, conservação ou modelo.',
+    ctaTitulo: 'O par da sua equipe está durando pouco?',
+    ctaTexto:
+      'Conte quanto tempo dura hoje e como é o ambiente. Dá para dizer se o caso é de conservação, de rodízio de pares ou de o modelo não ser o certo para aquele piso.',
+    perguntas: [
+      {
+        pergunta: 'Pode lavar botina na máquina de lavar?',
+        resposta:
+          'Não. A máquina encharca forro, entretela e adesivo de uma vez, e a batida do tambor descola solado e abre costura. O calçado até sai limpo na primeira vez, e é justamente por isso que o hábito pega — o estrago aparece algumas lavagens depois.',
+      },
+      {
+        pergunta: 'Graxa e hidratante de couro servem em calçado de trabalho?',
+        resposta:
+          'Em couro liso, um produto próprio para couro ajuda a evitar ressecamento e trinca. Em nobuck, camurça e microfibra, não: o acabamento é outro e o produto empasta. E nada disso vai no solado, porque qualquer coisa oleosa ali reduz a aderência.',
+      },
+      {
+        pergunta: 'Como tirar o cheiro do calçado?',
+        resposta:
+          'O cheiro é consequência de umidade que ficou, então perfume não resolve: ele volta no dia seguinte. O que resolve é secar de verdade entre um turno e outro, tirar a palmilha todo dia e alternar dois pares onde o ambiente é molhado.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-para-frigorifico-e-camara-fria',
+    titulo: 'EPI para frigorífico e câmara fria: o que muda',
+    tituloSeo: 'EPI para frigorífico e câmara fria',
+    resumo:
+      'Frio sozinho é administrável. O que torna esse ambiente difícil é a combinação: frio, água, faca e piso escorregadio ao mesmo tempo, por oito horas.',
+    descricaoSeo:
+      'O que muda na escolha de EPI para frigorífico e câmara fria: mão dormente, luva em camadas, piso molhado e o que costuma faltar no pedido.',
+    publicado: '2026-09-11',
+    atualizado: '2026-09-11',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'O frio não é o risco principal desse ambiente: ele é o que agrava todos os outros. Mão fria perde destreza e sensibilidade, e é a mão dormente que se corta na faca e que aperta errado a caixa. Todo EPI ali precisa funcionar molhado, no frio, e com a pessoa já cansada.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Frigorífico, câmara fria de distribuidora, área de pescado e sala de cortes têm em comum uma coisa que nenhum outro ambiente junta: temperatura baixa, água o tempo todo, ferramenta cortante e chão escorregadio, na mesma jornada.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Isso muda a escolha de EPI de um jeito que catálogo nenhum resolve sozinho, porque os itens passam a competir entre si.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O frio mexe no corpo antes de machucar',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Com a mão fria, a força de preensão cai e a sensibilidade também. A pessoa compensa apertando mais a faca e prestando menos atenção ao que sente na ponta dos dedos. É por isso que acidente de corte em ambiente frio raramente é falta de atenção: é consequência fisiológica de uma jornada no frio.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Daí vem a regra que organiza todo o resto: manter a mão funcionando é uma medida de segurança, e não de conforto.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'As mãos são o centro do problema',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Nesse ambiente a mão precisa de três coisas que normalmente não vêm na mesma peça: proteção térmica, proteção contra corte e barreira contra umidade. Tentar resolver as três com uma luva só costuma terminar em uma luva que não faz nenhuma bem.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A saída prática é combinar camadas, e a combinação depende da tarefa: quem manuseia faca tem exigência diferente de quem só movimenta caixa na câmara. Cada item da combinação precisa ter o próprio <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a> para o risco que ele cobre, e o material de cada camada muda o resultado, como em <a href="/conhecimento/tipos-de-luva-qual-material-escolher/">qual material de luva escolher</a>.',
+      },
+      {
+        tipo: 'destaque',
+        texto:
+          'Luva molhada não aquece. A partir do momento em que a água entra, a camada térmica vira o contrário do que deveria ser, e a pessoa passa o resto do turno pior do que estaria sem ela. Reposição durante o turno faz parte do dimensionamento, não é desperdício.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O pé: o frio sobe do chão',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Piso lavado o tempo todo, resto orgânico e gordura formam a pior combinação de aderência que existe, e ela vem junto com frio que atravessa o solado. A escolha aqui precisa resolver as duas coisas.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Impermeabilidade real.</strong> Onde o pé fica dentro da água, o caminho costuma ser a <a href="/conhecimento/bota-de-pvc-quando-e-a-resposta-certa/">bota de PVC</a>; onde é respingo e piso molhado, um calçado fechado impermeável atende melhor.',
+          '<strong>Solado pensado para esse piso.</strong> Água com gordura pede desempenho diferente de água sozinha, como explica <a href="/conhecimento/solado-antiderrapante-o-que-significa/">o que significa antiderrapante</a>.',
+          '<strong>Biqueira, quando houver movimentação de carga.</strong> Câmara com paleteira e caixa empilhada tem risco de impacto; sala de corte, nem sempre.',
+          '<strong>Meia adequada.</strong> É ela que gerencia a umidade dentro do calçado, e no frio isso deixa de ser detalhe.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Vestimenta: camadas, e não uma peça grossa',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Uma peça muito grossa restringe o movimento e faz a pessoa transpirar dentro dela; suor no frio esfria mais do que o ambiente. Camadas permitem ajustar ao longo do dia e à diferença de temperatura entre a câmara e a área externa, que em muitas operações é enorme.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem entra e sai da câmara várias vezes por turno tem um problema diferente de quem fica dentro: para esse caso, o que precisa ser fácil é vestir e tirar.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que costuma faltar no pedido',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Proteção de cabeça e orelha.</strong> É por onde mais se perde calor, e é o item que mais fica de fora da lista.',
+          '<strong>Reposição durante o turno.</strong> Luva e meia molhadas precisam de substituição, não de paciência.',
+          '<strong>Tamanho por pessoa.</strong> Luva apertada corta a circulação e esfria a mão mais rápido; luva folgada tira a firmeza na faca.',
+          '<strong>Onde as peças secam.</strong> Sem lugar de secagem, a equipe começa o turno seguinte com o equipamento úmido de ontem.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Uma coisa que EPI não resolve',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Tempo de permanência em ambiente artificialmente frio e regime de pausa são tratados em norma específica e definidos pela avaliação da própria empresa. Nenhum equipamento substitui isso, e vale dizer com todas as letras: se a organização do trabalho no frio estiver errada, EPI bom apenas adia o problema.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Qual a temperatura real de cada área, e quanto tempo cada pessoa passa em cada uma.',
+          'Quem manuseia ferramenta cortante e quem só movimenta carga.',
+          'Se o pé fica dentro da água ou apenas em piso molhado.',
+          'Quantas vezes por turno a pessoa entra e sai do frio.',
+          'Quantas trocas de luva e de meia o turno exige, e quem repõe.',
+          'Se existe risco de impacto sobre o pé na área.',
+          'O CA de cada item, lembrando que proteção térmica e proteção contra corte são ensaiadas separadamente.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É um dos ambientes em que a rotatividade é mais alta, e isso tem consequência direta de compra: sem a grade de numeração mapeada e poucos modelos padronizados, cada admissão vira uma escolha do zero, e o que entra no pé da pessoa nova costuma ser o que sobrou.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/',
+      rotulo: 'Ver soluções para empresas',
+    },
+    contexto: 'empresas',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Preciso equipar uma equipe que trabalha no frio e queria ajuda para montar a lista.',
+    ctaTitulo: 'Vai equipar uma equipe que trabalha no frio?',
+    ctaTexto:
+      'Conte a temperatura da área, quem usa faca e quantas horas cada um passa lá dentro. Com isso dá para montar a lista por função, e não por catálogo.',
+    perguntas: [
+      {
+        pergunta: 'Luva térmica sozinha resolve em sala de corte?',
+        resposta:
+          'Quase nunca. Térmica e anticorte são proteções diferentes, ensaiadas separadamente, e raramente vêm bem resolvidas na mesma peça. Onde há faca, a conversa é sobre combinar camadas conforme a tarefa, e cada item precisa do Certificado de Aprovação para o risco que ele cobre.',
+      },
+      {
+        pergunta: 'Por que a equipe tira a luva no meio do turno?',
+        resposta:
+          'Na maior parte das vezes porque ela molhou. Luva úmida esfria a mão em vez de aquecer, e tirar passa a ser a atitude que dá alívio. É um problema de reposição durante o turno, e não de disciplina.',
+      },
+      {
+        pergunta: 'Calçado de câmara fria precisa ter biqueira?',
+        resposta:
+          'Depende da área. Onde há paleteira, carrinho e caixa empilhada existe risco de impacto sobre o pé, e aí sim. Em sala de corte sem movimentação de carga pesada, o critério principal passa a ser aderência no piso molhado e barreira contra líquido. Quem define é a avaliação de riscos da empresa.',
+      },
+    ],
+  },
 ]
 
 /**

@@ -64,9 +64,15 @@ node docs/ferramentas/qa-privacidade.mjs       # cookies e hosts, três trilhas
 node docs/ferramentas/qa-faq.mjs               # FAQ: presença e duplicação
 node docs/ferramentas/qa-barra.mjs             # barra contextual, matriz
 node docs/ferramentas/auditoria-rastrear.mjs   # rastreia (porta 3122)
-node docs/ferramentas/auditoria-analisar.mjs   # inventário
-node docs/ferramentas/auditoria-canibalizacao.mjs
+node docs/ferramentas/auditoria-analisar.mjs   # inventário — gera o grafo
+node docs/ferramentas/auditoria-canibalizacao.mjs   # lê o grafo, não o gera
 ```
+
+As três da auditoria são uma sequência, nesta ordem. A de canibalização
+**lê** `auditoria/grafo.json` e não o escreve: pular a do meio deixa o grafo
+de uma execução anterior no disco, e a seção de links de corpo passa a
+descrever o site de outro dia. Ela agora recusa rodar com grafo mais velho
+que o rastreio, mas a ordem continua sendo a sua responsabilidade.
 
 O rastreador escreve em `auditoria/`, que é ignorado pelo git. Criar a pasta se
 não existir.

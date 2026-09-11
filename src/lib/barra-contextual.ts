@@ -251,6 +251,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Tem item que a equipe não usa?',
     rotulo: 'Descobrir o motivo',
   },
+  'como-limpar-e-conservar-calcado-de-seguranca': {
+    chamada: 'O par da sua equipe dura pouco?',
+    rotulo: 'Avaliar o caso',
+  },
+  'epi-para-frigorifico-e-camara-fria': {
+    chamada: 'Vai equipar uma equipe que trabalha no frio?',
+    rotulo: 'Montar a lista',
+  },
 }
 
 /**
