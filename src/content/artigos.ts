@@ -4184,6 +4184,356 @@ export const ARTIGOS: Artigo[] = [
       },
     ],
   },
+  {
+    slug: 'calcado-para-quem-trabalha-em-pe-o-dia-todo',
+    titulo: 'Calçado para quem trabalha em pé o dia todo',
+    tituloSeo: 'Calçado para trabalhar em pé o dia todo',
+    resumo:
+      'Quem passa oito horas em pé não sofre um acidente: acumula carga. E o critério que decide o fim do turno não é a robustez do calçado — é outro.',
+    descricaoSeo:
+      'O que decide o conforto de quem passa o turno em pé: peso do par, amortecimento e numeração, nessa ordem. E o que ajuda sem ser o calçado.',
+    publicado: '2026-09-12',
+    atualizado: '2026-09-12',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Calçados',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Quem passa o turno em pé não sofre um acidente: acumula carga. O que decide o fim do dia é peso do par, amortecimento e numeração, nessa ordem — e não a robustez do calçado. Botina pesada escolhida "porque é mais segura" costuma ser a que mais cansa, sem proteger de nada que exista ali.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Procure "calçado para trabalhar em pé" e a resposta vem de loja de tênis. É compreensível: a dor é a mesma. Mas a resposta não serve, porque em cozinha, em loja, em linha de produção e em plantão existe risco que tênis nenhum cobre, e existe exigência de Certificado de Aprovação.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que acontece com o corpo em oito horas de pé',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O pé incha ao longo do dia, o que muda o ajuste do calçado entre a manhã e o fim do expediente. O impacto de cada passo é pequeno e se repete o dia inteiro, então ele não aparece como dor aguda: aparece como cansaço no fim do turno, peso na panturrilha e dor lombar.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Repare que boa parte da queixa nem é no pé. É por isso que "o calçado está bom, a pessoa é que reclama" costuma ser diagnóstico errado.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Peso do par é o critério que ninguém mede',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Cada passo levanta o calçado inteiro, e são muitos passos. Uma diferença que parece pequena com o par na mão deixa de ser pequena ao longo de um turno, e é a primeira coisa a olhar quando a equipe reclama de cansaço e não de dor.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Onde a biqueira é realmente necessária, a de composite pesa menos que a de aço, e a comparação entre as duas está em <a href="/conhecimento/biqueira-de-composite-ou-de-aco-qual-escolher/">biqueira de composite ou de aço</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Onde o amortecimento realmente está',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Ele vem da entressola e da palmilha, e as duas se comportam de forma diferente com o tempo. A entressola envelhece devagar; a palmilha achata rápido, e quando achata transfere o impacto direto para o calcanhar.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Isso explica uma reclamação comum: "a botina endureceu". Na maior parte das vezes o calçado está igual e a palmilha é que acabou. Trocar a palmilha é a manutenção mais barata que existe aqui, e ela aparece na rotina de <a href="/conhecimento/como-limpar-e-conservar-calcado-de-seguranca/">conservação do par</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Biqueira só onde há risco de impacto',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Esta é a decisão que mais muda o peso do conjunto, e ela não é de preferência: é do risco da atividade. Onde não há queda de objeto pesado sobre o pé, o calçado ocupacional atende melhor e cansa menos. A diferença entre as duas categorias está em <a href="/conhecimento/calcado-ocupacional-ou-de-seguranca/">calçado ocupacional ou de segurança</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale dizer o contrário com a mesma clareza: onde o risco existe, nenhum ganho de conforto compensa tirar a biqueira.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A numeração decide mais do que o modelo',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Um modelo excelente no número errado perde para um modelo comum no número certo, todas as vezes. Como o pé incha, a prova precisa considerar o fim do expediente, e a largura da forma importa tanto quanto o número.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Onde exatamente dói diz o que aconteceu, e isso está destrinchado em <a href="/conhecimento/botina-que-machuca-calcado-ou-numeracao/">botina que machuca: é o calçado ou a numeração?</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que ajuda e não é o calçado',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale a honestidade: nem tudo aqui se resolve comprando calçado, e quem vende calçado dizendo o contrário está vendendo errado.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>O piso.</strong> Concreto nu castiga mais que qualquer outro. Onde o posto é fixo, tapete de alívio muda mais do que trocar de modelo.',
+          '<strong>A meia.</strong> Gerencia umidade e atrito, e atrito é a origem de bolha e de calo.',
+          '<strong>Dois pares em rodízio.</strong> Par seco por dentro cansa menos, e ainda dura mais.',
+          '<strong>Alternar postura.</strong> Poder sentar alguns minutos, ou apoiar um pé, muda o acúmulo do dia. Isso é organização do trabalho, não compra.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Quantas horas a pessoa fica em pé, e quanto disso é parada e quanto é caminhando.',
+          'Se existe risco de impacto sobre o pé, que é o que define a categoria.',
+          'Como é o piso, e se ele é molhado ou gorduroso.',
+          'O peso do par, comparado ao que a equipe usa hoje.',
+          'Se a palmilha é removível e se há reposição dela.',
+          'A numeração provada no fim do expediente, e a largura da forma.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Em compra para equipe, esses dados valem mais que o nome do modelo. Com eles dá para montar a grade uma vez e repor sem recomeçar a escolha a cada contratação.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+    ],
+    paginaComercial: {
+      href: '/calcados/ocupacionais/',
+      rotulo: 'Ver os calçados ocupacionais',
+    },
+    contexto: 'calcados-ocupacionais',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Minha equipe passa o turno em pé e queria ajuda para escolher um calçado que canse menos.',
+    ctaTitulo: 'A equipe reclama de cansaço no fim do turno?',
+    ctaTexto:
+      'Conte quantas horas são em pé, como é o piso e se existe risco de impacto no pé. Dá para dizer se o caso é de categoria, de peso do par ou de numeração.',
+    perguntas: [
+      {
+        pergunta: 'Calçado mais macio é sempre melhor para ficar em pé?',
+        resposta:
+          'Não. Macio demais afunda e deixa de sustentar, e o pé trabalha mais para se estabilizar, o que cansa igual. O que se procura é amortecimento com estabilidade, e não o calçado mais fofo da prateleira.',
+      },
+      {
+        pergunta: 'Tênis serve para trabalhar em pé?',
+        resposta:
+          'Para conforto, às vezes serve. Como EPI, não: tênis esportivo não tem Certificado de Aprovação, não é ensaiado para os riscos do ambiente de trabalho e é feito para outro movimento. Onde existe risco no piso ou sobre o pé, ele não entra na conversa.',
+      },
+      {
+        pergunta: 'Palmilha de gel resolve a dor no fim do dia?',
+        resposta:
+          'Pode aliviar, e pode esconder a causa. Se a dor vem de numeração errada ou de par gasto, a palmilha só adia o problema — e colocada dentro de um calçado já justo, aperta ainda mais. Dor que persiste depois do ajuste do calçado é assunto de avaliação de saúde, não de acessório.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-para-soldador-o-que-muda',
+    titulo: 'EPI para soldador: o que muda na escolha',
+    tituloSeo: 'EPI para soldador: o que muda',
+    resumo:
+      'Três riscos acontecem ao mesmo tempo e em direções diferentes. Proteger dois e esquecer o terceiro é o padrão — e o esquecido costuma ser sempre o mesmo.',
+    descricaoSeo:
+      'Radiação, respingo e fumo de solda exigem proteções diferentes ao mesmo tempo. O que muda na escolha, o que a roupa não pode ser e quem mais fica exposto.',
+    publicado: '2026-09-12',
+    atualizado: '2026-09-12',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Na solda três riscos acontecem ao mesmo tempo e em direções diferentes: radiação que queima olho e pele, respingo de metal muito quente, e fumo que vai para o pulmão. Proteger dois e esquecer o terceiro é o padrão do setor, e o esquecido é quase sempre o respiratório.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A busca por EPI de soldador cai em catálogo, e catálogo lista itens sem dizer qual decisão cada um resolve. O que segue é a ordem em que essas decisões aparecem na prática.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A radiação é a que mais engana',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O arco emite radiação ultravioleta e infravermelha em quantidade alta. A lesão de córnea que o setor chama de "olho de arco" não dói na hora: aparece horas depois, de madrugada, e quem foi atingido costuma jurar que não olhou para o arco.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A mesma radiação queima a pele exposta, como uma queimadura de sol acelerada. Pescoço, orelha e antebraço são as regiões que mais aparecem, justamente porque são as que ficam de fora.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O número do filtro não sai de artigo nenhum',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A tonalidade do filtro depende do processo de solda e da corrente de trabalho, e sai da tabela técnica aplicável ao caso, confirmada pelo responsável técnico da empresa. Qualquer número que você leia num blog, inclusive neste, seria chute — e chute aqui é lesão de vista.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O que vale dizer sem risco de errar: a máscara precisa ter Certificado de Aprovação, e a tonalidade certa é a que permite enxergar a poça de solda sem esforço. Filtro escuro demais faz a pessoa levantar a máscara para posicionar a peça, e é nesse instante que a vista é atingida.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Respingo: o que a roupa não pode ser',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Esta é a parte em que a escolha errada é mais perigosa do que nenhuma escolha. Tecido sintético não pega fogo como algodão: ele derrete, gruda na pele e continua queimando ali. Camiseta comum de poliéster embaixo do uniforme anula boa parte do que o uniforme faria.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Nada de sintético em contato com a pele</strong>, nem por baixo.',
+          '<strong>Bolso fechado e bainha para baixo.</strong> Bolso aberto e barra dobrada viram copo para respingo.',
+          '<strong>Calça por fora do calçado</strong>, nunca por dentro, para o respingo escorrer em vez de entrar.',
+          '<strong>Cobertura de pescoço e orelha</strong>, que é a lacuna clássica entre a máscara e a roupa.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O fumo de solda é o risco que ninguém vê sair',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O que sobe do arco não é fumaça no sentido comum: é material do metal e do consumível que virou partícula muito fina, às vezes acompanhado de gás. O que exatamente está ali depende do metal base, do revestimento dele e do eletrodo usado — revestimento galvanizado, por exemplo, muda completamente a conversa.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Como a mistura decide o filtro, e a mistura muda de serviço para serviço, este é o item que mais exige conversa antes da compra. A sequência de decisão está em <a href="/conhecimento/respirador-como-escolher-o-filtro/">como escolher o filtro do respirador</a>, e o erro mais caro do assunto está em <a href="/conhecimento/mascara-descartavel-nao-protege-de-vapor-quimico/">máscara descartável não protege de vapor químico</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale um lembrete que não é sobre EPI: ventilação e exaustão no ponto de geração reduzem a exposição de todo mundo ao mesmo tempo, e vêm antes do equipamento individual na ordem das medidas.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O ajudante, e quem só passa ao lado',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A radiação do arco não escolhe quem está trabalhando. Ajudante, conferente e quem cruza o galpão são atingidos do mesmo jeito, sem máscara nenhuma, e são eles que mais aparecem com lesão de vista.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Biombo ou cortina de solda resolve isso para todos de uma vez, e quem trabalha junto do soldador precisa da própria proteção de vista. É uma das lacunas mais comuns e mais baratas de fechar.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Mão, braço e pé',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A luva de solda tem duas funções que competem: resistir ao calor e ao respingo, e permitir manipular a peça. Quanto mais grossa, mais protege e menos deixa trabalhar — e luva que impede o serviço acaba saindo da mão, que é o pior resultado possível.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'No pé, o que decide é o respingo não entrar pela boca do calçado, e a categoria continua sendo definida pelo risco de impacto, como em qualquer outra atividade.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Qual processo de solda é usado, e em que faixa de corrente.',
+          'Qual o metal base e se há revestimento, porque isso muda o que sobe no ar.',
+          'Se a solda é em bancada, em campo ou em posição difícil, o que muda de onde vem o respingo.',
+          'Se existe ventilação ou exaustão no ponto, antes de discutir respirador.',
+          'Quem mais fica na área, e se há biombo.',
+          'O CA de cada item, lembrando que máscara, respirador, luva e vestimenta são aprovações separadas.',
+          'O que a equipe veste por baixo do uniforme.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O último item da lista é o que mais surpreende quem nunca perguntou. Boa parte das queimaduras que aparecem em oficina veio de uma camiseta que ninguém tinha considerado parte do problema.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/',
+      rotulo: 'Ver soluções para empresas',
+    },
+    contexto: 'empresas',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Preciso equipar soldador e queria ajuda para montar a lista a partir do processo que a gente usa.',
+    ctaTitulo: 'Vai equipar quem solda?',
+    ctaTexto:
+      'Conte o processo de solda, o metal que vocês trabalham e se a área tem exaustão. Com isso dá para montar a lista certa, e dizer o que falta antes de comprar.',
+    perguntas: [
+      {
+        pergunta: 'Óculos escuro comum protege do arco de solda?',
+        resposta:
+          'Não. Lente escura reduz o brilho e não a radiação ultravioleta e infravermelha do arco, então ela deixa a pessoa encarar mais tempo o que continua queimando a vista. Proteção contra arco é equipamento ensaiado para isso, com Certificado de Aprovação.',
+      },
+      {
+        pergunta: 'Quem trabalha ao lado do soldador precisa de proteção?',
+        resposta:
+          'Precisa. A radiação do arco atinge quem está em volta do mesmo jeito, e é comum a lesão de vista aparecer no ajudante e não em quem soldava. Biombo ou cortina de solda protege todo mundo ao mesmo tempo, e quem fica perto precisa de proteção própria para os olhos.',
+      },
+      {
+        pergunta: 'Máscara PFF resolve o fumo de solda?',
+        resposta:
+          'Ela pode ser parte da resposta para a parte particulada, e não é a resposta inteira. O que sobe do arco depende do metal, do revestimento e do consumível, e pode incluir gás, que peça para partícula não retém. A escolha vem do que existe naquele serviço, e não do que costuma ter no almoxarifado.',
+      },
+    ],
+  },
 ]
 
 /**
