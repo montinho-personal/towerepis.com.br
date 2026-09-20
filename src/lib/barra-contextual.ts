@@ -283,6 +283,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Quais colas e limpadores a fábrica usa?',
     rotulo: 'Separar por setor',
   },
+  'epi-para-hotelaria-o-que-muda': {
+    chamada: 'Vai equipar a casa antes da temporada?',
+    rotulo: 'Separar por área da casa',
+  },
+  'epi-para-mecanico-de-oficina': {
+    chamada: 'Que serviços a sua oficina faz?',
+    rotulo: 'Montar a lista da oficina',
+  },
 }
 
 /**

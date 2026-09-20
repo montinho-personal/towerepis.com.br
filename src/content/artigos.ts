@@ -5236,6 +5236,371 @@ export const ARTIGOS: Artigo[] = [
       },
     ],
   },
+  {
+    slug: 'epi-para-hotelaria-o-que-muda',
+    titulo: 'EPI para hotel e pousada: o que muda na escolha',
+    tituloSeo: 'EPI para hotelaria: o que muda',
+    resumo:
+      'Um hotel não é um negócio: são cinco, cada um com risco próprio. E o pedido de EPI costuma ser feito como se fosse um uniforme só.',
+    descricaoSeo:
+      'Cozinha, governança, lavanderia, manutenção e área de lazer pedem EPI diferente. O que muda em cada uma, e por que a alta temporada é um problema de EPI.',
+    publicado: '2026-09-20',
+    atualizado: '2026-09-20',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Um hotel não é uma operação, são cinco: cozinha, governança, lavanderia, manutenção predial e área de lazer. Cada uma tem risco próprio, e nenhuma delas se resolve com a lista da outra. O pedido, porém, quase sempre é feito como se fosse um uniforme único para a casa inteira.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É um setor em que quase não há acidente grave e há muito afastamento por coisa pequena e repetida: escorregão em piso molhado, dermatite pelo contato com saneante, dor no fim de turnos longos em pé.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Nenhum desses aparece no relatório como emergência. Todos aparecem na folha.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Cozinha: o piso decide tudo',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Água com gordura é a pior combinação de aderência que existe, e ela é o estado normal do chão de uma cozinha em serviço. Aqui a resistência ao escorregamento vem antes de qualquer outra característica, e vale saber que a palavra antiderrapante não descreve uma coisa só — o desempenho é ensaiado em superfícies e contaminantes específicos, como explica <a href="/conhecimento/solado-antiderrapante-o-que-significa/">o que significa solado antiderrapante</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na maior parte das cozinhas de hotel não existe risco de queda de objeto pesado sobre o pé, o que torna o calçado ocupacional a categoria adequada — mais leve e mais confortável para a jornada. O critério completo está em <a href="/conhecimento/calcado-para-cozinha-como-escolher/">qual calçado para cozinha</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Governança: a mão que passa o dia no saneante',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A camareira limpa banheiro, troca roupa de cama, recolhe resíduo e manuseia produto concentrado, muitas vezes no mesmo quarto e em sequência. O risco dominante não é corte nem impacto: é contato químico repetido, todos os dias.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Duas coisas importam mais do que parecem. A primeira é que <a href="/conhecimento/luva-de-procedimento-nao-e-luva-de-limpeza/">luva de procedimento não é luva de limpeza</a>, e usar uma no lugar da outra é o erro mais comum do setor. A segunda é separar a luva por área: a que passou pelo sanitário não deveria seguir para a copa.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Lavanderia',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Calor, umidade, produto químico concentrado e piso molhado no mesmo lugar. É a área que mais se parece com uma pequena indústria dentro do hotel, e a que mais fica de fora da lista de compra.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Onde há alvejante e neutralizante em volume, a escolha da luva sai da ficha de segurança do produto e da compatibilidade do modelo, e não do hábito — o caminho está em <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">como escolher luva pelo produto químico</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Manutenção predial e área de lazer',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Aqui o risco muda a cada chamado, e o conjunto se monta por tarefa. Há um ponto específico que merece atenção porque costuma ser tratado como rotina banal: o tratamento de piscina envolve produto químico concentrado, e concentrado é outra conversa. Respingo no olho e vapor em local fechado são os dois acidentes clássicos dessa função.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Onde há vapor, peça filtrante para partícula não resolve, e a sequência para acertar isso está em <a href="/conhecimento/respirador-como-escolher-o-filtro/">como escolher o filtro do respirador</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A alta temporada é um problema de EPI',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Esta é a parte específica de hotel e pousada de litoral, e é a que ninguém planeja. Na temporada a equipe dobra, boa parte é gente nova, e ela chega para trabalhar no mesmo dia em que foi contratada.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O que acontece na prática: não existe grade de numeração da equipe nova, então o calçado que sobra é o que ninguém quis; a entrega vira informal porque a casa está cheia; e ninguém sabe dizer, em março, o que foi entregue a quem em dezembro.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Monte a grade antes da temporada</strong>, e não durante. O caminho está em <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">como definir a grade da equipe</a>.',
+          '<strong>Mantenha a ficha de entrega mesmo no corre-corre.</strong> O que ela precisa trazer está em <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega de EPI</a>.',
+          '<strong>Padronize poucos modelos.</strong> Com rotatividade alta, cada modelo a mais é uma escolha a refazer.',
+          '<strong>Compre a reposição junto com a temporada</strong>, não depois que ela começar.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que costuma faltar no pedido',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>A lavanderia inteira.</strong> É a área mais esquecida da casa.',
+          '<strong>Proteção de olhos na manutenção e na piscina.</strong> Item barato, ausência frequente.',
+          '<strong>Luva separada por área</strong>, em vez de uma caixa geral no almoxarifado.',
+          '<strong>Calçado para quem trabalha na recepção e no salão.</strong> Jornada em pé também é exposição, e o assunto está em <a href="/conhecimento/calcado-para-quem-trabalha-em-pe-o-dia-todo/">calçado para quem trabalha em pé o dia todo</a>.',
+          '<strong>Reposição dimensionada para a temporada</strong>, e não para o mês médio.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Quantas pessoas em cada área, na baixa e na alta temporada.',
+          'Quais produtos de limpeza a casa usa, com nome.',
+          'Como é o piso da cozinha e o que escorre nele.',
+          'Se existe risco de impacto sobre o pé em alguma área, e onde.',
+          'Quem cuida da piscina, e com que produto.',
+          'A grade de numeração, ou a disposição de montá-la antes da temporada.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A Tower atende hotelaria no litoral cearense e também em <a href="/epi-por-cidade/parnaiba-pi/">Parnaíba</a> e em <a href="/epi-por-cidade/natal-rn/">Natal</a>, que são dois destinos com perfil parecido e temporadas diferentes.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/facilities-e-limpeza/',
+      rotulo: 'Ver o atendimento a facilities e limpeza',
+    },
+    contexto: 'empresas-facilities',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Tenho um hotel e queria ajuda para montar a lista de EPI separada por área da casa.',
+    ctaTitulo: 'Vai equipar a casa antes da temporada?',
+    ctaTexto:
+      'Conte quantas pessoas há em cada área e quais produtos a limpeza usa. A gente separa a lista por setor e ajuda a montar a grade antes de a temporada começar.',
+    perguntas: [
+      {
+        pergunta: 'A camareira precisa de biqueira no calçado?',
+        resposta:
+          'Na maior parte das casas não, porque não existe risco de queda de objeto pesado sobre o pé no serviço de quarto. O que existe é piso molhado e muitas horas em pé, e para isso a linha ocupacional antiderrapante atende melhor e pesa menos. Quem define é a avaliação de riscos da casa.',
+      },
+      {
+        pergunta: 'Como equipar a equipe extra da temporada sem comprar duas vezes?',
+        resposta:
+          'Montando a grade de numeração antes de a temporada abrir e padronizando poucos modelos. O gasto duplicado quase sempre vem de comprar no susto, em tamanho errado, e ter que repor no meio da alta. Vale também combinar a reposição junto com o pedido principal.',
+      },
+      {
+        pergunta: 'Quem cuida da piscina precisa de EPI diferente?',
+        resposta:
+          'Precisa, porque ali o produto é manuseado concentrado, e não diluído como no resto da casa. A conversa passa a ser de proteção de olhos e face, luva compatível com aquele produto específico e cuidado com vapor em local fechado. A ficha de segurança do produto é quem diz o quê.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-para-mecanico-de-oficina',
+    titulo: 'EPI para mecânico de oficina: o que muda na escolha',
+    tituloSeo: 'EPI para mecânico de oficina',
+    resumo:
+      'Na oficina o problema raramente é um acidente grande. É o acúmulo de contatos pequenos, todos os dias, na mesma mão e no mesmo olho.',
+    descricaoSeo:
+      'Óleo, solvente, peça quente e escorregão: o que muda na escolha de EPI numa oficina mecânica, e por que filtro não resolve gás de escape.',
+    publicado: '2026-09-20',
+    atualizado: '2026-09-20',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Na oficina o problema raramente é um acidente grande. É o acúmulo de contatos pequenos: óleo na pele todo dia, solvente na limpeza de peça, batida de ferramenta, estilhaço no esmeril. Nenhum deles assusta sozinho, e é por isso que a oficina é um dos lugares onde menos se usa EPI.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Some a isso a cultura do setor, em que trabalhar sem luva é sinal de prática. O caminho para mudar isso não é palestra: é escolher equipamento que deixe a pessoa trabalhar.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A mão é o centro do problema',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Aqui a luva precisa fazer três coisas ao mesmo tempo: resistir a óleo e solvente, aguentar abrasão, e ainda permitir pegar um parafuso pequeno. Luva que impede a tarefa sai da mão em cinco minutos, e a partir daí não protege de nada.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Por isso a escolha de material pesa mais aqui do que em quase qualquer outro ambiente, e a comparação está em <a href="/conhecimento/tipos-de-luva-qual-material-escolher/">qual material de luva escolher</a>. Vale um alerta específico: couro absorve óleo e passa a segurar o produto contra a pele — o oposto do que se espera dele.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Óleo e solvente na pele, todos os dias',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É a exposição mais subestimada da oficina. O contato repetido resseca, racha e sensibiliza a pele, e o quadro se instala devagar o bastante para ninguém ligar uma coisa à outra.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Creme de proteção ajuda, e não substitui a barreira: onde há solvente, quem protege é a luva compatível com o produto, como em <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">como escolher luva pelo produto químico</a>. E lavar a mão com solvente no fim do expediente, que é hábito comum, é a pior parte do dia inteiro.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O olho, e tudo que salta',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Esmeril, escova rotativa, ar comprimido, mola sob tensão, fluido pressurizado e bateria. A oficina tem mais fontes de projeção do que a maioria das indústrias, e o óculos de proteção é ao mesmo tempo o item mais barato da lista e o que mais falta.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem usa óculos de grau precisa de solução própria — sobreposição adequada ou lente de grau em armação de proteção. Improviso aqui termina com a pessoa trabalhando sem nenhum dos dois.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O pé, embaixo e ao lado do carro',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Existem dois riscos diferentes no mesmo piso. Um é a queda de ferramenta ou peça sobre o pé, que pede biqueira de proteção — a diferença entre as categorias está em <a href="/conhecimento/calcado-ocupacional-ou-de-seguranca/">calçado ocupacional ou de segurança</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O outro é o escorregão, porque o chão de oficina junta óleo com água de lavagem. É uma combinação que exige atenção ao ensaio do solado, e não só à palavra estampada na caixa.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que a oficina respira',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'São três coisas diferentes, e elas pedem respostas diferentes. Vapor de solvente na limpeza de peça e névoa de tinta na funilaria são casos de filtro químico, e a sequência para escolher está em <a href="/conhecimento/respirador-como-escolher-o-filtro/">como escolher o filtro do respirador</a>.',
+      },
+      {
+        tipo: 'destaque',
+        texto:
+          'A terceira é a mais perigosa e a que mais gente entende errado: gás de escape em box fechado. Monóxido de carbono não tem cheiro e não é retido por filtro comum. Aqui não existe EPI que resolva — a resposta é exaustão ligada ao escapamento e ventilação do box, e nenhum cartucho substitui isso.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Ar comprimido não limpa roupa nem pessoa',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É um hábito tão comum que quase não é visto como risco: usar a pistola de ar para tirar poeira da roupa, do cabelo ou da bancada perto de alguém. Ar sob pressão projeta partícula em alta velocidade e pode penetrar a pele.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Não é assunto de compra, é de regra da casa — mas entra aqui porque nenhum óculos da lista protege de uma pistola apontada de perto.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que costuma faltar no pedido',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Luva em mais de um tipo.</strong> A de serviço grosso e a de serviço fino não são a mesma, e exigir uma só garante que uma das duas tarefas será feita sem.',
+          '<strong>Reposição frequente.</strong> Luva de oficina tem vida curta; quando falta, o pessoal trabalha sem e ninguém avisa.',
+          '<strong>Proteção auditiva</strong>, onde há esmeril, lixadeira e ar comprimido em uso contínuo.',
+          '<strong>Quem circula no box.</strong> Atendente, lavador e estagiário entram na mesma área e não costumam estar na lista.',
+          '<strong>Proteção de face na bateria</strong>, que é um ponto de risco químico esquecido.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Que serviços a oficina faz: mecânica, funilaria, pintura, elétrica, lavagem.',
+          'Quais solventes e desengraxantes são usados, com nome.',
+          'Se existe exaustão de escapamento no box, e se há box fechado.',
+          'Se há esmeril, lixadeira e com que frequência.',
+          'Como é o piso e o que escorre nele.',
+          'Quantas pessoas, e quem entra no box sem ser mecânico.',
+          'O CA de cada item, lembrando que luva, óculos e respirador são aprovações separadas.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Oficina pequena costuma comprar EPI por caixa e por preço, e é o lugar onde isso sai mais caro: item que não deixa trabalhar não é usado, e item não usado é dinheiro gasto sem nenhuma proteção em troca.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/',
+      rotulo: 'Ver soluções para empresas',
+    },
+    contexto: 'empresas',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Tenho uma oficina e queria ajuda para montar a lista de EPI a partir dos serviços que a gente faz.',
+    ctaTitulo: 'Vai equipar uma oficina?',
+    ctaTexto:
+      'Conte que serviços vocês fazem e quais solventes usam. A gente monta a lista com luva em mais de um tipo, que é o que faz a equipe realmente usar.',
+    perguntas: [
+      {
+        pergunta: 'Luva de vaqueta serve para trabalhar com óleo?',
+        resposta:
+          'Serve mal. O couro absorve o óleo e passa a manter o produto em contato com a pele, o que é pior do que parece e não sai com limpeza. Vaqueta tem lugar em serviço de abrasão e de manuseio grosso; onde há óleo e solvente, o caminho é outro material.',
+      },
+      {
+        pergunta: 'Creme de proteção substitui a luva?',
+        resposta:
+          'Não. Ele é complemento, e ajuda em contato leve e eventual. Onde existe solvente ou contato prolongado, quem faz a barreira é a luva compatível com aquele produto — creme nenhum segura solvente.',
+      },
+      {
+        pergunta: 'Máscara resolve o gás de escape num box fechado?',
+        resposta:
+          'Não resolve. Monóxido de carbono não tem cheiro e não é retido por filtro comum, então a pessoa não percebe nada enquanto se expõe. A resposta é exaustão ligada ao escapamento e ventilação do box, e isso vem antes de qualquer equipamento individual.',
+      },
+    ],
+  },
 ]
 
 /**
