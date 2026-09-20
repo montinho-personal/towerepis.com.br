@@ -275,6 +275,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Sabe quais setores existem na sua planta?',
     rotulo: 'Separar por área',
   },
+  'epi-para-aplicacao-de-defensivo-agricola': {
+    chamada: 'Tem a bula dos produtos em mãos?',
+    rotulo: 'Montar a lista do agro',
+  },
+  'epi-para-fabrica-de-calcado': {
+    chamada: 'Quais colas e limpadores a fábrica usa?',
+    rotulo: 'Separar por setor',
+  },
 }
 
 /**

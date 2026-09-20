@@ -4855,6 +4855,387 @@ export const ARTIGOS: Artigo[] = [
       },
     ],
   },
+  {
+    slug: 'epi-para-aplicacao-de-defensivo-agricola',
+    titulo: 'EPI para aplicação de defensivo agrícola',
+    tituloSeo: 'EPI para aplicação de defensivo',
+    resumo:
+      'Aqui a lista de EPI não é do fornecedor nem do catálogo. É da bula do produto — e ela muda de produto para produto, e entre preparar e aplicar.',
+    descricaoSeo:
+      'Por que a bula do defensivo é quem especifica o EPI, o que muda entre preparo e aplicação, e o cuidado depois do trabalho que quase ninguém faz direito.',
+    publicado: '2026-09-20',
+    atualizado: '2026-09-20',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Neste assunto a lista de EPI não é nossa. É da bula do produto. Cada defensivo traz o equipamento exigido para o preparo da calda e para a aplicação, e os dois não são iguais. Quem compra por catálogo compra errado, porque a bula muda de produto para produto — e quem vende sem perguntar qual produto é está adivinhando.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É a categoria de EPI em que errar tem a consequência mais imediata. Não é um risco que se acumula em anos: é contato com produto concentrado, no mesmo dia, com a pele e com a respiração.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Também é a categoria em que o fornecedor mais deveria perguntar e menos pergunta. O que segue é o que a gente pergunta antes de montar qualquer pedido de agro.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Preparo e aplicação são duas exposições diferentes',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'No preparo da calda a pessoa lida com o produto concentrado: abre embalagem, mede, despeja, lava. É o momento de maior concentração do dia inteiro, e é onde acontece o respingo que ninguém previu — e normalmente é o momento mais curto, o que faz muita gente encarar sem o equipamento completo.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na aplicação a concentração é menor e o tempo é muito maior, com deriva, vento e sol somados. São perfis diferentes de exposição, e a bula costuma listar equipamento diferente para cada um. Vale ler as duas listas, e não só a segunda.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que a bula costuma exigir',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Varia por produto, e a frase anterior é a mais importante deste texto. Ainda assim, o conjunto que aparece com mais frequência é este, e serve para você conferir se a sua lista está completa:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Vestimenta hidrorrepelente</strong>, jaleco e calça ou macacão, que é a barreira principal contra respingo e deriva.',
+          '<strong>Avental impermeável</strong> para o preparo da calda, por cima da vestimenta.',
+          '<strong>Luva</strong> resistente ao produto manuseado, e não a luva que estava no galpão.',
+          '<strong>Proteção respiratória</strong> com o filtro adequado ao que a bula indica.',
+          '<strong>Proteção de olhos e face</strong>, que a bula costuma pedir como viseira no preparo.',
+          '<strong>Proteção da cabeça e da nuca</strong>, normalmente touca árabe ou boné árabe.',
+          '<strong>Calçado impermeável de cano alto</strong>, com a barra da calça por fora.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Confirme item por item na bula do produto que a sua operação usa, e no receituário agronômico. Nenhuma lista genérica, inclusive esta, substitui esses dois documentos.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O filtro é onde mais se erra',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O erro clássico é usar peça para partícula onde existe vapor. Máscara descartável não retém vapor químico, e esse ponto tem <a href="/conhecimento/mascara-descartavel-nao-protege-de-vapor-quimico/">um texto só sobre ele</a>. Em pulverização é comum haver os dois ao mesmo tempo — névoa e vapor —, o que muda a combinação.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A sequência para acertar isso está em <a href="/conhecimento/respirador-como-escolher-o-filtro/">como escolher o filtro do respirador</a>. E vale lembrar o critério de troca: cheiro não serve, porque sentir o cheiro significa que o produto já passou.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A luva não é automática',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Nitrílica resolve boa parte dos casos, e boa parte não é todos. A resistência depende do produto, da concentração, da temperatura e do tempo de contato, e quem responde isso é a compatibilidade daquele modelo com aquele produto. O caminho está em <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">como escolher luva pelo produto químico</a>, e a diferença entre os materiais em <a href="/conhecimento/tipos-de-luva-qual-material-escolher/">qual material de luva escolher</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Um detalhe de campo que muda tudo: a manga da vestimenta vai por fora do punho da luva quando o braço trabalha para baixo, e por dentro quando trabalha para cima. É o que impede o produto de escorrer para dentro.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O pé, e por que couro não entra aqui',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Couro absorve, e produto absorvido fica em contato com o pé o dia inteiro e não sai com limpeza. Em aplicação o caminho é calçado impermeável de cano alto, com a calça por fora — o assunto está em <a href="/conhecimento/bota-de-pvc-quando-e-a-resposta-certa/">bota de PVC: quando ela resolve</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O trabalho que vem depois da aplicação',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Esta é a parte que quase ninguém faz direito, e ela decide se o EPI protegeu mesmo ou só adiou o contato.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>A vestimenta se lava separada.</strong> Nunca junto com a roupa da casa e nunca com a roupa das crianças.',
+          '<strong>Tira-se de fora para dentro</strong>, sem encostar o lado externo na pele, e as luvas saem por último, ainda calçadas, depois de lavadas por fora.',
+          '<strong>O EPI não guarda junto com o produto.</strong> Armário de defensivo contamina o que está dentro dele.',
+          '<strong>Filtro saturado e embalagem seguem destino próprio</strong>, e não o lixo comum.',
+          '<strong>Vestimenta hidrorrepelente perde a repelência com o uso e a lavagem.</strong> Ela tem fim de vida, mesmo sem rasgo aparente.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O calor é o motivo número um de EPI abandonado',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Macacão fechado, sol a pino e bomba costas é uma combinação que ninguém sustenta por horas. Quando a pessoa abre a manga ou tira a touca no meio da aplicação, a proteção acabou ali, e o pedido não tem culpa nisso.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O que resolve é em boa parte organização, e não compra: aplicar nas horas mais frescas, revezar, ter água por perto. Vale dizer isso na hora do orçamento, porque é o que faz a diferença entre equipamento usado e equipamento guardado.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Colheita e galpão de embalagem são outra lista',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Depois da lavoura o risco muda de natureza. Na colheita são sol, ferramenta de corte e contato com folha e seiva. No galpão de embalagem o chão é permanentemente molhado, às vezes com câmara fria junto, e aí a conversa é de aderência e de barreira contra líquido — o que aparece em <a href="/conhecimento/epi-para-frigorifico-e-camara-fria/">EPI para frigorífico e câmara fria</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que ter em mãos antes de pedir',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'A bula dos produtos que a operação usa, ou pelo menos o nome deles.',
+          'Quem prepara a calda e quem aplica, porque pode não ser a mesma pessoa.',
+          'Como é a aplicação: costal, tratorizada ou outra.',
+          'Quantas horas por dia, e em que parte do dia.',
+          'Quem trabalha na colheita e quem trabalha no galpão de embalagem.',
+          'Onde o EPI é guardado hoje, e onde é lavado.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Com isso dá para montar a lista certa de uma vez. Sem a bula, qualquer proposta de EPI para agro é chute educado — inclusive a nossa.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+    ],
+    paginaComercial: {
+      href: '/epi-por-cidade/assu-rn/',
+      rotulo: 'Ver o atendimento no Vale do Açu',
+    },
+    contexto: 'cidade-assu',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Preciso de EPI para aplicação de defensivo e queria montar a lista a partir da bula dos produtos que a gente usa.',
+    ctaTitulo: 'Tem a bula dos produtos em mãos?',
+    ctaTexto:
+      'Mande o nome dos produtos que a operação usa. A gente monta a lista a partir do que a bula exige, separando quem prepara a calda de quem aplica.',
+    perguntas: [
+      {
+        pergunta: 'Posso usar o mesmo EPI para todos os defensivos?',
+        resposta:
+          'Nem sempre. A vestimenta e o calçado costumam servir para vários produtos, mas a luva e o filtro do respirador dependem do que está sendo manuseado. Mudou o produto, vale reconferir esses dois na bula antes de assumir que a lista continua valendo.',
+      },
+      {
+        pergunta: 'Dá para lavar o macacão em casa?',
+        resposta:
+          'Lavar separado, sim; lavar junto com a roupa da família, nunca. O resíduo passa de uma peça para outra na mesma água, e quem acaba exposto é quem nem entrou na lavoura. Vale ainda seguir a orientação da bula, porque parte das vestimentas tem instrução própria de lavagem.',
+      },
+      {
+        pergunta: 'Máscara PFF2 serve para aplicar defensivo?',
+        resposta:
+          'Serve apenas para a parte particulada, e não é a resposta inteira. Boa parte dos produtos exige proteção contra vapor, que peça para partícula não retém. Quem diz o que é necessário é a bula do produto, e o filtro se escolhe a partir dela.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-para-fabrica-de-calcado',
+    titulo: 'EPI para fábrica de calçado: o que muda na escolha',
+    tituloSeo: 'EPI para fábrica de calçado',
+    resumo:
+      'Numa fábrica de calçado o risco não está no produto que sai pela porta. Está na cola, no solvente, no corte e no ruído da linha.',
+    descricaoSeo:
+      'O que organiza o EPI de uma fábrica de calçado: vapor de cola e solvente, corte, ruído e jornada em pé — e o que costuma faltar no pedido da fábrica pequena.',
+    publicado: '2026-09-20',
+    atualizado: '2026-09-20',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Numa fábrica de calçado o risco não está no produto que sai pela porta. Está no que evapora da cola, no que a faca de corte encontra e no barulho que a linha faz o dia inteiro. É um ambiente que junta risco químico, mecânico e auditivo em poucos metros quadrados.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'No Cariri cearense, entre Crato, Juazeiro do Norte e Barbalha, isso aparece numa escala particular: muitas fábricas pequenas e médias, às vezes com setores diferentes dentro do mesmo galpão. É onde este texto foi pensado.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O solvente é o que organiza o resto',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Cola de contato e limpadores evaporam o tempo todo, e a exposição é contínua e diluída — não é um vazamento, é o ar da sala. Por ser assim, ela não assusta ninguém no primeiro dia, e é exatamente esse o problema.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Duas consequências práticas. A primeira: onde há vapor, peça filtrante para partícula não resolve, e vale ler <a href="/conhecimento/mascara-descartavel-nao-protege-de-vapor-quimico/">por que a máscara descartável não protege de vapor químico</a>. A segunda: antes de comprar respirador, vale tratar de ventilação e exaustão no ponto, que reduzem a exposição de todo mundo ao mesmo tempo.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Feito isso, a escolha do filtro sai do que está no ar daquela sala, e a sequência está em <a href="/conhecimento/respirador-como-escolher-o-filtro/">como escolher o filtro do respirador</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A luva do setor de colagem',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Aqui a mão passa o turno em contato direto com adesivo e com limpador, e o tempo de contato é o que decide. Nenhuma luva serve para tudo: a compatibilidade vem da ficha de segurança do produto usado e da tabela do modelo, como em <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">como escolher luva pelo produto químico</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Um sinal de que a luva está errada aparece antes de qualquer laudo: ela incha, endurece ou fica pegajosa no meio do turno. Quando isso acontece, a barreira já foi vencida, mesmo sem furo visível.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Corte: a mão que segura a peça',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'No corte e no chanfro a lesão típica é na mão que segura, e não na que trabalha. Resistência ao corte é uma característica própria, e o nível adequado sai da ferramenta e da tarefa. O material também muda o resultado, e a comparação está em <a href="/conhecimento/tipos-de-luva-qual-material-escolher/">qual material de luva escolher</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Onde a máquina é balancim ou prensa, a conversa muda de figura: proteção de máquina é medida coletiva e vem antes do EPI. Luva não protege de prensagem, e insistir nela atrasa a solução certa.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Ruído: contínuo, e não em picos',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Costura, esteira, compressor e balancim somam um ruído de fundo que dura o expediente inteiro. A atenuação necessária vem da medição feita pela empresa, e o que decide entre os tipos é a rotina — quem entra e sai, quem usa óculos, quem precisa ouvir o colega. A comparação está em <a href="/conhecimento/protetor-auditivo-plug-ou-concha/">plug ou concha</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O pé, numa fábrica em que quase ninguém senta',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Boa parte dos postos é de jornada em pé em piso duro, e em boa parte deles não existe risco de queda de objeto pesado sobre o pé. Onde não existe, calçado ocupacional costuma atender melhor e cansar menos — o que muda o fim do turno está em <a href="/conhecimento/calcado-para-quem-trabalha-em-pe-o-dia-todo/">calçado para quem trabalha em pé o dia todo</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Onde existe movimentação de carga, matéria-prima empilhada ou máquina pesada, a categoria muda, e aí a biqueira deixa de ser opcional.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que costuma faltar no pedido da fábrica pequena',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Proteção de olhos na manutenção.</strong> Quem abre e regula máquina corre risco que o operador não corre.',
+          '<strong>Reposição de luva durante o turno.</strong> Luva de colagem tem vida curta, e quando falta, a equipe trabalha sem.',
+          '<strong>Separação entre colagem e costura.</strong> São listas diferentes, e viram uma só na hora da compra.',
+          '<strong>Quem circula sem ser da área.</strong> Escritório, entrega e visita entram no galpão e respiram o mesmo ar.',
+          '<strong>Proteção respiratória para quem limpa peça com solvente</strong>, que muitas vezes não está na lista de ninguém.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Quais setores existem no galpão, e se eles estão separados fisicamente.',
+          'Quais colas e limpadores são usados, com nome, e se há ficha de segurança.',
+          'Se existe exaustão nos pontos de colagem, antes de discutir respirador.',
+          'A medição de ruído, que é o que define a atenuação necessária.',
+          'Quem opera balancim e prensa, e se a máquina tem proteção própria.',
+          'Onde há movimentação de carga, e onde não há.',
+          'O CA de cada item, lembrando que proteção respiratória, contra corte e auditiva são aprovações separadas.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Em fábrica pequena essa conversa costuma cair no dono, que já faz tudo. Por isso vale montar a lista por função uma vez, escrita, e repor a partir dela: é o que evita recomeçar a escolha a cada contratação e a cada pedido de reposição.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+    ],
+    paginaComercial: {
+      href: '/epi-por-cidade/barbalha-ce/',
+      rotulo: 'Ver o atendimento no Cariri',
+    },
+    contexto: 'cidade-barbalha',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Tenho uma fábrica de calçado e queria ajuda para montar a lista de EPI por setor do galpão.',
+    ctaTitulo: 'Vai equipar uma fábrica de calçado?',
+    ctaTexto:
+      'Conte quais setores existem no galpão e quais colas e limpadores vocês usam. A gente separa a lista por área, porque colagem, corte e costura não pedem a mesma coisa.',
+    perguntas: [
+      {
+        pergunta: 'Ventilador na sala de colagem resolve o cheiro de cola?',
+        resposta:
+          'Espalha, e não remove. Ventilador dilui o vapor no ambiente e dá a sensação de que melhorou, enquanto a exposição continua e passa a atingir mais gente. O que retira de verdade é exaustão no ponto onde o vapor nasce.',
+      },
+      {
+        pergunta: 'Luva de pano serve no setor de cola?',
+        resposta:
+          'Não. Pano absorve o adesivo e o segura contra a pele, o que é pior do que não usar nada. Onde há contato com cola e limpador, a luva precisa ser de material compatível com aqueles produtos, confirmado na tabela do fabricante.',
+      },
+      {
+        pergunta: 'Quem trabalha na costura precisa de protetor auditivo?',
+        resposta:
+          'Depende do nível medido na área, e não do posto. Em galpão sem divisão física o ruído do balancim e do compressor chega na costura igual, e a medição costuma mostrar isso. Quem define é a avaliação de riscos da empresa.',
+      },
+    ],
+  },
 ]
 
 /**
