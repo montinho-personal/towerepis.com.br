@@ -4534,6 +4534,327 @@ export const ARTIGOS: Artigo[] = [
       },
     ],
   },
+  {
+    slug: 'epi-na-regiao-metropolitana-de-fortaleza',
+    titulo: 'EPI na Região Metropolitana de Fortaleza: o que muda de cidade para cidade',
+    tituloSeo: 'EPI na Região Metropolitana de Fortaleza',
+    resumo:
+      'Equipe espalhada por três municípios costuma receber o mesmo pedido. E é aí que metade dela fica com o item errado, porque o trabalho não é o mesmo em cada lugar.',
+    descricaoSeo:
+      'O que muda na escolha de EPI entre os municípios da Região Metropolitana de Fortaleza, e como montar o pedido de uma equipe espalhada sem errar em metade dela.',
+    publicado: '2026-09-20',
+    atualizado: '2026-09-20',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Compra',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'O erro mais caro que a gente vê em empresa da Região Metropolitana não é de marca nem de preço. É tratar a região como um lugar só. Quem está no distrito industrial, quem está na obra e quem está na rede hoteleira correm riscos diferentes — e um pedido único para todos entrega item errado em pelo menos um deles.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A Tower é de Fortaleza desde 1995 e atende a Região Metropolitana desde então. Em quase toda empresa que cresce por aqui acontece a mesma coisa: a equipe deixa de estar num endereço só. A administração fica na capital, a produção vai para um município vizinho, a manutenção roda entre os dois.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O pedido de EPI, porém, continua sendo feito como se fosse tudo a mesma coisa. É esse descompasso que este texto trata.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que costuma mudar de município para município',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Não é regra rígida, e toda empresa tem exceção. Mas o perfil de atividade predominante muda bastante dentro da região, e com ele muda o risco:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Fortaleza.</strong> Rede hospitalar, serviços de alimentação, comércio e construção. Predomina o risco de piso molhado, jornada em pé e contato biológico ou químico, mais obra na área urbana.',
+          '<strong>Maracanaú.</strong> Concentra distrito industrial e indústria de transformação. Aqui o eixo é risco mecânico, movimentação de carga e ruído contínuo.',
+          '<strong>Caucaia.</strong> Indústria e logística convivendo com comércio. Movimentação de carga, muita caminhada e piso de galpão.',
+          '<strong>Horizonte e Pacajus.</strong> Indústria, com presença do setor calçadista. Linha de produção, ruído, e manuseio de cola e solvente em parte das operações.',
+          '<strong>Maranguape.</strong> Indústria e agroindústria, o que traz junto o EPI de manipulação de alimento e de produto químico.',
+          '<strong>Eusébio.</strong> Comércio, serviços e indústria leve, com boa parte do risco em manutenção predial e em cozinha.',
+          '<strong>Aquiraz.</strong> Turismo e hotelaria. Cozinha industrial, camareira, manutenção e área de piscina — o oposto do distrito industrial em quase tudo.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Repare que os extremos dessa lista estão a menos de uma hora um do outro. Uma empresa com unidade em Maracanaú e outra em Aquiraz não tem um pedido de EPI: tem dois.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que a grade única produz',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quando o pedido é montado por endereço da empresa, e não por função, o resultado é previsível. Sobra proteção onde ela não era necessária, que vira peso e desconforto, e falta onde era, que vira exposição.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O sintoma aparece rápido e quase sempre é lido como problema de disciplina: gente de um posto usando o EPI direitinho e gente de outro posto tirando. Se isso está acontecendo por unidade, e não por pessoa, o problema é o pedido, e não a equipe — o assunto está em <a href="/conhecimento/funcionario-recusa-usar-epi-o-que-fazer/">funcionário se recusa a usar o EPI</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Como organizar o pedido de uma equipe espalhada',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Agrupe por risco, não por endereço.</strong> Duas unidades distantes podem ter a mesma necessidade, e duas áreas do mesmo galpão podem ter necessidades opostas.',
+          '<strong>Liste função por função.</strong> O nome do cargo engana; o que decide é o que a pessoa faz no turno e o que existe no chão onde ela pisa.',
+          '<strong>Monte a grade de numeração por pessoa.</strong> Ela não é atributo da unidade, e é o motivo número um de calçado abandonado — o caminho está em <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">como definir a grade da equipe</a>.',
+          '<strong>Defina quem recebe e quem assina em cada endereço.</strong> Entrega sem responsável é entrega sem registro.',
+          '<strong>Deixe a reposição combinada antes de precisar dela.</strong> Unidade distante da administração é onde a reposição atrasa mais.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que não muda em lugar nenhum',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Três coisas valem igual em qualquer município, e é bom que valham: todo EPI precisa de <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a> válido para o risco a que se destina; toda entrega precisa de <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">registro</a>; e quem define o que cada função precisa é a avaliação de riscos da empresa, não o fornecedor.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O que um fornecedor bom faz é outra coisa: perguntar antes de vender, e dizer quando o que você pediu não é o que resolve.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que ter em mãos antes de pedir',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Quantas pessoas em cada endereço, e o que cada grupo faz.',
+          'Como é o piso de cada área, e o que escorre nele.',
+          'Onde existe movimentação de carga e risco de impacto sobre o pé.',
+          'Onde existe ruído contínuo, e se há medição.',
+          'Que produto químico é manuseado, e em qual unidade.',
+          'A grade de numeração, ou a disposição de montá-la junto.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Se for a primeira compra da empresa, o roteiro completo está em <a href="/conhecimento/primeiro-pedido-de-epi-como-montar/">como montar o primeiro pedido de EPI</a>. E se a dúvida for sobre quais cidades a Tower atende, isso está em <a href="/epi-por-cidade/">EPI por cidade</a>.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
+      },
+    ],
+    paginaComercial: {
+      href: '/epi-por-cidade/',
+      rotulo: 'Ver as cidades que a Tower atende',
+    },
+    contexto: 'epi-por-cidade',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Tenho equipe em mais de um município da Região Metropolitana de Fortaleza e queria ajuda para montar o pedido.',
+    ctaTitulo: 'Tem equipe em mais de um endereço?',
+    ctaTexto:
+      'Conte quantas pessoas há em cada unidade e o que elas fazem. A gente separa o pedido por risco em vez de por endereço, e monta a grade junto.',
+    perguntas: [
+      {
+        pergunta: 'Dá para padronizar o EPI da empresa inteira?',
+        resposta:
+          'Dá para padronizar o critério, e quase nunca o item. O mesmo risco deve receber a mesma categoria de proteção em qualquer unidade — isso é padronização útil. Já obrigar a fábrica e o hotel a usarem o mesmo calçado é padronizar o que não deveria, e sai caro nos dois lados.',
+      },
+      {
+        pergunta: 'Vale fazer um pedido só para todas as unidades?',
+        resposta:
+          'Vale, desde que o pedido venha separado por grupo de risco dentro dele. Um pedido único economiza frete e conversa; uma lista única, sem separação por função, é o que produz item errado em metade dos postos.',
+      },
+      {
+        pergunta: 'Quem assina a ficha de entrega quando a unidade é distante?',
+        resposta:
+          'Alguém precisa ser definido em cada endereço, com nome, antes da primeira entrega. Ficha que fica esperando o responsável passar por lá é ficha que não é assinada, e entrega sem registro é o ponto que mais dá problema depois.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-para-industria-textil',
+    titulo: 'EPI para indústria têxtil: o que muda na escolha',
+    tituloSeo: 'EPI para indústria têxtil',
+    resumo:
+      'O setor tem duas metades com riscos opostos. Comprar para "a têxtil" sem separar fiação de confecção é o erro que nasce antes do pedido.',
+    descricaoSeo:
+      'Ruído contínuo, fibra no ar, corte e jornada em pé: o que muda na escolha de EPI entre fiação, tecelagem e confecção, e o que costuma faltar no pedido.',
+    publicado: '2026-09-20',
+    atualizado: '2026-09-20',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Na fiação e na tecelagem, o que mais adoece não é o que corta: é o que não se vê e o que se ouve o turno inteiro. Na confecção o eixo muda para corte e postura. São duas realidades dentro do mesmo setor, e o pedido que não separa as duas erra nas duas.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Têxtil é um dos setores em que a Tower tem mais estrada: uma indústria do ramo compra com a gente desde os anos 1990, e é o cliente mais antigo da casa. O que segue vem dessa convivência, e não de catálogo.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Ruído é a exposição que define a fiação e a tecelagem',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Não é um estampido isolado: é ruído contínuo, alto, por toda a jornada, vindo de dezenas de máquinas ao mesmo tempo. Essa é a diferença que muda a escolha do protetor — o problema não é aguentar um pico, é manter a proteção na orelha por oito horas.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A atenuação necessária vem da medição de ruído da atividade, feita pela empresa, e nenhum catálogo substitui esse número. O que decide entre os tipos é a rotina: quem entra e sai da área, quem usa óculos, quem precisa conversar. A comparação está em <a href="/conhecimento/protetor-auditivo-plug-ou-concha/">plug ou concha</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale a franqueza: a perda auditiva induzida por ruído é gradual e não dói. Quando a pessoa percebe, o dano já aconteceu e não volta. É por isso que, aqui, conforto é critério técnico e não luxo — protetor que sai da orelha no meio do turno tem atenuação zero.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Fibra no ar',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Abertura, cardagem e fiação levantam poeira de fibra, e esse é um risco respiratório clássico do setor, com doença ocupacional associada. Quem mede a exposição e define a proteção é a avaliação da própria empresa.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Duas coisas valem dizer antes de escolher peça. A primeira é que exaustão e ventilação no ponto reduzem a exposição de todo mundo ao mesmo tempo, e vêm antes do equipamento individual. A segunda é que a escolha do filtro depende do que está no ar naquele setor — poeira é uma coisa, vapor de tinturaria é outra, e a sequência de decisão está em <a href="/conhecimento/respirador-como-escolher-o-filtro/">como escolher o filtro do respirador</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Corte e costura: a mão entra na conta',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na sala de corte o risco muda de natureza. Ali a conversa é de resistência ao corte, e o nível adequado sai da ferramenta usada e da tarefa, não do preço da caixa. O material da luva também muda o resultado, como em <a href="/conhecimento/tipos-de-luva-qual-material-escolher/">qual material de luva escolher</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na costura, a franqueza é outra: contra agulha de máquina, luva não é a resposta. O que protege ali é a proteção da própria máquina, que é medida coletiva — e nenhum EPI compensa a falta dela.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Tinturaria e acabamento são outro setor dentro do setor',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Onde há corante, alvejante, ácido e calor, o EPI deixa de ser o da fábrica e passa a ser o de produto químico. A escolha vem da ficha de segurança de cada produto e da compatibilidade do modelo com ele, e o caminho está em <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">como escolher luva pelo produto químico</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O pé, em todas as áreas',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Jornada em pé é comum a quase toda a fábrica, e nem toda área tem risco de impacto sobre o pé. Onde não tem, calçado ocupacional costuma atender melhor e cansar menos — o que muda o fim do turno está em <a href="/conhecimento/calcado-para-quem-trabalha-em-pe-o-dia-todo/">calçado para quem trabalha em pé o dia todo</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que costuma faltar no pedido',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Proteção de olhos na manutenção.</strong> Quem abre e regula máquina corre risco que o operador não corre, e costuma ficar de fora da lista.',
+          '<strong>Reposição de protetor auditivo.</strong> Descartável é de uso único, e quando falta, a equipe reutiliza.',
+          '<strong>Separação entre produção e tinturaria.</strong> São duas listas, e viram uma na hora da compra.',
+          '<strong>Luva por tamanho, e não por caixa.</strong> Luva folgada na sala de corte tira a firmeza justamente onde a ferramenta está.',
+          '<strong>Quem circula sem ser da área.</strong> Manutenção, qualidade e visita entram no galpão com a mesma exposição de ruído e de poeira.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Quais setores existem na planta, e quantas pessoas em cada um.',
+          'A medição de ruído por área, que é o que define a atenuação necessária.',
+          'Se há exaustão nos pontos que levantam fibra, antes de discutir respirador.',
+          'Que produtos a tinturaria e o acabamento usam, com nome.',
+          'Quem manuseia ferramenta de corte, e qual.',
+          'Onde existe risco de impacto sobre o pé, e onde não existe.',
+          'O CA de cada item, lembrando que proteção auditiva, respiratória e contra corte são aprovações separadas.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É um setor com muita gente e muitos postos diferentes, e por isso é onde mais compensa montar a lista por função uma vez e repor a partir dela. Refazer a escolha a cada admissão é o que faz o pedido inchar sem proteger melhor.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/industria/',
+      rotulo: 'Ver soluções para indústria',
+    },
+    contexto: 'empresas-industria',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Preciso de EPI para uma indústria têxtil e queria ajuda para separar a lista por setor da planta.',
+    ctaTitulo: 'Vai equipar uma planta têxtil?',
+    ctaTexto:
+      'Conte quais setores existem e quantas pessoas em cada um. A gente separa a lista por área, porque fiação, corte e tinturaria não pedem a mesma coisa.',
+    perguntas: [
+      {
+        pergunta: 'Protetor auditivo descartável pode ser reutilizado?',
+        resposta:
+          'O de uso único não pode, e o que faz a equipe reutilizar quase sempre é falta de reposição à mão. Inserção suja entra no canal auditivo com o que pegou, e espuma já comprimida não veda mais como no primeiro uso. A conta de repor sai bem mais barata que a de não proteger.',
+      },
+      {
+        pergunta: 'Máscara de tecido serve contra poeira de fibra?',
+        resposta:
+          'Não. Máscara de tecido não tem Certificado de Aprovação como proteção respiratória e não tem retenção ensaiada, então ela dá sensação de proteção sem oferecer nenhuma. Onde há poeira, o caminho é peça filtrante adequada ao que está no ar daquele setor.',
+      },
+      {
+        pergunta: 'Luva resolve o risco de agulha na costura?',
+        resposta:
+          'Não resolve, e insistir nisso atrasa a solução certa. Contra agulha de máquina o que protege é a proteção do próprio equipamento, que é medida coletiva e vem antes do EPI. Luva ali costuma atrapalhar a tarefa e sair da mão.',
+      },
+    ],
+  },
 ]
 
 /**

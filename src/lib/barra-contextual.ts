@@ -267,6 +267,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Sabe qual processo de solda a sua equipe usa?',
     rotulo: 'Montar a lista de solda',
   },
+  'epi-na-regiao-metropolitana-de-fortaleza': {
+    chamada: 'Tem equipe em mais de um endereço?',
+    rotulo: 'Separar o pedido',
+  },
+  'epi-para-industria-textil': {
+    chamada: 'Sabe quais setores existem na sua planta?',
+    rotulo: 'Separar por área',
+  },
 }
 
 /**
