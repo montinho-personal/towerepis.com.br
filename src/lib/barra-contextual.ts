@@ -291,6 +291,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Que serviços a sua oficina faz?',
     rotulo: 'Montar a lista da oficina',
   },
+  'botina-bota-ou-sapato-de-seguranca': {
+    chamada: 'Sabe o que pode entrar pelo pé na sua rotina?',
+    rotulo: 'Fechar o formato',
+  },
+  'epi-pelo-menor-preco-onde-a-conta-nao-fecha': {
+    chamada: 'Tem propostas com preços muito diferentes?',
+    rotulo: 'Comparar na mesma base',
+  },
 }
 
 /**

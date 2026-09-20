@@ -5601,6 +5601,370 @@ export const ARTIGOS: Artigo[] = [
       },
     ],
   },
+  {
+    slug: 'botina-bota-ou-sapato-de-seguranca',
+    titulo: 'Botina, bota ou sapato de segurança: quando cada um',
+    tituloSeo: 'Botina, bota ou sapato de segurança',
+    resumo:
+      'Essa escolha vem depois da categoria, e não no lugar dela. O que decide a altura do cano é o que pode entrar pelo pé e o que o tornozelo faz no turno.',
+    descricaoSeo:
+      'O que muda entre sapato, botina e bota de cano alto: barreira de entrada, apoio do tornozelo e conforto. A pergunta que resolve, e o erro do cano mais alto.',
+    publicado: '2026-09-20',
+    atualizado: '2026-09-20',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Calçados',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'A altura do cano não muda a proteção contra impacto: isso é da biqueira. O cano resolve outras duas coisas — o que pode entrar pelo pé e o que acontece com o tornozelo ao longo do turno. Escolher o mais alto "por garantia" é o erro mais comum aqui, e ele costuma terminar com o calçado fora do pé.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale separar uma coisa da outra logo no começo. Se a sua dúvida ainda é entre calçado ocupacional e de segurança, ela vem antes desta e está em <a href="/calcados/comparativo/">ocupacional ou de segurança: qual é o seu caso</a>. Definida a categoria, sobra escolher o formato — e é disso que este texto trata.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que o cano faz, e o que ele não faz',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Ele faz duas coisas. A primeira é barreira: impedir que respingo, cavaco, brita, grão ou água entrem pela boca do calçado. A segunda é envolver o tornozelo, o que dá sensação de firmeza em piso irregular e limita movimento em piso regular.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'E vale dizer o que ele não faz, porque a confusão é frequente: cano alto não substitui biqueira de proteção e não protege a sola contra perfuração. São requisitos independentes, e cada um precisa constar no <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a> do modelo.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Os três formatos, lado a lado',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Formato', 'Onde ele ganha', 'Onde ele atrapalha'],
+        linhas: [
+          [
+            'Sapato, de cano baixo',
+            'Piso regular e interno, jornada longa, calor, quem calça e descalça várias vezes ao dia.',
+            'Qualquer lugar onde algo possa entrar pela boca do calçado, e piso irregular.',
+          ],
+          [
+            'Botina, cano na altura do tornozelo',
+            'É o meio-termo que atende a maior parte da indústria, da obra e da logística: barra alguma entrada e ainda deixa caminhar.',
+            'Ambiente muito quente e tarefa que exige agachar o tempo todo, onde o cano marca a canela.',
+          ],
+          [
+            'Bota de cano alto',
+            'Onde entra material pela lateral, onde há vegetação, ou onde a canela precisa de cobertura.',
+            'Calor, jornada longa e troca frequente. É a que mais pesa e a que mais demora para calçar.',
+          ],
+          [
+            'Bota de PVC',
+            'Onde o pé fica dentro de líquido. É categoria à parte, tratada em <a href="/conhecimento/bota-de-pvc-quando-e-a-resposta-certa/">bota de PVC</a>.',
+            'Uso o dia inteiro em ambiente seco, porque não respira.',
+          ],
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'A pergunta que resolve',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Em vez de comparar os três, responda duas coisas sobre a rotina real:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Alguma coisa pode entrar pelo pé?</strong> Respingo quente, cavaco de torno, brita, grão, água, produto. Se pode, o cano sobe.',
+          '<strong>O piso é irregular ou a pessoa sobe e desce?</strong> Terreno de obra, escada, plataforma e valeta pedem apoio de tornozelo. Piso de galpão plano, não.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Respondidas as duas, o formato quase sempre se escolhe sozinho. E quando as duas respostas forem não, o sapato deixa de ser a opção "menos protetora" e passa a ser a mais adequada.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Fechamento: cadarço, elástico ou fivela',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É uma decisão pequena que muda o dia. O elástico é o formato de quem calça e descalça várias vezes — cozinha, área limpa, entrada de sala controlada. O cadarço dá ajuste fino, que importa em pé mais estreito ou mais largo, e exige atenção onde há máquina rotativa, porque ponta solta é risco de enrosco.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Um sinal prático de numeração errada: elástico frouxo depois de pouco tempo costuma indicar número acima do ideal, e não elástico ruim.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O erro de escolher pelo cano mais alto',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Bota de cano alto em cozinha quente, ou em jornada de dez horas em piso plano, é a receita para a pessoa trocar por conta própria. E o par que ela vai usar no lugar quase nunca é EPI.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Aqui vale a mesma lógica do peso: proteção que não fica no corpo tem desempenho zero, por melhor que seja a especificação. O efeito do peso e da jornada está em <a href="/conhecimento/calcado-para-quem-trabalha-em-pe-o-dia-todo/">calçado para quem trabalha em pé o dia todo</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Se existe risco de impacto sobre o pé, que define a categoria antes do formato.',
+          'O que pode entrar pela boca do calçado na rotina real.',
+          'Como é o piso: plano, irregular, com escada, com valeta.',
+          'Quantas vezes por turno a pessoa calça e descalça.',
+          'A temperatura do ambiente, que é o que faz cano alto ser abandonado.',
+          'Se há máquina rotativa por perto, o que pesa contra o cadarço.',
+          'A numeração provada no fim do expediente, e a largura da forma.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Em compra para equipe é comum precisar de mais de um formato, e isso não é falha de padronização. Padronizar o critério é o que importa; obrigar a mesma bota em áreas diferentes é padronizar o que não deveria.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+    ],
+    paginaComercial: {
+      href: '/calcados/',
+      rotulo: 'Ver os calçados que a Tower trabalha',
+    },
+    contexto: 'calcados',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Estou em dúvida entre sapato, botina e bota para a minha equipe e queria ajuda para decidir.',
+    ctaTitulo: 'Em dúvida entre sapato, botina e bota?',
+    ctaTexto:
+      'Conte o que pode entrar pelo pé na rotina da equipe e como é o piso. Com essas duas respostas dá para fechar o formato, e a gente já ajuda com a grade.',
+    perguntas: [
+      {
+        pergunta: 'Cano alto protege mais?',
+        resposta:
+          'Protege de outra coisa. Ele impede entrada de material pela boca do calçado e envolve o tornozelo, e não tem relação com a proteção dos dedos, que vem da biqueira. Onde não existe o que entrar nem piso irregular, o cano alto só acrescenta peso e calor.',
+      },
+      {
+        pergunta: 'Sapato de segurança pode ser usado em obra?',
+        resposta:
+          'Pode existir com biqueira e atender à norma, mas em obra costuma ser a escolha errada por outro motivo: terreno irregular, entulho e material solto pedem cano. Quem define é o risco da frente de trabalho, não o formato em si.',
+      },
+      {
+        pergunta: 'A calça vai por dentro ou por fora da bota?',
+        resposta:
+          'Depende do que você quer evitar. Contra respingo e material que cai de cima, a calça vai por fora, para escorrer. Em vegetação alta ou onde há risco de enrosco, a calça costuma ir por dentro. É uma decisão da atividade, e vale combinar com a equipe para não ficar cada um de um jeito.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-pelo-menor-preco-onde-a-conta-nao-fecha',
+    titulo: 'O erro de comprar EPI pelo menor preço',
+    tituloSeo: 'EPI pelo menor preço: a conta fecha?',
+    resumo:
+      'Às vezes o mais barato é exatamente o certo, e dizer o contrário é conversa de vendedor. O problema é que o preço da caixa é só uma das quatro parcelas.',
+    descricaoSeo:
+      'As quatro parcelas do custo real de um EPI, quando o mais barato é a escolha certa e quando ele é o mais caro de todos — com o que pedir para fazer a conta.',
+    publicado: '2026-09-20',
+    atualizado: '2026-09-20',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Compra',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Nem sempre o mais barato é o errado. Às vezes é exatamente o certo, e quem diz o contrário está vendendo. O problema é outro: o preço da caixa é só a primeira de quatro parcelas do que aquele EPI vai custar, e as outras três só aparecem depois que a compra já foi feita.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Este texto não existe para convencer ninguém a gastar mais. Existe para que a comparação seja entre as mesmas coisas — porque comparar preço de itens que não fazem o mesmo trabalho não é economia, é sorteio.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'As quatro parcelas do custo',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>1. O preço.</strong> É o que aparece na proposta, e é a única parcela que todo mundo compara.',
+          '<strong>2. Quantas vezes você troca por ano.</strong> Um par que dura metade custa o dobro, mesmo que a etiqueta diga o contrário.',
+          '<strong>3. Quanto tempo ele passa no corpo.</strong> EPI que incomoda sai. E item que não é usado tem custo integral e proteção zero.',
+          '<strong>4. O que ele deixa de proteger.</strong> Esta não tem preço de tabela, e é a única que pode aparecer como afastamento.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'As duas primeiras se calculam. A terceira se observa no chão. A quarta é a que transforma uma economia em prejuízo, e é a razão de a escolha começar pelo risco da atividade e não pelo orçamento.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A conta que quase ninguém faz',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Ela é simples: em vez de comparar o preço do item, compare o custo por pessoa por ano. Preço multiplicado pelo número de trocas esperadas no período, para cada opção.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Não vou colocar números aqui, porque eles dependem do seu ambiente e inventá-los seria enganar. Mas vale fazer a conta com os seus: se o item mais barato é trocado com o dobro da frequência, a diferença de preço desaparece — e o que sobra é o tempo gasto em compra, entrega e registro a mais, que também custa.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O caminho para estimar frequência de troca de calçado está em <a href="/conhecimento/quantos-pares-por-ano-calcular-a-reposicao/">quantos pares por ano</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O custo que não está em planilha nenhuma',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É o item comprado e não usado. Luva grossa demais para o serviço fino, protetor que esquenta, botina que machuca, óculos que embaça. A pessoa não avisa que parou de usar; ela simplesmente para.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quando isso acontece com mais de uma pessoa no mesmo item, o problema é o item, e não a equipe — o assunto está em <a href="/conhecimento/funcionario-recusa-usar-epi-o-que-fazer/">funcionário se recusa a usar o EPI</a>. E o dinheiro daquela caixa já foi gasto inteiro, sem nenhuma proteção em troca.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quando o mais barato é a escolha certa',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Existe, e é honesto dizer quais são os casos:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Uso esporádico</strong>, de quem entra na área poucas vezes por mês.',
+          '<strong>Visitante e terceiro de passagem</strong>, onde o item precisa atender ao risco e não precisa durar.',
+          '<strong>Descartável por higiene</strong>, em que a vida útil é de uso único por definição e durabilidade não é critério.',
+          '<strong>Onde as opções são equivalentes</strong> em desempenho e em conforto, e a diferença é só de marca.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Nesses casos, pagar mais não compra proteção nenhuma — compra só a sensação de ter comprado melhor.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quando ele é o mais caro de todos',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quando o item não corresponde ao risco. Aí ele não é barato nem caro: é inútil, e pior que inútil, porque dá à pessoa a sensação de estar protegida. Máscara para partícula onde existe vapor, luva de procedimento onde existe produto químico, calçado sem biqueira onde cai peso.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O filtro contra isso é objetivo e não custa nada: o <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a> diz para que aquele modelo foi ensaiado. Item sem CA, ou com CA para outro risco, sai da comparação antes de o preço entrar na conversa.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Como comparar propostas sem comparar só preço',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para que a comparação seja justa, as propostas precisam estar na mesma base. Peça que cada uma traga:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'O número do CA de cada item, e não só a descrição.',
+          'A categoria e o desempenho, quando houver — biqueira, resistência ao escorregamento, atenuação, classe de filtro.',
+          'Marca e modelo exatos, porque "luva nitrílica" não é um produto.',
+          'Prazo de entrega e condição de reposição.',
+          'O que acontece quando a numeração vem errada.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Se a escolha ainda for entre fornecedores, e não entre itens, isso tem texto próprio: <a href="/conhecimento/como-escolher-fornecedor-de-epi/">como escolher um fornecedor de EPI</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Uma observação de quem vende',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A Tower é distribuidora, e tem interesse óbvio nesta conversa. Por isso vale ser direto: se o mais barato atende ao risco e a equipe usa, ele é a resposta certa, e a gente diz isso.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O que a gente não faz é vender item que não corresponde ao risco porque o preço fechou. Esse tipo de venda volta — em troca, em reclamação, ou em coisa pior.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+    ],
+    paginaComercial: {
+      href: '/orcamento/',
+      rotulo: 'Montar o orçamento',
+    },
+    contexto: 'orcamento',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Tenho propostas de EPI com preços bem diferentes e queria ajuda para comparar o que realmente muda entre elas.',
+    ctaTitulo: 'Tem propostas com preços muito diferentes?',
+    ctaTexto:
+      'Mande o que você recebeu. A gente ajuda a colocar tudo na mesma base — CA, categoria e desempenho — para a comparação ser entre as mesmas coisas.',
+    perguntas: [
+      {
+        pergunta: 'O item mais caro é o que protege mais?',
+        resposta:
+          'Não existe essa relação. Dois modelos que atendem ao mesmo requisito protegem igual contra aquele risco, e o preço pode variar por conforto, acabamento, durabilidade ou marca. O que separa proteção de preço é o Certificado de Aprovação, que diz para que o modelo foi ensaiado.',
+      },
+      {
+        pergunta: 'Comprar em quantidade maior compensa?',
+        resposta:
+          'Compensa quando o item tem giro e não vence na prateleira. Descartável, filtro e item com prazo de validade estocados em excesso viram perda. E estoque grande de um modelo que a equipe rejeita é o pior dos dois mundos: dinheiro parado em algo que não é usado.',
+      },
+      {
+        pergunta: 'Como justificar internamente um item mais caro?',
+        resposta:
+          'Com a conta de custo por pessoa por ano, e não com argumento de qualidade. Preço vezes número de trocas no período, para cada opção, mais a observação de quanto tempo cada uma fica de fato no corpo. É um número que a área de compras entende e que sustenta a decisão depois.',
+      },
+    ],
+  },
 ]
 
 /**
