@@ -1945,7 +1945,7 @@ export const ARTIGOS: Artigo[] = [
     resumo:
       'Não existe número universal, e quem promete um está chutando. O número sai da sua própria operação. E ele já está na ficha de entrega, se ela estiver preenchida.',
     descricaoSeo:
-      'A conta tem três parcelas: reposição programada, troca eventual e entrada de pessoal. Como tirar o número do seu próprio histórico e o que fazer no primeiro ano.',
+      'Quantos pares de calçado por ano para a equipe: a conta tem três parcelas. Como tirar o número do seu histórico e o que fazer no primeiro ano.',
     publicado: '2026-09-04',
     atualizado: '2026-09-04',
     atualizadoExibicao: 'setembro de 2026',
@@ -3010,7 +3010,7 @@ export const ARTIGOS: Artigo[] = [
     resumo:
       'Aqui a compra por aparência é mais perigosa que em qualquer outro EPI, porque a bota que isola e a que conduz são visualmente iguais. O que precisa estar resolvido antes de cotar.',
     descricaoSeo:
-      'Por que EPI para eletricidade é uma compra diferente, o que a aparência não mostra, e o que precisa estar definido antes de pedir orçamento. Sem substituir a análise de risco.',
+      'EPI para eletricista: por que a escolha muda, o que a aparência do equipamento não mostra e o que definir antes de pedir o orçamento.',
     publicado: '2026-09-05',
     atualizado: '2026-09-05',
     atualizadoExibicao: 'setembro de 2026',
@@ -3669,7 +3669,7 @@ export const ARTIGOS: Artigo[] = [
     resumo:
       'A resposta que a internet dá começa e termina em advertência. Antes disso existe uma pergunta que resolve a maior parte dos casos, e ela leva dez minutos.',
     descricaoSeo:
-      'As causas reais da recusa de EPI, o que fazer em cada uma e como registrar — a leitura operacional, com o que a NR-6 coloca do lado do trabalhador e do empregador.',
+      'Funcionário se recusa a usar EPI: as cinco causas mais comuns, o que fazer em cada uma, como registrar e o que a NR-6 cobra de cada lado.',
     publicado: '2026-09-11',
     atualizado: '2026-09-11',
     atualizadoExibicao: 'setembro de 2026',
@@ -3820,7 +3820,7 @@ export const ARTIGOS: Artigo[] = [
     resumo:
       'O que encurta a vida do par quase nunca é o uso. É a secagem. A rotina que cabe em dois minutos por dia e o que estraga um calçado bom em um mês.',
     descricaoSeo:
-      'A rotina de limpeza e secagem que faz o calçado de trabalho durar, o que nunca fazer com couro e solado, e por que alternar pares rende mais que qualquer produto.',
+      'Como limpar e conservar calçado de segurança: a rotina de dois minutos, o que nunca fazer com couro e solado, e por que alternar pares faz durar mais.',
     publicado: '2026-09-11',
     atualizado: '2026-09-11',
     atualizadoExibicao: 'setembro de 2026',

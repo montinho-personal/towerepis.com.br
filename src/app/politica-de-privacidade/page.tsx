@@ -24,7 +24,7 @@ import { AvisoMedicaoInativa } from '@/components/AvisoMedicao'
 export const metadata: Metadata = {
   title: 'Política de privacidade',
   description:
-    'O site só grava cookie de análise depois que você aceita, não tem cadastro e não guarda o que você escreve no formulário. Veja o que é tratado, por quê, e como exercer seus direitos.',
+    'O site só grava cookie de análise depois que você aceita, não tem cadastro e não guarda o que você escreve. Veja o que é tratado e seus direitos.',
   alternates: { canonical: '/politica-de-privacidade/' },
 }
 
