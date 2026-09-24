@@ -175,6 +175,8 @@ export function QualCalcado() {
   const [outroTexto, setOutroTexto] = useState('')
   const [copiado, setCopiado] = useState(false)
   const iniciou = useRef(false)
+  /** Só rola até o resultado quando ele nasce aqui — link compartilhado abre sem saltar. */
+  const rolarAoResultado = useRef(false)
   const metade = useRef(false)
   const foco = useRef<HTMLHeadingElement>(null)
 
@@ -204,13 +206,16 @@ export function QualCalcado() {
   }, [passo, pronto])
 
   const responder = useCallback(
-    (campo: keyof Respostas, valor: unknown) => {
+    (campo: keyof Respostas, valor: unknown, extra: Parcial = {}) => {
       if (!iniciou.current) {
         iniciou.current = true
         rastrearFerramentaIniciada(FERRAMENTA)
       }
       rastrearFerramenta(campo, Array.isArray(valor) ? valor.join('.') : String(valor), FERRAMENTA)
-      const novo = { ...r, [campo]: valor }
+      // `extra` existe para o "Outro": o texto livre precisa entrar na MESMA
+      // atualização. Um setR antes do responder era atropelado pelo `r`
+      // antigo deste closure, e o texto nunca chegava à mensagem.
+      const novo = { ...r, ...extra, [campo]: valor }
       if (campo === 'atividade' && valor !== 'outro') delete novo.atividadeOutro
       setR(novo)
       const proximas = telasPara(novo)
@@ -226,7 +231,7 @@ export function QualCalcado() {
           rastrearFerramentaResultado(FERRAMENTA, res.familia.chave, novo.para === 'equipe' ? 'b2b' : 'b2c')
         }
         setPronto(true)
-        window.scrollTo({ top: 0, behavior: 'smooth' })
+        rolarAoResultado.current = true
       } else {
         setPasso(proximo)
       }
@@ -252,7 +257,7 @@ export function QualCalcado() {
 
   /* ------------------------------------------------------------ resultado */
   if (pronto && completo(r)) {
-    return <Resultado r={r} refazer={refazer} copiado={copiado} setCopiado={setCopiado} />
+    return <Resultado r={r} refazer={refazer} copiado={copiado} setCopiado={setCopiado} rolar={rolarAoResultado.current} />
   }
 
   /* ------------------------------------------------------------ perguntas */
@@ -302,8 +307,7 @@ export function QualCalcado() {
               className="mt-6 border border-rule bg-paper-2 p-5"
               onSubmit={(e) => {
                 e.preventDefault()
-                setR({ ...r, atividadeOutro: outroTexto.trim() || undefined })
-                responder('atividade', 'outro')
+                responder('atividade', 'outro', { atividadeOutro: outroTexto.trim() || undefined })
               }}
             >
               <label htmlFor="outro" className="block font-display text-sm font-bold">
@@ -499,7 +503,7 @@ export function QualCalcado() {
 
       <div className="mt-8 flex items-center justify-between">
         {passo > 0 ? (
-          <button type="button" onClick={voltar} className="font-display text-sm font-bold text-ink-2 underline underline-offset-4">
+          <button type="button" onClick={voltar} className="inline-flex min-h-11 items-center font-display text-sm font-bold text-ink-2 underline underline-offset-4">
             ← Voltar
           </button>
         ) : (
@@ -585,11 +589,13 @@ function Resultado({
   refazer,
   copiado,
   setCopiado,
+  rolar,
 }: {
   r: Respostas
   refazer: () => void
   copiado: boolean
   setCopiado: (v: boolean) => void
+  rolar: boolean
 }) {
   const res = useMemo(() => calcular(r), [r])
   const b2b = r.para === 'equipe'
@@ -599,6 +605,7 @@ function Resultado({
 
   useEffect(() => {
     foco.current?.focus({ preventScroll: true })
+    if (rolar) foco.current?.scrollIntoView({ block: 'start', behavior: 'smooth' })
     // Estado na URL, para o botão de compartilhar e para voltar depois.
     const qs = serializar(r)
     window.history.replaceState(null, '', `${CAMINHO}?${qs}`)
@@ -629,7 +636,7 @@ function Resultado({
   return (
     <div className="max-w-3xl" data-ferramenta={FERRAMENTA} data-resultado={res.familia.chave}>
       <p className="eyebrow eyebrow-red">Seu perfil de calçado</p>
-      <h2 ref={foco} tabIndex={-1} className="mt-3 text-2xl focus:outline-none sm:text-3xl lg:text-4xl">
+      <h2 ref={foco} tabIndex={-1} className="mt-3 scroll-mt-28 text-2xl focus:outline-none sm:text-3xl lg:text-4xl">
         {res.insuficiente ? 'Seu cenário precisa de uma avaliação mais específica' : res.familia.nome}
       </h2>
       <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-2">
@@ -743,7 +750,7 @@ function Resultado({
           )}
         </div>
         <details className="mt-5 text-xs text-paper/60">
-          <summary className="cursor-pointer underline underline-offset-4">Ver a mensagem que vai ser enviada</summary>
+          <summary className="inline-flex min-h-11 cursor-pointer items-center underline underline-offset-4">Ver a mensagem que vai ser enviada</summary>
           <p className="mt-3 whitespace-pre-line italic leading-relaxed">{mensagem}</p>
         </details>
       </div>
@@ -810,10 +817,10 @@ function Resultado({
       )}
 
       <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-rule pt-6">
-        <button type="button" onClick={compartilhar} className="font-display text-sm font-bold underline underline-offset-4">
+        <button type="button" onClick={compartilhar} className="inline-flex min-h-11 items-center font-display text-sm font-bold underline underline-offset-4">
           {copiado ? 'Link copiado' : 'Compartilhar meu resultado'}
         </button>
-        <button type="button" onClick={refazer} className="font-display text-sm font-bold text-ink-2 underline underline-offset-4">
+        <button type="button" onClick={refazer} className="inline-flex min-h-11 items-center font-display text-sm font-bold text-ink-2 underline underline-offset-4">
           Refazer o teste
         </button>
       </div>

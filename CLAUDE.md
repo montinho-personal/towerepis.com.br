@@ -63,6 +63,8 @@ node docs/ferramentas/qa-larguras.mjs          # estouro horizontal, 12 larguras
 node docs/ferramentas/qa-privacidade.mjs       # cookies e hosts, três trilhas
 node docs/ferramentas/qa-faq.mjs               # FAQ: presença e duplicação
 node docs/ferramentas/qa-barra.mjs             # barra contextual, matriz
+node docs/ferramentas/qa-qual-calcado.mjs       # ferramenta de calçado, 32 percursos
+node docs/ferramentas/qa-qual-calcado-logica.mjs  # lógica, 1,7 mi de combinações (sem site no ar)
 node docs/ferramentas/auditoria-rastrear.mjs   # rastreia (porta 3122)
 node docs/ferramentas/auditoria-analisar.mjs   # inventário — gera o grafo
 node docs/ferramentas/auditoria-canibalizacao.mjs   # lê o grafo, não o gera

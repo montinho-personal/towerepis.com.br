@@ -82,6 +82,7 @@ async function percorrer(nomeCaminho, respostas, viewport) {
   // resultado
   const resultado = p.locator('[data-resultado]')
   await resultado.waitFor({ state: 'visible', timeout: 5000 }).catch(() => {})
+  await p.waitForTimeout(900)
   if ((await resultado.count()) !== 1) { problemas.push(`${nomeCaminho}: resultado não apareceu`); await ctx.close(); return }
   const familia = await resultado.getAttribute('data-resultado')
   const cartoes = await resultado.locator('.grid > div').count()
@@ -89,6 +90,12 @@ async function percorrer(nomeCaminho, respostas, viewport) {
   const hrefZap = await zap.getAttribute('href')
   const msg = decodeURIComponent((hrefZap ?? '').split('text=')[1] ?? '')
   const url = p.url()
+  // Regressões de 24/9/2026, que passaram pela primeira versão deste script:
+  // o resultado nascia fora da tela (a página rolava ao topo), e o texto
+  // livre do "Outro" se perdia antes de chegar à mensagem.
+  const topoResultado = await p.evaluate(() => document.querySelector('[data-resultado] h2')?.getBoundingClientRect().top ?? -1)
+  if (topoResultado < 0 || topoResultado > viewport.height * 0.5) problemas.push(`${nomeCaminho} @${viewport.width}px: título do resultado a ${Math.round(topoResultado)}px, fora da tela`)
+  if (respostas[0] === 'Outro' && !msg.includes('lavagem de carros')) problemas.push(`${nomeCaminho}: texto livre do "Outro" não chegou à mensagem`)
   const semFocoNaTelas = passos.filter((s) => !s.focado).length
 
   // largura

@@ -239,6 +239,13 @@ export function calcular(r: Respostas): Resultado {
       href: '/conhecimento/bota-de-pvc-quando-e-a-resposta-certa/',
     }
     porque.push('O pé fica dentro de líquido, e isso muda a categoria inteira: o que decide é não ter por onde o líquido entrar.')
+    if (r.impacto === 'nao-sei') {
+      confirmar.push(
+        TENDE_IMPACTO.has(r.atividade)
+          ? 'Se existe risco de queda ou prensagem de objeto pesado sobre o pé. Na sua atividade ele costuma existir, e bota impermeável existe com e sem biqueira.'
+          : 'Se existe risco de queda ou prensagem de objeto pesado sobre o pé. Bota impermeável existe com e sem biqueira, e é essa resposta que decide.',
+      )
+    }
     if (r.impacto === 'sim') {
       alertas.push(
         'Bota impermeável existe com e sem biqueira de proteção, e a aparência não mostra qual é qual. Como você informou risco de impacto, o modelo precisa ter biqueira, e isso se confirma no Certificado de Aprovação.',
@@ -310,8 +317,13 @@ export function calcular(r: Respostas): Resultado {
 
   /* ---- biqueira */
   let biqueira: Item
-  if (r.piso === 'submerso' && r.impacto !== 'sim') {
-    biqueira = { nome: 'Sem biqueira', frase: 'Sem risco de impacto informado, a bota impermeável não precisa dela.' }
+  if (r.piso === 'submerso' && r.impacto === 'nao-sei') {
+    biqueira = {
+      nome: 'A confirmar',
+      frase: 'Depende de existir risco de impacto sobre o pé. Se existir, o modelo precisa ter biqueira, e isso se confirma no Certificado de Aprovação.',
+    }
+  } else if (r.piso === 'submerso' && r.impacto === 'nao') {
+    biqueira = { nome: 'Sem biqueira', frase: 'Sem risco de impacto sobre o pé, a bota impermeável não precisa dela.' }
   } else if (ocupacional && familia.chave !== 'confirmar') {
     biqueira = { nome: 'Sem biqueira de proteção', frase: 'É o que torna o calçado mais leve. Onde não há impacto, ela só pesa.' }
   } else if (seguranca || r.impacto === 'sim') {
@@ -386,8 +398,10 @@ export function calcular(r: Respostas): Resultado {
   /* ---- cabedal */
   const cabedalPartes: string[] = []
   if (r.piso === 'submerso') cabedalPartes.push('material de peça única, sem costura, como PVC ou borracha')
-  if (quimico) cabedalPartes.push('material que não absorve e é fácil de higienizar')
-  if (temOleo) cabedalPartes.push('resistência a óleo e graxa')
+  if (r.quimico === 'limpeza') cabedalPartes.push('material que não absorve e aguenta a limpeza frequente')
+  if (r.quimico === 'oleo-solvente' || temOleo) cabedalPartes.push('resistência a óleo, graxa e solvente')
+  if (r.quimico === 'forte') cabedalPartes.push('resistência ao produto específico, confirmada na tabela do fabricante — a compatibilidade varia de produto para produto')
+  if (r.quimico === 'nao-sei') cabedalPartes.push('compatibilidade com o produto, a confirmar pela ficha de segurança dele')
   if (r.atividade === 'cozinha' || r.atividade === 'saude' || inc.has('higiene')) cabedalPartes.push('fácil higienização, sem costura que retenha resíduo')
   if (r.calor === 'sim' && r.piso !== 'submerso') cabedalPartes.push('respirabilidade, para não cozinhar o pé')
   if (cabedalPartes.length === 0) cabedalPartes.push('couro ou microfibra, conforme a preferência por durabilidade ou por leveza e limpeza')
@@ -514,6 +528,10 @@ export function mensagemWhatsApp(r: Respostas, res: Resultado): string {
   const incs = r.incomodos.filter((i) => i !== 'nenhum').map((i) => ROTULO_INCOMODO[i])
   if (incs.length) linhas.push(`O que mais incomoda: ${incs.join(', ')}`)
   if (r.para === 'equipe') linhas.push(`Compra para equipe: ${r.equipe ? ROTULO_EQUIPE[r.equipe] : 'sim'}`)
+  if (res.insuficiente) {
+    linhas.push('', 'O site indicou que o meu caso precisa de uma avaliação mais específica.', '', 'Pode me ajudar?')
+    return linhas.join('\n')
+  }
   linhas.push(
     '',
     'O site sugeriu avaliar:',

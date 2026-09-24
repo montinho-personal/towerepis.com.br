@@ -125,3 +125,18 @@ sozinha, estava correta.
 As páginas de cidade são exceção declarada: "a Tower atende empresas em X?"
 é a mesma forma de pergunta sobre lugares diferentes, e não conta como
 repetição.
+
+## Ferramenta "Qual calçado usar"
+
+- `qa-qual-calcado.mjs` — percorre a conversa inteira em navegador real, 8
+  caminhos em 360, 390, 412 e 1280 px. Confere foco na pergunta a cada tela,
+  resultado dentro da tela ao concluir, mensagem do WhatsApp com o perfil
+  (inclusive o texto livre do "Outro"), link compartilhado reproduzindo o
+  resultado, console sem erro e ausência de scroll horizontal. Precisa do
+  site no ar em :3000.
+- `qa-qual-calcado-logica.mjs` — não abre navegador: transpila
+  `src/lib/qual-calcado.ts` e avalia as 1,7 milhão de combinações de
+  resposta contra as regras que o resultado nunca pode quebrar. Roda em
+  segundos, sem site no ar. É a que pegou o caso "pé dentro de líquido com
+  impacto 'não sei'" que nenhuma amostra tinha alcançado.
+
