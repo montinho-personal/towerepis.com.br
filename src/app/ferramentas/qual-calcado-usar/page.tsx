@@ -3,6 +3,7 @@ import { Trilha, CabecalhoPagina, Perguntas, AssinaturaTecnica, Secao } from '@/
 import { QualCalcado } from '@/components/QualCalcado'
 import { JsonLd, schemaBreadcrumb, schemaFaq, schemaWebApplication } from '@/lib/schema'
 import { metadados } from '@/lib/seo'
+import { PUBLICAVEL as TAMANHO_PUBLICAVEL } from '@/lib/tamanho-calcado'
 
 /**
  * Qual calçado profissional é ideal para você?
@@ -112,7 +113,7 @@ export default function QualCalcadoUsar() {
           Orientação inicial, e não laudo. O aviso completo está no fim da página, junto de como o teste decide.
         </p>
 
-        <QualCalcado />
+        <QualCalcado tamanho={TAMANHO_PUBLICAVEL} />
       </Secao>
 
       {/* Conteúdo que sustenta a página como busca, sem repetir os artigos. */}

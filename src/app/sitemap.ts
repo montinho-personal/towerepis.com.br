@@ -6,6 +6,7 @@ import { CALCADOS } from '@/content/calcados'
 import { SETORES } from '@/content/setores'
 import { ARTIGOS } from '@/content/artigos'
 import { CIDADES, ESTADOS } from '@/content/cidades'
+import { PUBLICAVEL } from '@/lib/tamanho-calcado'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = empresa.site
@@ -34,6 +35,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/encontrar-epi/', 0.7, 'monthly'),
     url('/ferramentas/', 0.8, 'monthly'),
     url('/ferramentas/qual-calcado-usar/', 0.9, 'monthly'),
+    // Só entra quando a referência de numeração foi conferida na fonte.
+    ...(PUBLICAVEL ? [url('/ferramentas/tamanho-de-botina/', 0.9, 'monthly')] : []),
     url('/marcas/', 0.7, 'monthly'),
     url('/marcas/bompel/', 0.8, 'monthly'),
     url('/marcas/sticky-shoes/', 0.7, 'monthly'),

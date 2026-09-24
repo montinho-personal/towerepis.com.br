@@ -32,6 +32,7 @@ const MAPA: Record<string, Destino> = {
   '/encontrar-epi/': { contexto: 'ferramenta' },
   '/ferramentas/': { contexto: 'ferramenta' },
   '/ferramentas/qual-calcado-usar/': { contexto: 'ferramenta-calcado' },
+  '/ferramentas/tamanho-de-botina/': { contexto: 'ferramenta-tamanho' },
   '/marcas/': { contexto: 'marcas' },
   '/marcas/bompel/': {
     contexto: 'marcas',

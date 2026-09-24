@@ -4,6 +4,7 @@ import { FechamentoCta } from '@/components/WhatsAppCta'
 import { JsonLd, schemaBreadcrumb } from '@/lib/schema'
 import { metadados } from '@/lib/seo'
 import { IconeSeta } from '@/components/Icones'
+import { PUBLICAVEL as TAMANHO_PUBLICAVEL } from '@/lib/tamanho-calcado'
 
 /**
  * Hub de ferramentas.
@@ -28,6 +29,20 @@ const FERRAMENTAS = [
     tempo: 'Menos de 1 minuto',
     destaque: true,
   },
+  // Só aparece quando a referência de numeração foi conferida na fonte.
+  ...(TAMANHO_PUBLICAVEL
+    ? [
+        {
+          href: '/ferramentas/tamanho-de-botina/',
+          rotulo: 'Numeração',
+          nome: 'Calculadora de tamanho de botina',
+          texto:
+            'Meça o pé em centímetros e veja qual numeração vale experimentar. Mostra dois números quando a medida fica entre eles, e o que conferir na prova.',
+          tempo: 'Menos de 1 minuto',
+          destaque: false,
+        },
+      ]
+    : []),
   {
     href: '/encontrar-epi/',
     rotulo: 'Escolha de EPI',
@@ -75,7 +90,7 @@ export default function Ferramentas() {
       </Secao>
 
       <Secao className="wrap pt-0">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className={`grid gap-4 ${FERRAMENTAS.length > 3 ? "md:grid-cols-2 xl:grid-cols-4" : "md:grid-cols-3"}`}>
           {FERRAMENTAS.map((f) => (
             <Link
               key={f.href}

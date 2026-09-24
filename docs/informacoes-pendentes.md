@@ -60,7 +60,24 @@ agora existe documento. Continua valendo pedir o vetor original.
 
 ---
 
-## 🟡 ANTES DE DIVULGAR O SITE
+### 3b. Calculadora de tamanho de botina — pronta, travada até conferir a fonte (24/9/2026)
+A ferramenta `/ferramentas/tamanho-de-botina/` está construída e testada, mas
+**não vai ao ar** até a referência de numeração ser conferida na fonte. O
+ambiente de trabalho bloqueou o acesso aos sites em 24/9/2026, e o número
+veio só do resumo do buscador. Para destravar:
+
+1. **Liberar a rede do ambiente** para `senairs.org.br`, `orthoinfo.aaos.org`,
+   `footcaremd.org` e `tuc.org.uk` — ou alguém abrir os PDFs e confirmar à
+   mão. O que precisa ser confirmado está no campo `pendencia` de
+   `src/content/tabelas-numeracao.json`.
+2. **Pedir à Bompel** a tabela de medidas dos modelos: comprimento do pé (ou
+   da palmilha) por número, e a numeração que cada linha fabrica. Com ela, a
+   calculadora passa a dar o número "conforme a tabela do modelo". Sem ela,
+   dá só a estimativa geral, e diz isso na tela.
+3. Ao publicar: a description de `/ferramentas/` diz "Três ferramentas" e
+   passa a ser quatro. É campo congelado até 1º/11 — decidir se abre exceção
+   ou se espera.
+
 
 ### 4. Revisão técnica pelo Helano
 Todo conteúdo normativo cita fonte oficial e nenhuma afirmação foi feita por

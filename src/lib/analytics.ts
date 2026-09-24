@@ -114,8 +114,25 @@ export const rastrearFerramentaIniciada = (ferramenta: string) =>
 export const rastrearFerramentaMetade = (ferramenta: string) =>
   enviar('ferramenta_metade', { ferramenta })
 
-export const rastrearFerramentaResultado = (ferramenta: string, familia: string, publico: 'b2b' | 'b2c') =>
-  enviar('ferramenta_resultado', { ferramenta, familia, publico })
+export const rastrearFerramentaResultado = (
+  ferramenta: string,
+  familia: string,
+  publico: 'b2b' | 'b2c',
+  extra: Params = {},
+) => enviar('ferramenta_resultado', { ferramenta, familia, publico, ...extra })
+
+/**
+ * Calculadora de tamanho. Dois eventos que o funil comum não tem: a pessoa
+ * abriu a ajuda de medição (sinal de que a instrução é necessária) e a
+ * medida foi recusada (sinal de que o campo confunde). A medida em si nunca
+ * sai daqui: o resultado leva a numeração estimada, que diz a demanda por
+ * número sem descrever ninguém.
+ */
+export const rastrearFerramentaAjuda = (ferramenta: string) =>
+  enviar('ferramenta_ajuda_medicao', { ferramenta })
+
+export const rastrearFerramentaMedidaInvalida = (ferramenta: string, motivo: string) =>
+  enviar('ferramenta_medida_invalida', { ferramenta, motivo })
 
 export const rastrearFerramentaReiniciada = (ferramenta: string) =>
   enviar('ferramenta_reiniciada', { ferramenta })

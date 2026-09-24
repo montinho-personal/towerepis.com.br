@@ -65,6 +65,8 @@ node docs/ferramentas/qa-faq.mjs               # FAQ: presença e duplicação
 node docs/ferramentas/qa-barra.mjs             # barra contextual, matriz
 node docs/ferramentas/qa-qual-calcado.mjs       # ferramenta de calçado, 32 percursos
 node docs/ferramentas/qa-qual-calcado-logica.mjs  # lógica, 1,7 mi de combinações (sem site no ar)
+node docs/ferramentas/qa-tamanho-botina-logica.mjs  # calculadora de tamanho, lógica (sem site no ar)
+node docs/ferramentas/qa-tamanho-botina.mjs     # calculadora de tamanho, 28 percursos (build de prévia)
 node docs/ferramentas/auditoria-rastrear.mjs   # rastreia (porta 3122)
 node docs/ferramentas/auditoria-analisar.mjs   # inventário — gera o grafo
 node docs/ferramentas/auditoria-canibalizacao.mjs   # lê o grafo, não o gera

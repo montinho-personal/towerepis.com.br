@@ -54,6 +54,7 @@ const SILENCIO = [
   // competiria com o próprio fluxo que ela construiu.
   '/encontrar-epi/',
   '/ferramentas/qual-calcado-usar/',
+  '/ferramentas/tamanho-de-botina/',
   // O construtor de cotação tem o botão de envio como ação principal da
   // tela. Segunda ação fixa por cima é exatamente a pilha que a gente
   // decidiu não ter.

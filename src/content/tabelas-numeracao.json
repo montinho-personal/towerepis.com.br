@@ -1,0 +1,43 @@
+{
+  "_leia": "Banco de tabelas da calculadora de tamanho de botina. Editar aqui, e não no código. Regras: (1) nenhuma tabela entra sem fonte com URL e data de revisão; (2) 'verificada' só vira true depois que alguém abriu a fonte e conferiu os números um a um; (3) tabela de modelo só serve à calculadora se 'medida' for 'pe' — tabela de palmilha ou de fôrma mede outra coisa e não converte comprimento do pé sem uma regra de folga que o fabricante precisa informar. O validador em src/lib/tamanho-calcado.ts recusa entrada incompleta no build.",
+  "referenciaGeral": {
+    "nome": "Numeração brasileira em ponto francês",
+    "passoMm": 6.667,
+    "resumo": "Na numeração brasileira, cada número equivale a dois terços de centímetro (o ponto francês) e expressa o comprimento real do pé, sem folga. A folga é da fôrma, e cada fabricante define a sua.",
+    "fonte": {
+      "titulo": "SENAI-RS — Fôrmas e sistemas de medidas para calçados (dossiê técnico, 2008)",
+      "url": "https://www.senairs.org.br/sites/default/files/documents/formas_e_sistemas_de_medidas_para_calcados.pdf"
+    },
+    "fontesDeApoio": [
+      {
+        "titulo": "SENAI-RS — Numeração técnica de calçados (resposta técnica, 2006)",
+        "url": "https://www.senairs.org.br/sites/default/files/documents/numeracao_tecnica_de_calcados.pdf"
+      },
+      {
+        "titulo": "ISO 19407:2023 — Footwear — Sizing — Conversion of sizing systems",
+        "url": "https://www.iso.org/standard/83106.html"
+      }
+    ],
+    "revisado": "2026-09-24",
+    "verificada": false,
+    "pendencia": "O ambiente de trabalho bloqueou o acesso ao PDF do SENAI-RS em 24/9/2026. O que está aqui veio do resumo do buscador. Antes de publicar: abrir o dossiê, confirmar o passo de 6,66/6,67 mm e a frase de que o número brasileiro expressa o comprimento do pé sem folga, e registrar página e trecho. O mesmo vale para as fontesDaProva: conferir, em cada uma, a frase que sustenta cada item do como medir e do como saber se ficou bom."
+  },
+  "tabelasDeModelo": [],
+  "fontesDaProva": {
+    "_leia": "Fontes do como medir e do como saber se ficou bom: fim do dia, em pé, dedo mais longo, espaço de um dedo, biqueira que não se sente, calçado que não alonga. Mesmo estado de verificação da referência geral.",
+    "fontes": [
+      {
+        "titulo": "AAOS OrthoInfo — Shoes: Finding the Right Fit",
+        "url": "https://orthoinfo.aaos.org/en/staying-healthy/shoes-finding-the-right-fit/"
+      },
+      {
+        "titulo": "AOFAS FootCareMD — 10 Points of Proper Shoe Fit",
+        "url": "https://www.footcaremd.org/resources/how-to-help/10-points-of-proper-shoe-fit"
+      },
+      {
+        "titulo": "TUC — Working feet and footwear (guia sobre calçado de segurança)",
+        "url": "https://www.tuc.org.uk/sites/default/files/footwear.pdf"
+      }
+    ]
+  }
+}

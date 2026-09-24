@@ -140,3 +140,22 @@ repetição.
   segundos, sem site no ar. É a que pegou o caso "pé dentro de líquido com
   impacto 'não sei'" que nenhuma amostra tinha alcançado.
 
+## Calculadora de tamanho de botina
+
+A página tem **trava de publicação**: só existe quando a referência de
+numeração em `src/content/tabelas-numeracao.json` está com `verificada: true`.
+Para testar antes disso, gerar o build de prévia:
+`PREVIA_FERRAMENTAS=1 npm run build && npx next start -p 3000`.
+
+- `qa-tamanho-botina-logica.mjs` — sem navegador. Confere a leitura da medida
+  (vírgula, ponto, "cm", milímetro sem vírgula, 5 e 80 recusados), toda
+  medida de 18 a 34 cm de décimo em décimo, que a tabela da página e a
+  calculadora não se contradizem, o link compartilhado, a URL adulterada e o
+  tamanho da mensagem. Reprova a versão que soma 1 cm de folga ao pé.
+- `qa-tamanho-botina.mjs` — navegador real, os cinco casos do briefing (só
+  26 cm; dois pés diferentes; pé largo; modelo sem tabela; equipe) mais erros
+  de digitação e chegada pelo teste de calçado, em 360, 390, 412 e 1280 px.
+  Confere número, foco no campo e no resultado, resultado na tela, mensagem,
+  recarregar, duplo clique, alvos de 44 px, console e scroll horizontal.
+  Precisa do build de prévia no ar em :3000.
+

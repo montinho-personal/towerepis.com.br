@@ -168,7 +168,11 @@ function Botoes<T extends string>({
   )
 }
 
-export function QualCalcado() {
+/**
+ * `tamanho`: a calculadora de numeração existe? Vem da página (servidor),
+ * porque a trava de publicação lê variável de build que o navegador não vê.
+ */
+export function QualCalcado({ tamanho = false }: { tamanho?: boolean }) {
   const [r, setR] = useState<Parcial>({ incomodos: undefined })
   const [passo, setPasso] = useState(0)
   const [pronto, setPronto] = useState(false)
@@ -257,7 +261,7 @@ export function QualCalcado() {
 
   /* ------------------------------------------------------------ resultado */
   if (pronto && completo(r)) {
-    return <Resultado r={r} refazer={refazer} copiado={copiado} setCopiado={setCopiado} rolar={rolarAoResultado.current} />
+    return <Resultado r={r} refazer={refazer} copiado={copiado} setCopiado={setCopiado} rolar={rolarAoResultado.current} tamanho={tamanho} />
   }
 
   /* ------------------------------------------------------------ perguntas */
@@ -590,12 +594,14 @@ function Resultado({
   copiado,
   setCopiado,
   rolar,
+  tamanho,
 }: {
   r: Respostas
   refazer: () => void
   copiado: boolean
   setCopiado: (v: boolean) => void
   rolar: boolean
+  tamanho: boolean
 }) {
   const res = useMemo(() => calcular(r), [r])
   const b2b = r.para === 'equipe'
@@ -754,6 +760,22 @@ function Resultado({
           <p className="mt-3 whitespace-pre-line italic leading-relaxed">{mensagem}</p>
         </details>
       </div>
+
+      {/* Próximo passo da jornada: o tipo está escolhido, falta o número. A
+          família vai na URL, e a calculadora a devolve na mensagem. */}
+      {tamanho && (
+        <Link
+          href={`/ferramentas/tamanho-de-botina/?calcado=${res.familia.chave}`}
+          onClick={() => rastrearCta('tamanho-de-botina', CAMINHO)}
+          className={`${cartao} mt-10 flex items-center justify-between gap-4 transition-colors hover:border-ink`}
+        >
+          <span>
+            <span className="eyebrow block">Próximo passo</span>
+            <span className="mt-2 block font-display text-lg font-bold">Qual numeração pedir? Calcule pelo seu pé</span>
+          </span>
+          <span aria-hidden="true">→</span>
+        </Link>
+      )}
 
       {/* Linhas reais */}
       {res.linhas.length > 0 && (

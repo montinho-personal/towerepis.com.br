@@ -50,6 +50,7 @@ export type ContextoWhatsApp =
   | 'cotacao'
   | 'ferramenta'
   | 'ferramenta-calcado'
+  | 'ferramenta-tamanho'
   | 'marcas'
   | 'historia'
   | 'contato'
@@ -103,6 +104,7 @@ const MENSAGENS: Record<ContextoWhatsApp, string> = {
 
   ferramenta: `${ABERTURA} Usei a ferramenta de orientação do site e gostaria de ajuda para escolher.`,
   'ferramenta-calcado': `${ABERTURA} Fiz o teste "Qual calçado profissional é ideal para mim?" e gostaria de ajuda para escolher o modelo.`,
+  'ferramenta-tamanho': `${ABERTURA} Estou usando a calculadora de tamanho de botina e gostaria de ajuda para confirmar a numeração.`,
   marcas: `${ABERTURA} Gostaria de saber quais marcas vocês trabalham e o que têm disponível.`,
   historia: `${ABERTURA} Gostaria de falar com vocês sobre proteção para o trabalho.`,
   contato: `${ABERTURA} Gostaria de falar com vocês.`,
