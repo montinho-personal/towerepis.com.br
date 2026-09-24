@@ -56,7 +56,14 @@ export function Header() {
   const [rolou, setRolou] = useState(false)
 
   useEffect(() => {
-    const aoRolar = () => setRolou(window.scrollY > 24)
+    // Histerese: compacta depois de 56 px e só volta a crescer abaixo de 8.
+    // Com um limite único (era 24), o cabeçalho encolhia ~36 px, o navegador
+    // compensava a rolagem na mesma medida, a página voltava para baixo do
+    // limite, o cabeçalho crescia, e o ciclo não parava — a página tremia
+    // sozinha sempre que a rolagem parava perto do topo. A folga entre os
+    // dois limites (48 px) é maior que a variação de altura, e o ciclo
+    // deixa de ter como fechar.
+    const aoRolar = () => setRolou((antes) => (antes ? window.scrollY > 8 : window.scrollY > 56))
     aoRolar()
     window.addEventListener('scroll', aoRolar, { passive: true })
     return () => window.removeEventListener('scroll', aoRolar)
