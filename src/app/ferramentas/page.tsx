@@ -9,7 +9,7 @@ import { PUBLICAVEL as TAMANHO_PUBLICAVEL } from '@/lib/tamanho-calcado'
 /**
  * Hub de ferramentas.
  *
- * Existe com três ferramentas reais, e só com elas. As que estão no plano —
+ * Existe só com ferramentas reais. As que estão no plano —
  * tamanho de botina, consumo anual, estoque mínimo, seletor de luva e de
  * respirador — aparecem como texto, não como link para página vazia. Hub
  * que lista "em breve" é hub que manda o buscador para lugar nenhum.
@@ -28,6 +28,15 @@ const FERRAMENTAS = [
       'Onze perguntas sobre a sua atividade, o piso e a jornada. No fim, a família de calçado a avaliar e as características que vale procurar — biqueira, solado, cabedal, água e conforto.',
     tempo: 'Menos de 1 minuto',
     destaque: true,
+  },
+  {
+    href: '/ferramentas/grade-de-numeracao/',
+    rotulo: 'Para equipes',
+    nome: 'Calculadora de grade de numeração da equipe',
+    texto:
+      'Quantas pessoas calçam cada número, quantos pares por pessoa, reserva se quiser. No fim, a grade pronta para copiar, baixar ou mandar para cotação — sem nenhum nome.',
+    tempo: '3 minutos',
+    destaque: false,
   },
   // Só aparece quando a referência de numeração foi conferida na fonte.
   ...(TAMANHO_PUBLICAVEL
@@ -54,10 +63,10 @@ const FERRAMENTAS = [
   },
   {
     href: '/orcamento/',
-    rotulo: 'Para equipes',
-    nome: 'Orçamento com grade de numeração',
+    rotulo: 'Orçamento',
+    nome: 'Orçamento pronto para o WhatsApp',
     texto:
-      'Monte o pedido com a grade de numeração da equipe já preenchida e envie pronto pelo WhatsApp. É o dado que mais falta num pedido de calçado, e o que faz a resposta vir com preço e prazo.',
+      'Monte o pedido item a item — calçado com a grade, luva, máscara — e envie pronto pelo WhatsApp. Sem e-mail, sem CNPJ, e a resposta vem com preço e prazo.',
     tempo: '5 minutos',
     destaque: false,
   },
@@ -66,7 +75,9 @@ const FERRAMENTAS = [
 export const metadata = metadados({
   titulo: 'Ferramentas para escolher EPI',
   descricao:
-    'Três ferramentas para escolher EPI sem chute: qual calçado usar, qual proteção a sua atividade pede e o orçamento com a grade de numeração pronta.',
+    // Era "Três ferramentas": com a grade, deixou de ser verdade. Descrição
+    // sem contagem, para não quebrar de novo a cada ferramenta nova.
+    'Ferramentas gratuitas para escolher e comprar EPI sem chute: qual calçado usar, qual proteção a atividade pede, a grade da equipe e o orçamento pronto.',
   canonical: '/ferramentas/',
 })
 

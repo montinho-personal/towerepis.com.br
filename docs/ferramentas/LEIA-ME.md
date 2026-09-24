@@ -159,3 +159,19 @@ Para testar antes disso, gerar o build de prévia:
   recarregar, duplo clique, alvos de 44 px, console e scroll horizontal.
   Precisa do build de prévia no ar em :3000.
 
+## Calculadora de grade de numeração da equipe
+
+- `qa-grade-equipe-logica.mjs` — sem navegador. Os casos de uso do briefing
+  (30 pessoas sem reserva; 100 pessoas, 2 pares e 5%; equipe de 50 com 48 na
+  grade; só três números), arredondamento da reserva de 1 a 3.000 pares, 20
+  mil grades sorteadas conferindo soma, multiplicação e a distribuição pelos
+  maiores restos, importação de lista colada, e que nenhum nome de
+  colaborador sai na mensagem, no texto, no CSV ou no que fica salvo.
+  Reprova a reserva calculada sobre pessoas e o arredondamento para baixo.
+- `qa-grade-equipe.mjs` — navegador real, 34 percursos em 360, 390, 412 e
+  1280 px: os mesmos casos, lista por pessoa com duplicado e linha fora da
+  faixa, grade vazia, recarregar (recupera sem nomes), limpar com
+  confirmação, copiar, CSV e impressão só da grade. Precisa do site no ar em
+  :3000. Espera a rolagem suave terminar antes de clicar: clicar no meio da
+  animação faz o Playwright rolar contra ela, e o erro seria do teste.
+

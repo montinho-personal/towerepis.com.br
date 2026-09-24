@@ -477,3 +477,21 @@
   }
   .skip-link:focus { left: 0; }
 }
+
+/* Impressão da grade de numeração. Só vale quando o botão "Imprimir" da
+   ferramenta liga a classe no body: Ctrl+P em qualquer outra página, ou na
+   própria ferramenta, imprime a página como sempre. */
+@media print {
+  body.imprimindo-grade * { visibility: hidden; }
+  body.imprimindo-grade [data-imprimir],
+  body.imprimindo-grade [data-imprimir] * { visibility: visible; }
+  body.imprimindo-grade [data-imprimir] {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #000;
+    background: #fff;
+  }
+}

@@ -35,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/encontrar-epi/', 0.7, 'monthly'),
     url('/ferramentas/', 0.8, 'monthly'),
     url('/ferramentas/qual-calcado-usar/', 0.9, 'monthly'),
+    url('/ferramentas/grade-de-numeracao/', 0.9, 'monthly'),
     // Só entra quando a referência de numeração foi conferida na fonte.
     ...(PUBLICAVEL ? [url('/ferramentas/tamanho-de-botina/', 0.9, 'monthly')] : []),
     url('/marcas/', 0.7, 'monthly'),

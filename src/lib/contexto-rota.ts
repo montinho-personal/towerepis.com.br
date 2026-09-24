@@ -33,6 +33,7 @@ const MAPA: Record<string, Destino> = {
   '/ferramentas/': { contexto: 'ferramenta' },
   '/ferramentas/qual-calcado-usar/': { contexto: 'ferramenta-calcado' },
   '/ferramentas/tamanho-de-botina/': { contexto: 'ferramenta-tamanho' },
+  '/ferramentas/grade-de-numeracao/': { contexto: 'ferramenta-grade' },
   '/marcas/': { contexto: 'marcas' },
   '/marcas/bompel/': {
     contexto: 'marcas',

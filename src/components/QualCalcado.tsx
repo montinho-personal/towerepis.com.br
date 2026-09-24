@@ -750,7 +750,7 @@ function Resultado({
             {b2b ? 'Solicitar orçamento para minha equipe' : 'Falar com a Tower no WhatsApp'}
           </a>
           {b2b && (
-            <Link href="/orcamento/" className="btn btn-linha" onClick={() => rastrearCta('montar-grade', CAMINHO)}>
+            <Link href={`/ferramentas/grade-de-numeracao/?calcado=${res.familia.chave}`} className="btn btn-linha" onClick={() => rastrearCta('montar-grade', CAMINHO)}>
               Montar grade de numeração
             </Link>
           )}

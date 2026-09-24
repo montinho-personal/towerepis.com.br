@@ -140,6 +140,15 @@ export default function PoliticaCookies() {
             <em>Apagar minha resposta</em>, acima, remove esse registro — e aí o banner
             volta a perguntar.
           </p>
+          <p>
+            Uma segunda coisa só é guardada se você usar a{' '}
+            <Link href="/ferramentas/grade-de-numeracao/">calculadora de grade de numeração</Link>: a
+            grade que você está montando, para não se perder se a página fechar. Fica em{' '}
+            <code>localStorage</code>, com a chave <code>tower-grade-equipe</code>, também só no seu
+            navegador. Guarda números, quantidades e setores — <strong>nunca nomes</strong> de
+            colaboradores, mesmo que você os digite na lista. O botão <em>Limpar grade</em>, na
+            própria ferramenta, apaga o registro.
+          </p>
 
           <h2 id="antes">O que acontece antes de você responder</h2>
           <p>

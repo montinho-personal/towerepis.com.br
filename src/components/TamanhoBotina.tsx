@@ -349,7 +349,7 @@ export function TamanhoBotina() {
                 ).map(([v, r]) => (
                   <label
                     key={v}
-                    className={`flex min-h-11 cursor-pointer items-center gap-2 border px-4 font-display text-sm font-semibold ${
+                    className={`relative flex min-h-11 cursor-pointer items-center gap-2 border px-4 font-display text-sm font-semibold ${
                       para === v ? 'border-ink bg-ink text-paper' : 'border-rule-strong bg-paper hover:border-ink'
                     }`}
                   >
@@ -595,7 +595,7 @@ function Resultado({
             ).map(([v, r]) => (
               <label
                 key={v}
-                className={`flex min-h-11 cursor-pointer items-center border px-4 font-display text-sm font-semibold ${
+                className={`relative flex min-h-11 cursor-pointer items-center border px-4 font-display text-sm font-semibold ${
                   estado.largura === v ? 'border-ink bg-ink text-paper' : 'border-rule-strong bg-paper hover:border-ink'
                 }`}
               >
@@ -708,7 +708,7 @@ function Resultado({
             Falar com a Tower
           </a>
           {b2b && (
-            <Link href="/orcamento/" className="btn btn-linha" onClick={() => rastrearCta('grade-equipe', CAMINHO)}>
+            <Link href={`/ferramentas/grade-de-numeracao/${estado.calcado ? `?calcado=${estado.calcado}` : ''}`} className="btn btn-linha" onClick={() => rastrearCta('grade-equipe', CAMINHO)}>
               Montar a grade da equipe
             </Link>
           )}
@@ -722,7 +722,7 @@ function Resultado({
       {!b2b && (
         <p className="mt-6 text-[0.95rem] text-ink-2">
           Comprando para uma equipe?{' '}
-          <Link href="/orcamento/" className="font-semibold underline underline-offset-4 hover:text-tower-red" onClick={() => rastrearCta('grade-equipe', CAMINHO)}>
+          <Link href="/ferramentas/grade-de-numeracao/" className="font-semibold underline underline-offset-4 hover:text-tower-red" onClick={() => rastrearCta('grade-equipe', CAMINHO)}>
             Monte a grade de numeração
           </Link>{' '}
           e envie o pedido pronto.
