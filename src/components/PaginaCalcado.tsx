@@ -91,6 +91,16 @@ export function PaginaCalcado({ slug }: { slug: string }) {
                 Entenda a diferença entre ocupacional e de segurança →
               </p>
             </Link>
+            <Link
+              href="/ferramentas/qual-calcado-usar/"
+              className="block border border-ink bg-ink p-6 text-paper transition-colors hover:bg-grafite-800"
+            >
+              <p className="eyebrow text-paper/60">Não sabe se é o seu caso?</p>
+              <p className="mt-2 font-display text-lg font-bold">
+                Responda 11 perguntas e veja o seu perfil de calçado →
+              </p>
+              <p className="mt-2 text-sm text-paper/70">Menos de um minuto. Sem cadastro.</p>
+            </Link>
           </div>
         </div>
       </Secao>

@@ -208,6 +208,11 @@ export default function QualCalcadoUsar() {
                 incômodos, que decidem se o calçado vai continuar no pé. Onde a resposta é “não
                 sei”, o teste lista o que confirmar em vez de adivinhar.
               </p>
+              <p className="mt-3 text-[0.95rem]">
+                <Link href="/ferramentas/" className="underline underline-offset-4 hover:text-tower-red">
+                  Ver todas as ferramentas
+                </Link>
+              </p>
             </div>
             <div className="border border-rule p-6">
               <p className="eyebrow">Fontes</p>

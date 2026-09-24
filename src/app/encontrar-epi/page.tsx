@@ -80,7 +80,16 @@ export default function EncontrarEpi() {
               <Link href="/calcados/comparativo/" className="underline underline-offset-4 hover:text-tower-red">
                 Ocupacional ou de segurança
               </Link>{' '}
-              responde em uma frase.
+              responde em uma frase. E se a dúvida for de calçado do começo ao fim — biqueira,
+              solado, cabedal, conforto —, existe uma ferramenta só para isso:{' '}
+              <Link href="/ferramentas/qual-calcado-usar/" className="underline underline-offset-4 hover:text-tower-red">
+                qual calçado profissional é ideal para você
+              </Link>
+              . As duas, e o orçamento com grade, estão reunidas em{' '}
+              <Link href="/ferramentas/" className="underline underline-offset-4 hover:text-tower-red">
+                ferramentas
+              </Link>
+              .
             </p>
           </div>
         </div>

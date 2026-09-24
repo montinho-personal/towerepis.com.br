@@ -47,9 +47,12 @@ export default function HubCalcados() {
             ],
           }}
         />
-        <div className="mt-6">
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row">
           <Link href="/calcados/comparativo/" className="btn btn-ink">
             Ver a comparação completa e descobrir o seu caso
+          </Link>
+          <Link href="/ferramentas/qual-calcado-usar/" className="btn btn-ghost">
+            Ou responda 11 perguntas e veja o seu perfil
           </Link>
         </div>
       </Secao>

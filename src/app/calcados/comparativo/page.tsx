@@ -70,6 +70,13 @@ export default function Comparativo() {
           página serve para você identificar qual deles existe na sua rotina e sair daqui
           com a categoria decidida.
         </EmUmaFrase>
+        <p className="mt-6 text-[0.95rem] text-ink-2">
+          Prefere responder por perguntas? A ferramenta{' '}
+          <Link href="/ferramentas/qual-calcado-usar/" className="underline underline-offset-4 hover:text-tower-red">
+            qual calçado profissional é ideal para você
+          </Link>{' '}
+          faz a mesma decisão em onze toques, e ainda ajusta solado, cabedal e cano.
+        </p>
       </Secao>
 
       <Secao className="wrap pt-0">

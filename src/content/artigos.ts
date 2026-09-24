@@ -177,6 +177,11 @@ export const ARTIGOS: Artigo[] = [
         texto:
           'Tênis de uso diário não foi feito para piso molhado com gordura. Absorve líquido, é difícil de higienizar e não tem Certificado de Aprovação como EPI. Quando o calçado é obrigatório na atividade, essa última parte deixa de ser detalhe e vira exigência.',
       },
+      {
+        tipo: 'p',
+        texto:
+          'Para ver o perfil completo do calçado da sua cozinha — solado, água, higienização e conforto — a ferramenta <a href="/ferramentas/qual-calcado-usar/">qual calçado profissional é ideal para você</a> responde em onze toques.',
+      },
     ],
     fontes: [
       {
@@ -424,6 +429,11 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'A biqueira protege os dedos contra impacto e compressão. Ela não protege a sola contra perfuração. Se na sua atividade há prego, ferro ou material perfurante no chão, a proteção contra perfuração é um requisito adicional, presente apenas em modelos específicos. E isso precisa ser conferido no Certificado de Aprovação.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Se a dúvida é sobre o seu caso e não sobre a norma, a ferramenta <a href="/ferramentas/qual-calcado-usar/">qual calçado profissional é ideal para você</a> faz a pergunta que decide a categoria e ajusta o resto em onze toques.',
       },
     ],
     fontes: [
@@ -937,6 +947,11 @@ export const ARTIGOS: Artigo[] = [
         texto:
           'Se o calçado já está danificado, com biqueira aparecendo ou solado descolando, o caso é de substituição — <a href="/conhecimento/nr-6-o-que-a-empresa-precisa-saber/">a NR-6 fala da conservação e da troca</a>, e a lista completa de sinais está em <a href="/conhecimento/quando-trocar-o-calcado-de-seguranca/">quando trocar o calçado de segurança</a>.',
       },
+      {
+        tipo: 'p',
+        texto:
+          'Antes de trocar o par, vale conferir se o tipo de calçado está certo para a sua rotina: a ferramenta <a href="/ferramentas/qual-calcado-usar/">qual calçado profissional é ideal para você</a> responde isso em um minuto.',
+      },
     ],
     fontes: [
       {
@@ -1363,6 +1378,11 @@ export const ARTIGOS: Artigo[] = [
         texto:
           'O material da biqueira consta na descrição do Certificado de Aprovação do modelo. É ali que se confere, e não na embalagem. Se a atividade tem uma exigência específica — isolamento elétrico, proteção contra perfuração —, ela também precisa estar escrita no CA; a categoria "calçado de segurança" sozinha não garante nenhum dos dois.',
       },
+      {
+        tipo: 'p',
+        texto:
+          'Quer ver como a biqueira entra no conjunto, junto com solado, cabedal e conforto? A ferramenta <a href="/ferramentas/qual-calcado-usar/">qual calçado profissional é ideal para você</a> monta o perfil inteiro a partir da sua atividade.',
+      },
     ],
     fontes: [
       {
@@ -1705,6 +1725,11 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'A troca entra na <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega de EPI</a>, com data e motivo — é o registro que demonstra que a substituição aconteceu quando precisava, e é dele que sai <a href="/conhecimento/quantos-pares-por-ano-calcular-a-reposicao/">o número de pares do ano seguinte</a>. E se a numeração da pessoa já estiver anotada na <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">grade da equipe</a>, o pedido sai sem ninguém precisar experimentar de novo.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na hora de repor, vale checar se o próximo par deveria ser igual ao anterior. A ferramenta <a href="/ferramentas/qual-calcado-usar/">qual calçado profissional é ideal para você</a> monta o perfil pela atividade, e não pelo hábito.',
       },
     ],
     fontes: [
@@ -4315,6 +4340,11 @@ export const ARTIGOS: Artigo[] = [
         texto:
           'Em compra para equipe, esses dados valem mais que o nome do modelo. Com eles dá para montar a grade uma vez e repor sem recomeçar a escolha a cada contratação.',
       },
+      {
+        tipo: 'p',
+        texto:
+          'Se quiser cruzar a jornada com o piso e o risco da sua atividade, a ferramenta <a href="/ferramentas/qual-calcado-usar/">qual calçado profissional é ideal para você</a> devolve o perfil de calçado a avaliar, com o conforto no lugar que ele merece.',
+      },
     ],
     fontes: [
       {
@@ -5737,6 +5767,11 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'Em compra para equipe é comum precisar de mais de um formato, e isso não é falha de padronização. Padronizar o critério é o que importa; obrigar a mesma bota em áreas diferentes é padronizar o que não deveria.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para juntar formato, categoria, solado e conforto numa resposta só, a ferramenta <a href="/ferramentas/qual-calcado-usar/">qual calçado profissional é ideal para você</a> faz as perguntas na ordem certa.',
       },
     ],
     fontes: [
