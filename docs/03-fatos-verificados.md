@@ -136,7 +136,7 @@ antigos são os ativos visuais mais valiosos do projeto.
 - Recursos gráficos: formas diagonais, degradês, blobs — típicos de arte feita em app.
 - Bio: *"Tower EPI's — Especializados em comercialização de EPIs."*
 - Link: `wa.me/message/WKZSQ3ZTFS4QI1`
-- Telefone em post: **(85) 3491-9494** com ícone de WhatsApp ⚠️ confirmar
+- Telefone em post: **(85) 3491-9494** com ícone de WhatsApp ✅ confirmado pelo cliente em 24/9/2026
 
 ## Marcas — ordem pela OPERAÇÃO DE HOJE, não pela história
 
@@ -193,7 +193,7 @@ escolha estética arbitrária: é biograficamente verdadeira.
 
 | # | Item | Bloqueia |
 |---|---|---|
-| 1 | ⚠️ Confirmar WhatsApp **(85) 3491-9494** e se recebe mensagem com texto pré-preenchido | **Conversão do site inteiro** |
+| 1 | ✅ ~~Confirmar WhatsApp **(85) 3491-9494**~~ — confirmado pelo cliente em 24/9/2026 | — |
 | 2 | Ano e nome exato do prêmio de Distribuidor Regional da 3M | Página de história |
 | 3 | Aprovação da frase sobre propina | Página de história |
 | 4 | Registro profissional do Helano como Técnico de Segurança do Trabalho | Página de autor / E-E-A-T |

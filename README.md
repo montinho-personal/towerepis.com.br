@@ -63,8 +63,8 @@ cabeçalho direto em `https://towerepis.com.br/` e o Search Console.
 
 ### Antes de colocar no ar
 
-1. 🔴 **Confirmar o WhatsApp (85) 3491-9494.** O número veio de um post do Instagram
-   e alimenta os 29 CTAs do site. Se estiver errado, o site converte para lugar nenhum.
+1. ✅ ~~Confirmar o WhatsApp (85) 3491-9494.~~ Confirmado pelo cliente em 24 de
+   setembro de 2026.
 2. 🔴 **Fotos reais.** O design foi feito para elas e ainda não tem nenhuma.
 3. 🟡 Revisão do conteúdo técnico pelo Helano.
 4. 🟡 Google Business Profile como *service-area business* e campanha de avaliações.

@@ -36,17 +36,14 @@ export const empresa = {
   },
 
   /**
-   * PENDENTE — CRÍTICO. Número visto em post do Instagram: (85) 3491-9494.
-   * Confirmar antes do lançamento:
-   *  1. o número está certo;
-   *  2. tem WhatsApp ativo;
-   *  3. recebe mensagem com texto pré-preenchido (link wa.me).
-   * Toda a conversão do site depende disto.
+   * Confirmado pelo cliente em 24 de setembro de 2026. O número tinha vindo
+   * de um post do Instagram e ficou marcado como pendente desde o início.
+   * Toda a conversão do site depende dele: é o único canal.
    */
   whatsapp: {
     numero: '558534919494',
     exibicao: '(85) 3491-9494',
-    confirmado: false,
+    confirmado: true,
   },
 
   /**

@@ -12,7 +12,9 @@
 
 ## 🔴 BLOQUEIA O LANÇAMENTO
 
-### 1. Confirmar o número do WhatsApp
+### 1. ~~Confirmar o número do WhatsApp~~ — resolvido em 24 de setembro de 2026
+O cliente confirmou que o número está certo. O texto abaixo fica como registro.
+
 **(85) 3491-9494** — visto em um post do Instagram, com ícone de WhatsApp.
 Os **29 CTAs do site** apontam para ele. Precisamos confirmar três coisas:
 
