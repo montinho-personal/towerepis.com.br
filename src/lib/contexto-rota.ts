@@ -30,6 +30,8 @@ const MAPA: Record<string, Destino> = {
   '/empresas/como-atendemos/': { contexto: 'empresas' },
   '/orcamento/': { contexto: 'orcamento' },
   '/encontrar-epi/': { contexto: 'ferramenta' },
+  '/ferramentas/': { contexto: 'ferramenta' },
+  '/ferramentas/qual-calcado-usar/': { contexto: 'ferramenta-calcado' },
   '/marcas/': { contexto: 'marcas' },
   '/marcas/bompel/': {
     contexto: 'marcas',

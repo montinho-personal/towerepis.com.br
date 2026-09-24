@@ -19,3 +19,94 @@ export function IconeSeta({ className = 'h-4 w-4' }: { className?: string }) {
     </svg>
   )
 }
+
+/**
+ * Ícones das perguntas da ferramenta de calçado.
+ *
+ * Traço único, sem preenchimento, 24 unidades. Existem para reduzir esforço
+ * cognitivo em cinco perguntas de risco, não para decorar: cada um repete
+ * em desenho o que o rótulo diz em texto. Por isso são aria-hidden — o
+ * texto ao lado é a informação, o ícone é o reconhecimento.
+ */
+const traco = { fill: 'none', stroke: 'currentColor', strokeWidth: 1.75, strokeLinecap: 'round', strokeLinejoin: 'round' } as const
+
+export function IconeImpacto({ className = 'h-6 w-6' }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} {...traco}>
+      <path d="M7 6h10v6H7z" />
+      <path d="M12 12v3M9 16l3 3 3-3M4 21h16" />
+    </svg>
+  )
+}
+
+export function IconePerfuracao({ className = 'h-6 w-6' }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} {...traco}>
+      <path d="M4 18h16M12 18V5M9.5 7.5 12 5l2.5 2.5" />
+      <path d="M7 14h10" strokeDasharray="2 2" />
+    </svg>
+  )
+}
+
+export function IconeAgua({ className = 'h-6 w-6' }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} {...traco}>
+      <path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z" />
+      <path d="M9 14a3 3 0 0 0 3 3" />
+    </svg>
+  )
+}
+
+export function IconeOleo({ className = 'h-6 w-6' }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} {...traco}>
+      <path d="M4 17c2-2 4-2 6 0s4 2 6 0 4-2 4 0" />
+      <path d="M6 12h8l2-4H8l-2 4z" />
+      <path d="M12 8V5" />
+    </svg>
+  )
+}
+
+export function IconeEletricidade({ className = 'h-6 w-6' }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} {...traco}>
+      <path d="M13 2 5 13h6l-1 9 8-12h-6l1-8z" />
+    </svg>
+  )
+}
+
+export function IconeQuimico({ className = 'h-6 w-6' }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} {...traco}>
+      <path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3" />
+      <path d="M7 16h10" />
+    </svg>
+  )
+}
+
+export function IconeCaminhada({ className = 'h-6 w-6' }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} {...traco}>
+      <circle cx="13" cy="4" r="1.5" />
+      <path d="M10 21l2-6-3-2 1-5 3-1 2 3 3 1M9 12l-2 2v4M14 15l2 2 1 4" />
+    </svg>
+  )
+}
+
+export function IconeCalor({ className = 'h-6 w-6' }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} {...traco}>
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1" />
+    </svg>
+  )
+}
+
+export function IconeConforto({ className = 'h-6 w-6' }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} {...traco}>
+      <path d="M3 16c0-2 2-4 5-4h4l3-3h3l2 4v3H3z" />
+      <path d="M3 19h17" />
+    </svg>
+  )
+}

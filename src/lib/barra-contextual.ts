@@ -53,6 +53,7 @@ const SILENCIO = [
   // A ferramenta termina em WhatsApp com o resultado. Barra por cima
   // competiria com o próprio fluxo que ela construiu.
   '/encontrar-epi/',
+  '/ferramentas/qual-calcado-usar/',
   // O construtor de cotação tem o botão de envio como ação principal da
   // tela. Segunda ação fixa por cima é exatamente a pilha que a gente
   // decidiu não ter.
@@ -100,6 +101,11 @@ const SINGULARES: Record<string, Omit<Barra, 'contexto' | 'mensagem'>> = {
   '/para-seu-trabalho/': {
     chamada: 'Não achou a sua atividade?',
     rotulo: 'Perguntar no WhatsApp',
+    gatilho: 0.3,
+  },
+  '/ferramentas/': {
+    chamada: 'Prefere perguntar direto?',
+    rotulo: 'Falar no WhatsApp',
     gatilho: 0.3,
   },
   '/conhecimento/': {

@@ -76,6 +76,38 @@ export function schemaSite() {
   }
 }
 
+/**
+ * Ferramenta interativa.
+ *
+ * WebApplication é o tipo certo para um seletor que roda no navegador: não
+ * é SoftwareApplication instalável, e não é Product — não há oferta nem
+ * preço. `isAccessibleForFree` e `offers` com preço zero dizem ao buscador
+ * que o resultado não está atrás de cadastro, que é exatamente o que a
+ * página promete.
+ */
+export function schemaWebApplication(dados: {
+  nome: string
+  descricao: string
+  caminho: string
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    '@id': `${urlAbsoluta(dados.caminho)}#app`,
+    name: dados.nome,
+    description: dados.descricao,
+    url: urlAbsoluta(dados.caminho),
+    applicationCategory: 'UtilitiesApplication',
+    operatingSystem: 'Any',
+    browserRequirements: 'Requires JavaScript',
+    inLanguage: 'pt-BR',
+    isAccessibleForFree: true,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'BRL' },
+    publisher: { '@id': `${SITE}/#organizacao` },
+    isPartOf: { '@id': `${SITE}/#site` },
+  }
+}
+
 export function schemaBreadcrumb(itens: { nome: string; url: string }[]) {
   return {
     '@context': 'https://schema.org',

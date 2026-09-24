@@ -32,6 +32,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/empresas/como-atendemos/', 0.7, 'monthly'),
     ...SETORES.map((s) => url(`/empresas/${s.slug}/`, 0.8, 'monthly')),
     url('/encontrar-epi/', 0.7, 'monthly'),
+    url('/ferramentas/', 0.8, 'monthly'),
+    url('/ferramentas/qual-calcado-usar/', 0.9, 'monthly'),
     url('/marcas/', 0.7, 'monthly'),
     url('/marcas/bompel/', 0.8, 'monthly'),
     url('/marcas/sticky-shoes/', 0.7, 'monthly'),

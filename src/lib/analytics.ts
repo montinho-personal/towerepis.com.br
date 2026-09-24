@@ -88,8 +88,34 @@ export const rastrearFormIniciado = (form: string) =>
 export const rastrearFormConcluido = (form: string, params: Params = {}) =>
   enviar('form_concluido', { form, ...params })
 
-export const rastrearFerramenta = (etapa: string, resposta?: string) =>
-  enviar('ferramenta_etapa', { etapa, resposta })
+export const rastrearFerramenta = (etapa: string, resposta?: string, ferramenta?: string) =>
+  enviar('ferramenta_etapa', { etapa, resposta, ferramenta })
 
-export const rastrearFerramentaConcluida = (perfil: string) =>
-  enviar('ferramenta_concluida', { perfil })
+export const rastrearFerramentaConcluida = (perfil: string, ferramenta?: string) =>
+  enviar('ferramenta_concluida', { perfil, ferramenta })
+
+/**
+ * Funil da ferramenta "Qual calçado usar".
+ *
+ * Os nomes seguem a convenção em português do restante da propriedade —
+ * misturar `tool_start` com `whatsapp_click` fragmentaria o relatório em
+ * duas famílias. O funil que o GA4 vai montar:
+ *
+ *   page_view -> ferramenta_iniciada -> ferramenta_metade ->
+ *   ferramenta_concluida -> ferramenta_resultado -> whatsapp_click
+ *
+ * `ferramenta_resultado` leva a família recomendada, e não as respostas
+ * uma a uma: é o que responde "que perfil de gente usa isto", sem
+ * carregar nada que identifique alguém.
+ */
+export const rastrearFerramentaIniciada = (ferramenta: string) =>
+  enviar('ferramenta_iniciada', { ferramenta })
+
+export const rastrearFerramentaMetade = (ferramenta: string) =>
+  enviar('ferramenta_metade', { ferramenta })
+
+export const rastrearFerramentaResultado = (ferramenta: string, familia: string, publico: 'b2b' | 'b2c') =>
+  enviar('ferramenta_resultado', { ferramenta, familia, publico })
+
+export const rastrearFerramentaReiniciada = (ferramenta: string) =>
+  enviar('ferramenta_reiniciada', { ferramenta })
