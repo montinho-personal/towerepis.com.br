@@ -21,7 +21,7 @@ import { IconeSeta } from '@/components/Icones'
 const FERRAMENTAS = [
   {
     href: '/ferramentas/qual-calcado-usar/',
-    rotulo: 'Escolha de EPI',
+    rotulo: 'Escolha de calçado',
     nome: 'Qual calçado profissional é ideal para mim?',
     texto:
       'Onze perguntas sobre a sua atividade, o piso e a jornada. No fim, a família de calçado a avaliar e as características que vale procurar — biqueira, solado, cabedal, água e conforto.',
@@ -85,7 +85,9 @@ export default function Ferramentas() {
               }`}
             >
               <p className={`eyebrow ${f.destaque ? 'text-paper/60' : ''}`}>{f.rotulo}</p>
-              <h2 className="mt-3 text-xl font-bold leading-snug">{f.nome}</h2>
+              {/* A cor vem explícita: a regra global pinta todo título de tinta, e no
+                  cartão escuro o título sumia — foi o que o cliente viu no celular. */}
+              <h2 className={`mt-3 text-xl font-bold leading-snug ${f.destaque ? 'text-paper' : ''}`}>{f.nome}</h2>
               <p className={`mt-3 flex-1 text-[0.95rem] leading-relaxed ${f.destaque ? 'text-paper/80' : 'text-ink-2'}`}>
                 {f.texto}
               </p>
