@@ -303,6 +303,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Onde a poeira da sua cerâmica aparece?',
     rotulo: 'Montar a lista por posto',
   },
+  'epi-para-salina-e-industria-do-sal': {
+    chamada: 'Quem trabalha com o pé em salmoura?',
+    rotulo: 'Montar a lista por etapa',
+  },
+  'epi-para-extracao-de-carnauba': {
+    chamada: 'Vai equipar a equipe antes da safra?',
+    rotulo: 'Montar a lista da safra',
+  },
   'epi-para-mecanico-de-oficina': {
     chamada: 'Que serviços a sua oficina faz?',
     rotulo: 'Montar a lista da oficina',

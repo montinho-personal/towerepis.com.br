@@ -6338,6 +6338,337 @@ export const ARTIGOS: Artigo[] = [
       },
     ],
   },
+  {
+    slug: 'epi-para-salina-e-industria-do-sal',
+    titulo: 'EPI para salina e indústria do sal: o que muda',
+    tituloSeo: 'EPI para salina e indústria do sal',
+    resumo:
+      'Numa salina o sol vem duas vezes: de cima e refletido pelo sal. É o risco que organiza o resto, e o que a compra de EPI costuma tratar como detalhe.',
+    descricaoSeo:
+      'Sol refletido no sal, salmoura no pé, poeira na moagem e máquina na colheita. O que organiza o EPI de uma salina, do cristalizador à embalagem.',
+    publicado: '2026-09-28',
+    atualizado: '2026-09-28',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Numa salina o sol vem duas vezes: de cima e refletido pelo sal branco do chão. É o risco que organiza o resto — olhos, pele, calor — e é o que a compra de EPI costuma tratar como detalhe, com um boné e um óculos escuro qualquer.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O Rio Grande do Norte produz quase todo o sal marinho do Brasil, concentrado na Costa Branca: Mossoró, Macau, Areia Branca e Grossos. É trabalho a céu aberto, em área plana, clara e sem sombra, com a colheita e o beneficiamento cada vez mais mecanizados. Este texto trata da salina inteira, do cristalizador à embalagem.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O sol que vem de baixo',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Superfície clara reflete radiação, e o sal é das mais claras que existem. Quem trabalha no cristalizador recebe o sol de cima e o refletido de baixo, que entra por onde o boné não cobre: pelos lados do rosto e direto nos olhos. A exposição repetida à radiação ultravioleta está ligada a queimadura, envelhecimento da pele, câncer de pele e catarata.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Por isso o óculos da salina é equipamento de proteção, com Certificado de Aprovação e filtro para radiação ultravioleta, e não óculos escuro comum. Lente escura sem filtro faz a pupila abrir, e pode deixar entrar mais radiação do que entraria sem óculos nenhum. O modelo com proteção lateral faz diferença aqui, porque o reflexo vem de baixo e dos lados. As opções estão em <a href="/protecao/olhos-e-face/">proteção para olhos e face</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para a pele, roupa de manga longa e proteção de cabeça que cubra a nuca e as laterais do rosto. A avaliação de riscos da empresa define quais desses itens ela trata como EPI e quais como uniforme — mas a exposição é a mesma nos dois casos.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Calor: o que EPI não resolve',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Área sem sombra, sol refletido e esforço físico somam uma carga de calor alta na maior parte do ano. Isso se controla com organização — pausa, água, sombra, horário das tarefas mais pesadas —, e nenhum equipamento substitui essas medidas. Vale lembrar na hora de escolher roupa e calçado: o que é pesado e abafado demais acaba sendo tirado no meio do turno.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Salmoura, sal e o pé',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem entra nos cristalizadores e nos tanques trabalha com o pé dentro de salmoura. Onde é assim, a resposta é bota impermeável de cano alto, e o critério inteiro está em <a href="/conhecimento/bota-de-pvc-quando-e-a-resposta-certa/">quando a bota de PVC é a resposta certa</a>. Calçado de couro que molha em salmoura todo dia resseca, racha e dura pouco.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O sal também corrói metal. Ilhós, fivela e biqueira metálica sofrem mais aqui do que em qualquer outro ambiente, e onde há risco de impacto a biqueira de composite costuma durar mais. O que muda entre as duas está em <a href="/conhecimento/biqueira-de-composite-ou-de-aco-qual-escolher/">biqueira de composite ou de aço</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Nas mãos, o cristal de sal é áspero e corta, e a salmoura agrava qualquer ferida. Luva impermeável onde há contato com salmoura, luva de manuseio resistente à abrasão onde se lida com sal seco e sacaria.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Colheita, lavagem e moagem: máquina, ruído e poeira',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A colheita e o beneficiamento usam máquina pesada, esteira e moinho. Três coisas mudam a lista nessa parte. O ruído, que pede protetor auditivo conforme a medição feita pela empresa — a escolha entre os tipos está em <a href="/conhecimento/protetor-auditivo-plug-ou-concha/">plug ou concha</a>. A poeira de sal da moagem, do refino e da embalagem, que irrita olhos e vias respiratórias e pode pedir respirador para partículas, conforme a avaliação. E a máquina, em que a proteção de verdade é a da própria máquina, e não luva.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O EPI dura menos na salina',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Sal, sol e salmoura desgastam tudo mais rápido: o elástico cede, a lente risca, a bota resseca, o metal enferruja. Duas consequências práticas. A reposição precisa de um prazo mais curto do que o de outras operações, e vale planejar isso na compra em vez de descobrir no meio da safra. E lavar com água doce ao fim do turno prolonga a vida de quase tudo — bota, óculos e luva.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que costuma faltar no pedido',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Óculos com filtro ultravioleta e proteção lateral</strong>, no lugar do óculos escuro comum.',
+          '<strong>Proteção de nuca e das laterais do rosto</strong>, que o boné não cobre.',
+          '<strong>Bota de cano alto para quem entra no cristalizador</strong>, separada do calçado de quem fica na área seca.',
+          '<strong>Protetor auditivo e respirador na moagem e na embalagem</strong>, que costumam ficar fora da lista por serem a parte coberta da operação.',
+          '<strong>Reposição mais frequente</strong>, porque o ambiente gasta o equipamento antes do previsto.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Quais etapas a salina tem: cristalizador, colheita, lavagem, pátio, moagem, refino, embalagem.',
+          'Quem trabalha com o pé em salmoura, e quem fica na área seca.',
+          'A medição de ruído das áreas de máquina e, se houver, a avaliação de poeira.',
+          'Onde há risco de impacto no pé, e onde não há.',
+          'Com que frequência o equipamento tem sido trocado hoje, para planejar a reposição.',
+          'O CA de cada item, lembrando que proteção dos olhos, respiratória e auditiva são aprovações separadas.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Salina costuma ter muita gente na colheita em algumas épocas e pouca no resto do ano. Montar a lista por etapa, e não por pessoa, é o que mantém a compra certa quando a equipe muda. A Tower atende empresas no Rio Grande do Norte a partir de Fortaleza, e a <a href="/epi-por-cidade/assu-rn/">página do Vale do Açu</a> mostra como é o atendimento no interior do estado.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'Breve revisão sobre a evolução histórica da atividade salineira no Rio Grande do Norte — Sociedade & Natureza (SciELO)',
+        url: 'http://www.scielo.br/j/sn/a/brW3Srcz78BWF5DHfzLvqcb/?lang=pt',
+      },
+      {
+        titulo: 'Trabalho a céu aberto e sua relação com a saúde dos trabalhadores: exposição ao calor e à radiação solar — Repositório UFMG',
+        url: 'https://repositorio.ufmg.br/handle/1843/53993',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+    ],
+    paginaComercial: {
+      href: '/epi-por-cidade/rio-grande-do-norte/',
+      rotulo: 'Ver o atendimento no Rio Grande do Norte',
+    },
+    contexto: 'epi-por-cidade',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Trabalho numa salina no Rio Grande do Norte e queria ajuda para montar a lista de EPI por etapa, do cristalizador à embalagem.',
+    ctaTitulo: 'Quais etapas a sua salina tem?',
+    ctaTexto:
+      'Conte do cristalizador à embalagem, e quem trabalha com o pé em salmoura. A gente separa a lista por etapa, porque a colheita e a moagem não pedem a mesma coisa.',
+    perguntas: [
+      {
+        pergunta: 'Óculos escuro comum serve para trabalhar na salina?',
+        resposta:
+          'Não. Lente escura sem filtro para radiação ultravioleta faz a pupila abrir e pode deixar entrar mais radiação do que sem óculos. Na salina o óculos é equipamento de proteção, com CA, filtro ultravioleta e, de preferência, proteção lateral, porque o reflexo vem do chão.',
+      },
+      {
+        pergunta: 'Por que a bota de couro dura pouco na salina?',
+        resposta:
+          'Porque a salmoura molha e resseca o couro todo dia, e o sal corrói as partes metálicas. Onde o pé fica em salmoura, a resposta é bota impermeável de cano alto; na área seca, lavar o calçado com água doce ao fim do turno prolonga a vida dele.',
+      },
+      {
+        pergunta: 'Quem trabalha na moagem do sal precisa de respirador?',
+        resposta:
+          'Depende da avaliação de riscos da empresa. A poeira de sal da moagem, do refino e da embalagem irrita olhos e vias respiratórias, e onde a avaliação indica exposição, o respirador para partículas entra na lista, com Certificado de Aprovação e bem vedado no rosto.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-para-extracao-de-carnauba',
+    titulo: 'EPI para extração de carnaúba: do corte à batição',
+    tituloSeo: 'EPI para extração de carnaúba',
+    resumo:
+      'No corte da carnaúba o acidente típico vem de cima: a folha se solta da vara e cai como flecha, no rosto e no olho. É por onde a lista de EPI começa.',
+    descricaoSeo:
+      'A folha que cai como flecha, a vara de até 12 metros, o sol do carnaubal e a poeira da batição. O que organiza o EPI na safra da carnaúba.',
+    publicado: '2026-09-28',
+    atualizado: '2026-09-28',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'No corte da carnaúba o acidente típico vem de cima: a folha se solta da vara e cai como flecha — no braço, no rosto, no olho. É por onde a lista de EPI começa, e é justamente a parte que a safra costuma fazer sem equipamento nenhum.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Piauí e Ceará produzem praticamente todo o pó de carnaúba do Brasil. O Piauí lidera entre os estados, e os municípios que mais produzem estão no norte do Ceará — Granja, Camocim, Santana do Acaraú e Coreaú. É uma atividade de safra, no segundo semestre, com muita gente contratada por temporada. Este texto acompanha o caminho da palha: corte, transporte, secagem, batição e, na indústria, a cera.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O corte: rosto e olhos primeiro',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A folha é cortada do chão, com uma foice presa na ponta de uma vara que pode passar de dez metros. Para cortar, o trabalhador puxa a foice na própria direção, e a folha se solta de cima, pontuda, rápida e mudando de rumo com o vento. Estudos com trabalhadores do setor registram ferimentos no rosto, nos braços e nos olhos, inclusive casos de cegueira.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Por isso a primeira linha da lista é proteção para os olhos e o rosto contra impacto, com Certificado de Aprovação — não óculos escuro de feira —, e proteção para a cabeça contra queda de objeto. As opções estão em <a href="/protecao/olhos-e-face/">proteção para olhos e face</a> e em <a href="/protecao/cabeca/">proteção da cabeça</a>. Manga longa protege o braço, que é onde a folha mais acerta quando não acerta o rosto.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O talo da folha tem espinho, e o manuseio da palha cortada fere a mão. Luva de manuseio resistente a corte e perfuração, e calçado fechado e firme para o terreno do carnaubal, que tem toco, espinho e chão irregular.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Transporte e secagem: peso e sol',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A palha é juntada em feixes, carregada e espalhada ao sol para secar por dias, sendo revirada. É trabalho a céu aberto o dia inteiro, na época mais quente do ano: roupa de manga longa e proteção de cabeça que cubra a nuca entram na conversa, e pausa, água e sombra são medidas que nenhum equipamento substitui.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A batição: máquina, poeira e ruído',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Seca, a palha vai para a batedeira, que bate as folhas e separa o pó. É a etapa que junta três riscos diferentes. Poeira fina no ar, que pede respirador para partículas conforme a avaliação — a sequência da escolha está em <a href="/conhecimento/respirador-como-escolher-o-filtro/">como escolher o filtro do respirador</a>. Ruído contínuo, que pede protetor auditivo conforme a medição. E a mão perto de parte móvel, em que o que protege é a proteção da própria máquina: luva não protege de ser puxada, e pode piorar.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Na indústria: a cera quente',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na indústria que transforma o pó em cera, o risco muda de natureza: cera derretida, superfície quente e respingo. Aqui a luva é de proteção contra calor de contato, que é uma característica própria que consta no CA, e onde há respingo entram avental e proteção facial. É outro ambiente, e a lista do campo não serve para ele.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A safra e quem fornece o EPI',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Por ser trabalho de temporada, o EPI da carnaúba costuma ser adiado de uma safra para a outra. A regra, porém, não muda com a temporada: a NR-6 obriga o empregador a fornecer, gratuitamente, o EPI adequado ao risco, e o trabalho no campo tem ainda norma própria de segurança e saúde, a NR-31. Quem contrata a safra é quem compra.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na prática, o que funciona é montar a lista por etapa antes do início da safra, com a quantidade de cada item pela equipe prevista para o corte, para o transporte e para a batição. É a mesma lógica de outras atividades do campo, como a <a href="/conhecimento/epi-para-aplicacao-de-defensivo-agricola/">aplicação de defensivo</a>: a lista sai da tarefa, e não do cargo.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que costuma faltar no pedido',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Proteção de olhos e rosto para o foiceiro</strong>, que é quem mais se machuca e quem menos recebe.',
+          '<strong>Proteção de cabeça no corte</strong>, porque a folha cai de cima.',
+          '<strong>Luva para a palha com espinho</strong>, separada da luva de quem opera a batedeira.',
+          '<strong>Respirador e protetor auditivo na batição</strong>, que costuma ficar fora da lista por ser uma etapa curta.',
+          '<strong>Quantidade pela equipe da safra</strong>, e não pela equipe fixa do resto do ano.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Quantas pessoas trabalham em cada etapa: corte, transporte, secagem, batição.',
+          'Se a batição é feita no carnaubal ou em outro lugar, e com que máquina.',
+          'A medição de ruído e a avaliação de poeira da batição, se houver.',
+          'Se a empresa também beneficia o pó e trabalha com cera quente.',
+          'O CA de cada item, lembrando que proteção dos olhos, da cabeça, respiratória e auditiva são aprovações separadas.',
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'Piauí é o maior produtor de pó de carnaúba do país (dados da PEVS/IBGE) — Conecta Piauí',
+        url: 'https://conectapiaui.com.br/blog/em-pauta/piaui-e-o-maior-produtor-de-po-de-carnauba-do-pais-confirma-ibge-33044.html',
+      },
+      {
+        titulo: 'Processos produtivos de trabalhadores rurais no extrativismo da palha de carnaúba — Interações (SciELO)',
+        url: 'https://www.scielo.br/j/inter/a/mBZJJ7Q6wbPhbXgFNppmyzF/?lang=pt',
+      },
+      {
+        titulo: 'Riscos à saúde de trabalhadores rurais no extrativismo da palha de carnaúba — Enfermagem em Foco',
+        url: 'https://enfermfoco.org/en/article/risk-to-health-of-rural-workers-in-the-extrativism-of-the-straw-of-carnauba/',
+      },
+      {
+        titulo: 'Norma Regulamentadora nº 31 (NR-31) — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-31-nr-31',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/epi-por-cidade/piaui/',
+      rotulo: 'Ver o atendimento no Piauí',
+    },
+    contexto: 'epi-por-cidade',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Trabalho com extração de carnaúba e queria ajuda para montar a lista de EPI da safra, do corte à batição.',
+    ctaTitulo: 'Quantas pessoas trabalham em cada etapa da safra?',
+    ctaTexto:
+      'Conte quantos estão no corte, no transporte e na batição. A gente monta a lista por etapa, porque o foiceiro e quem opera a batedeira não precisam da mesma coisa.',
+    perguntas: [
+      {
+        pergunta: 'Óculos comum protege no corte da palha de carnaúba?',
+        resposta:
+          'Não. O risco no corte é de impacto: a folha cai de cima, pontuda e rápida. O que protege é equipamento de proteção para olhos e rosto contra impacto, com Certificado de Aprovação. Óculos escuro comum não foi feito para isso.',
+      },
+      {
+        pergunta: 'Precisa de proteção de cabeça para cortar carnaúba?',
+        resposta:
+          'O corte é feito de baixo, com a folha caindo sobre quem corta, e por isso a proteção contra queda de objeto sobre a cabeça faz parte da conversa. Quem define os itens é a avaliação de riscos de quem contrata a safra.',
+      },
+      {
+        pergunta: 'Quem deve fornecer o EPI na safra da carnaúba?',
+        resposta:
+          'O empregador, gratuitamente. A NR-6 não muda por ser trabalho de temporada, e o trabalho no campo tem ainda norma própria, a NR-31. Na safra, quem contrata o trabalho é quem fornece o equipamento adequado a cada etapa.',
+      },
+    ],
+  },
 ]
 
 /**
