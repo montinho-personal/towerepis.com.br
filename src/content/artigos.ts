@@ -6669,6 +6669,321 @@ export const ARTIGOS: Artigo[] = [
       },
     ],
   },
+  {
+    slug: 'epi-para-marmoraria-e-rochas-ornamentais',
+    titulo: 'EPI para marmoraria: granito, sílica e corte úmido',
+    tituloSeo: 'EPI para marmoraria e rochas ornamentais',
+    resumo:
+      'Granito tem sílica, e o acabamento é onde a poeira mais sobe. Numa marmoraria, o risco mais sério não é o disco: é o pó que ele levanta.',
+    descricaoSeo:
+      'Granito tem sílica, e o acabamento é onde a poeira mais sobe. O que organiza o EPI de uma marmoraria: corte úmido, respirador, ruído, água e chapa pesada.',
+    publicado: '2026-09-29',
+    atualizado: '2026-09-29',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Numa marmoraria o risco mais sério não é o disco que corta a pedra. É o pó que ele levanta. Granito e quartzito são ricos em sílica, e é no acabamento — lixar, polir, fazer borda — que essa poeira mais sobe.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O Ceará é um dos grandes exportadores de rochas ornamentais do país. A extração se concentra no noroeste do estado, em Sobral, Massapê e Santa Quitéria, terra do granito branco, e também em Caucaia, na Região Metropolitana. Na ponta da cadeia estão as marmorarias de Fortaleza e da região, que cortam e dão acabamento em bancada, piso e soleira. É delas que este texto trata.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Por que o granito preocupa mais',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Granito e quartzito têm muito quartzo, que é sílica cristalina. Cortada e lixada, a pedra solta uma poeira fina o bastante para chegar ao fundo do pulmão, e a exposição repetida está ligada à silicose, doença pulmonar sem cura, e ao câncer de pulmão. Estudos com marmorarias mostram que quem faz acabamento a seco é o mais exposto da oficina.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Corte úmido é regra, não opção',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Desde 2008, o anexo da norma de atividades insalubres que trata de poeiras minerais exige que as máquinas e ferramentas de corte e acabamento de rochas ornamentais tenham sistema de umidificação, capaz de reduzir ou eliminar a poeira. Na prática, o acabamento a seco deixou de ser permitido. É a medida que mais protege, e vem antes de qualquer respirador.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A água reduz a poeira, mas não resolve tudo sozinha. Onde a avaliação de riscos da empresa ainda indicar exposição, entra o respirador para partículas, com Certificado de Aprovação e bem vedado no rosto. A sequência da escolha está em <a href="/conhecimento/respirador-como-escolher-o-filtro/">como escolher o filtro do respirador</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que muda quando a oficina fica molhada',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Corte úmido troca a poeira pela lama. O chão fica molhado e liso o dia inteiro, e a lama de pedra respinga no corpo. Calçado impermeável e antiderrapante, com biqueira, porque a chapa cai; e avental impermeável para quem opera a máquina. As opções de calçado estão em <a href="/calcados/seguranca/">calçados de segurança</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Água e ferramenta elétrica juntas pedem cuidado que não é de EPI: equipamento feito para uso úmido e instalação elétrica adequada. Isso é da empresa, e nenhuma luva substitui.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Disco, ruído e fragmento',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Serra, disco e lixadeira fazem ruído alto e lançam fragmento. Protetor auditivo conforme a medição feita pela empresa — a escolha entre os tipos está em <a href="/conhecimento/protetor-auditivo-plug-ou-concha/">plug ou concha</a> — e proteção para os olhos e o rosto contra partículas, que no acabamento com disco costuma ser protetor facial sobre o óculos. As opções estão em <a href="/protecao/olhos-e-face/">proteção para olhos e face</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A chapa pesada',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Chapa de granito é pesada, frágil e tem borda cortante. A movimentação e a armazenagem de chapas têm regra própria, num anexo da norma de movimentação de materiais, que trata de cavalete, apoio e equipamento de içamento. O EPI completa essas medidas e não as substitui: calçado com biqueira e luva resistente a corte para quem pega a peça pela borda.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que costuma faltar no pedido',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Respirador para o acabamento</strong>, mesmo com corte úmido, onde a avaliação ainda indica poeira.',
+          '<strong>Calçado impermeável com biqueira</strong>, e não o calçado de couro comum, que encharca na lama.',
+          '<strong>Avental impermeável</strong> para quem opera a serra e a lixadeira com água.',
+          '<strong>Protetor facial no acabamento com disco</strong>, além do óculos.',
+          '<strong>Luva resistente a corte para quem movimenta chapa</strong>, separada da luva de quem opera a máquina.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Se todas as máquinas de corte e acabamento têm umidificação funcionando.',
+          'Quais pedras a oficina mais trabalha — granito e quartzito pedem mais atenção à poeira.',
+          'A medição de ruído e, se houver, a avaliação de poeira da empresa.',
+          'Como as chapas são movimentadas e armazenadas.',
+          'O CA de cada item, lembrando que proteção respiratória, auditiva e dos olhos são aprovações separadas.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Marmoraria costuma ser negócio pequeno, com o dono na bancada. Vale montar a lista por posto — corte, acabamento, movimentação — uma vez, escrita, e repor a partir dela. A mesma poeira mineral aparece em outro setor forte da região, a <a href="/conhecimento/epi-para-ceramica-vermelha-e-olaria/">cerâmica vermelha</a>, com outros pontos de exposição.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-15 — Anexo nº 12: limites de tolerância para poeiras minerais (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-15-anexo-12.pdf',
+      },
+      {
+        titulo: 'Sílica e silicose: legislação — Fundacentro',
+        url: 'https://www.gov.br/fundacentro/pt-br/acesso-a-informacao/acoes-e-programas/projetos-encerrados/silica-e-silicose/legislacao',
+      },
+      {
+        titulo: 'Artigo aponta riscos do beneficiamento de mármores e granitos — Fundacentro (2025)',
+        url: 'https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2025/junho/artigo-aponta-riscos-do-beneficiamento-de-marmores-e-granitos',
+      },
+      {
+        titulo: 'Norma Regulamentadora nº 11 (NR-11) — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-11-nr-11',
+      },
+      {
+        titulo: 'Exportações de rochas ornamentais do Ceará mais que dobram até maio de 2025 — Sistema FIEC',
+        url: 'https://www1.sfiec.org.br/fiec-noticias/search/166820/exportacoes-de-rochas-ornamentais-do-ceara-mais-que-dobram-ate-maio-de-2025-e-consolidam-setor-na-pauta-externa-do-estado',
+      },
+    ],
+    paginaComercial: {
+      href: '/epi-por-cidade/ceara/',
+      rotulo: 'Ver o atendimento no Ceará',
+    },
+    contexto: 'epi-por-cidade',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Tenho uma marmoraria e queria ajuda para montar a lista de EPI por posto: corte, acabamento e movimentação de chapa.',
+    ctaTitulo: 'Quais postos a sua marmoraria tem?',
+    ctaTexto:
+      'Conte quem corta, quem faz acabamento e quem movimenta chapa, e quais pedras vocês mais trabalham. A gente separa a lista por posto.',
+    perguntas: [
+      {
+        pergunta: 'Corte a seco de granito é permitido?',
+        resposta:
+          'Não. Desde 2008, o Anexo 12 da NR-15 exige que as máquinas e ferramentas de corte e acabamento de rochas ornamentais tenham sistema de umidificação, para reduzir ou eliminar a poeira. O acabamento a seco deixou de ser permitido.',
+      },
+      {
+        pergunta: 'Mármore tem o mesmo risco de sílica que o granito?',
+        resposta:
+          'Costuma ter menos. O risco maior está nas pedras ricas em quartzo, como granito e quartzito, que são as mais trabalhadas nas marmorarias. Mas a oficina corta as duas coisas, e a proteção é pensada para a pedra de maior risco.',
+      },
+      {
+        pergunta: 'Qual calçado usar numa marmoraria?',
+        resposta:
+          'Impermeável, antiderrapante e com biqueira. O corte úmido deixa o chão molhado e com lama de pedra o dia inteiro, e a chapa que cai no pé é risco real na movimentação. Calçado de couro comum encharca e não protege do impacto.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-para-carcinicultura-e-despesca-de-camarao',
+    titulo: 'EPI para carcinicultura: o metabissulfito na despesca',
+    tituloSeo: 'EPI para carcinicultura e despesca de camarão',
+    resumo:
+      'Numa fazenda de camarão o risco mais grave não está no viveiro. Está no saco de metabissulfito da despesca, que solta gás tóxico em contato com água e gelo.',
+    descricaoSeo:
+      'O metabissulfito da despesca solta gás tóxico em contato com água e gelo. O que organiza o EPI de uma fazenda de camarão, do viveiro ao gelo.',
+    publicado: '2026-09-29',
+    atualizado: '2026-09-29',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Numa fazenda de camarão o risco mais grave não está no viveiro. Está no saco de metabissulfito usado na despesca: em contato com água, gelo ou ácido, ele solta dióxido de enxofre, um gás corrosivo que pode matar quem o respira em lugar fechado.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O Ceará produz mais da metade do camarão cultivado no Brasil, e oito dos dez municípios que mais produzem estão no estado — Aracati e Jaguaruana à frente. O Rio Grande do Norte vem logo depois, com Pendências entre os maiores. São milhares de fazendas, muitas pequenas, em que a compra de EPI costuma cair no dono. Este texto acompanha a fazenda do viveiro ao gelo.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Metabissulfito: o gás que sai do gelo',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O metabissulfito de sódio é usado logo depois da despesca para impedir que o camarão escureça. O perigo não é o pó em si: é o gás que ele libera quando encontra água, gelo ou ácido. O dióxido de enxofre irrita olhos e vias respiratórias, é corrosivo e, em concentração alta, pode causar asfixia. Há mortes registradas no manuseio em ambiente fechado, e quem tem asma é ainda mais sensível.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Por isso a primeira medida não é equipamento: é onde e como a solução é preparada. Ao ar livre ou em local bem ventilado, nunca em caixa fechada, porão ou câmara, e sempre na quantidade e no modo indicados na ficha de segurança do produto. Quem manuseia precisa saber reconhecer o cheiro e sair do lugar na hora.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Feito isso, o EPI do manuseio tem três partes. Proteção respiratória com filtro para gases — o filtro para partículas, da máscara de pó, não retém gás nenhum, como explica <a href="/conhecimento/mascara-descartavel-nao-protege-de-vapor-quimico/">por que a máscara descartável não protege de vapor</a>; a classe do filtro sai da ficha de segurança e da avaliação de riscos. Proteção para os olhos contra respingo e gás, que as opções em <a href="/protecao/olhos-e-face/">proteção para olhos e face</a> ajudam a escolher. E luva e avental impermeáveis, de material compatível com o produto, pelo mesmo raciocínio de <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">qualquer luva para produto químico</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O viveiro: água, lama e sol',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Despesca, manejo e limpeza de viveiro são feitos com o corpo dentro da água e da lama. Onde é assim, a resposta é bota impermeável de cano alto, ou vestimenta impermeável até o peito quando a água passa do joelho. O critério está em <a href="/conhecimento/bota-de-pvc-quando-e-a-resposta-certa/">quando a bota de PVC é a resposta certa</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O resto do dia é a céu aberto, no sol do litoral. Roupa de manga longa e proteção de cabeça que cubra a nuca entram na conversa, e pausa, água e sombra são medidas que nenhum equipamento substitui.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Cal e insumos do viveiro',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A preparação do viveiro usa cal e outros corretivos, e alguns deles são cáusticos para a pele e para os olhos. Quem espalha o produto precisa de luva, óculos e, conforme a ficha de segurança, proteção respiratória para a poeira. Saco de ração e de insumo também pesa, e a carga manual repetida é o que mais aparece como queixa no fim da safra.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Gelo, caixa e beneficiamento',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Depois da despesca vêm o gelo e as caixas: mão no frio o tempo todo, peso e piso molhado. Luva para frio, calçado impermeável e antiderrapante. Quando a fazenda tem unidade de beneficiamento, o ambiente passa a ser o de uma indústria de pescado, com frio, faca e piso molhado, e o critério está em <a href="/conhecimento/epi-para-frigorifico-e-camara-fria/">EPI para frigorífico e câmara fria</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que costuma faltar no pedido',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Respirador com filtro para gases no manuseio do metabissulfito</strong>, no lugar da máscara de pó.',
+          '<strong>Proteção para os olhos contra respingo</strong> para quem prepara a solução.',
+          '<strong>Luva e avental impermeáveis</strong> para o metabissulfito e para a cal, separados da luva de manuseio da caixa.',
+          '<strong>Bota de cano alto ou vestimenta impermeável</strong> para quem entra no viveiro.',
+          '<strong>Luva para frio</strong> para quem trabalha no gelo depois da despesca.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Onde a solução de metabissulfito é preparada, e se o local é aberto e ventilado.',
+          'A ficha de segurança do metabissulfito e da cal usados na fazenda.',
+          'Quem entra no viveiro, e até que altura a água chega.',
+          'Se a fazenda tem unidade de beneficiamento, com câmara fria.',
+          'O CA de cada item, lembrando que proteção respiratória, dos olhos e química são aprovações separadas.',
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'Ceará produz 6 em cada 10 camarões consumidos pelos brasileiros; veja os maiores produtores — Diário do Nordeste',
+        url: 'https://diariodonordeste.verdesmares.com.br/negocios/ceara-produz-6-em-cada-10-camaroes-consumidos-pelos-brasileiros-veja-os-maiores-produtores-1.3563824',
+      },
+      {
+        titulo: 'Camarão brasileiro: um tesouro nacional — Ministério da Pesca e Aquicultura',
+        url: 'https://www.gov.br/mpa/pt-br/assuntos/noticias/camarao-brasileiro-um-tesouro-nacional',
+      },
+      {
+        titulo: 'O metabissulfito de sódio e o seu uso na carcinicultura — Revista Panorama da Aquicultura',
+        url: 'https://panoramadaaquicultura.com.br/o-metabissulfito-de-sodio-e-o-seu-uso-na-carcinicultura/',
+      },
+      {
+        titulo: 'Uso do metabissulfito de sódio — Acta Scientiarum, Universidade Estadual de Maringá',
+        url: 'https://periodicos.uem.br/ojs/index.php/ActaSciBiolSci/article/download/1039/513/',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/epi-por-cidade/ceara/',
+      rotulo: 'Ver o atendimento no Ceará',
+    },
+    contexto: 'epi-por-cidade',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Trabalho numa fazenda de camarão e queria ajuda para montar a lista de EPI, principalmente para o manuseio do metabissulfito na despesca.',
+    ctaTitulo: 'Onde a sua fazenda prepara o metabissulfito?',
+    ctaTexto:
+      'Conte como é a despesca e quem manuseia o produto. A gente começa a lista pelo metabissulfito, que é onde o risco é maior, e depois passa para o viveiro e o gelo.',
+    perguntas: [
+      {
+        pergunta: 'Por que o metabissulfito da despesca é perigoso?',
+        resposta:
+          'Porque, em contato com água, gelo ou ácido, ele libera dióxido de enxofre, um gás corrosivo que irrita olhos e vias respiratórias e pode causar asfixia em concentração alta. O risco maior é o manuseio em lugar fechado, sem ventilação.',
+      },
+      {
+        pergunta: 'Máscara de pó protege do gás da despesca?',
+        resposta:
+          'Não. O filtro para partículas retém poeira, e não gás. Para o dióxido de enxofre, o respirador precisa de filtro para gases, e a classe sai da ficha de segurança do produto e da avaliação de riscos da empresa.',
+      },
+      {
+        pergunta: 'Onde preparar a solução de metabissulfito?',
+        resposta:
+          'Ao ar livre ou em local bem ventilado, nunca em caixa fechada, porão ou câmara, e na quantidade e no modo indicados na ficha de segurança do produto. É a medida que mais protege, e vem antes do equipamento.',
+      },
+    ],
+  },
 ]
 
 /**
