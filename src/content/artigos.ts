@@ -6000,6 +6000,344 @@ export const ARTIGOS: Artigo[] = [
       },
     ],
   },
+  {
+    slug: 'epi-para-beneficiamento-de-castanha-de-caju',
+    titulo: 'EPI para beneficiamento de castanha de caju',
+    tituloSeo: 'EPI para beneficiamento de castanha de caju',
+    resumo:
+      'Na castanha de caju o risco tem nome: o líquido da casca. Ele queima a pele, e quase tudo o que a fábrica precisa de EPI existe por causa dele.',
+    descricaoSeo:
+      'O líquido da casca queima a pele, o cozimento solta vapor e a quebra é trabalho manual o dia inteiro. O que organiza o EPI de uma fábrica de castanha.',
+    publicado: '2026-09-28',
+    atualizado: '2026-09-28',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Na castanha de caju o risco tem nome: o líquido da casca, que o setor chama de LCC. Ele é cáustico, gruda na pele e queima. Luva, avental, lavagem, reposição durante o turno — quase tudo o que uma fábrica de castanha precisa de EPI existe por causa dele.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O Ceará é o maior produtor de castanha de caju do país, e o beneficiamento acontece em duas escalas muito diferentes: a indústria grande, mecanizada, e as minifábricas do interior, modelo que a Embrapa desenvolveu com uma fábrica-escola em Pacajus, na Região Metropolitana de Fortaleza. O risco é o mesmo nas duas. O que muda é quem compra o EPI e como a compra é feita.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O líquido da casca organiza o resto',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Entre a casca e a amêndoa existe um líquido escuro e pegajoso. Ele contém ácido anacárdico, que irrita e queima a pele por contato, e não sai com água. O dano aparece nas mãos de quem corta, quebra e separa castanha sem proteção: rachaduras, dor e, em casos documentados no Nordeste, a perda das digitais.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Daí vem a regra que mais se erra no setor: a proteção das mãos é química, e não mecânica. Luva de pano ou de malha absorve o líquido e o segura contra a pele, o que é pior do que não usar nada. A luva precisa ser de material compatível com o LCC, confirmado na tabela do fabricante da luva. O raciocínio é o mesmo de <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">qualquer luva para produto químico</a>: tempo de contato e compatibilidade, e não a aparência.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Um sinal prático de que a luva está errada aparece antes de qualquer laudo: ela escurece por dentro, amolece ou fica pegajosa no meio do turno. Quando isso acontece, o líquido já passou, e a troca é naquela hora — não no fim do expediente.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Cozimento: vapor e superfície quente',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Antes do corte, a castanha passa por um tratamento térmico que amolece a casca e facilita a separação. Quem abre o cozedor, retira os cestos e movimenta a castanha quente lida com vapor e com superfície quente, que são riscos diferentes do LCC e pedem luva diferente: proteção contra calor de contato é uma característica própria, que consta no Certificado de Aprovação.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É o posto em que uma luva só costuma falhar nos dois sentidos. A luva térmica não segura o líquido, e a luva química não aguenta o cesto quente. Separar os dois postos na lista de compra resolve mais do que procurar a luva que faça tudo.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Corte e quebra: a mão perto da máquina',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'No corte, a castanha é posicionada à mão numa máquina de lâmina, muitas vezes acionada por pedal, centenas de vezes por turno. O risco para a mão é mecânico, e o que protege de verdade é a própria máquina: guarda, posição de trabalho e treino. Luva não protege de prensagem, e insistir nela atrasa a solução certa.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Ao mesmo tempo, é o posto com mais contato com o LCC, porque a lâmina abre a casca e o líquido escorre. Por isso a luva desse posto é escolhida pelo líquido, e a proteção contra o corte vem da máquina.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Estufa, despeliculagem e seleção',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Depois do corte, a amêndoa seca em estufa, perde a película e é classificada, quase sempre à mão e sentada, por horas. O risco químico cai, e aparecem a poeira da película, o calor perto da estufa e a postura. Aqui a queixa costuma ser de cansaço e de dor, e a resposta é organização do posto e pausa, mais do que equipamento.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale uma separação que confunde muita gente em indústria de alimento: touca, máscara higiênica e luva descartável de manipulação existem para proteger o produto, pelas boas práticas de fabricação. Elas não são EPI e não protegem o trabalhador do LCC. As duas listas convivem, e uma não substitui a outra.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O pé e o piso',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Resíduo de LCC e de óleo no chão deixa o piso escorregadio, e boa parte da fábrica é de jornada em pé. Onde não há risco de queda de objeto pesado, <a href="/calcados/antiderrapantes/">calçado ocupacional antiderrapante</a> e fechado atende melhor e cansa menos. Onde há movimentação de sacas e de cestos pesados, a categoria muda para calçado com biqueira.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que costuma faltar no pedido',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Luva de reposição durante o turno.</strong> Luva que entrou em contato com o líquido tem vida curta, e quando a reposição falta, a equipe trabalha sem.',
+          '<strong>Luva térmica separada da luva química.</strong> O posto do cozimento e o posto do corte pedem coisas diferentes, e viram um item só na hora da compra.',
+          '<strong>Avental impermeável</strong> para quem manipula castanha crua e casca, que respinga no corpo e não só na mão.',
+          '<strong>Proteção para quem limpa.</strong> Quem recolhe casca e lava o piso encontra o mesmo líquido, e raramente está na lista.',
+          '<strong>Calçado antiderrapante</strong> onde o piso acumula resíduo, e não o mesmo calçado para a fábrica inteira.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Quais etapas existem na fábrica: cozimento, corte, estufa, despeliculagem, seleção, embalagem.',
+          'Em quais postos há contato direto com a casca e com o líquido.',
+          'Se o LCC é recolhido e armazenado, e se há ficha de segurança dele.',
+          'A medição de ruído, onde houver máquinas de corte em série.',
+          'Onde há movimentação de sacas e cestos pesados, e onde não há.',
+          'O CA de cada item, lembrando que proteção química, contra calor e contra corte são aprovações separadas.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na minifábrica, essa conversa costuma cair na cooperativa ou no dono, que já faz tudo. Vale montar a lista por posto uma vez, escrita, e repor a partir dela. Se a unidade fica na Região Metropolitana, o texto sobre <a href="/conhecimento/epi-na-regiao-metropolitana-de-fortaleza/">EPI na Região Metropolitana de Fortaleza</a> trata de como organizar a compra quando a empresa tem mais de um endereço.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'Maior produtor de castanha de caju do país, Ceará enfrenta desafios no setor — Assembleia Legislativa do Ceará',
+        url: 'https://www.al.ce.gov.br/noticias/maior-produtor-de-castanha-de-caju-do-pais-ceara-enfrenta-desafios-no-setor',
+      },
+      {
+        titulo: 'Cajucultura — Caderno Setorial ETENE, Banco do Nordeste (março de 2026)',
+        url: 'https://www.bnb.gov.br/revista/cse/article/view/3378',
+      },
+      {
+        titulo: 'Minifábrica de processamento de castanha de caju — Circular Técnica nº 7, Embrapa',
+        url: 'https://www.infoteca.cnptia.embrapa.br/bitstream/doc/422699/1/Ci007.pdf',
+      },
+      {
+        titulo: 'Líquido da casca da castanha-de-caju: de subproduto do agronegócio a protagonista da química — Agência UFC',
+        url: 'https://agencia.ufc.br/liquido-da-casca-da-castanha-de-caju-de-subproduto-do-agronegocio-a-protagonista-da-quimica/',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/epi-por-cidade/ceara/',
+      rotulo: 'Ver o atendimento no Ceará',
+    },
+    contexto: 'epi-por-cidade',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Trabalho com beneficiamento de castanha de caju e queria ajuda para montar a lista de EPI por posto da fábrica.',
+    ctaTitulo: 'Quais etapas a sua fábrica tem?',
+    ctaTexto:
+      'Conte do cozimento à embalagem, e em quais postos há contato com a casca. A gente separa a lista por posto, porque o corte e o cozimento não pedem a mesma luva.',
+    perguntas: [
+      {
+        pergunta: 'Por que a mão de quem quebra castanha fica rachada?',
+        resposta:
+          'Por causa do líquido da casca. Ele contém ácido anacárdico, que irrita e queima a pele por contato e não sai com água. Sem luva compatível, o contato repetido ao longo do turno racha e fere a pele das mãos.',
+      },
+      {
+        pergunta: 'Touca e máscara da fábrica de alimentos são EPI?',
+        resposta:
+          'Não. Touca, máscara higiênica e luva descartável de manipulação existem para proteger o produto, pelas boas práticas de fabricação. O EPI protege o trabalhador, e é escolhido pelo risco do posto. Numa fábrica de castanha as duas listas convivem.',
+      },
+      {
+        pergunta: 'Minifábrica precisa do mesmo EPI que a indústria grande?',
+        resposta:
+          'Precisa da mesma proteção, porque o risco é o mesmo: o líquido da casca queima a pele nas duas. O que muda é a quantidade, a organização da compra e, às vezes, o equipamento de corte, que na minifábrica costuma ser mais manual.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-para-ceramica-vermelha-e-olaria',
+    titulo: 'EPI para cerâmica vermelha e olaria: o que muda',
+    tituloSeo: 'EPI para cerâmica vermelha e olaria',
+    resumo:
+      'Cerâmica de telha e tijolo junta poeira mineral, calor de forno, ruído e peso. E a compra de EPI costuma resolver só o risco que se vê.',
+    descricaoSeo:
+      'Poeira de argila, calor de forno, ruído de máquina e peso o dia inteiro. O que organiza o EPI de uma cerâmica de telha e tijolo, do barreiro à expedição.',
+    publicado: '2026-09-28',
+    atualizado: '2026-09-28',
+    atualizadoExibicao: 'setembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Uma cerâmica de telha e tijolo junta quatro riscos que raramente aparecem juntos: poeira mineral, calor de forno, ruído de máquina e carga manual. A compra de EPI costuma resolver o que se vê, que é o calor. O risco mais sério é o que não se vê: a poeira.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Teresina é o maior polo produtor de cerâmica vermelha do Piauí, principalmente de telhas. Não confundir com o polo artesanal do Poti Velho, que é outra atividade, de ateliê, com outra escala. Este texto trata da indústria: do barreiro de onde sai a argila até a expedição.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A poeira de argila é o risco que não aparece',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A argila contém sílica. Quando ela seca e é triturada, varrida ou manuseada, parte vira poeira fina o bastante para chegar ao fundo do pulmão. A exposição repetida por anos pode causar silicose, uma doença pulmonar sem cura. Não dói no primeiro dia, e é por isso que é a parte da lista que mais falta.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Os pontos de mais poeira costumam ser a preparação da massa, o destorroamento, a varrição a seco, o pátio de secagem e a desenforna. Antes do respirador vem o que tira a poeira do ar: umidificar, trocar a varrição a seco por limpeza úmida, ventilar. Depois disso, o respirador para partículas, escolhido pela avaliação de riscos da empresa. A sequência da escolha está em <a href="/conhecimento/respirador-como-escolher-o-filtro/">como escolher o filtro do respirador</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Um detalhe que decide se o respirador funciona: ele precisa vedar no rosto. Barba e máscara de pano por baixo abrem caminho para a poeira, e o equipamento certo passa a proteger pela metade.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O forno: calor de ambiente e calor de contato',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na queima, na enforna e na desenforna, o trabalhador lida com dois calores diferentes. O do ambiente, que se controla com organização: pausa, rodízio, hidratação, e que EPI nenhum resolve. E o calor de contato, das peças que saem quentes do forno, que pede luva própria. Proteção contra calor de contato é uma característica que consta no Certificado de Aprovação, e não uma luva grossa qualquer.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É o posto em que a luva mais se confunde. A luva para peça quente não é a mesma do manuseio de telha fria, e a luva do manuseio não aguenta o forno. Separar os dois postos na lista evita a luva que serve mais ou menos para os dois.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Ruído: misturador, maromba e destorroador',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A preparação e a conformação da massa usam máquinas que fazem ruído o turno inteiro. A atenuação necessária vem da medição feita pela empresa, e a escolha entre os tipos sai da rotina de cada posto. O que muda de um para outro está em <a href="/conhecimento/protetor-auditivo-plug-ou-concha/">protetor auditivo: plug ou concha</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Peso, abrasão e o pé',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Telha e tijolo são carregados, empilhados e paletizados à mão o dia inteiro. A peça é áspera e desgasta a pele da mão, e de vez em quando cai. Por isso aqui a luva é de manuseio, resistente à abrasão, e o calçado é de segurança, com biqueira: queda de peça sobre o pé é risco real no pátio e na expedição. O que muda entre <a href="/calcados/seguranca/">os calçados de segurança</a> está na página da categoria.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem trabalha no barreiro e no pátio passa boa parte do dia no sol. Roupa de manga longa e proteção para a cabeça entram na conversa, e a avaliação de riscos define quais desses itens a empresa trata como EPI.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que costuma faltar no pedido',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Respirador para quem varre e desenforna.</strong> É o posto com mais poeira e o que menos aparece na lista.',
+          '<strong>Luva térmica separada da luva de manuseio.</strong> Forno e pátio pedem coisas diferentes.',
+          '<strong>Reposição de luva de manuseio.</strong> A abrasão da telha gasta a luva em dias, e quando ela fura, a mão passa a trabalhar sem.',
+          '<strong>Protetor auditivo para quem só passa pela área das máquinas</strong>, que respira a mesma poeira e ouve o mesmo ruído.',
+          '<strong>Calçado com biqueira na expedição</strong>, e não só no forno.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Quais etapas existem: barreiro, preparação, conformação, secagem, forno, expedição.',
+          'Onde a limpeza é feita a seco, e se dá para trocar por limpeza úmida.',
+          'A medição de ruído e, se houver, a avaliação de poeira da empresa.',
+          'Quem opera o forno e quem só passa por ele.',
+          'Onde há empilhamento e carga manual, e onde há máquina.',
+          'O CA de cada item, lembrando que proteção respiratória, contra calor e auditiva são aprovações separadas.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Cerâmica costuma ter muita gente no pátio e na expedição e pouca gente no forno. Vale montar a lista por posto, e não por pessoa: é o que mantém a compra certa quando a equipe do pátio muda na safra de obra.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'Cerâmica vermelha em Teresina — Revista Cerâmica Industrial, v. 14, n. 4 (2009)',
+        url: 'https://www.ceramicaindustrial.org.br/article/5876573d7f8c9d6e028b476d/pdf/ci-14-4-5876573d7f8c9d6e028b476d.pdf',
+      },
+      {
+        titulo: 'Revitalização do Polo Cerâmico do Poti Velho — Governo do Piauí',
+        url: 'https://www.pi.gov.br/revitalizacao-do-polo-ceramico-do-poti-velho-e-inaugurada-e-vai-impulsionar-turismo-e-vendas-na-regiao-1/',
+      },
+      {
+        titulo: 'Riscos profissionais no setor cerâmico: estudo de caso — Contecc 2018, Confea',
+        url: 'https://www.confea.org.br/sites/default/files/antigos/contecc2018/mecanica/26_ronicedcmeinmdp.pdf',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/epi-por-cidade/teresina-pi/',
+      rotulo: 'Ver o atendimento em Teresina',
+    },
+    contexto: 'cidade-teresina',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Tenho uma cerâmica de telha e tijolo e queria ajuda para montar a lista de EPI por posto, do pátio ao forno.',
+    ctaTitulo: 'Quais postos a sua cerâmica tem?',
+    ctaTexto:
+      'Conte do barreiro à expedição, e onde a limpeza é feita a seco. A gente separa a lista por posto, porque forno, pátio e preparação da massa não pedem a mesma coisa.',
+    perguntas: [
+      {
+        pergunta: 'Máscara de pano protege da poeira de argila?',
+        resposta:
+          'Não. A poeira que preocupa é a fina, que chega ao fundo do pulmão, e o tecido não a retém. O que protege é respirador para partículas, com Certificado de Aprovação e bem vedado no rosto, depois das medidas que tiram a poeira do ar.',
+      },
+      {
+        pergunta: 'Por que a poeira da cerâmica é perigosa se é só barro?',
+        resposta:
+          'Porque a argila contém sílica, e a parte mais fina da poeira, respirada por anos, pode causar silicose, uma doença pulmonar sem cura. O risco não aparece no curto prazo, e é por isso que costuma ficar fora da lista de compra.',
+      },
+      {
+        pergunta: 'A luva do forno serve para carregar telha?',
+        resposta:
+          'Costuma servir mal. A luva para peça quente é feita para calor de contato, e a do manuseio é feita para abrasão. Uma usada no lugar da outra ou esquenta a mão ou gasta em poucos dias. Vale separar os dois postos na lista.',
+      },
+    ],
+  },
 ]
 
 /**

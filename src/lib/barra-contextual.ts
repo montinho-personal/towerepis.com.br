@@ -295,6 +295,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Vai equipar a casa antes da temporada?',
     rotulo: 'Separar por área da casa',
   },
+  'epi-para-beneficiamento-de-castanha-de-caju': {
+    chamada: 'Quais etapas a sua fábrica tem?',
+    rotulo: 'Separar por posto',
+  },
+  'epi-para-ceramica-vermelha-e-olaria': {
+    chamada: 'Onde a poeira da sua cerâmica aparece?',
+    rotulo: 'Montar a lista por posto',
+  },
   'epi-para-mecanico-de-oficina': {
     chamada: 'Que serviços a sua oficina faz?',
     rotulo: 'Montar a lista da oficina',
