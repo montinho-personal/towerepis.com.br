@@ -917,8 +917,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Entenda o que é medido no ensaio de resistência ao escorregamento, o que significam as marcações e como escolher para piso molhado ou oleoso.',
     publicado: '2026-08-30',
-    atualizado: '2026-08-30',
-    atualizadoExibicao: 'agosto de 2026',
+    atualizado: '2026-10-03',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Calçados',
     blocos: [
       {
@@ -930,6 +930,25 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           '"Antiderrapante" virou palavra de anúncio. Na prática, ela descreve uma característica que é ensaiada, medida e registrada. E que muda conforme a superfície. Entender isso separa a compra que resolve da que decepciona no primeiro dia de chuva.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que faz um solado ser antiderrapante',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Duas coisas trabalham juntas: o composto do material e o desenho. O desenho cria canais que escoam a água ou o óleo para fora da área de contato, e o composto é o que agarra no piso quando esse contato acontece. Sem os canais, uma película de líquido fica entre a sola e o chão, e o calçado desliza sobre ela.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Por isso a pergunta "qual solado é antiderrapante" não tem resposta pelo nome do material. Borracha e poliuretano aparecem tanto em solados que seguram bem quanto em solados que não seguram, e o mesmo material com outro desenho dá outro resultado. O que separa um do outro é o ensaio, descrito abaixo.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale o mesmo para o tênis. Tênis comum não tem marcação de resistência ao escorregamento nem Certificado de Aprovação, então não há como saber em que piso ele foi testado, se foi. Para trabalho em piso molhado, o critério é o calçado ocupacional ou de segurança com o ensaio declarado.',
       },
       {
         tipo: 'h2',
@@ -959,6 +978,25 @@ export const ARTIGOS: Artigo[] = [
           ['Indústria com óleo', 'Desempenho em superfície com contaminante oleoso'],
           ['Obra e área externa', 'Aderência em piso irregular, com poeira ou lama'],
         ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem procura sapato antiderrapante para cozinha, inclusive o feminino, encontra os critérios específicos em <a href="/conhecimento/calcado-para-cozinha-como-escolher/">qual o melhor calçado para cozinha</a>. Para limpeza, onde o produto químico entra na conta, o caminho está em <a href="/para-seu-trabalho/limpeza-e-conservacao/">EPI para limpeza e conservação</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Adesivo antiderrapante e solado por metro funcionam?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'São as soluções mais vendidas para quem quer deixar um calçado antiderrapante, e servem a outro propósito. O adesivo de sola ajuda em sapato social ou de salto no uso do dia a dia, mas não passa por ensaio, pode soltar com água e gordura e não transforma um calçado comum em equipamento de proteção. O solado vendido por metro é material de fabricação e de reforma.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'No calçado de trabalho, nenhum dos dois substitui o modelo aprovado. Um par com Certificado de Aprovação que recebe outra sola deixa de ser exatamente o que foi ensaiado. E lixar a sola, outra dica comum, piora a aderência em vez de melhorar. Antes de qualquer remendo, vale a ordem de investigação de <a href="/conhecimento/botina-escorrega-o-que-fazer-antes-de-trocar/">botina escorregando</a>, que começa por limpar a sola.',
       },
       {
         tipo: 'h2',
@@ -1011,6 +1049,16 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Como sei se o solado ainda está bom?',
         resposta:
           'Comparando o relevo da área de maior apoio com o de uma lateral que quase não toca o chão. Se a diferença é grande, o relevo já se foi. E é ele que garante a aderência.',
+      },
+      {
+        pergunta: 'Adesivo antiderrapante na sola funciona?',
+        resposta:
+          'Para sapato social ou de salto no dia a dia, pode ajudar. Para trabalho, não resolve: o adesivo não passa por ensaio de resistência ao escorregamento, pode soltar com água e gordura e não transforma um calçado comum em equipamento de proteção.',
+      },
+      {
+        pergunta: 'Qual o melhor calçado antiderrapante?',
+        resposta:
+          'O que foi ensaiado no tipo de piso onde você trabalha. Piso molhado com detergente e piso com óleo são ensaios diferentes, e um calçado pode ir bem em um e mal no outro. A marcação do modelo e o Certificado de Aprovação dizem em qual ele foi testado.',
       },
       {
         pergunta: 'Calçado antiderrapante evita queda?',
