@@ -471,8 +471,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'As duas normas do calçado profissional, o que cada uma exige da biqueira, e a pergunta que resolve a dúvida na maioria dos casos.',
     publicado: '2026-08-30',
-    atualizado: '2026-08-30',
-    atualizadoExibicao: 'agosto de 2026',
+    atualizado: '2026-10-03',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Calçados',
     blocos: [
       {
@@ -494,11 +494,54 @@ export const ARTIGOS: Artigo[] = [
         cabecalho: ['', 'Calçado ocupacional', 'Calçado de segurança'],
         linhas: [
           ['Norma', 'ABNT NBR ISO 20347', 'ABNT NBR ISO 20345'],
-          ['Biqueira de proteção', 'Não possui', 'Possui, com resistência a impacto de 200 J'],
+          ['Biqueira de proteção', 'Não possui', 'Possui, ensaiada a 200 J de impacto e 15 kN de compressão'],
           ['Risco mecânico sobre os dedos', 'Não é destinado a esse risco', 'É destinado a esse risco'],
           ['Uso típico', 'Cozinha, saúde, limpeza, comércio, serviços', 'Indústria, construção, logística, manutenção'],
           ['Foco predominante', 'Conforto, higiene e aderência', 'Proteção mecânica somada à aderência'],
         ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'As quatro normas da família: 20344, 20345, 20346 e 20347',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'As duas normas do título têm duas irmãs, e a confusão entre as quatro aparece tanto nas buscas quanto nas propostas de fornecedor. Cada uma cobre uma coisa diferente:',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Norma', 'O que define', 'Biqueira de proteção'],
+        linhas: [
+          ['ABNT NBR ISO 20344', 'Os métodos de ensaio. Não é um tipo de calçado: é como as outras três são testadas', 'Não se aplica'],
+          ['ABNT NBR ISO 20345', 'Calçado de segurança', 'Obrigatória, ensaiada a 200 J de impacto e 15 kN de compressão'],
+          ['ABNT NBR ISO 20346', 'Calçado de proteção', 'Obrigatória, ensaiada a 100 J de impacto e 10 kN de compressão'],
+          ['ABNT NBR ISO 20347', 'Calçado ocupacional', 'Não possui'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O calçado de proteção da 20346 é o menos lembrado. Ele tem biqueira, mas ensaiada com metade da energia exigida na 20345, e por isso os dois não são intercambiáveis: onde a avaliação de riscos pede calçado de segurança, um calçado de proteção não cumpre o papel, mesmo sendo parecido por fora.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Fora dessa família há normas para riscos específicos. A que mais aparece junto nas buscas é a ABNT NBR 16603:2017, que trata do calçado isolante elétrico para trabalho em instalações de baixa tensão, até 500 V, em ambiente seco. Isolamento elétrico é um requisito à parte, e o assunto está em <a href="/conhecimento/epi-para-eletricista-o-que-muda/">EPI para eletricista</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Edição de 2015 ou de 2025: qual vale?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Boa parte do que circula sobre essas normas, inclusive o que aparece primeiro nas buscas, ainda se refere às edições de 2015. Segundo o catálogo de normas técnicas, as três normas de calçado ganharam edição nova em 2025: a 20345 e a 20346 em julho, a 20347 em outubro. As revisões mexem em requisitos e em marcações, como aconteceu com a de resistência ao escorregamento, explicada em <a href="/conhecimento/solado-antiderrapante-o-que-significa/">solado antiderrapante</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para quem compra, a consequência é prática: uma tabela de símbolos copiada de um texto antigo pode não descrever o calçado que está na sua mão. O que vale para um modelo específico é o que consta no Certificado de Aprovação dele.',
       },
       {
         tipo: 'h2',
@@ -512,12 +555,36 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
+          'No próprio calçado, a marcação traz o número da norma e um código de categoria, que começa por S no calçado de segurança e por O no ocupacional, às vezes seguido de símbolos de requisitos adicionais. O significado exato de cada símbolo depende da edição da norma.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na consulta do CA, a mesma informação vem em palavras. Frases como "proteção dos pés contra agentes cortantes e escoriantes" são textos de CA, não nomes de norma: dizem contra o quê aquele modelo foi aprovado, e é por elas que se confirma se existe biqueira de proteção.',
+      },
+      {
+        tipo: 'p',
+        texto:
           'O que resolve é a informação que acompanha o produto: a marcação no próprio calçado e o Certificado de Aprovação. O CA é emitido para um modelo e um uso determinados, e é nele que se confirma a que o equipamento foi aprovado — <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">como consultar o CA está explicado aqui</a>.',
       },
       {
         tipo: 'p',
         texto:
           'Na prática, ao pedir um orçamento, o caminho mais curto é pedir o CA de cada item junto com a proposta. Se o fornecedor não informa, é sinal de que a conversa vai ser difícil depois.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Onde encontrar o PDF da NBR ISO 20345 e da 20347',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'As normas ABNT são documentos pagos, vendidos pela própria ABNT e por distribuidores autorizados, e não existe versão oficial gratuita. O arquivo que costuma aparecer nas buscas em sites de compartilhamento é da edição de 2015, que já foi substituída.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para escolher ou conferir um calçado, quase nunca é preciso ler a norma inteira. A consulta do CA do modelo é pública e diz qual proteção ele tem, e o que procurar nela está em <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">o que é o CA e como consultar</a>.',
       },
       {
         tipo: 'h2',
@@ -563,6 +630,26 @@ export const ARTIGOS: Artigo[] = [
         url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
       },
       {
+        titulo: 'ABNT NBR ISO 20344 — Métodos de ensaio para calçados (catálogo Target Normas)',
+        url: 'https://www.normas.com.br/visualizar/abnt-nbr-nm/27578/abnt-nbriso20344-equipamentos-de-protecao-individual-metodos-de-ensaio-para-calcados',
+      },
+      {
+        titulo: 'ABNT NBR ISO 20345 — Calçado de segurança, edição 07/2025 (catálogo Target Normas)',
+        url: 'https://www.normas.com.br/visualizar/abnt-nbr-nm/27580/abnt-nbriso20345-equipamento-de-protecao-individual-calcado-de-seguranca',
+      },
+      {
+        titulo: 'ABNT NBR ISO 20346 — Calçado de proteção, edição 07/2025 (catálogo Target Normas)',
+        url: 'https://www.normas.com.br/visualizar/abnt-nbr-nm/27582/abnt-nbriso20346-equipamento-de-protecao-individual-calcado-de-protecao',
+      },
+      {
+        titulo: 'ABNT NBR ISO 20347 — Calçado ocupacional, edição 10/2025 (catálogo Target Normas)',
+        url: 'https://www.normas.com.br/visualizar/abnt-nbr-nm/27584/abnt-nbriso20347-equipamento-de-protecao-individual-calcado-ocupacional',
+      },
+      {
+        titulo: 'NBR 16603:2017 — Calçado isolante elétrico para baixa tensão (artigo técnico Target Normas)',
+        url: 'https://www.normas.com.br/visualizar/artigo-tecnico/3044/nbr-16603-de-05-2017-os-requisitos-e-ensaios-em-calcados-isolantes-eletricos-para-trabalhos-em-instalacoes-eletricas',
+      },
+      {
         titulo: 'Requisitos para calçados de segurança e ocupacionais — Target Normas',
         url: 'https://www.normas.com.br/visualizar/artigo-tecnico/2532/os-requisitos-para-os-calcados-de-seguranca-e-ocupacionais',
       },
@@ -584,6 +671,16 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Na dúvida, qual dos dois é a escolha mais segura?',
         resposta:
           'Não existe escolha segura por padrão, e é isso que torna a pergunta armadilha. Biqueira onde não há risco de impacto é peso que faz o calçado sair do pé no meio do turno. Falta de biqueira onde há impacto é exposição. Quem decide é a avaliação de riscos da atividade, não o instinto de pegar o mais reforçado.',
+      },
+      {
+        pergunta: 'Qual é a norma para calçados de segurança?',
+        resposta:
+          'No Brasil, a ABNT NBR ISO 20345, que exige biqueira de proteção ensaiada a 200 J de impacto. O calçado ocupacional, sem biqueira, segue a ABNT NBR ISO 20347, e o calçado de proteção, com biqueira ensaiada a 100 J, a ABNT NBR ISO 20346. Os métodos de ensaio das três estão na ABNT NBR ISO 20344.',
+      },
+      {
+        pergunta: 'Onde encontrar o PDF da NBR ISO 20345?',
+        resposta:
+          'A norma é vendida pela ABNT e por distribuidores autorizados, e não há versão oficial gratuita. Para conferir um calçado específico, ela raramente é necessária: a consulta do Certificado de Aprovação do modelo, que é pública, mostra para que ele foi aprovado.',
       },
       {
         pergunta: 'Posso usar ocupacional na indústria?',
