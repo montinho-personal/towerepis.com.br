@@ -6984,6 +6984,351 @@ export const ARTIGOS: Artigo[] = [
       },
     ],
   },
+  {
+    slug: 'epi-para-packing-house-de-frutas',
+    titulo: 'EPI para packing house de frutas: o que é EPI e o que é higiene',
+    tituloSeo: 'EPI para packing house de frutas',
+    resumo:
+      'Num packing house, touca e luva descartável protegem a fruta. Quem trabalha precisa de outra lista, e é ela que costuma faltar no pedido.',
+    descricaoSeo:
+      'Touca e luva descartável protegem a fruta, não quem trabalha. O que é EPI num packing house de frutas: piso molhado, cloro, esteira, câmara fria e corte.',
+    publicado: '2026-10-03',
+    atualizado: '2026-10-03',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Num packing house existem duas listas, e a compra costuma juntá-las. Touca, rede de cabelo, máscara higiênica e luva descartável protegem a fruta. Bota impermeável, luva química, protetor auditivo e roupa para frio protegem quem trabalha. Só a segunda é EPI.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O polo de Mossoró, Baraúna e Chapada do Apodi é o maior produtor de melão do país, e o Rio Grande do Norte é o principal exportador da fruta. É fruta que passa por packing house antes de seguir para o porto: recepção, lavagem, seleção, embalagem, câmara fria e contêiner. Este texto acompanha esse caminho, posto a posto.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Higiene e EPI: o que cada lista protege',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Os itens de higiene existem pelas boas práticas de fabricação e pelas exigências de quem compra a fruta: evitam que cabelo, suor e contaminação cheguem ao produto. O EPI existe pelo risco do posto: piso, produto químico, máquina, frio. Um não substitui o outro, e a luva descartável fina da seleção, por exemplo, não protege ninguém do produto clorado da lavagem.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Alguns itens podem ser as duas coisas ao mesmo tempo. A bota branca impermeável atende a higiene e, se tiver Certificado de Aprovação, também é EPI. O que decide é o CA, e não a cor ou o lugar onde ela é usada.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Recepção e lavagem: água e produto clorado',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A fruta é lavada e sanitizada, quase sempre com solução clorada, e o piso fica molhado o turno inteiro. O cloro concentrado é corrosivo: irrita a pele, os olhos e as vias respiratórias. Quem prepara a solução precisa de luva impermeável de material compatível, óculos contra respingo e avental, e a necessidade de proteção respiratória sai da ficha de segurança do produto. O raciocínio da luva está em <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">como escolher luva para produto químico</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'No piso da lavagem, bota impermeável e antiderrapante. O critério de quando ela precisa ser de cano alto está em <a href="/conhecimento/bota-de-pvc-quando-e-a-resposta-certa/">quando a bota de PVC é a resposta certa</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Seleção e embalagem: esteira, corte e repetição',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na esteira, o risco é de máquina: parte móvel puxa luva, manga e cabelo. O que protege é a proteção da própria máquina, e não o EPI, e é por isso que luva folgada e manga solta perto da esteira são problema. Onde há corte de pedúnculo ou de refugo com faca, a luva que resiste a corte entra na mão que segura a fruta.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O ruído do galpão soma esteira, ventilação e máquina de embalagem. Protetor auditivo conforme a medição feita pela empresa, e a escolha entre os tipos está em <a href="/conhecimento/protetor-auditivo-plug-ou-concha/">plug ou concha</a>. O resto do posto é repetição e peso de caixa, que se resolve com organização do trabalho e pausa, mais do que com equipamento.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Câmara fria e expedição',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Depois de embalada, a fruta vai para o resfriamento e para a câmara fria. Quem entra e sai dela o turno inteiro alterna calor e frio, e o risco cresce com o tempo de exposição: roupa e luva para frio, e calçado com isolamento. O critério completo está em <a href="/conhecimento/epi-para-frigorifico-e-camara-fria/">EPI para frigorífico e câmara fria</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na paletização e na expedição circulam empilhadeira e palete pesado. Ali o calçado precisa de biqueira, porque palete e caixa caem, e quem anda a pé precisa ser visto por quem dirige.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A safra muda o tamanho da equipe',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Packing house trabalha por safra, com equipe que cresce muito em poucas semanas. Por isso a lista que funciona é por posto, e não por pessoa: quantos na lavagem, quantos na seleção, quantos na câmara. Quando a equipe muda, a quantidade muda, e a lista continua certa. A numeração das botas sai mais rápido com a <a href="/ferramentas/grade-de-numeracao/">calculadora de grade da equipe</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que costuma faltar no pedido',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Luva química para quem prepara a solução clorada</strong>, separada da luva descartável da seleção.',
+          '<strong>Óculos contra respingo</strong> na lavagem e no preparo de produto.',
+          '<strong>Protetor auditivo</strong> para o galpão, que costuma ficar fora da lista por ser ruído contínuo e não alto.',
+          '<strong>Roupa e luva para frio</strong> para quem entra na câmara, e não só para quem trabalha dentro dela.',
+          '<strong>Calçado com biqueira na expedição</strong>, onde circula palete, e não a mesma bota da lavagem.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Quais postos o packing house tem: recepção, lavagem, seleção, embalagem, câmara, expedição.',
+          'Qual produto é usado na sanitização, e a ficha de segurança dele.',
+          'A medição de ruído do galpão.',
+          'Quem entra na câmara fria, e por quanto tempo.',
+          'Quantas pessoas cada posto terá no pico da safra.',
+          'O CA de cada item — e quais itens são só de higiene, para não contá-los como EPI.',
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'Sistema produtivo e inovativo local: o APL da fruticultura de melão de Mossoró/Baraúna — RedeSist, UFRJ',
+        url: 'https://www.redesist.ie.ufrj.br/lalics/papers/22_Sistema_Produtivo_e_Inovativo_Local__O_APL_da_Fruticultura_de_Melao_de_MossoroBarauna.pdf',
+      },
+      {
+        titulo: 'Manual de segurança e qualidade para a cultura do melão — Embrapa',
+        url: 'https://www.infoteca.cnptia.embrapa.br/bitstream/doc/111894/1/MANUALSEGURANCAQUALIDADEParaaculturadomelao.pdf',
+      },
+      {
+        titulo: 'Trabalhadores da câmara fria — Prefeitura de Belo Horizonte, Saúde do Trabalhador',
+        url: 'https://prefeitura.pbh.gov.br/sites/default/files/estrutura-de-governo/saude/2023/trabalhadores-da-camara-fria-volume-1-4-12-23.pdf',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/epi-por-cidade/assu-rn/',
+      rotulo: 'Ver o atendimento no Vale do Açu',
+    },
+    contexto: 'cidade-assu',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Trabalho num packing house de frutas e queria ajuda para montar a lista de EPI por posto, da lavagem à câmara fria.',
+    ctaTitulo: 'Quantos postos o seu packing house tem na safra?',
+    ctaTexto:
+      'Conte da recepção à expedição, e qual produto vocês usam na lavagem. A gente separa o que é EPI do que é higiene e monta a lista por posto.',
+    perguntas: [
+      {
+        pergunta: 'Quais EPIs são usados num packing house de frutas?',
+        resposta:
+          'Depende do posto. Na lavagem, bota impermeável, luva química e óculos contra respingo; na seleção, protetor auditivo conforme a medição e luva contra corte onde há faca; na câmara fria, roupa e luva para frio; na expedição, calçado com biqueira. Touca e luva descartável são de higiene, não EPI.',
+      },
+      {
+        pergunta: 'A luva descartável da seleção protege contra o cloro?',
+        resposta:
+          'Não. A luva descartável fina existe para proteger a fruta. Quem prepara ou manuseia a solução clorada precisa de luva impermeável de material compatível com o produto, confirmada na tabela do fabricante, além de óculos contra respingo.',
+      },
+      {
+        pergunta: 'Quem só entra e sai da câmara fria precisa de roupa térmica?',
+        resposta:
+          'Precisa ser avaliado, porque o risco depende do tempo de exposição, e quem entra e sai o turno inteiro acumula frio. É comum a lista proteger só quem trabalha dentro da câmara e esquecer quem abastece e retira palete.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-para-fabrica-de-cimento-e-mineracao-de-calcario',
+    titulo: 'EPI para fábrica de cimento e mineração de calcário',
+    tituloSeo: 'EPI para fábrica de cimento e calcário',
+    resumo:
+      'Pedreira e fábrica de cimento são dois ambientes, e a compra costuma tratá-los como um. Na pedreira mandam fragmento e máquina; na fábrica, calor, ruído e o cimento que ataca a pele.',
+    descricaoSeo:
+      'Na pedreira de calcário e na fábrica de cimento: poeira, ruído de moinho, calor de forno e o cimento alcalino que ataca a pele. O que organiza o EPI.',
+    publicado: '2026-10-03',
+    atualizado: '2026-10-03',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'A pedreira de calcário e a fábrica de cimento são dois ambientes, e a compra de EPI costuma tratá-los como um. Na pedreira mandam o fragmento de rocha, a máquina pesada e a poeira. Na fábrica, o calor do forno, o ruído do moinho e o próprio cimento, que é alcalino e ataca a pele.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O calcário é o maior potencial mineral do Ceará, com reservas na região de Sobral e Coreaú, no noroeste do estado, e na Chapada do Apodi. É dele que sai o cimento, e também a cal das caieiras do norte do estado. Este texto separa as duas pontas: a lavra, a céu aberto, e a fábrica.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A pedreira: mineração a céu aberto',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A extração de calcário é mineração, e a mineração tem norma de segurança própria, a NR-22, que cobre a lavra a céu aberto e o beneficiamento mineral. No dia a dia, os riscos da pedreira são fragmento lançado no desmonte e na britagem, tráfego de máquina pesada, ruído e poeira.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Isso dá a base da lista: proteção da cabeça contra impacto, as opções em <a href="/protecao/cabeca/">proteção da cabeça</a>; proteção para olhos e rosto contra fragmento, em <a href="/protecao/olhos-e-face/">proteção para olhos e face</a>; calçado com biqueira, porque pedra cai; e roupa de alta visibilidade onde gente a pé divide espaço com máquina, conforme a avaliação de riscos.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Poeira: calcário, cimento e onde entra a sílica',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O calcário é principalmente carbonato de cálcio. A sílica, que é o que causa silicose, depende das impurezas da rocha e das outras matérias-primas da mistura, e por isso varia de uma operação para outra — não é correto tratar toda poeira de cimento como poeira de sílica, nem o contrário. Já a poeira de cimento é alcalina e irrita olhos e vias respiratórias por si só.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na britagem, na moagem e no ensacamento, o controle começa por enclausurar, umidificar e exaurir a poeira. Onde a avaliação ainda indicar exposição, entra o respirador para partículas, com Certificado de Aprovação e bem vedado no rosto. A classe do filtro sai dessa avaliação, e não de uma lista genérica; a sequência da escolha está em <a href="/conhecimento/respirador-como-escolher-o-filtro/">como escolher o filtro do respirador</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O cimento ataca a pele',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Este é o risco que quase ninguém explica. O cimento é alcalino, abrasivo e absorve água: em contato com o suor ou molhado, ele irrita e queima a pele. A dermatite de contato nas mãos e nos pés é a doença de pele mais conhecida de quem trabalha com cimento, e o cimento que entra na bota, somado ao atrito, pode causar feridas profundas. Nos olhos, o respingo de cimento molhado causa queimadura química.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Por isso a luva não pode ser de pano nem de couro que encharca: ela precisa ser impermeável e resistente ao material alcalino, e o raciocínio está em <a href="/conhecimento/tipos-de-luva-qual-material-escolher/">qual material de luva escolher</a>. Manga longa, bota de cano alto com a calça por fora para o cimento não entrar, óculos onde há respingo. E pele lavada assim que houver contato, sem esperar o fim do turno.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na caieira, onde o calcário vira cal, vale o mesmo cuidado com mais força: a cal virgem reage com a água e com o suor, esquenta e é cáustica para a pele e para os olhos.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Forno e moinho: calor e ruído',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Em volta do forno, calor radiante e superfície quente: vestimenta e luva com proteção contra calor, que é uma característica própria que consta no CA, e protetor facial onde há exposição direta. Nos moinhos e nos britadores, ruído alto e contínuo: protetor auditivo conforme a medição feita pela empresa, com a escolha entre os tipos em <a href="/conhecimento/protetor-auditivo-plug-ou-concha/">plug ou concha</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Ensacamento e expedição',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'No ensacamento se juntam poeira, saco pesado e repetição, e na expedição circulam empilhadeira e caminhão. Respirador conforme a avaliação, luva impermeável para o pó de cimento, e calçado de segurança com biqueira. As opções estão em <a href="/calcados/seguranca/">calçados de segurança</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Poeira de cimento dá insalubridade?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É uma das perguntas mais buscadas sobre o assunto, e a resposta honesta é que depende de avaliação técnica. A insalubridade é caracterizada conforme a NR-15, a partir das condições reais de exposição de cada posto, e não pela atividade em si nem por uma lista de EPI. O EPI adequado faz parte dessa avaliação, mas não a substitui.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que costuma faltar no pedido',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Luva impermeável para o cimento</strong>, no lugar da luva de pano ou de couro.',
+          '<strong>Bota de cano alto bem fechada</strong> onde há cimento solto ou molhado, para ele não entrar no calçado.',
+          '<strong>Óculos contra respingo</strong> no manuseio de cimento molhado e de cal.',
+          '<strong>Proteção contra calor no forno</strong>, separada da luva de manuseio.',
+          '<strong>Listas separadas para pedreira e fábrica</strong>, que viram uma só na hora da compra.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Quais operações a empresa tem: lavra, britagem, moagem, forno, ensacamento, expedição, caieira.',
+          'A avaliação de poeira de cada setor, e se ela indica sílica.',
+          'A medição de ruído dos britadores e moinhos.',
+          'Onde há contato com cimento molhado ou com cal.',
+          'Onde gente a pé divide espaço com máquina pesada.',
+          'O CA de cada item, lembrando que proteção respiratória, auditiva, contra calor e química são aprovações separadas.',
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'Rochas e minerais industriais do estado do Ceará — CETEM',
+        url: 'https://mineralis.cetem.gov.br/bitstream/cetem/495/1/livro-rochas-minerais-ceara.pdf',
+      },
+      {
+        titulo: 'Panorama do setor mineral do estado do Ceará — ADECE',
+        url: 'https://www.adece.ce.gov.br/wp-content/uploads/sites/98/2022/11/VF-Panorama-do-Setor-Mineral-do-Estado-do-Ceara-1.pdf',
+      },
+      {
+        titulo: 'Dermatose profissional na construção civil causada pelo cimento — BVS',
+        url: 'https://pesquisa.bvsalud.org/portal/resource/pt/lil-113866',
+      },
+      {
+        titulo: 'Norma Regulamentadora nº 22 (NR-22) — Segurança e saúde ocupacional na mineração, MTE',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-22-nr-22',
+      },
+      {
+        titulo: 'Norma Regulamentadora nº 15 (NR-15) — Atividades e operações insalubres, MTE',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-15-nr-15',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/epi-por-cidade/ceara/',
+      rotulo: 'Ver o atendimento no Ceará',
+    },
+    contexto: 'epi-por-cidade',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Trabalho numa empresa de cimento ou de calcário e queria ajuda para montar a lista de EPI, separando a pedreira da fábrica.',
+    ctaTitulo: 'A sua operação é pedreira, fábrica ou as duas?',
+    ctaTexto:
+      'Conte quais setores existem e onde há contato com cimento molhado ou cal. A gente separa a lista da lavra da lista da fábrica, porque os riscos não são os mesmos.',
+    perguntas: [
+      {
+        pergunta: 'Poeira de cimento dá insalubridade?',
+        resposta:
+          'Depende de avaliação técnica. A insalubridade é caracterizada conforme a NR-15, a partir das condições reais de exposição de cada posto, e não pela atividade em si. O EPI adequado faz parte dessa avaliação, mas não a substitui.',
+      },
+      {
+        pergunta: 'Qual luva usar para trabalhar com cimento?',
+        resposta:
+          'Luva impermeável e resistente a material alcalino. Luva de pano ou de couro encharca e segura o cimento contra a pele, o que piora a irritação. Vale também manga longa e bota de cano alto com a calça por fora, para o cimento não entrar.',
+      },
+      {
+        pergunta: 'A pedreira de calcário segue qual norma de segurança?',
+        resposta:
+          'A extração de calcário é mineração, e a mineração tem norma própria, a NR-22, que cobre a lavra a céu aberto e o beneficiamento mineral. A fábrica de cimento é outro ambiente, de indústria, e a lista de EPI de cada um sai da sua avaliação de riscos.',
+      },
+    ],
+  },
 ]
 
 /**

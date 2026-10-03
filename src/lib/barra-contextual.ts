@@ -319,6 +319,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Quem manuseia o metabissulfito na despesca?',
     rotulo: 'Começar pela despesca',
   },
+  'epi-para-packing-house-de-frutas': {
+    chamada: 'Quantos postos o seu packing house tem na safra?',
+    rotulo: 'Separar EPI de higiene',
+  },
+  'epi-para-fabrica-de-cimento-e-mineracao-de-calcario': {
+    chamada: 'A sua operação é pedreira, fábrica ou as duas?',
+    rotulo: 'Separar as listas',
+  },
   'epi-para-mecanico-de-oficina': {
     chamada: 'Que serviços a sua oficina faz?',
     rotulo: 'Montar a lista da oficina',
