@@ -83,8 +83,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Piso molhado, gordura e horas em pé mudam o critério. O que observar no solado e na cobertura, e quando a biqueira entra — revisado por técnico de segurança.',
     publicado: '2026-08-30',
-    atualizado: '2026-08-30',
-    atualizadoExibicao: 'agosto de 2026',
+    atualizado: '2026-10-03',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Calçados',
     blocos: [
       {
@@ -126,6 +126,20 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
+        texto: 'Babuche, tamanco e calçado de EVA servem?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Servem quando cumprem as mesmas três condições de qualquer calçado de cozinha: fechados em cima do pé, sem furo de ventilação, e com solado ensaiado para piso molhado, com Certificado de Aprovação. Existem modelos profissionais de babuche e de EVA feitos assim, leves e fáceis de lavar, e por isso eles aparecem tanto nas recomendações.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O que derruba o modelo é o detalhe, e não o formato. Furo no cabedal deixa passar o líquido quente exatamente onde ele cai. E calçado que não prende o calcanhar tende a sair do pé ou torcer no piso molhado, justamente na hora de carregar panela ou desviar de alguém. Antes de comprar, vale conferir os três pontos — cobertura, solado e fixação no pé — e não só a aparência.',
+      },
+      {
+        tipo: 'h2',
         texto: 'Conforto não é detalhe: é o que decide se o calçado será usado',
       },
       {
@@ -140,6 +154,34 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
+        texto: 'Existe sapato ortopédico para cozinha?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          '"Ortopédico" não é uma classificação do calçado profissional, e o Certificado de Aprovação não traz essa característica. Quem procura por isso quase sempre quer conforto para muitas horas em pé: amortecimento, palmilha que dá apoio ao arco do pé, peso baixo e uma forma que não aperta. Isso dá para conferir em qualquer modelo, e o que mais pesa está em <a href="/conhecimento/calcado-para-quem-trabalha-em-pe-o-dia-todo/">calçado para quem trabalha em pé o dia todo</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quando existe indicação de palmilha ortopédica, feita por profissional de saúde, o ponto prático é outro: o calçado precisa ter palmilha removível e espaço para a palmilha indicada. Vale levá-la na hora de provar.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'E macio não é o mesmo que confortável. Cabedal muito mole e solado que afunda agradam na loja, mas dão pouca estabilidade no piso molhado e cansam mais no fim do turno. O que sustenta uma jornada longa é amortecimento com firmeza.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Calçado de cozinha feminino',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O critério é o mesmo: fechado, impermeável, solado antiderrapante e confortável. O que muda é a forma. Existem modelos com forma e numeração femininas, e eles costumam calçar melhor do que um modelo masculino em número pequeno, que sobra na largura e aperta no peito do pé. As opções sem biqueira estão em <a href="/calcados/ocupacionais/">calçados ocupacionais</a>.',
+      },
+      {
+        tipo: 'h2',
         texto: 'Quando a biqueira entra na conversa',
       },
       {
@@ -150,7 +192,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Ou seja: a pergunta não é "qual protege mais", e sim "existe risco de algo pesado cair sobre o pé na minha rotina?". Se existe, a conversa muda para <a href="/calcados/seguranca/">calçado de segurança</a>, e calçado de segurança. Se não existe, um calçado ocupacional bem escolhido protege melhor no que importa aqui: aderência. E pesa menos na jornada em pé.',
+          'Ou seja: a pergunta não é "qual protege mais", e sim "existe risco de algo pesado cair sobre o pé na minha rotina?". Se existe, a conversa muda para <a href="/calcados/seguranca/">calçado de segurança</a>. Se não existe, um calçado ocupacional bem escolhido protege melhor no que importa aqui: aderência. E pesa menos na jornada em pé.',
       },
       {
         tipo: 'h2',
@@ -165,6 +207,7 @@ export const ARTIGOS: Artigo[] = [
           ['Material impermeável', 'Piso molhado durante todo o expediente'],
           ['Fácil higienização', 'Exigência sanitária e limpeza diária'],
           ['Leve e confortável', 'Jornada longa em pé, muitas vezes em dobra'],
+          ['Fixação no calcanhar', 'Calçado que sai do pé torce no piso molhado'],
           ['Biqueira', 'Só se houver risco de queda de objeto pesado'],
         ],
       },
@@ -204,12 +247,22 @@ export const ARTIGOS: Artigo[] = [
       {
         pergunta: 'Calçado furado ou tipo babuche serve para cozinha?',
         resposta:
-          'Não. A cobertura fechada existe para respingo quente e derramamento de líquido, e o furo no cabedal anula isso exatamente onde o risco está: em cima do pé. Em cozinha, calçado vazado é conforto comprado com a proteção que motivou a compra.',
+          'O furado, não: o furo no cabedal deixa passar respingo quente exatamente onde o risco está, em cima do pé. O babuche serve se for fechado em cima, sem furo, com solado ensaiado para piso molhado e Certificado de Aprovação — e se prender bem o pé, para não sair nem torcer no piso molhado.',
       },
       {
         pergunta: 'Calçado de couro aguenta a rotina de cozinha?',
         resposta:
           'Aguenta menos do que se espera. O couro absorve gordura e sofre com a higienização frequente que a cozinha exige, e o par envelhece por dentro antes de parecer gasto por fora. Material que suporta lavagem costuma durar mais nesse ambiente.',
+      },
+      {
+        pergunta: 'Existe sapato ortopédico para cozinha?',
+        resposta:
+          'Não como classificação: o CA não traz essa característica. O que se procura com essa palavra é conforto para muitas horas em pé — amortecimento, apoio ao arco do pé, peso baixo e forma que não aperta. Quem tem indicação de palmilha ortopédica precisa de calçado com palmilha removível e espaço para ela.',
+      },
+      {
+        pergunta: 'Calçado de cozinha feminino é diferente do masculino?',
+        resposta:
+          'Nas exigências, não: fechado, impermeável, antiderrapante e confortável. Na forma, sim. Modelos de forma feminina costumam calçar melhor do que um masculino em número pequeno, que sobra na largura e aperta no peito do pé.',
       },
       {
         pergunta: 'A área de lavagem pede calçado diferente do resto da cozinha?',
