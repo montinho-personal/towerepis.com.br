@@ -705,8 +705,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Fornecimento gratuito, CA válido, ficha de entrega, treinamento e o erro mais comum de quem compra. Resumo prático da norma, com o texto oficial citado.',
     publicado: '2026-08-30',
-    atualizado: '2026-08-30',
-    atualizadoExibicao: 'agosto de 2026',
+    atualizado: '2026-10-03',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Normas',
     blocos: [
       {
@@ -718,6 +718,20 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'Este texto é um resumo prático para quem compra e gerencia EPI numa empresa. Ele não substitui a leitura da norma nem a orientação do profissional de segurança do trabalho responsável. O texto oficial e atualizado está disponível no portal do Ministério do Trabalho e Emprego, com link ao final.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que é a NR-6 e qual é o objetivo dela',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-6 é a Norma Regulamentadora nº 6 do Ministério do Trabalho e Emprego, e o nome oficial dela é Equipamento de Proteção Individual – EPI. O objetivo declarado no texto é estabelecer os requisitos para aprovação, comercialização, fornecimento e utilização de EPI. Por isso ela vale para quatro partes ao mesmo tempo: as organizações que adquirem EPI, os trabalhadores que o utilizam e os fabricantes e importadores.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O EPI não é a primeira medida de proteção. As normas colocam antes a proteção coletiva e as medidas de organização do trabalho, e o EPI entra quando a proteção coletiva é tecnicamente inviável ou insuficiente, enquanto ela está sendo implantada e em situações de emergência.',
       },
       {
         tipo: 'h2',
@@ -760,7 +774,40 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'A ficha é o registro de que o equipamento foi entregue àquela pessoa. Na prática, ela costuma trazer identificação do trabalhador, descrição do equipamento, número do CA, data de entrega e assinatura. É o documento mais pedido em fiscalização e o que mais gera problema quando está desatualizado.',
+          'A ficha é o registro de que o equipamento foi entregue àquela pessoa. Na prática, ela costuma trazer identificação do trabalhador, descrição do equipamento, número do CA, data de entrega e assinatura. É o documento mais pedido em fiscalização e o que mais gera problema quando está desatualizado. O que precisa constar nela está em <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega de EPI</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Treinamento de NR-6: é obrigatório?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Sim. Orientar e treinar o trabalhador sobre o uso adequado, a guarda e a conservação do EPI é obrigação da empresa na NR-6. Na prática, o objetivo do treinamento é que a pessoa saiba usar e ajustar o equipamento, guardá-lo do jeito certo e reconhecer quando ele precisa ser trocado.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-6 não fixa carga horária nem periodicidade para esse treinamento. As regras gerais de capacitação, como o registro do que foi feito, estão na NR-1. Faz sentido repetir a orientação quando muda o equipamento, o risco ou a função, e registrar cada vez.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'NR-6 atualizada: o que mudou até 2026',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-6 foi editada originalmente pela Portaria MTb nº 3.214, de 8 de junho de 1978, junto com as demais normas regulamentadoras. O texto em vigor é o da nova redação aprovada pela Portaria MTP nº 2.175, de 28 de julho de 2022, que entrou em vigor em 2023.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A alteração mais recente que localizamos é a <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2025/portaria-mte-no-57-altera-o-item-6-9-4-da-nr-06.pdf" target="_blank" rel="noopener noreferrer">Portaria MTE nº 57, de 16 de janeiro de 2025</a>, em vigor desde julho de 2025. Ela mudou o item sobre o Certificado de Aprovação: o CA emitido para um fabricante ou importador não pode ser usado por outro, nem entre matriz e filial, sem que esse outro passe pelo procedimento para obter o próprio CA. Para quem compra, o efeito prático é conferir se o fabricante ou importador que aparece na consulta do CA é o mesmo do produto oferecido.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Norma regulamentadora muda por portaria, e a versão que vale é sempre a publicada no portal do Ministério do Trabalho e Emprego. Arquivos com "NR-6 atualizada" no nome, em outros sites, podem não trazer as alterações mais recentes.',
       },
       {
         tipo: 'h2',
@@ -781,6 +828,10 @@ export const ARTIGOS: Artigo[] = [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
         url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Portaria MTE nº 57, de 16 de janeiro de 2025 — altera o item 6.9.4 da NR-6 (PDF oficial)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2025/portaria-mte-no-57-altera-o-item-6-9-4-da-nr-06.pdf',
       },
       {
         titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
@@ -806,9 +857,19 @@ export const ARTIGOS: Artigo[] = [
           'Sim. A norma coloca o uso para a finalidade a que se destina como obrigação do trabalhador, e cabe à empresa exigir esse uso. As duas obrigações existem ao mesmo tempo.',
       },
       {
-        pergunta: 'A empresa precisa treinar quem usa EPI?',
+        pergunta: 'O treinamento de NR-6 é obrigatório?',
         resposta:
-          'Sim. Orientar e treinar sobre uso, guarda e conservação também é obrigação do empregador. Não basta entregar o equipamento e registrar a entrega.',
+          'Sim. Orientar e treinar sobre uso, guarda e conservação do EPI é obrigação da empresa. Não basta entregar o equipamento e registrar a entrega.',
+      },
+      {
+        pergunta: 'O treinamento de NR-6 tem validade?',
+        resposta:
+          'A NR-6 não fixa prazo de validade nem periodicidade para o treinamento de uso de EPI. O que tem prazo é o Certificado de Aprovação do equipamento. Na prática, vale refazer a orientação quando muda o equipamento, o risco ou a função.',
+      },
+      {
+        pergunta: 'Onde encontrar a NR-6 atualizada em PDF?',
+        resposta:
+          'No portal do Ministério do Trabalho e Emprego, na página das normas regulamentadoras vigentes. É o lugar em que o texto é garantidamente o vigente. Cópias em outros sites podem não incluir as alterações mais recentes, como a de 2025 sobre o Certificado de Aprovação.',
       },
     ],
     ctaTitulo: 'Precisa organizar o EPI da sua equipe?',
