@@ -287,8 +287,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Entenda o que é o Certificado de Aprovação (CA) de EPI, para que serve, como consultar no gov.br e o que fazer quando está vencido.',
     publicado: '2026-08-30',
-    atualizado: '2026-08-30',
-    atualizadoExibicao: 'agosto de 2026',
+    atualizado: '2026-10-03',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Normas',
     blocos: [
       {
@@ -317,19 +317,65 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
-        texto: 'Como consultar',
+        texto: 'Onde fica o número do CA no EPI',
       },
       {
         tipo: 'p',
         texto:
-          'A consulta é feita no sistema CAEPI do Ministério do Trabalho e Emprego — o caminho oficial está na <a href="https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca" target="_blank" rel="noopener noreferrer">página do serviço no gov.br</a>, citada nas fontes. Com o número do CA é possível verificar o equipamento, o fabricante ou importador, a validade e a descrição do que foi aprovado.',
+          'A NR-6 exige que todo EPI traga, em caracteres indeléveis e bem visíveis, o nome do fabricante (ou do importador, quando o produto é importado), o lote de fabricação e o número do CA. É por isso que dá para conferir o certificado olhando a peça que está em uso, sem depender da nota fiscal nem da palavra do vendedor.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O lugar da marcação varia de um modelo para outro. Em calçado, ela costuma estar na parte interna do cano ou na lingueta; em capacete, gravada no casco; em cinto de segurança, na etiqueta presa à fita. Quando a peça não comporta a gravação, a norma permite que o órgão competente autorize outra forma de marcação, proposta pelo fabricante, e essa forma passa a constar do próprio certificado. Se não encontrar o número, a consulta oficial diz onde procurar: o registro de cada CA tem um campo com o local da marcação.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Como consultar o CA no site do Ministério do Trabalho',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A consulta é pública, no sistema CAEPI do Ministério do Trabalho e Emprego, em <a href="https://caepi.trabalho.gov.br/" target="_blank" rel="noopener noreferrer">caepi.trabalho.gov.br</a>. É o canal oficial. Listas e aplicativos de terceiros reproduzem esses dados e podem estar desatualizados, e o caminho do serviço também está na <a href="https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca" target="_blank" rel="noopener noreferrer">página do gov.br</a> citada nas fontes.',
       },
       {
         tipo: 'lista',
         itens: [
-          'O número do CA costuma estar gravado no próprio equipamento ou na embalagem.',
-          'Confira se a descrição do certificado corresponde ao risco da sua atividade.',
-          'Verifique a validade — certificados têm prazo e precisam ser renovados pelo fabricante.',
+          'Encontre o número do CA na peça ou na embalagem.',
+          'Abra a consulta no CAEPI e informe o número.',
+          'No registro que aparece, leia quatro campos: a situação, a validade, para que o equipamento foi aprovado e o local da marcação.',
+          'Compare o equipamento, o fabricante e a referência descritos com a peça que está na sua mão.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A situação é o primeiro filtro. O certificado pode aparecer como válido, vencido, suspenso ou cancelado, e só o válido serve para uma compra ou uma entrega nova. Depois dela, o campo que mais importa é o <strong>aprovado para</strong>, porque é ele que diz contra o quê o equipamento foi ensaiado.',
+      },
+      {
+        tipo: 'h3',
+        texto: 'Consulta da validade do CA',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A data de validade aparece no mesmo registro. Ela é da aprovação do modelo, não do par: é o prazo em que aquele equipamento pode ser vendido como EPI aprovado. Por isso a pergunta sobre CA vencido tem uma resposta para o que ainda vai ser comprado e outra para o que já está em uso, e as duas estão na seção abaixo.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que conferir no CA de botina, capacete e cinto',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O número do CA funciona do mesmo jeito em qualquer EPI. O que muda de um item para outro é o que procurar no campo aprovado para.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Botina e bota de segurança:</strong> se o calçado tem biqueira de proteção, se tem proteção contra perfuração da sola e se foi aprovado para algum risco específico, como eletricidade. Biqueira e proteção da sola são requisitos separados, e um não vem junto com o outro. A diferença entre as categorias está em <a href="/conhecimento/calcado-ocupacional-ou-de-seguranca/">calçado ocupacional ou de segurança</a>.',
+          '<strong>Capacete:</strong> se o modelo foi aprovado também para atividade com risco elétrico. Capacetes têm classes diferentes, e a certa depende da atividade, como explicado em <a href="/protecao/cabeca/">proteção da cabeça</a>.',
+          '<strong>Cinto de segurança para trabalho em altura:</strong> que tipo de cinturão é e para que uso foi aprovado. Como o cinto fica exposto a sol e atrito, a etiqueta com o CA costuma ser a primeira coisa a apagar, e peça com marcação ilegível não tem como ser conferida.',
         ],
       },
       {
@@ -349,6 +395,18 @@ export const ARTIGOS: Artigo[] = [
     ],
     fontes: [
       {
+        titulo: 'Consulta CA — Sistema CAEPI, Secretaria de Inspeção do Trabalho',
+        url: 'https://caepi.trabalho.gov.br/',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto atualizado em 2022) — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Dicionário de metadados do conjunto de dados de EPI (campos do CA) — Ministério do Trabalho e Emprego',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual-epi/dicionario-de-metadados-do-conjunto-de-dados-epi-1.pdf',
+      },
+      {
         titulo: 'Obter Certificado de Aprovação de EPI (CA) — gov.br',
         url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
       },
@@ -366,19 +424,29 @@ export const ARTIGOS: Artigo[] = [
       'Olá! Vim pelo site da Tower. Li o texto sobre o CA e gostaria de ajuda para conferir se os EPIs que usamos hoje estão adequados.',
     perguntas: [
       {
-        pergunta: 'Onde consultar o número do CA de um EPI?',
+        pergunta: 'Como consultar o CA de um EPI?',
         resposta:
-          'No sistema do Ministério do Trabalho e Emprego, informando o número do CA. O caminho oficial está no link ao final deste texto. A consulta mostra o equipamento, o fabricante ou importador, a validade e a descrição do que foi aprovado.',
+          'No sistema CAEPI do Ministério do Trabalho e Emprego, em caepi.trabalho.gov.br, informando o número do CA marcado na peça. A consulta é pública e mostra a situação do certificado, a validade, o fabricante ou importador e a descrição do que foi aprovado.',
       },
       {
-        pergunta: 'EPI sem CA pode ser usado?',
+        pergunta: 'É obrigatório ter o CA no EPI?',
         resposta:
-          'Não. A NR-6 condiciona o fornecimento de EPI à existência de Certificado de Aprovação. Equipamento sem CA não cumpre a exigência, mesmo que pareça adequado.',
+          'Sim. A NR-6 determina que o EPI, nacional ou importado, só pode ser posto à venda ou utilizado com a indicação do Certificado de Aprovação. Equipamento sem CA não cumpre a exigência, mesmo que pareça adequado.',
       },
       {
-        pergunta: 'O CA fica no produto ou só na nota fiscal?',
+        pergunta: 'Onde fica o número do CA no EPI?',
         resposta:
-          'No próprio equipamento, marcado de forma legível e indelével. É por isso que dá para conferir o CA olhando o par que está no pé de alguém, sem depender do documento da compra.',
+          'Na própria peça, em marcação legível e indelével, junto com o nome do fabricante ou importador e o lote de fabricação. O lugar varia por modelo. Quando não estiver à vista, o registro do CA na consulta oficial informa onde a marcação foi feita.',
+      },
+      {
+        pergunta: 'O que significa CA suspenso ou cancelado?',
+        resposta:
+          'É a situação do certificado na consulta oficial, que aparece como válido, vencido, suspenso ou cancelado. Para comprar ou entregar EPI, só serve o válido: nos outros casos, o modelo não está apto a ser fornecido como EPI aprovado naquele momento.',
+      },
+      {
+        pergunta: 'O CA impresso no produto pode ser falso?',
+        resposta:
+          'O número pode ser copiado, mas a descrição não acompanha. Por isso a conferência não para no número: o equipamento, o fabricante e a referência que a consulta mostra precisam bater com a peça. Se não batem, aquele número não é daquele produto.',
       },
     ],
     ctaTitulo: 'Precisa conferir o CA dos EPIs que a sua equipe usa?',
