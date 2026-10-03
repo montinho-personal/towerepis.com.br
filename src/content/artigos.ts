@@ -731,7 +731,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'O EPI não é a primeira medida de proteção. As normas colocam antes a proteção coletiva e as medidas de organização do trabalho, e o EPI entra quando a proteção coletiva é tecnicamente inviável ou insuficiente, enquanto ela está sendo implantada e em situações de emergência.',
+          'O EPI não é a primeira medida de proteção. As normas colocam antes a proteção coletiva, os chamados EPC, como guarda-corpo, enclausuramento de máquina e exaustão, e as medidas de organização do trabalho, e o EPI entra quando a proteção coletiva é tecnicamente inviável ou insuficiente, enquanto ela está sendo implantada e em situações de emergência.',
       },
       {
         tipo: 'h2',
@@ -741,6 +741,11 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'É todo dispositivo ou produto de uso individual utilizado pelo trabalhador, destinado à proteção contra riscos capazes de ameaçar a sua segurança e a sua saúde no trabalho. É por isso que uniforme comum e EPI não são a mesma coisa. O que separa os dois é a finalidade de proteger contra um risco.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A norma também reconhece o equipamento conjugado de proteção individual, composto por vários dispositivos que o fabricante associou contra um ou mais riscos. E o Anexo I da NR-6 traz a lista dos equipamentos considerados EPI, organizada pela parte do corpo protegida: cabeça, olhos e face, audição, respiração, tronco, membros superiores, membros inferiores, corpo inteiro e proteção contra quedas.',
       },
       {
         tipo: 'h2',
@@ -788,7 +793,30 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
+          'A norma não traz conteúdo programático pronto. Ele sai dos três verbos que ela usa, uso, guarda e conservação, aplicados aos equipamentos que a equipe usa de verdade, e costuma cobrir:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Para que serve cada equipamento e contra o quê ele não protege.',
+          'Como vestir, ajustar e conferir o encaixe ou a vedação, quando é o caso.',
+          'Como guardar, limpar e conservar.',
+          'Como reconhecer desgaste e a quem pedir a troca.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
           'A NR-6 não fixa carga horária nem periodicidade para esse treinamento. As regras gerais de capacitação, como o registro do que foi feito, estão na NR-1. Faz sentido repetir a orientação quando muda o equipamento, o risco ou a função, e registrar cada vez.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'NR-6 e as normas de cada setor',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-6 é a regra geral de EPI, e normas de setor somam exigências a ela. As que mais aparecem junto são a NR-32, de serviços de saúde, a NR-10, de eletricidade, e a NR-35, de trabalho em altura. Quando uma delas se aplica, as duas valem ao mesmo tempo: a de setor diz o que a atividade exige, e a NR-6 diz como o equipamento é aprovado, fornecido e registrado. O que muda na prática está em <a href="/para-seu-trabalho/enfermagem-e-saude/">EPI para enfermagem e saúde</a> e em <a href="/conhecimento/epi-para-eletricista-o-que-muda/">EPI para eletricista</a>.',
       },
       {
         tipo: 'h2',
@@ -864,7 +892,7 @@ export const ARTIGOS: Artigo[] = [
       {
         pergunta: 'O treinamento de NR-6 tem validade?',
         resposta:
-          'A NR-6 não fixa prazo de validade nem periodicidade para o treinamento de uso de EPI. O que tem prazo é o Certificado de Aprovação do equipamento. Na prática, vale refazer a orientação quando muda o equipamento, o risco ou a função.',
+          'A NR-6 não fixa carga horária, prazo de validade nem periodicidade para o treinamento de uso de EPI. O que tem prazo é o Certificado de Aprovação do equipamento. Na prática, vale refazer a orientação quando muda o equipamento, o risco ou a função.',
       },
       {
         pergunta: 'Onde encontrar a NR-6 atualizada em PDF?',
