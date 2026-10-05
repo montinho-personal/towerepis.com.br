@@ -1083,8 +1083,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'A NR-6 obriga a registrar a entrega do EPI. Veja o que a ficha precisa conter, os erros mais comuns no preenchimento e como organizar isso numa equipe grande.',
     publicado: '2026-09-03',
-    atualizado: '2026-09-03',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-10-05',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Normas',
     blocos: [
       {
@@ -1096,6 +1096,15 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'A norma não publica um modelo oficial de ficha. O que ela exige é que o fornecimento fique registrado. Isso dá liberdade de formato e cria a dúvida que chega até nós com frequência: <em>o que precisa estar escrito ali?</em>',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Ficha de EPI, de entrega, de recebimento ou de controle',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'São nomes diferentes para o mesmo documento: o registro de que um equipamento de proteção foi entregue a uma pessoa. Quem entrega chama de ficha de entrega ou de controle; quem assina, de ficha de recebimento ou termo de responsabilidade. A exigência é uma só, e a ficha é obrigatória no sentido de que o registro é: a NR-6 manda registrar o fornecimento, e a ficha é a forma mais comum de fazer isso.',
       },
       {
         tipo: 'h2',
@@ -1124,6 +1133,52 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
+        texto: 'Modelo de ficha de EPI',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Não existe modelo oficial, e por isso qualquer formato serve, em Word, Excel, sistema ou papel para imprimir, desde que responda às perguntas acima. Também não existe modelo "atualizado para 2026": a alteração mais recente da NR-6, de 2025, mudou uma regra sobre o Certificado de Aprovação, e não o que a ficha precisa trazer. Um modelo simples tem duas partes.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          '<strong>O cabeçalho</strong>, preenchido uma vez por trabalhador: nome, função, setor, data de admissão e, se fizer sentido, numeração de calçado e tamanho de luva e de roupa. <strong>A tabela de entregas</strong>, com uma linha por item a cada entrega. Uma linha preenchida fica assim:',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Data', 'Equipamento', 'Nº do CA', 'Qtd.', 'Motivo', 'Assinatura'],
+        linhas: [
+          ['05/10/2026', 'Botina de segurança com biqueira, nº 41', 'o número impresso no par entregue', '1 par', 'Primeira entrega', 'do trabalhador'],
+          ['05/10/2026', 'Luva de proteção contra agentes químicos, tamanho M', 'o número da embalagem', '2 pares', 'Primeira entrega', 'do trabalhador'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Uma linha por item, e não uma linha para o "kit": é isso que permite saber depois qual CA foi entregue e quando cada peça foi trocada. Se a empresa também entrega uniforme, ele pode ficar na mesma ficha, em linhas próprias, sabendo que uniforme comum não é EPI e não tem CA.',
+      },
+      {
+        tipo: 'h3',
+        texto: 'Como fazer o termo de recebimento',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O termo é o parágrafo que a pessoa assina junto com a ficha. Ele faz sentido quando repete o que a NR-6 já atribui ao trabalhador, sem inventar obrigação nova. Uma redação possível, a ser validada pelo responsável pela segurança do trabalho da empresa:',
+      },
+      {
+        tipo: 'destaque',
+        texto:
+          'Declaro que recebi os equipamentos de proteção individual relacionados abaixo, gratuitamente, e que fui orientado sobre o uso adequado, a guarda e a conservação de cada um. Comprometo-me a usá-los apenas para a finalidade a que se destinam, a responsabilizar-me pela limpeza, guarda e conservação, a comunicar à empresa quando um equipamento for extraviado, danificado ou ficar impróprio para uso, e a cumprir as determinações sobre o uso adequado.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O termo assinado uma vez não substitui a assinatura de cada entrega. Ele registra o compromisso; as linhas da tabela registram o que foi entregue.',
+      },
+      {
+        tipo: 'h2',
         texto: 'Os erros que a gente mais vê',
       },
       {
@@ -1149,6 +1204,15 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'Ajuda também padronizar por função em vez de por pessoa. Quando a <a href="/para-seu-trabalho/">atividade define a lista</a>, quem entrega não precisa decidir nada na hora, e a ficha vira conferência em vez de redação.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Ficha de EPI para trabalho em altura',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A ficha é a mesma. O que muda é o cuidado de registrar cada componente com CA próprio em linha própria, em vez de uma linha para o conjunto, e de lembrar que a inspeção desse equipamento antes do uso é assunto da NR-35, com registro que não se confunde com a ficha de entrega.',
       },
       {
         tipo: 'h2',
@@ -1187,6 +1251,21 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'A ficha de entrega de EPI pode ser digital?',
         resposta:
           'A norma não exige papel. O que a ficha precisa é identificar quem recebeu, o que recebeu e quando, e permitir comprovar a entrega. A forma de assinatura eletrônica aceitável deve ser confirmada com o responsável pela segurança do trabalho da empresa.',
+      },
+      {
+        pergunta: 'A ficha de EPI é obrigatória?',
+        resposta:
+          'O registro da entrega é obrigatório pela NR-6, e a norma admite que ele seja feito em livro, ficha ou sistema eletrônico. A ficha é a forma mais comum. O que não pode é a entrega acontecer sem registro nenhum.',
+      },
+      {
+        pergunta: 'Quem fornece a ficha de EPI?',
+        resposta:
+          'A empresa que entrega o equipamento. É ela quem elabora, preenche e guarda a ficha, porque é ela quem precisa comprovar a entrega. O fornecedor do EPI ajuda informando o CA de cada item, que é um dos campos da ficha.',
+      },
+      {
+        pergunta: 'A ficha de EPI tem validade?',
+        resposta:
+          'Não. Ela é um registro contínuo, com uma linha por entrega, e não vence. Quando o espaço acaba, abre-se outra folha, e as anteriores continuam guardadas como histórico daquela pessoa.',
       },
       {
         pergunta: 'Precisa anotar a numeração do calçado na ficha?',
