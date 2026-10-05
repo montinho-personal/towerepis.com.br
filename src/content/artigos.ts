@@ -1711,8 +1711,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Por que a máscara PFF não retém vapor químico, o que é preciso usar no lugar e como identificar se o respirador da sua equipe está correto.',
     publicado: '2026-09-03',
-    atualizado: '2026-09-03',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-10-05',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Proteção',
     blocos: [
       {
@@ -1741,6 +1741,31 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
+        texto: 'Para que serve a PFF2, então',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para partícula no ar: poeira de obra, de madeira e de grão, névoa que não é oleosa, fumo metálico e aerossol com agente biológico, como em serviço de saúde. É uma peça descartável, e todo modelo vendido como EPI tem Certificado de Aprovação, com o número impresso na própria máscara e consultável no <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">sistema do CA</a>.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Com ou sem válvula:</strong> a válvula facilita a expiração e deixa a máscara menos quente e úmida, com a mesma proteção para quem usa. Mas o ar que sai pela válvula não é filtrado, e por isso, onde a máscara também precisa proteger quem está em volta, como em atendimento de saúde, o modelo é sem válvula.',
+          '<strong>PFF2 e N95:</strong> N95 é a classificação americana, e PFF2 é a brasileira. As duas são de partícula e com eficiência parecida, mas, no trabalho, vale a PFF2 com Certificado de Aprovação brasileiro.',
+          '<strong>Fumaça:</strong> é mistura. A parte de partícula a PFF2 retém; os gases da fumaça, como o monóxido de carbono, passam direto.',
+          '<strong>Pintura:</strong> com tinta à base de solvente, não, porque o solvente evapora e vira vapor. A névoa da pistola é partícula, e por isso pintura costuma pedir filtro combinado, para os dois.',
+          '<strong>Produto de limpeza:</strong> o cheiro que incomoda na diluição é vapor ou gás, e a PFF2 não segura nenhum dos dois.',
+          '<strong>PFF2 com carvão ativado:</strong> a camada de carvão reduz o incômodo do odor, mas a peça continua sendo para partícula, como explicado em <a href="/conhecimento/respirador-como-escolher-o-filtro/">como escolher o filtro do respirador</a>.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'PFF1, PFF2 e PFF3 diferem na eficiência de filtração de partículas, que cresce de uma para a outra: a PFF2 retém pelo menos 94% das partículas no ensaio, mais que a PFF1, e a PFF3 retém mais que as duas. A classe certa vem do agente e do nível de exposição, e a comparação completa está em <a href="/protecao/respiratoria/">proteção respiratória</a>.',
+      },
+      {
+        tipo: 'h2',
         texto: 'Onde o erro mais aparece',
       },
       {
@@ -1757,6 +1782,20 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'Nesses casos a PFF pode ser necessária para a parte particulada da exposição. Mas não substitui o filtro químico, e a combinação certa depende da substância.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Qual máscara usar para produto químico',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A máscara para produto químico é um respirador reutilizável com cartucho, e não uma peça descartável. Ela existe em dois formatos: a semifacial, que cobre nariz e boca, e a facial inteira, que cobre também os olhos e é a escolha quando o produto irrita a vista. O que protege é o cartucho, escolhido pela classe da substância: vapores orgânicos para solvente, tinta e cola; gases ácidos, que é a classe que os fabricantes indicam para cloro; amônia; entre outras.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A classe sai da ficha de informações de segurança do produto, e não do nome comercial. Quando há partícula e vapor ao mesmo tempo, o filtro é combinado. O passo a passo da escolha do cartucho e da troca está em <a href="/conhecimento/respirador-como-escolher-o-filtro/">como escolher o filtro do respirador</a>.',
       },
       {
         tipo: 'h2',
@@ -1798,6 +1837,10 @@ export const ARTIGOS: Artigo[] = [
         url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
       },
       {
+        titulo: 'HU-UFMA/Ebserh — Caderno de respiradores (PFF2, N95 e uso em serviços de saúde)',
+        url: 'https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-nordeste/hu-ufma/governanca/gerencia-administrativa/gestao-de-pessoas/CadernodeRespiradoresHUUFMA.pdf',
+      },
+      {
         titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
         url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
       },
@@ -1814,6 +1857,21 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Como sei se preciso de PFF ou de filtro químico?',
         resposta:
           'Pelo agente, não pelo produto. Poeira, névoa e fumo são partículas e pedem PFF. Vapor e gás atravessam a PFF e pedem filtro químico específico. Qual é o caso da sua atividade vem da ficha do produto e da avaliação de exposição da empresa.',
+      },
+      {
+        pergunta: 'Para que serve a PFF2?',
+        resposta:
+          'Para reter partícula suspensa no ar: poeira, névoa não oleosa, fumo metálico e aerossol com agente biológico. Ela não retém vapor nem gás, então não serve para solvente, tinta à base de solvente, cheiro de produto de limpeza ou os gases da fumaça.',
+      },
+      {
+        pergunta: 'Qual máscara usar para trabalhar com cloro?',
+        resposta:
+          'Respirador com cartucho químico da classe que o fabricante indica para cloro, que costuma ser a de gases ácidos, conferida no Certificado de Aprovação do filtro. Se o produto irrita os olhos, facial inteira. A PFF2, com ou sem carvão, não serve.',
+      },
+      {
+        pergunta: 'Quantas vezes posso usar a máscara PFF2?',
+        resposta:
+          'Não existe um número fixo. Ela é descartável e sai de uso quando fica suja, úmida, amassada, com elástico frouxo, quando passa a ficar difícil respirar por ela ou quando deixa de vedar no rosto, o que vier primeiro, respeitando a orientação do fabricante e do serviço onde é usada.',
       },
       {
         pergunta: 'Uma PFF3 resolve vapor químico?',
