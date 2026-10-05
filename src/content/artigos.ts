@@ -1500,8 +1500,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Por que a luva descartável não protege de saneante, como escolher a luva pelo produto químico manuseado e o que muda entre nitrílica, látex e PVC.',
     publicado: '2026-09-03',
-    atualizado: '2026-09-03',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-10-05',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Proteção',
     blocos: [
       {
@@ -1512,7 +1512,47 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'O erro é fácil de entender: as duas são luvas, as duas podem ser de nitrila, e a de procedimento é mais barata e já está no almoxarifado. Só que a espessura, o tempo de resistência e o uso previsto são outros, e é aí que a proteção acaba.',
+          'O erro é fácil de entender: as duas são luvas, as duas podem ser de nitrila, e a de procedimento é mais barata e já está no almoxarifado. Só que a espessura, o tempo de resistência e o uso previsto são outros, e é aí que a proteção acaba. Numa tarefa leve e rápida sem produto químico, como recolher material ou limpar a seco, ela separa a mão da sujeira, e mesmo assim rasga fácil em canto, escova e superfície áspera. Quando entra o produto de limpeza, ela deixa de ser a luva certa.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que é luva de procedimento e para que serve',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É a luva descartável e não estéril usada em procedimentos não invasivos: exame, curativo simples, coleta, higiene de paciente, qualquer contato com sangue, secreção ou material que pode estar contaminado. Ela protege quem atende e quem é atendido, e por isso aparece em hospital, clínica, consultório, farmácia e laboratório. Costuma vir em caixa de 100 unidades, em tamanhos de PP a G, e serve nas duas mãos.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Por ser produto para saúde, ela segue requisitos mínimos de qualidade definidos pela Anvisa, na RDC nº 547/2021, que trata das luvas cirúrgicas e das luvas para procedimento não cirúrgico. Quando tem Certificado de Aprovação, ela é também EPI, para risco biológico. O que nenhuma dessas regras faz é transformá-la em luva para produto químico.',
+      },
+      {
+        tipo: 'h3',
+        texto: 'Luva de procedimento ou luva estéril',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A luva estéril, também chamada de cirúrgica, é a do procedimento invasivo e do campo estéril: vem embalada aos pares, já esterilizada, e tem formato próprio para a mão direita e para a esquerda. A de procedimento não é estéril e serve para o resto da rotina. Trocar uma pela outra é erro nos dois sentidos: estéril onde não precisa é custo, e de procedimento onde precisa de estéril é risco para o paciente. Os critérios da rotina de saúde estão em <a href="/para-seu-trabalho/enfermagem-e-saude/">EPI para enfermagem e saúde</a>.',
+      },
+      {
+        tipo: 'h3',
+        texto: 'Látex, nitrílica ou vinil',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Látex:</strong> elástica e com boa sensibilidade ao toque, mas pode causar alergia em quem usa e em quem é atendido. A versão sem pó deixa menos resíduo nas mãos.',
+          '<strong>Nitrílica:</strong> sem látex, a alternativa para quem tem alergia, e mais resistente a furo. É a azul, a preta ou a roxa das caixas, e a cor não diz nada sobre proteção: quem diz é a embalagem.',
+          '<strong>Vinil:</strong> sem látex, mais folgada e menos elástica, indicada pelos fabricantes para tarefas curtas e não invasivas, sem contato com fluidos.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Nenhuma das três vira luva química por ser de nitrila ou de vinil. O comportamento de cada material diante de produto químico é outro assunto, e está em <a href="/conhecimento/tipos-de-luva-qual-material-escolher/">qual material de luva escolher</a>.',
       },
       {
         tipo: 'h2',
@@ -1542,6 +1582,31 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'O caminho certo é começar pela ficha do produto químico que a equipe usa e pela indicação do fabricante da luva para aquele tipo de substância. Quem tem a ficha em mãos resolve a escolha em minutos; quem parte do catálogo erra com frequência. O passo a passo está em <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">como escolher luva pelo produto químico</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Qual luva usar para limpeza',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A luva de limpeza tem vários nomes, luva de borracha, de látex, nitrílica, de PVC, e todos falam do material. Para trabalho, o que separa uma da outra é o que ela aguenta:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Limpeza pesada e banheiro:</strong> é onde entram os produtos mais agressivos, como cloro, desincrustante e ácido. O caso é luva de proteção química escolhida pelo produto usado, de preferência com cano longo, porque o respingo chega ao antebraço.',
+          '<strong>Com CA:</strong> luva de limpeza usada no trabalho é EPI e precisa de Certificado de Aprovação para o risco químico. Luva vendida para uso doméstico nem sempre tem, e sem ele não há como saber contra o quê ela foi ensaiada.',
+          '<strong>Antialérgica:</strong> quem tem alergia a látex precisa de luva sem látex, como nitrílica ou de PVC, com a mesma resistência ao produto.',
+          '<strong>Cores:</strong> em limpeza hospitalar e de facilities, a cor da luva costuma separar áreas, como banheiro e copa, para a mesma luva não levar sujeira de um lugar para o outro. Não localizamos uma tabela de cores obrigatória: cada serviço define a sua no procedimento de limpeza, e a cor não diz nada sobre resistência química.',
+          '<strong>Conforto:</strong> forro interno ajuda com o suor em turno longo, e palma com relevo segura melhor o objeto molhado. Os dois são escolha de conforto, não de proteção.',
+          '<strong>Descartável:</strong> só para produto e tempo de contato que o CA dela declara. Na limpeza do dia a dia, a descartável fina é exatamente a troca que este texto explica abaixo.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O passo a passo para escolher pela ficha do produto está em <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">como escolher luva pelo produto químico</a>, e o conjunto de EPI de quem limpa em <a href="/para-seu-trabalho/limpeza-e-conservacao/">EPI para limpeza e conservação</a>.',
       },
       {
         tipo: 'h2',
@@ -1582,6 +1647,14 @@ export const ARTIGOS: Artigo[] = [
         url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
       },
       {
+        titulo: 'Anvisa — RDC nº 547/2021, requisitos mínimos para luvas cirúrgicas e para procedimento não cirúrgico (cópia da SES-SP)',
+        url: 'https://ses.sp.bvs.br/wp-content/uploads/2021/08/U_RS-MS-ANVISA-RDC-547_300821.pdf',
+      },
+      {
+        titulo: 'Coren-BA — Parecer técnico 003: utilização da luva de vinil em unidade básica de saúde',
+        url: 'https://www.coren-ba.gov.br/wp-content/uploads/2016/06/PT-003-UTILIZAÇÃO-DA-LUVA-DE-VINIL-EM-UNIDADE-BÁSICA-DE-SAÚDE.pdf',
+      },
+      {
         titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
         url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
       },
@@ -1600,9 +1673,24 @@ export const ARTIGOS: Artigo[] = [
           'Para limpeza com produto químico, não. A luva de procedimento é fina, descartável e feita para contato biológico de curta duração. Saneante concentrado atravessa ou degrada esse material antes do fim da tarefa.',
       },
       {
+        pergunta: 'Qual a diferença entre luva estéril e luva de procedimento?',
+        resposta:
+          'A estéril, ou cirúrgica, é esterilizada, vem aos pares e tem formato para cada mão; é a do procedimento invasivo e do campo estéril. A de procedimento não é estéril, serve nas duas mãos e é usada no contato com sangue, secreção ou material contaminado em procedimentos não invasivos.',
+      },
+      {
+        pergunta: 'Qual luva se usa na enfermagem?',
+        resposta:
+          'As duas, em momentos diferentes: luva de procedimento na maior parte da rotina, como higiene, curativo simples e coleta, e luva estéril nos procedimentos invasivos. Para limpeza de superfície e manuseio de saneante, nenhuma delas: o caso é luva de proteção química.',
+      },
+      {
         pergunta: 'Luva descartável serve para produto químico?',
         resposta:
           'Depende do produto e do que consta no Certificado de Aprovação da luva. Existem descartáveis com resistência química declarada para situações específicas — o que não existe é descartável que sirva para qualquer produto.',
+      },
+      {
+        pergunta: 'Qual luva usar para limpar banheiro?',
+        resposta:
+          'Luva de proteção química com Certificado de Aprovação, escolhida pelo produto usado, e de cano longo, porque desincrustante, cloro e ácido respingam no antebraço. A luva fina descartável e a luva doméstica sem CA não servem para esse uso no trabalho.',
       },
       {
         pergunta: 'Qual luva usar na higienização hospitalar?',
