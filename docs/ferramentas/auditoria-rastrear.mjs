@@ -69,17 +69,30 @@ async function coletar(rota) {
   return d.internos.map((l) => l.href.split('#')[0]).filter(Boolean)
 }
 
+// Arquivo para baixar (PDF, planilha) não é página: abrir no navegador
+// dispara download e derruba o rastreio. Ele é conferido por requisição
+// direta, e o link quebrado para arquivo continua aparecendo no relatório.
+const ehArquivo = (rota) => /\.[a-z0-9]{2,5}$/i.test(rota.split('/').pop())
+const arquivos = {}
+async function conferirArquivo(rota, origem) {
+  if (arquivos[rota]) { arquivos[rota].origens.push(origem); return }
+  const r = await fetch(BASE + rota, { method: 'HEAD' })
+  arquivos[rota] = { rota, status: r.status, tipo: r.headers.get('content-type'), robots: r.headers.get('x-robots-tag'), origens: [origem] }
+}
+
 while (fila.length) {
   const rota = fila.shift()
   const saidas = await coletar(rota)
   for (const s of saidas) {
-    const norm = s.endsWith('/') || s.includes('.') ? s : s + '/'
+    if (ehArquivo(s)) { await conferirArquivo(s, rota); continue }
+    const norm = s.endsWith('/') ? s : s + '/'
     if (!prof.has(norm)) { prof.set(norm, prof.get(rota) + 1); fila.push(norm) }
   }
 }
 // páginas do sitemap não alcançadas por link
 for (const r of doSitemap) if (!paginas[r]) { prof.set(r, Infinity); await coletar(r) }
 
-fs.writeFileSync('auditoria/paginas.json', JSON.stringify({ paginas, sitemap: doSitemap }, null, 1))
+fs.writeFileSync('auditoria/paginas.json', JSON.stringify({ paginas, sitemap: doSitemap, arquivos }, null, 1))
 console.log('rastreadas:', Object.keys(paginas).length, '| sitemap:', doSitemap.length)
+for (const a of Object.values(arquivos)) console.log(`arquivo ${a.status} ${a.rota} (${a.tipo}${a.robots ? ', ' + a.robots : ''})`)
 await b.close()

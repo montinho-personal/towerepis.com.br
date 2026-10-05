@@ -1143,6 +1143,11 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
+          '<strong>Para baixar:</strong> <a href="/modelos/ficha-de-entrega-de-epi.pdf" download>modelo em PDF para imprimir</a>, numa folha A4, ou <a href="/modelos/ficha-de-entrega-de-epi.xlsx" download>planilha para editar no Excel</a>, com lista de motivos pronta. Os dois trazem o cabeçalho, o termo de recebimento e a tabela de entregas descritos abaixo, sem nenhum dado preenchido.',
+      },
+      {
+        tipo: 'p',
+        texto:
           '<strong>O cabeçalho</strong>, preenchido uma vez por trabalhador: nome, função, setor, data de admissão e, se fizer sentido, numeração de calçado e tamanho de luva e de roupa. <strong>A tabela de entregas</strong>, com uma linha por item a cada entrega. Uma linha preenchida fica assim:',
       },
       {

@@ -28,6 +28,14 @@ para comparação depois de cada lote.
 - `selo.py` — converte o content stream do `.ai` do logo em SVG, com formas e
   degradês. Ver `docs/04-design-system.md`.
 
+## Materiais para baixar
+
+- `gerar-modelo-ficha-epi.py` — gera `public/modelos/ficha-de-entrega-de-epi.pdf`
+  e `.xlsx`, o modelo para baixar do artigo da ficha. Lê o termo do próprio
+  artigo e o domínio de `src/config/empresa.ts`: mudou o termo, rodar de novo.
+  Precisa de `pip install openpyxl reportlab`. Os arquivos saem com
+  `X-Robots-Tag: noindex` (ver `next.config.ts`).
+
 ## Auditoria de title/description e CTR
 
 ```
