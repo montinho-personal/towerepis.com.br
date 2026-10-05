@@ -1897,8 +1897,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Composite e aço protegem os dedos do mesmo jeito pela norma. A escolha é pela atividade: risco elétrico, detector de metal, frio, peso na jornada e custo.',
     publicado: '2026-09-04',
-    atualizado: '2026-09-04',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-10-05',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Calçados',
     blocos: [
       {
@@ -1918,12 +1918,30 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'A ABNT NBR ISO 20345 define o calçado de segurança pela biqueira de proteção, com requisito de resistência a impacto de 200 joules e a compressão. O requisito é o mesmo para qualquer material. Uma biqueira de composite aprovada não é uma versão mais fraca da de aço: ela passou no mesmo ensaio.',
+          'A ABNT NBR ISO 20345 define o calçado de segurança pela biqueira de proteção, com requisito de resistência a impacto de 200 joules e a compressão de 15 quilonewtons. O requisito é o mesmo para qualquer material. Uma biqueira de composite aprovada não é uma versão mais fraca da de aço: ela passou no mesmo ensaio.',
       },
       {
         tipo: 'p',
         texto:
           'Isso significa que, se o Certificado de Aprovação do modelo é de calçado de segurança, a proteção dos dedos está resolvida — seja qual for o material. Tudo o que vem abaixo é sobre o que acontece <em>além</em> do impacto.',
+      },
+      {
+        tipo: 'h3',
+        texto: 'Biqueira aguenta quantos quilos?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A norma não fala em quilos, e sim em energia e força, mas dá para traduzir. Os 200 joules do impacto equivalem a um objeto de 20 kg caindo de pouco mais de 1 metro sobre a ponta do pé. Os 15 quilonewtons da compressão equivalem ao peso de cerca de 1.500 kg apoiado sobre ela. Os números são os mesmos para aço e para composite, e acima deles nenhuma biqueira tem proteção garantida.',
+      },
+      {
+        tipo: 'h3',
+        texto: 'O que é composite',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É o nome dado à biqueira de material não metálico, feita de compostos como fibras e resinas. Ela não é de plástico comum: para ser biqueira de proteção, passa pelo mesmo ensaio da de aço, e é por isso que costuma ser mais volumosa.',
       },
       {
         tipo: 'h2',
@@ -1994,6 +2012,15 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
+        texto: 'E a biqueira de PVC?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A dúvida aparece muito, e quase sempre mistura duas coisas. Bota de PVC é o material da bota, e ela pode vir com biqueira de aço, com biqueira de composite ou sem biqueira nenhuma. Já um "bico de PVC" ou de plástico, sem mais informação, costuma ser a biqueira de conformação, que dá forma à ponta e não é biqueira de proteção. A diferença não se vê por fora: só o Certificado de Aprovação diz se aquele modelo é calçado de segurança, e a distinção entre as categorias está em <a href="/conhecimento/calcado-ocupacional-ou-de-seguranca/">calçado ocupacional ou de segurança</a>.',
+      },
+      {
+        tipo: 'h2',
         texto: 'O que acontece depois da pancada',
       },
       {
@@ -2017,6 +2044,20 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
+        texto: 'A biqueira de aço foi proibida?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Não. A busca aparece com frequência, mas nenhuma norma proibiu a biqueira de aço no calçado de segurança: ela continua atendendo à mesma exigência de impacto e compressão que a de composite. O que mudou em 2026 foi outra coisa: desde 3 de fevereiro, o Certificado de Aprovação de calçado de segurança só é emitido ou renovado com certificação por organismo acreditado, pela <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2025/portaria-mte-no-122-altera-a-portaria-mtp-no-672_21.pdf" target="_blank" rel="noopener noreferrer">Portaria MTE nº 122/2025</a>. A regra vale para os dois materiais e muda a forma de certificar, não o que a biqueira precisa aguentar.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Restrição ao aço, quando existe, vem do local ou da atividade: linha com detector de metais, ou avaliação de riscos que pede calçado isolante. Nesses casos, a regra é daquele ambiente, e não do material.',
+      },
+      {
+        tipo: 'h2',
         texto: 'Como conferir qual é a biqueira',
       },
       {
@@ -2034,6 +2075,10 @@ export const ARTIGOS: Artigo[] = [
       {
         titulo: 'Requisitos para calçados de segurança e ocupacionais (ABNT NBR ISO 20345 e 20347) — Target Normas',
         url: 'https://www.normas.com.br/visualizar/artigo-tecnico/2532/os-requisitos-para-os-calcados-de-seguranca-e-ocupacionais',
+      },
+      {
+        titulo: 'Portaria MTE nº 122, de 29 de janeiro de 2025 — altera a Portaria MTP nº 672/2021 (certificação de calçados e luvas)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2025/portaria-mte-no-122-altera-a-portaria-mtp-no-672_21.pdf',
       },
       {
         titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
@@ -2061,6 +2106,16 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Biqueira de composite torna o calçado isolante elétrico?',
         resposta:
           'Não. O composite não conduz eletricidade, mas isolamento elétrico é propriedade do calçado inteiro, ensaiada e declarada no Certificado de Aprovação como requisito próprio. Se a atividade exige calçado isolante, é isso que precisa constar no CA.',
+      },
+      {
+        pergunta: 'Biqueira de composite aguenta quantos quilos?',
+        resposta:
+          'O mesmo que a de aço, porque o ensaio é o mesmo: 200 joules de impacto, o equivalente a 20 kg caindo de pouco mais de 1 metro, e 15 quilonewtons de compressão, o peso de cerca de 1.500 kg apoiado. A norma fala em energia e força, e a conversão em quilos é só para ter a ordem de grandeza.',
+      },
+      {
+        pergunta: 'É proibido usar biqueira de aço?',
+        resposta:
+          'Não existe proibição geral na norma de EPI. O que existe são locais onde o metal atrapalha, como linha com detector de metais, e atividades em que a avaliação de riscos pede outra coisa, como calçado isolante para eletricidade. Nesses casos a regra vem do local ou da avaliação, e a biqueira de composite resolve o detector, mas não torna o calçado isolante. O que mudou em 2026 foi a certificação exigida para emitir ou renovar o CA de calçado de segurança, igual para aço e composite.',
       },
       {
         pergunta: 'Qual biqueira passa no detector de metal?',
