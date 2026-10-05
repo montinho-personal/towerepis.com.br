@@ -2136,8 +2136,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Como levantar a numeração pessoa a pessoa, provar antes de fechar, montar a grade com reserva e registrar — para o pedido sair certo na primeira vez.',
     publicado: '2026-09-04',
-    atualizado: '2026-09-04',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-10-05',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Calçados',
     blocos: [
       {
@@ -2221,7 +2221,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Os nomes são de exemplo. A coluna "quem" não vai para o fornecedor — fica com você, porque é ela que resolve a entrega e a troca sem ninguém experimentar de novo.',
+          'Os nomes são de exemplo. A coluna "quem" não vai para o fornecedor — fica com você, porque é ela que resolve a entrega e a troca sem ninguém experimentar de novo. Para não fazer a conta à mão, a <a href="/ferramentas/grade-de-numeracao/">calculadora de grade da equipe</a> soma a lista, sugere a reserva e monta a mensagem do pedido.',
       },
       {
         tipo: 'h3',
@@ -2231,6 +2231,29 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'Reserva serve para admissão e para troca por dano. A regra que funciona é um par a mais nos números mais frequentes <em>da sua equipe</em> — os que a grade acima mostra —, e nenhum a mais nas pontas. Reserva "de um par de cada número" é a maneira mais cara de guardar calçado que ninguém vai usar.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quem fica entre dois números',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Calçado profissional vem em número inteiro, e é comum alguém dizer que usa "39/40". Essa pessoa prova os dois, com a meia de trabalho e de preferência no fim do turno, e fica com o que não encosta o dedo na biqueira e não deixa o calcanhar subir ao andar. O número escolhido é o que vai para a lista, e não os dois.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'As pontas da grade pedem outro cuidado. Números muito pequenos e muito grandes costumam ter menos modelos disponíveis, e vale confirmar com o fornecedor antes de fechar o modelo da equipe inteira, para ninguém ficar de fora por falta do seu número.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'E as curvas prontas de tamanho?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Tabelas e respostas de busca mostram curvas com a porcentagem de pessoas em cada número. Elas descrevem a média de muita gente, e servem para quem abastece uma loja. Numa equipe de doze, uma pessoa a mais ou a menos num número muda a grade inteira, e a curva não sabe quantas mulheres há na equipe nem quem usa o 45. A grade da equipe vem da lista da equipe. O mesmo vale para a "grade fechada" do atacado, a caixa com 12 pares do mesmo modelo distribuídos em numeração baixa ou alta: ela é feita para abastecer vitrine de loja, e comprar EPI nesse formato garante sobra em uns números e falta em outros.',
       },
       {
         tipo: 'h2',
@@ -2287,6 +2310,16 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Dá para pedir orçamento sem a grade?',
         resposta:
           'Dá, e a resposta sai estimada. Com a grade preenchida, o preço e o prazo vêm já na primeira mensagem; sem ela, a troca costuma chegar junto com a entrega.',
+      },
+      {
+        pergunta: 'Quem usa 39/40 entra com qual número na grade?',
+        resposta:
+          'Com o número que servir na prova. A pessoa experimenta os dois com a meia de trabalho, de preferência no fim do turno, e fica com o que não encosta o dedo na biqueira e não deixa o calcanhar subir. Na grade entra um número só.',
+      },
+      {
+        pergunta: 'Como funciona a numeração dos calçados?',
+        resposta:
+          'No Brasil se usa a numeração brasileira, diferente da europeia e da americana. E mesmo dentro dela, o mesmo número calça diferente de um modelo para outro, porque cada fabricante tem a sua forma. Por isso a grade de uma equipe se confirma na prova do modelo escolhido, e não numa tabela.',
       },
       {
         pergunta: 'Preciso separar forma feminina na grade?',
