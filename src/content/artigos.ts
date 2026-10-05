@@ -1291,8 +1291,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Por que a biqueira não amacia, como saber se o problema é a numeração ou a forma do calçado, e quando insistir só piora. Sem truque caseiro.',
     publicado: '2026-09-03',
-    atualizado: '2026-09-03',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-10-05',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Calçados',
     blocos: [
       {
@@ -1327,6 +1327,29 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
+        texto: 'Botina machucando: o que fazer hoje',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A tabela diz a causa. Enquanto a troca não acontece, ou quando a folga é pequena, dá para reduzir o atrito no mesmo dia:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Calcanhar:</strong> amarre até o último ilhós e use a laçada de travamento, passando o cadarço pelo laço do lado oposto antes de dar o nó. Ela segura o calcanhar no fundo do calçado. Meia que não escorrega e um protetor de calcanhar ajudam a bolha a não abrir de novo, mas, se o calcanhar continua subindo, a botina está grande.',
+          '<strong>Dedos:</strong> confira se o dedo mais longo, que muitas vezes é o segundo, encosta na biqueira com você em pé. Se encosta, não há ajuste que resolva. Se o aperto é em cima dos dedos, afrouxar o cadarço na parte da frente e apertar só no tornozelo alivia.',
+          '<strong>Sola do pé:</strong> ardência no fim do turno costuma ser palmilha achatada ou falta de amortecimento para muitas horas em pé, e o caminho está em <a href="/conhecimento/calcado-para-quem-trabalha-em-pe-o-dia-todo/">calçado para quem trabalha em pé o dia todo</a>.',
+          '<strong>Um ponto só, sempre no mesmo lugar:</strong> passe a mão por dentro do calçado. Costura saliente, rebarba ou peça solta é defeito de fabricação, e o caso é troca com o fornecedor, não amaciar.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Bolha que já abriu precisa ficar limpa e protegida até fechar. Ferida que não cicatriza, sobretudo em quem tem diabetes, é assunto de atendimento de saúde, não de ajuste de calçado. O mesmo vale para dor que continua depois que o calçado foi corrigido, como a da planta do pé ou a do calcanhar ao levantar: condições como fascite plantar e metatarsalgia têm diagnóstico próprio, e o calçado ajuda mas não trata.',
+      },
+      {
+        tipo: 'h2',
         texto: 'A numeração de calçado profissional não é a do tênis',
       },
       {
@@ -1341,6 +1364,20 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
+        texto: 'Como amaciar a botina: a parte que amacia',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O cabedal de couro cede um pouco nas primeiras semanas, e isso dá para ajudar sem estragar o par. Use a botina por períodos curtos nos primeiros dias, com a meia de trabalho, e aumente o tempo aos poucos. Caminhar e flexionar o pé dentro dela é o que molda o couro onde ele dobra, que é exatamente o que as dicas de meia grossa fazem. Uma ou duas horas por dia na primeira semana, em casa ou em tarefa leve, costuma ser o suficiente para saber se o par vai assentar ou não.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para o couro em si, o que serve é produto próprio para couro, no tipo de couro do seu calçado e seguindo a orientação do fabricante. Ele mantém o couro flexível e evita trinca, mas não alarga. Nobuck e camurça pedem outro cuidado, e o detalhe está em <a href="/conhecimento/como-limpar-e-conservar-calcado-de-seguranca/">como limpar e conservar calçado de segurança</a>. O que nada disso alcança é a biqueira, o chamado bico de ferro, a forma e o solado. E material sintético cede bem menos que couro, então não conte com amaciar uma botina sintética que já começou apertada.',
+      },
+      {
+        tipo: 'h2',
         texto: 'O que os truques da internet fazem com o calçado',
       },
       {
@@ -1351,7 +1388,16 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'E nada disso muda a biqueira. No fim, o par volta a machucar com uma vida útil menor do que tinha.',
+          'O álcool borrifado por dentro, que também circula como truque, segue a mesma lógica: umedece o couro para ele ceder e evapora levando junto a oleosidade, o que pode manchar e ressecar o couro tratado de um calçado de trabalho. E nada disso muda a biqueira. No fim, o par volta a machucar com uma vida útil menor do que tinha.',
+      },
+      {
+        tipo: 'h3',
+        texto: 'E a palmilha de gel ou ortopédica?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Palmilha extra ocupa espaço. Dentro de uma botina que já está justa, a de gel aperta mais, em vez de aliviar. E a palmilha de conforto faz parte do calçado que foi ensaiado: a própria norma de calçado de segurança tem regras para palmilhas personalizadas. Quando há indicação de palmilha ortopédica por profissional de saúde, vale perguntar ao fabricante se o modelo aceita a troca antes de colocá-la.',
       },
       {
         tipo: 'h2',
@@ -1414,6 +1460,21 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Devo comprar um número maior para não apertar?',
         resposta:
           'Não como regra. O caminho é provar com a meia de trabalho, de preferência no fim de um turno. Calçado folgado sobe e desce ao andar e machuca o calcanhar, que é trocar um problema por outro.',
+      },
+      {
+        pergunta: 'Como fazer a botina parar de machucar o calcanhar?',
+        resposta:
+          'Amarrando até o último ilhós com a laçada de travamento, que segura o calcanhar no fundo do calçado, e usando meia que não escorrega. Se mesmo assim o calcanhar sobe e desce ao andar, a botina está grande, e a solução é a numeração certa.',
+      },
+      {
+        pergunta: 'O que é bom para amaciar o couro da botina?',
+        resposta:
+          'Uso em períodos curtos nos primeiros dias, com a meia de trabalho, e produto próprio para o tipo de couro do calçado, conforme o fabricante. Isso deixa o couro flexível. Secador, água e amaciante de roupa ressecam o couro e soltam o solado, e nenhum método amacia a biqueira.',
+      },
+      {
+        pergunta: 'Que tipo de bota não machuca o pé?',
+        resposta:
+          'A que tem a numeração certa, provada com a meia de trabalho, e a forma compatível com o pé: largura, altura do peito do pé e espaço na biqueira. E a da categoria certa para a atividade, porque biqueira onde não há risco de impacto é peso que cansa o dia inteiro.',
       },
       {
         pergunta: 'Quanto tempo leva para a botina assentar no pé?',
