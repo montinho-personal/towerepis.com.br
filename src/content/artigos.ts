@@ -2565,8 +2565,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'O método que parte da ficha do produto químico, não do material da luva: concentração, tempo de contato, permeação e o que conferir no CA antes de comprar.',
     publicado: '2026-09-04',
-    atualizado: '2026-09-04',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-10-06',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Proteção',
     blocos: [
       {
@@ -2611,7 +2611,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Todo produto químico usado no trabalho deve ter uma FISPQ — Ficha de Informações de Segurança de Produtos Químicos, fornecida pelo fabricante. Ela tem uma seção específica de controle de exposição e proteção individual, e é ali que estão as recomendações de EPI para aquele produto. Se a empresa não tem a FISPQ dos produtos que usa, esse é o primeiro problema a resolver. E é o fornecedor do produto que deve entregá-la.',
+          'Todo produto químico usado no trabalho deve ter uma FISPQ — Ficha de Informações de Segurança de Produtos Químicos, fornecida pelo fabricante. Desde a revisão da ABNT NBR 14725 de 2023, o documento passou a se chamar FDS, Ficha com Dados de Segurança, e as duas siglas vão conviver por um tempo nas embalagens e nos fornecedores. Ela tem uma seção específica de controle de exposição e proteção individual, e é ali que estão as recomendações de EPI para aquele produto. Se a empresa não tem a FISPQ dos produtos que usa, esse é o primeiro problema a resolver. E é o fornecedor do produto que deve entregá-la.',
       },
       {
         tipo: 'h3',
@@ -2666,6 +2666,47 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
+        texto: 'Nitrílica, látex, PVC: qual luva para qual produto',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'As buscas pedem uma regra curta, do tipo nitrílica para óleo e solvente, PVC para ácido, látex para contato leve. Como ponto de partida, essas associações aparecem nas tabelas dos fabricantes. Como decisão, não bastam: há solvente que atravessa nitrílica rápido, e a concentração do ácido muda a resposta do PVC. Por isso o passo 3 do método existe. O comportamento geral de cada material está em <a href="/conhecimento/tipos-de-luva-qual-material-escolher/">qual material de luva escolher</a>.',
+      },
+      {
+        tipo: 'h3',
+        texto: 'A cor da luva não diz o material',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Luva verde, preta, azul ou amarela é escolha do fabricante, e a mesma cor existe em materiais diferentes. O mesmo vale para "emborrachada": o termo cobre desde a luva inteira de borracha até a luva de tecido com banho só na palma, que deixa o dorso da mão exposto e não é barreira química. O que identifica a luva é o material e o uso aprovado escritos no CA.',
+      },
+      {
+        tipo: 'h3',
+        texto: '"Luva química" também é nome de creme',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Parte das buscas por luva química é sobre outra coisa: o creme protetor de segurança, aplicado na pele, que o mercado chama de luva química ou luva invisível. Ele é EPI, com Certificado de Aprovação, e entrou na lista da NR-6 nos anos 1990, pela <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/1994/portaria_26_ca_para_cremes.pdf" target="_blank" rel="noopener noreferrer">Portaria SSST nº 26/1994</a>. Os cremes são divididos em grupos pelo tipo de agente, como água-resistente para produto à base de água e óleo-resistente para óleo e solvente, e o grupo consta do CA.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O creme serve onde a luva atrapalha a tarefa ou em contato leve e eventual. Ele não substitui a luva química em imersão, em produto corrosivo ou em contato prolongado, e a escolha entre um e outro sai da mesma ficha de segurança do produto.',
+      },
+      {
+        tipo: 'h3',
+        texto: 'Produto corrosivo: ácido e base',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Corrosivo é o produto que ataca a pele em contato direto, como os ácidos e as bases fortes de desincrustante, limpeza pesada e tratamento de superfície. Aqui o tempo de resistência da tabela e o punho pesam mais que em qualquer outro caso: o respingo chega ao antebraço, e luva curta deixa a pele descoberta justamente onde o produto escorre. A luva sozinha não fecha a proteção, como explica a seção abaixo.',
+      },
+      {
+        tipo: 'h2',
         texto: 'Onde a escolha costuma falhar',
       },
       {
@@ -2677,6 +2718,24 @@ export const ARTIGOS: Artigo[] = [
           '<strong>Guardar molhada por dentro.</strong> Vira exposição contínua da pele no uso seguinte.',
           '<strong>Uma luva para a operação inteira.</strong> Tarefas diferentes, com produtos diferentes, quase nunca se resolvem com um modelo só.',
           '<strong>Trocar de marca sem reconferir.</strong> Mesmo material, fabricante diferente, tabela de resistência diferente.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Os outros EPIs de quem trabalha com produto químico',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A mesma seção da FDS que indica a luva indica o resto do conjunto, e ele costuma ter mais de uma peça:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Olhos e rosto:</strong> óculos de ampla visão contra respingo, e protetor facial por cima quando há risco de jato, como na diluição. Detalhes em <a href="/protecao/olhos-e-face/">proteção dos olhos e da face</a>.',
+          '<strong>Corpo:</strong> avental ou vestimenta impermeável ao produto, conforme a quantidade manuseada, em <a href="/protecao/corpo/">vestimentas de proteção</a>.',
+          '<strong>Respiração:</strong> respirador com filtro químico quando há vapor ou gás. Máscara descartável de partícula não serve, como explica <a href="/conhecimento/mascara-descartavel-nao-protege-de-vapor-quimico/">PFF2 e produto químico</a>.',
+          '<strong>Pés:</strong> calçado ou bota impermeável onde o produto chega ao chão.',
         ],
       },
       {
@@ -2713,6 +2772,10 @@ export const ARTIGOS: Artigo[] = [
         url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
       },
       {
+        titulo: 'Portaria SSST nº 26/1994 — Certificado de Aprovação para cremes protetores (PDF oficial)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/1994/portaria_26_ca_para_cremes.pdf',
+      },
+      {
         titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
         url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
       },
@@ -2734,6 +2797,16 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Como sei por quanto tempo a luva aguenta o produto?',
         resposta:
           'Na tabela de resistência química do fabricante, que informa o tempo estimado até a substância atravessar aquele material. Se esse tempo é menor que a exposição real da tarefa, a luva está errada para o caso — mesmo sendo uma boa luva.',
+      },
+      {
+        pergunta: 'Quais EPIs usar para trabalhar com produtos químicos?',
+        resposta:
+          'Os que a ficha de segurança do produto indica na seção de controle de exposição. Costuma ser luva química escolhida pelo produto, óculos de ampla visão ou protetor facial, avental ou vestimenta impermeável e, havendo vapor ou gás, respirador com filtro químico.',
+      },
+      {
+        pergunta: 'Luva verde ou preta é luva química?',
+        resposta:
+          'A cor não diz. A mesma cor existe em materiais diferentes, e luva de tecido com banho só na palma não é barreira química. O que identifica a luva para produto químico é o material e o uso aprovado que constam no Certificado de Aprovação.',
       },
       {
         pergunta: 'Posso reutilizar luva que já teve contato com produto químico?',
