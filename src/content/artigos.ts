@@ -2340,8 +2340,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'A norma não dá prazo — dá condição. Os sinais que pedem troca, por que a validade do CA não é a vida útil do par e como incluir a conferência na rotina.',
     publicado: '2026-09-04',
-    atualizado: '2026-09-04',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-10-06',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Calçados',
     blocos: [
       {
@@ -2367,6 +2367,39 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'Por isso a resposta útil não é um número de meses: é uma lista do que olhar, e a disciplina de olhar.',
+      },
+      {
+        tipo: 'h3',
+        texto: 'E as tabelas de tempo de uso de EPI?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É o prazo que mais circula, inclusive nas respostas de busca, e ele não vem de norma: é uma média de mercado, que mistura obra com escritório. Serve como ordem de grandeza e atrapalha como regra. Trocar todo mundo em seis meses joga fora par bom; esperar um ano deixa no pé par que já perdeu o solado no terceiro mês. O prazo que vale para a sua equipe é o que a sua própria ficha de entrega mostra, e a conta está em <a href="/conhecimento/quantos-pares-por-ano-calcular-a-reposicao/">quantos pares por ano</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O mesmo vale para as tabelas de "tempo de uso de EPI" ou "validade de EPIs" que circulam com ano no título, do tipo botina 6 meses, capacete 1 ano. Não há tabela oficial do Ministério do Trabalho com prazo por equipamento: essas listas são referências internas de empresas e consultorias, e podem servir de ponto de partida para planejar compra, nunca de critério para tirar ou manter um par no pé.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O que pode existir é a referência do próprio fabricante. Alguns indicam, na embalagem ou no manual do modelo, um prazo de durabilidade, como dois anos. Ele funciona como limite: vale seguir, e a condição do par continua mandando antes. Um calçado com solado liso no oitavo mês sai de uso, mesmo que o fabricante fale em dois anos.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Qual NR fala sobre calçados',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A regra geral é a NR-6, que trata de todo EPI: fornecer adequado ao risco, em perfeito estado, e substituir quando danificado. O que o calçado precisa aguentar está nas normas técnicas, a ABNT NBR ISO 20345 para o de segurança e a 20347 para o ocupacional, explicadas em <a href="/conhecimento/calcado-ocupacional-ou-de-seguranca/">NBR ISO 20345 e 20347</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Normas de setor somam regras. A que mais aparece é a NR-32, dos serviços de saúde: o item 32.2.4.5 determina que o empregador vede o uso de calçados abertos a quem está exposto a agente biológico. Ela não fixa prazo de troca, e a lógica continua a mesma: calçado fechado, íntegro e em condição de proteger. O conjunto de quem trabalha na saúde está em <a href="/para-seu-trabalho/enfermagem-e-saude/">EPI para enfermagem e saúde</a>.',
       },
       {
         tipo: 'h2',
@@ -2492,6 +2525,21 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Calçado de segurança tem prazo de validade?',
         resposta:
           'Não existe prazo fixo em norma. A substituição é por condição: a norma exige o EPI em perfeito estado de conservação e funcionamento, e a troca imediata quando ele estiver danificado.',
+      },
+      {
+        pergunta: 'Qual é o prazo de troca de botina de segurança?',
+        resposta:
+          'Não há prazo em norma. A troca é imediata quando aparece dano, como solado liso ou descolando, biqueira à mostra, rasgo ou impacto forte, e programada quando o conforto e o amortecimento acabam. Os "6 meses a 1 ano" que circulam são média de mercado, não regra.',
+      },
+      {
+        pergunta: 'Existe tabela oficial de tempo de uso de EPI?',
+        resposta:
+          'Não. As tabelas que circulam, com botina em 6 meses e capacete em 1 ano, são referências de empresas e consultorias, não do Ministério do Trabalho. O que vale é o estado do equipamento e, quando houver, o prazo indicado pelo fabricante do modelo.',
+      },
+      {
+        pergunta: 'O que a NR-32 fala sobre calçados?',
+        resposta:
+          'Que o empregador deve vedar o uso de calçados abertos a quem está exposto a agente biológico, no item 32.2.4.5. Ela não dá prazo de troca: vale a regra geral da NR-6, de manter o calçado íntegro e substituí-lo quando danificado.',
       },
       {
         pergunta: 'Quem decide a hora da troca?',
