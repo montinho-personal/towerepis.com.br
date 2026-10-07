@@ -3455,8 +3455,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'O que o vencimento do CA significa na compra, na prateleira e no par que já está no pé de alguém. Com a consulta oficial e o que fazer em cada situação.',
     publicado: '2026-09-04',
-    atualizado: '2026-09-04',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-10-07',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Normas',
     blocos: [
       {
@@ -3467,7 +3467,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Esta é uma pergunta que parece ter resposta de sim ou não e não tem. Boa parte do que se lê por aí escolhe um dos dois extremos: ou "vencido não pode, recolhe tudo hoje", ou "o CA é do modelo, então em uso não muda nada". O primeiro gera descarte de equipamento íntegro; o segundo trata como resolvido um ponto que a norma simplesmente não enfrenta.',
+          'Esta é uma pergunta que parece ter resposta de sim ou não e não tem. Boa parte do que se lê por aí escolhe um dos dois extremos: ou "vencido não pode, recolhe tudo hoje", ou "o CA é do modelo, então em uso não muda nada". O primeiro gera descarte de equipamento íntegro; o segundo esquece que o item em uso continua tendo de estar íntegro e dentro da vida útil indicada pelo fabricante.',
       },
       {
         tipo: 'h2',
@@ -3490,7 +3490,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'EPI só pode ser posto à venda ou utilizado com a indicação do Certificado de Aprovação. Isso vale para quem vende e para quem compra e fornece à equipe. Na prática: <strong>item que ainda vai ser adquirido, recebido ou entregue precisa ter certificado vigente</strong>. Aqui não há leitura alternativa, e é o ponto que mais aparece em fiscalização, porque é o mais fácil de verificar — basta a nota, a ficha e a consulta.',
+          'EPI só pode ser posto à venda ou utilizado com a indicação do Certificado de Aprovação. Isso vale para quem vende e para quem compra e fornece à equipe. Na prática: <strong>item que ainda vai ser comprado precisa ter certificado vigente na data da compra</strong>. Aqui não há leitura alternativa, e é o ponto que mais aparece em fiscalização, porque é o mais fácil de verificar — basta a nota, a ficha e a consulta.',
       },
       {
         tipo: 'h2',
@@ -3504,12 +3504,35 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Vale dizer com clareza o que isso é e o que não é. <strong>Não existe na norma um dispositivo que autorize expressamente seguir usando o que já foi entregue.</strong> O que existe é ausência de regra mandando recolher. E ausência de proibição não é a mesma coisa que permissão escrita. Por isso a resposta honesta é que o vencimento do CA não funciona como gatilho de recolhimento imediato, e não que "pode usar até acabar".',
+          'A própria NR-6 não trata do item já comprado quando o CA vence, mas o Ministério do Trabalho tratou, numa orientação técnica: a <a href="https://ses.saude.sp.gov.br/resources/vetores/programas/arquivos-seguranca-do-trabalho/1-instrucoesnormativasenr/notatecnican146-validadedoepi2.docx" target="_blank" rel="noopener noreferrer">Nota Técnica nº 146/2015</a>. Segundo ela, depois que o CA vence ficam proibidas a fabricação e a comercialização de novos lotes com aquela marcação. Já o uso do EPI comercializado durante a validade do CA não fica proibido, porque a certificação era válida quando ele foi comprado, e a referência passa a ser a validade e a vida útil indicadas pelo fabricante, na embalagem e no manual.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Isso não quer dizer "pode usar até acabar". A Nota Técnica põe o prazo do fabricante no lugar do prazo do CA, e a NR-6 continua exigindo o equipamento íntegro e adequado ao risco. É por isso que o vencimento do CA não funciona como gatilho de recolhimento, e o estado do item continua mandando.',
       },
       {
         tipo: 'p',
         texto:
           'O que costuma decidir a questão, quando ela é levantada, é outro dado: se o certificado estava vigente no momento da compra e da entrega. É esse registro que mostra que a empresa forneceu equipamento aprovado. E é ele que a <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega</a> guarda, quando traz o número do CA e a data.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Como saber se o CA está vencido',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Pela consulta pública do sistema CAEPI, com o número marcado na peça. O registro mostra a validade e a situação do certificado, que pode aparecer como válido, vencido, suspenso ou cancelado, e o passo a passo está em <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">o que é o CA e como consultar</a>. Listas de "CAs vencidos do mês" em outros sites podem ajudar a encontrar o assunto, mas a situação de um CA específico se confirma na consulta oficial.',
+      },
+      {
+        tipo: 'h3',
+        texto: 'Quem renova o CA',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem pede e renova o certificado é o fabricante ou o importador do EPI, não a empresa que compra. Para quem compra, o caminho é perguntar ao fornecedor se o modelo foi renovado ou qual o substitui. Desde fevereiro de 2026, a emissão e a renovação de CA de calçado e de luva de segurança dependem de certificação por organismo acreditado, pela Portaria MTE nº 122/2025, o que pode fazer alguns modelos saírem de linha.',
       },
       {
         tipo: 'h2',
@@ -3527,6 +3550,20 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
+        texto: 'CA vencido dá multa?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Pode dar, e o risco está do lado de quem vende e de quem fornece sem a condição certa. Vender ou entregar como novo um EPI comprado depois do vencimento do CA é irregular. Já o item comprado na vigência, íntegro e dentro da validade do fabricante, não é infração pela data do CA, e o que a empresa precisa ter para mostrar isso é a nota da compra e a ficha de entrega com o número do CA.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O valor de multa trabalhista não é tabelado por item: a NR-28 gradua a penalidade pela gravidade da infração e pelo número de empregados. Por isso os valores que circulam nas buscas, com faixas em reais, não servem para prever o caso de uma empresa específica.',
+      },
+      {
+        tipo: 'h2',
         texto: 'O erro na direção contrária',
       },
       {
@@ -3540,7 +3577,7 @@ export const ARTIGOS: Artigo[] = [
         linhas: [
           ['CA vigente, item íntegro', 'Modelo aprovado e equipamento em condições', 'Nada — é o estado esperado'],
           ['CA vigente, item gasto ou danificado', 'A aprovação é do modelo; este exemplar já não cumpre', 'Substituir pelo estado'],
-          ['CA vencido, item ainda em estoque', 'Não pode ser fornecido nesse estado', 'Consultar a situação e falar com o fornecedor antes de entregar'],
+          ['CA vencido, item comprado na vigência e ainda em estoque', 'Pela Nota Técnica 146/2015, o uso do que foi comprado na vigência não fica proibido', 'Conferir a validade do fabricante e o estado antes de entregar, e guardar a nota da compra'],
           ['CA vencido, item em uso e íntegro', 'Não é gatilho de recolhimento, é aviso de reposição', 'Conferir se houve renovação e programar a substituição do modelo'],
           ['CA vencido e item gasto', 'As duas razões apontam para o mesmo lado', 'Substituir'],
         ],
@@ -3552,6 +3589,14 @@ export const ARTIGOS: Artigo[] = [
       },
     ],
     fontes: [
+      {
+        titulo: 'Nota Técnica nº 146/2015/CGNOR/DSST/SIT — validade do EPI e do CA (cópia da Secretaria da Saúde de SP)',
+        url: 'https://ses.saude.sp.gov.br/resources/vetores/programas/arquivos-seguranca-do-trabalho/1-instrucoesnormativasenr/notatecnican146-validadedoepi2.docx',
+      },
+      {
+        titulo: 'Portaria MTE nº 122/2025 — altera a Portaria MTP nº 672/2021 (certificação de calçados e luvas)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2025/portaria-mte-no-122-altera-a-portaria-mtp-no-672_21.pdf',
+      },
       {
         titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
         url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
@@ -3575,7 +3620,22 @@ export const ARTIGOS: Artigo[] = [
       {
         pergunta: 'Dá para comprar EPI com o CA vencido?',
         resposta:
-          'Não. A NR-6 condiciona a venda e o fornecimento de EPI à indicação de Certificado de Aprovação, então item sem certificado vigente não pode ser adquirido nem entregue à equipe — mesmo que seja o mesmo modelo que a empresa já usa há anos.',
+          'Não. A NR-6 condiciona a venda e o fornecimento de EPI à indicação de Certificado de Aprovação, então item sem certificado vigente na data da compra não pode ser adquirido, mesmo que seja o mesmo modelo que a empresa já usa há anos.',
+      },
+      {
+        pergunta: 'EPI comprado antes do vencimento do CA pode ser usado?',
+        resposta:
+          'Segundo a Nota Técnica nº 146/2015 do Ministério do Trabalho, o uso do EPI comercializado durante a validade do CA não fica proibido. A partir daí vale a validade indicada pelo fabricante e, sempre, o estado do equipamento: íntegro e adequado ao risco.',
+      },
+      {
+        pergunta: 'Quem renova o CA vencido?',
+        resposta:
+          'O fabricante ou o importador do EPI, que é quem detém o certificado. A empresa que compra não renova CA; o que ela faz é consultar a situação e perguntar ao fornecedor se o modelo foi renovado ou qual o substitui.',
+      },
+      {
+        pergunta: 'Usar EPI com CA vencido dá multa?',
+        resposta:
+          'Se o item foi comprado enquanto o CA era válido, está íntegro e dentro da validade do fabricante, a data do CA não é a infração. O irregular é comprar, vender ou fornecer como novo depois do vencimento. Quando há multa, o valor é graduado pela NR-28, conforme a gravidade e o número de empregados.',
       },
       {
         pergunta: 'Um certificado vencido pode voltar a ficar válido?',
