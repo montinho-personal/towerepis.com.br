@@ -2827,8 +2827,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Quantos pares de calçado por ano para a equipe: a conta tem três parcelas. Como tirar o número do seu histórico e o que fazer no primeiro ano.',
     publicado: '2026-09-04',
-    atualizado: '2026-09-04',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-10-07',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Calçados',
     blocos: [
       {
@@ -2857,6 +2857,15 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
+        texto: 'O que a lei define, e o que ela não define',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Nenhuma lei fixa quantos pares por ano. O artigo 166 da CLT obriga a empresa a fornecer o EPI gratuitamente, adequado ao risco e em perfeito estado de conservação e funcionamento, e a <a href="/conhecimento/nr-6-o-que-a-empresa-precisa-saber/">NR-6</a> manda substituir imediatamente quando ele é danificado ou extraviado. Isso define a obrigação pela condição do par: se o calçado acabou no quarto mês, o segundo par é devido no quarto mês, e se dura dois anos, não há segundo par a dar no primeiro. O custo é sempre da empresa, como explica <a href="/conhecimento/empresa-pode-descontar-epi-do-salario/">pode descontar EPI do salário</a>.',
+      },
+      {
+        tipo: 'h2',
         texto: 'A conta tem três parcelas, não uma',
       },
       {
@@ -2876,7 +2885,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Somadas por função, e não pela empresa inteira, as três dão o número do ano. Somar pela empresa inteira devolve uma média que não descreve ninguém.',
+          'Somadas por função, e não pela empresa inteira, as três dão o número do ano. Somar pela empresa inteira devolve uma média que não descreve ninguém. A mesma conta vale para qualquer EPI de reposição, como luva, protetor auricular e óculos: o que muda é a vida útil de cada item, e não a lógica.',
       },
       {
         tipo: 'h2',
@@ -2920,12 +2929,26 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Aí a estimativa é inevitável. E o jeito de errar menos é começar pela função mais exigente e não pela média. Estime a reposição das funções de campo separadamente das administrativas, deixe a reserva calculada sobre as primeiras, e trate o primeiro ano como o ano de levantar o dado, não de acertar o número.',
+          'Aí a estimativa é inevitável. As médias que circulam no mercado, de dois pares por ano em uso pesado como obra e um par em uso leve, servem como ponto de partida, desde que tratadas como chute educado e não como meta. E o jeito de errar menos é começar pela função mais exigente e não pela média. Estime a reposição das funções de campo separadamente das administrativas, deixe a reserva calculada sobre as primeiras, e trate o primeiro ano como o ano de levantar o dado, não de acertar o número.',
       },
       {
         tipo: 'p',
         texto:
           'Isso significa registrar cada entrega com data e motivo desde o primeiro par. No ano seguinte, a conta deixa de ser estimativa.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Dois pares em rodízio',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Onde o calçado molha ou a pessoa sua muito, ter dois pares e alternar entre um dia e outro costuma render mais do que comprar um par de cada vez. Cada par tem um turno inteiro para secar, e é a umidade que ataca forro, costura e adesivo, como explica <a href="/conhecimento/como-limpar-e-conservar-calcado-de-seguranca/">como limpar e conservar calçado de segurança</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na conta do ano, o rodízio adianta a compra, porque a pessoa recebe dois pares de uma vez, e tende a espaçar as seguintes. Só a ficha de entrega dos meses seguintes mostra se compensou na sua operação.',
       },
       {
         tipo: 'h2',
@@ -2939,7 +2962,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          '<strong>Reserva genérica.</strong> Guardar um par de cada número parece prudente e é a maneira mais cara de estocar calçado que ninguém vai usar. A reserva útil se concentra nos números mais frequentes da sua equipe, que a <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">grade de numeração</a> mostra de imediato.',
+          '<strong>Reserva genérica.</strong> Guardar um par de cada número parece prudente e é a maneira mais cara de estocar calçado que ninguém vai usar. A reserva útil se concentra nos números mais frequentes da sua equipe, que a <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">grade de numeração</a> mostra de imediato. As margens de 10% a 20% que aparecem nas respostas de busca são uma convenção de planejamento, não regra; a <a href="/ferramentas/grade-de-numeracao/">calculadora de grade</a> deixa você escolher a porcentagem e distribui a reserva pelos números mais usados.',
       },
       {
         tipo: 'h2',
@@ -2985,6 +3008,16 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Quantos pares de calçado por funcionário por ano?',
         resposta:
           'Não existe número universal, e quem dá um está chutando. Depende da atividade, do piso, da jornada e da conservação. O número da sua operação sai do histórico de entregas dos últimos doze meses, contado por função e não pela empresa inteira.',
+      },
+      {
+        pergunta: 'A empresa é obrigada a dar quantos pares de botina?',
+        resposta:
+          'Não há número fixado em lei. A CLT e a NR-6 obrigam a empresa a fornecer gratuitamente e a substituir quando o calçado estiver danificado ou sem condição de proteger. Se o par acaba em quatro meses, a troca é devida em quatro meses, sem limite anual.',
+      },
+      {
+        pergunta: 'Vale dar dois pares para usar em rodízio?',
+        resposta:
+          'Onde o calçado molha ou a pessoa sua muito, costuma valer: cada par seca um turno inteiro antes de voltar ao pé, e a umidade é o que mais encurta a vida do calçado. O histórico de entregas mostra depois se compensou.',
       },
       {
         pergunta: 'Vale comprar o ano inteiro de uma vez?',
