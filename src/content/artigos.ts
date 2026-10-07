@@ -3226,8 +3226,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'O que a NR-6 resolve sem margem, o que fica para o direito do trabalho e o que evita a discussão no dia a dia. Sem parecer jurídico, com a fonte oficial.',
     publicado: '2026-09-04',
-    atualizado: '2026-09-04',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-10-07',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Normas',
     blocos: [
       {
@@ -3289,6 +3289,42 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
+        texto: 'O que a CLT diz: artigos 166 e 462',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Três trechos da <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm" target="_blank" rel="noopener noreferrer">CLT</a> aparecem em toda resposta sobre o assunto, e vale lê-los na ordem:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Artigo 166:</strong> a empresa é obrigada a fornecer aos empregados, gratuitamente, EPI adequado ao risco e em perfeito estado de conservação e funcionamento. É a mesma regra da NR-6, agora na lei.',
+          '<strong>Artigo 462, caput:</strong> é vedado ao empregador fazer desconto no salário, salvo adiantamento, dispositivo de lei ou contrato coletivo.',
+          '<strong>Artigo 462, parágrafo 1º:</strong> em caso de dano causado pelo empregado, o desconto é lícito desde que essa possibilidade tenha sido acordada ou na ocorrência de dolo.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Lidos juntos, eles explicam por que as respostas de busca falam em "exceções". Desgaste pelo uso normal nunca é dano causado pelo empregado, e a troca por desgaste é sempre da empresa. O parágrafo 1º trata de outra situação, e a forma como os tribunais o aplicam, por exemplo se a cláusula assinada basta ou se é preciso provar culpa, é exatamente o tipo de pergunta que este texto deixa para o advogado.',
+      },
+      {
+        tipo: 'h3',
+        texto: 'Perda, roubo e devolução na rescisão',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'As três buscas mais comuns depois da primeira são sobre EPI perdido, EPI roubado e desconto na rescisão. As três caem na mesma regra do artigo 462, e nenhuma delas muda a obrigação de repor o equipamento de quem continua trabalhando. Para a devolução na saída da empresa, o que mais ajuda é ter registrado na <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega</a> o que foi entregue e o que precisa voltar, porque sem esse registro não há como saber o que ficou com a pessoa.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Uniforme comum é outro assunto: não é EPI, não tem Certificado de Aprovação e segue as regras de uniforme, e não as da NR-6.',
+      },
+      {
+        tipo: 'h2',
         texto: 'O que não muda em nenhuma hipótese',
       },
       {
@@ -3300,6 +3336,15 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'Essa é também a leitura prática de quem fiscaliza. Um trabalhador sem o EPI da função é constatável na hora; o motivo pelo qual ele está sem, não.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'E se o empregado não usar o EPI?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É a pergunta do outro lado, e a lei também responde. O artigo 158 da CLT diz que constitui ato faltoso do empregado a recusa injustificada ao uso do EPI fornecido pela empresa. A NR-6, por sua vez, coloca como dever da empresa exigir o uso. Na prática, as duas obrigações andam juntas: antes de qualquer medida disciplinar, conta ter orientado, treinado e registrado, e conta ter entregue um equipamento que a pessoa consegue usar. EPI que machuca ou sufoca é recusado por um motivo, e esse motivo resolve-se com especificação, não com advertência.',
       },
       {
         tipo: 'h2',
@@ -3350,6 +3395,10 @@ export const ARTIGOS: Artigo[] = [
         url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
       },
       {
+        titulo: 'CLT — Decreto-Lei nº 5.452/1943 (artigos 158, 166 e 462), Planalto',
+        url: 'https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm',
+      },
+      {
         titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
         url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
       },
@@ -3374,6 +3423,21 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Descontar muda a obrigação de substituir o item?',
         resposta:
           'Não. São decisões separadas e com urgências diferentes. Enquanto não houver reposição existe uma pessoa trabalhando sem a proteção que a atividade exige, e é isso que uma fiscalização constata na hora.',
+      },
+      {
+        pergunta: 'O que diz o artigo 462 da CLT sobre EPI?',
+        resposta:
+          'O artigo 462 proíbe descontos no salário, salvo adiantamento, lei ou contrato coletivo. O parágrafo 1º admite desconto por dano causado pelo empregado quando isso foi acordado ou quando houve dolo. Desgaste pelo uso normal não é dano, e o EPI segue gratuito pelo artigo 166.',
+      },
+      {
+        pergunta: 'O que acontece se o empregado se recusar a usar o EPI?',
+        resposta:
+          'Pelo artigo 158 da CLT, a recusa injustificada ao uso do EPI fornecido pela empresa é ato faltoso. Antes de qualquer medida, vale a empresa ter orientado, treinado e registrado o uso, e conferir se o equipamento entregue é adequado e confortável o bastante para ser usado.',
+      },
+      {
+        pergunta: 'De quem é a responsabilidade de higienizar o EPI?',
+        resposta:
+          'Das duas partes, em escalas diferentes. A NR-6 coloca a higienização e a manutenção periódica como obrigação da empresa, e a limpeza, a guarda e a conservação do dia a dia como responsabilidade de quem usa.',
       },
       {
         pergunta: 'O que evita a discussão sobre desconto no dia a dia?',
