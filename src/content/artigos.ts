@@ -3040,8 +3040,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'A ordem de investigação quando o calçado passa a escorregar: o que mudou, limpar a sola, o produto do piso, e só então o calçado. Com o que não resolve.',
     publicado: '2026-09-04',
-    atualizado: '2026-09-04',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-10-07',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Calçados',
     blocos: [
       {
@@ -3092,6 +3092,15 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
+        texto: 'E a botina nova que escorrega?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Nos primeiros dias, a sola nova pode estar com a superfície mais lisa do acabamento de fábrica ou com resíduo do processo. Lavar a sola com água, detergente e escova antes de começar a usar, e dar alguns dias de uso em piso seco, costuma resolver essa parte. Se depois de uma ou duas semanas a botina continua escorregando no piso do trabalho, já não é questão de amaciar a sola: é o caso do modelo errado desde o início, descrito mais abaixo.',
+      },
+      {
+        tipo: 'h2',
         texto: 'O produto de limpeza do piso é suspeito frequente',
       },
       {
@@ -3130,6 +3139,25 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'Spray, fita e produtos aplicados no solado também não. Nenhum deles é ensaiado com o calçado, nenhum consta no Certificado de Aprovação e todos alteram a superfície que foi aprovada. Se o solado não serve mais, o caminho é o par novo — improviso em EPI é risco somado ao risco.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'As dicas que aparecem primeiro na busca',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem pesquisa "botina escorregando" encontra três soluções no topo: lixar a sola, colar adesivo antiderrapante e fazer uma limpeza profunda. Só a terceira funciona num calçado de trabalho. Lixar remove o relevo, como explicado acima. O adesivo de sola ajuda em sapato do dia a dia, mas não é ensaiado, solta com água e gordura e altera o solado que foi aprovado no CA; o detalhe está em <a href="/conhecimento/solado-antiderrapante-o-que-significa/">adesivo antiderrapante e solado por metro funcionam?</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'As outras receitas que circulam seguem a mesma lógica de remendo. Spray fixador de cabelo deixa uma película pegajosa que some na primeira água, e película sobre a sola é justamente o que se quer tirar dela. Riscos de cola quente gastam em poucos dias e mudam a superfície de contato de forma irregular. E a meia-sola colada pelo sapateiro pode resolver um sapato social, mas num calçado com Certificado de Aprovação troca a parte que foi ensaiada por uma que não foi.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A limpeza é a dica certa, e é por isso que ela vem antes de tudo neste texto. Ela resolve sola entupida; não resolve sola gasta, e não transforma um modelo errado para o piso num modelo certo.',
       },
       {
         tipo: 'h2',
@@ -3175,7 +3203,12 @@ export const ARTIGOS: Artigo[] = [
       {
         pergunta: 'Calçado novo pode escorregar?',
         resposta:
-          'Pode, e nesse caso a queixa não é "passou a escorregar" e sim "sempre escorregou". Aponta para modelo incompatível com o piso ou com o contaminante do ambiente, e não para desgaste. A verificação é qual ensaio o modelo atende.',
+          'Pode, por dois motivos diferentes. Nos primeiros dias, a sola nova pode estar lisa de fábrica, e lavar a sola e usar alguns dias em piso seco resolve. Se continua depois de uma ou duas semanas, a queixa é "sempre escorregou". Aponta para modelo incompatível com o piso ou com o contaminante do ambiente, e não para desgaste. A verificação é qual ensaio o modelo atende.',
+      },
+      {
+        pergunta: 'Como fazer a botina parar de escorregar?',
+        resposta:
+          'Na ordem: limpar a sola com escova e detergente, conferir se o piso ficou com película de produto de limpeza e comparar o relevo da sola com o da lateral. Se o relevo está gasto, a solução é par novo; se escorrega desde o primeiro dia, é rever o modelo para o piso. Lixar e colar adesivo não resolvem em calçado de trabalho.',
       },
       {
         pergunta: 'Escorregar é sempre problema do calçado?',
