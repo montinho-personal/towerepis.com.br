@@ -1365,7 +1365,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Por isso a prova vale mais que o número. Quando a compra é para uma equipe, o caminho que funciona é experimentar antes de fechar a grade — um par de amostra por faixa de numeração evita a troca de vinte pares depois. O método inteiro está em <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">como definir a grade de numeração de uma equipe</a>.',
+          'Por isso a prova vale mais que o número. Para chegar ao número de partida sem chute, meça o pé e use a <a href="/ferramentas/tamanho-de-botina/">calculadora de tamanho de botina</a>. Quando a compra é para uma equipe, o caminho que funciona é experimentar antes de fechar a grade — um par de amostra por faixa de numeração evita a troca de vinte pares depois. O método inteiro está em <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">como definir a grade de numeração de uma equipe</a>.',
       },
       {
         tipo: 'h2',
@@ -2239,7 +2239,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Calçado profissional vem em número inteiro, e é comum alguém dizer que usa "39/40". Essa pessoa prova os dois, com a meia de trabalho e de preferência no fim do turno, e fica com o que não encosta o dedo na biqueira e não deixa o calcanhar subir ao andar. O número escolhido é o que vai para a lista, e não os dois.',
+          'Calçado profissional vem em número inteiro, e é comum alguém dizer que usa "39/40". Essa pessoa prova os dois, com a meia de trabalho e de preferência no fim do turno, e fica com o que não encosta o dedo na biqueira e não deixa o calcanhar subir ao andar. O número escolhido é o que vai para a lista, e não os dois. Para quem não sabe nem por onde começar, a <a href="/ferramentas/tamanho-de-botina/">calculadora de tamanho de botina</a> estima o número a partir do comprimento do pé em centímetros, e a prova confirma.',
       },
       {
         tipo: 'p',

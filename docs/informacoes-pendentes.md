@@ -60,23 +60,18 @@ agora existe documento. Continua valendo pedir o vetor original.
 
 ---
 
-### 3b. Calculadora de tamanho de botina — pronta, travada até conferir a fonte (24/9/2026)
-A ferramenta `/ferramentas/tamanho-de-botina/` está construída e testada, mas
-**não vai ao ar** até a referência de numeração ser conferida na fonte. O
-ambiente de trabalho bloqueou o acesso aos sites em 24/9/2026, e o número
-veio só do resumo do buscador. Para destravar:
+### 3b. Calculadora de tamanho de botina — no ar desde 8/10/2026
+A referência de numeração foi conferida no PDF do SENAI-RS em 8/10/2026
+(itens 4.2.1 e 4.2.1.3, p. 17; trecho registrado no campo `conferencia` de
+`src/content/tabelas-numeracao.json`), e as fontes do como medir (AAOS e
+TUC) também. A ferramenta foi liberada pelo cliente e está publicada.
+O que continua pendente:
 
-1. **Liberar a rede do ambiente** para `senairs.org.br`, `orthoinfo.aaos.org`,
-   `footcaremd.org` e `tuc.org.uk` — ou alguém abrir os PDFs e confirmar à
-   mão. O que precisa ser confirmado está no campo `pendencia` de
-   `src/content/tabelas-numeracao.json`.
-2. **Pedir à Bompel** a tabela de medidas dos modelos: comprimento do pé (ou
+1. **Pedir à Bompel** a tabela de medidas dos modelos: comprimento do pé (ou
    da palmilha) por número, e a numeração que cada linha fabrica. Com ela, a
    calculadora passa a dar o número "conforme a tabela do modelo". Sem ela,
    dá só a estimativa geral, e diz isso na tela.
-3. Ao publicar: a description de `/ferramentas/` diz "Três ferramentas" e
-   passa a ser quatro. É campo congelado até 1º/11 — decidir se abre exceção
-   ou se espera.
+2. A description de `/ferramentas/` já é genérica ("Ferramentas gratuitas…") e não conta ferramentas: não precisa mudar.
 
 
 ### 4. Revisão técnica pelo Helano

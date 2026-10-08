@@ -49,7 +49,7 @@ const PERGUNTAS = [
   {
     pergunta: 'Quanto espaço deve sobrar na ponta da botina?',
     resposta:
-      'Em torno de um dedo de largura entre o dedo mais longo e a ponta, com você em pé. Menos que isso, os dedos batem na biqueira ao andar; muito mais, o calcanhar solta. É uma conferência da prova, e não um valor para somar à medida do pé.',
+      'Cerca de 1 cm entre o dedo mais longo e a ponta, com você em pé. Menos que isso, os dedos batem na biqueira ao andar; muito mais, o calcanhar solta. É uma conferência da prova, e não um valor para somar à medida do pé.',
   },
   {
     pergunta: 'Por que a calculadora não pergunta se é para homem ou mulher?',

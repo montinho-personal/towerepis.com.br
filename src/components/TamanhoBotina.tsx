@@ -625,7 +625,7 @@ function Resultado({
           <ul className="mt-4 space-y-3 text-[0.95rem] leading-relaxed">
             {[
               'Prove no fim do dia, com a meia do trabalho, e caminhe alguns minutos.',
-              'Entre o dedo mais longo e a ponta, sobra em torno de um dedo de largura.',
+              'Entre o dedo mais longo e a ponta, sobra cerca de 1 cm.',
               'Os dedos não encostam na biqueira, nem por cima nem na ponta.',
               'O calcanhar fica no lugar ao andar, sem subir e descer.',
               'As laterais não apertam. Se apertam, é a forma, e trocar de número não resolve.',
