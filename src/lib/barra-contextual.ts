@@ -327,6 +327,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'A sua operação é pedreira, fábrica ou as duas?',
     rotulo: 'Separar as listas',
   },
+  'epi-para-trabalho-portuario-e-nr-29': {
+    chamada: 'Quem faz amarração, sinal e porão na sua equipe?',
+    rotulo: 'Montar por função',
+  },
+  'epi-para-parque-eolico-e-manutencao-de-aerogerador': {
+    chamada: 'Quantos técnicos sobem nas torres por turno?',
+    rotulo: 'Montar o sistema',
+  },
   'epi-para-mecanico-de-oficina': {
     chamada: 'Que serviços a sua oficina faz?',
     rotulo: 'Montar a lista da oficina',

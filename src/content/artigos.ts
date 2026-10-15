@@ -816,7 +816,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'A NR-6 é a regra geral de EPI, e normas de setor somam exigências a ela. As que mais aparecem junto são a NR-32, de serviços de saúde, a NR-10, de eletricidade, e a NR-35, de trabalho em altura. Quando uma delas se aplica, as duas valem ao mesmo tempo: a de setor diz o que a atividade exige, e a NR-6 diz como o equipamento é aprovado, fornecido e registrado. O que muda na prática está em <a href="/para-seu-trabalho/enfermagem-e-saude/">EPI para enfermagem e saúde</a> e em <a href="/conhecimento/epi-para-eletricista-o-que-muda/">EPI para eletricista</a>.',
+          'A NR-6 é a regra geral de EPI, e normas de setor somam exigências a ela. As que mais aparecem junto são a NR-32, de serviços de saúde, a NR-10, de eletricidade, e a NR-35, de trabalho em altura. Quando uma delas se aplica, as duas valem ao mesmo tempo: a de setor diz o que a atividade exige, e a NR-6 diz como o equipamento é aprovado, fornecido e registrado. O que muda na prática está em <a href="/para-seu-trabalho/enfermagem-e-saude/">EPI para enfermagem e saúde</a> e em <a href="/conhecimento/epi-para-eletricista-o-que-muda/">EPI para eletricista</a>. Dois setores do Nordeste com norma própria ou com altura no dia a dia estão em <a href="/conhecimento/epi-para-trabalho-portuario-e-nr-29/">EPI para trabalho portuário</a>, pela NR-29, e em <a href="/conhecimento/epi-para-parque-eolico-e-manutencao-de-aerogerador/">EPI para parque eólico</a>.',
       },
       {
         tipo: 'h2',
@@ -1217,7 +1217,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'A ficha é a mesma. O que muda é o cuidado de registrar cada componente com CA próprio em linha própria, em vez de uma linha para o conjunto, e de lembrar que a inspeção desse equipamento antes do uso é assunto da NR-35, com registro que não se confunde com a ficha de entrega.',
+          'A ficha é a mesma. O que muda é o cuidado de registrar cada componente com CA próprio em linha própria, em vez de uma linha para o conjunto, e de lembrar que a inspeção desse equipamento antes do uso é assunto da NR-35, com registro que não se confunde com a ficha de entrega. O sistema contra quedas de quem sobe em torre está em <a href="/conhecimento/epi-para-parque-eolico-e-manutencao-de-aerogerador/">EPI para parque eólico</a>.',
       },
       {
         tipo: 'h2',
@@ -4099,7 +4099,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'O que dá para adiantar é o que costuma dar errado na hora de comprar, e isso vale a leitura.',
+          'O que dá para adiantar é o que costuma dar errado na hora de comprar, e isso vale a leitura. Quem trabalha com eletricidade em altura, como na manutenção de aerogerador, soma a NR-35, e esse caso está em <a href="/conhecimento/epi-para-parque-eolico-e-manutencao-de-aerogerador/">EPI para parque eólico</a>.',
       },
       {
         tipo: 'h2',
@@ -5653,6 +5653,7 @@ export const ARTIGOS: Artigo[] = [
           '<strong>Maracanaú.</strong> Concentra distrito industrial e indústria de transformação. Aqui o eixo é risco mecânico, movimentação de carga e ruído contínuo.',
           '<strong>Caucaia.</strong> Indústria e logística convivendo com comércio. Movimentação de carga, muita caminhada e piso de galpão.',
           '<strong>Horizonte e Pacajus.</strong> Indústria, com presença do setor calçadista. Linha de produção, ruído, e manuseio de cola e solvente em parte das operações.',
+          '<strong>São Gonçalo do Amarante.</strong> O Complexo do Pecém, com operação portuária e indústria ao redor. O EPI de quem trabalha no porto segue a NR-29, como explica <a href="/conhecimento/epi-para-trabalho-portuario-e-nr-29/">EPI para trabalho portuário</a>.',
           '<strong>Maranguape.</strong> Indústria e agroindústria, o que traz junto o EPI de manipulação de alimento e de produto químico.',
           '<strong>Eusébio.</strong> Comércio, serviços e indústria leve, com boa parte do risco em manutenção predial e em cozinha.',
           '<strong>Aquiraz.</strong> Turismo e hotelaria. Cozinha industrial, camareira, manutenção e área de piscina — o oposto do distrito industrial em quase tudo.',
@@ -8050,7 +8051,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'O polo de Mossoró, Baraúna e Chapada do Apodi é o maior produtor de melão do país, e o Rio Grande do Norte é o principal exportador da fruta. É fruta que passa por packing house antes de seguir para o porto: recepção, lavagem, seleção, embalagem, câmara fria e contêiner. Este texto acompanha esse caminho, posto a posto.',
+          'O polo de Mossoró, Baraúna e Chapada do Apodi é o maior produtor de melão do país, e o Rio Grande do Norte é o principal exportador da fruta. É fruta que passa por packing house antes de seguir para o <a href="/conhecimento/epi-para-trabalho-portuario-e-nr-29/">porto</a>: recepção, lavagem, seleção, embalagem, câmara fria e contêiner. Este texto acompanha esse caminho, posto a posto.',
       },
       {
         tipo: 'h2',
@@ -8371,6 +8372,359 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'A pedreira de calcário segue qual norma de segurança?',
         resposta:
           'A extração de calcário é mineração, e a mineração tem norma própria, a NR-22, que cobre a lavra a céu aberto e o beneficiamento mineral. A fábrica de cimento é outro ambiente, de indústria, e a lista de EPI de cada um sai da sua avaliação de riscos.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-para-trabalho-portuario-e-nr-29',
+    titulo: 'EPI para trabalho portuário: do cais ao porão do navio',
+    tituloSeo: 'EPI para trabalho portuário e NR-29',
+    resumo:
+      'No porto o EPI muda a cada lugar da operação: colete na amarração, colete visível para o sinaleiro, e no porão a pergunta que vem antes de qualquer máscara.',
+    descricaoSeo:
+      'O que a NR-29 pede de EPI no cais, no convés e no porão: colete salva-vidas na amarração, sinaleiro visível à noite e porão avaliado como espaço confinado.',
+    publicado: '2026-10-15',
+    atualizado: '2026-10-15',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'O trabalho portuário tem norma própria, a NR-29, e ela organiza o EPI pelo lugar da operação. No cais, o risco é cair na água e ser atingido por um cabo que rompe. No convés, é a carga suspensa. No porão, pode ser o ar: antes de pensar em máscara, é preciso saber se o porão é espaço confinado.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O Ceará tem dois portos de carga: o Complexo do Pecém, em São Gonçalo do Amarante, e o Porto do Mucuripe, em Fortaleza, administrado pela Companhia Docas do Ceará. Em volta deles trabalham operadores portuários, terminais, empresas de estiva e de logística, e trabalhadores avulsos escalados pelo órgão gestor de mão de obra, o OGMO. Este texto segue a operação por onde ela passa, com o que a <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2022/portaria-no-671-de-30-de-marco-de-2022-nova-nr-29.pdf" target="_blank" rel="noopener noreferrer">NR-29</a> diz em cada etapa.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quem fornece e quem usa',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-29 vale para operações a bordo e em terra, em porto organizado e em terminal privado. Ela atribui ao operador portuário e ao tomador de serviço realizar a operação com os trabalhadores usando corretamente o EPI, conforme a <a href="/conhecimento/nr-6-o-que-a-empresa-precisa-saber/">NR-6</a>, e ao OGMO, em relação aos trabalhadores avulsos, atender à NR-6 quanto ao EPI. Do lado do trabalhador, a norma pede o uso correto do EPI e dos equipamentos de proteção coletiva fornecidos.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na prática, isso significa que a lista de EPI do porto não é uma só. Cada função, e cada lugar da operação, tem a sua.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Atracação, desatracação e amarração',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É onde o trabalhador fica mais perto da água e dos cabos. A NR-29 manda considerar, nessas operações, a prensagem de membros, o rompimento de cabos e espias, o esforço excessivo, a iluminação e a queda no mesmo nível e ao mar. E determina que todos os trabalhadores envolvidos usem colete salva-vidas, conforme as normas da Autoridade Marítima.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Colete salva-vidas</strong> homologado, para todos na amarração.',
+          '<strong>Luva resistente</strong> para manusear cabo e espia, escolhida pela abrasão e pela pegada com o cabo molhado.',
+          '<strong>Calçado de segurança antiderrapante</strong>, porque o cais é piso molhado e irregular. O critério está em <a href="/conhecimento/solado-antiderrapante-o-que-significa/">o que significa antiderrapante</a>.',
+          '<strong>Capacete</strong> e, à noite, vestimenta com material refletivo.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Convés e carga suspensa',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'No convés, a NR-29 veda a circulação de pessoas no perímetro de risco de queda de objetos durante a movimentação de carga suspensa. O EPI não substitui essa distância, mas completa: capacete, calçado com biqueira de proteção e luva para quem manuseia a carga.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O sinaleiro tem regra própria. Ele precisa ser facilmente destacável das demais pessoas, pelo uso de colete ou vestimenta de cor diferenciada, e nas operações noturnas deve usar luvas e colete com material refletivo. É um item que costuma faltar no pedido porque é de uma função só, e é justamente a função que coordena o guindaste.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Porão: a pergunta que vem antes da máscara',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O acesso ao porão por escada vertical deve ter sistema de proteção contra queda. E a NR-29 pede que a inspeção das condições de segurança verifique se o porão e seus acessos caracterizam espaço confinado, nos termos da NR-33. Quando caracterizam, a entrada só acontece depois de isolar o local, avaliar a atmosfera, emitir a permissão de entrada, manter vigia do lado de fora e monitorar o ar enquanto houver gente lá dentro.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A norma vai além para os graneis: porões, armazéns e silos com carga que possa reduzir o oxigênio ou soltar gás tóxico só são liberados para operação com autorização de profissional legalmente habilitado. Aqui está o erro mais grave possível com EPI: respirador de partícula, como a PFF2, não fornece oxigênio e não retém gás. Ele resolve a poeira, não o ar que falta, como explica <a href="/conhecimento/mascara-descartavel-nao-protege-de-vapor-quimico/">por que a máscara descartável não protege de vapor</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Poeira de granel, ruído e gases',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Nas operações que geram poeira, a NR-29 pede primeiro medidas para eliminar ou reduzir a geração, considerando as características físicas e químicas da carga. O respirador entra pelo que sobra, escolhido pela poeira da carga e pela avaliação de exposição, e o método está em <a href="/conhecimento/respirador-como-escolher-o-filtro/">como escolher o filtro do respirador</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Nos navios do tipo roll-on/roll-off, em que os veículos entram e saem rodando, a norma pede medidas de controle de ruído e de exposição a gases. O protetor auditivo é parte dessa conta, e a escolha está em <a href="/conhecimento/protetor-auditivo-plug-ou-concha/">plug ou concha</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que costuma faltar no pedido',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Colete salva-vidas</strong> suficiente para todos os que trabalham na amarração, e não só para quem vai à beira do cais.',
+          '<strong>Colete de cor diferenciada e com refletivo</strong> para o sinaleiro, e luva refletiva para a operação noturna.',
+          '<strong>Cinturão e sistema contra queda</strong> para o acesso ao porão por escada vertical, conforme a análise de risco.',
+          '<strong>Detector de gases e equipamento de resgate</strong> quando o porão é espaço confinado, que são da operação e não de cada trabalhador.',
+          '<strong>Protetor auditivo e respirador</strong> definidos pela carga e pelo navio, e não um modelo único para o porto inteiro.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Quais funções a sua empresa tem no porto: amarração, estiva, sinaleiro, conferência, operação de equipamento.',
+          'Se há trabalho noturno, que pede refletivo nos itens certos.',
+          'Que cargas passam pela operação, e o que a ficha de cada uma diz sobre poeira e gases.',
+          'Se o porão foi avaliado como espaço confinado e quem faz essa avaliação.',
+          'O CA de cada item, lembrando que colete salva-vidas segue também as normas da Autoridade Marítima.',
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-29 — Segurança e saúde no trabalho portuário, Portaria nº 671/2022 (PDF oficial)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2022/portaria-no-671-de-30-de-marco-de-2022-nova-nr-29.pdf',
+      },
+      {
+        titulo: 'STF suspende decreto e impede encerramento da tancagem no Mucuripe — O Povo (Companhia Docas do Ceará como administradora do Mucuripe)',
+        url: 'https://mais.opovo.com.br/jornal/economia/2022/09/17/stf-suspende-decreto-e-impede-encerramento-da-tancagem-no-mucuripe.html',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/epi-por-cidade/ceara/',
+      rotulo: 'Ver o atendimento no Ceará',
+    },
+    contexto: 'epi-por-cidade',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Trabalho com operação portuária e queria ajuda para montar a lista de EPI por função, do cais ao porão.',
+    ctaTitulo: 'Quais funções a sua equipe tem no porto?',
+    ctaTexto:
+      'Diga quem faz amarração, quem é sinaleiro e quem desce ao porão. A gente monta a lista por função, com o CA de cada item.',
+    perguntas: [
+      {
+        pergunta: 'Colete salva-vidas é obrigatório no porto?',
+        resposta:
+          'A NR-29 manda que todos os trabalhadores envolvidos nas operações de atracação, desatracação e manobra de embarcações usem colete salva-vidas, conforme as normas da Autoridade Marítima. Em outras áreas, vale a análise de risco e a regra de cada porto.',
+      },
+      {
+        pergunta: 'Quem fornece EPI ao trabalhador portuário avulso?',
+        resposta:
+          'A NR-29 atribui ao OGMO, em relação aos trabalhadores avulsos, atender à NR-6 quanto ao EPI, e ao operador portuário e ao tomador de serviço realizar a operação com os trabalhadores usando corretamente o equipamento.',
+      },
+      {
+        pergunta: 'Porão de navio é espaço confinado?',
+        resposta:
+          'Pode ser. A NR-29 manda verificar, na inspeção das condições de segurança, se o porão e seus acessos caracterizam espaço confinado pela NR-33. Quando caracterizam, a entrada exige avaliação da atmosfera, permissão de entrada, vigia e monitoramento contínuo.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-para-parque-eolico-e-manutencao-de-aerogerador',
+    titulo: 'EPI para parque eólico: a subida, a nacele e o resgate',
+    tituloSeo: 'EPI para parque eólico e aerogerador',
+    resumo:
+      'Na manutenção de aerogerador o EPI é um sistema que precisa funcionar a dezenas de metros do chão, e o resgate faz parte dele.',
+    descricaoSeo:
+      'Na manutenção de aerogerador o EPI é sistema: cinturão paraquedista, trava-quedas, inspeção antes da subida, eletricidade na nacele e plano de resgate.',
+    publicado: '2026-10-15',
+    atualizado: '2026-10-15',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Num aerogerador, o EPI de quem sobe não é uma lista de peças: é um sistema contra quedas, com cinturão, talabarte e trava-quedas compatíveis entre si, inspecionados antes de cada subida. E ele só fica completo com o plano de resgate, porque quem fica suspenso no cinturão precisa ser tirado de lá rápido.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O Nordeste concentra a energia eólica do país. O Rio Grande do Norte e a Bahia lideram a geração, e o Ceará tem parques espalhados pelo litoral, de Trairi, Itarema e Amontada a Aracati, Icapuí e Camocim. O Piauí também entrou nessa conta. Cada parque em operação tem equipe de manutenção subindo nas torres o ano inteiro, e é dessa rotina que este texto trata.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A subida: o sistema contra quedas',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Todo trabalho com diferença de nível acima de 2 metros, onde haja risco de queda, segue a <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/NR35atualizada2023.pdf" target="_blank" rel="noopener noreferrer">NR-35</a>. Numa torre eólica, isso é o dia inteiro. O que a norma pede do equipamento:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Cinturão de segurança tipo paraquedista</strong>, que é o EPI exigido nos sistemas de retenção de queda e de acesso por cordas.',
+          '<strong>Talabarte com absorvedor de energia</strong>: quando o cinturão é usado para retenção de queda, ele deve ter talabarte integrado com absorvedor.',
+          '<strong>Trava-quedas deslizante guiado</strong>, quando a escada da torre tem linha de vida vertical. Ele deve seguir as recomendações do fabricante, em especial quanto à compatibilidade com a linha de vida e ao comprimento máximo dos extensores.',
+          '<strong>Capacete com jugular</strong>, para não cair durante a subida, e luva com boa pegada para a escada.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'As escadas fixas verticais ganharam regra recente. Desde a <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2026-1/portaria-mte-no-1-259-alteracao-do-anexo-iii-da-nr-35.pdf" target="_blank" rel="noopener noreferrer">Portaria MTE nº 1.259/2026</a>, a necessidade de sistema individual contra quedas nas escadas usadas só como acesso é definida por uma análise de risco específica, e as condições de segurança da escada devem ser verificadas periodicamente, conforme o procedimento operacional.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Inspeção antes de cada subida',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-35 prevê três inspeções do sistema individual contra quedas: a inicial, entre o recebimento e o primeiro uso; a rotineira, antes do início dos trabalhos, visual e tátil, feita pelo próprio trabalhador; e a periódica, no mínimo uma vez a cada doze meses, com intervalo menor conforme o uso e a exposição a agentes agressivos.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'No litoral, a maresia e o sol entram nessa conta: fita, costura e partes metálicas envelhecem mais rápido. Peça com defeito, deformação ou desgaste sai de uso, e o registro das inspeções é o que mostra que isso foi feito.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Resgate: parte do equipamento, não um detalhe',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-35 manda a organização ter procedimentos de resposta às emergências de trabalho em altura, considerando a equipe de emergência necessária, o tempo estimado para o resgate e as técnicas e equipamentos de resgate disponíveis, de forma a reduzir o tempo de suspensão inerte do trabalhador. Suspensão inerte é ficar pendurado no cinturão, imóvel, depois de uma queda.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Num aerogerador, o socorro externo pode levar tempo para chegar ao parque, e a nacele fica no alto da torre. Por isso o kit de resgate e a equipe treinada para usá-lo costumam estar no próprio parque, e entram na lista de compra junto com o EPI de quem sobe.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Treinamento: presencial desde 2026',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-35 exige treinamento inicial de no mínimo 8 horas antes de o trabalhador começar a atividade, e periódico a cada dois anos, também com no mínimo 8 horas. Desde a Portaria MTE nº 1.259/2026, esses treinamentos devem ser presenciais. Fabricantes de turbina e operadores de parque costumam exigir, além disso, treinamentos próprios para trabalhar nas suas máquinas.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Eletricidade na nacele',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Lá em cima está a máquina que gera energia, com gerador, painéis e cabos. Intervenção elétrica segue a NR-10, com desenergização, bloqueio e EPI definido pela análise de risco, e o que muda na compra está em <a href="/conhecimento/epi-para-eletricista-o-que-muda/">EPI para eletricista</a>. Vale repetir um ponto: a biqueira de composite não torna o calçado isolante, como explica <a href="/conhecimento/biqueira-de-composite-ou-de-aco-qual-escolher/">biqueira de composite ou de aço</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Alguns compartimentos da turbina, como o cubo do rotor, podem ser classificados como espaço confinado pela análise de riscos do parque. Quando são, valem as exigências da NR-33, e a entrada deixa de ser só uma questão de EPI.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Vento, sol e o trabalho no chão',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A análise de risco do trabalho em altura deve considerar as condições meteorológicas adversas, e vento forte é a condição que mais interrompe a manutenção de um parque eólico. No chão, a rotina é a céu aberto no sol do litoral: roupa de manga longa, proteção para a cabeça e água fazem parte do conjunto. Na fase de obra, o parque é canteiro de construção, e a lista é a de <a href="/para-seu-trabalho/construcao/">EPI para construção</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que costuma faltar no pedido',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Compatibilidade entre as peças</strong>: cinturão, talabarte e trava-quedas comprados separados, sem conferir se funcionam juntos com a linha de vida da torre.',
+          '<strong>Kit e equipe de resgate</strong> no próprio parque.',
+          '<strong>Capacete com jugular</strong> no lugar do capacete comum.',
+          '<strong>Reposição planejada</strong> do sistema contra quedas, que envelhece mais rápido na maresia.',
+          '<strong>EPI de eletricidade</strong> para quem intervém nos painéis, definido pela análise de risco da NR-10.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que verificar antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Que sistema de linha de vida a escada da torre usa, e qual trava-quedas o fabricante indica para ele.',
+          'Quantas pessoas sobem por turno, para dimensionar cinturões, talabartes e reposição.',
+          'Como é feito o resgate hoje, e com que equipamento.',
+          'Se há intervenção elétrica, e o que a análise de risco da NR-10 pede.',
+          'O CA de cada item do sistema contra quedas, que são aprovações separadas.',
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-35 — Trabalho em altura, texto atualizado (PDF oficial)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/NR35atualizada2023.pdf',
+      },
+      {
+        titulo: 'Portaria MTE nº 1.259/2026 — inclui o item 35.4.5 e altera o Anexo III da NR-35 (PDF oficial)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2026-1/portaria-mte-no-1-259-alteracao-do-anexo-iii-da-nr-35.pdf',
+      },
+      {
+        titulo: 'Cidades do Ceará se destacam em produção de energia eólica no País; veja lista — Diário do Nordeste',
+        url: 'https://diariodonordeste.verdesmares.com.br/negocios/cidades-do-ceara-se-destacam-em-producao-de-energia-eolica-no-pais-veja-lista-1.3628919',
+      },
+      {
+        titulo: 'Informe executivo — energia eólica, junho de 2026 — Secretaria de Desenvolvimento Econômico da Bahia',
+        url: 'https://www.ba.gov.br/sde/sites/site-sde/files/2026-06/Informe%20Executivo_%20E%C3%B3lica_Junho.pdf',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/epi-por-cidade/rio-grande-do-norte/',
+      rotulo: 'Ver o atendimento no Rio Grande do Norte',
+    },
+    contexto: 'epi-por-cidade',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Trabalho com manutenção de parque eólico e queria ajuda para montar o sistema contra quedas e a lista de EPI da equipe.',
+    ctaTitulo: 'Quantas pessoas sobem nas torres por turno?',
+    ctaTexto:
+      'Diga quantos técnicos sobem e qual linha de vida a torre usa. A gente monta o sistema contra quedas com peças compatíveis e o CA de cada uma.',
+    perguntas: [
+      {
+        pergunta: 'Qual cinturão usar na torre eólica?',
+        resposta:
+          'O cinturão de segurança tipo paraquedista, que a NR-35 exige nos sistemas de retenção de queda. Usado para retenção, ele deve ter talabarte integrado com absorvedor de energia, e o trava-quedas precisa ser compatível com a linha de vida da escada da torre.',
+      },
+      {
+        pergunta: 'De quanto em quanto tempo inspecionar o cinturão?',
+        resposta:
+          'Antes de cada uso, numa inspeção visual e tátil feita pelo trabalhador, e numa inspeção periódica no mínimo a cada doze meses, com intervalo menor conforme o uso e a exposição a agentes agressivos, como a maresia.',
+      },
+      {
+        pergunta: 'O treinamento de NR-35 pode ser a distância?',
+        resposta:
+          'Não. Desde a Portaria MTE nº 1.259/2026, os treinamentos previstos na NR-35 devem ser realizados na modalidade presencial. O inicial tem no mínimo 8 horas, e o periódico, a cada dois anos, também.',
       },
     ],
   },
