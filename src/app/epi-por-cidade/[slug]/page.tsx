@@ -109,6 +109,22 @@ function PaginaEstado({ slug }: { slug: string }) {
         </div>
       </Secao>
 
+      {e.secoes?.map((sec) => (
+        <Secao key={sec.titulo} className="wrap" ritmo="normal">
+          <h2 className="text-2xl sm:text-3xl">{sec.titulo}</h2>
+          <div className="mt-6 max-w-2xl space-y-5 text-[1.05rem] leading-relaxed">
+            {sec.paragrafos.map((p) => (
+              <p key={p.slice(0, 30)}>{p}</p>
+            ))}
+          </div>
+          {sec.links && (
+            <div className="mt-8">
+              <ListaLinks itens={sec.links} />
+            </div>
+          )}
+        </Secao>
+      ))}
+
       <Secao className="wrap" ritmo="normal">
         <h2 className="text-2xl sm:text-3xl">Cidades atendidas</h2>
         <div className="mt-8">
@@ -148,6 +164,15 @@ function PaginaEstado({ slug }: { slug: string }) {
           .
         </p>
       </Secao>
+
+      {e.perguntas && (
+        <>
+          <JsonLd dados={schemaFaq(e.perguntas)} />
+          <Secao className="wrap" ritmo="normal">
+            <Perguntas perguntas={e.perguntas} titulo={`Perguntas de quem compra EPI ${e.uf === 'CE' ? 'no Ceará' : e.uf === 'PI' ? 'no Piauí' : 'no Rio Grande do Norte'}`} />
+          </Secao>
+        </>
+      )}
 
       <FechamentoCta
         contexto="epi-por-cidade"

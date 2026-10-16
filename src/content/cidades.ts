@@ -70,6 +70,13 @@ export type Estado = {
   emUmaFrase: string
   /** O que liga as cidades desse estado entre si, do ponto de vista de EPI. */
   contexto: string[]
+  /**
+   * Seções regionais, quando o estado tem busca própria que a lista de
+   * cidades não responde (no Ceará, "loja/distribuidora de EPI em Fortaleza").
+   * Mesmas proibições do topo do arquivo: sem endereço, loja, prazo ou frete.
+   */
+  secoes?: { titulo: string; paragrafos: string[]; links?: { href: string; titulo: string; texto: string }[] }[]
+  perguntas?: { pergunta: string; resposta: string }[]
 }
 
 export const ESTADOS: Estado[] = [
@@ -89,6 +96,52 @@ export const ESTADOS: Estado[] = [
       'O estado tem duas realidades industriais que pedem coisas diferentes. Na Região Metropolitana de Fortaleza estão a indústria de transformação, a construção de grande porte, a rede hospitalar e a maior concentração de serviços de alimentação do estado.',
       'No Cariri, a quase 550 quilômetros da capital, o desenho é outro: um polo de calçado formado por muitas fábricas pequenas e médias, indústria química e de cimento, e uma economia que gira em torno de três cidades vizinhas.',
       'É por isso que a página de Fortaleza e a de Barbalha não dizem a mesma coisa. O EPI que resolve a rotina de uma cozinha industrial na capital não é o que resolve a linha de montagem de uma fábrica de calçado no interior.',
+    ],
+    secoes: [
+      {
+        titulo: 'Fortaleza e Região Metropolitana',
+        paragrafos: [
+          'Quem procura EPI em Fortaleza costuma buscar loja: no Centro, em Messejana, em Caucaia, em Maracanaú. A Tower não tem loja. Desde 2018 atende empresas de forma remota, a partir de Fortaleza: o pedido começa no WhatsApp, a escolha é feita junto e o orçamento sai com o Certificado de Aprovação de cada item. Para a peça que faltou hoje, o balcão mais próximo resolve. Para equipar uma equipe, o que pesa é a especificação certa para a atividade, a grade de numeração e a reposição.',
+          'A Região Metropolitana também não é um bloco só. Maracanaú concentra distrito industrial, Caucaia junta indústria e logística, São Gonçalo do Amarante tem o Complexo do Pecém, e Horizonte e Pacajus têm indústria calçadista. Cada uma pede uma lista diferente, e a diferença começa pela atividade, não pelo endereço.',
+        ],
+        links: [
+          { href: '/conhecimento/epi-na-regiao-metropolitana-de-fortaleza/', titulo: 'EPI na Região Metropolitana de Fortaleza', texto: 'O que muda de Maracanaú a Aquiraz, município por município.' },
+          { href: '/conhecimento/epi-para-trabalho-portuario-e-nr-29/', titulo: 'EPI para trabalho portuário', texto: 'Pecém e Mucuripe: do cais ao porão, pela NR-29.' },
+          { href: '/empresas/', titulo: 'EPI por setor', texto: 'Alimentação, saúde, indústria, construção e limpeza.' },
+          { href: '/conhecimento/como-escolher-fornecedor-de-epi/', titulo: 'Como escolher fornecedor de EPI', texto: 'O que pedir antes de fechar, de qualquer fornecedor.' },
+        ],
+      },
+      {
+        titulo: 'Interior e litoral',
+        paragrafos: [
+          'Fora da capital, o EPI acompanha a atividade de cada região. No litoral leste estão as fazendas de camarão de Aracati e Jaguaruana; ao longo da costa, os parques eólicos; no norte, a carnaúba de Granja, Camocim e Santana do Acaraú; no noroeste, o granito e o calcário da região de Sobral; e, no sul, o polo calçadista do Cariri. São riscos que quase não se repetem de uma região para outra, e cada um tem o seu guia.',
+        ],
+        links: [
+          { href: '/conhecimento/epi-para-carcinicultura-e-despesca-de-camarao/', titulo: 'Carcinicultura', texto: 'O metabissulfito da despesca e o EPI da fazenda de camarão.' },
+          { href: '/conhecimento/epi-para-parque-eolico-e-manutencao-de-aerogerador/', titulo: 'Parque eólico', texto: 'A subida, a nacele e o resgate na manutenção de aerogerador.' },
+          { href: '/conhecimento/epi-para-extracao-de-carnauba/', titulo: 'Carnaúba', texto: 'Corte da palha, batição e o trabalho de safra.' },
+          { href: '/conhecimento/epi-para-marmoraria-e-rochas-ornamentais/', titulo: 'Rochas ornamentais', texto: 'Granito, sílica e corte úmido.' },
+          { href: '/conhecimento/epi-para-fabrica-de-cimento-e-mineracao-de-calcario/', titulo: 'Cimento e calcário', texto: 'Pedreira e fábrica, cada uma com a sua lista.' },
+          { href: '/epi-por-cidade/barbalha-ce/', titulo: 'Cariri', texto: 'Barbalha, Crato e Juazeiro do Norte: o polo de calçado.' },
+        ],
+      },
+    ],
+    perguntas: [
+      {
+        pergunta: 'Existe loja de EPI da Tower no Centro de Fortaleza?',
+        resposta:
+          'Não. A Tower não tem loja nem filial: atende empresas de forma remota desde 2018, a partir de Fortaleza. O contato começa no WhatsApp, o orçamento sai com o Certificado de Aprovação de cada item, e a entrega é combinada dentro do pedido.',
+      },
+      {
+        pergunta: 'A Tower atende Caucaia, Maracanaú e o interior do Ceará?',
+        resposta:
+          'Sim. A Tower atende empresas em todo o Ceará, da Região Metropolitana de Fortaleza ao Cariri, sempre pelo mesmo caminho: conversa no WhatsApp, escolha feita pela atividade e orçamento com o CA de cada item.',
+      },
+      {
+        pergunta: 'O que mandar para receber o orçamento de EPI?',
+        resposta:
+          'A atividade da equipe, quantas pessoas são e, no caso de calçado, a grade de numeração. Se a empresa tiver a avaliação de riscos ou a ficha de segurança dos produtos químicos usados, ajuda mandar junto. Com isso a resposta já vem com as opções e o CA de cada item.',
+      },
     ],
   },
   {
