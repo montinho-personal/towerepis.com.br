@@ -3658,8 +3658,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'O que exigir de um fornecedor de EPI antes de fechar: CA na proposta, descrição do que foi aprovado, reposição e troca de numeração. Com os sinais de risco.',
     publicado: '2026-09-05',
-    atualizado: '2026-09-05',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-10-15',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Compra',
     blocos: [
       {
@@ -3676,6 +3676,29 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'Três propostas com o mesmo preço quase nunca são do mesmo produto. Uma pode ser de um modelo com solado ensaiado para piso oleoso, outra de um modelo aprovado só para piso seco. As duas se chamam "botina de segurança" na planilha.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Fábrica, distribuidora, atacado ou loja: quem é quem',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'As buscas misturam quatro tipos de fornecedor, e cada um responde a uma necessidade diferente:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Fabricante ou importador.</strong> É quem detém o Certificado de Aprovação do modelo e responde por ele. Muitos vendem por meio de distribuidores, com pedido mínimo, e comprar direto da fábrica costuma fazer sentido para volume grande e linha fechada. Vale perguntar ao fabricante como ele atende a sua região.',
+          '<strong>Distribuidora.</strong> Trabalha com várias linhas e monta o pedido por atividade, juntando calçado, luva, proteção respiratória e o resto. É onde costuma estar a orientação técnica para quem não tem certeza do que comprar.',
+          '<strong>Atacado.</strong> Preço por volume, muitas vezes com caixa fechada por numeração ou por tamanho. Serve para revenda e para quem já sabe a grade; para equipe, caixa fechada sobra em uns números e falta em outros, como explica <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">a grade de numeração</a>.',
+          '<strong>Loja de balcão.</strong> Resolve a peça avulsa e a reposição de urgência. Para o pedido da equipe, com CA conferido, grade e reposição programada, o balcão costuma ser o caminho mais demorado.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Nenhum dos quatro é melhor por definição. O que vale para todos é a mesma conferência: o CA de cada item e a descrição do que ele aprovou.',
       },
       {
         tipo: 'h2',
@@ -3724,6 +3747,24 @@ export const ARTIGOS: Artigo[] = [
           ['Resposta técnica demora dias', 'Não há ninguém de segurança do trabalho do outro lado', 'Quem responde dúvida técnica, e em quanto tempo'],
           ['Troca de numeração "depende"', 'Não existe política, e você vai descobrir isso com o par no pé de alguém', 'Como funciona a troca, por escrito, antes de fechar'],
         ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Perto de mim importa?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para a peça que faltou hoje, sim: é a busca por loja aberta agora, e a resposta é o balcão mais próximo. Para o fornecimento da equipe, o que importa é outra coisa: o prazo de entrega na sua cidade, a reposição das numerações que mais saem e quem responde a dúvida técnica. Muitos fornecedores atendem por região, sem loja, e combinam a entrega. Pergunte o prazo para a sua cidade antes de fechar, e não depois do primeiro pedido.',
+      },
+      {
+        tipo: 'h3',
+        texto: 'Fornecedor de EPI em Fortaleza e no Ceará',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Em Fortaleza, a busca se divide do mesmo jeito: loja no Centro, em Messejana, em Caucaia ou em Maracanaú para a peça de hoje, e distribuidora para o fornecimento da empresa. Para o segundo caso, as perguntas que separam um fornecedor do outro são as deste texto, mais uma: se ele atende a sua cidade e com que prazo, porque Fortaleza, Região Metropolitana e interior têm logísticas diferentes. O que muda de um município para outro está em <a href="/conhecimento/epi-na-regiao-metropolitana-de-fortaleza/">EPI na Região Metropolitana de Fortaleza</a>, e o atendimento da Tower no estado, em <a href="/epi-por-cidade/ceara/">EPI no Ceará</a>.',
       },
       {
         tipo: 'h2',
@@ -3788,6 +3829,16 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'O fornecedor tem que informar o CA na proposta?',
         resposta:
           'A NR-6 condiciona a venda e o fornecimento de EPI à indicação do Certificado de Aprovação, então o número existe e é identificável. Pedir na proposta, e não só na nota, é o que dá tempo de conferir antes de fechar. Fornecedor sério manda sem reclamar.',
+      },
+      {
+        pergunta: 'Quais os critérios para escolher um fornecedor de EPI?',
+        resposta:
+          'Na ordem: CA vigente de cada item, informado na proposta; descrição do CA que cubra o risco da sua atividade; grade de numeração e prazo de reposição; política de troca por escrito; quem responde a dúvida técnica; e o prazo de entrega na sua cidade. Preço só é comparável depois disso, entre itens equivalentes.',
+      },
+      {
+        pergunta: 'Posso revender EPI?',
+        resposta:
+          'Pode, desde que o equipamento tenha Certificado de Aprovação vigente: a NR-6 só permite pôr à venda EPI com a indicação do CA. Na compra para revenda, vale pedir o número do CA de cada item ao fornecedor e conferir na consulta oficial antes de receber o estoque.',
       },
       {
         pergunta: 'Vale pedir amostra antes de fechar?',
