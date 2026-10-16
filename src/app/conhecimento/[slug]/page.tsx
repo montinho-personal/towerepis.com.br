@@ -37,6 +37,12 @@ export async function generateMetadata({
 }
 
 /** `texto` pode conter <strong> e <em> vindos do conteúdo controlado em src/content. */
+// A mesma data do dateModified, escrita para gente. Fuso UTC porque
+// '2026-10-15' é lido como meia-noite UTC; no fuso de Fortaleza viraria o dia 14.
+function dataPorExtenso(iso: string) {
+  return new Date(iso).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })
+}
+
 function Renderizar({ bloco }: { bloco: Bloco }) {
   switch (bloco.tipo) {
     case 'h2':
@@ -152,7 +158,8 @@ export default async function Artigo({ params }: { params: Promise<{ slug: strin
             <Link href="/a-tower/helano/" className="underline underline-offset-4">
               Helano, técnico de segurança do trabalho
             </Link>{' '}
-            · {a.atualizadoExibicao}
+            · Atualizado em{' '}
+            <time dateTime={a.atualizado}>{dataPorExtenso(a.atualizado)}</time>
           </p>
         </header>
 

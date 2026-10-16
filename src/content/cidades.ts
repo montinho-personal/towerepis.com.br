@@ -54,6 +54,12 @@ export type Cidade = {
   atendimento: string
   /** O que a Tower NÃO é a fornecedora certa para fazer, quando for o caso. */
   ondeNaoSomos: string | null
+  /**
+   * Data da última revisão real do texto (AAAA-MM-DD). Vai para o lastmod do
+   * sitemap. Sem ela, o sitemap não declara data: data inventada (a do
+   * build) ensina o Google a ignorar o lastmod do site inteiro.
+   */
+  atualizado?: string
   perguntas: { pergunta: string; resposta: string }[]
   contexto: ContextoWhatsApp
   mensagemWhats: string
@@ -77,11 +83,18 @@ export type Estado = {
    */
   secoes?: { titulo: string; paragrafos: string[]; links?: { href: string; titulo: string; texto: string }[] }[]
   perguntas?: { pergunta: string; resposta: string }[]
+  /**
+   * Data da última revisão real do texto (AAAA-MM-DD). Vai para o lastmod do
+   * sitemap. Sem ela, o sitemap não declara data: data inventada (a do
+   * build) ensina o Google a ignorar o lastmod do site inteiro.
+   */
+  atualizado?: string
 }
 
 export const ESTADOS: Estado[] = [
   {
     slug: 'ceara',
+    atualizado: '2026-10-16',
     nome: 'Ceará',
     uf: 'CE',
     titleSeo: 'EPI no Ceará: atendimento da capital ao Cariri',

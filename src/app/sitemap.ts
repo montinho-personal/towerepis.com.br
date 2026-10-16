@@ -10,14 +10,18 @@ import { PUBLICAVEL } from '@/lib/tamanho-calcado'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = empresa.site
-  const hoje = new Date()
-
-  const url = (caminho: string, priority: number, changeFrequency: 'weekly' | 'monthly') => ({
+  // lastmod só quando a data é real. A versão anterior usava a data do
+  // build em todas as páginas fixas, e o Google descarta o lastmod de um
+  // site em que ele não bate com a mudança verdadeira, inclusive o dos
+  // artigos, que é exato.
+  const url = (caminho: string, priority: number, changeFrequency: 'weekly' | 'monthly', atualizado?: string) => ({
     url: `${base}${caminho}`,
-    lastModified: hoje,
+    ...(atualizado ? { lastModified: new Date(atualizado) } : {}),
     changeFrequency,
     priority,
   })
+  // O índice de artigos muda quando um artigo muda.
+  const ultimoArtigo = ARTIGOS.map((a) => a.atualizado).sort().at(-1)
 
   return [
     url('/', 1, 'weekly'),
@@ -44,7 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url('/marcas/3m/', 0.6, 'monthly'),
     url('/a-tower/', 0.8, 'monthly'),
     url('/a-tower/helano/', 0.7, 'monthly'),
-    url('/conhecimento/', 0.8, 'weekly'),
+    url('/conhecimento/', 0.8, 'weekly', ultimoArtigo),
     ...ARTIGOS.map((a) => ({
       url: `${base}/conhecimento/${a.slug}/`,
       lastModified: new Date(a.atualizado),
@@ -52,8 +56,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     })),
     url('/epi-por-cidade/', 0.9, 'monthly'),
-    ...ESTADOS.map((e) => url(`/epi-por-cidade/${e.slug}/`, 0.75, 'monthly')),
-    ...CIDADES.map((c) => url(`/epi-por-cidade/${c.slug}/`, 0.85, 'monthly')),
+    ...ESTADOS.map((e) => url(`/epi-por-cidade/${e.slug}/`, 0.75, 'monthly', e.atualizado)),
+    ...CIDADES.map((c) => url(`/epi-por-cidade/${c.slug}/`, 0.85, 'monthly', c.atualizado)),
     url('/contato/', 0.8, 'monthly'),
     // Páginas legais entram no sitemap: documento de transparência que o
     // buscador não acha é menos transparente. Prioridade baixa porque elas
