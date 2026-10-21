@@ -46,7 +46,7 @@ function dataPorExtenso(iso: string) {
 function Renderizar({ bloco }: { bloco: Bloco }) {
   switch (bloco.tipo) {
     case 'h2':
-      return <h2>{bloco.texto}</h2>
+      return <h2 id={bloco.id}>{bloco.texto}</h2>
     case 'h3':
       return <h3>{bloco.texto}</h3>
     case 'p':

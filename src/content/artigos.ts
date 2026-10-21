@@ -15,7 +15,8 @@ import { empresa } from '@/config/empresa'
  */
 export type Bloco =
   | { tipo: 'p'; texto: string }
-  | { tipo: 'h2'; texto: string }
+  /** id só quando o próprio texto aponta para a seção com uma âncora. */
+  | { tipo: 'h2'; texto: string; id?: string }
   | { tipo: 'h3'; texto: string }
   | { tipo: 'lista'; itens: string[] }
   | { tipo: 'destaque'; texto: string }
@@ -3861,8 +3862,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Os cinco dados que fazem o primeiro pedido de EPI andar, na ordem em que se levantam. E o que não precisa estar pronto para pedir orçamento.',
     publicado: '2026-09-05',
-    atualizado: '2026-09-05',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-10-21',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Compra',
     blocos: [
       {
@@ -3881,6 +3882,11 @@ export const ARTIGOS: Artigo[] = [
           'Com cinco informações o pedido sai numa conversa só. Quatro você já sabe. A quinta dá trabalho.',
       },
       {
+        tipo: 'p',
+        texto:
+          'Este guia é para quem compra pela empresa. Se você é funcionário e quer saber como pedir o seu EPI, a resposta curta está <a href="#funcionario">no fim da página</a>.',
+      },
+      {
         tipo: 'h2',
         texto: 'Os cinco dados',
       },
@@ -3894,6 +3900,80 @@ export const ARTIGOS: Artigo[] = [
           ['A grade de numeração', 'Quantos pares em cada número, par a par', 'Como definir a grade da equipe'],
           ['O prazo', 'Para quando precisa, e se é tudo junto ou em etapas', 'Muda a forma de fechar o pedido'],
         ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quais EPI a empresa deve fornecer',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Não existe uma lista única que valha para toda empresa. A obrigação está escrita em duas fontes, e as duas amarram o EPI ao risco. O artigo 166 da CLT obriga a empresa a fornecer, gratuitamente, EPI adequado ao risco e em perfeito estado de conservação e funcionamento, sempre que as medidas de ordem geral não ofereçam completa proteção. A <a href="/conhecimento/nr-6-o-que-a-empresa-precisa-saber/">NR-6</a> repete a obrigação no item 6.5.1 e acrescenta que só se compra EPI aprovado, com CA.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quais itens, portanto, depende do que a função enfrenta. A NR-1 põe o EPI na última posição da hierarquia de prevenção: ele entra quando a proteção coletiva é inviável, insuficiente, está em implantação, ou em caráter complementar ou emergencial (item 1.5.5.1.2). Se o risco foi eliminado na fonte, o EPI para aquele risco deixa de ser exigido. Quem registra essa decisão é o Programa de Gerenciamento de Riscos, o PGR, e não a lista de compras.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Como fazer a lista de EPI da empresa',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A lista começa no inventário de riscos do PGR. A NR-1 exige que ele traga, entre outras informações, a caracterização das atividades, a descrição dos perigos e a indicação dos grupos de trabalhadores expostos (item 1.5.7.3.2). É exatamente o que a lista de EPI precisa: quem faz o quê, exposto a quê.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Com o inventário em mãos, monte uma linha por função e passe cada uma pelas nove partes em que o Anexo I da NR-6 organiza os EPI: cabeça; olhos e face; proteção auditiva; proteção respiratória; tronco; membros superiores; membros inferiores; corpo inteiro; e quedas com diferença de nível. Percorrer as nove é o jeito de não esquecer item, e também de não comprar o que a função não pede.',
+      },
+      {
+        tipo: 'h3',
+        texto: 'Modelo de lista de EPI por função',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'As duas linhas abaixo mostram o preenchimento. São exemplo de formato, não recomendação: o EPI de cada função sai da avaliação de riscos da sua empresa.',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Função', 'O que faz e onde pisa', 'Risco, do inventário', 'EPI por parte do corpo', 'Pessoas', 'Numeração'],
+        linhas: [
+          ['Serviços gerais (limpeza)', 'Lava piso e banheiro; piso molhado', 'Escorregamento; contato com produto de limpeza', 'Membros inferiores: calçado fechado antiderrapante. Membros superiores: luva compatível com o produto usado', '8', '4 no 37, 2 no 38, 2 no 40'],
+          ['Repositor de estoque', 'Movimenta caixas no depósito', 'Queda de objeto sobre o pé', 'Membros inferiores: calçado com biqueira', '5', '1 no 39, 3 no 41, 1 no 42'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A lista por profissão ajuda a conferir se nada ficou de fora. Os guias <a href="/para-seu-trabalho/">por profissão</a> e <a href="/empresas/">por setor</a> mostram o que costuma mudar de uma função para outra.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A lista de compra não é a lista que o funcionário assina. Essa é a <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega de EPI</a>, que registra cada item entregue a cada pessoa e tem modelo para baixar em PDF e em planilha.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Kit EPI básico: serve para começar?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O kit vendido pronto costuma juntar botina com biqueira, óculos de proteção, protetor auricular e um par de luvas. A NR-6 não define kit básico nenhum: EPI é o produto de uso individual feito para proteger contra os riscos que existem no ambiente de trabalho (item 6.3.1), e o risco muda de função para função.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Por isso o kit pode sobrar e faltar ao mesmo tempo. Sobra o protetor auricular para quem não está exposto a ruído. Falta proteção quando a luva genérica encontra produto químico, assunto de <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">luva para produto químico</a>, ou quando a botina comum pisa em chão molhado, assunto de <a href="/conhecimento/solado-antiderrapante-o-que-significa/">solado antiderrapante</a>. Use o kit como ponto de partida da conversa, não como lista fechada.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O kit feminino não muda a proteção. Muda a numeração e a modelagem, e isso se resolve na grade. O kit de primeiros socorros não é EPI: ele atende depois do acidente, e não substitui nenhum item que protege antes.',
       },
       {
         tipo: 'h2',
@@ -3934,6 +4014,26 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
+        texto: 'Modelo de pedido de EPI',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para pedir orçamento, a lista vira uma mensagem. Este roteiro cabe no WhatsApp ou no e-mail, e cada linha evita uma rodada de perguntas:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Empresa e cidade de entrega.</strong>',
+          '<strong>Cada função:</strong> o que faz, onde trabalha e quantas pessoas.',
+          '<strong>Os itens que você já sabe que precisa</strong>, ou "não sei, quero ajuda para definir".',
+          '<strong>A numeração</strong> que já levantou, mesmo incompleta.',
+          '<strong>O prazo:</strong> para quando, e se pode ser em etapas.',
+          '<strong>O que já usa e quer manter:</strong> foto da etiqueta com o número do CA.',
+        ],
+      },
+      {
+        tipo: 'h2',
         texto: 'O que não precisa estar pronto',
       },
       {
@@ -3950,8 +4050,45 @@ export const ARTIGOS: Artigo[] = [
         texto:
           'O que precisa estar pronto é o entendimento do risco. Isso vem da avaliação de riscos da sua empresa, feita por profissional habilitado, e nenhum fornecedor substitui esse documento.',
       },
+      {
+        tipo: 'h2',
+        texto: 'Do pedido à entrega: a sequência',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O pedido é só o começo. A NR-6 lista o que a empresa deve fazer com o EPI depois de comprado (item 6.5.1), e a ordem prática é esta:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Conferir o CA na chegada.</strong> O número vem no item e na nota, e a consulta no CAEPI leva um minuto. Como fazer está em <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">o que é o CA</a>.',
+          '<strong>Orientar e treinar</strong> cada pessoa: como usar, guardar, limpar e quando trocar (alínea b).',
+          '<strong>Registrar a entrega</strong> em livro, ficha ou sistema eletrônico, inclusive biométrico (alínea d).',
+          '<strong>Exigir o uso</strong> no dia a dia (alínea e).',
+          '<strong>Substituir imediatamente</strong> o que for danificado ou extraviado (alínea g). Os sinais de troca do calçado estão em <a href="/conhecimento/quando-trocar-o-calcado-de-seguranca/">quando trocar o calçado de segurança</a>.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'É funcionário e precisa pedir o seu EPI?',
+        id: 'funcionario',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A obrigação é da empresa, e o EPI é gratuito: o artigo 166 da CLT e o item 6.5.1 da NR-6 dizem isso com todas as letras. O pedido vai para quem cuida de segurança onde você trabalha, o técnico de segurança ou o SESMT quando existem, ou o supervisor e o RH quando não existem. A entrega fica registrada, e é comum você assinar a ficha. Se o item estragou ou sumiu, a troca também é obrigação da empresa, e as regras sobre desconto estão em <a href="/conhecimento/empresa-pode-descontar-epi-do-salario/">empresa pode descontar EPI do salário</a>.',
+      },
     ],
     fontes: [
+      {
+        titulo: 'NR-1 — Disposições Gerais e Gerenciamento de Riscos Ocupacionais (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-3.pdf',
+      },
+      {
+        titulo: 'CLT — Decreto-Lei 5.452/1943, artigo 166',
+        url: 'https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm',
+      },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
         url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
@@ -3972,6 +4109,26 @@ export const ARTIGOS: Artigo[] = [
     ctaTexto:
       'Conte quantas funções existem e o que cada uma faz. A gente ajuda a montar a lista antes de falar em preço, e a grade pode chegar depois.',
     perguntas: [
+      {
+        pergunta: 'Quais EPI a empresa deve fornecer?',
+        resposta:
+          'Os que a avaliação de riscos indicar para cada função, sempre gratuitos e com CA. Não há lista fixa: o artigo 166 da CLT e a NR-6 amarram a obrigação ao risco, e a NR-1 manda usar EPI quando a proteção coletiva não resolve sozinha.',
+      },
+      {
+        pergunta: 'Como fazer uma lista de EPI para a empresa?',
+        resposta:
+          'Parta do inventário de riscos do PGR, monte uma linha por função e passe cada uma pelas nove partes do corpo do Anexo I da NR-6. Para cada função, anote o EPI, quantas pessoas e a numeração.',
+      },
+      {
+        pergunta: 'O que é um kit EPI básico?',
+        resposta:
+          'É uma combinação comercial, geralmente botina com biqueira, óculos, protetor auricular e luva. A norma não define kit: serve como ponto de partida, mas pode faltar proteção para o risco real da função e sobrar item que ela não usa.',
+      },
+      {
+        pergunta: 'Qual é a sequência de entrega do EPI depois da compra?',
+        resposta:
+          'Conferir o CA na chegada, orientar e treinar o trabalhador, registrar a entrega na ficha, exigir o uso e substituir o que for danificado ou extraviado. Todas essas etapas estão no item 6.5.1 da NR-6.',
+      },
       {
         pergunta: 'Dá para começar só por uma função?',
         resposta:
