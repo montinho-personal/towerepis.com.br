@@ -765,12 +765,14 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'lista',
         itens: [
           'Fornecer o equipamento adequado ao risco da atividade, e não um equipamento genérico.',
+          '<a href="/conhecimento/quem-escolhe-o-epi-sesmt-cipa-ou-compras/">Selecionar ouvindo quem a norma manda ouvir</a>: o SESMT participa, e os usuários e a CIPA são ouvidos antes.',
           '<a href="/conhecimento/empresa-pode-descontar-epi-do-salario/">Fornecer gratuitamente</a> — o custo não pode ser repassado ao trabalhador.',
           'Fornecer em perfeito estado de conservação e funcionamento.',
           'Orientar e treinar sobre o uso adequado, a guarda e a conservação.',
           'Substituir imediatamente quando danificado ou extraviado.',
           'Responsabilizar-se pela higienização e manutenção periódica.',
           'Registrar o fornecimento, o que na prática é feito pela ficha de EPI.',
+          'Fornecer também ao empregado que trabalha terceirizado dentro de outra empresa: <a href="/conhecimento/epi-para-terceirizados-de-quem-e-a-obrigacao/">a obrigação é da prestadora</a>, e a contratante garante as condições no local.',
         ],
       },
       {
@@ -8933,6 +8935,390 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'O treinamento de NR-35 pode ser a distância?',
         resposta:
           'Não. Desde a Portaria MTE nº 1.259/2026, os treinamentos previstos na NR-35 devem ser realizados na modalidade presencial. O inicial tem no mínimo 8 horas, e o periódico, a cada dois anos, também.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-para-terceirizados-de-quem-e-a-obrigacao',
+    titulo: 'EPI de terceirizado: quem fornece, quem responde',
+    tituloSeo: 'EPI de terceirizado: quem fornece',
+    resumo:
+      'Quem compra e entrega é a prestadora, que é a empregadora. Mas a lei não deixa a contratante de fora quando o trabalho acontece dentro dela.',
+    descricaoSeo:
+      'Quem compra e entrega o EPI do terceirizado, o que a Lei 6.019 e a NR-1 cobram da contratante e o que conferir no contrato antes do primeiro dia de serviço.',
+    publicado: '2026-10-22',
+    atualizado: '2026-10-22',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Normas',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Quem fornece o EPI do terceirizado é a empresa que o emprega, a prestadora de serviços. A contratante não fica de fora: quando o trabalho acontece nas dependências dela, a lei a torna responsável por garantir as condições de segurança no local, e a NR-1 obriga as duas a trocar informação sobre os riscos.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A dúvida aparece dos dois lados do contrato. A empresa de limpeza, portaria ou manutenção quer saber se pode contar com o EPI do cliente. O cliente quer saber se pode ser cobrado pelo acidente de quem não é empregado dele. As normas respondem as duas perguntas, e a resposta divide o trabalho em vez de jogá-lo inteiro para um lado só.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quem compra e entrega: a empregadora',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O artigo 166 da CLT obriga a empresa a fornecer EPI gratuitamente aos seus empregados, e a <a href="/conhecimento/nr-6-o-que-a-empresa-precisa-saber/">NR-6</a> detalha o que isso inclui no item 6.5.1: adquirir só EPI com CA, orientar e treinar, fornecer em perfeito estado, registrar a entrega, exigir o uso e substituir o que for danificado ou extraviado. O terceirizado é empregado da prestadora. Na leitura direta das duas normas, compra, ficha, treinamento e troca são dela.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Isso inclui o custo. O EPI do terceirizado não é descontado do contrato com o cliente nem do salário do trabalhador por ser terceirizado: as regras de desconto são as mesmas de qualquer empregado, explicadas em <a href="/conhecimento/empresa-pode-descontar-epi-do-salario/">empresa pode descontar EPI do salário</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que a lei cobra da contratante',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A terceirização é regida pela Lei 6.019/1974, alterada em 2017. Três trechos dela tratam de segurança, e os três valem quando o serviço é feito dentro da contratante:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Garantir as condições no local.</strong> É responsabilidade da contratante garantir as condições de segurança, higiene e salubridade dos trabalhadores quando o trabalho é realizado em suas dependências ou em local combinado no contrato (artigo 5º-A, parágrafo 3º).',
+          '<strong>As mesmas medidas de proteção.</strong> Enquanto os serviços forem executados nas dependências da tomadora, os empregados da prestadora têm as mesmas condições de medidas de proteção à saúde e de segurança no trabalho dos empregados dela (artigo 4º-C, inciso II).',
+          '<strong>Responsabilidade subsidiária.</strong> A contratante responde subsidiariamente pelas obrigações trabalhistas do período em que o serviço foi prestado (artigo 5º-A, parágrafo 5º).',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'No trabalho temporário, que é outra modalidade da mesma lei, a regra é parecida: a tomadora responde pelas condições de segurança, higiene e salubridade quando o trabalho é feito nas dependências dela ou em local que ela designar, e o contrato precisa trazer disposições sobre segurança e saúde do trabalhador (artigo 9º).',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O alcance dessas responsabilidades num caso concreto, depois de um acidente, é pergunta para advogado trabalhista. O que dá para fazer antes disso é deixar cada obrigação com dono no contrato.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que a NR-1 cobra das duas',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O gerenciamento de riscos também tem regra própria para a terceirização, no item 1.5.8 da NR-1:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'O PGR da contratante deve incluir as medidas de prevenção para as contratadas que atuam em suas dependências, ou usar os programas das contratadas (1.5.8.1). Nesse segundo caso, a contratada entrega o inventário de riscos e o plano de ação das atividades contratadas (1.5.8.1.1).',
+          'Cada lado informa ao outro os riscos sob sua responsabilidade que possam afetar o trabalho do outro (1.5.8.2 e 1.5.8.3).',
+          'Quando os riscos nascem da interação entre as atividades das duas, as medidas de prevenção são definidas em conjunto, sob coordenação da contratante (1.5.8.4).',
+          'Se o serviço é prestado só pelo titular ou pelos sócios da contratada, a contratante estende a eles as suas medidas de prevenção (1.5.8.1.2).',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-5 completa o quadro. A contratada desobrigada de ter CIPA própria nomeia um representante da NR-5 quando tem cinco ou mais empregados no estabelecimento da contratante (item 5.8.2), a contratante deve exigir essa nomeação (5.8.6) e deve convidar a contratada para as reuniões da sua CIPA quando as duas atuam no mesmo estabelecimento (5.8.7).',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Na prática: quem faz o quê',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Tarefa', 'Prestadora (empregadora)', 'Contratante (tomadora)'],
+        linhas: [
+          ['Conhecer os riscos do posto', 'Informa os riscos da própria atividade', 'Informa os riscos do seu ambiente (NR-1, 1.5.8.2)'],
+          ['Comprar o EPI com CA', 'Compra e fornece de graça (CLT, art. 166; NR-6, 6.5.1)', 'Define no contrato o que o posto exige'],
+          ['Treinar e orientar', 'Treina sobre o EPI (NR-6, 6.5.1)', 'Informa os riscos e as regras do local'],
+          ['Registrar a entrega', 'Mantém a ficha de cada trabalhador', 'Combina no contrato o acesso aos registros'],
+          ['Condições de segurança no local', 'Cumpre as regras do local', 'Garante as condições (Lei 6.019, art. 5º-A, §3º)'],
+          ['Riscos que surgem da convivência', 'Participa da definição', 'Coordena as medidas em conjunto (NR-1, 1.5.8.4)'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que conferir no contrato antes do primeiro dia',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Os riscos de cada posto, por escrito.</strong> Sem isso a prestadora compra no escuro e a contratante não tem como cobrar.',
+          '<strong>A lista de EPI por função</strong>, com quem compra e o padrão mínimo de cada item. O caminho para montar essa lista está em <a href="/conhecimento/primeiro-pedido-de-epi-como-montar/">como montar o primeiro pedido de EPI</a>.',
+          '<strong>Como funciona a reposição:</strong> em quanto tempo a peça danificada é trocada no posto.',
+          '<strong>O acesso às fichas de entrega</strong>, para a contratante conferir quando precisar. O que a ficha precisa ter está em <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega de EPI</a>.',
+          '<strong>O representante da NR-5</strong>, quando a prestadora tiver cinco ou mais empregados no local.',
+          '<strong>Quem coordena</strong> as atividades em que as equipes das duas empresas trabalham juntas.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na portaria, a conferência que vale não é se o terceirizado trouxe EPI. É se trouxe o EPI que aquele posto pede, com CA válido. Como consultar está em <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">o que é o CA</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'E quando a contratante empresta o EPI?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Acontece, sobretudo na emergência: o terceirizado chega sem a luva certa e alguém do almoxarifado resolve. Nenhum dos textos citados aqui trata do empréstimo diretamente. O que eles deixam claro é que fornecer, registrar e substituir são obrigações da empregadora. Se a contratante entregar, vale combinar e registrar, para não sobrar trabalhador sem ficha e peça sem dono.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'Lei nº 6.019/1974 — trabalho temporário e prestação de serviços a terceiros (Planalto)',
+        url: 'https://www.planalto.gov.br/ccivil_03/leis/l6019.htm',
+      },
+      {
+        titulo: 'CLT — Decreto-Lei 5.452/1943, artigo 166',
+        url: 'https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm',
+      },
+      {
+        titulo: 'NR-1 — Disposições Gerais e Gerenciamento de Riscos Ocupacionais (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-3.pdf',
+      },
+      {
+        titulo: 'NR-5 — Comissão Interna de Prevenção de Acidentes e de Assédio (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-05-atualizada-2023.pdf',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/facilities-e-limpeza/',
+      rotulo: 'Ver o atendimento a facilities',
+    },
+    contexto: 'empresas-facilities',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Minha empresa presta serviço terceirizado e queria ajuda para montar a lista de EPI dos postos.',
+    ctaTitulo: 'Vai assumir um contrato novo?',
+    ctaTexto:
+      'Mande os postos e o que cada um faz. A gente monta a lista de EPI por função, com o CA de cada item, para você apresentar ao cliente.',
+    perguntas: [
+      {
+        pergunta: 'O terceirizado recebe EPI da prestadora ou da contratante?',
+        resposta:
+          'Da prestadora, que é a empregadora. A CLT, no artigo 166, e a NR-6, no item 6.5.1, põem o fornecimento, o registro, o treinamento e a substituição do EPI na conta de quem emprega. A contratante garante as condições de segurança no local quando o trabalho é feito nas dependências dela.',
+      },
+      {
+        pergunta: 'Terceirizado tem direito à mesma proteção do funcionário da contratante?',
+        resposta:
+          'Enquanto o serviço for executado nas dependências da tomadora, sim. A Lei 6.019, no artigo 4º-C, inciso II, assegura aos empregados da prestadora as mesmas condições de medidas de proteção à saúde e de segurança no trabalho dos empregados da contratante.',
+      },
+      {
+        pergunta: 'A contratante responde por acidente com terceirizado?',
+        resposta:
+          'A Lei 6.019 dá à contratante a responsabilidade de garantir as condições de segurança, higiene e salubridade no local (artigo 5º-A, parágrafo 3º) e a torna subsidiariamente responsável pelas obrigações trabalhistas do período (parágrafo 5º). O alcance disso num caso concreto é pergunta para advogado trabalhista.',
+      },
+      {
+        pergunta: 'E o trabalhador temporário?',
+        resposta:
+          'A regra é parecida. Pelo artigo 9º da Lei 6.019, a tomadora responde pelas condições de segurança, higiene e salubridade quando o trabalho é feito nas dependências dela ou em local que ela designar, e o contrato precisa trazer disposições sobre segurança e saúde.',
+      },
+    ],
+  },
+  {
+    slug: 'quem-escolhe-o-epi-sesmt-cipa-ou-compras',
+    titulo: 'Quem escolhe o EPI na empresa: SESMT, CIPA ou compras?',
+    tituloSeo: 'Quem escolhe o EPI: SESMT, CIPA ou compras',
+    resumo:
+      'A NR-6 responde com todas as letras: a empresa seleciona, o SESMT participa, os usuários e a CIPA são ouvidos antes. Compras executa a escolha.',
+    descricaoSeo:
+      'O que a NR-6 diz sobre quem seleciona o EPI, quem precisa ser ouvido, o que fica registrado e onde compras entra quando chega uma proposta mais barata.',
+    publicado: '2026-10-22',
+    atualizado: '2026-10-22',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Normas',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Quem seleciona o EPI é a empresa, com a participação do SESMT quando houver, depois de ouvir os empregados que vão usar e a CIPA, ou o representante nomeado. Está no item 6.5.2.2 da NR-6. Compras não aparece na norma: executa a escolha, mas não a substitui.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na maioria das empresas, a escolha do EPI acontece por acúmulo: o técnico indica um modelo, compras acha outro mais barato, o supervisor reclama do conforto, e o item que fica é o que sobreviveu à discussão. A norma organiza essa conversa, e diz quem precisa estar nela.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que a NR-6 diz',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O texto em vigor desde março de 2023 é este: a seleção do EPI deve ser realizada pela organização com a participação do Serviço Especializado em Engenharia de Segurança e em Medicina do Trabalho, o SESMT, quando houver, após ouvidos empregados usuários e a Comissão Interna de Prevenção de Acidentes e de Assédio, a CIPA, ou nomeado (item 6.5.2.2 da <a href="/conhecimento/nr-6-o-que-a-empresa-precisa-saber/">NR-6</a>).',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Três papéis cabem nessa frase. A responsabilidade é da organização. O SESMT participa da escolha. Os usuários e a CIPA são ouvidos antes dela. Ouvir não é decidir, mas também não é formalidade: a escolha feita sem ouvir já está fora da norma.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Os critérios da escolha',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O item 6.5.2 lista o que a empresa precisa considerar ao selecionar:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'A atividade exercida.',
+          'As medidas de prevenção que saíram da identificação dos perigos e da avaliação dos riscos.',
+          'O Anexo I da NR-6, que lista os tipos de EPI por parte do corpo.',
+          'A eficácia necessária para controlar a exposição.',
+          'O que outras normas regulamentadoras e leis exigem para aquela atividade.',
+          'A adequação ao empregado e o conforto, <strong>segundo avaliação do conjunto de empregados</strong>.',
+          'A compatibilidade entre EPI usados ao mesmo tempo, para um não anular a proteção do outro.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O sexto critério é o que mais se esquece e o que mais pesa no uso real. Conforto avaliado pelo conjunto de empregados significa testar com quem vai usar: um par de amostra por faixa de numeração, alguns dias de turno, e a opinião de quem calçou antes de fechar o pedido.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quem faz o quê',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Quem', 'O que a norma pede', 'Na prática'],
+        linhas: [
+          ['A organização', 'Seleciona e registra a seleção (NR-6, 6.5.2 e 6.5.2.1)', 'Responde pela escolha, mesmo quando delega a execução'],
+          ['SESMT, quando houver', 'Participa da seleção (6.5.2.2)', 'Traduz o risco em especificação técnica'],
+          ['Empregados usuários', 'São ouvidos antes (6.5.2.2); conforto avaliado pelo conjunto (6.5.2)', 'Testam a amostra e dizem o que machuca, escorrega ou atrapalha'],
+          ['CIPA ou representante nomeado', 'É ouvida antes (6.5.2.2)', 'Leva o que a equipe reclama e o que os acidentes mostraram'],
+          ['Compras', 'Não aparece na norma', 'Compra o que foi especificado e cota todos na mesma especificação'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Empresa sem SESMT e sem CIPA',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A maior parte das pequenas empresas não tem nenhum dos dois, e a obrigação de selecionar continua. A NR-5 cobre o vazio: quando o estabelecimento não precisa ter CIPA e não é atendido por SESMT, a empresa nomeia um empregado como representante da NR-5 para auxiliar nas ações de prevenção (item 5.4.13). É esse o "nomeado" do item 6.5.2.2. O microempreendedor individual é dispensado de nomear (5.4.13.2). E quando o estabelecimento é atendido por SESMT, é o SESMT que desempenha as atribuições da CIPA (5.4.13.1).',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A escolha precisa ficar registrada',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A seleção do EPI deve ser registrada, e o registro pode integrar o PGR ou ser referenciado nele (item 6.5.2.1). A empresa dispensada de elaborar o PGR mantém um registro que especifique as atividades exercidas e os respectivos EPI (6.5.2.1.1). Na prática, é uma lista de EPI por função, e o modelo dela está em <a href="/conhecimento/primeiro-pedido-de-epi-como-montar/">como montar o primeiro pedido de EPI</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Esse registro não é a <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega</a>. A seleção diz qual EPI cada função usa. A ficha diz que cada pessoa recebeu.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quando a escolha precisa ser refeita',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A seleção deve ser revista nas situações em que a NR-1 manda rever a avaliação de riscos (item 6.5.2.3 da NR-6, remetendo ao 1.5.4.4.6 da NR-1). As que mais tocam o EPI:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Mudança de processo, ambiente, produto ou organização do trabalho que crie risco novo ou altere o existente.',
+          'Medida de prevenção que se mostrou inadequada, insuficiente ou ineficaz.',
+          'Acidente ou doença relacionada ao trabalho.',
+          'Mudança nos requisitos legais.',
+          'Pedido justificado dos trabalhadores ou da CIPA.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na rotina, a situação mais comum é a segunda: a equipe para de usar o EPI porque ele machuca, esquenta ou escorrega. Antes de tratar isso como indisciplina, vale ler <a href="/conhecimento/funcionario-recusa-usar-epi-o-que-fazer/">funcionário recusa usar EPI</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Onde compras entra, e onde não entra',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Compras tem um papel real: cotar, negociar, garantir entrega e reposição. O problema começa quando a proposta mais barata troca o item. Um modelo diferente é uma escolha nova, e precisa passar pelos mesmos critérios e pelas mesmas pessoas da primeira. A equivalência se confere pelo número do CA e pelo que ele aprovou, não pelo nome comercial, como explica <a href="/conhecimento/epi-pelo-menor-preco-onde-a-conta-nao-fecha/">EPI pelo menor preço</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Uma regra simples evita a maior parte das trocas silenciosas: a proposta alternativa volta para quem especificou antes de fechar o pedido.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Óculos de grau também entram na escolha',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quando o empregado precisa de correção visual para trabalhar, a seleção deve considerar óculos de segurança de sobrepor, usados junto com as lentes corretivas, ou a adaptação do EPI, sem custo para o empregado (item 6.5.4).',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'NR-5 — Comissão Interna de Prevenção de Acidentes e de Assédio (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-05-atualizada-2023.pdf',
+      },
+      {
+        titulo: 'NR-1 — Disposições Gerais e Gerenciamento de Riscos Ocupacionais (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-3.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/',
+      rotulo: 'Ver o atendimento a empresas',
+    },
+    contexto: 'empresas',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Estamos revendo a escolha dos EPI da equipe e queria amostras para a equipe testar antes de fechar.',
+    ctaTitulo: 'A equipe vai testar antes de fechar?',
+    ctaTexto:
+      'Diga as funções e a faixa de numeração. A gente separa amostras para o teste com quem vai usar, com o CA de cada item para o registro da seleção.',
+    perguntas: [
+      {
+        pergunta: 'A CIPA escolhe o EPI?',
+        resposta:
+          'Não decide, mas precisa ser ouvida antes. Pelo item 6.5.2.2 da NR-6, a seleção é feita pela organização com a participação do SESMT, quando houver, depois de ouvidos os empregados usuários e a CIPA ou o representante nomeado.',
+      },
+      {
+        pergunta: 'Empresa sem SESMT e sem CIPA: quem escolhe o EPI?',
+        resposta:
+          'A própria empresa, ouvindo os empregados que vão usar e o representante nomeado da NR-5, que é o empregado indicado para auxiliar nas ações de prevenção quando não há CIPA nem SESMT (item 5.4.13 da NR-5). O MEI é dispensado de nomear.',
+      },
+      {
+        pergunta: 'Precisa registrar a escolha do EPI?',
+        resposta:
+          'Sim. A NR-6 manda registrar a seleção, que pode integrar o PGR ou ser referenciada nele (item 6.5.2.1). Quem é dispensado do PGR mantém um registro das atividades exercidas e dos respectivos EPI (6.5.2.1.1).',
+      },
+      {
+        pergunta: 'Compras pode trocar o EPI por um mais barato?',
+        resposta:
+          'Só se o novo modelo passar pelos mesmos critérios e pelas mesmas pessoas da escolha original, porque um modelo diferente é uma nova seleção. A equivalência se confere pelo número do CA e pelo que ele aprovou, não pelo nome comercial.',
       },
     ],
   },
