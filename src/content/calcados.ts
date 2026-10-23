@@ -133,6 +133,16 @@ export const CALCADOS: TipoCalcado[] = [
     ],
     perguntas: [
       {
+        pergunta: 'Calçado de segurança precisa ter CA?',
+        resposta:
+          'Precisa. A NR-6 manda a empresa adquirir somente EPI aprovado e o fabricante vender somente com Certificado de Aprovação válido. O número do CA vem marcado no próprio calçado, junto com o nome do fabricante e o lote, e a consulta mostra para que aquele modelo foi aprovado.',
+      },
+      {
+        pergunta: 'O uso de calçado de segurança é obrigatório?',
+        resposta:
+          'Quando a avaliação de riscos da atividade indica, sim, e a empresa fornece de graça. A NR-6 lista o calçado contra impacto de queda de objetos sobre os dedos entre os EPI, e a CLT obriga o fornecimento gratuito sempre que as medidas coletivas não protegem por completo. Onde não há esse risco, o calçado ocupacional pode ser o certo.',
+      },
+      {
         pergunta: 'Calçado de segurança precisa ser pesado?',
         resposta:
           'Não. A proteção vem de a biqueira atender ao requisito da norma, não do peso do calçado. Modelos com biqueira de composite protegem conforme a norma e são mais leves, o que faz diferença real para quem caminha muito.',

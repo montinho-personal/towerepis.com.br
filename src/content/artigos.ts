@@ -5200,8 +5200,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Como limpar e conservar calçado de segurança: a rotina de dois minutos, o que nunca fazer com couro e solado, e por que alternar pares faz durar mais.',
     publicado: '2026-09-11',
-    atualizado: '2026-09-11',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-10-24',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Calçados',
     blocos: [
       {
@@ -5366,6 +5366,11 @@ export const ARTIGOS: Artigo[] = [
     ctaTexto:
       'Conte quanto tempo dura hoje e como é o ambiente. Dá para dizer se o caso é de conservação, de rodízio de pares ou de o modelo não ser o certo para aquele piso.',
     perguntas: [
+      {
+        pergunta: 'Calçado de segurança se guarda dentro ou fora da caixa?',
+        resposta:
+          'Seco e em lugar arejado. Caixa, sacola ou armário fechado com o calçado ainda úmido por dentro guardam a umidade, e é daí que vêm o mofo e o cheiro. Se for guardar por muito tempo, seque bem antes e deixe com ventilação.',
+      },
       {
         pergunta: 'Pode lavar botina na máquina de lavar?',
         resposta:
@@ -7149,6 +7154,11 @@ export const ARTIGOS: Artigo[] = [
     ctaTexto:
       'Conte o que pode entrar pelo pé na rotina da equipe e como é o piso. Com essas duas respostas dá para fechar o formato, e a gente já ajuda com a grade.',
     perguntas: [
+      {
+        pergunta: 'Tênis de segurança protege igual à botina?',
+        resposta:
+          'Protege o que o CA dele declarar. O formato não define a proteção: tênis, sapato, botina e bota podem ter biqueira, solado antiderrapante e outros requisitos, e cada modelo tem o seu Certificado de Aprovação. O que o tênis costuma oferecer é leveza; o que ele não tem é o cano que protege o tornozelo.',
+      },
       {
         pergunta: 'Botina de segurança de cadarço, elástico ou velcro: qual escolher?',
         resposta:
@@ -9455,7 +9465,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'É a pergunta que mais chega de quem trabalha com eletricidade, às vezes com outro nome: botina de segurança para eletricista, botina dielétrica, calçado sem metal. Os três nomes escondem a mesma confusão, porque duas botinas podem ser iguais na foto e ter comportamento elétrico oposto. O que separa uma da outra está no ensaio e no CA, e é disso que este texto trata. O conjunto do EPI de quem mexe com eletricidade está em <a href="/conhecimento/epi-para-eletricista-o-que-muda/">EPI para eletricista</a>.',
+          'É a pergunta que mais chega de quem trabalha com eletricidade, às vezes com outro nome: botina de segurança para eletricista, calçado de segurança para eletricista, botina dielétrica, calçado sem metal. Os três nomes escondem a mesma confusão, porque duas botinas podem ser iguais na foto e ter comportamento elétrico oposto. O que separa uma da outra está no ensaio e no CA, e é disso que este texto trata. O conjunto do EPI de quem mexe com eletricidade está em <a href="/conhecimento/epi-para-eletricista-o-que-muda/">EPI para eletricista</a>.',
       },
       {
         tipo: 'h2',
@@ -10484,6 +10494,16 @@ export const ARTIGOS: Artigo[] = [
       'Diga as funções, os setores e a numeração da equipe. A gente separa o calçado e o EPI de cada posto, com o CA de cada item.',
     perguntas: [
       {
+        pergunta: 'O que a NR-32 diz sobre adornos?',
+        resposta:
+          'O empregador deve vedar o uso de adornos nos postos de trabalho com possibilidade de exposição a agente biológico, junto com fumar e manusear lente de contato (item 32.2.4.5). Para a limpeza dos serviços de saúde, a proibição de adornos aparece de novo no item 32.8.2.',
+      },
+      {
+        pergunta: 'Que calçado é inadequado no hospital pela NR-32?',
+        resposta:
+          'O calçado aberto: a NR-32 manda o empregador vedar o seu uso (item 32.2.4.5). A norma não detalha o modelo do calçado fechado; a escolha sai da avaliação de riscos, e em hospital costuma ser calçado ocupacional fechado, impermeável e antiderrapante.',
+      },
+      {
         pergunta: 'Quais EPIs a NR-32 exige?',
         resposta:
           'A NR-32 não traz lista única. Ela exige EPI à disposição em número suficiente nos postos de trabalho, proíbe calçado aberto, manda fornecer vestimenta sem custo e detalha o EPI do preparo de quimioterápico, como o avental impermeável fechado nas costas. O restante sai da avaliação de riscos do serviço.',
@@ -10706,7 +10726,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'A botina mais confortável não se descobre na foto nem na descrição. Descobre-se no pé de quem vai usar, depois de alguns dias de turno. Um par de amostra por faixa de numeração, testado antes de comprar para todos, é o que a NR-6 chama de avaliação do conjunto de empregados.',
+          'A botina, ou qualquer calçado de segurança confortável, não se descobre na foto nem na descrição. Descobre-se no pé de quem vai usar, depois de alguns dias de turno. Um par de amostra por faixa de numeração, testado antes de comprar para todos, é o que a NR-6 chama de avaliação do conjunto de empregados.',
       },
       {
         tipo: 'h2',
@@ -10857,7 +10877,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'No comércio, "botina ortopédica" quase sempre quer dizer botina com palmilha anatômica e amortecimento, não um calçado feito sob prescrição. Ela tem CA como qualquer outro modelo, e o CA vale para o modelo como foi aprovado.',
+          'No comércio, "botina ortopédica" ou "calçado de segurança ortopédico com CA" quase sempre quer dizer botina com palmilha anatômica e amortecimento, não um calçado feito sob prescrição. Ela tem CA como qualquer outro modelo, e o CA vale para o modelo como foi aprovado.',
       },
       {
         tipo: 'p',
@@ -10873,7 +10893,7 @@ export const ARTIGOS: Artigo[] = [
         itens: [
           '<strong>Antes de trocar a palmilha</strong>, conferir o manual do calçado.',
           '<strong>Antes de comprar palmilha</strong>, conferir número e largura: a maior parte das dores começa aí.',
-          '<strong>Quando há indicação de um profissional de saúde</strong>, a empresa leva o caso ao fornecedor, para o pedido de adaptação ir ao fabricante.',
+          '<strong>Quando há indicação de um profissional de saúde</strong>, como em casos de fascite plantar, esporão ou pé diabético, a empresa leva o caso ao fornecedor, para o pedido de adaptação ir ao fabricante. Quem orienta o tratamento é o profissional de saúde; o que a norma garante é o caminho para adaptar sem perder o CA.',
           '<strong>Na escolha do modelo</strong>, a NR-6 manda considerar a adequação ao empregado e o conforto (item 6.5.2). Quem participa dessa escolha está em <a href="/conhecimento/quem-escolhe-o-epi-sesmt-cipa-ou-compras/">quem escolhe o EPI</a>.',
         ],
       },
