@@ -359,6 +359,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'O modelo da equipe existe no número delas?',
     rotulo: 'Conferir a numeração',
   },
+  'epi-e-epc-qual-a-diferenca': {
+    chamada: 'Qual risco sobrou depois da proteção coletiva?',
+    rotulo: 'Completar com EPI',
+  },
+  'epi-na-construcao-civil-o-que-a-nr-18-exige': {
+    chamada: 'Já tem a relação de EPI do PGR da obra?',
+    rotulo: 'Orçar pela lista',
+  },
   'epi-para-mecanico-de-oficina': {
     chamada: 'Que serviços a sua oficina faz?',
     rotulo: 'Montar a lista da oficina',

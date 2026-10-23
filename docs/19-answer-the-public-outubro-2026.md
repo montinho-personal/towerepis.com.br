@@ -210,3 +210,27 @@ ainda. O que costuma ser citado é texto específico, com fonte e resposta curta
 destacável — o formato que os artigos do site já seguem (destaque no topo,
 FAQ com resposta autossuficiente, norma com item). A melhor alavanca aqui é
 continuar cobrindo as perguntas da seção 4 nesse formato.
+
+---
+
+## 7. Andamento
+
+**24/10/2026 — feito:**
+- 3.1 `/protecao/`: tabela dos nove grupos do Anexo I, expressão no texto e
+  duas FAQ ("Quais são os tipos de EPI?", "Qual NR trata dos EPI?"). A FAQ de
+  EPI × EPC ficou no artigo próprio, para não repetir.
+- 3.2 Home: expressão no parágrafo de abertura e bloco "Perguntas sobre a
+  Tower" com FAQPage (3 perguntas; estados lidos de `empresa.areaAtendida`).
+- 3.3 Ceará ("loja de equipamentos de segurança do trabalho", "distribuidora")
+  e fornecedor (seção "Além do produto", com NR-6 6.9.2.1.1 e 6.9.3).
+- 3.4 Eletricista: nova NR-10 e EPC para eletricista, duas FAQ.
+- 3.5 Bota de PVC e solado antiderrapante: FAQ de ambiente úmido.
+- 3.6 Capacete: FAQ de manutenção. "Classe E" ficou de fora (sem fonte
+  conferível).
+- Lote 1: `epi-e-epc-qual-a-diferenca` e
+  `epi-na-construcao-civil-o-que-a-nr-18-exige`. NR-18 conferida no texto de
+  2025 (última alteração: Portaria MTE 09/2025); a redação atual não traz lista
+  fixa de EPI — manda o PGR do canteiro listar (18.4.3).
+
+**Próximo:** lote 2 (NR-32 e trabalho em altura — este depende de confirmar se
+a Tower fornece cinturão e talabarte).

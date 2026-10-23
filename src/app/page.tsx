@@ -2,12 +2,38 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 import { WhatsAppCta } from '@/components/WhatsAppCta'
-import { BarraProva, GradeLinks, Secao, Comparacao } from '@/components/Blocos'
+import { BarraProva, GradeLinks, Secao, Comparacao, Perguntas } from '@/components/Blocos'
 import { IconeSeta } from '@/components/Icones'
 import { Retrato } from '@/components/Retrato'
 import { PROFISSOES } from '@/content/profissoes'
 import { PROTECOES } from '@/content/protecoes'
 import { ARTIGOS } from '@/content/artigos'
+import { JsonLd, schemaFaq } from '@/lib/schema'
+import { empresa } from '@/config/empresa'
+
+/**
+ * Perguntas que só a home responde. As de loja e de atendimento no interior
+ * ficam na página do Ceará, e o qa-faq barraria a repetição. A primeira
+ * existe porque "equipamentos de segurança do trabalho" tem 880 buscas por
+ * mês (Answer the Public, 23/10/2026) e o site não usava a expressão.
+ */
+const ESTADOS = empresa.areaAtendida.filter((a) => ['Ceará', 'Piauí', 'Rio Grande do Norte'].includes(a))
+const PERGUNTAS_HOME = [
+  {
+    pergunta: 'O que são equipamentos de segurança do trabalho?',
+    resposta:
+      'É o nome popular dos equipamentos de proteção individual, os EPI: o que o trabalhador usa no corpo para se proteger dos riscos da atividade, como calçado de segurança, luva, máscara, óculos, protetor auditivo e capacete. A NR-6 lista os tipos e exige que cada um tenha Certificado de Aprovação.',
+  },
+  {
+    pergunta: 'Para quem a Tower vende EPI?',
+    resposta:
+      'Para empresas de qualquer porte, de restaurante e clínica a indústria e obra. Não é preciso CNPJ nem cadastro para começar a conversa: o pedido começa no WhatsApp, e o orçamento sai com o Certificado de Aprovação de cada item.',
+  },
+  {
+    pergunta: 'Em quais estados a Tower atende?',
+    resposta: `${ESTADOS.slice(0, -1).join(', ')} e ${ESTADOS.at(-1)}, a partir de Fortaleza. O atendimento é feito à distância, pelo WhatsApp, e a entrega é combinada no pedido.`,
+  },
+]
 
 export const metadata: Metadata = {
   title: "EPI em Fortaleza — Tower EPI's, desde 1995",
@@ -28,7 +54,7 @@ export default function Home() {
               O melhor EPI é o que a pessoa usa o dia inteiro.
             </h1>
             <p className="mt-8 max-w-xl text-lg leading-relaxed text-ink-2">
-              Equipamentos de proteção individual em Fortaleza, desde 1995. Calçados
+              Equipamentos de segurança do trabalho, os EPI, em Fortaleza desde 1995. Calçados
               ocupacionais e de segurança, proteção respiratória, luvas, óculos e mais —
               com a orientação de quem é técnico de segurança do trabalho.
             </p>
@@ -398,6 +424,12 @@ export default function Home() {
         >
           Ver todas as regiões <IconeSeta />
         </Link>
+      </Secao>
+
+      {/* 8c. PERGUNTAS — o que só a home responde, com FAQPage. */}
+      <JsonLd dados={schemaFaq(PERGUNTAS_HOME)} />
+      <Secao className="wrap" ritmo="compacto">
+        <Perguntas perguntas={PERGUNTAS_HOME} titulo="Perguntas sobre a Tower" nome="faq-home" />
       </Secao>
 
       {/* 9. CONHECIMENTO — a autoridade é contínua, não uma alegação. */}

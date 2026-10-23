@@ -23,7 +23,35 @@ export const metadata: Metadata = {
  * O que ele passa a entregar é o MÉTODO: como se decide o que proteger. Isso
  * é o que a Tower sabe e o índice não dizia.
  */
+/**
+ * Os nove grupos do Anexo I da NR-6, conferidos no texto oficial em 24/10/2026.
+ * Responde "quais são os tipos de EPI" e "quais são os equipamentos de
+ * segurança do trabalho" (Answer the Public, 23/10/2026: 880 buscas/mês para
+ * o termo, que até então não aparecia em nenhuma página do site).
+ */
+const GRUPOS_NR6: { grupo: string; lista: string; href: string; onde: string }[] = [
+  { grupo: 'A — Cabeça', lista: 'Capacete; capuz ou balaclava', href: '/protecao/cabeca/', onde: 'Capacete' },
+  { grupo: 'B — Olhos e face', lista: 'Óculos; protetor facial; máscara de solda', href: '/protecao/olhos-e-face/', onde: 'Óculos e protetor facial' },
+  { grupo: 'C — Auditiva', lista: 'Protetor circum-auricular (concha), de inserção (plug) e semiauricular', href: '/protecao/auditiva/', onde: 'Proteção auditiva' },
+  { grupo: 'D — Respiratória', lista: 'PFF1, PFF2 e PFF3; peças com filtro; respiradores motorizados, de adução de ar e de fuga', href: '/protecao/respiratoria/', onde: 'Proteção respiratória' },
+  { grupo: 'E — Tronco', lista: 'Vestimentas contra calor, agente mecânico, químico, radiação, chuva e água; colete à prova de balas para vigilante', href: '/protecao/corpo/', onde: 'Vestimentas' },
+  { grupo: 'F — Membros superiores', lista: 'Luvas; creme protetor; manga; braçadeira; dedeira', href: '/protecao/maos/', onde: 'Luvas' },
+  { grupo: 'G — Membros inferiores', lista: 'Calçado; meia para frio; perneira; calça', href: '/calcados/', onde: 'Calçados' },
+  { grupo: 'H — Corpo inteiro', lista: 'Macacão; vestimenta de corpo inteiro', href: '/protecao/corpo/', onde: 'Vestimentas' },
+  { grupo: 'I — Quedas com diferença de nível', lista: 'Cinturão de segurança com trava-quedas ou com talabarte', href: '/conhecimento/epi-para-parque-eolico-e-manutencao-de-aerogerador/', onde: 'Sistema contra quedas (guia do parque eólico)' },
+]
+
 const PERGUNTAS = [
+  {
+    pergunta: 'Quais são os tipos de EPI?',
+    resposta:
+      'A NR-6 organiza os EPI em nove grupos, no Anexo I: proteção da cabeça; dos olhos e face; auditiva; respiratória; do tronco; dos membros superiores; dos membros inferiores; do corpo inteiro; e contra quedas com diferença de nível. Listas de "5", "7" ou "10 tipos" são resumos dessa lista oficial.',
+  },
+  {
+    pergunta: 'Qual NR trata dos equipamentos de proteção individual?',
+    resposta:
+      'A NR-6. Ela define o que é EPI, lista os tipos no Anexo I, exige o Certificado de Aprovação e diz o que cabe à empresa e ao trabalhador. Normas de setor, como a NR-10, a NR-18, a NR-31, a NR-32 e a NR-35, somam exigências a ela.',
+  },
   {
     pergunta: 'Como saber de qual EPI a minha atividade precisa?',
     resposta:
@@ -59,8 +87,9 @@ export default function HubProtecao() {
       />
       <Secao className="wrap" ritmo="normal">
         <EmUmaFrase>
-          Equipamento de Proteção Individual (EPI) é todo dispositivo de uso individual
-          destinado a proteger o trabalhador dos riscos da atividade. A escolha se organiza
+          Equipamento de Proteção Individual (EPI), o que muita gente chama de equipamento
+          de segurança do trabalho, é todo dispositivo de uso individual destinado a
+          proteger o trabalhador dos riscos da atividade. A escolha se organiza
           por parte do corpo — respiração, mãos, audição, olhos e face, cabeça, corpo e pés
           —, e o que decide cada categoria é o risco a que a pessoa fica exposta, não o
           produto disponível no catálogo.
@@ -100,6 +129,49 @@ export default function HubProtecao() {
             riscos da sua empresa, feita por profissional habilitado.
           </p>
         </div>
+      </Secao>
+
+      <Secao className="wrap" ritmo="normal">
+        <h2 className="text-2xl sm:text-3xl">A lista oficial: os nove grupos de EPI da NR-6</h2>
+        <p className="mt-4 measure text-ink-2">
+          Os equipamentos de segurança do trabalho que contam como EPI estão listados no
+          Anexo I da NR-6, separados pela parte do corpo que protegem. Cada item ali tem
+          um tipo de risco escrito ao lado, e o Certificado de Aprovação do produto
+          precisa declarar aquele risco.
+        </p>
+        <div className="mt-8 overflow-x-auto">
+          <table className="w-full border-collapse text-left text-[0.95rem]">
+            <thead>
+              <tr className="border-b-2 border-ink">
+                <th className="py-3 pr-5 font-display text-sm font-bold align-bottom">Grupo na NR-6</th>
+                <th className="py-3 pr-5 font-display text-sm font-bold align-bottom">O que a norma lista</th>
+                <th className="py-3 pr-5 font-display text-sm font-bold align-bottom">Onde o site explica</th>
+              </tr>
+            </thead>
+            <tbody>
+              {GRUPOS_NR6.map((g) => (
+                <tr key={g.grupo} className="border-b border-rule">
+                  <td className="py-3 pr-5 align-top font-semibold">{g.grupo}</td>
+                  <td className="py-3 pr-5 align-top text-ink-2">{g.lista}</td>
+                  <td className="py-3 pr-5 align-top">
+                    <Link href={g.href} className="underline underline-offset-4 hover:text-tower-red">
+                      {g.onde}
+                    </Link>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-6 measure text-[0.95rem] leading-relaxed text-ink-2">
+          O que não está nessa lista não é EPI, por mais que proteja: a proteção coletiva,
+          como exaustão, guarda-corpo e isolamento acústico, vem antes dele. A diferença
+          está em{' '}
+          <Link href="/conhecimento/epi-e-epc-qual-a-diferenca/" className="underline underline-offset-4 hover:text-tower-red">
+            EPI e EPC: qual a diferença
+          </Link>
+          .
+        </p>
       </Secao>
 
       <Secao className="wrap" ritmo="normal">

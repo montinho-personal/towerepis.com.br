@@ -920,7 +920,7 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Entenda o que é medido no ensaio de resistência ao escorregamento, o que significam as marcações e como escolher para piso molhado ou oleoso.',
     publicado: '2026-08-30',
-    atualizado: '2026-10-03',
+    atualizado: '2026-10-24',
     atualizadoExibicao: 'outubro de 2026',
     cluster: 'Calçados',
     blocos: [
@@ -1043,6 +1043,11 @@ export const ARTIGOS: Artigo[] = [
     mensagemWhats:
       'Olá! Vim pelo site da Tower. Li o texto sobre solado antiderrapante e queria saber qual modelo serve para o piso onde eu trabalho.',
     perguntas: [
+      {
+        pergunta: 'Calçado antiderrapante serve para ambiente úmido?',
+        resposta:
+          'Serve para piso molhado, desde que o CA declare a resistência ao escorregamento e o solado esteja com o relevo em bom estado. Onde há água acumulada ou lavagem constante, não basta não escorregar: o pé precisa ficar seco, e aí a resposta é a bota impermeável de cano alto.',
+      },
       {
         pergunta: 'Todo calçado antiderrapante serve para qualquer piso?',
         resposta:
@@ -3661,7 +3666,7 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'O que exigir de um fornecedor de EPI antes de fechar: CA na proposta, descrição do que foi aprovado, reposição e troca de numeração. Com os sinais de risco.',
     publicado: '2026-09-05',
-    atualizado: '2026-10-15',
+    atualizado: '2026-10-24',
     atualizadoExibicao: 'outubro de 2026',
     cluster: 'Compra',
     blocos: [
@@ -3721,6 +3726,29 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'Nenhum desses cinco custa dinheiro ao fornecedor. Um fornecedor que trava em qualquer um deles está dizendo alguma coisa.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Além do produto: o que um bom fornecedor ajuda a fazer',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem compra equipamentos de segurança do trabalho para uma empresa raramente precisa só de preço. Precisa de alguém que ajude a chegar ao pedido certo. Vale perguntar se o fornecedor faz isto, e como:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Ajuda a montar a lista por função</strong>, a partir do que cada pessoa faz. O caminho está em <a href="/conhecimento/primeiro-pedido-de-epi-como-montar/">como montar o primeiro pedido de EPI</a>.',
+          '<strong>Separa amostras para a equipe testar</strong> antes de fechar. A NR-6 manda considerar o conforto avaliado pelo conjunto de empregados, como explica <a href="/conhecimento/quem-escolhe-o-epi-sesmt-cipa-ou-compras/">quem escolhe o EPI</a>.',
+          '<strong>Mostra a ficha técnica e o manual do fabricante</strong>, além do CA. É ali que estão as condições de armazenamento e o prazo de validade que a NR-6 manda observar no fornecimento (item 6.9.2.1.1).',
+          '<strong>Diz com clareza o que não vende.</strong> Fornecedor que promete tudo costuma terceirizar a resposta técnica.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Se a empresa quer EPI com logotipo, pergunte quem faz a personalização e confira o resultado: todo EPI precisa manter, em caracteres indeléveis, legíveis e visíveis, o nome do fabricante ou importador, o lote de fabricação e o número do CA (item 6.9.3 da NR-6).',
       },
       {
         tipo: 'h2',
@@ -4292,8 +4320,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'EPI para eletricista: por que a escolha muda, o que a aparência do equipamento não mostra e o que definir antes de pedir o orçamento.',
     publicado: '2026-09-05',
-    atualizado: '2026-09-05',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-10-24',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Proteção',
     blocos: [
       {
@@ -4351,6 +4379,38 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
+        texto: 'Antes do EPI: desligar e proteger coletivamente',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Em eletricidade, o EPI é a última camada, e a norma diz isso com todas as letras. Na nova redação da NR-10, a primeira medida é eliminar o perigo desenergizando a instalação (item 10.5.1). Quando isso não é possível, vêm as medidas de proteção coletiva; depois, as administrativas e de organização do trabalho; e só então o EPI (item 10.5.4).',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Os EPC do eletricista estão no capítulo 10.6: partes vivas perigosas que não podem ser acessíveis, massas e partes condutivas que não podem oferecer perigo nem em caso de falha, e o dispositivo diferencial-residual de alta sensibilidade, o DR, obrigatório nas situações listadas no item 10.6.4. A diferença entre os dois tipos de proteção está em <a href="/conhecimento/epi-e-epc-qual-a-diferenca/">EPI e EPC</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A nova NR-10, em vigor a partir de junho de 2027',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A Portaria MTE nº 737, publicada em 1º de junho de 2026, aprovou uma nova redação da NR-10, que passa a valer um ano depois da publicação. Até lá, vale a redação atual. O que toca diretamente a rotina de quem compra e usa EPI:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Procedimento e permissão.</strong> Serviço rotineiro segue procedimento de trabalho feito a partir da análise de risco (item 10.7.1). Serviço não rotineiro exige permissão de trabalho, válida só para a atividade e o turno (itens 10.7.2 e 10.7.2.2).',
+          '<strong>Treinamento prático presencial.</strong> O conteúdo prático dos treinamentos da NR-10 deve ser presencial (item 10.9.13), e o conteúdo mínimo inclui o uso estritamente pessoal do EPI e a proibição do uso compartilhado.',
+          '<strong>EPI específico.</strong> O EPI deve ser específico e adequado à atividade, observada a NR-6 (item 10.11.1).',
+          '<strong>Arco elétrico com tabela própria.</strong> O Anexo IV traz a especificação mínima de EPI contra arco por categoria. Fora das condições do anexo, a empresa precisa de um estudo de energia incidente (itens 10.11.2 a 10.11.2.3). O calçado que o anexo pede está em <a href="/conhecimento/botina-isolante-para-eletricista/">botina isolante para eletricista</a>.',
+        ],
+      },
+      {
+        tipo: 'h2',
         texto: 'O que um distribuidor pode e não pode fazer',
       },
       {
@@ -4380,7 +4440,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Para saber exatamente o que a norma exige em cada situação de trabalho com eletricidade, o caminho é a norma regulamentadora específica do tema, publicada pelo Ministério do Trabalho e Emprego, junto com o profissional que responde tecnicamente pela sua operação.',
+          'Para saber exatamente o que a norma exige em cada situação de trabalho com eletricidade, o caminho é a NR-10, publicada pelo Ministério do Trabalho e Emprego, junto com o profissional que responde tecnicamente pela sua operação.',
       },
     ],
     fontes: [
@@ -4391,6 +4451,14 @@ export const ARTIGOS: Artigo[] = [
       {
         titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
         url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual',
+      },
+      {
+        titulo: 'NR-10 — nova redação, vigência a partir de 1º/6/2027 (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-10.pdf',
+      },
+      {
+        titulo: 'Portaria MTE nº 737/2026 — aprova a nova redação da NR-10 (PDF oficial)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2026-1/portaria-mte-no-737-nova-nr-10.pdf',
       },
     ],
     paginaComercial: {
@@ -4413,6 +4481,16 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Quem define o EPI para trabalho com eletricidade?',
         resposta:
           'A análise de risco da empresa, conduzida por profissional habilitado, e não o fornecedor nem o catálogo. O distribuidor entra depois, informando o CA de cada item e o que ele declara. Fornecedor que define especificação de eletricidade sem conhecer a instalação está vendendo, não orientando.',
+      },
+      {
+        pergunta: 'Quais são os EPC para eletricista?',
+        resposta:
+          'Na nova NR-10, as medidas de proteção coletiva contra choque incluem impedir o acesso a partes vivas perigosas, garantir que partes condutivas não ofereçam perigo nem em caso de falha e usar o dispositivo diferencial-residual de alta sensibilidade, o DR, nas situações listadas no item 10.6.4. Antes delas vem a desenergização da instalação.',
+      },
+      {
+        pergunta: 'Quando a nova NR-10 entra em vigor?',
+        resposta:
+          'Em 1º de junho de 2027, um ano depois da publicação da Portaria MTE nº 737/2026. Até lá vale a redação atual. A nova versão exige permissão de trabalho para serviço não rotineiro, treinamento prático presencial e traz uma tabela de EPI contra arco elétrico no Anexo IV.',
       },
       {
         pergunta: 'Luva de vaqueta serve para trabalho elétrico?',
@@ -4768,8 +4846,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Quando a bota de PVC é a escolha certa, o que ela cobra em troca e como decidir entre ela e o calçado fechado impermeável — com o que conferir antes de comprar.',
     publicado: '2026-09-11',
-    atualizado: '2026-09-11',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-10-24',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Calçados',
     blocos: [
       {
@@ -4925,6 +5003,11 @@ export const ARTIGOS: Artigo[] = [
     ctaTexto:
       'Conte quantas horas do turno o pé fica no molhado e o que escorre no chão além de água. Com isso dá para dizer qual das duas atende, e se o caso é de ter as duas.',
     perguntas: [
+      {
+        pergunta: 'Qual calçado usar em ambiente úmido?',
+        resposta:
+          'Depende de quanta água chega ao pé. Com água acumulada, lavagem ou jato, o calçado precisa ser impermeável e cobrir a perna, como a bota de cano alto, que a NR-6 prevê para proteção de pés e pernas contra umidade de operações com água. Com piso apenas molhado, um calçado fechado com solado antiderrapante costuma resolver e é mais fresco para o turno inteiro.',
+      },
       {
         pergunta: 'Bota de PVC serve para usar o dia inteiro?',
         resposta:
@@ -9925,6 +10008,316 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Como saber o número certo da botina de segurança feminina?',
         resposta:
           'Medindo o comprimento do pé, em pé e no fim do dia, e testando o par com a meia de trabalho. Os dedos não podem encostar na biqueira, e o calcanhar não pode subir ao andar.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-e-epc-qual-a-diferenca',
+    titulo: 'EPI e EPC: qual a diferença e qual vem primeiro',
+    tituloSeo: 'EPI e EPC: qual a diferença',
+    resumo:
+      'O EPC protege todo mundo que está no ambiente; o EPI protege uma pessoa, se ela usar. A norma manda nessa ordem, e o EPI é a última camada, não a primeira.',
+    descricaoSeo:
+      'O que separa EPI de EPC, a ordem que a NR-1 manda seguir, exemplos de proteção coletiva por risco e por que o EPI é a última camada, não a primeira.',
+    publicado: '2026-10-24',
+    atualizado: '2026-10-24',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Normas',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'EPC, o equipamento de proteção coletiva, age no ambiente e protege todo mundo que está ali, sem depender de ninguém lembrar de nada. EPI, o equipamento de proteção individual, protege uma pessoa, e só enquanto ela usa. A NR-1 manda seguir esta ordem: eliminar o risco, proteger coletivamente, organizar o trabalho e, por último, o EPI.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A confusão entre os dois aparece em toda conversa sobre segurança do trabalho, e ela custa caro nos dois sentidos. Quem trata o EPI como primeira resposta compra equipamento para um risco que poderia ter sido tirado do ambiente. Quem acha que a proteção coletiva resolve tudo deixa sem EPI quem continua exposto.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A diferença em uma tabela',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['', 'EPI', 'EPC'],
+        linhas: [
+          ['Protege quem', 'A pessoa que está usando', 'Todos que estão no ambiente'],
+          ['Depende do trabalhador', 'Sim: usar, ajustar e conservar', 'Não, depois de instalado'],
+          ['Exemplos', 'Calçado de segurança, luva, respirador, protetor auricular, cinturão', 'Guarda-corpo, exaustão, enclausuramento de máquina, dispositivo DR'],
+          ['Regra que define', 'NR-6, que exige Certificado de Aprovação', 'A norma de cada risco; na obra, projeto de profissional habilitado (NR-18, item 18.4.3)'],
+          ['Na ordem da NR-1', 'Último degrau', 'Segundo degrau, logo depois de eliminar o risco'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'A ordem que a norma manda seguir',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-1 manda o empregador implementar as medidas de prevenção, ouvidos os trabalhadores, nesta ordem de prioridade (item 1.4.1, alínea g):',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>1. Eliminar o fator de risco.</strong> Trocar o processo, desligar a energia, tirar a tarefa da altura.',
+          '<strong>2. Proteção coletiva.</strong> Controlar o risco no ambiente, para todos.',
+          '<strong>3. Medidas administrativas ou de organização do trabalho.</strong> Procedimento, sinalização, rodízio, permissão de trabalho, treinamento.',
+          '<strong>4. Proteção individual.</strong> O EPI.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O item 1.5.5.1.2 detalha quando se desce para os degraus de baixo: quando a proteção coletiva for tecnicamente inviável, insuficiente, estiver em estudo ou implantação, ou em caráter complementar ou emergencial. O artigo 166 da CLT diz o mesmo pelo outro lado: a empresa fornece EPI sempre que as medidas de ordem geral não ofereçam completa proteção.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Exemplos de EPC, por risco',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Risco', 'Proteção coletiva', 'EPI que entra se ela não bastar'],
+        linhas: [
+          ['Queda de altura', 'Guarda-corpo, fechamento de aberturas no piso (NR-18, item 18.9)', 'Cinturão com talabarte ou trava-quedas (NR-35)'],
+          ['Choque elétrico', 'Desenergização, partes vivas inacessíveis, dispositivo DR (NR-10, itens 10.5 e 10.6)', 'Luva isolante, calçado isolante'],
+          ['Ruído', 'Enclausuramento ou isolamento acústico da máquina', 'Protetor auditivo'],
+          ['Poeira, fumo e vapor', 'Exaustão e ventilação no ponto de geração', 'Respirador com o filtro certo'],
+          ['Partícula projetada', 'Proteção na máquina, anteparo', 'Óculos ou protetor facial'],
+          ['Piso escorregadio', 'Drenagem, limpeza, piso antiderrapante', 'Calçado com solado antiderrapante'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A coluna da direita é o que a Tower vende, e cada item tem guia próprio no site: <a href="/conhecimento/botina-isolante-para-eletricista/">calçado isolante</a>, <a href="/conhecimento/protetor-auditivo-plug-ou-concha/">protetor auditivo</a>, <a href="/conhecimento/respirador-como-escolher-o-filtro/">respirador</a> e <a href="/conhecimento/solado-antiderrapante-o-que-significa/">solado antiderrapante</a>. A lista completa de EPI está em <a href="/protecao/">tipos de EPI</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Medida administrativa: o degrau do meio',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Entre o coletivo e o individual fica o que muda a forma de trabalhar sem instalar nada: procedimento escrito, sinalização, rodízio de tarefa, permissão de trabalho, treinamento. Na construção, por exemplo, a <a href="/conhecimento/epi-na-construcao-civil-o-que-a-nr-18-exige/">NR-18</a> manda sinalizar o canteiro para alertar quanto à obrigatoriedade do uso de EPI (item 18.13.1). Na eletricidade, a nova NR-10 exige permissão de trabalho para serviço não rotineiro (item 10.7.2).',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Por que o EPI fica por último',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Não é porque ele importa menos. É porque ele depende de uma pessoa usar o equipamento certo, no tamanho certo, bem ajustado, o turno inteiro, todos os dias. O guarda-corpo protege quem esqueceu o cinturão; o cinturão não protege quem esqueceu dele. Quando a avaliação de riscos manda usar EPI, o uso deixa de ser opcional, e o que fazer quando alguém se recusa está em <a href="/conhecimento/funcionario-recusa-usar-epi-o-que-fazer/">funcionário recusa usar EPI</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que isso muda na hora de comprar',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Antes de cotar EPI para um risco, vale perguntar se uma medida coletiva tiraria o risco do ambiente. Às vezes tira, e a compra encolhe. Às vezes reduz, e o EPI passa a ser complemento. Em qualquer caso, a lista de EPI que sobra é a que sai da avaliação de riscos, e o caminho para montar o pedido está em <a href="/conhecimento/primeiro-pedido-de-epi-como-montar/">como montar o primeiro pedido de EPI</a>.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-1 — Disposições Gerais e Gerenciamento de Riscos Ocupacionais (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-3.pdf',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'CLT — Decreto-Lei 5.452/1943, artigo 166',
+        url: 'https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm',
+      },
+      {
+        titulo: 'NR-18 — Segurança e saúde no trabalho na indústria da construção (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-18-atualizada-2025-1.pdf',
+      },
+      {
+        titulo: 'NR-10 — nova redação, vigência a partir de 1º/6/2027 (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-10.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/protecao/',
+      rotulo: 'Ver os tipos de EPI',
+    },
+    contexto: 'empresas',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Já resolvemos a proteção coletiva e queria ajuda com o EPI que continua necessário para a equipe.',
+    ctaTitulo: 'O que sobrou depois da proteção coletiva?',
+    ctaTexto:
+      'Conte o risco que continua no ambiente e quem fica exposto a ele. A gente indica o EPI que completa a proteção, com o CA de cada item.',
+    perguntas: [
+      {
+        pergunta: 'Qual a diferença entre EPI e EPC?',
+        resposta:
+          'O EPC, equipamento de proteção coletiva, atua no ambiente e protege todos que estão nele, como guarda-corpo e exaustão. O EPI, equipamento de proteção individual, protege só quem está usando, como luva e calçado de segurança. Pela NR-1, a proteção coletiva vem antes da individual.',
+      },
+      {
+        pergunta: 'Quais são exemplos de EPC?',
+        resposta:
+          'Guarda-corpo e fechamento de aberturas no piso contra queda; exaustão e ventilação contra poeira e vapor; enclausuramento de máquina contra ruído; desenergização e dispositivo DR contra choque elétrico; proteção na máquina contra partícula projetada.',
+      },
+      {
+        pergunta: 'O EPC dispensa o EPI?',
+        resposta:
+          'Pode dispensar, quando controla o risco por completo. O artigo 166 da CLT manda fornecer EPI sempre que as medidas de ordem geral não ofereçam completa proteção, e a NR-1 manda usar EPI quando a proteção coletiva for inviável, insuficiente, estiver em implantação ou em caráter complementar ou emergencial.',
+      },
+      {
+        pergunta: 'EPC precisa de Certificado de Aprovação?',
+        resposta:
+          'O Certificado de Aprovação é exigência da NR-6 para EPI. A proteção coletiva segue as normas de cada risco: na construção, por exemplo, a NR-18 exige que os sistemas de proteção coletiva sejam projetados por profissional legalmente habilitado.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-na-construcao-civil-o-que-a-nr-18-exige',
+    titulo: 'EPI na construção civil: o que a NR-18 exige',
+    tituloSeo: 'EPI na construção civil e a NR-18',
+    resumo:
+      'A NR-18 atual não traz uma lista fixa de EPI. Ela manda o PGR do canteiro listar, por etapa da obra, e põe a proteção coletiva na frente.',
+    descricaoSeo:
+      'A NR-18 não traz lista fixa de EPI: manda o PGR do canteiro listar. O que ela exige, a proteção coletiva que vem antes e o EPI que costuma aparecer na obra.',
+    publicado: '2026-10-24',
+    atualizado: '2026-10-24',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Normas',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'A NR-18 em vigor não tem uma lista de EPI obrigatórios para a obra. Ela obriga o Programa de Gerenciamento de Riscos do canteiro, e esse programa precisa conter a relação dos EPI e suas especificações técnicas, de acordo com os riscos existentes (item 18.4.3). A lista é da obra, não da norma.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É a pergunta mais comum de quem começa uma obra: quais são os EPI obrigatórios na construção civil? As listas prontas que circulam costumam ser resumos ou textos antigos. A redação atual da NR-18 foi dada pela Portaria SEPRT nº 3.733/2020, com alterações até 2025, e organiza a obrigação de outro jeito: pelo PGR do canteiro, etapa por etapa.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que a NR-18 exige',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>PGR em todo canteiro.</strong> É obrigatório elaborar e implementar o PGR nos canteiros de obras, com os riscos e as medidas de prevenção (item 18.4.1).',
+          '<strong>Feito por profissional habilitado.</strong> O PGR é elaborado por profissional legalmente habilitado em segurança do trabalho (18.4.2). Em canteiro de até 7 metros de altura e com no máximo 10 trabalhadores, pode ser elaborado por profissional qualificado (18.4.2.1).',
+          '<strong>Com a relação dos EPI.</strong> Além do que a NR-1 exige, o PGR da obra contém os projetos de proteção coletiva, os projetos dos sistemas de proteção individual contra quedas, quando aplicáveis, e a relação dos EPI com suas especificações técnicas (18.4.3).',
+          '<strong>Atualizado por etapa.</strong> O PGR acompanha a etapa em que o canteiro se encontra (18.4.3.1). Fundação, estrutura e acabamento não pedem a mesma lista.',
+          '<strong>Terceirizados incluídos.</strong> As contratadas entregam o inventário de riscos das suas atividades, que entra no PGR do canteiro (18.4.4). Quem fornece o EPI do terceirizado está em <a href="/conhecimento/epi-para-terceirizados-de-quem-e-a-obrigacao/">EPI de terceirizado</a>.',
+          '<strong>Sinalização e alta visibilidade.</strong> O canteiro é sinalizado para alertar quanto à obrigatoriedade do uso de EPI (18.13.1), e quem trabalha em área de movimentação de veículos e cargas usa vestimenta de alta visibilidade, colete ou outro meio, no tórax e nas costas (18.13.2).',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'A proteção coletiva vem antes',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na obra, a hierarquia da NR-1 vale com todas as letras (item 18.16.1). Onde há risco de queda de trabalhadores ou de projeção de materiais, a proteção coletiva é obrigatória e projetada por profissional legalmente habilitado (18.9.1). As aberturas no piso precisam de fechamento provisório resistente ou de sistema de proteção contra quedas (18.9.2), e a periferia da edificação recebe proteção a partir da concretagem da primeira laje (18.9.4), com altura mínima de 1,2 metro (18.9.4.1).',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O cinturão entra onde a proteção coletiva não alcança, dentro do sistema de proteção individual contra quedas, o SPIQ, que a própria norma define como ancoragem, elemento de ligação e EPI, em consonância com a NR-35. A diferença entre os dois tipos de proteção está em <a href="/conhecimento/epi-e-epc-qual-a-diferenca/">EPI e EPC</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O EPI que costuma aparecer na lista da obra',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Cada PGR tem a sua lista. Cruzando os riscos mais comuns de canteiro com os grupos do Anexo I da NR-6, é isto que costuma aparecer:',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Risco na obra', 'EPI', 'Grupo na NR-6'],
+        linhas: [
+          ['Queda de material sobre os pés, prego, entulho', 'Calçado de segurança com biqueira; proteção contra perfuração, se o PGR pedir', 'G — membros inferiores'],
+          ['Queda de objeto e batida na cabeça', 'Capacete', 'A — cabeça'],
+          ['Corte, esmerilhamento, respingo de argamassa', 'Óculos ou protetor facial', 'B — olhos e face'],
+          ['Betoneira, serra, martelete', 'Protetor auditivo', 'C — auditiva'],
+          ['Poeira de cimento, de corte e de lixamento', 'Respirador PFF', 'D — respiratória'],
+          ['Cimento, argamassa, abrasão nas mãos', 'Luvas adequadas ao agente', 'F — membros superiores'],
+          ['Trabalho em altura sem proteção coletiva suficiente', 'Cinturão com talabarte ou trava-quedas, no SPIQ', 'I — quedas'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Cada linha tem guia próprio: <a href="/calcados/seguranca/">calçado de segurança</a>, <a href="/protecao/cabeca/">capacete</a>, <a href="/protecao/olhos-e-face/">óculos e protetor facial</a>, <a href="/protecao/auditiva/">proteção auditiva</a>, <a href="/protecao/respiratoria/">proteção respiratória</a> e <a href="/protecao/maos/">luvas</a>. O que muda na rotina de quem trabalha na obra está em <a href="/para-seu-trabalho/construcao/">EPI para construção</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Antes de pedir o EPI da obra',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>A relação de EPI do PGR</strong>, com a especificação técnica de cada item. É ela que vai para o orçamento.',
+          '<strong>A etapa da obra</strong> e as que vêm depois, para não comprar tudo de uma vez nem faltar na virada de etapa.',
+          '<strong>Quantas pessoas por função</strong>, incluindo terceirizados que dependem do seu fornecimento.',
+          '<strong>A grade de numeração</strong> do calçado, levantada como explica <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">grade de numeração</a>.',
+          '<strong>A reposição.</strong> Em obra, o calçado gasta rápido; a conta está em <a href="/conhecimento/quantos-pares-por-ano-calcular-a-reposicao/">quantos pares por ano</a>.',
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-18 — Segurança e saúde no trabalho na indústria da construção, texto atualizado (PDF oficial)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-18-atualizada-2025-1.pdf',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'NR-1 — Disposições Gerais e Gerenciamento de Riscos Ocupacionais (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-3.pdf',
+      },
+      {
+        titulo: 'NR-35 — Trabalho em altura, texto atualizado (PDF oficial)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/NR35atualizada2023.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/construcao/',
+      rotulo: 'Ver o atendimento a construção',
+    },
+    contexto: 'empresas-construcao',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Tenho a relação de EPI do PGR da obra e queria o orçamento com o CA de cada item.',
+    ctaTitulo: 'Já tem a relação de EPI do PGR?',
+    ctaTexto:
+      'Mande a lista do PGR, a etapa da obra e quantas pessoas por função. A gente responde com o CA de cada item e a numeração do calçado da equipe.',
+    perguntas: [
+      {
+        pergunta: 'Quais EPI são obrigatórios na construção civil?',
+        resposta:
+          'A NR-18 atual não traz lista fixa. Ela obriga o PGR do canteiro, que precisa conter a relação dos EPI e suas especificações técnicas de acordo com os riscos (item 18.4.3). Na prática, a lista costuma ter calçado de segurança, capacete, óculos, protetor auditivo, respirador, luvas e, em altura, cinturão.',
+      },
+      {
+        pergunta: 'Quem faz a lista de EPI da obra?',
+        resposta:
+          'O profissional legalmente habilitado em segurança do trabalho que elabora o PGR do canteiro (item 18.4.2 da NR-18). Em canteiro de até 7 metros de altura e com no máximo 10 trabalhadores, o PGR pode ser elaborado por profissional qualificado em segurança do trabalho.',
+      },
+      {
+        pergunta: 'Colete refletivo é obrigatório na obra?',
+        resposta:
+          'É obrigatório para quem trabalha em área de movimentação de veículos e cargas: a NR-18 exige vestimenta de alta visibilidade, coletes ou outros meios, no tórax e nas costas (item 18.13.2).',
+      },
+      {
+        pergunta: 'Obra pequena precisa de PGR?',
+        resposta:
+          'Sim. O PGR é obrigatório em todo canteiro de obras (item 18.4.1 da NR-18). O que muda na obra pequena, de até 7 metros de altura e no máximo 10 trabalhadores, é que ele pode ser elaborado por profissional qualificado, e não só por profissional legalmente habilitado.',
       },
     ],
   },

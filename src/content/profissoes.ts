@@ -374,6 +374,11 @@ export const PROFISSOES: Profissao[] = [
         titulo: 'Proteção respiratória',
         texto: 'Máscaras para poeira e o que muda entre as classes.',
       },
+      {
+        href: '/conhecimento/epi-na-construcao-civil-o-que-a-nr-18-exige/',
+        titulo: 'O que a NR-18 exige',
+        texto: 'A relação de EPI vem do PGR do canteiro, etapa por etapa.',
+      },
     ],
     perguntas: [
       {

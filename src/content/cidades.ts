@@ -94,7 +94,7 @@ export type Estado = {
 export const ESTADOS: Estado[] = [
   {
     slug: 'ceara',
-    atualizado: '2026-10-16',
+    atualizado: '2026-10-24',
     nome: 'Ceará',
     uf: 'CE',
     titleSeo: 'EPI no Ceará: atendimento da capital ao Cariri',
@@ -114,7 +114,7 @@ export const ESTADOS: Estado[] = [
       {
         titulo: 'Fortaleza e Região Metropolitana',
         paragrafos: [
-          'Quem procura EPI em Fortaleza costuma buscar loja: no Centro, em Messejana, em Caucaia, em Maracanaú. A Tower não tem loja. Desde 2018 atende empresas de forma remota, a partir de Fortaleza: o pedido começa no WhatsApp, a escolha é feita junto e o orçamento sai com o Certificado de Aprovação de cada item. Para a peça que faltou hoje, o balcão mais próximo resolve. Para equipar uma equipe, o que pesa é a especificação certa para a atividade, a grade de numeração e a reposição.',
+          'Quem procura EPI em Fortaleza costuma buscar loja de equipamentos de segurança do trabalho: no Centro, em Messejana, em Caucaia, em Maracanaú. A Tower é distribuidora e não tem loja. Desde 2018 atende empresas de forma remota, a partir de Fortaleza: o pedido começa no WhatsApp, a escolha é feita junto e o orçamento sai com o Certificado de Aprovação de cada item. Para a peça que faltou hoje, o balcão mais próximo resolve. Para equipar uma equipe, o que pesa é a especificação certa para a atividade, a grade de numeração e a reposição.',
           'A Região Metropolitana também não é um bloco só. Maracanaú concentra distrito industrial, Caucaia junta indústria e logística, São Gonçalo do Amarante tem o Complexo do Pecém, e Horizonte e Pacajus têm indústria calçadista. Cada uma pede uma lista diferente, e a diferença começa pela atividade, não pelo endereço.',
         ],
         links: [

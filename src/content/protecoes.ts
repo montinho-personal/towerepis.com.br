@@ -334,6 +334,11 @@ export const PROTECOES: Protecao[] = [
         resposta:
           'Não necessariamente. Atividades com risco elétrico exigem capacete com características específicas. Verifique no Certificado de Aprovação para que aquele modelo foi aprovado e confirme com o responsável pela segurança do trabalho.',
       },
+      {
+        pergunta: 'Como fazer a manutenção do capacete?',
+        resposta:
+          'Pelo manual do fabricante. A NR-6 põe na conta da empresa a higienização e a manutenção periódica conforme as informações do fabricante (item 6.5.1, alínea f), e na do trabalhador a limpeza, a guarda e a conservação (item 6.6.1, alínea c). Na rotina, isso é olhar casco e suspensão antes de usar e substituir a peça que sofreu impacto, trincou ou deformou.',
+      },
     ],
     contexto: 'protecao-cabeca',
     ctaTitulo: 'Diga qual é a atividade.',
