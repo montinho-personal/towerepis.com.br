@@ -343,6 +343,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'A equipe vai testar a amostra antes?',
     rotulo: 'Pedir amostras',
   },
+  'botina-isolante-para-eletricista': {
+    chamada: 'Qual tensão a sua equipe enfrenta?',
+    rotulo: 'Conferir o CA',
+  },
+  'perneira-de-seguranca-quando-usar': {
+    chamada: 'O risco chega acima do cano?',
+    rotulo: 'Fechar o conjunto',
+  },
   'epi-para-mecanico-de-oficina': {
     chamada: 'Que serviços a sua oficina faz?',
     rotulo: 'Montar a lista da oficina',

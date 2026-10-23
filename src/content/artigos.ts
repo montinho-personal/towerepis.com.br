@@ -4323,7 +4323,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Uma botina com biqueira de composite não conduz eletricidade pela biqueira, e isso <a href="/conhecimento/biqueira-de-composite-ou-de-aco-qual-escolher/">não torna o calçado isolante</a>. São duas afirmações diferentes, e confundir as duas é o erro mais comum da categoria. Isolamento elétrico é uma característica ensaiada e declarada, não uma consequência do material da biqueira.',
+          'Uma botina com biqueira de composite não conduz eletricidade pela biqueira, e isso <a href="/conhecimento/biqueira-de-composite-ou-de-aco-qual-escolher/">não torna o calçado isolante</a>. São duas afirmações diferentes, e confundir as duas é o erro mais comum da categoria. Isolamento elétrico é uma característica ensaiada e declarada, não uma consequência do material da biqueira. O que a norma do calçado isolante cobre, e o limite dela, está em <a href="/conhecimento/botina-isolante-para-eletricista/">botina isolante para eletricista</a>.',
       },
       {
         tipo: 'p',
@@ -6922,7 +6922,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'E vale dizer o que ele não faz, porque a confusão é frequente: cano alto não substitui biqueira de proteção e não protege a sola contra perfuração. São requisitos independentes, e cada um precisa constar no <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a> do modelo.',
+          'E vale dizer o que ele não faz, porque a confusão é frequente: cano alto não substitui biqueira de proteção e não protege a sola contra perfuração. São requisitos independentes, e cada um precisa constar no <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a> do modelo. E quando o risco chega acima do cano, a resposta costuma ser a <a href="/conhecimento/perneira-de-seguranca-quando-usar/">perneira</a>, e não um cano mais alto.',
       },
       {
         tipo: 'h2',
@@ -9319,6 +9319,329 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Compras pode trocar o EPI por um mais barato?',
         resposta:
           'Só se o novo modelo passar pelos mesmos critérios e pelas mesmas pessoas da escolha original, porque um modelo diferente é uma nova seleção. A equivalência se confere pelo número do CA e pelo que ele aprovou, não pelo nome comercial.',
+      },
+    ],
+  },
+  {
+    slug: 'botina-isolante-para-eletricista',
+    titulo: 'Botina para eletricista: o que faz um calçado ser isolante',
+    tituloSeo: 'Botina isolante para eletricista',
+    resumo:
+      'Isolamento elétrico é ensaio declarado no CA, não aparência. E até o calçado isolante tem limite escrito na norma: baixa tensão, ambiente seco.',
+    descricaoSeo:
+      'O que a NBR 16603 exige do calçado isolante, o limite de 500 V em ambiente seco, o calçado que a nova NR-10 pede para arco elétrico e o que conferir no CA.',
+    publicado: '2026-10-23',
+    atualizado: '2026-10-23',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Calçados',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Calçado isolante é o que tem isolamento elétrico ensaiado e declarado no Certificado de Aprovação. Não é a botina sem metal, nem a de biqueira de composite. E mesmo o isolante tem limite escrito na norma: a NBR 16603 cobre instalações de baixa tensão até 500 V, em ambiente seco.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É a pergunta que mais chega de quem trabalha com eletricidade, às vezes com outro nome: botina dielétrica, botina de eletricista, calçado sem metal. Os três nomes escondem a mesma confusão, porque duas botinas podem ser iguais na foto e ter comportamento elétrico oposto. O que separa uma da outra está no ensaio e no CA, e é disso que este texto trata. O conjunto do EPI de quem mexe com eletricidade está em <a href="/conhecimento/epi-para-eletricista-o-que-muda/">EPI para eletricista</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Onde a NR-6 coloca o calçado isolante',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O Anexo I da <a href="/conhecimento/nr-6-o-que-a-empresa-precisa-saber/">NR-6</a> separa o calçado em tipos, cada um pelo risco que enfrenta. Proteção contra impacto de queda de objetos sobre os dedos é um tipo. Proteção dos pés contra choques elétricos é outro (item G.1, alínea b). Por isso um CA de calçado de segurança comum não diz nada sobre eletricidade: se o certificado do modelo não declara a proteção contra choque, o calçado não tem, por mais robusto que pareça.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que a NBR 16603 cobre, e o que não cobre',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A norma técnica do calçado isolante de couro e materiais parecidos é a ABNT NBR 16603, de 2017. O título dela já diz o limite: calçado isolante elétrico para trabalhos em instalações elétricas de baixa tensão até 500 V, em ambiente seco. Ela se aplica aos calçados da classe I, feitos de couro, têxteis, laminados sintéticos e outros materiais. Os da classe II, inteiramente de borracha ou de material polimérico, ficam com as normas de calçado de segurança, proteção e ocupacional, a NBR ISO 20345, a 20346 e a 20347.',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['O que a norma diz', 'O que isso quer dizer na rotina'],
+        linhas: [
+          ['Baixa tensão até 500 V', 'Acima disso, a proteção vem de outras medidas e equipamentos, definidos na análise de risco'],
+          ['Ambiente seco', 'Piso molhado, poça e calçado encharcado ficam fora da condição em que o calçado foi ensaiado'],
+          ['Classe I: couro, têxtil, laminado sintético', 'É a botina isolante de aparência comum, e só o CA a diferencia de outra igual'],
+          ['Classe II: inteiro de borracha ou polimérico', 'Segue as normas de calçado de segurança, proteção e ocupacional'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O limite do ambiente seco é o que mais se esquece. Quem trabalha em área externa, com chuva ou com lavagem por perto, precisa levar isso para a análise de risco antes de contar com o calçado como barreira.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Biqueira de composite não faz o calçado isolante',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A biqueira de composite não conduz eletricidade, e a frase costuma parar aí. Mas um calçado é muito mais que a biqueira: solado, palmilha, costura, ilhós e cabedal também contam, e é o conjunto que vai a ensaio. Uma botina com biqueira de composite e sem ensaio de isolamento é só uma botina sem biqueira de metal. A comparação completa entre os dois materiais está em <a href="/conhecimento/biqueira-de-composite-ou-de-aco-qual-escolher/">biqueira de composite ou de aço</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Choque e arco elétrico são riscos diferentes',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O calçado isolante trata do choque: impedir que a corrente passe pelo corpo até o chão. O arco elétrico é outro risco, de calor e de explosão, e pede outra coisa do calçado. A nova redação da NR-10, aprovada pela Portaria MTE nº 737/2026 e em vigor a partir de 1º de junho de 2027, traz no Anexo IV a especificação mínima de EPI contra arco por categoria. O calçado aparece nas quatro:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Categoria 1:</strong> calçado de couro, conforme necessário, dependendo das condições do ambiente e da tarefa.',
+          '<strong>Categorias 2, 3 e 4:</strong> calçado de couro.',
+          '<strong>Em todas:</strong> calçado de couro ou equivalente, resistente ao calor e <strong>sem componentes metálicos expostos</strong>.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Esses quadros só valem dentro das condições que o próprio anexo define, de equipamento, corrente de falha, tempo de eliminação e distância de trabalho (item 10.11.2.1). Fora delas, a empresa precisa de um estudo de energia incidente para especificar o EPI (10.11.2.3). Até a nova redação entrar em vigor, continua valendo a NR-10 atual.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que conferir antes de comprar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>O CA declara proteção contra choque elétrico</strong>, e para qual condição. Como consultar está em <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">o que é o CA</a>.',
+          '<strong>A tensão de trabalho cabe no limite do calçado.</strong> Para a classe I, baixa tensão até 500 V em ambiente seco.',
+          '<strong>Se há risco de arco</strong>, o calçado não pode ter componente metálico exposto, e precisa resistir ao calor.',
+          '<strong>Se há queda de objeto ou piso escorregadio</strong>, a proteção contra choque não substitui a biqueira nem o solado antiderrapante. Os requisitos se somam no mesmo calçado, cada um declarado no CA.',
+          '<strong>A numeração certa.</strong> Calçado folgado ou apertado vira calçado que ninguém usa, e isso vale também para o isolante. O caminho está em <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">grade de numeração</a>.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A especificação vem da análise de risco feita por profissional habilitado. O calçado entra depois, para cumprir o que ela pediu.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que tira o calçado da condição de ensaio',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O calçado isolante foi ensaiado novo, seco e inteiro. Tudo o que o afasta disso afasta também a garantia de isolamento: solado furado ou com objeto cravado, desgaste que expõe camadas internas, costura aberta, calçado úmido por dentro. Pela NR-6, o trabalhador comunica à empresa quando o EPI está danificado (item 6.6.1, alínea d), e a empresa substitui imediatamente (item 6.5.1, alínea g). Os sinais de fim de vida do calçado estão em <a href="/conhecimento/quando-trocar-o-calcado-de-seguranca/">quando trocar o calçado de segurança</a>.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'NBR 16603:2017 — calçado isolante elétrico para baixa tensão até 500 V em ambiente seco (Target/ABNT)',
+        url: 'https://www.normas.com.br/visualizar/artigo-tecnico/3044/nbr-16603-de-05-2017-os-requisitos-e-ensaios-em-calcados-isolantes-eletricos-para-trabalhos-em-instalacoes-eletricas',
+      },
+      {
+        titulo: 'NR-10 — nova redação, vigência a partir de 1º/6/2027 (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-10.pdf',
+      },
+      {
+        titulo: 'Portaria MTE nº 737/2026 — aprova a nova redação da NR-10 (PDF oficial)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2026-1/portaria-mte-no-737-nova-nr-10.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/calcados/seguranca/',
+      rotulo: 'Ver calçados de segurança',
+    },
+    contexto: 'calcados-seguranca',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Preciso de calçado isolante para a equipe de eletricistas e queria ajuda para conferir o CA certo.',
+    ctaTitulo: 'Qual tensão a sua equipe enfrenta?',
+    ctaTexto:
+      'Diga a atividade, a tensão e se o trabalho é em área seca ou externa. A gente separa os modelos cujo CA declara proteção contra choque, com a numeração da equipe.',
+    perguntas: [
+      {
+        pergunta: 'O que é botina dielétrica?',
+        resposta:
+          'É o nome popular do calçado isolante: aquele cujo Certificado de Aprovação declara proteção contra choque elétrico. O de couro segue a NBR 16603, que cobre baixa tensão até 500 V em ambiente seco. Sem essa declaração no CA, a botina não é isolante, mesmo sem nenhuma peça de metal.',
+      },
+      {
+        pergunta: 'Calçado isolante protege em piso molhado?',
+        resposta:
+          'A NBR 16603 ensaia o calçado isolante de couro para ambiente seco. Piso molhado, poça e calçado encharcado ficam fora dessa condição, e a análise de risco precisa considerar isso antes de contar com o calçado como barreira.',
+      },
+      {
+        pergunta: 'Qual calçado a nova NR-10 pede para arco elétrico?',
+        resposta:
+          'O Anexo IV da nova NR-10, em vigor a partir de 1º de junho de 2027, lista calçado de couro em todas as categorias de EPI contra arco, conforme necessário na categoria 1. Ele deve ser de couro ou equivalente, resistente ao calor e sem componentes metálicos expostos.',
+      },
+      {
+        pergunta: 'Qual a diferença entre calçado isolante classe I e classe II?',
+        resposta:
+          'A classe I é feita de couro, têxtil, laminado sintético e materiais parecidos, e segue a NBR 16603. A classe II é inteiramente de borracha ou de material polimérico, e segue as normas de calçado de segurança, proteção e ocupacional, a NBR ISO 20345, a 20346 e a 20347.',
+      },
+    ],
+  },
+  {
+    slug: 'perneira-de-seguranca-quando-usar',
+    titulo: 'Perneira de segurança: quando a bota não basta',
+    tituloSeo: 'Perneira de segurança: quando usar',
+    resumo:
+      'A perneira protege o que o calçado não alcança. A NR-6 tem cinco tipos, um por agente, e a perneira contra cobra da NR-31 nem é classificada como EPI.',
+    descricaoSeo:
+      'Os cinco tipos de perneira da NR-6, a perneira contra cobra que a NR-31 exige no campo, quando a bota de cano alto basta e como combinar perneira e calçado.',
+    publicado: '2026-10-23',
+    atualizado: '2026-10-23',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Calçados',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'A perneira cobre o que o calçado não alcança: a canela e a perna. A NR-6 tem cinco tipos dela, cada um contra um agente diferente, e cada um com seu CA. Já a perneira contra picada de cobra, que a NR-31 manda fornecer no campo, nem é classificada como EPI pela NR-6.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quase sempre a perneira entra na conversa depois do calçado, quando alguém percebe que o risco chega acima do cano. Na roçada é a pedra e o fio de náilon. Na solda é o respingo que cai na canela. No campo é a cobra no meio do mato. São riscos diferentes, e a mesma palavra cobre equipamentos diferentes.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Os cinco tipos de perneira da NR-6',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O Anexo I da <a href="/conhecimento/nr-6-o-que-a-empresa-precisa-saber/">NR-6</a> lista a perneira entre os EPI para os membros inferiores (item G.3), separada pelo agente:',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Tipo na NR-6', 'Onde costuma aparecer'],
+        linhas: [
+          ['Contra agentes abrasivos e escoriantes', 'Roçada, mato, pedra e terreno com projeção de partículas'],
+          ['Contra agentes cortantes e perfurantes', 'Ferramenta de corte, vegetação com espinho, sucata'],
+          ['Contra agentes térmicos', 'Solda, fundição, respingo quente'],
+          ['Contra agentes químicos', 'Aplicação e manuseio de produto químico'],
+          ['Contra umidade de operações com água', 'Lavagem, limpeza pesada, trabalho com jato'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A segunda coluna mostra onde cada tipo costuma aparecer, não uma regra. A perneira certa sai da avaliação de riscos da atividade, e o CA dela precisa declarar o agente que ela vai enfrentar. Uma perneira de raspa para solda e uma perneira contra químico têm o mesmo nome e nenhuma das duas faz o trabalho da outra.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A perneira contra cobra da NR-31',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na agricultura, pecuária, silvicultura, exploração florestal e aquicultura vale a NR-31. Além dos EPI da NR-6, ela manda o empregador fornecer, de acordo com os riscos de cada atividade, uma lista de dispositivos de proteção pessoal, e a perneira contra picadas de animais peçonhentos está nela (item 31.6.2, alínea c).',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O detalhe que confunde: a própria NR-31 define dispositivo de proteção pessoal como o equipamento destinado à proteção do trabalhador que não é enquadrado como EPI pelo Anexo I da NR-6 (item 31.6.2.2). As obrigações continuam: o dispositivo deve ser adequado ao risco, conservado e em condições de funcionamento (31.6.3), o empregador exige o uso (31.6.4) e orienta o empregado sobre ele (31.6.5). E, em caso de acidente com animal peçonhento, depois dos primeiros socorros, o trabalhador vai imediatamente para a unidade de saúde mais próxima ou para o local indicado no programa de riscos da propriedade (31.3.10.1).',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na mesma lista da NR-31 há um item de calçado que pouca gente conhece: bota ou botina com solado sem ranhuras para atividades que envolvam montaria de animais (alínea f).',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Bota de cano alto ou botina com perneira?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Depende do agente. Para água e para produto químico, a NR-6 tem calçado que protege pés e pernas juntos (item G.1, alíneas f e g), e é aí que a bota de cano alto resolve sozinha. É o caso da bota de PVC, explicada em <a href="/conhecimento/bota-de-pvc-quando-e-a-resposta-certa/">bota de PVC: quando é a resposta certa</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para corte, abrasão e calor, o cano da bota raramente basta, e a combinação mais comum é botina e perneira. A botina cuida do pé, com biqueira e solado; a perneira cuida da perna. A diferença entre os formatos de calçado está em <a href="/conhecimento/botina-bota-ou-sapato-de-seguranca/">botina, bota ou sapato de segurança</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Como combinar perneira e calçado',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Sem fresta entre as duas peças.</strong> A perneira precisa encostar no peito do pé ou sobrepor o cano. O vão entre a perneira e o calçado é por onde entra a fagulha, o respingo e a ponta do galho.',
+          '<strong>Líquido escorre para baixo.</strong> Contra água e químico, a peça de cima vai por fora da de baixo, para o líquido escorrer por fora e não para dentro do calçado.',
+          '<strong>Altura compatível com a botina.</strong> Perneira longa demais dobra no tornozelo e machuca; curta demais deixa a canela exposta.',
+          '<strong>Fechamento que a pessoa consegue usar de luva.</strong> Fivela ou velcro que exige tirar a luva acaba aberto no meio do turno.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que conferir na compra',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'O agente de cada posto: corte, abrasão, calor, químico, umidade ou animal peçonhento.',
+          'Para os cinco tipos da NR-6, o CA da perneira declarando aquele agente. Como consultar está em <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">o que é o CA</a>.',
+          'O calçado que vai junto, e se ele já protege a perna sozinho.',
+          'Quantas pessoas por função e a altura certa para cada uma.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Em aplicação de defensivo, o conjunto vem da bula do produto e é explicado em <a href="/conhecimento/epi-para-aplicacao-de-defensivo-agricola/">EPI para aplicação de defensivo agrícola</a>. Em solda, o conjunto completo está em <a href="/conhecimento/epi-para-soldador-o-que-muda/">EPI para soldador</a>.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'NR-31 — Segurança e saúde no trabalho na agricultura, pecuária, silvicultura, exploração florestal e aquicultura (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-31-atualizada-2024.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/calcados/',
+      rotulo: 'Ver os calçados',
+    },
+    contexto: 'calcados',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Minha equipe precisa de perneira e queria ajuda para escolher o calçado certo para usar com ela.',
+    ctaTitulo: 'O risco chega acima do cano?',
+    ctaTexto:
+      'Conte o que a equipe faz e o que atinge a perna. A gente ajuda a escolher o calçado que fecha o conjunto com a perneira, com o CA de cada item.',
+    perguntas: [
+      {
+        pergunta: 'Perneira é EPI?',
+        resposta:
+          'Depende do tipo. As perneiras contra agentes abrasivos, cortantes e perfurantes, térmicos, químicos e umidade estão no Anexo I da NR-6 e são EPI, com CA. A perneira contra picadas de animais peçonhentos da NR-31 é dispositivo de proteção pessoal, que a própria NR-31 define como não enquadrado como EPI pela NR-6.',
+      },
+      {
+        pergunta: 'O empregador rural é obrigado a fornecer perneira?',
+        resposta:
+          'A NR-31 manda o empregador fornecer perneira contra picadas de animais peçonhentos de acordo com os riscos de cada atividade (item 31.6.2), exigir o uso (31.6.4) e orientar o empregado sobre ela (31.6.5).',
+      },
+      {
+        pergunta: 'Bota de cano alto substitui a perneira?',
+        resposta:
+          'Para água e produto químico, pode: a NR-6 prevê calçado que protege pés e pernas contra esses agentes. Para corte, abrasão e calor, o cano raramente cobre a área exposta, e a combinação mais comum é botina com perneira.',
+      },
+      {
+        pergunta: 'Qual perneira usar na roçada?',
+        resposta:
+          'A roçada costuma expor a perna a pedra e fragmento lançados, e a perneira contra agentes abrasivos e escoriantes ou contra cortantes e perfurantes é a que cobre isso. A escolha final sai da avaliação de riscos, e o CA precisa declarar o agente.',
       },
     ],
   },
