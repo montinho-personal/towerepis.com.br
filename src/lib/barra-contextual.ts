@@ -375,6 +375,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'O estoque de EPI está girando?',
     rotulo: 'Planejar a reposição',
   },
+  'qual-a-melhor-botina-de-seguranca': {
+    chamada: 'Qual o risco e o piso da sua equipe?',
+    rotulo: 'Escolher pelos critérios',
+  },
+  'palmilha-em-botina-de-seguranca-e-botina-ortopedica': {
+    chamada: 'Alguém precisa de calçado adaptado?',
+    rotulo: 'Conferir com o fabricante',
+  },
   'epi-para-mecanico-de-oficina': {
     chamada: 'Que serviços a sua oficina faz?',
     rotulo: 'Montar a lista da oficina',

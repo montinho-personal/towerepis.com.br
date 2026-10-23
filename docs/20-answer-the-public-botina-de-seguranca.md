@@ -118,3 +118,27 @@ planilha.
 |---|---|---|
 | Botina isolante | Botina isolante para eletricista | Botina de segurança para eletricista |
 | Calçado feminino | Calçado de segurança feminino | Botina de segurança feminina: o que muda |
+
+---
+
+## 6. Andamento
+
+**24/10/2026 — confirmado pelo cliente:** numeração 46, 47 e 48 é **sob
+consulta**. Registrado em `empresa.numeracaoSobConsulta` e usado na FAQ do
+artigo da grade.
+
+**24/10/2026 — feito:**
+- Atualizações 1 a 7: botina isolante (frase e duas FAQ), feminino (frase e
+  FAQ), biqueira (FAQ do bico de PVC, coerente com a seção que já existia),
+  botina/bota/sapato (velcro), bota de PVC (FAQ de couro e água), botina que
+  machuca ("lacear"), Bompel (FAQ "A botina de segurança Bompel é boa?").
+  Extra: FAQ de tamanho 46 a 48 na grade.
+- Lote 1: `qual-a-melhor-botina-de-seguranca` e
+  `palmilha-em-botina-de-seguranca-e-botina-ortopedica` (NR-6 6.5.2, 6.5.4,
+  6.8.1 b, d, e, 6.9.3 e 6.9.5). Links de entrada a partir de "trabalhar em
+  pé" e "botina que machuca".
+- Sem pares novos de canibalização. qa-faq barrou uma FAQ da bota de PVC
+  parecida com a do artigo de palmilha (0,60); reescrita.
+
+**Próximo:** lote 2 depende de fonte (couro e nobuck; NCM pela TIPI;
+metatarso).

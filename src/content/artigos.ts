@@ -1304,7 +1304,7 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Por que a biqueira não amacia, como saber se o problema é a numeração ou a forma do calçado, e quando insistir só piora. Sem truque caseiro.',
     publicado: '2026-09-03',
-    atualizado: '2026-10-05',
+    atualizado: '2026-10-24',
     atualizadoExibicao: 'outubro de 2026',
     cluster: 'Calçados',
     blocos: [
@@ -1382,7 +1382,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'O cabedal de couro cede um pouco nas primeiras semanas, e isso dá para ajudar sem estragar o par. Use a botina por períodos curtos nos primeiros dias, com a meia de trabalho, e aumente o tempo aos poucos. Caminhar e flexionar o pé dentro dela é o que molda o couro onde ele dobra, que é exatamente o que as dicas de meia grossa fazem. Uma ou duas horas por dia na primeira semana, em casa ou em tarefa leve, costuma ser o suficiente para saber se o par vai assentar ou não.',
+          'O cabedal de couro cede um pouco nas primeiras semanas, e é isso que muita gente chama de lacear a botina. Dá para ajudar sem estragar o par. Use a botina por períodos curtos nos primeiros dias, com a meia de trabalho, e aumente o tempo aos poucos. Caminhar e flexionar o pé dentro dela é o que molda o couro onde ele dobra, que é exatamente o que as dicas de meia grossa fazem. Uma ou duas horas por dia na primeira semana, em casa ou em tarefa leve, costuma ser o suficiente para saber se o par vai assentar ou não.',
       },
       {
         tipo: 'p',
@@ -1410,7 +1410,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Palmilha extra ocupa espaço. Dentro de uma botina que já está justa, a de gel aperta mais, em vez de aliviar. E a palmilha de conforto faz parte do calçado que foi ensaiado: a própria norma de calçado de segurança tem regras para palmilhas personalizadas. Quando há indicação de palmilha ortopédica por profissional de saúde, vale perguntar ao fabricante se o modelo aceita a troca antes de colocá-la.',
+          'Palmilha extra ocupa espaço. Dentro de uma botina que já está justa, a de gel aperta mais, em vez de aliviar. E a palmilha de conforto faz parte do calçado que foi ensaiado: a própria norma de calçado de segurança tem regras para palmilhas personalizadas. Quando há indicação de palmilha ortopédica por profissional de saúde, vale perguntar ao fabricante se o modelo aceita a troca antes de colocá-la. O que pode e o que não pode, inclusive a adaptação feita pelo fabricante, está em <a href="/conhecimento/palmilha-em-botina-de-seguranca-e-botina-ortopedica/">palmilha em botina de segurança</a>.',
       },
       {
         tipo: 'h2',
@@ -1905,7 +1905,7 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Composite e aço protegem os dedos do mesmo jeito pela norma. A escolha é pela atividade: risco elétrico, detector de metal, frio, peso na jornada e custo.',
     publicado: '2026-09-04',
-    atualizado: '2026-10-05',
+    atualizado: '2026-10-24',
     atualizadoExibicao: 'outubro de 2026',
     cluster: 'Calçados',
     blocos: [
@@ -2106,6 +2106,11 @@ export const ARTIGOS: Artigo[] = [
       'Olá! Vim pelo site da Tower. Li o texto sobre biqueira de composite e de aço e queria saber qual serve para a minha atividade.',
     perguntas: [
       {
+        pergunta: 'Botina de segurança com bico de PVC protege?',
+        resposta:
+          'Depende do que está escrito no CA. O que protege contra impacto é a biqueira ensaiada e declarada no Certificado de Aprovação, de aço ou de composite. Bico de PVC sem mais informação costuma ser a biqueira de conformação, que dá forma à ponta e não protege. Na dúvida, o CA do modelo responde.',
+      },
+      {
         pergunta: 'Biqueira de composite pode trincar sem aparecer?',
         resposta:
           'Pode, e é a diferença que mais importa depois de um impacto forte. A biqueira de aço amassa e passa a pressionar os dedos, o que a pessoa percebe. A de composite pode perder resistência sem nenhum sinal por fora. Nos dois casos o par sai de uso.',
@@ -2144,7 +2149,7 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Como levantar a numeração pessoa a pessoa, provar antes de fechar, montar a grade com reserva e registrar — para o pedido sair certo na primeira vez.',
     publicado: '2026-09-04',
-    atualizado: '2026-10-05',
+    atualizado: '2026-10-24',
     atualizadoExibicao: 'outubro de 2026',
     cluster: 'Calçados',
     blocos: [
@@ -2309,6 +2314,11 @@ export const ARTIGOS: Artigo[] = [
     mensagemWhats:
       'Olá! Vim pelo site da Tower. Li o texto sobre grade de numeração e já tenho a lista da minha equipe. Posso mandar a grade para orçamento?',
     perguntas: [
+      {
+        pergunta: 'Tem botina de segurança tamanho 46, 47 ou 48?',
+        resposta:
+          `Numeração grande existe em parte dos modelos, não em todos. Na Tower, os números ${empresa.numeracaoSobConsulta.join(', ').replace(/, (\d+)$/, ' e $1')} são sob consulta: a disponibilidade e o prazo dependem do modelo escolhido, e vale confirmar antes de fechar a grade da equipe.`,
+      },
       {
         pergunta: 'O que é grade de numeração?',
         resposta:
@@ -5004,6 +5014,11 @@ export const ARTIGOS: Artigo[] = [
       'Conte quantas horas do turno o pé fica no molhado e o que escorre no chão além de água. Com isso dá para dizer qual das duas atende, e se o caso é de ter as duas.',
     perguntas: [
       {
+        pergunta: 'Botina de couro aguenta água o turno inteiro?',
+        resposta:
+          'Não. A botina de couro hidrofugado, tratado para repelir água, aguenta respingo e piso molhado por um tempo. Impermeável o turno inteiro, com água acumulada ou lavagem, é o calçado inteiro de PVC ou de borracha, como a bota de cano alto. A escolha depende de quanto tempo o pé fica na água.',
+      },
+      {
         pergunta: 'Qual calçado usar em ambiente úmido?',
         resposta:
           'Depende de quanta água chega ao pé. Com água acumulada, lavagem ou jato, o calçado precisa ser impermeável e cobrir a perna, como a bota de cano alto, que a NR-6 prevê para proteção de pés e pernas contra umidade de operações com água. Com piso apenas molhado, um calçado fechado com solado antiderrapante costuma resolver e é mais fresco para o turno inteiro.',
@@ -5676,7 +5691,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Em compra para equipe, esses dados valem mais que o nome do modelo. Com eles dá para montar a grade uma vez e repor sem recomeçar a escolha a cada contratação.',
+          'Em compra para equipe, esses dados valem mais que o nome do modelo. Com eles dá para montar a grade uma vez e repor sem recomeçar a escolha a cada contratação. Os critérios de escolha, em ordem, estão em <a href="/conhecimento/qual-a-melhor-botina-de-seguranca/">qual a melhor botina de segurança</a>.',
       },
       {
         tipo: 'p',
@@ -6979,8 +6994,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'O que muda entre sapato, botina e bota de cano alto: barreira de entrada, apoio do tornozelo e conforto. A pergunta que resolve, e o erro do cano mais alto.',
     publicado: '2026-09-20',
-    atualizado: '2026-09-20',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-10-24',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Calçados',
     blocos: [
       {
@@ -7060,12 +7075,12 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
-        texto: 'Fechamento: cadarço, elástico ou fivela',
+        texto: 'Fechamento: cadarço, elástico, velcro ou fivela',
       },
       {
         tipo: 'p',
         texto:
-          'É uma decisão pequena que muda o dia. O elástico é o formato de quem calça e descalça várias vezes — cozinha, área limpa, entrada de sala controlada. O cadarço dá ajuste fino, que importa em pé mais estreito ou mais largo, e exige atenção onde há máquina rotativa, porque ponta solta é risco de enrosco.',
+          'É uma decisão pequena que muda o dia. O elástico é o formato de quem calça e descalça várias vezes — cozinha, área limpa, entrada de sala controlada. O cadarço dá ajuste fino, que importa em pé mais estreito ou mais largo, e exige atenção onde há máquina rotativa, porque ponta solta é risco de enrosco. O velcro fica no meio: calça rápido, ajusta mais que o elástico e não deixa ponta solta, mas perde a aderência com sujeira, pó e lavagem.',
       },
       {
         tipo: 'p',
@@ -7134,6 +7149,11 @@ export const ARTIGOS: Artigo[] = [
     ctaTexto:
       'Conte o que pode entrar pelo pé na rotina da equipe e como é o piso. Com essas duas respostas dá para fechar o formato, e a gente já ajuda com a grade.',
     perguntas: [
+      {
+        pergunta: 'Botina de segurança de cadarço, elástico ou velcro: qual escolher?',
+        resposta:
+          'Elástico para quem calça e descalça várias vezes no dia; cadarço para quem precisa de ajuste fino no pé; velcro para quem quer calçar rápido com algum ajuste, longe de muita sujeira e pó. Perto de máquina rotativa, o cadarço pede atenção por causa da ponta solta.',
+      },
       {
         pergunta: 'Cano alto protege mais?',
         resposta:
@@ -9423,7 +9443,7 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'O que a NBR 16603 exige do calçado isolante, o limite de 500 V em ambiente seco, o calçado que a nova NR-10 pede para arco elétrico e o que conferir no CA.',
     publicado: '2026-10-23',
-    atualizado: '2026-10-23',
+    atualizado: '2026-10-24',
     atualizadoExibicao: 'outubro de 2026',
     cluster: 'Calçados',
     blocos: [
@@ -9435,7 +9455,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'É a pergunta que mais chega de quem trabalha com eletricidade, às vezes com outro nome: botina dielétrica, botina de eletricista, calçado sem metal. Os três nomes escondem a mesma confusão, porque duas botinas podem ser iguais na foto e ter comportamento elétrico oposto. O que separa uma da outra está no ensaio e no CA, e é disso que este texto trata. O conjunto do EPI de quem mexe com eletricidade está em <a href="/conhecimento/epi-para-eletricista-o-que-muda/">EPI para eletricista</a>.',
+          'É a pergunta que mais chega de quem trabalha com eletricidade, às vezes com outro nome: botina de segurança para eletricista, botina dielétrica, calçado sem metal. Os três nomes escondem a mesma confusão, porque duas botinas podem ser iguais na foto e ter comportamento elétrico oposto. O que separa uma da outra está no ensaio e no CA, e é disso que este texto trata. O conjunto do EPI de quem mexe com eletricidade está em <a href="/conhecimento/epi-para-eletricista-o-que-muda/">EPI para eletricista</a>.',
       },
       {
         tipo: 'h2',
@@ -9559,6 +9579,16 @@ export const ARTIGOS: Artigo[] = [
     ctaTexto:
       'Diga a atividade, a tensão e se o trabalho é em área seca ou externa. A gente separa os modelos cujo CA declara proteção contra choque, com a numeração da equipe.',
     perguntas: [
+      {
+        pergunta: 'Qual botina de segurança usar para eletricista?',
+        resposta:
+          'A que tem, no Certificado de Aprovação, a proteção contra choque elétrico declarada e compatível com a tensão de trabalho; a de couro segue a NBR 16603, para baixa tensão até 500 V em ambiente seco. Onde há risco de arco, a nova NR-10 pede calçado de couro sem componentes metálicos expostos. A especificação final sai da análise de risco.',
+      },
+      {
+        pergunta: 'Botina de segurança para eletricista pode ter biqueira?',
+        resposta:
+          'Pode, desde que o CA do modelo declare as duas proteções: contra impacto nos dedos e contra choque elétrico. Os requisitos se somam no mesmo calçado, e a biqueira de composite sozinha não torna a botina isolante.',
+      },
       {
         pergunta: 'O que é botina dielétrica?',
         resposta:
@@ -9921,7 +9951,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Em muita empresa, a compra de calçado é pensada pela maioria da equipe, e a minoria se ajeita com o que sobra: o menor número do modelo masculino, uma palmilha a mais, uma meia grossa. Essa improvisação é o caminho mais curto para o calçado que machuca e para o calçado que fica no armário.',
+          'Quem procura botina de segurança feminina com CA, com biqueira ou sem, costuma esbarrar no mesmo problema. Em muita empresa, a compra de calçado é pensada pela maioria da equipe, e a minoria se ajeita com o que sobra: o menor número do modelo masculino, uma palmilha a mais, uma meia grossa. Essa improvisação é o caminho mais curto para o calçado que machuca e para o calçado que fica no armário.',
       },
       {
         tipo: 'h2',
@@ -10003,6 +10033,11 @@ export const ARTIGOS: Artigo[] = [
     ctaTexto:
       'Mande a função e a numeração de cada pessoa. A gente confere quais modelos existem nesses números com a proteção que a função pede, declarada no CA.',
     perguntas: [
+      {
+        pergunta: 'Existe botina de segurança feminina com CA e biqueira?',
+        resposta:
+          'Existe calçado de segurança em forma feminina, com numeração e largura próprias, e cada modelo tem o seu CA. O que conferir é o mesmo de qualquer botina: se o CA declara a proteção que a função pede, como a biqueira, e se o modelo existe nos números da equipe.',
+      },
       {
         pergunta: 'Botina feminina protege menos que a masculina?',
         resposta:
@@ -10605,6 +10640,280 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'EPI contaminado pode ir para o lixo comum?',
         resposta:
           'Não, quando a contaminação muda a classe do resíduo. Em serviço de saúde, o EPI com agente biológico é resíduo de serviço de saúde e é segregado onde foi gerado, como manda a NR-32. Com produto químico, ele segue a classificação do resíduo daquele produto.',
+      },
+    ],
+  },
+  {
+    slug: 'qual-a-melhor-botina-de-seguranca',
+    titulo: 'Qual a melhor botina de segurança: os critérios que decidem',
+    tituloSeo: 'Qual a melhor botina de segurança',
+    resumo:
+      'Não existe uma melhor botina para todo mundo. Existe a que tem no CA a proteção que a função pede e que a pessoa aguenta usar o turno inteiro. Os critérios, em ordem.',
+    descricaoSeo:
+      'Não existe a melhor botina para todo mundo. Os critérios que decidem: proteção no CA, numeração, peso, solado, conforto, fechamento e durabilidade.',
+    publicado: '2026-10-24',
+    atualizado: '2026-10-24',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Calçados',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'A melhor botina de segurança é a que tem, no Certificado de Aprovação, a proteção que a função pede, e que a pessoa consegue usar o turno inteiro sem tirar. Marca vem depois disso. Os critérios abaixo estão na ordem em que eliminam opção.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É a pergunta que mais chega, em todas as versões: qual a melhor botina, qual a mais confortável, qual marca é boa. A Tower não faz ranking de marca, e não é por diplomacia. A mesma botina que é ótima numa obra seca é a errada numa cozinha molhada, e a que serve no pé de um não serve no de outro. A NR-6 manda considerar, na escolha do EPI, a adequação ao empregado e o conforto avaliado pelo conjunto de empregados (item 6.5.2), e isso não cabe numa lista de "top 10".',
+      },
+      {
+        tipo: 'h2',
+        texto: '1. A proteção certa, declarada no CA',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O primeiro corte é a categoria. Com risco de queda de objeto sobre os pés, é calçado de segurança, com biqueira. Sem esse risco, o calçado ocupacional costuma ser mais leve e mais confortável. A diferença está em <a href="/conhecimento/calcado-ocupacional-ou-de-seguranca/">calçado ocupacional ou de segurança</a>. Depois vêm os requisitos que a atividade soma: solado antiderrapante, proteção contra perfuração, isolamento elétrico. Cada um precisa estar declarado no CA do modelo.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para saber se uma botina atende à norma, o caminho tem dois passos: conferir a marcação no próprio calçado, que traz o nome do fabricante, o lote e o número do CA (NR-6, item 6.9.3), e consultar esse número. Como consultar está em <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">o que é o CA</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: '2. Numeração e largura',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A numeração brasileira mede o comprimento do pé; a largura depende da fôrma de cada modelo, como explica o dossiê do SENAI-RS sobre sistemas de medidas. Por isso a mesma pessoa pode calçar números diferentes em modelos diferentes. Botina folgada faz bolha; apertada faz o dedo bater na biqueira, que não cede. A medida do pé pode ser feita na <a href="/ferramentas/tamanho-de-botina/">calculadora de tamanho de botina</a>, e a equipe inteira em <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">grade de numeração</a>. Para as mulheres da equipe, o que muda está em <a href="/conhecimento/calcado-de-seguranca-feminino-o-que-muda/">calçado de segurança feminino</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: '3. O que faz uma botina ser confortável',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Servir no pé.</strong> Nenhum outro item compensa número ou largura errados.',
+          '<strong>Peso.</strong> Cada grama é levantado milhares de vezes por turno. A conta está em <a href="/conhecimento/calcado-para-quem-trabalha-em-pe-o-dia-todo/">calçado para quem trabalha em pé o dia todo</a>.',
+          '<strong>Solado que amortece.</strong> Solado bidensidade, com duas camadas de densidades diferentes, costuma juntar uma parte macia por dentro e outra mais resistente em contato com o chão.',
+          '<strong>Palmilha.</strong> Ajuda, mas não corrige calçado errado. O que pode e o que não pode trocar está em <a href="/conhecimento/palmilha-em-botina-de-seguranca-e-botina-ortopedica/">palmilha em botina de segurança</a>.',
+          '<strong>Tempo de adaptação.</strong> Couro cede nas primeiras semanas; biqueira não. Como amaciar sem estragar está em <a href="/conhecimento/botina-que-machuca-calcado-ou-numeracao/">botina que machuca</a>.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A botina mais confortável não se descobre na foto nem na descrição. Descobre-se no pé de quem vai usar, depois de alguns dias de turno. Um par de amostra por faixa de numeração, testado antes de comprar para todos, é o que a NR-6 chama de avaliação do conjunto de empregados.',
+      },
+      {
+        tipo: 'h2',
+        texto: '4. O solado para o chão onde a pessoa pisa',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Piso molhado ou engordurado pede solado antiderrapante declarado no CA, explicado em <a href="/conhecimento/solado-antiderrapante-o-que-significa/">solado antiderrapante</a>. Água acumulada o turno inteiro pede calçado impermeável de PVC ou borracha, como mostra <a href="/conhecimento/bota-de-pvc-quando-e-a-resposta-certa/">bota de PVC</a>. Calor, óleo e produto químico entram como requisito a mais, também declarado.',
+      },
+      {
+        tipo: 'h2',
+        texto: '5. Fechamento e cano',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Cadarço, elástico ou velcro, botina ou bota de cano alto: é a parte que mais depende da rotina, e está em <a href="/conhecimento/botina-bota-ou-sapato-de-seguranca/">botina, bota ou sapato de segurança</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: '6. Durabilidade',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Nenhuma norma dá prazo de vida para a botina: ela dura o que o uso, o piso e o cuidado deixam. Os sinais de troca estão em <a href="/conhecimento/quando-trocar-o-calcado-de-seguranca/">quando trocar o calçado de segurança</a>, e o que mais encurta a vida do par é o cuidado errado, explicado em <a href="/conhecimento/como-limpar-e-conservar-calcado-de-seguranca/">como limpar e conservar</a>. Onde o calçado molha todo dia, dois pares em rodízio duram mais que dois pares em sequência.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'E a melhor marca?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A marca boa é a que tem modelo com a proteção certa no CA e que serve no pé da equipe. A linha que a Tower mais atende é a <a href="/marcas/bompel/">Bompel</a>, e por isso é a que a gente conhece modelo a modelo. Quando o risco da atividade pede outra coisa, a indicação é outra.',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Critério', 'A pergunta que resolve'],
+        linhas: [
+          ['Proteção', 'O CA declara o que a função pede: biqueira, solado, perfuração, isolamento?'],
+          ['Numeração', 'Serve no comprimento e na largura, em pé, no fim do dia?'],
+          ['Conforto', 'A pessoa testou alguns dias de turno antes da compra para todos?'],
+          ['Solado', 'É o certo para o piso: molhado, engordurado, com óleo, com calor?'],
+          ['Fechamento e cano', 'Combinam com a rotina de calçar, a máquina por perto e o que entra pelo pé?'],
+          ['Durabilidade', 'Há reposição planejada e cuidado de limpeza na rotina?'],
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'SENAI-RS / SBRT — Fôrmas e sistemas de medidas para calçados (dossiê técnico)',
+        url: 'https://www.senairs.org.br/sites/default/files/documents/formas_e_sistemas_de_medidas_para_calcados.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/calcados/seguranca/',
+      rotulo: 'Ver calçados de segurança',
+    },
+    contexto: 'calcados-seguranca',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Queria ajuda para escolher a botina de segurança certa para a minha equipe.',
+    ctaTitulo: 'Qual o risco e qual o piso da sua equipe?',
+    ctaTexto:
+      'Conte o que a equipe faz, onde pisa e a numeração de cada um. A gente indica a botina pelos critérios, com o CA de cada modelo, e separa amostra para testar.',
+    perguntas: [
+      {
+        pergunta: 'Qual a melhor botina de segurança?',
+        resposta:
+          'A que tem no Certificado de Aprovação a proteção que a função pede e que a pessoa consegue usar o turno inteiro. Não existe uma melhor para todos: risco, piso, numeração e rotina mudam a resposta. Os critérios, em ordem, são proteção, numeração, conforto, solado, fechamento e durabilidade.',
+      },
+      {
+        pergunta: 'Qual a botina de segurança mais confortável?',
+        resposta:
+          'A que serve no comprimento e na largura do pé de quem vai usar, com o menor peso possível para a proteção que a função pede e solado que amortece. Conforto se confirma no pé, depois de alguns dias de turno, e não na foto.',
+      },
+      {
+        pergunta: 'Qual a melhor marca de botina de segurança?',
+        resposta:
+          'A que tem modelo com a proteção certa declarada no CA e que serve no pé da equipe. A Tower não faz ranking de marca: a mesma botina que é ótima numa obra seca é errada numa cozinha molhada.',
+      },
+      {
+        pergunta: 'Como saber se a botina atende à norma?',
+        resposta:
+          'Pela marcação no calçado, que deve trazer o nome do fabricante, o lote e o número do CA, como exige a NR-6, e pela consulta desse número no sistema do Ministério do Trabalho. O CA diz para que aquele modelo foi aprovado.',
+      },
+    ],
+  },
+  {
+    slug: 'palmilha-em-botina-de-seguranca-e-botina-ortopedica',
+    titulo: 'Palmilha em botina de segurança e botina ortopédica: o que pode',
+    tituloSeo: 'Palmilha e botina ortopédica de segurança',
+    resumo:
+      'A palmilha faz parte do calçado que foi ensaiado. Trocar segue o manual do fabricante, e quem precisa de calçado adaptado tem um caminho na NR-6 que preserva o CA.',
+    descricaoSeo:
+      'Trocar a palmilha da botina de segurança, usar palmilha ortopédica e adaptar o calçado para quem precisa: o que a NR-6 diz e o que conferir no manual e no CA.',
+    publicado: '2026-10-24',
+    atualizado: '2026-10-24',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Calçados',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'A palmilha faz parte do calçado que foi ensaiado e aprovado. Trocar por outra segue o que o manual do fabricante permite. E quando a pessoa precisa de calçado adaptado, a NR-6 tem um caminho que preserva o Certificado de Aprovação: a adaptação feita pelo próprio fabricante (itens 6.8.1 e 6.9.5).',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A pergunta chega de três jeitos: posso trocar a palmilha da botina por uma mais macia? Posso usar a minha palmilha ortopédica? Existe botina de segurança ortopédica com CA? As três têm resposta, e nenhuma é "faz o que achar melhor".',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Palmilha de conforto: o que o manual diz',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-6 manda o fabricante vender o EPI com manual em português, orientando utilização, manutenção, limpeza e restrições de uso (item 6.8.1, alínea b), e o torna responsável pela qualidade do EPI que deu origem ao CA (alínea d). Na prática:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Se o manual prevê palmilha removível e indica a reposição</strong>, a troca segue a indicação dele.',
+          '<strong>Se o manual não prevê</strong>, trocar por conta própria deixa o calçado diferente do que foi aprovado, e o fabricante responde pelo que aprovou.',
+          '<strong>Palmilha extra por cima da original</strong> sobe o pé dentro do calçado, aperta o peito do pé e aproxima os dedos da borda da biqueira.',
+          '<strong>Palmilha de conforto não é proteção contra perfuração.</strong> A proteção da sola, quando existe, é parte do calçado e está declarada no CA.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quando a palmilha é sintoma',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Muitas vezes a vontade de trocar a palmilha é sinal de outro problema: número errado, largura errada, modelo pesado para a jornada. Palmilha de gel não resolve a dor de quem passa o dia em pé num calçado que não serve, como explica <a href="/conhecimento/calcado-para-quem-trabalha-em-pe-o-dia-todo/">calçado para quem trabalha em pé o dia todo</a>. O diagnóstico pelo lugar da dor está em <a href="/conhecimento/botina-que-machuca-calcado-ou-numeracao/">botina que machuca</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Botina de segurança ortopédica com CA',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'No comércio, "botina ortopédica" quase sempre quer dizer botina com palmilha anatômica e amortecimento, não um calçado feito sob prescrição. Ela tem CA como qualquer outro modelo, e o CA vale para o modelo como foi aprovado.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para quem precisa de adaptação de verdade, a NR-6 tem um caminho. Cabe ao fabricante promover, quando solicitado e se tecnicamente possível, a adaptação do EPI com CA para pessoas com deficiência, preservando a eficácia (item 6.8.1, alínea e). E essa adaptação, feita pelo fabricante ou importador que detém o CA, não invalida o certificado nem exige um novo (item 6.9.5). É a mesma lógica que a norma aplica aos óculos de segurança para quem usa lente de grau (item 6.5.4).',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Na prática',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Antes de trocar a palmilha</strong>, conferir o manual do calçado.',
+          '<strong>Antes de comprar palmilha</strong>, conferir número e largura: a maior parte das dores começa aí.',
+          '<strong>Quando há indicação de um profissional de saúde</strong>, a empresa leva o caso ao fornecedor, para o pedido de adaptação ir ao fabricante.',
+          '<strong>Na escolha do modelo</strong>, a NR-6 manda considerar a adequação ao empregado e o conforto (item 6.5.2). Quem participa dessa escolha está em <a href="/conhecimento/quem-escolhe-o-epi-sesmt-cipa-ou-compras/">quem escolhe o EPI</a>.',
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/calcados/',
+      rotulo: 'Ver os calçados',
+    },
+    contexto: 'calcados',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Tenho uma dúvida sobre palmilha e calçado adaptado na botina de segurança da equipe.',
+    ctaTitulo: 'Alguém da equipe precisa de calçado adaptado?',
+    ctaTexto:
+      'Conte o caso e o modelo que a pessoa usa hoje. A gente confere o que o fabricante permite e leva o pedido de adaptação adiante quando for possível.',
+    perguntas: [
+      {
+        pergunta: 'Pode trocar a palmilha da botina de segurança?',
+        resposta:
+          'Pode, se o manual do fabricante prevê a troca e indica a palmilha de reposição. Se não prevê, a troca por conta própria deixa o calçado diferente do que foi aprovado no Certificado de Aprovação. A NR-6 manda o fabricante orientar uso e manutenção no manual.',
+      },
+      {
+        pergunta: 'Palmilha ortopédica cabe dentro do calçado de segurança?',
+        resposta:
+          'Por cima da palmilha original, ela sobe o pé, aperta o peito do pé e aproxima os dedos da biqueira. No lugar da original, só se o manual permitir. Quando a necessidade é médica, o caminho que preserva o CA é pedir a adaptação ao fabricante.',
+      },
+      {
+        pergunta: 'Existe botina de segurança ortopédica com CA?',
+        resposta:
+          'Existe botina com palmilha anatômica e amortecimento, vendida como ortopédica, e ela tem CA como qualquer modelo. Para adaptação sob medida, a NR-6 prevê que o fabricante adapte o EPI para pessoa com deficiência, preservando a eficácia, sem invalidar o CA.',
+      },
+      {
+        pergunta: 'A adaptação do calçado para pessoa com deficiência perde o CA?',
+        resposta:
+          'Não, quando é feita pelo fabricante ou importador que detém o certificado. O item 6.9.5 da NR-6 diz que essa adaptação não invalida o CA já emitido e dispensa a emissão de um novo.',
       },
     ],
   },

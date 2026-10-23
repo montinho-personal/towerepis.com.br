@@ -16,6 +16,11 @@ import { JsonLd, schemaFaq } from '@/lib/schema'
 
 const PERGUNTAS = [
   {
+    pergunta: 'A botina de segurança Bompel é boa?',
+    resposta:
+      'É a linha que a Tower mais atende e conhece modelo a modelo, de um fabricante brasileiro com quase quatro décadas de operação. Se ela é boa para você depende de duas coisas que valem para qualquer marca: o modelo ter, no Certificado de Aprovação, a proteção que a sua função pede, e servir no pé de quem vai usar.',
+  },
+  {
     pergunta: 'A Bompel faz calçado de segurança ou ocupacional?',
     resposta:
       'Os dois. A linha inclui modelos com biqueira de proteção, que se enquadram como calçado de segurança, e modelos sem biqueira, que são calçados ocupacionais. Qual serve para você depende de existir, ou não, risco de queda de objeto pesado sobre o pé.',

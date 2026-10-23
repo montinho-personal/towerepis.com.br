@@ -90,6 +90,13 @@ export const empresa = {
     'Rio Grande do Norte',
   ],
 
+  /**
+   * Numeração de calçado que a Tower atende sob consulta, sem prometer
+   * disponibilidade: depende do modelo. Confirmado pelo cliente em
+   * 24/10/2026, em resposta às buscas "botina tamanho 46, 47, 48".
+   */
+  numeracaoSobConsulta: [46, 47, 48],
+
   // PENDENTE: horário real de atendimento.
   horario: {
     texto: 'Segunda a sexta, em horário comercial',
