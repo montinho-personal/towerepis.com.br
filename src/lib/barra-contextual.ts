@@ -367,6 +367,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Já tem a relação de EPI do PGR da obra?',
     rotulo: 'Orçar pela lista',
   },
+  'epi-na-nr-32-o-que-a-norma-exige-em-servicos-de-saude': {
+    chamada: 'Quantos da equipe precisam de calçado fechado?',
+    rotulo: 'Montar por setor',
+  },
+  'validade-e-descarte-de-epi': {
+    chamada: 'O estoque de EPI está girando?',
+    rotulo: 'Planejar a reposição',
+  },
   'epi-para-mecanico-de-oficina': {
     chamada: 'Que serviços a sua oficina faz?',
     rotulo: 'Montar a lista da oficina',

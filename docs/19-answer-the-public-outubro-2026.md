@@ -242,3 +242,15 @@ talabarte nem sistema contra quedas. Consequências:
   EPI × EPC e NR-18 ganharam a mesma ressalva onde citam o cinturão.
 
 **Próximo:** lote 2 = NR-32 (hospital e clínica) + validade e descarte de EPI.
+
+**24/10/2026 — lote 2 feito:**
+- `epi-na-nr-32-o-que-a-norma-exige-em-servicos-de-saude`: NR-32 conferida no
+  texto oficial (última alteração: Portaria MTP 4.219/2022). Itens 32.1.2,
+  32.2.4.3.2 a 32.2.4.15, 32.3.9.4.6 a 32.3.9.4.9.3, 32.4.3, 32.5.3, 32.8 e
+  32.9.1. Link de entrada a partir da página de enfermagem e saúde.
+- `validade-e-descarte-de-epi`: NR-6 6.5.1 g, 6.6.1 d, 6.8.1, 6.8.1.1, 6.9.2,
+  6.9.2.1.1; Lei 12.305/2010 arts. 13, 20 e 27; NR-32 32.5.3; NR-31 31.7.6.
+  Link de entrada a partir do artigo do CA vencido.
+
+**Próximo:** sem lote 3 definido. Reserva: palmilha antiperfurante e solado
+(dependem de liberar `escriba.ipt.br` e `fiergs.org.br` na rede da sessão).

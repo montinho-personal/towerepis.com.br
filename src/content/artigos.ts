@@ -3517,7 +3517,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Isso não quer dizer "pode usar até acabar". A Nota Técnica põe o prazo do fabricante no lugar do prazo do CA, e a NR-6 continua exigindo o equipamento íntegro e adequado ao risco. É por isso que o vencimento do CA não funciona como gatilho de recolhimento, e o estado do item continua mandando.',
+          'Isso não quer dizer "pode usar até acabar". A Nota Técnica põe o prazo do fabricante no lugar do prazo do CA, e a NR-6 continua exigindo o equipamento íntegro e adequado ao risco. É por isso que o vencimento do CA não funciona como gatilho de recolhimento, e o estado do item continua mandando. Os três prazos do EPI, e o que fazer com o que sai de uso, estão em <a href="/conhecimento/validade-e-descarte-de-epi/">validade e descarte de EPI</a>.',
       },
       {
         tipo: 'p',
@@ -10327,6 +10327,284 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Obra pequena precisa de PGR?',
         resposta:
           'Sim. O PGR é obrigatório em todo canteiro de obras (item 18.4.1 da NR-18). O que muda na obra pequena, de até 7 metros de altura e no máximo 10 trabalhadores, é que ele pode ser elaborado por profissional qualificado, e não só por profissional legalmente habilitado.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-na-nr-32-o-que-a-norma-exige-em-servicos-de-saude',
+    titulo: 'EPI na NR-32: o que a norma exige em hospital e clínica',
+    tituloSeo: 'EPI na NR-32: hospital e clínica',
+    resumo:
+      'A NR-32 não traz uma lista única de EPI do hospital. Ela proíbe calçado aberto, exige EPI à disposição no posto e detalha o que muda com quimioterápico, radiação e limpeza.',
+    descricaoSeo:
+      'O que a NR-32 exige de EPI e vestimenta em serviços de saúde: calçado fechado, EPI à disposição no posto, luvas e lavagem das mãos, quimioterápicos e limpeza.',
+    publicado: '2026-10-24',
+    atualizado: '2026-10-24',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Normas',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'A NR-32 não traz uma lista única dos EPI de um hospital. Ela exige que os EPI, descartáveis ou não, estejam à disposição em número suficiente nos postos de trabalho (item 32.2.4.7), proíbe o calçado aberto (32.2.4.5), manda fornecer vestimenta sem custo (32.2.4.6) e detalha o EPI de quem prepara e administra quimioterápico. O resto da lista sai da avaliação de riscos de cada serviço.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-32 vale para qualquer edificação destinada à assistência à saúde da população e para as ações de promoção, recuperação, assistência, pesquisa e ensino em saúde (item 32.1.2): hospital, clínica, laboratório, consultório, posto de saúde. Ela também alcança as empresas de limpeza e de manutenção que trabalham dentro desses serviços (itens 32.8.3 e 32.9.1.1). No texto oficial consultado em outubro de 2026, a última alteração é a Portaria MTP nº 4.219, de dezembro de 2022.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Risco biológico: o que vale para todos',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Calçado aberto é proibido.</strong> O empregador deve vedar o uso de calçados abertos, e também adornos, nos postos de trabalho (item 32.2.4.5).',
+          '<strong>Vestimenta adequada e sem custo.</strong> Quem pode se expor a agente biológico usa vestimenta de trabalho adequada e confortável, fornecida sem ônus (32.2.4.6 e 32.2.4.6.1).',
+          '<strong>EPI e vestimenta não saem do local de trabalho.</strong> O trabalhador não deve deixar o local com o EPI e a vestimenta usados na atividade (32.2.4.6.2).',
+          '<strong>EPI sempre à mão.</strong> Descartável ou não, o EPI fica à disposição em número suficiente no posto, para fornecimento ou reposição imediata (32.2.4.7).',
+          '<strong>Luva não substitui a lavagem das mãos</strong>, que acontece no mínimo antes e depois do uso dela (32.2.4.3.2).',
+          '<strong>Capacitação inclui EPI.</strong> O treinamento sobre risco biológico, antes de começar e de forma continuada, inclui o uso de proteção coletiva, individual e vestimenta (32.2.4.9.1).',
+          '<strong>Perfurocortante:</strong> quem usa descarta, e é vedado reencapar e desconectar agulha com a mão (32.2.4.14 e 32.2.4.15).',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O calçado fechado é a exigência que mais chega até a Tower. Em hospital e clínica, o que costuma resolver é calçado ocupacional fechado, impermeável e com solado antiderrapante, como explicam as páginas de <a href="/para-seu-trabalho/enfermagem-e-saude/">enfermagem e saúde</a> e de <a href="/calcados/ocupacionais/">calçado ocupacional</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quimioterápico: a parte mais detalhada da norma',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para quem prepara e administra quimioterápico antineoplásico, a NR-32 desce ao detalhe do equipamento:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Avental</strong> de material impermeável, com frente resistente, fechado nas costas, manga comprida e punho justo (item 32.3.9.4.6).',
+          '<strong>EPI avaliado todo dia</strong> quanto ao estado de conservação e segurança, e armazenado em local de fácil acesso, em quantidade suficiente para substituição imediata em caso de contaminação ou dano (32.3.9.4.7).',
+          '<strong>Sem EPI, a atividade não começa</strong> (32.3.9.4.8).',
+          '<strong>Kit de derramamento</strong> nas áreas de preparo, armazenamento, administração e transporte, com no mínimo luvas de procedimento, avental impermeável, compressas absorventes, proteção respiratória, proteção ocular, sabão e recipiente identificado para os resíduos (32.3.9.4.9.3).',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Radiação, limpeza e manutenção',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Em área com fonte de radiação ionizante, o trabalhador usa os EPI adequados para minimizar o risco (item 32.4.3). Na limpeza dos serviços de saúde, a capacitação cobre risco biológico, risco químico, EPI e EPC (32.8.1), e o empregador fornece materiais que preservem a integridade física do trabalhador e proíbe o uso de adornos (32.8.2). A manutenção de máquinas e equipamentos tem capacitação equivalente (32.9.1).',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A limpeza de serviço de saúde é onde mais se vê a luva errada: a de procedimento usada com saneante. A diferença está em <a href="/conhecimento/luva-de-procedimento-nao-e-luva-de-limpeza/">luva de procedimento não é luva de limpeza</a>, e a escolha da luva química em <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">luva para produto químico</a>. Quando a limpeza é terceirizada, quem fornece o EPI está em <a href="/conhecimento/epi-para-terceirizados-de-quem-e-a-obrigacao/">EPI de terceirizado</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Da norma ao pedido de compra',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['O que a NR-32 exige', 'O que entra no pedido'],
+        linhas: [
+          ['Calçado fechado (32.2.4.5)', 'Calçado ocupacional fechado, por função e com a grade de numeração da equipe'],
+          ['EPI à disposição no posto (32.2.4.7)', 'Quantidade por posto e reposição planejada, não só a compra inicial'],
+          ['Luva e lavagem das mãos (32.2.4.3.2)', 'Luva de procedimento em todos os tamanhos usados pela equipe'],
+          ['Quimioterápico (32.3.9.4.6 a 32.3.9.4.9.3)', 'Avental com a especificação da norma e o conteúdo do kit de derramamento'],
+          ['Limpeza (32.8)', 'Luva para o produto de limpeza usado, separada da luva de procedimento'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Cada item do pedido precisa vir com o Certificado de Aprovação, e o CA precisa declarar o risco daquela tarefa. O destino do EPI descartado está em <a href="/conhecimento/validade-e-descarte-de-epi/">validade e descarte de EPI</a>.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-32 — Segurança e saúde no trabalho em serviços de saúde (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-32-atualizada-2023-1.pdf',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/saude/',
+      rotulo: 'Ver o atendimento a saúde',
+    },
+    contexto: 'empresas-saude',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Trabalho em serviço de saúde e queria ajuda com o calçado fechado e o EPI que a NR-32 pede para a equipe.',
+    ctaTitulo: 'Quantas pessoas da equipe precisam de calçado fechado?',
+    ctaTexto:
+      'Diga as funções, os setores e a numeração da equipe. A gente separa o calçado e o EPI de cada posto, com o CA de cada item.',
+    perguntas: [
+      {
+        pergunta: 'Quais EPIs a NR-32 exige?',
+        resposta:
+          'A NR-32 não traz lista única. Ela exige EPI à disposição em número suficiente nos postos de trabalho, proíbe calçado aberto, manda fornecer vestimenta sem custo e detalha o EPI do preparo de quimioterápico, como o avental impermeável fechado nas costas. O restante sai da avaliação de riscos do serviço.',
+      },
+      {
+        pergunta: 'A NR-32 proíbe calçado aberto?',
+        resposta:
+          'Sim. O item 32.2.4.5 manda o empregador vedar o uso de calçados abertos nos postos de trabalho dos serviços de saúde, junto com adornos, consumo de alimentos e uso das pias de trabalho para outros fins.',
+      },
+      {
+        pergunta: 'Pode sair do hospital com o jaleco?',
+        resposta:
+          'Pela NR-32, os trabalhadores não devem deixar o local de trabalho com os equipamentos de proteção individual e as vestimentas usados nas atividades (item 32.2.4.6.2), e o empregador providencia local para fornecer vestimenta limpa e depositar a usada.',
+      },
+      {
+        pergunta: 'A NR-32 foi atualizada recentemente?',
+        resposta:
+          'No texto oficial do Ministério do Trabalho e Emprego consultado em outubro de 2026, a última alteração da NR-32 é a Portaria MTP nº 4.219, de 20 de dezembro de 2022.',
+      },
+    ],
+  },
+  {
+    slug: 'validade-e-descarte-de-epi',
+    titulo: 'Validade e descarte de EPI: quando sai de uso e para onde vai',
+    tituloSeo: 'Validade e descarte de EPI',
+    resumo:
+      'EPI tem três prazos que não se confundem: o do CA, o do fabricante e o do estado de uso. E, quando sai de uso, vira resíduo, que segue a regra do que ele tocou.',
+    descricaoSeo:
+      'As três validades do EPI (CA, prazo do fabricante e estado de uso), o limite de higienizações e o que fazer com o EPI descartado, contaminado ou não.',
+    publicado: '2026-10-24',
+    atualizado: '2026-10-24',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Normas',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Quando se fala em validade de EPI, três prazos diferentes se misturam: a validade do Certificado de Aprovação, o prazo de validade do produto informado pelo fabricante e o estado de uso, que manda trocar na hora o que estragou. E o descarte não é um só: o EPI usado vira resíduo, e segue a regra daquilo com que teve contato.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'As três validades',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Prazo', 'O que é', 'Onde conferir'],
+        linhas: [
+          ['Validade do CA', 'A autorização para vender e usar o modelo. Ela é vinculada ao prazo da avaliação da conformidade, e o EPI deve ser comercializado com CA válido (NR-6, itens 6.9.2 e 6.9.2.1)', 'Na consulta ao CAEPI'],
+          ['Prazo de validade do produto', 'O prazo e as condições de armazenamento que o fabricante informa. O fornecimento do EPI deve observar os dois (item 6.9.2.1.1)', 'Na embalagem e no manual'],
+          ['Estado de uso', 'Danificado ou extraviado, o EPI é substituído imediatamente (item 6.5.1, alínea g), e o trabalhador comunica quando ele fica impróprio (6.6.1, alínea d)', 'Na inspeção do dia a dia'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Os três correm separados. Um EPI pode estar com o CA válido e o produto vencido no estoque; pode estar dentro do prazo do fabricante e rasgado; pode ter o CA vencido e continuar em uso dentro de regras específicas, explicadas em <a href="/conhecimento/ca-vencido-o-epi-pode-continuar-em-uso/">CA vencido</a>. O sinal de troca de cada tipo está nos guias próprios: <a href="/conhecimento/quando-trocar-o-calcado-de-seguranca/">calçado de segurança</a> e <a href="/conhecimento/mascara-descartavel-nao-protege-de-vapor-quimico/">máscara PFF2</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O limite de higienizações',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'EPI reutilizável também tem fim, mesmo sem dano visível. A NR-6 manda o fabricante vender o EPI com manual em português, com orientação de uso, manutenção, limpeza e higienização (item 6.8.1). E, quando for o caso, as instruções de limpeza devem indicar o número de higienizações acima do qual não é possível garantir a proteção original, e o equipamento precisa ser substituído (item 6.8.1.1). Vestimenta de proteção e luva reutilizável são os casos mais comuns.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Estoque: onde a validade vence sem ninguém ver',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Sai primeiro o que vence primeiro.</strong> Reposição nova na frente do estoque antigo é como o prazo do fabricante passa despercebido.',
+          '<strong>Armazenar como o fabricante manda.</strong> Calor, sol e umidade encurtam a vida de borracha, espuma e elástico, e a NR-6 amarra o fornecimento às condições de armazenamento informadas (item 6.9.2.1.1).',
+          '<strong>Comprar na medida do consumo.</strong> A conta de reposição do calçado está em <a href="/conhecimento/quantos-pares-por-ano-calcular-a-reposicao/">quantos pares por ano</a>; estoque grande demais é estoque que vence.',
+          '<strong>Registrar a troca.</strong> Cada substituição entra na <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega</a>, como a primeira entrega.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Descarte: o EPI vira resíduo',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quando sai de uso, o EPI passa a ser resíduo sólido, e a Política Nacional de Resíduos Sólidos, a Lei 12.305/2010, classifica o resíduo pela origem: industrial, de serviço de saúde, da construção civil, agrossilvopastoril, entre outros (artigo 13). Estão obrigados a ter plano de gerenciamento de resíduos, entre outros, os geradores de resíduo industrial, de serviço de saúde e de mineração, as empresas de construção civil e os comércios e prestadores de serviço que geram resíduo perigoso (artigo 20). E contratar a coleta não tira do gerador a responsabilidade pelo destino (artigo 27).',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na prática, o EPI descartado segue o plano de gerenciamento de resíduos da empresa, e o que decide a destinação é o que ele tocou:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Sem contaminação</strong>, como calçado gasto de área seca: segue o destino de resíduo comum ou reciclável definido no plano.',
+          '<strong>Contaminado com agente biológico em serviço de saúde</strong>: é resíduo de serviço de saúde, segregado no local onde é gerado, em recipiente identificado (NR-32, item 32.5.3). O resto do que a NR-32 exige está em <a href="/conhecimento/epi-na-nr-32-o-que-a-norma-exige-em-servicos-de-saude/">EPI na NR-32</a>.',
+          '<strong>Contaminado com produto químico</strong>: segue a classificação do resíduo do produto, e pode ser resíduo perigoso.',
+          '<strong>Usado com agrotóxico no campo</strong>: a NR-31 põe na conta do empregador a descontaminação do EPI e das vestimentas ao fim de cada jornada (item 31.7.6). O EPI que sai de uso segue o mesmo cuidado.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale ainda inutilizar o EPI descartado, cortando a luva ou a alça, para ele não voltar a circular como se estivesse bom.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Lei nº 12.305/2010 — Política Nacional de Resíduos Sólidos (Planalto)',
+        url: 'https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12305.htm',
+      },
+      {
+        titulo: 'NR-32 — Segurança e saúde no trabalho em serviços de saúde (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-32-atualizada-2023-1.pdf',
+      },
+      {
+        titulo: 'NR-31 — Segurança e saúde no trabalho na agricultura, pecuária, silvicultura, exploração florestal e aquicultura (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-31-atualizada-2024.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/',
+      rotulo: 'Ver o atendimento a empresas',
+    },
+    contexto: 'empresas',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Queria organizar a reposição do EPI da equipe para não deixar nada vencer no estoque.',
+    ctaTitulo: 'O estoque de EPI está girando?',
+    ctaTexto:
+      'Mande o que a equipe consome por mês. A gente ajuda a planejar a reposição em quantidades que não vencem na prateleira, com o CA de cada item.',
+    perguntas: [
+      {
+        pergunta: 'EPI tem prazo de validade?',
+        resposta:
+          'Tem três prazos diferentes. O do Certificado de Aprovação, ligado à avaliação da conformidade do modelo; o prazo de validade do produto, informado pelo fabricante; e o estado de uso, que manda substituir imediatamente o EPI danificado. A NR-6 manda observar o prazo e as condições de armazenamento do fabricante no fornecimento.',
+      },
+      {
+        pergunta: 'Quantas vezes dá para lavar um EPI?',
+        resposta:
+          'Depende do equipamento, e quem informa é o fabricante. Pela NR-6, quando for o caso, as instruções de limpeza devem indicar o número de higienizações acima do qual não é possível garantir a proteção original, e o EPI precisa ser substituído.',
+      },
+      {
+        pergunta: 'Onde descartar EPI usado?',
+        resposta:
+          'No destino previsto no plano de gerenciamento de resíduos da empresa, quando ela é obrigada a ter um pela Lei 12.305/2010. O que decide a destinação é o que o EPI tocou: sem contaminação, resíduo comum ou reciclável; com agente biológico em serviço de saúde, resíduo de serviço de saúde; com produto químico, a classificação do resíduo do produto.',
+      },
+      {
+        pergunta: 'EPI contaminado pode ir para o lixo comum?',
+        resposta:
+          'Não, quando a contaminação muda a classe do resíduo. Em serviço de saúde, o EPI com agente biológico é resíduo de serviço de saúde e é segregado onde foi gerado, como manda a NR-32. Com produto químico, ele segue a classificação do resíduo daquele produto.',
       },
     ],
   },

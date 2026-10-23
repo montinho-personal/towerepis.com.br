@@ -196,6 +196,11 @@ export const PROFISSOES: Profissao[] = [
         titulo: 'Proteção respiratória',
         texto: 'A diferença entre PFF1, PFF2 e PFF3 e quando cada uma se aplica.',
       },
+      {
+        href: '/conhecimento/epi-na-nr-32-o-que-a-norma-exige-em-servicos-de-saude/',
+        titulo: 'O que a NR-32 exige',
+        texto: 'Calçado fechado, EPI à disposição no posto e o detalhe do quimioterápico.',
+      },
     ],
     perguntas: [
       {
