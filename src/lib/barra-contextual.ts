@@ -332,8 +332,8 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     rotulo: 'Montar por função',
   },
   'epi-para-parque-eolico-e-manutencao-de-aerogerador': {
-    chamada: 'Quantos técnicos sobem nas torres por turno?',
-    rotulo: 'Montar o sistema',
+    chamada: 'E o calçado e o EPI do resto do turno?',
+    rotulo: 'Montar a lista',
   },
   'epi-para-terceirizados-de-quem-e-a-obrigacao': {
     chamada: 'Quantos postos o contrato novo tem?',

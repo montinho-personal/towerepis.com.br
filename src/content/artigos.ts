@@ -8845,7 +8845,7 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Na manutenção de aerogerador o EPI é sistema: cinturão paraquedista, trava-quedas, inspeção antes da subida, eletricidade na nacele e plano de resgate.',
     publicado: '2026-10-15',
-    atualizado: '2026-10-15',
+    atualizado: '2026-10-24',
     atualizadoExibicao: 'outubro de 2026',
     cluster: 'Proteção',
     blocos: [
@@ -8970,6 +8970,15 @@ export const ARTIGOS: Artigo[] = [
           'O CA de cada item do sistema contra quedas, que são aprovações separadas.',
         ],
       },
+      {
+        tipo: 'h2',
+        texto: 'O que a Tower fornece, e o que não fornece',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A Tower não distribui cinturão, talabarte, trava-quedas nem kit de resgate. Esse conjunto pede fornecedor especializado em trabalho em altura, com inspeção e treinamento que vão além de entregar o equipamento. O que a Tower atende na equipe de um parque eólico é o resto do EPI do turno: calçado de segurança, luvas, óculos e protetor auditivo, com o CA de cada item.',
+      },
     ],
     fontes: [
       {
@@ -8999,10 +9008,10 @@ export const ARTIGOS: Artigo[] = [
     },
     contexto: 'epi-por-cidade',
     mensagemWhats:
-      'Olá! Vim pelo site da Tower. Trabalho com manutenção de parque eólico e queria ajuda para montar o sistema contra quedas e a lista de EPI da equipe.',
-    ctaTitulo: 'Quantas pessoas sobem nas torres por turno?',
+      'Olá! Vim pelo site da Tower. Trabalho com manutenção de parque eólico e queria ajuda com o calçado e o EPI da equipe, fora o sistema contra quedas.',
+    ctaTitulo: 'E o EPI do resto do turno?',
     ctaTexto:
-      'Diga quantos técnicos sobem e qual linha de vida a torre usa. A gente monta o sistema contra quedas com peças compatíveis e o CA de cada uma.',
+      'O sistema contra quedas vem de fornecedor especializado em altura. O calçado de segurança, as luvas, os óculos e o protetor auditivo da equipe, a gente fornece com o CA de cada item.',
     perguntas: [
       {
         pergunta: 'Qual cinturão usar na torre eólica?',
@@ -10091,7 +10100,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'A coluna da direita é o que a Tower vende, e cada item tem guia próprio no site: <a href="/conhecimento/botina-isolante-para-eletricista/">calçado isolante</a>, <a href="/conhecimento/protetor-auditivo-plug-ou-concha/">protetor auditivo</a>, <a href="/conhecimento/respirador-como-escolher-o-filtro/">respirador</a> e <a href="/conhecimento/solado-antiderrapante-o-que-significa/">solado antiderrapante</a>. A lista completa de EPI está em <a href="/protecao/">tipos de EPI</a>.',
+          'A coluna da direita é EPI, e a Tower fornece boa parte dela, menos o cinturão e o sistema contra quedas, que pedem fornecedor especializado em altura. Os demais itens têm guia próprio no site: <a href="/conhecimento/botina-isolante-para-eletricista/">calçado isolante</a>, <a href="/conhecimento/protetor-auditivo-plug-ou-concha/">protetor auditivo</a>, <a href="/conhecimento/respirador-como-escolher-o-filtro/">respirador</a> e <a href="/conhecimento/solado-antiderrapante-o-que-significa/">solado antiderrapante</a>. A lista completa de EPI está em <a href="/protecao/">tipos de EPI</a>.',
       },
       {
         tipo: 'h2',
@@ -10253,7 +10262,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Cada linha tem guia próprio: <a href="/calcados/seguranca/">calçado de segurança</a>, <a href="/protecao/cabeca/">capacete</a>, <a href="/protecao/olhos-e-face/">óculos e protetor facial</a>, <a href="/protecao/auditiva/">proteção auditiva</a>, <a href="/protecao/respiratoria/">proteção respiratória</a> e <a href="/protecao/maos/">luvas</a>. O que muda na rotina de quem trabalha na obra está em <a href="/para-seu-trabalho/construcao/">EPI para construção</a>.',
+          'Cada linha tem guia próprio: <a href="/calcados/seguranca/">calçado de segurança</a>, <a href="/protecao/cabeca/">capacete</a>, <a href="/protecao/olhos-e-face/">óculos e protetor facial</a>, <a href="/protecao/auditiva/">proteção auditiva</a>, <a href="/protecao/respiratoria/">proteção respiratória</a> e <a href="/protecao/maos/">luvas</a>. O que muda na rotina de quem trabalha na obra está em <a href="/para-seu-trabalho/construcao/">EPI para construção</a>. O cinturão e o sistema contra quedas não são linha da Tower; os demais itens da tabela, sim.',
       },
       {
         tipo: 'h2',

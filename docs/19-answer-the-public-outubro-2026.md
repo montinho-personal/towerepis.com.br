@@ -232,5 +232,13 @@ continuar cobrindo as perguntas da seção 4 nesse formato.
   2025 (última alteração: Portaria MTE 09/2025); a redação atual não traz lista
   fixa de EPI — manda o PGR do canteiro listar (18.4.3).
 
-**Próximo:** lote 2 (NR-32 e trabalho em altura — este depende de confirmar se
-a Tower fornece cinturão e talabarte).
+**24/10/2026 — confirmado pelo cliente:** a Tower **não** fornece cinturão,
+talabarte nem sistema contra quedas. Consequências:
+- O artigo "EPI para trabalho em altura" sai do plano: a busca é de quem quer
+  comprar o que a Tower não vende.
+- Defeito corrigido no mesmo dia: o artigo do parque eólico prometia "a gente
+  monta o sistema contra quedas" (chamada, mensagem e barra), em contradição
+  com a página de Assu. Agora diz o que a Tower fornece e o que não fornece.
+  EPI × EPC e NR-18 ganharam a mesma ressalva onde citam o cinturão.
+
+**Próximo:** lote 2 = NR-32 (hospital e clínica) + validade e descarte de EPI.
