@@ -351,6 +351,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'O risco chega acima do cano?',
     rotulo: 'Fechar o conjunto',
   },
+  'botina-para-trabalho-rural-o-que-a-nr-31-pede': {
+    chamada: 'Quem monta, aplica e pisa na água na sua equipe?',
+    rotulo: 'Separar por atividade',
+  },
+  'calcado-de-seguranca-feminino-o-que-muda': {
+    chamada: 'O modelo da equipe existe no número delas?',
+    rotulo: 'Conferir a numeração',
+  },
   'epi-para-mecanico-de-oficina': {
     chamada: 'Que serviços a sua oficina faz?',
     rotulo: 'Montar a lista da oficina',

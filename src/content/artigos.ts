@@ -2196,7 +2196,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Calçado de segurança em forma feminina existe, com numeração e largura próprias. Quando a equipe tem mulheres, isso entra na grade como item separado, não como "o mesmo modelo no 35". Um modelo de forma masculina em numeração pequena costuma sobrar na largura e apertar no peito do pé.',
+          'Calçado de segurança em forma feminina existe, com numeração e largura próprias. Quando a equipe tem mulheres, isso entra na grade como item separado, não como "o mesmo modelo no 35". Um modelo de forma masculina em numeração pequena costuma sobrar na largura e apertar no peito do pé. O que muda e o que não muda está em <a href="/conhecimento/calcado-de-seguranca-feminino-o-que-muda/">calçado de segurança feminino</a>.',
       },
       {
         tipo: 'h3',
@@ -9554,7 +9554,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Na mesma lista da NR-31 há um item de calçado que pouca gente conhece: bota ou botina com solado sem ranhuras para atividades que envolvam montaria de animais (alínea f).',
+          'Na mesma lista da NR-31 há um item de calçado que pouca gente conhece: bota ou botina com solado sem ranhuras para atividades que envolvam montaria de animais (alínea f). O calçado de cada atividade do campo está em <a href="/conhecimento/botina-para-trabalho-rural-o-que-a-nr-31-pede/">botina para trabalho rural</a>.',
       },
       {
         tipo: 'h2',
@@ -9642,6 +9642,289 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Qual perneira usar na roçada?',
         resposta:
           'A roçada costuma expor a perna a pedra e fragmento lançados, e a perneira contra agentes abrasivos e escoriantes ou contra cortantes e perfurantes é a que cobre isso. A escolha final sai da avaliação de riscos, e o CA precisa declarar o agente.',
+      },
+    ],
+  },
+  {
+    slug: 'botina-para-trabalho-rural-o-que-a-nr-31-pede',
+    titulo: 'Botina para trabalho rural: o que a NR-31 pede do calçado',
+    tituloSeo: 'Botina para trabalho rural e a NR-31',
+    resumo:
+      'No campo, o calçado certo muda de uma atividade para outra no mesmo dia. A NR-31 manda escolher pelo risco e acrescenta dois itens que só existem nela.',
+    descricaoSeo:
+      'O que a NR-31 exige do calçado no campo: EPI pela NR-6, solado sem ranhuras para montaria, perneira contra cobra e o calçado de cada atividade da propriedade.',
+    publicado: '2026-10-24',
+    atualizado: '2026-10-24',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Calçados',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'No trabalho rural, o calçado segue duas normas. A NR-31 manda fornecer de graça os EPI da NR-6, escolhidos pelo risco de cada atividade, e acrescenta dois itens que só existem nela: bota ou botina com solado sem ranhuras para quem trabalha montado, e perneira contra picada de animais peçonhentos.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na mesma propriedade, a mesma pessoa pode passar a manhã no curral, a tarde na lavoura irrigada e o fim do dia aplicando produto. Não existe uma botina boa para tudo isso, e é por isso que a pergunta "qual a melhor botina para a roça" quase sempre tem mais de uma resposta.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que a NR-31 diz sobre o calçado',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>EPI de graça, pela NR-6.</strong> O fornecimento gratuito de EPI aos trabalhadores é obrigatório, nos termos da <a href="/conhecimento/nr-6-o-que-a-empresa-precisa-saber/">NR-6</a> (item 31.6.1).',
+          '<strong>Dispositivos a mais, conforme o risco.</strong> Além dos EPI, o empregador fornece, de acordo com os riscos de cada atividade, uma lista de dispositivos de proteção pessoal. Dois deles tocam o pé e a perna: perneira contra picadas de animais peçonhentos e bota ou botina com solado sem ranhuras para atividades que envolvam montaria (item 31.6.2, alíneas c e f).',
+          '<strong>Conservado e usado.</strong> EPI e dispositivos devem ser adequados aos riscos, conservados e em condições de funcionamento (31.6.3). O empregador exige o uso (31.6.4) e orienta o empregado (31.6.5).',
+          '<strong>Com agrotóxico, conforto térmico e limpeza diária.</strong> Para quem lida com agrotóxicos, o empregador fornece EPI e vestimentas adequados aos riscos que privilegiem o conforto térmico, e se responsabiliza pela descontaminação deles ao fim de cada jornada (item 31.7.6).',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Cada atividade, um calçado',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O Anexo I da NR-6 separa o calçado em tipos, pelo risco que ele enfrenta (item G.1). Cruzando com a rotina do campo:',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Atividade', 'O que ameaça o pé', 'Tipo de calçado na NR-6'],
+        linhas: [
+          ['Lavoura irrigada, brejo, tanque, lavagem', 'Água e umidade o dia inteiro', 'Proteção de pés e pernas contra umidade (G.1, f)'],
+          ['Preparo e aplicação de agrotóxico', 'Respingo e escorrimento de produto', 'Proteção de pés e pernas contra agentes químicos (G.1, g)'],
+          ['Roçada, mato, cerca, espinho', 'Corte e perfuração', 'Proteção contra agentes cortantes e perfurantes (G.1, e)'],
+          ['Carga, colheita, curral, ferramenta pesada', 'Queda e impacto sobre os dedos', 'Proteção contra impacto de queda de objetos (G.1, a)'],
+          ['Montaria', 'O calçado no estribo', 'Bota ou botina com solado sem ranhuras (NR-31, 31.6.2, f)'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A coluna do meio mostra onde cada risco costuma aparecer, não uma regra. Quem define o calçado de cada atividade é a avaliação de riscos da propriedade, e o CA do modelo precisa declarar a proteção que ela pediu. Como consultar está em <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">o que é o CA</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Montaria: o solado que vai contra a regra geral',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Em quase todo lugar, relevo no solado é o que segura o pé no chão, como explica <a href="/conhecimento/solado-antiderrapante-o-que-significa/">solado antiderrapante</a>. Na montaria, a NR-31 pede o contrário: solado sem ranhuras. A consequência prática é que a mesma botina raramente serve para as duas coisas. Quem monta e depois trabalha em piso molhado ou escorregadio precisa de dois calçados, e a troca precisa caber na rotina, ou não acontece.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Cobra: perneira e cano alto',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Onde há possibilidade de animal peçonhento, a NR-31 manda fornecer a perneira, e ela não é EPI da NR-6: a própria norma a classifica como dispositivo de proteção pessoal (item 31.6.2.2). Ela funciona junto com o calçado, sem fresta entre os dois. Os tipos de perneira e como combinar com a botina estão em <a href="/conhecimento/perneira-de-seguranca-quando-usar/">perneira de segurança</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Se o acidente acontece, depois dos primeiros socorros o trabalhador vai imediatamente para a unidade de saúde mais próxima ou para o local indicado no Programa de Gerenciamento de Riscos no Trabalho Rural, o PGRTR (item 31.3.10.1).',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Barro, água e calor: o que encurta a vida da botina',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'No campo, o calçado volta para casa molhado, com barro e às vezes com resto de produto. Três cuidados fazem diferença na duração e na proteção:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Secar à sombra, nunca no sol forte nem perto do fogo.</strong> O passo a passo está em <a href="/conhecimento/como-limpar-e-conservar-calcado-de-seguranca/">como limpar e conservar calçado de segurança</a>.',
+          '<strong>Dois pares em rodízio</strong> onde o calçado molha todo dia, para um secar enquanto o outro trabalha. A conta está em <a href="/conhecimento/quantos-pares-por-ano-calcular-a-reposicao/">quantos pares por ano</a>.',
+          '<strong>Calçado de aplicação separado do calçado de rotina.</strong> O que recebeu agrotóxico é descontaminado ao fim da jornada pelo empregador, e não vai para casa.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Antes de pedir o calçado da equipe',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'As atividades de cada pessoa ao longo do dia, e não só a função no papel.',
+          'Quem monta, quem aplica produto e quem trabalha em área alagada.',
+          'Se há registro ou possibilidade de cobra nas áreas de trabalho.',
+          'A numeração de cada pessoa, levantada como explica <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">grade de numeração</a>.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Os guias de atividades do campo no Nordeste mostram como isso fica em cada caso: <a href="/conhecimento/epi-para-aplicacao-de-defensivo-agricola/">aplicação de defensivo</a>, <a href="/conhecimento/epi-para-extracao-de-carnauba/">extração de carnaúba</a> e <a href="/conhecimento/epi-para-carcinicultura-e-despesca-de-camarao/">carcinicultura</a>.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-31 — Segurança e saúde no trabalho na agricultura, pecuária, silvicultura, exploração florestal e aquicultura (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-31-atualizada-2024.pdf',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/calcados/seguranca/',
+      rotulo: 'Ver calçados de segurança',
+    },
+    contexto: 'calcados-seguranca',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Preciso de calçado para a equipe do campo e queria ajuda para separar o calçado de cada atividade.',
+    ctaTitulo: 'Quantas atividades a sua equipe faz no dia?',
+    ctaTexto:
+      'Conte o que cada pessoa faz na propriedade: curral, lavoura, aplicação, montaria. A gente separa o calçado de cada atividade, com o CA e a numeração da equipe.',
+    perguntas: [
+      {
+        pergunta: 'Qual a melhor botina para trabalhar na roça?',
+        resposta:
+          'Depende da atividade. Para área alagada, bota de cano alto contra umidade; para aplicação de agrotóxico, calçado contra agentes químicos; para carga e curral, botina com biqueira; para montaria, solado sem ranhuras, como pede a NR-31. A avaliação de riscos define qual, e o CA precisa declarar a proteção.',
+      },
+      {
+        pergunta: 'Quem paga a botina de quem trabalha no campo?',
+        resposta:
+          'O empregador, quando a atividade expõe o pé a risco. A NR-31 torna obrigatório o fornecimento gratuito de EPI nos termos da NR-6 (item 31.6.1) e manda o empregador exigir o uso (31.6.4) e orientar o empregado (31.6.5).',
+      },
+      {
+        pergunta: 'Que calçado usar para montaria no trabalho rural?',
+        resposta:
+          'Bota ou botina com solado sem ranhuras, que a NR-31 lista entre os dispositivos de proteção pessoal para atividades que envolvam montaria de animais (item 31.6.2, alínea f).',
+      },
+      {
+        pergunta: 'Bota de borracha serve para a lavoura?',
+        resposta:
+          'Serve onde o risco é água ou produto químico, se o CA declarar proteção de pés e pernas contra umidade ou contra agentes químicos. Onde há queda de objeto ou perfuração, a proteção precisa estar declarada também, porque cada requisito é ensaiado à parte.',
+      },
+    ],
+  },
+  {
+    slug: 'calcado-de-seguranca-feminino-o-que-muda',
+    titulo: 'Calçado de segurança feminino: o que muda de verdade',
+    tituloSeo: 'Calçado de segurança feminino',
+    resumo:
+      'A proteção não muda: ela é do modelo, declarada no CA. O que muda é a numeração disponível e o formato, e é aí que o calçado da equipe costuma errar.',
+    descricaoSeo:
+      'Botina feminina de segurança: a proteção é a do CA. Mudam numeração, largura e formato, e por isso o número menor do modelo masculino nem sempre serve.',
+    publicado: '2026-10-24',
+    atualizado: '2026-10-24',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Calçados',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'A proteção de um calçado de segurança é do modelo, declarada no Certificado de Aprovação, e não depende de quem calça. O que muda para a mulher na equipe é outra coisa: se o modelo existe no número dela, e se o formato serve no pé dela. É nesses dois pontos que o calçado feminino costuma dar errado.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Em muita empresa, a compra de calçado é pensada pela maioria da equipe, e a minoria se ajeita com o que sobra: o menor número do modelo masculino, uma palmilha a mais, uma meia grossa. Essa improvisação é o caminho mais curto para o calçado que machuca e para o calçado que fica no armário.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A proteção é a mesma',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Biqueira, solado antiderrapante, proteção contra perfuração e isolamento elétrico são requisitos ensaiados e declarados no CA de cada modelo. Um modelo feminino com os mesmos requisitos declarados protege o mesmo que um masculino. A cor e o acabamento também não mudam nada nessa conta. Para conferir o que um modelo cobre, o caminho está em <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">o que é o CA</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que muda: numeração e formato',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A numeração brasileira mede só o comprimento do pé. A largura é outra medida, que os técnicos de calçado chamam de perímetro, tomada na parte mais larga da fôrma, e ela quase nunca vem marcada no calçado, como explica o dossiê do SENAI-RS sobre fôrmas e sistemas de medidas. Dois calçados do mesmo número podem ter larguras diferentes, porque foram feitos em fôrmas diferentes.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Por isso o número menor de um modelo masculino nem sempre resolve. O comprimento pode até bater, mas a largura e o volume da fôrma continuam os de um calçado pensado para outro pé. O sintoma é conhecido: o pé desliza dentro do calçado, o calcanhar sobe a cada passo e a bolha aparece no fim do turno. O diagnóstico completo está em <a href="/conhecimento/botina-que-machuca-calcado-ou-numeracao/">botina que machuca</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que a NR-6 diz sobre isso',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A norma não fala de calçado feminino, mas fala de quem calça. Entre os critérios para selecionar o EPI está a adequação do equipamento ao empregado e o conforto oferecido, segundo avaliação do conjunto de empregados (item 6.5.2, alínea f, da <a href="/conhecimento/nr-6-o-que-a-empresa-precisa-saber/">NR-6</a>). E a seleção é feita depois de ouvir os empregados usuários (item 6.5.2.2). Se as mulheres da equipe não entram no teste, a avaliação não é do conjunto. Quem participa dessa escolha está em <a href="/conhecimento/quem-escolhe-o-epi-sesmt-cipa-ou-compras/">quem escolhe o EPI</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Os improvisos que não funcionam',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Meia grossa para encher o calçado folgado.</strong> Esquenta, embola e não segura o calcanhar.',
+          '<strong>Palmilha extra para diminuir o volume.</strong> Sobe o pé dentro do calçado e pode deixar os dedos mais perto da borda da biqueira.',
+          '<strong>Amarrar mais apertado.</strong> Aperta o peito do pé sem resolver o comprimento.',
+          '<strong>Um número abaixo para o pé não escorregar.</strong> Troca a folga pelo aperto nos dedos, e a biqueira não cede.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Como acertar o calçado das mulheres da equipe',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Levantar a numeração de cada pessoa</strong>, como em qualquer grade. O passo a passo está em <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">grade de numeração</a>, e a medida do pé pode ser feita na <a href="/ferramentas/tamanho-de-botina/">calculadora de tamanho de botina</a>.',
+          '<strong>Conferir se o modelo escolhido existe em todos os números da equipe</strong>, antes de fechar. Nem todo modelo é fabricado em toda a numeração.',
+          '<strong>Testar o par no pé</strong>, em pé e andando, com a meia de trabalho, no fim do dia, quando o pé está mais inchado.',
+          '<strong>Aceitar dois modelos na mesma função</strong> quando um só não serve para todos. A proteção declarada no CA precisa ser a mesma nos dois.',
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'SENAI-RS / SBRT — Fôrmas e sistemas de medidas para calçados (dossiê técnico), itens 4.1.3 e 4.2.2',
+        url: 'https://www.senairs.org.br/sites/default/files/documents/formas_e_sistemas_de_medidas_para_calcados.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/calcados/',
+      rotulo: 'Ver os calçados',
+    },
+    contexto: 'calcados',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Tenho mulheres na equipe e queria ajuda para acertar o calçado de segurança delas.',
+    ctaTitulo: 'Quantas pessoas da equipe calçam números menores?',
+    ctaTexto:
+      'Mande a função e a numeração de cada pessoa. A gente confere quais modelos existem nesses números com a proteção que a função pede, declarada no CA.',
+    perguntas: [
+      {
+        pergunta: 'Botina feminina protege menos que a masculina?',
+        resposta:
+          'Não, se os requisitos declarados no CA forem os mesmos. Biqueira, solado e as demais proteções são ensaiados e declarados para cada modelo, e valem para quem calça, seja homem ou mulher.',
+      },
+      {
+        pergunta: 'Mulher pode usar botina masculina de número menor?',
+        resposta:
+          'Pode, se o calçado servir de verdade no comprimento e na largura. A numeração brasileira mede só o comprimento; a largura depende da fôrma do modelo. Se o pé desliza, o calcanhar sobe ou a bolha aparece, o modelo não serve, mesmo no número certo.',
+      },
+      {
+        pergunta: 'Como saber o número certo da botina de segurança feminina?',
+        resposta:
+          'Medindo o comprimento do pé, em pé e no fim do dia, e testando o par com a meia de trabalho. Os dedos não podem encostar na biqueira, e o calcanhar não pode subir ao andar.',
       },
     ],
   },

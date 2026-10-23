@@ -170,6 +170,12 @@ Hoje o site diz *"uma indústria têxtil do Ceará compra com a gente desde os a
 1990"*, sem nome. Se conseguirem autorização por escrito do Grupo Santana Têxtil, a
 prova fica ainda mais forte.
 
+### 10b. Numeração feminina que a Tower atende
+O artigo `calcado-de-seguranca-feminino-o-que-muda` (24/10/2026) saiu sem falar
+do catálogo, porque não há dado confirmado: a partir de que número a Tower
+atende, e com quais modelos de forma feminina. **[INFORMAÇÃO NECESSÁRIA]** Com a
+resposta, o artigo ganha um parágrafo com o que existe de fato.
+
 ---
 
 ## 🟢 PARALELO AO SITE — E PODE COMEÇAR HOJE
