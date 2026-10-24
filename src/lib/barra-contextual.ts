@@ -391,6 +391,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'A roupa da equipe precisa de CA?',
     rotulo: 'Separar EPI e uniforme',
   },
+  'ncm-da-botina-de-seguranca': {
+    chamada: 'Precisa da NCM e do CA na proposta?',
+    rotulo: 'Cotar com NCM',
+  },
+  'epi-no-esocial-o-que-entra-no-s-2240': {
+    chamada: 'O CA do eSocial bate com o entregue?',
+    rotulo: 'Pedir os CAs',
+  },
   'epi-para-mecanico-de-oficina': {
     chamada: 'Que serviços a sua oficina faz?',
     rotulo: 'Montar a lista da oficina',

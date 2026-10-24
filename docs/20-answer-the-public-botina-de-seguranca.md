@@ -142,3 +142,12 @@ artigo da grade.
 
 **Próximo:** lote 2 depende de fonte (couro e nobuck; NCM pela TIPI;
 metatarso).
+
+**24/10/2026 — lote 2 (parcial):**
+- `ncm-da-botina-de-seguranca`: TIPI oficial em .docx no site da Receita
+  (Decreto 11.158/2022, atualizada até o ADE RFB nº 1/2026), capítulo 64,
+  Notas 1 e 4. Só a biqueira de metal tem subitem próprio.
+- No lugar de couro/nobuck e metatarso (sem fonte aberta), entrou
+  `epi-no-esocial-o-que-entra-no-s-2240`, com o Manual de Orientação do
+  eSocial S-1.3 (consolidado em 26/05/2026).
+- Links de entrada: biqueira → NCM; ficha → eSocial.

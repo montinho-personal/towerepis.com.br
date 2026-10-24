@@ -1098,7 +1098,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'destaque',
         texto:
-          'A NR-6 estabelece que o empregador registre o fornecimento do EPI ao trabalhador, e admite que esse registro seja feito em livro, ficha ou sistema eletrônico. Na prática, a ficha de entrega é a prova de que a empresa cumpriu a obrigação. E é o primeiro documento pedido quando alguém pergunta.',
+          'A NR-6 estabelece que o empregador registre o fornecimento do EPI ao trabalhador, e admite que esse registro seja feito em livro, ficha ou sistema eletrônico. Na prática, a ficha de entrega é a prova de que a empresa cumpriu a obrigação. E é o primeiro documento pedido quando alguém pergunta. O evento S-2240 do eSocial também pede o CA de cada EPI, mas não substitui esse registro, como explica <a href="/conhecimento/epi-no-esocial-o-que-entra-no-s-2240/">EPI no eSocial</a>.',
       },
       {
         tipo: 'p',
@@ -2071,7 +2071,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'O material da biqueira consta na descrição do Certificado de Aprovação do modelo. É ali que se confere, e não na embalagem. Se a atividade tem uma exigência específica — isolamento elétrico, proteção contra perfuração —, ela também precisa estar escrita no CA; a categoria "calçado de segurança" sozinha não garante nenhum dos dois.',
+          'O material da biqueira consta na descrição do Certificado de Aprovação do modelo. É ali que se confere, e não na embalagem. Se a atividade tem uma exigência específica — isolamento elétrico, proteção contra perfuração —, ela também precisa estar escrita no CA; a categoria "calçado de segurança" sozinha não garante nenhum dos dois. Para quem confere nota fiscal, o material também muda a NCM: só a biqueira de metal tem código próprio, como mostra <a href="/conhecimento/ncm-da-botina-de-seguranca/">NCM da botina de segurança</a>.',
       },
       {
         tipo: 'p',
@@ -11223,6 +11223,257 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Vestimenta de trabalho substitui o EPI?',
         resposta:
           'Não. A NR-24 diz que a vestimenta de trabalho não substitui a necessidade do EPI e que os dois podem ser usados juntos (item 24.8.3).',
+      },
+    ],
+  },
+  {
+    slug: 'ncm-da-botina-de-seguranca',
+    titulo: 'NCM da botina de segurança: como classificar pela biqueira e pelo material',
+    tituloSeo: 'NCM da botina de segurança',
+    resumo:
+      'Não existe uma NCM única de botina de segurança. A TIPI classifica pelo material do cabedal e da sola, e só a biqueira de metal tem código próprio.',
+    descricaoSeo:
+      'A NCM do calçado de segurança depende do material do cabedal e de a biqueira ser de metal. Os códigos da TIPI para couro, PVC e borracha, e o caso do composite.',
+    publicado: '2026-10-24',
+    atualizado: '2026-10-24',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Compra',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Não existe uma NCM única de "botina de segurança". O capítulo 64 da TIPI classifica o calçado pelo material do cabedal e da sola, e só a biqueira de metal tem código próprio. Botina de couro com biqueira de aço é 6403.40.00; com biqueira de composite, cai em "outro calçado", que para botina de couro cobrindo o tornozelo é 6403.91.90.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A pergunta chega de quem compra para revender, de quem confere nota fiscal e de quem cadastra produto no sistema. A fonte é a Tabela de Incidência do IPI, a TIPI, aprovada pelo Decreto nº 11.158/2022 e atualizada pela Receita Federal; a versão consultada vai até o Ato Declaratório Executivo RFB nº 1, de janeiro de 2026.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Como o capítulo 64 decide',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>O material da parte de cima</strong> é o que forma a maior superfície do revestimento externo; orlas, protetores de tornozelo, fivelas e ilhoses não contam (Nota 4, alínea a).',
+          '<strong>O material da sola</strong> é o que tem a maior superfície de contato com o chão (Nota 4, alínea b).',
+          '<strong>A posição</strong> sai dessa combinação: 64.01 para o calçado impermeável inteiro de borracha ou plástico, sem costura nem fixação mecânica entre parte de cima e sola; 64.02 para os demais de borracha ou plástico; 64.03 para cabedal de couro natural; 64.04 para cabedal de matéria têxtil.',
+          '<strong>A biqueira de metal</strong> tem subitem próprio nas posições 64.01, 64.02 e 64.03.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Os códigos mais comuns no calçado de segurança',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Calçado', 'Com biqueira de metal', 'Sem biqueira de metal'],
+        linhas: [
+          ['Cabedal de couro, sola de borracha ou plástico (botina, sapato)', '6403.40.00', '6403.91.90 se cobre o tornozelo; 6403.99.90 se não cobre'],
+          ['Bota impermeável inteira de PVC ou borracha, sem costura', '6401.10.00', '6401.92.00 se cobre o tornozelo e não o joelho; 6401.99.10 se cobre o joelho'],
+          ['Parte de cima e sola de borracha ou plástico, demais casos', '6402.91.10 se cobre o tornozelo; 6402.99.10 se não cobre', '6402.91.90 se cobre o tornozelo; 6402.99.90 se não cobre'],
+          ['Cabedal têxtil, sola de borracha ou plástico', 'Sem subitem próprio na posição 64.04', '6404.11.00 ou 6404.19.00, conforme o tipo de calçado'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          '"Sem biqueira de metal" inclui a botina com biqueira de composite e a com biqueira termoplástica, além da que não tem biqueira nenhuma. O que diferencia os dois tipos de biqueira na proteção está em <a href="/conhecimento/biqueira-de-composite-ou-de-aco-qual-escolher/">biqueira de composite ou de aço</a>; na NCM, a diferença é só se ela é de metal.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Calçado ortopédico é outro capítulo',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'As notas do capítulo 64 excluem dele o calçado e os aparelhos ortopédicos, que vão para a posição 90.21 (Nota 1, alínea e). O que o comércio chama de "botina ortopédica", em geral uma botina com palmilha anatômica, é outra conversa, explicada em <a href="/conhecimento/palmilha-em-botina-de-seguranca-e-botina-ortopedica/">palmilha e botina ortopédica</a>; a classificação fiscal de cada modelo é do fabricante.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'E o IPI?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na TIPI consultada, todos os códigos da tabela acima estão com alíquota zero de IPI. Alíquota muda por decreto e por ato da Receita, então vale conferir a tabela vigente na data da operação.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quem define a NCM',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem classifica o produto é o fabricante ou o importador, e a NCM vem na nota fiscal dele. Quem revende confere a classificação com o contador, junto com o resto da tributação, que este texto não cobre. Para quem quer revender EPI, o que muda na compra está em <a href="/conhecimento/como-escolher-fornecedor-de-epi/">como escolher fornecedor de EPI</a>.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'TIPI — Tabela de Incidência do IPI, aprovada pelo Decreto nº 11.158/2022, atualizada até o ADE RFB nº 1/2026, capítulo 64 (Receita Federal)',
+        url: 'https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/documentos-e-arquivos/tipi.docx/@@download/file',
+      },
+    ],
+    paginaComercial: {
+      href: '/calcados/seguranca/',
+      rotulo: 'Ver calçados de segurança',
+    },
+    contexto: 'calcados-seguranca',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Queria cotar botina de segurança e preciso da NCM e do CA de cada modelo na proposta.',
+    ctaTitulo: 'Precisa da NCM e do CA na proposta?',
+    ctaTexto:
+      'Diga os modelos e as quantidades. A gente manda a proposta com o CA de cada item e a NCM que vem na nota do fabricante.',
+    perguntas: [
+      {
+        pergunta: 'Qual a NCM da botina de segurança?',
+        resposta:
+          'Depende do material e da biqueira. Botina com cabedal de couro e biqueira de metal é 6403.40.00. Sem biqueira de metal, como a de composite, a botina de couro que cobre o tornozelo é 6403.91.90. Bota de PVC ou borracha e calçado de cabedal têxtil têm códigos próprios no capítulo 64 da TIPI.',
+      },
+      {
+        pergunta: 'Botina com biqueira de composite tem NCM diferente da de aço?',
+        resposta:
+          'Tem. A TIPI só tem subitem próprio para biqueira protetora de metal. A botina de couro com biqueira de composite vai para "outro calçado": 6403.91.90 se cobre o tornozelo e 6403.99.90 se não cobre.',
+      },
+      {
+        pergunta: 'Qual a NCM da bota de PVC?',
+        resposta:
+          'A bota impermeável inteira de PVC ou borracha, sem costura, fica na posição 64.01: 6401.10.00 com biqueira de metal; sem ela, 6401.92.00 se cobre o tornozelo e não o joelho, e 6401.99.10 se cobre o joelho.',
+      },
+      {
+        pergunta: 'Qual a alíquota de IPI da botina de segurança?',
+        resposta:
+          'Na TIPI atualizada até o Ato Declaratório Executivo RFB nº 1, de janeiro de 2026, os códigos do calçado de segurança de couro, PVC e borracha estão com alíquota zero. Vale conferir a tabela vigente na data da operação.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-no-esocial-o-que-entra-no-s-2240',
+    titulo: 'EPI no eSocial: o que entra no evento S-2240',
+    tituloSeo: 'EPI no eSocial: o evento S-2240',
+    resumo:
+      'O S-2240 informa a exposição a agentes nocivos, o EPC instalado e o EPI fornecido, com o CA e a eficácia. E não substitui a ficha de entrega.',
+    descricaoSeo:
+      'O que o S-2240 do eSocial pede sobre EPI: agentes nocivos, CA de cada equipamento, eficácia e EPC. E por que ele não substitui a ficha de entrega.',
+    publicado: '2026-10-24',
+    atualizado: '2026-10-24',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Normas',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'O evento S-2240 do eSocial, Condições Ambientais do Trabalho – Agentes Nocivos, informa a que agentes o trabalhador está exposto, os EPC instalados e os EPI disponibilizados, com o número do CA e a avaliação de eficácia. E o próprio manual avisa: a informação sobre EPI no eSocial não substitui o registro de entrega exigido pela norma.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Os eventos de segurança e saúde no trabalho do eSocial passaram a ser a forma de cumprir as obrigações da CAT e do Perfil Profissiográfico Previdenciário, o PPP, como explica o Manual de Orientação do eSocial. Este texto usa a versão S-1.3, consolidada em maio de 2026, e fica na parte que toca o EPI: o que informar, onde as empresas erram e o que precisa existir fora do sistema.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que é o S-2240',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É o evento em que a empresa informa a exposição do trabalhador aos agentes nocivos da Tabela 24 do eSocial, que reúne os agentes e atividades do Anexo IV do Decreto nº 3.048/1999, usados para a aposentadoria especial. Para empregados, o envio é obrigatório, exceto para doméstico, e deve acontecer mesmo quando não há exposição a risco.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que vai sobre EPI e EPC',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>EPC e EPI.</strong> Deve ser declarada a existência de EPC instalados e os EPI disponibilizados.',
+          '<strong>Os requisitos da NR-6.</strong> Quem fornece EPI presta as informações sobre o atendimento aos requisitos das normas regulamentadoras, em especial a NR-6 (item 4.1 das orientações do evento).',
+          '<strong>O CA de cada EPI.</strong> Para cada equipamento é informado o campo {docAval}, com o número do Certificado de Aprovação ou do documento de avaliação (item 4.2).',
+          '<strong>A eficácia.</strong> O campo {eficEpi} é preenchido avaliando se os EPI usados para aquele risco são eficazes para neutralizar a exposição (item 4.4).',
+          '<strong>Itens da NR-31 que não são EPI.</strong> Equipamentos listados na NR-31 e não incluídos na NR-6, como a perneira contra animais peçonhentos, não têm informação a prestar desde a versão S-1.1 do leiaute (item 4.3). A diferença está em <a href="/conhecimento/perneira-de-seguranca-quando-usar/">perneira de segurança</a>.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Três regras que pegam muita empresa',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>O agente é informado mesmo neutralizado.</strong> A exposição a agentes nocivos deve ser registrada ainda que esteja neutralizada, atenuada ou exista proteção eficaz (item 3.1).',
+          '<strong>A medição vai sem o desconto do EPI.</strong> O valor de intensidade ou concentração corresponde à medição aferida, sem a atenuação do EPI, porque o uso e a eficácia do EPI têm campo próprio (item 3.6).',
+          '<strong>Mudou, envia de novo.</strong> Um novo envio do evento representa alteração da condição e substitui por completo as informações anteriores a partir da nova data, então ele precisa trazer toda a exposição existente naquele momento.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'O S-2240 não substitui a ficha',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O manual é direto: a informação relativa aos EPI não substitui a obrigatoriedade do registro de entrega desses equipamentos. A NR-6 continua mandando registrar o fornecimento em livro, ficha ou sistema eletrônico (item 6.5.1, alínea d). O que a ficha precisa ter está em <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega de EPI</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Marcar "EPI eficaz" é uma afirmação',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O campo de eficácia pede uma avaliação, e ela se apoia no que a NR-6 exige de qualquer EPI: o CA certo para o agente, o tamanho certo, treinamento, uso exigido e troca do que estragou. É o mesmo raciocínio da neutralização da insalubridade, explicado em <a href="/conhecimento/epi-elimina-insalubridade/">EPI elimina a insalubridade?</a>. E o CA informado precisa ser o do equipamento entregue, conferido como mostra <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">o que é o CA</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quem preenche, e o que a Tower entrega',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem preenche o S-2240 é a empresa, normalmente com o técnico ou o SESMT e a contabilidade. A Tower não envia evento do eSocial; o que ela entrega é a informação de que o evento depende: o orçamento e a nota com o número do CA de cada item, para o CA informado no sistema bater com o que foi entregue na ficha.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'Manual de Orientação do eSocial — versão S-1.3, consolidada até a NO S-1.3 11.2026 (gov.br)',
+        url: 'https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/mos-s-1-3-consolidada-ate-a-no-s-1-3-11-2026-retificada.pdf',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/',
+      rotulo: 'Ver o atendimento a empresas',
+    },
+    contexto: 'empresas',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Preciso do CA de cada EPI da equipe para conferir o S-2240 do eSocial.',
+    ctaTitulo: 'O CA do eSocial bate com o EPI entregue?',
+    ctaTexto:
+      'Mande a lista de EPI por função. A gente responde com o CA de cada item, para o eSocial e a ficha de entrega dizerem a mesma coisa.',
+    perguntas: [
+      {
+        pergunta: 'O que é o evento S-2240 do eSocial?',
+        resposta:
+          'É o evento Condições Ambientais do Trabalho – Agentes Nocivos, em que a empresa informa a exposição do trabalhador aos agentes da Tabela 24 do eSocial, os EPC instalados e os EPI disponibilizados. Para empregados, o envio é obrigatório, exceto para doméstico, mesmo sem exposição a risco.',
+      },
+      {
+        pergunta: 'Precisa informar o CA do EPI no eSocial?',
+        resposta:
+          'Sim. Pelo Manual de Orientação do eSocial, para cada EPI informado no S-2240 vai o número do Certificado de Aprovação ou do documento de avaliação do equipamento, no campo próprio, junto com a avaliação de eficácia.',
+      },
+      {
+        pergunta: 'O S-2240 substitui a ficha de entrega de EPI?',
+        resposta:
+          'Não. O próprio manual do eSocial diz que a informação sobre EPI não substitui a obrigatoriedade do registro de entrega, que a NR-6 exige em livro, ficha ou sistema eletrônico.',
+      },
+      {
+        pergunta: 'Se o EPI neutraliza o agente, ainda precisa informar a exposição?',
+        resposta:
+          'Precisa. O manual manda registrar a exposição a agentes nocivos ainda que ela esteja neutralizada, atenuada ou exista proteção eficaz, e a medição vai sem o desconto do EPI; o uso e a eficácia do EPI são informados em campos próprios.',
       },
     ],
   },
