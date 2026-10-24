@@ -3339,7 +3339,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Uniforme comum é outro assunto: não é EPI, não tem Certificado de Aprovação e segue as regras de uniforme, e não as da NR-6.',
+          'Uniforme comum é outro assunto: não é EPI, não tem Certificado de Aprovação e segue as regras de uniforme, e não as da NR-6. A diferença entre uniforme, vestimenta de trabalho e EPI está em <a href="/conhecimento/uniforme-e-epi-qual-a-diferenca/">uniforme é EPI?</a>.',
       },
       {
         tipo: 'h2',
@@ -8612,7 +8612,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'É uma das perguntas mais buscadas sobre o assunto, e a resposta honesta é que depende de avaliação técnica. A insalubridade é caracterizada conforme a NR-15, a partir das condições reais de exposição de cada posto, e não pela atividade em si nem por uma lista de EPI. O EPI adequado faz parte dessa avaliação, mas não a substitui.',
+          'É uma das perguntas mais buscadas sobre o assunto, e a resposta honesta é que depende de avaliação técnica. A insalubridade é caracterizada conforme a NR-15, a partir das condições reais de exposição de cada posto, e não pela atividade em si nem por uma lista de EPI. O EPI adequado faz parte dessa avaliação, mas não a substitui. Se o EPI pode neutralizar a insalubridade, e o que precisa estar provado, está em <a href="/conhecimento/epi-elimina-insalubridade/">EPI elimina a insalubridade?</a>.',
       },
       {
         tipo: 'h2',
@@ -10934,6 +10934,295 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'A adaptação do calçado para pessoa com deficiência perde o CA?',
         resposta:
           'Não, quando é feita pelo fabricante ou importador que detém o certificado. O item 6.9.5 da NR-6 diz que essa adaptação não invalida o CA já emitido e dispensa a emissão de um novo.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-elimina-insalubridade',
+    titulo: 'EPI elimina a insalubridade? O que a CLT, a NR-15 e o TST dizem',
+    tituloSeo: 'EPI elimina a insalubridade?',
+    resumo:
+      'Pode neutralizar e encerrar o adicional, mas não pela entrega. A lei pede EPI que reduza o agente ao limite de tolerância, uso efetivo e perícia que comprove.',
+    descricaoSeo:
+      'O EPI pode neutralizar a insalubridade e encerrar o adicional, mas entregar não basta: a CLT, a NR-15 e a Súmula 289 do TST exigem uso efetivo e prova pericial.',
+    publicado: '2026-10-24',
+    atualizado: '2026-10-24',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Normas',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Pode, mas não pela entrega. A CLT admite neutralizar a insalubridade com EPI que diminua a intensidade do agente a limites de tolerância (artigo 191), e a NR-15 diz que a neutralização encerra o pagamento do adicional (item 15.4). Só que ela precisa ser comprovada por perícia (item 15.4.1.2), e o TST firmou que o simples fornecimento do equipamento não desobriga o empregador (Súmula 289).',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A pergunta chega dos dois lados. A empresa quer saber se, comprando o EPI certo, deixa de pagar o adicional. O trabalhador quer saber se, recebendo o EPI, perde o adicional. A resposta é a mesma para os dois: depende do que acontece no posto de trabalho, e não do que está na nota fiscal.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que é insalubridade, em poucas linhas',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-15 considera insalubre a atividade que expõe o trabalhador a agentes acima dos limites de tolerância dos seus anexos, as atividades que ela lista diretamente e as que são comprovadas por laudo de inspeção do local (item 15.1). Limite de tolerância é a concentração ou intensidade do agente, ligada ao tempo de exposição, que não causa dano à saúde do trabalhador durante a vida laboral (item 15.1.5).',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O adicional é de 40%, 20% ou 10%, conforme o grau seja máximo, médio ou mínimo (artigo 192 da CLT e item 15.2 da NR-15). Com mais de um agente, vale só o de grau mais alto, sem somar (item 15.3). A base de cálculo e os valores são assunto jurídico próprio, para advogado ou para a convenção coletiva da categoria.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Os dois caminhos para eliminar ou neutralizar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Medidas de ordem geral</strong> que mantêm o ambiente dentro dos limites de tolerância: exaustão, enclausuramento, troca de processo (CLT, artigo 191, inciso I; NR-15, item 15.4.1, alínea a).',
+          '<strong>EPI</strong> que diminua a intensidade do agente a limites de tolerância (CLT, artigo 191, inciso II; NR-15, item 15.4.1, alínea b).',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A ordem importa. A NR-1 põe a proteção coletiva antes da individual, e é a proteção coletiva que tira o agente do ambiente para todos, inclusive para quem esqueceu o equipamento. A diferença está em <a href="/conhecimento/epi-e-epc-qual-a-diferenca/">EPI e EPC</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Entregar o EPI não basta',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A Súmula 289 do Tribunal Superior do Trabalho resume a posição da Justiça do Trabalho: o simples fornecimento do aparelho de proteção pelo empregador não o desobriga do pagamento do adicional de insalubridade. Cabe a ele tomar as medidas que levem à diminuição ou à eliminação da nocividade, entre elas garantir o uso efetivo do equipamento. Em outras palavras, a pergunta não é se o EPI foi entregue; é se ele foi usado, do jeito certo, o tempo todo.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que precisa estar comprovado',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A eliminação ou neutralização fica caracterizada por avaliação pericial de órgão competente que comprove a inexistência de risco à saúde do trabalhador (NR-15, item 15.4.1.2). E o direito ao adicional cessa com a eliminação do risco, nos termos da lei e das normas do Ministério do Trabalho (CLT, artigo 194). Na rotina, o que sustenta a neutralização é o que a NR-6 já exige de qualquer EPI:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>O EPI certo para o agente</strong>, com o CA declarando aquela proteção. O protetor auditivo precisa da atenuação adequada ao ruído do posto, e o respirador, do filtro certo para o contaminante, como explicam <a href="/conhecimento/protetor-auditivo-plug-ou-concha/">protetor auditivo</a> e <a href="/conhecimento/respirador-como-escolher-o-filtro/">respirador</a>.',
+          '<strong>Orientação e treinamento</strong> sobre uso, guarda e conservação (item 6.5.1, alínea b).',
+          '<strong>Registro da entrega</strong> e de cada troca (alínea d), como mostra <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega de EPI</a>.',
+          '<strong>Exigência de uso</strong> no dia a dia (alínea e). O que fazer quando alguém se recusa está em <a href="/conhecimento/funcionario-recusa-usar-epi-o-que-fazer/">funcionário recusa usar EPI</a>.',
+          '<strong>Substituição imediata</strong> do que estragou ou sumiu (alínea g).',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quando o EPI não neutraliza',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O EPI não neutraliza quando o agente passa do que ele consegue reduzir, quando está vencido, danificado ou no tamanho errado, ou quando não é usado. E há situações em que a própria norma admite que eliminar ou neutralizar é impraticável: nesse caso, comprovada a insalubridade por laudo de engenheiro de segurança do trabalho ou médico do trabalho, o adicional é devido (item 15.4.1.1). Periculosidade é outro adicional, com regra própria na NR-16, e não entra nesta conta.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quem decide',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem caracteriza a insalubridade, e quem comprova a neutralização, é a perícia. Empresas e sindicatos podem pedir ao Ministério do Trabalho a realização de perícia no estabelecimento ou no setor (item 15.5). A discussão de um caso concreto, com valores e prazos, é para advogado trabalhista. O que a empresa controla é a parte técnica: EPI certo, usado, registrado e trocado.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'CLT — Decreto-Lei 5.452/1943, artigos 191, 192 e 194',
+        url: 'https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm',
+      },
+      {
+        titulo: 'NR-15 — Atividades e operações insalubres (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-15-atualizada-2022.pdf',
+      },
+      {
+        titulo: 'TRT da 3ª Região — Fornecimento de EPI não desobriga empregador de pagar adicional de insalubridade (Súmula 289 do TST)',
+        url: 'https://portal.trt3.jus.br/internet/conheca-o-trt/comunicacao/noticias-juridicas/importadas-2011-2012/fornecimento-de-epi-nao-desobriga-empregador-de-pagar-adicional-de-insalubridade-30-12-2011-06-00-acs',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/',
+      rotulo: 'Ver o atendimento a empresas',
+    },
+    contexto: 'empresas',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Temos atividade insalubre e queria ajuda para conferir se o EPI da equipe é o certo para o agente.',
+    ctaTitulo: 'O EPI da equipe é o certo para o agente?',
+    ctaTexto:
+      'Mande o agente do laudo, o nível de exposição e as funções. A gente indica o EPI cujo CA declara aquela proteção, no tamanho de cada pessoa.',
+    perguntas: [
+      {
+        pergunta: 'EPI tira o adicional de insalubridade?',
+        resposta:
+          'Pode tirar, quando reduz o agente a limites de tolerância e a neutralização é comprovada por perícia. A CLT admite a neutralização por EPI (artigo 191) e a NR-15 diz que ela encerra o pagamento do adicional (item 15.4). A simples entrega do equipamento, porém, não basta.',
+      },
+      {
+        pergunta: 'Só entregar o EPI basta para não pagar insalubridade?',
+        resposta:
+          'Não. Pela Súmula 289 do TST, o simples fornecimento do aparelho de proteção não desobriga o empregador do adicional. É preciso tomar as medidas que diminuam ou eliminem a nocividade, entre elas garantir o uso efetivo do equipamento.',
+      },
+      {
+        pergunta: 'Quem comprova que o EPI neutralizou a insalubridade?',
+        resposta:
+          'A avaliação pericial. Pela NR-15, a eliminação ou neutralização fica caracterizada por avaliação pericial de órgão competente que comprove a inexistência de risco à saúde do trabalhador (item 15.4.1.2).',
+      },
+      {
+        pergunta: 'Dá para receber adicional de insalubridade por dois agentes?',
+        resposta:
+          'Não. Com mais de um fator de insalubridade, a NR-15 considera só o de grau mais elevado, e veda receber os adicionais somados (item 15.3).',
+      },
+    ],
+  },
+  {
+    slug: 'uniforme-e-epi-qual-a-diferenca',
+    titulo: 'Uniforme é EPI? Uniforme, vestimenta de trabalho e EPI',
+    tituloSeo: 'Uniforme é EPI? E o jaleco?',
+    resumo:
+      'Na lei são três coisas: uniforme, vestimenta de trabalho e EPI. Cada uma tem quem define, quem paga e quem lava, e o jaleco quase sempre está na do meio.',
+    descricaoSeo:
+      'Uniforme, vestimenta de trabalho e EPI são três coisas na lei: quem define, quem paga, quem lava e quando a roupa de trabalho vira EPI. E o jaleco.',
+    publicado: '2026-10-24',
+    atualizado: '2026-10-24',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Normas',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Uniforme não é EPI, e existe uma terceira categoria no meio. O uniforme é o padrão de roupa que o empregador define (CLT, artigo 456-A). A vestimenta de trabalho é a roupa para sujeira, agente químico, físico ou biológico, ou para o trabalhador ser visto, e a NR-24 diz com todas as letras que ela não é uniforme nem EPI (item 24.8.1). EPI é o que está no Anexo I da NR-6, com Certificado de Aprovação.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A confusão aparece na compra, na ficha e na hora de lavar. Tratar jaleco como EPI faz a empresa procurar um CA que ele não tem; tratar avental de proteção química como uniforme faz a empresa comprar a peça errada. Separar as três categorias resolve quase tudo.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'As três categorias, lado a lado',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['', 'Uniforme', 'Vestimenta de trabalho', 'EPI'],
+        linhas: [
+          ['O que é', 'Padrão de roupa definido pelo empregador, que pode ter logomarca (CLT, art. 456-A)', 'Roupa para sujeira, agentes ou visibilidade, não considerada uniforme nem EPI (NR-24, 24.8.1)', 'Produto de uso individual contra riscos ocupacionais, listado no Anexo I (NR-6, 6.3.1)'],
+          ['Custo', 'O artigo 456-A não trata do custo; vale conferir a convenção coletiva', 'Fornecida de graça pelo empregador (NR-24, 24.8.2)', 'Fornecido de graça (NR-6, 6.5.1; CLT, art. 166)'],
+          ['Lavagem', 'Do trabalhador, salvo quando exige procedimento ou produto diferente do comum (CLT, art. 456-A, parágrafo único)', 'Do empregador, quando a lavagem oferece risco de contaminação (NR-24, 24.8.4)', 'Higienização e manutenção periódica pela empresa, quando aplicáveis (NR-6, 6.5.1)'],
+          ['CA', 'Não tem', 'Não tem', 'Obrigatório'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quando a roupa vira EPI',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A roupa é EPI quando protege contra um risco listado no Anexo I da NR-6 e tem CA para isso. Estão lá, por exemplo, vestimentas para o tronco contra agentes térmicos, mecânicos, químicos, radiação ionizante, chuva e água; macacão e vestimenta de corpo inteiro; e manga para o braço contra choque, corte, calor, químico e umidade. A lista completa, por parte do corpo, está em <a href="/protecao/">tipos de EPI</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Um detalhe que surpreende: a roupa de alta visibilidade não está no Anexo I da NR-6. A NR-24 cita, entre as finalidades da vestimenta de trabalho, permitir que o trabalhador seja mais bem visualizado, e a NR-18 exige a vestimenta de alta visibilidade em área de movimentação de veículos e cargas da obra (item 18.13.2).',
+      },
+      {
+        tipo: 'h2',
+        texto: 'E o jaleco?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O jaleco comum, sem CA, é vestimenta de trabalho. Em serviço de saúde, a NR-32 manda o empregador fornecer vestimenta adequada e confortável, sem custo, a quem pode se expor a agente biológico (item 32.2.4.6), proíbe sair do local de trabalho com ela (32.2.4.6.2) e põe na conta do empregador a higienização das vestimentas de centro cirúrgico e obstétrico, UTI, isolamento e de quando houver contato com material orgânico (32.2.4.6.4). O resto da norma está em <a href="/conhecimento/epi-na-nr-32-o-que-a-norma-exige-em-servicos-de-saude/">EPI na NR-32</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Vestimenta não substitui EPI',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-24 é direta: a vestimenta de trabalho não substitui a necessidade do EPI, e os dois podem ser usados juntos (item 24.8.3). Na solda, por exemplo, o que se veste por baixo da proteção conta tanto quanto ela, como mostra <a href="/conhecimento/epi-para-soldador-o-que-muda/">EPI para soldador</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-24 também cobra da vestimenta o que se cobra de EPI: material e tamanho adequados, substituição conforme a vida útil ou quando danificada e quantidade suficiente para a troca (item 24.8.4).',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Na ficha, no vestiário e no pedido',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Na ficha</strong>, uniforme e vestimenta podem ter linhas próprias, sem CA, separadas do EPI, como explica <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega de EPI</a>.',
+          '<strong>No vestiário</strong>: quando a atividade exige vestimenta de trabalho ou uniforme trocado no local, o estabelecimento precisa de vestiário (NR-24, item 24.4.1), e armário de uso rotativo não serve para guardar EPI nem roupa exposta a material infectante, tóxico ou que suja (24.4.4).',
+          '<strong>No pedido</strong>, o que é EPI vem com CA; o que é uniforme ou vestimenta vem com tamanho e quantidade para a troca.',
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'CLT — Decreto-Lei 5.452/1943, artigos 166 e 456-A',
+        url: 'https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm',
+      },
+      {
+        titulo: 'NR-24 — Condições sanitárias e de conforto nos locais de trabalho, item 24.8 (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-24-atualizada-2022.pdf',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'NR-32 — Segurança e saúde no trabalho em serviços de saúde (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-32-atualizada-2023-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/protecao/corpo/',
+      rotulo: 'Ver vestimentas de proteção',
+    },
+    contexto: 'protecao-corpo',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Queria separar o que é EPI e o que é uniforme na roupa da equipe antes de fazer o pedido.',
+    ctaTitulo: 'A roupa da equipe precisa de CA?',
+    ctaTexto:
+      'Conte a atividade e a que a equipe fica exposta. A gente separa o que precisa ser EPI, com o CA de cada peça, do que pode ser vestimenta comum.',
+    perguntas: [
+      {
+        pergunta: 'Jaleco é EPI?',
+        resposta:
+          'O jaleco comum, sem Certificado de Aprovação, não é EPI: é vestimenta de trabalho. Em serviço de saúde, a NR-32 manda fornecê-lo sem custo a quem pode se expor a agente biológico e proíbe sair do local de trabalho com ele. Só é EPI a peça com CA para um risco listado no Anexo I da NR-6.',
+      },
+      {
+        pergunta: 'Quem lava o uniforme de trabalho?',
+        resposta:
+          'Pela CLT, o uniforme é lavado pelo trabalhador, salvo quando exige procedimento ou produto diferente do usado nas roupas comuns (artigo 456-A). A vestimenta de trabalho é lavada pelo empregador quando a lavagem oferece risco de contaminação (NR-24, item 24.8.4).',
+      },
+      {
+        pergunta: 'Colete refletivo é EPI?',
+        resposta:
+          'A alta visibilidade não está no Anexo I da NR-6. A NR-24 trata a roupa para o trabalhador ser mais bem visualizado como vestimenta de trabalho, fornecida de graça, e a NR-18 exige vestimenta de alta visibilidade em área de movimentação de veículos e cargas da obra.',
+      },
+      {
+        pergunta: 'Vestimenta de trabalho substitui o EPI?',
+        resposta:
+          'Não. A NR-24 diz que a vestimenta de trabalho não substitui a necessidade do EPI e que os dois podem ser usados juntos (item 24.8.3).',
       },
     ],
   },

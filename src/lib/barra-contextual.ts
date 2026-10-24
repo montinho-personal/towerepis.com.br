@@ -383,6 +383,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Alguém precisa de calçado adaptado?',
     rotulo: 'Conferir com o fabricante',
   },
+  'epi-elimina-insalubridade': {
+    chamada: 'O EPI é o certo para o agente do laudo?',
+    rotulo: 'Conferir o EPI',
+  },
+  'uniforme-e-epi-qual-a-diferenca': {
+    chamada: 'A roupa da equipe precisa de CA?',
+    rotulo: 'Separar EPI e uniforme',
+  },
   'epi-para-mecanico-de-oficina': {
     chamada: 'Que serviços a sua oficina faz?',
     rotulo: 'Montar a lista da oficina',
