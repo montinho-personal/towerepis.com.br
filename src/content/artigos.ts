@@ -6933,7 +6933,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'lista',
         itens: [
-          'Que serviços a oficina faz: mecânica, funilaria, pintura, elétrica, lavagem.',
+          'Que serviços a oficina faz: mecânica, funilaria, pintura, elétrica, lavagem. A pintura tem guia próprio em <a href="/conhecimento/epi-para-pintor-o-que-muda/">EPI para pintor</a>.',
           'Quais solventes e desengraxantes são usados, com nome.',
           'Se existe exaustão de escapamento no box, e se há box fechado.',
           'Se há esmeril, lixadeira e com que frequência.',
@@ -7756,7 +7756,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Área sem sombra, sol refletido e esforço físico somam uma carga de calor alta na maior parte do ano. Isso se controla com organização — pausa, água, sombra, horário das tarefas mais pesadas —, e nenhum equipamento substitui essas medidas. Vale lembrar na hora de escolher roupa e calçado: o que é pesado e abafado demais acaba sendo tirado no meio do turno.',
+          'Área sem sombra, sol refletido e esforço físico somam uma carga de calor alta na maior parte do ano. Isso se controla com organização — pausa, água, sombra, horário das tarefas mais pesadas —, e nenhum equipamento substitui essas medidas. Vale lembrar na hora de escolher roupa e calçado: o que é pesado e abafado demais acaba sendo tirado no meio do turno. O que as normas pedem para quem trabalha ao sol, e se protetor solar é EPI, está em <a href="/conhecimento/trabalho-ao-sol-protetor-solar-e-epi/">trabalho ao sol</a>.',
       },
       {
         tipo: 'h2',
@@ -11474,6 +11474,292 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Se o EPI neutraliza o agente, ainda precisa informar a exposição?',
         resposta:
           'Precisa. O manual manda registrar a exposição a agentes nocivos ainda que ela esteja neutralizada, atenuada ou exista proteção eficaz, e a medição vai sem o desconto do EPI; o uso e a eficácia do EPI são informados em campos próprios.',
+      },
+    ],
+  },
+  {
+    slug: 'trabalho-ao-sol-protetor-solar-e-epi',
+    titulo: 'Trabalho ao sol: o que a norma exige, e se protetor solar é EPI',
+    tituloSeo: 'Trabalho ao sol: protetor solar é EPI?',
+    resumo:
+      'Protetor solar não está na lista de EPI da NR-6. Mas trabalhar ao sol tem regra: abrigo, medidas contra insolação e calor, e óculos contra ultravioleta com CA.',
+    descricaoSeo:
+      'O que as normas pedem para quem trabalha ao sol: abrigo, medidas contra calor e insolação, óculos contra UV e chapéu. E se o protetor solar conta como EPI.',
+    publicado: '2026-10-26',
+    atualizado: '2026-10-26',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Protetor solar não está na lista de EPI da NR-6: o creme de proteção que aparece lá é contra agentes químicos. Ele aparece na NR-31, do trabalho rural, como item a disponibilizar quando indicado, e com uso facultativo. Para todo trabalho a céu aberto, a NR-21 exige abrigo e medidas especiais contra insolação e calor, e a NR-9 diz o que fazer com o calor.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Obra, salina, parque eólico, lavoura, entrega, manutenção de rede: no Nordeste, muita gente trabalha o dia inteiro debaixo do sol. A dúvida mais comum é se a empresa tem de dar protetor solar. A resposta passa por quatro normas, e nenhuma delas resolve sozinha.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que a NR-21 exige de todo trabalho a céu aberto',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Abrigo.</strong> Nos trabalhos a céu aberto é obrigatória a existência de abrigos, ainda que rústicos, capazes de proteger os trabalhadores contra intempéries (item 21.1).',
+          '<strong>Medidas especiais.</strong> Devem ser exigidas medidas especiais que protejam os trabalhadores contra a insolação excessiva, o calor, o frio, a umidade e os ventos inconvenientes (item 21.2).',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-21 não lista quais medidas. Quem define é a avaliação de riscos de cada atividade, e boa parte delas não é EPI: sombra, horário, pausa, água.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Calor: o que a NR-9 pede',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O Anexo III da NR-9 trata do calor e vale onde houver exposição ocupacional a ele, inclusive ao ar livre (item 2.1). A organização orienta os trabalhadores sobre os riscos, os sinais de distúrbio e o que fazer (item 3.1.1), e, quando os níveis de ação são excedidos, adota medidas como:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Disponibilizar água fresca potável e incentivar que seja bebida (item 4.1.1).',
+          'Programar os trabalhos mais pesados para os períodos de condição térmica mais amena, quando isso não trouxer outro risco (item 4.1.1).',
+          'Nas atividades em locais abertos e distantes de qualquer estrutura, dar acesso a lugares termicamente mais amenos, inclusive naturais, para pausas de recuperação (item 4.2.2).',
+          'Considerar a aclimatização dos trabalhadores, descrita no programa médico, nas atividades acima do nível de ação (item 5.1).',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'E a insalubridade por calor?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Desde a Portaria SEPRT nº 1.359/2019, o Anexo 3 da NR-15, que caracteriza a insalubridade por calor, diz expressamente que não se aplica a atividades realizadas a céu aberto sem fonte artificial de calor (item 1.1.1). Ele vale para ambiente fechado ou com fonte artificial de calor. Os demais caminhos da insalubridade, e o papel do EPI nela, estão em <a href="/conhecimento/epi-elimina-insalubridade/">EPI elimina a insalubridade?</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que é EPI e o que não é, no sol',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Item', 'É EPI pela NR-6?', 'Onde aparece'],
+        linhas: [
+          ['Óculos contra radiação ultravioleta', 'Sim, com CA', 'NR-6, Anexo I, B.1'],
+          ['Protetor facial contra radiação ultravioleta', 'Sim, com CA', 'NR-6, Anexo I, B.2'],
+          ['Chapéu ou boné tipo árabe ou legionário', 'Não', 'NR-31, item 31.6.2: dispositivo de proteção pessoal no trabalho rural'],
+          ['Protetor solar', 'Não', 'NR-31, item 31.6.2.1: disponibilizar quando indicado'],
+          ['Roupa de manga longa', 'Só se tiver CA para um risco do Anexo I', 'Em geral, vestimenta de trabalho (NR-24)'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Óculos de sol comum não é EPI: o que conta é o óculos com Certificado de Aprovação para proteção contra ultravioleta. A diferença entre roupa de trabalho e EPI está em <a href="/conhecimento/uniforme-e-epi-qual-a-diferenca/">uniforme é EPI?</a>, e os óculos em <a href="/protecao/olhos-e-face/">óculos de proteção</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O protetor solar na NR-31',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'No trabalho rural, o empregador deve disponibilizar protetor solar se ele estiver indicado no programa de riscos da propriedade, ou se houver exposição à radiação solar sem medidas de proteção coletiva ou individual (item 31.6.2.1). Ele pode ser oferecido em dispensador coletivo, e o uso é facultativo para o trabalhador (31.6.2.1.1). Na mesma norma, o chapéu ou boné tipo árabe ou legionário contra o sol está entre os dispositivos de proteção pessoal (31.6.2). O resto do que a NR-31 pede está em <a href="/conhecimento/botina-para-trabalho-rural-o-que-a-nr-31-pede/">botina para trabalho rural</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Na prática',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A proteção contra o sol começa pelo que não é EPI: sombra, água, horário e pausa. O EPI entra para o que sobra, com CA: óculos contra ultravioleta e, conforme a atividade, capacete, calçado e luva. Os guias de quem trabalha ao ar livre no Nordeste mostram como isso fica em cada caso: <a href="/conhecimento/epi-para-salina-e-industria-do-sal/">salina</a>, <a href="/conhecimento/epi-para-extracao-de-carnauba/">carnaúba</a> e <a href="/conhecimento/epi-na-construcao-civil-o-que-a-nr-18-exige/">construção civil</a>.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-21 — Trabalhos a céu aberto (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-21.pdf',
+      },
+      {
+        titulo: 'NR-9 — Anexo III, Calor (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-09-atualizada-2021-com-anexos-vibra-e-calor.pdf',
+      },
+      {
+        titulo: 'NR-15 — Anexo 3, Limites de tolerância para exposição ao calor (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-15-atualizada-2022.pdf',
+      },
+      {
+        titulo: 'NR-31 — Segurança e saúde no trabalho na agricultura, pecuária, silvicultura, exploração florestal e aquicultura (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-31-atualizada-2024.pdf',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/protecao/olhos-e-face/',
+      rotulo: 'Ver óculos de proteção',
+    },
+    contexto: 'protecao-olhos',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Minha equipe trabalha ao sol e queria ajuda com o EPI, como óculos com proteção UV.',
+    ctaTitulo: 'Sua equipe trabalha ao sol o dia inteiro?',
+    ctaTexto:
+      'Conte a atividade e o horário de trabalho. A gente indica o EPI que entra depois da sombra e da água, como óculos com CA contra ultravioleta.',
+    perguntas: [
+      {
+        pergunta: 'Protetor solar é EPI?',
+        resposta:
+          'Não pela NR-6. O creme de proteção que aparece no Anexo I da NR-6 é contra agentes químicos. O protetor solar aparece na NR-31, do trabalho rural, como item que o empregador disponibiliza quando indicado no programa de riscos ou quando há exposição ao sol sem outra proteção, com uso facultativo.',
+      },
+      {
+        pergunta: 'A empresa é obrigada a dar protetor solar?',
+        resposta:
+          'No trabalho rural, a NR-31 manda disponibilizar quando ele estiver indicado no programa de riscos ou houver exposição solar sem medida de proteção coletiva ou individual. Para todo trabalho a céu aberto, a NR-21 exige medidas especiais contra a insolação excessiva, e quais são elas sai da avaliação de riscos.',
+      },
+      {
+        pergunta: 'Trabalho ao sol dá insalubridade por calor?',
+        resposta:
+          'Não pelo Anexo 3 da NR-15. Desde 2019, ele diz expressamente que não se aplica a atividades realizadas a céu aberto sem fonte artificial de calor. Ele vale para ambiente fechado ou com fonte artificial de calor.',
+      },
+      {
+        pergunta: 'Óculos de sol comum serve como EPI?',
+        resposta:
+          'Não. EPI precisa de Certificado de Aprovação, e o Anexo I da NR-6 prevê óculos para proteção dos olhos contra radiação ultravioleta. É esse óculos, com CA, que conta como EPI.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-para-pintor-o-que-muda',
+    titulo: 'EPI para pintor: tinta, solvente, pistola e lixamento',
+    tituloSeo: 'EPI para pintor: o que muda',
+    resumo:
+      'O pintor faz três trabalhos com riscos diferentes: preparar a superfície, aplicar tinta com solvente e pintar com pistola. O respirador muda em cada um.',
+    descricaoSeo:
+      'O EPI do pintor muda com a tarefa: lixar pede filtro para partícula, solvente pede filtro químico, pistola pede o combinado. E a FDS da tinta decide o resto.',
+    publicado: '2026-10-26',
+    atualizado: '2026-10-26',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'O pintor faz três trabalhos com riscos diferentes. Lixar e raspar levanta partícula; aplicar tinta com solvente solta vapor; pintar com pistola junta névoa e vapor. O respirador muda em cada um, e o Anexo I da NR-6 separa exatamente isso: filtro para partícula, filtro químico para gases e vapores e filtro combinado para os dois.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É comum ver pintor de PFF2 aplicando esmalte, ou de máscara de pano lixando massa. Nos dois casos a proteção está errada para a tarefa. Separar o trabalho em etapas resolve quase tudo, e a ficha de segurança da tinta resolve o resto.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Preparação: lixar, raspar e remover tinta velha',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Respiração:</strong> peça filtrante PFF ou peça com filtro para partículas, que o Anexo I da NR-6 prevê contra poeiras e névoas (item D.1).',
+          '<strong>Olhos:</strong> óculos contra impacto de partículas volantes (item B.1), principalmente olhando para cima, no teto.',
+          '<strong>Ouvidos:</strong> protetor auditivo quando há lixadeira, compressor ou outro equipamento ruidoso, como explica <a href="/conhecimento/protetor-auditivo-plug-ou-concha/">protetor auditivo</a>.',
+          '<strong>Mãos:</strong> luva contra abrasão para raspagem e lixamento manual.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Tinta com solvente: vapor',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Tinta a óleo, esmalte, verniz, thinner e removedor soltam vapor de solvente. Contra vapor, a NR-6 prevê peça com filtro químico para gases e vapores (item D.1), e a PFF, que é para partícula, não serve, como explica <a href="/conhecimento/mascara-descartavel-nao-protege-de-vapor-quimico/">máscara descartável não protege de vapor químico</a>. O filtro certo para o solvente daquele produto, e quando trocar, estão em <a href="/conhecimento/respirador-como-escolher-o-filtro/">como escolher o filtro do respirador</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Nas mãos, a luva é a de proteção contra agentes químicos (item F.1), escolhida pelo solvente, porque cada material de luva resiste a um grupo de produtos. O passo a passo está em <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">luva para produto químico</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Pistola: névoa e vapor juntos',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na pintura com pistola, a névoa de tinta é partícula e o solvente é vapor. Por isso o Anexo I da NR-6 prevê os filtros combinados, para gases e vapores e material particulado ao mesmo tempo (item D.1). Com pistola, o rosto e os olhos também ficam expostos à névoa, e óculos bem vedados ou peça facial inteira passam a fazer diferença.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A ficha de segurança da tinta decide o resto',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Toda tinta, solvente e removedor usado no trabalho tem a sua Ficha com Dados de Segurança, a FDS, antes chamada FISPQ. A seção de controle de exposição e proteção individual traz o EPI recomendado para aquele produto. Tinta à base de água, por exemplo, costuma pedir muito menos do que a de solvente, mas quem diz é a ficha, não o rótulo da frente da lata.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Altura e ambiente fechado',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Pintura de fachada é trabalho em altura e segue a NR-35; na obra, a NR-18 manda a proteção coletiva vir antes, como explica <a href="/conhecimento/epi-na-construcao-civil-o-que-a-nr-18-exige/">EPI na construção civil</a>. O cinturão e o sistema contra quedas não são linha da Tower. Em ambiente fechado, o primeiro controle do vapor é ventilação e exaustão, que protegem todo mundo; o respirador completa. A ordem está em <a href="/conhecimento/epi-e-epc-qual-a-diferenca/">EPI e EPC</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Antes de pedir o EPI do pintor',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'As etapas do serviço: só preparação, só aplicação ou as duas.',
+          'Os produtos usados, com a FDS de cada um.',
+          'Se há pintura com pistola, e em ambiente aberto ou fechado.',
+          'Se há trabalho em altura.',
+          'Quantas pessoas e o tamanho de luva e de respirador de cada uma.',
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/protecao/respiratoria/',
+      rotulo: 'Ver proteção respiratória',
+    },
+    contexto: 'protecao-respiratoria',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Preciso de EPI para pintor e queria ajuda para escolher o respirador e o filtro certos.',
+    ctaTitulo: 'Que tinta a sua equipe usa?',
+    ctaTexto:
+      'Mande a FDS dos produtos e diga se há pistola. A gente indica o respirador, o filtro e a luva para cada etapa, com o CA de cada item.',
+    perguntas: [
+      {
+        pergunta: 'Qual máscara usar para pintar com tinta a óleo ou esmalte?',
+        resposta:
+          'Peça facial com filtro químico para os vapores do solvente indicado na FDS do produto. Com pistola, o filtro é combinado, para vapor e névoa. A PFF, que é para partícula, não segura vapor de solvente.',
+      },
+      {
+        pergunta: 'Que EPI usar para lixar parede ou massa?',
+        resposta:
+          'Peça filtrante PFF ou peça com filtro para partículas, óculos contra partículas volantes, luva contra abrasão e, com lixadeira elétrica, protetor auditivo. A FDS da massa ou da tinta antiga pode pedir mais.',
+      },
+      {
+        pergunta: 'Que luva usar para pintar?',
+        resposta:
+          'Para tinta com solvente, luva de proteção contra agentes químicos escolhida pelo solvente, porque cada material de luva resiste a um grupo de produtos. Para lixar e raspar, luva contra abrasão. A FDS do produto indica a luva.',
       },
     ],
   },

@@ -399,6 +399,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'O CA do eSocial bate com o entregue?',
     rotulo: 'Pedir os CAs',
   },
+  'trabalho-ao-sol-protetor-solar-e-epi': {
+    chamada: 'Sua equipe trabalha ao sol o dia inteiro?',
+    rotulo: 'Ver o EPI para o sol',
+  },
+  'epi-para-pintor-o-que-muda': {
+    chamada: 'Que tinta a sua equipe usa?',
+    rotulo: 'Escolher o filtro',
+  },
   'epi-para-mecanico-de-oficina': {
     chamada: 'Que serviços a sua oficina faz?',
     rotulo: 'Montar a lista da oficina',
