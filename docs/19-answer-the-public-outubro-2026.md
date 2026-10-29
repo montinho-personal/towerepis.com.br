@@ -294,3 +294,11 @@ dos 20 artigos antigos):
   6.7.2 e). Três FAQ novas e uma reescrita. Title, description e H1 iguais.
 - qa-faq barrou "Quando usar protetor auricular tipo concha?" contra a FAQ da
   página de indústria (0,67); a de indústria foi reescrita.
+
+**29/10/2026 — roçada ajustada com o print do Google:** autocompletar (epi para
+roçador, epi roçadeira, roçagem), resumo de IA (viseira de policarbonato ou
+tela, caneleira e calça, luva de vaqueta ou tricotada, capacete de roçador,
+gasolina ou elétrica) e resultados ("kit epi para roçadeira"). Entraram: viseira
+e CA, calça do item G.4 × calça comum, materiais de luva, capacete de roçador
+com peças acopladas, seção "gasolina ou elétrica" (NR-31 31.12.44), seção do
+kit e uma FAQ. Mercado Livre e marcas ficaram de fora.

@@ -11869,7 +11869,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'O Anexo I da NR-6 tem os dois equipamentos para esse risco: protetor facial contra impactos de partículas volantes (item B.2) e óculos contra impactos de partículas volantes (item B.1). Na roçada eles costumam andar juntos. O protetor facial segura o que vem de frente e protege o rosto inteiro, mas não veda a região dos olhos; os óculos fecham o que passa por baixo e pelos lados. O CA de cada um precisa declarar a proteção contra impacto. A diferença entre os dois está em <a href="/protecao/olhos-e-face/">óculos de proteção e protetor facial</a>.',
+          'O Anexo I da NR-6 tem os dois equipamentos para esse risco: protetor facial contra impactos de partículas volantes (item B.2) e óculos contra impactos de partículas volantes (item B.1). Na roçada eles costumam andar juntos. A viseira do protetor facial pode ser de policarbonato transparente ou de tela, e o CA diz contra o que cada modelo foi aprovado. O protetor facial segura o que vem de frente e protege o rosto inteiro, mas não veda a região dos olhos; os óculos fecham o que passa por baixo e pelos lados. O CA de cada um precisa declarar a proteção contra impacto. A diferença entre os dois está em <a href="/protecao/olhos-e-face/">óculos de proteção e protetor facial</a>.',
       },
       {
         tipo: 'h2',
@@ -11878,7 +11878,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Roçadeira, soprador e cortador de grama a motor trabalham colados no operador. Quando o ruído passa dos limites da NR-15, o EPI é o protetor auditivo do item C.1 do Anexo I, de inserção, concha ou semiauricular. Quem diz se passa é a avaliação de ruído do posto, não a impressão de quem está perto. Se o protetor facial vai preso ao capacete, a concha precisa ser compatível com o conjunto. Como escolher entre os tipos está em <a href="/conhecimento/protetor-auditivo-plug-ou-concha/">protetor auditivo: plug ou concha</a>.',
+          'Roçadeira, soprador e cortador de grama a motor trabalham colados no operador. Quando o ruído passa dos limites da NR-15, o EPI é o protetor auditivo do item C.1 do Anexo I, de inserção, concha ou semiauricular. Quem diz se passa é a avaliação de ruído do posto, não a impressão de quem está perto, e ela vale por máquina: roçadeira a gasolina e roçadeira elétrica ou a bateria não fazem o mesmo barulho. Se o protetor facial vai preso ao capacete, a concha precisa ser compatível com o conjunto. Como escolher entre os tipos está em <a href="/conhecimento/protetor-auditivo-plug-ou-concha/">protetor auditivo: plug ou concha</a>.',
       },
       {
         tipo: 'h2',
@@ -11887,7 +11887,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'A perna é a parte do corpo mais perto do disco e do que ele lança. O Anexo I prevê perneira contra agentes abrasivos e escoriantes e contra agentes cortantes e perfurantes (item G.3), e o tipo certo depende do que atinge a perna naquele serviço, como explica <a href="/conhecimento/perneira-de-seguranca-quando-usar/">perneira de segurança</a>. No pé, o calçado de segurança com biqueira protege os dedos contra impacto (item G.1, alínea a), e o solado com proteção contra perfuração cobre o toco e o espinho que ficam escondidos no mato (alínea e). Terreno inclinado e grama molhada pedem também solado que segure, assunto de <a href="/conhecimento/solado-antiderrapante-o-que-significa/">solado antiderrapante</a>.',
+          'A perna é a parte do corpo mais perto do disco e do que ele lança. O Anexo I prevê perneira contra agentes abrasivos e escoriantes e contra agentes cortantes e perfurantes (item G.3), e o tipo certo depende do que atinge a perna naquele serviço, como explica <a href="/conhecimento/perneira-de-seguranca-quando-usar/">perneira de segurança</a>. A calça de proteção contra agentes abrasivos ou cortantes também está no Anexo I (item G.4), mas calça grossa comum, sem CA, é uniforme, não EPI. No pé, o calçado de segurança com biqueira protege os dedos contra impacto (item G.1, alínea a), e o solado com proteção contra perfuração cobre o toco e o espinho que ficam escondidos no mato (alínea e). Terreno inclinado e grama molhada pedem também solado que segure, assunto de <a href="/conhecimento/solado-antiderrapante-o-que-significa/">solado antiderrapante</a>.',
       },
       {
         tipo: 'h2',
@@ -11896,7 +11896,25 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Na roçadeira, a luva protege contra abrasão e contra o que é lançado (item F.1, alínea a). A NR-6 também tem luva contra vibrações (alínea g), uma escolha que sai da avaliação de riscos, não do costume. Na poda, com galho acima da cabeça, entra o capacete contra impacto (item A.1). E quem roça passa o dia ao sol: no campo, a NR-31 manda fornecer chapéu ou boné tipo árabe ou legionário (item 31.6.2, alínea a), e o que vale fora dele está em <a href="/conhecimento/trabalho-ao-sol-protetor-solar-e-epi/">trabalho ao sol</a>.',
+          'Na roçadeira, a luva protege contra abrasão e contra o que é lançado (item F.1, alínea a). Vaqueta e tricotada com pigmento são as mais vistas; a diferença entre os materiais está em <a href="/conhecimento/tipos-de-luva-qual-material-escolher/">tipos de luva</a>. A NR-6 também tem luva contra vibrações (alínea g), uma escolha que sai da avaliação de riscos, não do costume. Na poda, com galho acima da cabeça, entra o capacete contra impacto (item A.1). Existe o conjunto que o mercado chama de capacete de roçador, com protetor facial e concha acoplados; cada peça precisa de CA, e a concha tem de ser compatível com aquele capacete, como explica <a href="/conhecimento/protetor-auditivo-plug-ou-concha/">protetor auditivo: plug ou concha</a>. E quem roça passa o dia ao sol: no campo, a NR-31 manda fornecer chapéu ou boné tipo árabe ou legionário (item 31.6.2, alínea a), e o que vale fora dele está em <a href="/conhecimento/trabalho-ao-sol-protetor-solar-e-epi/">trabalho ao sol</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Roçadeira a gasolina ou elétrica',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O conjunto de proteção é o mesmo nas duas: a pedra e o fio são lançados igual. O que muda é o resto. Na roçadeira a gasolina entram o abastecimento, com combustível perto da pele e dos olhos, e o gás do motor: a NR-31 proíbe máquina com motor de combustão em local fechado sem ventilação, salvo quando a eliminação dos gases é garantida (item 31.12.44). Na elétrica, entra o cuidado com o cabo e com a bateria, conforme o manual.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Kit de EPI para roçadeira: o que conferir',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O kit pronto, com protetor facial, óculos, protetor auricular, luva e perneira na mesma embalagem, é a forma mais procurada de comprar. Ele resolve quando cada item tem o seu CA e serve na pessoa. O que costuma falhar é o tamanho único de luva e de perneira, e o kit que vem sem calçado, que é justamente a peça que precisa da numeração certa. Confira o CA de cada item, não o da caixa, como explica <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">o que é o CA</a>.',
       },
       {
         tipo: 'h2',
@@ -11931,7 +11949,7 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'lista',
         itens: [
           'As tarefas de cada pessoa: roçada, soprador, poda, capina, aplicação de produto.',
-          'Se a roçadeira é de fio de náilon ou de lâmina, e se tem a capa de fábrica.',
+          'Se a roçadeira é a gasolina, elétrica ou a bateria, de fio de náilon ou de lâmina, e se tem a capa de fábrica.',
           'O resultado da avaliação de ruído, se existir.',
           'O terreno: plano, inclinado, com pedra, com água.',
           'Quantas pessoas, com a numeração de calçado e o tamanho de luva de cada uma.',
@@ -11977,6 +11995,11 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Pode usar roçadeira sem a capa de proteção?',
         resposta:
           'Não. A NR-31 (item 31.12.29) e a NR-12 (Anexo XI, item 6.8.1) exigem que a roçadeira tenha dispositivo de proteção contra o arremesso de materiais sólidos. O EPI do operador não substitui a proteção da máquina.',
+      },
+      {
+        pergunta: 'Kit de EPI para roçadeira serve para a equipe toda?',
+        resposta:
+          'Serve quando cada item do kit tem CA e serve em cada pessoa. Luva e perneira de tamanho único e kit sem calçado são as falhas mais comuns. O calçado de segurança entra à parte, com a numeração de cada um.',
       },
       {
         pergunta: 'Jardineiro precisa usar protetor auricular?',
