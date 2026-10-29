@@ -1098,7 +1098,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'destaque',
         texto:
-          'A NR-6 estabelece que o empregador registre o fornecimento do EPI ao trabalhador, e admite que esse registro seja feito em livro, ficha ou sistema eletrônico. Na prática, a ficha de entrega é a prova de que a empresa cumpriu a obrigação. E é o primeiro documento pedido quando alguém pergunta. O evento S-2240 do eSocial também pede o CA de cada EPI, mas não substitui esse registro, como explica <a href="/conhecimento/epi-no-esocial-o-que-entra-no-s-2240/">EPI no eSocial</a>.',
+          'A NR-6 estabelece que o empregador registre o fornecimento do EPI ao trabalhador, e admite que esse registro seja feito em livro, ficha ou sistema eletrônico. Na prática, a ficha de entrega é a prova de que a empresa cumpriu a obrigação. E é o primeiro documento pedido quando alguém pergunta, inclusive na <a href="/conhecimento/fiscalizacao-de-epi-o-que-o-auditor-pede/">fiscalização de EPI</a>. O evento S-2240 do eSocial também pede o CA de cada EPI, mas não substitui esse registro, como explica <a href="/conhecimento/epi-no-esocial-o-que-entra-no-s-2240/">EPI no eSocial</a>.',
       },
       {
         tipo: 'p',
@@ -3578,7 +3578,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'O valor de multa trabalhista não é tabelado por item: a NR-28 gradua a penalidade pela gravidade da infração e pelo número de empregados. Por isso os valores que circulam nas buscas, com faixas em reais, não servem para prever o caso de uma empresa específica.',
+          'O valor de multa trabalhista não é tabelado por item: a NR-28 gradua a penalidade pela gravidade da infração e pelo número de empregados. Por isso os valores que circulam nas buscas, com faixas em reais, não servem para prever o caso de uma empresa específica. O que mais entra numa visita do auditor está em <a href="/conhecimento/fiscalizacao-de-epi-o-que-o-auditor-pede/">fiscalização de EPI</a>.',
       },
       {
         tipo: 'h2',
@@ -9642,7 +9642,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Quase sempre a perneira entra na conversa depois do calçado, quando alguém percebe que o risco chega acima do cano. Na roçada é a pedra e o fio de náilon. Na solda é o respingo que cai na canela. No campo é a cobra no meio do mato. São riscos diferentes, e a mesma palavra cobre equipamentos diferentes.',
+          'Quase sempre a perneira entra na conversa depois do calçado, quando alguém percebe que o risco chega acima do cano. Na roçada é a pedra e o fio de náilon, e o conjunto completo de quem roça está em <a href="/conhecimento/epi-para-rocada-e-jardinagem/">EPI para roçada e jardinagem</a>. Na solda é o respingo que cai na canela. No campo é a cobra no meio do mato. São riscos diferentes, e a mesma palavra cobre equipamentos diferentes.',
       },
       {
         tipo: 'h2',
@@ -11760,6 +11760,340 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Que luva usar para pintar?',
         resposta:
           'Para tinta com solvente, luva de proteção contra agentes químicos escolhida pelo solvente, porque cada material de luva resiste a um grupo de produtos. Para lixar e raspar, luva contra abrasão. A FDS do produto indica a luva.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-para-rocada-e-jardinagem',
+    titulo: 'EPI para roçada e jardinagem: o que a roçadeira pede',
+    tituloSeo: 'EPI para roçada e jardinagem',
+    resumo:
+      'A roçadeira lança pedra e fio de náilon, faz barulho o turno inteiro e corta o que encostar. O EPI de quem roça segue esses três riscos, depois da proteção da máquina.',
+    descricaoSeo:
+      'O EPI de quem roça e cuida de jardim: protetor facial e óculos, protetor auditivo, perneira, calçado e luva. E a capa da máquina, que a NR-31 e a NR-12 exigem.',
+    publicado: '2026-10-29',
+    atualizado: '2026-10-29',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'A roçadeira lança pedra, pedaço de galho e fio de náilon para todos os lados, faz barulho o turno inteiro e corta o que encostar no disco. O EPI de quem roça segue esses três riscos: rosto e olhos, ouvidos, e pernas e pés. E vem depois da proteção da própria máquina, que a NR-31 e a NR-12 exigem.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Jardinagem não é só roçada. Tem soprador, poda, capina, adubação e, às vezes, defensivo. Cada tarefa muda o conjunto. Este artigo começa pela roçadeira, que concentra os riscos maiores, e depois passa pelas outras tarefas numa tabela.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Antes do EPI: a capa de proteção da roçadeira',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-31 manda que as roçadeiras tenham dispositivos de proteção contra o arremesso de materiais sólidos (item 31.12.29), e a NR-12 repete a exigência no anexo de máquinas para uso agrícola e florestal (Anexo XI, item 6.8.1). A capa que vem de fábrica é esse dispositivo. Roçadeira sem ela, ou com a capa retirada para render mais, está irregular antes de qualquer conversa sobre EPI. A ordem, proteção da máquina e coletiva primeiro e EPI depois, está em <a href="/conhecimento/epi-e-epc-qual-a-diferenca/">EPI e EPC</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'No meio rural, a NR-31 exige ainda treinamento de no mínimo 4 horas para quem opera roçadeira costal motorizada, com o conteúdo do manual de instruções (item 31.12.46.1). Em qualquer setor, a NR-6 manda a empresa orientar e treinar o empregado sobre o EPI que entrega (item 6.5.1, alínea b).',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Rosto e olhos: protetor facial e óculos',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O Anexo I da NR-6 tem os dois equipamentos para esse risco: protetor facial contra impactos de partículas volantes (item B.2) e óculos contra impactos de partículas volantes (item B.1). Na roçada eles costumam andar juntos. O protetor facial segura o que vem de frente e protege o rosto inteiro, mas não veda a região dos olhos; os óculos fecham o que passa por baixo e pelos lados. O CA de cada um precisa declarar a proteção contra impacto. A diferença entre os dois está em <a href="/protecao/olhos-e-face/">óculos de proteção e protetor facial</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Ouvidos: o motor junto do corpo o turno inteiro',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Roçadeira, soprador e cortador de grama a motor trabalham colados no operador. Quando o ruído passa dos limites da NR-15, o EPI é o protetor auditivo do item C.1 do Anexo I, de inserção, concha ou semiauricular. Quem diz se passa é a avaliação de ruído do posto, não a impressão de quem está perto. Se o protetor facial vai preso ao capacete, a concha precisa ser compatível com o conjunto. Como escolher entre os tipos está em <a href="/conhecimento/protetor-auditivo-plug-ou-concha/">protetor auditivo: plug ou concha</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Pernas e pés: perneira e calçado',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A perna é a parte do corpo mais perto do disco e do que ele lança. O Anexo I prevê perneira contra agentes abrasivos e escoriantes e contra agentes cortantes e perfurantes (item G.3), e o tipo certo depende do que atinge a perna naquele serviço, como explica <a href="/conhecimento/perneira-de-seguranca-quando-usar/">perneira de segurança</a>. No pé, o calçado de segurança com biqueira protege os dedos contra impacto (item G.1, alínea a), e o solado com proteção contra perfuração cobre o toco e o espinho que ficam escondidos no mato (alínea e). Terreno inclinado e grama molhada pedem também solado que segure, assunto de <a href="/conhecimento/solado-antiderrapante-o-que-significa/">solado antiderrapante</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Mãos, cabeça e sol',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na roçadeira, a luva protege contra abrasão e contra o que é lançado (item F.1, alínea a). A NR-6 também tem luva contra vibrações (alínea g), uma escolha que sai da avaliação de riscos, não do costume. Na poda, com galho acima da cabeça, entra o capacete contra impacto (item A.1). E quem roça passa o dia ao sol: no campo, a NR-31 manda fornecer chapéu ou boné tipo árabe ou legionário (item 31.6.2, alínea a), e o que vale fora dele está em <a href="/conhecimento/trabalho-ao-sol-protetor-solar-e-epi/">trabalho ao sol</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'As outras tarefas da jardinagem',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Tarefa', 'Risco principal', 'O que costuma entrar'],
+        linhas: [
+          ['Roçada com roçadeira', 'Arremesso, ruído, corte', 'Protetor facial e óculos, protetor auditivo, perneira, calçado de segurança, luva'],
+          ['Soprador', 'Partícula e poeira, ruído', 'Óculos, protetor auditivo e, com poeira, respirador para partículas'],
+          ['Poda manual', 'Corte, galho no olho, queda de galho', 'Luva contra corte, óculos, capacete quando há galho acima'],
+          ['Capina com enxada', 'Abrasão, impacto no pé', 'Luva contra abrasão, calçado de segurança'],
+          ['Adubo e defensivo', 'Produto químico', 'O que a bula ou a ficha de segurança do produto mandar'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A tabela mostra o que costuma aparecer, não uma regra: o conjunto de cada posto sai da avaliação de riscos da empresa. Para defensivo, o conjunto é o da bula, explicado em <a href="/conhecimento/epi-para-aplicacao-de-defensivo-agricola/">EPI para aplicação de defensivo agrícola</a>. Motosserra e motopoda têm regras próprias: a NR-12 (Anexo V) e a NR-31 (item 31.12.45) exigem dispositivos de segurança na máquina, e no campo o operador precisa de treinamento de no mínimo 16 horas (item 31.12.46).',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quando a jardinagem é serviço terceirizado, em condomínio, empresa ou órgão público, quem fornece o EPI é o empregador de quem roça, a prestadora. Quem contrata também tem deveres, como explica <a href="/conhecimento/epi-para-terceirizados-de-quem-e-a-obrigacao/">EPI para terceirizados</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Antes de pedir o EPI da equipe de jardinagem',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'As tarefas de cada pessoa: roçada, soprador, poda, capina, aplicação de produto.',
+          'Se a roçadeira é de fio de náilon ou de lâmina, e se tem a capa de fábrica.',
+          'O resultado da avaliação de ruído, se existir.',
+          'O terreno: plano, inclinado, com pedra, com água.',
+          'Quantas pessoas, com a numeração de calçado e o tamanho de luva de cada uma.',
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'NR-31 — Segurança e saúde no trabalho na agricultura, pecuária, silvicultura, exploração florestal e aquicultura (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-31-atualizada-2024.pdf',
+      },
+      {
+        titulo: 'NR-12 — Segurança no trabalho em máquinas e equipamentos, Anexos V e XI (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-12-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/facilities-e-limpeza/',
+      rotulo: 'Ver o atendimento a facilities',
+    },
+    contexto: 'empresas-facilities',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Preciso de EPI para uma equipe de roçada e jardinagem e queria ajuda para montar o conjunto.',
+    ctaTitulo: 'Vai equipar a equipe de roçada?',
+    ctaTexto:
+      'Conte quantas pessoas são e o que cada uma faz. A gente monta o conjunto por tarefa, com o CA de cada item e a numeração de cada pessoa.',
+    perguntas: [
+      {
+        pergunta: 'Qual EPI usar para roçar com roçadeira?',
+        resposta:
+          'O conjunto mais comum tem protetor facial e óculos contra impacto, protetor auditivo quando o ruído passa dos limites da NR-15, perneira, calçado de segurança com biqueira e luva. O conjunto final sai da avaliação de riscos, e cada item precisa de CA.',
+      },
+      {
+        pergunta: 'Protetor facial substitui os óculos na roçada?',
+        resposta:
+          'Nem sempre. O protetor facial protege o rosto contra o que vem de frente, mas não veda a região dos olhos, e pedra e fio podem passar por baixo ou pelos lados. Por isso os dois costumam ser usados juntos.',
+      },
+      {
+        pergunta: 'Pode usar roçadeira sem a capa de proteção?',
+        resposta:
+          'Não. A NR-31 (item 31.12.29) e a NR-12 (Anexo XI, item 6.8.1) exigem que a roçadeira tenha dispositivo de proteção contra o arremesso de materiais sólidos. O EPI do operador não substitui a proteção da máquina.',
+      },
+      {
+        pergunta: 'Jardineiro precisa usar protetor auricular?',
+        resposta:
+          'Com roçadeira, soprador ou cortador de grama a motor, é comum que o ruído passe dos limites da NR-15, e aí o protetor auditivo é obrigatório. Quem confirma é a avaliação de ruído do posto. Na poda manual e na capina, normalmente não há essa exposição.',
+      },
+    ],
+  },
+  {
+    slug: 'fiscalizacao-de-epi-o-que-o-auditor-pede',
+    titulo: 'Fiscalização de EPI: o que o auditor-fiscal do trabalho confere',
+    tituloSeo: 'Fiscalização de EPI: o que o auditor pede',
+    resumo:
+      'A fiscalização de EPI confere o papel e o corpo: a prova de que a empresa escolheu, entregou e ensinou a usar o equipamento certo, e o trabalhador usando naquela hora.',
+    descricaoSeo:
+      'O que o auditor-fiscal do trabalho confere sobre EPI: seleção registrada, CA, ficha, treinamento e uso. E o que vem depois: notificação, prazo, auto e embargo.',
+    publicado: '2026-10-29',
+    atualizado: '2026-10-29',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Normas',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'A fiscalização de EPI confere duas coisas: o papel e o corpo. O papel é a prova de que a empresa escolheu, comprou, entregou e ensinou a usar o equipamento certo. O corpo é o trabalhador usando, naquela hora, o que o papel diz. Um sem o outro não fecha.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem fiscaliza é o auditor-fiscal do trabalho. Pela CLT, ele tem livre acesso às dependências da empresa, que é obrigada a prestar esclarecimentos e a exibir, quando exigidos, os documentos sobre o cumprimento das normas de proteção ao trabalho (art. 630, § 3º). Facilitar a fiscalização é dever da empresa (art. 157, inciso IV). Os procedimentos e as penalidades estão na NR-28.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que a norma manda ter, e por isso entra na conferência',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['O que é conferido', 'Onde está a regra'],
+        linhas: [
+          ['Seleção do EPI registrada, por atividade', 'NR-6, item 6.5.2.1'],
+          ['Só EPI com CA', 'NR-6, item 6.5.1, alínea a'],
+          ['Fornecimento gratuito', 'NR-6, item 6.5.1, alínea c; CLT, art. 166'],
+          ['Registro da entrega', 'NR-6, item 6.5.1, alínea d'],
+          ['Orientação e treinamento', 'NR-6, item 6.5.1, alínea b, e capítulo 6.7'],
+          ['Exigência do uso', 'NR-6, item 6.5.1, alínea e'],
+          ['Higienização, manutenção e troca', 'NR-6, item 6.5.1, alíneas f e g'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Cada linha tem um artigo próprio aqui: <a href="/conhecimento/quem-escolhe-o-epi-sesmt-cipa-ou-compras/">quem escolhe o EPI</a>, <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">o que é o CA</a>, <a href="/conhecimento/empresa-pode-descontar-epi-do-salario/">se a empresa pode descontar EPI do salário</a>, <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">o que precisa constar na ficha de entrega</a> e <a href="/conhecimento/validade-e-descarte-de-epi/">validade e descarte de EPI</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O papel: o que precisa estar escrito',
+      },
+      {
+        tipo: 'p',
+        texto:
+          '<strong>A seleção.</strong> A NR-6 manda registrar a escolha do EPI, e esse registro pode integrar o Programa de Gerenciamento de Riscos, o PGR (item 6.5.2.1). Empresa dispensada do PGR mantém um registro com as atividades e os EPI de cada uma (item 6.5.2.1.1). É o documento que responde por que aquele equipamento, e não outro, foi entregue àquele posto.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          '<strong>A entrega.</strong> O fornecimento é registrado em livro, ficha ou sistema eletrônico, inclusive biométrico (item 6.5.1, alínea d), e o sistema eletrônico precisa permitir extrair relatórios (item 6.5.1.1). Para descartável e creme de proteção, quando o registro individual é inviável, a empresa garante o item na embalagem original, em quantidade suficiente, no local de trabalho (item 6.5.1.2). O EPI informado no evento S-2240 do eSocial precisa bater com a ficha e com o PGR, como explica <a href="/conhecimento/epi-no-esocial-o-que-entra-no-s-2240/">EPI no eSocial</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          '<strong>O treinamento.</strong> Na entrega, a empresa informa o que o EPI protege, suas limitações, como usar e ajustar, como limpar, guardar e quando trocar, seguindo o manual do fabricante (item 6.7.2). Quando as características do equipamento pedem, há treinamento (item 6.7.2.1). Registrar quem recebeu a orientação, e quando, é o que transforma o treinamento em prova.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O corpo: o EPI em uso',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Ficha completa e trabalhador sem o equipamento no posto não fecham a conta. A NR-6 manda a empresa exigir o uso (item 6.5.1, alínea e) e substituir imediatamente o EPI danificado ou extraviado (alínea g). Do lado do empregado, a CLT diz que a recusa injustificada ao uso do EPI fornecido é ato faltoso (art. 158, parágrafo único). Por isso a advertência registrada faz parte do papel, como explica <a href="/conhecimento/funcionario-recusa-usar-epi-o-que-fazer/">funcionário que recusa o EPI</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O estado do equipamento também conta. Calçado com solado liso e CA em dia continua sendo um calçado que não protege, e item comprado com CA vencido é outra conversa, explicada em <a href="/conhecimento/ca-vencido-o-epi-pode-continuar-em-uso/">CA vencido</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Depois da visita: notificação, auto de infração e embargo',
+      },
+      {
+        tipo: 'p',
+        texto:
+          '<strong>Notificação com prazo.</strong> Com base em critérios técnicos, o auditor pode notificar a empresa e dar prazo para corrigir (NR-28, item 28.1.4), de no máximo 60 dias (item 28.1.4.1). A empresa pode recorrer ou pedir prorrogação de cada item em até 10 dias da notificação (item 28.1.4.4), e a prorrogação pode chegar a 120 dias (item 28.1.4.2). Prazo maior que isso depende de negociação com o sindicato dos empregados (item 28.1.4.3).',
+      },
+      {
+        tipo: 'p',
+        texto:
+          '<strong>Auto de infração.</strong> Diante do descumprimento, o auditor lavra o auto de infração, considerando o critério da dupla visita nos casos previstos em lei (item 28.1.3).',
+      },
+      {
+        tipo: 'p',
+        texto:
+          '<strong>Embargo ou interdição.</strong> Em situação de grave e iminente risco, o auditor propõe de imediato a interdição do estabelecimento, do setor, da máquina ou do equipamento, ou o embargo da obra (item 28.2.1). E três autos pelo mesmo item da norma caracterizam descumprimento reiterado (item 28.2.3.1).',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quanto é a multa',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Não há valor fixo por item. A NR-28 gradua a multa por dois fatores: a classificação da infração, numa escala de 1 a 4 (Anexo II), e o número de empregados da empresa (Anexo I). No Anexo II, os itens da NR-6 aparecem classificados entre 2 e 4. Em caso de reincidência, embaraço ou resistência à fiscalização, a NR-28 manda aplicar a multa no valor máximo (item 28.3.1.1). Por isso os valores em reais que circulam nas buscas não servem para prever o caso de uma empresa específica.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Para chegar preparado',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'A seleção do EPI registrada, por atividade, no PGR ou no registro que o substitui.',
+          'A ficha de cada empregado, com o número do CA de cada item entregue.',
+          'O registro da orientação e do treinamento.',
+          'As notas de compra, que mostram o CA vigente na data da aquisição.',
+          'As advertências de quem recusou o EPI, quando houver.',
+          'O EPI no corpo de quem está trabalhando, em bom estado.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A parte do fornecedor nessa lista é a nota com o CA de cada item e o modelo certo para o risco. O que mais esperar dele está em <a href="/conhecimento/como-escolher-fornecedor-de-epi/">como escolher fornecedor de EPI</a>, e o resumo das obrigações da norma, em <a href="/conhecimento/nr-6-o-que-a-empresa-precisa-saber/">NR-6: o que a empresa precisa saber</a>.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-28 — Fiscalização e penalidades (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-28-atualizada-2024.pdf',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Consolidação das Leis do Trabalho — arts. 157, 158, 166 e 630 (Planalto)',
+        url: 'https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/',
+      rotulo: 'Ver o atendimento a empresas',
+    },
+    contexto: 'empresas',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Quero deixar o EPI da empresa em ordem para a fiscalização e preciso do CA de cada item na nota.',
+    ctaTitulo: 'Vai arrumar a casa antes da fiscalização?',
+    ctaTexto:
+      'Mande a lista de funções e o que cada uma usa hoje. A gente confere o CA de cada item e indica o que repor, com nota e CA para a ficha.',
+    perguntas: [
+      {
+        pergunta: 'O que o fiscal do trabalho pede sobre EPI?',
+        resposta:
+          'O registro da seleção do EPI por atividade, a ficha de entrega com o CA de cada item, o registro da orientação e do treinamento e, no posto, o trabalhador usando o equipamento em bom estado. A CLT obriga a empresa a exibir os documentos quando exigidos (art. 630, § 3º).',
+      },
+      {
+        pergunta: 'Empresa que não fornece EPI pode ser multada?',
+        resposta:
+          'Sim. Fornecer EPI gratuito e adequado ao risco é obrigação da empresa (NR-6, item 6.5.1, alínea c, e CLT, art. 166). A multa segue a gradação da NR-28, e em grave e iminente risco o auditor pode propor interdição ou embargo.',
+      },
+      {
+        pergunta: 'Quanto é a multa por falta de EPI?',
+        resposta:
+          'Não há valor fixo. A NR-28 gradua a multa pela classificação da infração e pelo número de empregados, e manda aplicar o valor máximo em caso de reincidência, embaraço ou resistência à fiscalização.',
+      },
+      {
+        pergunta: 'A empresa tem prazo para corrigir depois da fiscalização?',
+        resposta:
+          'Quando o auditor notifica, o prazo é de no máximo 60 dias (NR-28, item 28.1.4.1). A empresa pode pedir prorrogação em até 10 dias da notificação, e o prazo pode chegar a 120 dias (itens 28.1.4.2 e 28.1.4.4).',
       },
     ],
   },

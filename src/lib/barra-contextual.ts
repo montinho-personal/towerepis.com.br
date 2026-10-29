@@ -407,6 +407,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Que tinta a sua equipe usa?',
     rotulo: 'Escolher o filtro',
   },
+  'epi-para-rocada-e-jardinagem': {
+    chamada: 'Vai equipar a equipe de roçada?',
+    rotulo: 'Montar o conjunto',
+  },
+  'fiscalizacao-de-epi-o-que-o-auditor-pede': {
+    chamada: 'Precisa do CA de cada item na nota?',
+    rotulo: 'Pedir orçamento com CA',
+  },
   'epi-para-mecanico-de-oficina': {
     chamada: 'Que serviços a sua oficina faz?',
     rotulo: 'Montar a lista da oficina',

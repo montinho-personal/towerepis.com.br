@@ -254,3 +254,15 @@ talabarte nem sistema contra quedas. Consequências:
 
 **Próximo:** sem lote 3 definido. Reserva: palmilha antiperfurante e solado
 (dependem de liberar `escriba.ipt.br` e `fiergs.org.br` na rede da sessão).
+
+**29/10/2026 — dois artigos escritos pelas normas, sem prints de busca:**
+- `epi-para-rocada-e-jardinagem`: NR-31 31.6.2 a, 31.12.29, 31.12.45,
+  31.12.46 e 31.12.46.1 (Portaria MTE 342/2024); NR-12 Anexo V e Anexo XI
+  6.8.1; NR-6 6.5.1 b e Anexo I (A.1, B.1, B.2, C.1, F.1, G.1, G.3). Link de
+  entrada a partir da perneira.
+- `fiscalizacao-de-epi-o-que-o-auditor-pede`: NR-28 28.1.3 a 28.1.4.4, 28.2.1,
+  28.2.3.1, 28.3.1, 28.3.1.1 e Anexos I e II (sem valores publicados); NR-6
+  6.5.1, 6.5.1.1, 6.5.1.2, 6.5.2.1, 6.5.2.1.1, 6.7.2 e 6.7.2.1; CLT arts. 157,
+  158, 166 e 630 § 3º. Links de entrada a partir da ficha e do CA vencido.
+- Quando chegarem os prints de "epi para roçada" e "fiscalização de epi",
+  ajustar texto e FAQ.
