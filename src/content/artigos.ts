@@ -1298,7 +1298,7 @@ export const ARTIGOS: Artigo[] = [
   {
     slug: 'botina-que-machuca-calcado-ou-numeracao',
     titulo: 'Botina que machuca: é o calçado ou é a numeração?',
-    tituloSeo: 'Botina que machuca: o que fazer antes de trocar',
+    tituloSeo: 'Botina que machuca: o que fazer antes da troca',
     resumo:
       'Quase sempre é numeração, forma ou modelo errado para a atividade, e não falta de tempo de uso. O que dá para resolver e o que não dá.',
     descricaoSeo:
@@ -1713,7 +1713,7 @@ export const ARTIGOS: Artigo[] = [
   {
     slug: 'mascara-descartavel-nao-protege-de-vapor-quimico',
     titulo: 'Máscara descartável não protege de vapor químico',
-    tituloSeo: 'PFF2 serve para produto químico? Não, e o motivo',
+    tituloSeo: 'PFF2 serve para produto químico? Não, entenda',
     resumo:
       'A PFF retém partícula. Vapor e gás exigem respirador com filtro químico. São equipamentos diferentes, com CAs diferentes.',
     descricaoSeo:
@@ -12115,28 +12115,14 @@ export const ARTIGOS: Artigo[] = [
  * número de norma — é convenção de ofício, e por isso a mensagem de erro diz o
  * que fazer em vez de só recusar.
  *
- * A EXCEÇÃO, E POR QUE ELA EXPIRA SOZINHA. Dois títulos publicados antes desta
- * guarda estouram por um e por dois caracteres, e fazem parte da linha de base
- * congelada até a revisão de 1º de novembro de 2026
- * (`docs/10-regra-de-avaliacao.md`). Mexer neles agora sujaria a comparação que
- * a rotina agendada existe para fazer — então a guarda os tolera até lá.
- *
- * Depois dessa data a tolerância acaba por conta própria e o build passa a
- * recusá-los. É de propósito: exceção sem prazo vira permanente, e ninguém
- * lembra de remover a que já não se justifica.
+ * Houve uma exceção para dois títulos anteriores à guarda, com prazo até 1º de
+ * novembro de 2026. Os dois foram encurtados em 29/10/2026, com aprovação do
+ * cliente, e a exceção saiu (`docs/10-regra-de-avaliacao.md`).
  */
 const SUFIXO_DO_TITLE = ` · ${empresa.nome}`.length
 
-/** Congelados até a revisão. Ver o comentário acima. */
-const TOLERADOS_ATE = new Date('2026-11-01T12:00:00Z')
-const CONGELADOS = new Set([
-  'botina-que-machuca-calcado-ou-numeracao',
-  'mascara-descartavel-nao-protege-de-vapor-quimico',
-])
-
 for (const a of ARTIGOS) {
   const total = a.tituloSeo.length + SUFIXO_DO_TITLE
-  if (CONGELADOS.has(a.slug) && Date.now() < TOLERADOS_ATE.getTime()) continue
   if (total > 60) {
     throw new Error(
       `Artigo "${a.slug}": tituloSeo tem ${a.tituloSeo.length} caracteres e ` +

@@ -41,3 +41,12 @@ Existe uma rotina agendada que abre uma sessão no dia 1º de cada mês ímpar
 (novembro, janeiro, março…) com a lista acima. Ela não decide nada: lembra,
 roda a comparação estrutural, e pede a exportação do Search Console, que só
 vocês têm.
+
+## Mudanças registradas
+
+A próxima leitura compara a partir destas datas.
+
+| Data | Página | O que mudou | Por quê |
+|---|---|---|---|
+| 29/10/2026 | `botina-que-machuca-calcado-ou-numeracao` | title: "…antes de trocar" → "…antes da troca" (61 → 60 renderizado) | Guarda de build de 60 caracteres; aprovado pelo cliente. H1 e description iguais. |
+| 29/10/2026 | `mascara-descartavel-nao-protege-de-vapor-quimico` | title: "…? Não, e o motivo" → "…? Não, entenda" (62 → 59 renderizado) | Idem. |
