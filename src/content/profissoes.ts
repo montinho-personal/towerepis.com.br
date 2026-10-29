@@ -481,7 +481,7 @@ export const PROFISSOES: Profissao[] = [
     ],
     perguntas: [
       {
-        pergunta: 'Protetor auricular de inserção ou tipo concha?',
+        pergunta: 'Na linha de produção, que protetor auditivo usar?',
         resposta:
           'Depende do nível de ruído, do tempo de exposição, do ambiente e do conforto para a pessoa. O de inserção é discreto e funciona bem em calor; o tipo concha é mais fácil de colocar e retirar em atividade intermitente. Vale considerar qual deles a equipe consegue usar o turno inteiro, porque atenuação só existe com uso correto.',
       },

@@ -281,3 +281,16 @@ talabarte nem sistema contra quedas. Consequências:
   2007–2020). NR-6 Anexo I B.1 c, D.1 e, E.1 f, F.1 d, f e h, G.1 f. A proibição
   do jateamento de areia (Portaria SIT 99/2004) ficou de fora: texto oficial
   não encontrado. Link de entrada a partir do artigo têxtil.
+
+**29/10/2026 — protetor auditivo atualizado com os prints do Google** (o último
+dos 20 artigos antigos):
+- Prints: "As pessoas também perguntam" (concha ou plug; melhor tipo; quando
+  usar concha; durabilidade do plug), relacionadas (concha, tipo plug, 30 dB,
+  espuma, silicone, para trabalhar, profissional) e autocompletar (validade,
+  abafador, acoplado). Marcas e "para dormir" ficaram de fora.
+- Texto: os três tipos da NR-6 (C.1), plug de espuma × pré-moldado, concha
+  acoplada ao capacete, NR-15 Anexo 1 (85 dB(A) 8 h, 90 dB(A) 4 h, 95 dB(A)
+  2 h), o que significa o "30 dB" da embalagem, durabilidade e validade (NR-6
+  6.7.2 e). Três FAQ novas e uma reescrita. Title, description e H1 iguais.
+- qa-faq barrou "Quando usar protetor auricular tipo concha?" contra a FAQ da
+  página de indústria (0,67); a de indústria foi reescrita.

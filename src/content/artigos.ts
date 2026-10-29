@@ -4195,8 +4195,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Como decidir entre protetor de inserção e concha pela rotina real da equipe: calor, retirada frequente, óculos, comunicação e a atenuação que consta no CA.',
     publicado: '2026-09-05',
-    atualizado: '2026-09-05',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-10-29',
+    atualizadoExibicao: 'outubro de 2026',
     cluster: 'Proteção',
     blocos: [
       {
@@ -4213,6 +4213,20 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'Antes de qualquer comparação, um ponto que não se negocia: a atenuação necessária vem da medição de ruído da atividade, feita pela empresa. Nenhum catálogo substitui esse número, e ele é o que define quais modelos entram na conversa. O que consta no <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a> de cada protetor é a atenuação que ele foi aprovado para oferecer.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Os três tipos que a NR-6 reconhece',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O Anexo I da NR-6 lista três tipos de protetor auditivo, todos para proteger contra ruído acima dos limites da NR-15 (item C.1): o circum-auricular, que é a concha, também chamada de abafador; o de inserção, que é o plug; e o semiauricular, em que as pontas ficam na entrada do canal auditivo, presas a uma haste. Este artigo compara os dois primeiros, que são os mais comprados. Não existe um tipo melhor fora da rotina da tarefa.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O plug também muda de material. O de espuma moldável é comprimido com os dedos antes de entrar e se expande dentro do canal, e costuma ser descartável. O pré-moldado, de silicone ou copolímero, tem formato fixo, aceita lavagem e é reutilizável, muitas vezes com cordão. Os dois existem com CA; o que diz como colocar, limpar e quando trocar cada modelo é o manual do fabricante.',
       },
       {
         tipo: 'h2',
@@ -4244,7 +4258,7 @@ export const ARTIGOS: Artigo[] = [
         itens: [
           '<strong>Ruído contínuo, pessoa fixa num posto, ambiente quente:</strong> inserção costuma se sustentar melhor ao longo do turno.',
           '<strong>Entra e sai da área ruidosa o tempo todo:</strong> concha, porque cada recolocação de plug é uma chance de vedar mal.',
-          '<strong>Já usa óculos de proteção ou capacete:</strong> confira a compatibilidade antes. Concha e haste de óculos disputam o mesmo espaço.',
+          '<strong>Já usa óculos de proteção ou capacete:</strong> confira a compatibilidade antes. Concha e haste de óculos disputam o mesmo espaço. Para quem usa capacete, existe concha acoplada, que encaixa no próprio capacete; o manual diz com quais modelos ela é compatível.',
           '<strong>Precisa conversar ou ouvir alarme:</strong> esse é um critério de segurança por si só, e muda a escolha do modelo.',
           '<strong>Dúvida real entre os dois:</strong> deixe as duas opções com a equipe por alguns dias. A que continua na orelha no fim do turno é a resposta.',
         ],
@@ -4262,6 +4276,34 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'Cada minuto sem proteção pesa muito mais do que parece, porque a exposição é cumulativa ao longo do turno. Um protetor de atenuação alta usado metade do tempo protege menos que um de atenuação adequada usado o tempo inteiro. É por isso que conforto entra aqui como critério técnico, e não como luxo.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-15 mostra a conta. Pelo Anexo 1, a exposição máxima permitida a 85 dB(A) é de 8 horas; a 90 dB(A), de 4 horas; a 95 dB(A), de 2 horas. Cada 5 decibéis a mais cortam o tempo pela metade, e alguns minutos sem protetor num ambiente alto consomem uma parte grande do limite do dia.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que quer dizer "30 dB" na embalagem',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O número em decibéis na embalagem e no CA é a atenuação medida em ensaio de laboratório, com o protetor colocado do jeito certo. Ele não é para ser subtraído de cabeça do ruído medido no posto: quem converte esse valor em proteção real é a avaliação de ruído da empresa. Concha de 30 dB mal assentada, por cima da haste dos óculos, entrega bem menos do que o número promete.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Durabilidade e validade',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O plug descartável é de uso único. O reutilizável e a concha duram pelo estado: espuma endurecida, plug que não volta ao formato, haste frouxa e almofada ressecada ou rachada param de vedar. O prazo de uso e a forma de limpar estão no manual do fabricante, e a NR-6 manda a empresa passar essas informações ao empregado na entrega, incluindo manutenção e substituição (item 6.7.2, alínea e).',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Validade é outra coisa: há a data de validade do produto, indicada pelo fabricante, e a do CA, que é do modelo. A diferença entre as duas está em <a href="/conhecimento/validade-e-descarte-de-epi/">validade e descarte de EPI</a>.',
       },
       {
         tipo: 'h2',
@@ -4289,6 +4331,10 @@ export const ARTIGOS: Artigo[] = [
         url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
       },
       {
+        titulo: 'NR-15 — Atividades e operações insalubres, Anexo 1 (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-15-atualizada-2022.pdf',
+      },
+      {
         titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
         url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
       },
@@ -4305,6 +4351,21 @@ export const ARTIGOS: Artigo[] = [
       'Conte o nível de ruído medido, quantas vezes a pessoa entra e sai da área, e o que mais ela usa na cabeça. Dá para resolver a escolha antes de comprar.',
     perguntas: [
       {
+        pergunta: 'Qual protetor auricular é melhor, concha ou plug?',
+        resposta:
+          'Depende da rotina. O plug costuma se sustentar melhor em posto fixo e ambiente quente; a concha, para quem entra e sai da área ruidosa o tempo todo. Os dois protegem quando a atenuação do CA atende ao ruído medido e quando ficam no lugar o turno inteiro.',
+      },
+      {
+        pergunta: 'Quando usar protetor auricular tipo concha?',
+        resposta:
+          'Quando a pessoa tira e recoloca o protetor muitas vezes por turno, quando a chefia precisa ver de longe se ele está em uso e quando o plug incomoda ou não veda. Com capacete, existe concha acoplada. Em ambiente quente, a concha esquenta e tende a ser retirada.',
+      },
+      {
+        pergunta: 'Quais são os tipos de protetor auditivo?',
+        resposta:
+          'A NR-6 reconhece três: circum-auricular (a concha ou abafador), de inserção (o plug, de espuma ou pré-moldado de silicone ou copolímero) e semiauricular, com pontas na entrada do canal presas a uma haste. Todos precisam de CA.',
+      },
+      {
         pergunta: 'Usar os dois ao mesmo tempo dobra a proteção?',
         resposta:
           'Não dobra. O uso combinado aumenta a atenuação, mas bem menos do que a soma dos dois, porque o som também chega por condução óssea. É uma decisão que depende do nível de ruído medido e não deve ser tomada por conta própria.',
@@ -4315,9 +4376,9 @@ export const ARTIGOS: Artigo[] = [
           'Não serve, e é perigoso justamente por parecer que serve. Algodão não veda o canal auditivo, não tem atenuação ensaiada e não tem Certificado de Aprovação. A pessoa fica com a sensação de estar protegida, que é o pior resultado possível.',
       },
       {
-        pergunta: 'De quanto em quanto tempo troca?',
+        pergunta: 'Qual a durabilidade de um protetor auricular tipo plug?',
         resposta:
-          'Depende do tipo. O de inserção reutilizável e a concha se avaliam pelo estado: espuma endurecida, haste frouxa e almofada ressecada param de vedar. O descartável é de uso único. Na dúvida, o critério é a vedação, não o calendário.',
+          'O plug descartável é de uso único. O reutilizável, de silicone ou copolímero, dura enquanto veda: endureceu, rachou ou não volta ao formato, troca. A concha se avalia pelo mesmo critério, olhando haste e almofada. O manual do fabricante traz o prazo de cada modelo.',
       },
     ],
   },
