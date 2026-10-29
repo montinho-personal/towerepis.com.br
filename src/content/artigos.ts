@@ -4887,6 +4887,7 @@ export const ARTIGOS: Artigo[] = [
           '<strong>Concretagem</strong>, em que o pé fica dentro do concreto fresco e couro simplesmente não é material para isso.',
           '<strong>Limpeza pesada</strong>, com produto diluído escorrendo pelo chão.',
           '<strong>Irrigação, viveiro e lavagem de veículo</strong>, onde o dia inteiro é molhado por definição.',
+          '<strong>Rua na quadra chuvosa</strong>, com poça e lama o turno inteiro. O resto do conjunto para chuva está em <a href="/conhecimento/capa-de-chuva-e-epi-trabalho-na-chuva/">capa de chuva é EPI?</a>',
         ],
       },
       {
@@ -6155,7 +6156,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Onde há corante, alvejante, ácido e calor, o EPI deixa de ser o da fábrica e passa a ser o de produto químico. A escolha vem da ficha de segurança de cada produto e da compatibilidade do modelo com ele, e o caminho está em <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">como escolher luva pelo produto químico</a>.',
+          'Onde há corante, alvejante, ácido e calor, o EPI deixa de ser o da fábrica e passa a ser o de produto químico. A escolha vem da ficha de segurança de cada produto e da compatibilidade do modelo com ele, e o caminho está em <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">como escolher luva pelo produto químico</a>. A estamparia, com tinta, limpeza de tela e prensa térmica, tem o seu próprio conjunto, em <a href="/conhecimento/epi-para-serigrafia-e-estamparia/">EPI para serigrafia e estamparia</a>.',
       },
       {
         tipo: 'h2',
@@ -12094,6 +12095,307 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'A empresa tem prazo para corrigir depois da fiscalização?',
         resposta:
           'Quando o auditor notifica, o prazo é de no máximo 60 dias (NR-28, item 28.1.4.1). A empresa pode pedir prorrogação em até 10 dias da notificação, e o prazo pode chegar a 120 dias (itens 28.1.4.2 e 28.1.4.4).',
+      },
+    ],
+  },
+  {
+    slug: 'capa-de-chuva-e-epi-trabalho-na-chuva',
+    titulo: 'Capa de chuva é EPI? O que a NR-6 diz sobre trabalho na chuva',
+    tituloSeo: 'Capa de chuva é EPI? Trabalho na chuva',
+    resumo:
+      'A NR-6 tem vestimenta, calça e macacão contra chuva, todos com CA. A capa comum, sem CA, não é EPI. E o que protege de verdade na chuva começa antes da roupa.',
+    descricaoSeo:
+      'Capa de chuva é EPI quando tem CA para chuva: a NR-6 lista vestimenta, calça e macacão. O que a NR-21 e a NR-18 pedem antes, e qual calçado usar no molhado.',
+    publicado: '2026-10-29',
+    atualizado: '2026-10-29',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Capa de chuva é EPI quando tem Certificado de Aprovação para isso. O Anexo I da NR-6 lista vestimenta para o tronco, calça, macacão e vestimenta de corpo inteiro contra umidade proveniente de precipitação pluviométrica, que é o nome técnico da chuva. A capa comum, comprada sem CA, protege da água, mas não é EPI e não serve para cumprir a norma.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'No Ceará, a pergunta volta todo ano com a quadra chuvosa, de fevereiro a maio, como a FUNCEME chama o principal período chuvoso do estado. É quando obra, coleta, entrega, manutenção de rede e campo passam semanas trabalhando molhados. Quem compra em fevereiro compra com pressa; quem planeja em novembro escolhe com calma.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que a NR-6 tem contra chuva',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Equipamento', 'Item do Anexo I da NR-6'],
+        linhas: [
+          ['Vestimenta para proteção do tronco contra chuva (a capa ou jaqueta)', 'E.1, alínea e'],
+          ['Calça para proteção das pernas contra chuva', 'G.4, alínea f'],
+          ['Macacão contra chuva', 'H.1, alínea d'],
+          ['Vestimenta de corpo inteiro contra chuva', 'H.2, alínea d'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-6 separa a umidade da chuva da umidade de operações com água, como lavagem e higienização. São itens diferentes, com ensaios diferentes, e o CA precisa declarar o que a peça vai enfrentar. Uma capa aprovada contra chuva não é, automaticamente, o avental de quem lava piso o dia inteiro. Quando a peça tem CA, ela entra na <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega</a> como qualquer outro EPI.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Antes da capa: abrigo e serviço que para',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-21, de trabalhos a céu aberto, manda haver abrigos, ainda que rústicos, capazes de proteger os trabalhadores contra intempéries (item 21.1), e exige medidas especiais contra a umidade, o calor, o frio e o vento (item 21.2). A capa é uma dessas medidas, não a única.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na construção, a NR-18 proíbe trabalho em telhado ou cobertura sob chuva, ventos fortes ou condições climáticas adversas (item 18.7.8.2, alínea c), e manda paralisar a escavação manual de tubulão a céu aberto no início das chuvas (item 18.7.2.22.1, alínea g). Em trabalho em altura, a NR-35 manda a análise de risco considerar as condições meteorológicas adversas e as condições impeditivas (item 35.5.5.1, alíneas d e j). Nesses casos, a resposta à chuva é parar, e nenhum EPI muda isso. O que vem antes do equipamento individual está em <a href="/conhecimento/epi-e-epc-qual-a-diferenca/">EPI e EPC</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Contra raio não existe EPI. A NR-18 exige que o canteiro de obras tenha sistema de proteção contra descargas atmosféricas (item 18.6.18); para a equipe na rua, a proteção é interromper o serviço e procurar abrigo.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O pé na chuva',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O Anexo I não tem um calçado específico contra chuva. O mais próximo é o calçado que protege pés e pernas contra umidade de operações com água (item G.1, alínea f), e na prática a resposta para quem pisa em poça e lama o turno inteiro costuma ser a bota impermeável, explicada em <a href="/conhecimento/bota-de-pvc-quando-e-a-resposta-certa/">bota de PVC</a>. Couro hidrofugado aguenta respingo e chuva rápida, não um dia inteiro encharcado.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O outro risco do pé é escorregar. Piso molhado, rampa e lama mudam a aderência, e o solado precisa ter sido ensaiado para essa condição, como explica <a href="/conhecimento/solado-antiderrapante-o-que-significa/">solado antiderrapante</a>. Para eletricista, a chuva tira a botina isolante da condição de ambiente seco em que ela foi ensaiada, assunto de <a href="/conhecimento/botina-isolante-para-eletricista/">botina isolante</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que costuma dar errado com a capa',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Capa sem CA</strong> comprada às pressas no primeiro dia de chuva. Molha menos, mas não conta como EPI.',
+          '<strong>Tamanho único.</strong> Capa curta deixa a água escorrer para dentro da bota; capa longa demais engancha em escada, máquina e moto.',
+          '<strong>Capa que esconde o resto.</strong> Por cima do colete refletivo ou do cinto de ferramentas, ela tira a visibilidade de quem trabalha em via e atrapalha o acesso ao que a pessoa usa.',
+          '<strong>Peça guardada molhada</strong> e dobrada até o dia seguinte. Siga o manual do fabricante para secar e guardar.',
+          '<strong>Uma capa para a equipe toda</strong>, revezada. EPI é individual.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Antes de pedir o EPI para a quadra chuvosa',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Que funções trabalham a céu aberto, e por quanto tempo seguido.',
+          'Se a chuva só molha ou se há água no chão o turno inteiro.',
+          'Se há trabalho em altura, em telhado ou com eletricidade, que podem pedir parada em vez de EPI.',
+          'O tamanho de cada pessoa, para capa, calça e calçado.',
+          'Se a capa vai por cima de colete refletivo, cinto ou outro EPI.',
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'NR-21 — Trabalhos a céu aberto (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-21.pdf',
+      },
+      {
+        titulo: 'NR-18 — Segurança e saúde no trabalho na indústria da construção (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-18-atualizada-2025-1.pdf',
+      },
+      {
+        titulo: 'NR-35 — Trabalho em altura (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-35.pdf',
+      },
+      {
+        titulo: 'FUNCEME — quadra chuvosa no Ceará',
+        url: 'https://www.funceme.br/?tag=quadra-chuvosa',
+      },
+    ],
+    paginaComercial: {
+      href: '/calcados/',
+      rotulo: 'Ver os calçados',
+    },
+    contexto: 'calcados',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Minha equipe trabalha na rua durante a quadra chuvosa e queria ajuda para escolher o calçado e o EPI para chuva.',
+    ctaTitulo: 'Sua equipe trabalha na rua na quadra chuvosa?',
+    ctaTexto:
+      'Conte que funções ficam a céu aberto e se há água no chão o turno inteiro. A gente ajuda a escolher o calçado e o conjunto, com o CA de cada item.',
+    perguntas: [
+      {
+        pergunta: 'Capa de chuva é considerada EPI?',
+        resposta:
+          'Quando tem CA para isso. O Anexo I da NR-6 lista vestimenta para o tronco, calça, macacão e vestimenta de corpo inteiro contra umidade proveniente de precipitação pluviométrica. Capa sem CA protege da água, mas não é EPI.',
+      },
+      {
+        pergunta: 'A empresa é obrigada a fornecer capa de chuva?',
+        resposta:
+          'Quando a avaliação de riscos aponta exposição à chuva, sim: o EPI adequado ao risco é fornecido gratuitamente (NR-6, item 6.5.1, alínea c). No trabalho a céu aberto, a NR-21 também exige abrigo contra intempéries e medidas especiais contra a umidade.',
+      },
+      {
+        pergunta: 'Pode trabalhar em telhado na chuva?',
+        resposta:
+          'Não. A NR-18 proíbe trabalho em telhado ou cobertura sob chuva, ventos fortes ou condições climáticas adversas (item 18.7.8.2, alínea c). Nesse caso a resposta é parar o serviço, não reforçar o EPI.',
+      },
+      {
+        pergunta: 'Qual calçado usar para trabalhar na chuva?',
+        resposta:
+          'Com água no chão o turno inteiro, bota impermeável, como a de PVC, com solado ensaiado para piso molhado. Couro hidrofugado aguenta chuva rápida, não um dia encharcado. O CA do calçado precisa declarar as proteções que a atividade pede.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-para-serigrafia-e-estamparia',
+    titulo: 'EPI para serigrafia e estamparia: tela, tinta, estufa e prensa',
+    tituloSeo: 'EPI para serigrafia e estamparia',
+    resumo:
+      'Na estamparia, cada etapa tem um risco: química na tinta e na limpeza de tela, calor na estufa e na prensa, água na lavagem. O EPI segue a etapa, e a ficha de cada produto decide o resto.',
+    descricaoSeo:
+      'O EPI da estamparia por etapa: luva e respirador para tinta e solvente, luva térmica para estufa e prensa de sublimação, proteção contra água na lavagem de tela.',
+    publicado: '2026-10-29',
+    atualizado: '2026-10-29',
+    atualizadoExibicao: 'outubro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'A estamparia junta três riscos que não se parecem: produto químico na tinta, no adesivo e na limpeza da tela; calor na estufa, no secador e na prensa de sublimação; e água na lavagem da tela. Cada etapa pede um EPI diferente, e a ficha de segurança de cada produto decide o resto.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A confecção é um dos maiores segmentos da indústria cearense: entre 2007 e 2020, respondeu em média por 29,3% das firmas industriais do estado e por 20,5% do pessoal ocupado na manufatura, segundo o IPECE. Estampar é etapa comum dessa produção, feita dentro da fábrica ou em estamparia terceirizada, e quase sempre com a mesma lista de EPI para todas as bancadas. É aí que a proteção erra.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Tinta e adesivo de mesa',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Tinta à base de água costuma pedir menos proteção do que tinta com solvente, mas quem diz é a Ficha com Dados de Segurança, a FDS, de cada produto, não o rótulo da frente. Contra vapor de solvente, o Anexo I da NR-6 prevê peça com filtro químico (item D.1, alínea e), e a máscara descartável PFF, que é para partícula, não serve, como explica <a href="/conhecimento/mascara-descartavel-nao-protege-de-vapor-quimico/">máscara descartável não protege de vapor químico</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O adesivo de mesa aplicado em spray junta névoa e vapor. Para os dois ao mesmo tempo, a NR-6 prevê filtros combinados (item D.1, alínea e). Antes do respirador, exaustão no ponto e ventilação protegem a sala inteira, como explica <a href="/conhecimento/epi-e-epc-qual-a-diferenca/">EPI e EPC</a>. Nas mãos, a luva é a de proteção contra agentes químicos (item F.1, alínea f), escolhida pelo produto, porque cada material de luva resiste a um grupo diferente; o passo a passo está em <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">luva para produto químico</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Gravação e recuperação da tela',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Emulsão, removedor de emulsão, desengraxante e solvente de limpeza são produtos químicos, cada um com sua FDS. A recuperação da tela é a etapa mais química da estamparia e a que mais costuma ficar sem proteção, porque parece limpeza. Luva química, óculos bem vedados contra respingo e, conforme a FDS, respirador com filtro químico.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na gravação, a insoladora usa luz ultravioleta. Quando a luz fica exposta ao operador, o Anexo I prevê óculos contra radiação ultravioleta (item B.1, alínea c).',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Lavagem da tela: água o turno inteiro',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Lavar tela com mangueira ou lavadora de pressão molha o corpo e o chão. A NR-6 tem vestimenta para o tronco contra umidade de operações com água (item E.1, alínea f), luva contra umidade (item F.1, alínea h) e calçado contra umidade (item G.1, alínea f). Com produto químico na água, a proteção química vale junto. Para o pé, a resposta costuma ser a <a href="/conhecimento/bota-de-pvc-quando-e-a-resposta-certa/">bota de PVC</a>, e para o piso molhado, solado ensaiado para essa condição.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Estufa, secador e prensa de sublimação: calor',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A cura da tinta em estufa ou secador e a transferência na prensa térmica de sublimação trabalham com superfície quente perto da mão. O EPI é a luva para proteção das mãos contra agentes térmicos (item F.1, alínea d), com o CA declarando essa proteção. Luva de algodão comum não é luva térmica.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que cada bancada usa',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Etapa', 'Risco principal', 'O que costuma entrar'],
+        linhas: [
+          ['Impressão com tinta de solvente', 'Vapor, contato com a pele', 'Respirador com filtro químico, luva química'],
+          ['Adesivo de mesa em spray', 'Névoa e vapor', 'Respirador com filtro combinado'],
+          ['Recuperação da tela', 'Produto químico, respingo', 'Luva química, óculos vedados, respirador conforme a FDS'],
+          ['Lavagem da tela', 'Água, piso molhado', 'Vestimenta e luva contra umidade, bota impermeável'],
+          ['Estufa, secador e prensa', 'Calor', 'Luva contra agentes térmicos'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A tabela mostra o que costuma aparecer, não uma regra: o conjunto de cada posto sai da avaliação de riscos e da FDS dos produtos usados ali. O corte e a costura da mesma confecção têm outros riscos, explicados em <a href="/conhecimento/epi-para-industria-textil/">EPI para indústria têxtil</a>. Para pintura com pistola em outros materiais, o caso é parecido com o de <a href="/conhecimento/epi-para-pintor-o-que-muda/">EPI para pintor</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Antes de pedir o EPI da estamparia',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'A FDS de cada tinta, adesivo, emulsão, removedor e solvente usado.',
+          'As etapas feitas na casa: impressão, gravação, recuperação, lavagem, cura, sublimação.',
+          'Se há exaustão nas bancadas de tinta e de limpeza.',
+          'Quem faz cada etapa, para não comprar a mesma lista para todos.',
+          'O tamanho de luva e a numeração de calçado de cada pessoa.',
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'IPECE — Enfoque Econômico nº 247: Indústria da confecção no Ceará, relevância e desempenho recente (março de 2023, PDF)',
+        url: 'https://www.ipece.ce.gov.br/wp-content/uploads/sites/45/2023/03/Enfoque_Economico_N247_1003023.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/protecao/respiratoria/',
+      rotulo: 'Ver proteção respiratória',
+    },
+    contexto: 'protecao-respiratoria',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Tenho uma estamparia e queria ajuda para escolher o EPI de cada etapa, da tinta à lavagem da tela.',
+    ctaTitulo: 'Que produtos a sua estamparia usa?',
+    ctaTexto:
+      'Mande a FDS das tintas e dos produtos de limpeza de tela. A gente indica o respirador, o filtro e a luva de cada etapa, com o CA de cada item.',
+    perguntas: [
+      {
+        pergunta: 'Qual máscara usar em serigrafia?',
+        resposta:
+          'Depende da tinta e do produto de limpeza. Contra vapor de solvente, peça facial com filtro químico; com adesivo em spray, filtro combinado. A FDS de cada produto indica a proteção. A PFF, que é para partícula, não segura vapor.',
+      },
+      {
+        pergunta: 'Que luva usar na limpeza da tela de serigrafia?',
+        resposta:
+          'Luva de proteção contra agentes químicos, escolhida pelos produtos usados: emulsão, removedor, desengraxante e solvente. Cada material de luva resiste a um grupo de produtos, e a FDS indica qual.',
+      },
+      {
+        pergunta: 'Qual EPI usar na prensa de sublimação?',
+        resposta:
+          'Luva para proteção das mãos contra agentes térmicos, com o CA declarando essa proteção (NR-6, Anexo I, item F.1, alínea d). Luva de algodão comum não protege contra a superfície quente da prensa.',
       },
     ],
   },

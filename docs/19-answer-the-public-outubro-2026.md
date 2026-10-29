@@ -266,3 +266,18 @@ talabarte nem sistema contra quedas. Consequências:
   158, 166 e 630 § 3º. Links de entrada a partir da ficha e do CA vencido.
 - Quando chegarem os prints de "epi para roçada" e "fiscalização de epi",
   ajustar texto e FAQ.
+
+**29/10/2026 — dois artigos de âncora local (quadra chuvosa e confecção):**
+- `capa-de-chuva-e-epi-trabalho-na-chuva`: NR-6 Anexo I E.1 e, G.1 f, G.4 f,
+  H.1 d, H.2 d e 6.5.1 c; NR-21 21.1 e 21.2; NR-18 18.6.18, 18.7.2.22.1 g e
+  18.7.8.2 c; NR-35 35.5.5.1 d e j. Quadra chuvosa de fevereiro a maio pela
+  FUNCEME (o site da FUNCEME está bloqueado na rede da sessão; o período foi
+  conferido pelo resultado de busca do próprio funceme.br). Link de entrada a
+  partir da bota de PVC.
+- `epi-para-serigrafia-e-estamparia`: no lugar do artigo de confecção, que
+  repetiria o de indústria têxtil (que já trata de corte, costura e
+  tinturaria). IPECE, Enfoque Econômico nº 247 (março de 2023): confecção com
+  29,3% das firmas e 20,5% do pessoal ocupado na manufatura cearense (média
+  2007–2020). NR-6 Anexo I B.1 c, D.1 e, E.1 f, F.1 d, f e h, G.1 f. A proibição
+  do jateamento de areia (Portaria SIT 99/2004) ficou de fora: texto oficial
+  não encontrado. Link de entrada a partir do artigo têxtil.

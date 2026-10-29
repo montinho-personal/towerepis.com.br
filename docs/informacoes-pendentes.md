@@ -183,6 +183,13 @@ resposta, o artigo ganha um parágrafo com o que existe de fato.
 
 ---
 
+### 10c. Capa de chuva e luva térmica com CA (29/10/2026)
+Os artigos `capa-de-chuva-e-epi-trabalho-na-chuva` e
+`epi-para-serigrafia-e-estamparia` explicam esses itens sem oferecê-los, porque
+não está confirmado que a Tower trabalha com eles. A Tower fornece capa de chuva
+com CA? E luva contra agentes térmicos? Se sim, o CTA dos dois pode citar.
+[INFORMAÇÃO NECESSÁRIA]
+
 ## 🟢 PARALELO AO SITE — E PODE COMEÇAR HOJE
 
 ### 11. Google Business Profile

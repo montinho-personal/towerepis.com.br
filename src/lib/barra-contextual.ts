@@ -415,6 +415,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Precisa do CA de cada item na nota?',
     rotulo: 'Pedir orçamento com CA',
   },
+  'capa-de-chuva-e-epi-trabalho-na-chuva': {
+    chamada: 'Sua equipe trabalha na rua na quadra chuvosa?',
+    rotulo: 'Escolher o calçado',
+  },
+  'epi-para-serigrafia-e-estamparia': {
+    chamada: 'Que produtos a sua estamparia usa?',
+    rotulo: 'Escolher o filtro',
+  },
   'epi-para-mecanico-de-oficina': {
     chamada: 'Que serviços a sua oficina faz?',
     rotulo: 'Montar a lista da oficina',
