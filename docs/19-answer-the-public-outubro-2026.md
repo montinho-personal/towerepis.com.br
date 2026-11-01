@@ -302,3 +302,11 @@ gasolina ou elétrica) e resultados ("kit epi para roçadeira"). Entraram: visei
 e CA, calça do item G.4 × calça comum, materiais de luva, capacete de roçador
 com peças acopladas, seção "gasolina ou elétrica" (NR-31 31.12.44), seção do
 kit e uma FAQ. Mercado Livre e marcas ficaram de fora.
+
+**01/11/2026 — artigo do CA atualizado com prints do Google** ("o que significa
+ca no epi" e "consultar ca do epi"; no Search Console, 796 aparições na posição
+64). Entraram: a sigla por extenso no começo do texto, "cada EPI tem um CA
+diferente?", o CA na ficha e no PPP (via S-2240), "tabela/lista de CA" (base de
+dados para download no próprio CAEPI), óculos na marcação, o passo de digitar
+só os algarismos e três FAQ (sigla, quem emite, um CA por modelo). Title e
+description ficaram iguais: com posição 64 não há CTR para avaliar.
