@@ -11340,14 +11340,14 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'A NCM do calçado de segurança depende do material do cabedal e de a biqueira ser de metal. Os códigos da TIPI para couro, PVC e borracha, e o caso do composite.',
     publicado: '2026-10-24',
-    atualizado: '2026-10-24',
+    atualizado: '2026-11-06',
     atualizadoExibicao: 'outubro de 2026',
     cluster: 'Compra',
     blocos: [
       {
         tipo: 'destaque',
         texto:
-          'Não existe uma NCM única de "botina de segurança". O capítulo 64 da TIPI classifica o calçado pelo material do cabedal e da sola, e só a biqueira de metal tem código próprio. Botina de couro com biqueira de aço é 6403.40.00; com biqueira de composite, cai em "outro calçado", que para botina de couro cobrindo o tornozelo é 6403.91.90.',
+          'Não existe uma NCM única de "botina de segurança" ou de "bota de segurança". O capítulo 64 da TIPI classifica o calçado pelo material do cabedal e da sola, e só a biqueira de metal tem código próprio. Botina de couro com biqueira de aço é 6403.40.00; com biqueira de composite, cai em "outro calçado", que para botina de couro cobrindo o tornozelo é 6403.91.90.',
       },
       {
         tipo: 'p',
@@ -11384,7 +11384,34 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          '"Sem biqueira de metal" inclui a botina com biqueira de composite e a com biqueira termoplástica, além da que não tem biqueira nenhuma. O que diferencia os dois tipos de biqueira na proteção está em <a href="/conhecimento/biqueira-de-composite-ou-de-aco-qual-escolher/">biqueira de composite ou de aço</a>; na NCM, a diferença é só se ela é de metal.',
+          '"Sem biqueira de metal" inclui a botina com biqueira de composite, a com biqueira termoplástica e a chamada de "bico de PVC", além da que não tem biqueira nenhuma. O que diferencia os dois tipos de biqueira na proteção está em <a href="/conhecimento/biqueira-de-composite-ou-de-aco-qual-escolher/">biqueira de composite ou de aço</a>; na NCM, a diferença é só se ela é de metal.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Um erro comum: 6403.99.90 para botina',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É frequente ver 6403.99.90 indicado como a NCM da botina de couro comum, inclusive em resumos automáticos na internet. Na TIPI, esse subitem fica em "outro", ao lado de 6403.91, que é o do calçado que cobre o tornozelo. Como a botina cobre o tornozelo, a de couro sem biqueira de metal vai para 6403.91.90; 6403.99.90 é para o sapato e o tênis de couro, que não cobrem.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Couro, nobuck, couro reconstituído e couro sintético',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Couro e nobuck:</strong> o nobuck é couro natural com acabamento lixado, e fica na mesma posição 64.03 da botina de couro liso, com os mesmos códigos da tabela acima.',
+          '<strong>Couro reconstituído na parte de cima:</strong> sai da 64.03 e vai para a posição 64.05. Com sola de borracha ou plástico, o código é 6405.10.10.',
+          '<strong>Couro sintético:</strong> tecido com camada de plástico visível a olho nu conta como plástico no capítulo 64 (Nota 3, alínea a). Com sola de borracha ou plástico, o calçado vai para a posição 64.02.',
+          '<strong>Microfibra e outros materiais:</strong> a posição depende de como o material é feito, e a classificação é do fabricante.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A TIPI não separa o calçado de segurança por gênero: botina masculina e feminina seguem as mesmas regras de material e biqueira. Já o CEST, que aparece junto nas buscas, é outro código, usado na substituição tributária do ICMS. Ele não sai da TIPI, e quem diz se ele se aplica ao produto é o contador.',
       },
       {
         tipo: 'h2',
@@ -11440,6 +11467,21 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Botina com biqueira de composite tem NCM diferente da de aço?',
         resposta:
           'Tem. A TIPI só tem subitem próprio para biqueira protetora de metal. A botina de couro com biqueira de composite vai para "outro calçado": 6403.91.90 se cobre o tornozelo e 6403.99.90 se não cobre.',
+      },
+      {
+        pergunta: 'Botina de couro ou nobuck: qual NCM?',
+        resposta:
+          'As duas são couro natural e ficam na posição 64.03. Com biqueira de metal, 6403.40.00. Sem ela, 6403.91.90, porque a botina cobre o tornozelo. O código 6403.99.90 é para o calçado de couro que não cobre o tornozelo.',
+      },
+      {
+        pergunta: 'Botina com bico de PVC: qual NCM?',
+        resposta:
+          'A TIPI só tem subitem próprio para biqueira de metal. Botina de couro com bico de PVC, composite ou termoplástico entra como "outro calçado": 6403.91.90, se cobre o tornozelo.',
+      },
+      {
+        pergunta: 'Botina feminina tem NCM diferente?',
+        resposta:
+          'Não. A TIPI não separa o calçado de segurança por gênero. O código sai do material da parte de cima e da sola e de a biqueira ser de metal.',
       },
       {
         pergunta: 'Qual a NCM da bota de PVC?',

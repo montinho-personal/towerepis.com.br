@@ -151,3 +151,12 @@ metatarso).
   `epi-no-esocial-o-que-entra-no-s-2240`, com o Manual de Orientação do
   eSocial S-1.3 (consolidado em 26/05/2026).
 - Links de entrada: biqueira → NCM; ficha → eSocial.
+
+**06/11/2026 — NCM ajustado com prints do Google** (no Search Console, 226
+aparições na posição 6 e nenhum clique). O resumo de IA do Google dá 6403.99.90
+para botina sem biqueira de metal; pela TIPI, 6403.99 é o "outro" que não cobre
+o tornozelo, e a botina vai para 6403.91.90. Entraram: seção sobre esse erro,
+couro e nobuck (64.03), couro reconstituído (6405.10.10), couro sintético
+(Nota 3 a do capítulo 64: tecido com camada plástica visível conta como
+plástico, posição 64.02), "bico de PVC" junto do composite, gênero e CEST, e
+três FAQ. TIPI conferida de novo no .docx oficial.
