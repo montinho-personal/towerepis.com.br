@@ -95,3 +95,65 @@ Desenvolver em `claude/tower-epis-website-v7fq8k`, manter `main` em sincronia �
 a Vercel faz deploy de produção a partir de `main`. Conferir
 `git fetch` antes de todo push: uma vez, um force-push apagou dois commits de
 upload do cliente.
+
+---
+
+## Pesquisa no Google pelo SerpApi (no lugar dos prints)
+
+Os dados do Google vêm do SerpApi, pelo MCP em `https://mcp.serpapi.com/mcp`.
+A chave está no cofre do ambiente e o proxy envia sozinho: nunca pedir a chave
+na conversa. Se der erro de chave, usar `request_credential` para
+`mcp.serpapi.com`.
+
+```bash
+serp() { curl -sS -m 90 -X POST https://mcp.serpapi.com/mcp \
+  -H 'Content-Type: application/json' -H 'Accept: application/json, text/event-stream' \
+  -d "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"search\",\"arguments\":{\"params\":$1}}}"; }
+
+# Busca comum (PAA, outras pesquisas, visão de IA, quem ranqueia):
+serp '{"engine":"google","q":"BUSCA","location":"Fortaleza,Ceara,Brazil","device":"mobile","hl":"pt-br","gl":"br"}'
+# Autocompletar:
+serp '{"engine":"google_autocomplete","q":"BUSCA","hl":"pt-br","gl":"br"}'
+# Mapa (SEO local):
+serp '{"engine":"google_maps","type":"search","q":"BUSCA","ll":"@-3.7318616,-38.5266704,13z","hl":"pt-br","gl":"br"}'
+```
+
+A resposta é JSON dentro de `result.content[0].text`. Sempre `"device":"mobile"`
+e a região `Fortaleza,Ceara,Brazil` (nome conferido em
+`https://serpapi.com/locations.json?q=Fortaleza`, consulta grátis).
+
+**"Cria/revisa o próximo artigo" começa pela pesquisa.** A resposta traz as
+intenções de busca por tipo (autocompletar, "As pessoas também perguntam",
+outras pesquisas, visão de IA, quem ranqueia), com o que entrou no texto e o que
+ficou de fora. O que ficou de fora vira pauta, com uma de três decisões: vale um
+artigo / não recomendo / cabe em página existente.
+
+**Evidência:** o JSON enxuto de cada busca (só os campos usados) vai para
+`docs/seo/evidencias/`, com a data no nome.
+
+**Cota:** uma conta só para todos os sites do Renato, 1.000 buscas por mês, e as
+rotinas somadas já passam disso por decisão dele. Quando o SerpApi disser que a
+cota acabou, parar na hora e avisar o Renato, que decide se aumenta o plano ou
+espera renovar. Não repetir busca que já está em `docs/seo/evidencias/`.
+
+## Estratégias de SEO com o SerpApi
+
+1. **Formato antes de escrever:** ver o que ranqueia (guia, lista, tabela,
+   ferramenta) e escrever no formato que o Google já premia para aquela busca.
+2. **Visão de IA:** registrar quem o resumo de IA cita e como é a página citada
+   (`docs/seo/visao-de-ia.md`). Resumo de IA errado é oportunidade: o artigo
+   corrige com fonte oficial, como no caso da NCM 6403.91.90 × 6403.99.90.
+3. **Concorrentes:** olhar a página que ranqueia para aprender o formato, nunca
+   para copiar, citar ou ranquear concorrente no site.
+4. **Sazonalidade:** Google Trends (`"engine":"google_trends"`) antes de pautas
+   sazonais, como a quadra chuvosa.
+5. **Mapa local:** a Tower tem Perfil da Empresa no Google ("TOWER EPIS"). A
+   linha de base e o passo a passo estão em `docs/seo-local/README.md`. Perfil
+   sempre como área de atendimento: nunca endereço público, nunca endereço
+   falso, nunca palavra-chave no nome.
+
+**Rotinas agendadas:** mensal no dia 16, às 14h42 de Brasília (mapa local,
+visão de IA das 5 buscas principais, ideias de pauta); diária, um artigo por
+dia da fila em `docs/seo/fila-revisao.md`. As 5 buscas principais: "epi
+fortaleza", "loja de epi fortaleza", "botina de segurança fortaleza",
+"fornecedor de epi fortaleza", "calçado de segurança fortaleza".

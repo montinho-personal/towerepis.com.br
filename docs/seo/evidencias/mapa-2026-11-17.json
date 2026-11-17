@@ -1,0 +1,204 @@
+[
+ {
+  "busca": "epi fortaleza",
+  "data": "2026-11-17 00:26:38 UTC",
+  "tower": [],
+  "top3": [
+   {
+    "posicao": 1,
+    "nome": "Power EPI",
+    "nota": 4.5,
+    "avaliacoes": 278,
+    "categorias": [
+     "Loja"
+    ]
+   },
+   {
+    "posicao": 2,
+    "nome": "Equipex EPI",
+    "nota": 4.5,
+    "avaliacoes": 27,
+    "categorias": [
+     "Fornecedor de vestuário de proteção",
+     "Loja de materiais de construção",
+     "Loja de produtos elétricos",
+     "Loja de materiais elétricos",
+     "Equipamentos e soluções de energia"
+    ]
+   },
+   {
+    "posicao": 3,
+    "nome": "Clarus Epi's - Varejo",
+    "nota": 4.6,
+    "avaliacoes": 203,
+    "categorias": [
+     "Saúde e segurança ocupacional"
+    ]
+   }
+  ],
+  "resultados": 20
+ },
+ {
+  "busca": "loja de epi fortaleza",
+  "data": "2026-11-17 00:26:45 UTC",
+  "tower": [],
+  "top3": [
+   {
+    "posicao": 1,
+    "nome": "Power EPI",
+    "nota": 4.5,
+    "avaliacoes": 278,
+    "categorias": [
+     "Loja"
+    ]
+   },
+   {
+    "posicao": 2,
+    "nome": "MATERCOL EPI'S e FERRAMENTAS",
+    "nota": 4.8,
+    "avaliacoes": 151,
+    "categorias": [
+     "Fornecedor de equipamentos de segurança",
+     "Loja de materiais elétricos"
+    ]
+   },
+   {
+    "posicao": 3,
+    "nome": "Apeferr Ferramentas e Epi´s",
+    "nota": 4.7,
+    "avaliacoes": 67,
+    "categorias": [
+     "Loja de ferramentas",
+     "Fornecedor de abrasivos",
+     "Fornecedor de ferramentas pneumáticas",
+     "Atacadista"
+    ]
+   }
+  ],
+  "resultados": 20
+ },
+ {
+  "busca": "botina de segurança fortaleza",
+  "data": "2026-11-17 00:26:46 UTC",
+  "tower": [],
+  "top3": [
+   {
+    "posicao": 1,
+    "nome": "Clarus Epi's - Varejo",
+    "nota": 4.6,
+    "avaliacoes": 203,
+    "categorias": [
+     "Saúde e segurança ocupacional"
+    ]
+   },
+   {
+    "posicao": 2,
+    "nome": "Equipas EPI's",
+    "nota": 4.6,
+    "avaliacoes": 31,
+    "categorias": [
+     "Loja de botas",
+     "Saúde e segurança ocupacional",
+     "Fornecedor de vestuário de proteção",
+     "Fornecedor de equipamentos de segurança"
+    ]
+   },
+   {
+    "posicao": 3,
+    "nome": "MATERCOL EPI'S e FERRAMENTAS",
+    "nota": 4.8,
+    "avaliacoes": 151,
+    "categorias": [
+     "Fornecedor de equipamentos de segurança",
+     "Loja de materiais elétricos"
+    ]
+   }
+  ],
+  "resultados": 20
+ },
+ {
+  "busca": "fornecedor de epi fortaleza",
+  "data": "2026-11-17 00:26:47 UTC",
+  "tower": [
+   {
+    "posicao": 16,
+    "nota": 3.7,
+    "avaliacoes": 3,
+    "categoria": "Fornecedor de vestuário de proteção"
+   }
+  ],
+  "top3": [
+   {
+    "posicao": 1,
+    "nome": "Power EPI",
+    "nota": 4.5,
+    "avaliacoes": 278,
+    "categorias": [
+     "Loja"
+    ]
+   },
+   {
+    "posicao": 2,
+    "nome": "MATERCOL EPI'S e FERRAMENTAS",
+    "nota": 4.8,
+    "avaliacoes": 151,
+    "categorias": [
+     "Fornecedor de equipamentos de segurança",
+     "Loja de materiais elétricos"
+    ]
+   },
+   {
+    "posicao": 3,
+    "nome": "Diepi Distribuidora de Epi e Ferramentas",
+    "nota": 4.9,
+    "avaliacoes": 56,
+    "categorias": [
+     "Loja de materiais de construção"
+    ]
+   }
+  ],
+  "resultados": 20
+ },
+ {
+  "busca": "calçado de segurança fortaleza",
+  "data": "2026-11-17 00:26:48 UTC",
+  "tower": [],
+  "top3": [
+   {
+    "posicao": 1,
+    "nome": "Equipas EPI's",
+    "nota": 4.6,
+    "avaliacoes": 31,
+    "categorias": [
+     "Loja de botas",
+     "Saúde e segurança ocupacional",
+     "Fornecedor de vestuário de proteção",
+     "Fornecedor de equipamentos de segurança"
+    ]
+   },
+   {
+    "posicao": 2,
+    "nome": "Solução Equipamentos de Segurança",
+    "nota": 5,
+    "avaliacoes": 2,
+    "categorias": [
+     "Loja de calçado",
+     "Loja de botas",
+     "Loja de botas de camurça",
+     "Empresa de segurança",
+     "Loja de materiais de construção"
+    ]
+   },
+   {
+    "posicao": 3,
+    "nome": "Rotta Calçados, Epi's e EPC's",
+    "nota": 5,
+    "avaliacoes": 26,
+    "categorias": [
+     "Loja de calçado"
+    ]
+   }
+  ],
+  "resultados": 20
+ }
+]
