@@ -9,7 +9,7 @@ CA do EPI e NCM da botina (outubro e novembro de 2026).
 
 | # | Artigo | Última atualização | Revisado em |
 |---|---|---|---|
-| 1 | `respirador-como-escolher-o-filtro` | 2026-09-09 | |
+| 1 | `respirador-como-escolher-o-filtro` | 2026-09-09 | 2026-11-17 (b5ce2b4) |
 | 2 | `tipos-de-luva-qual-material-escolher` | 2026-09-09 | |
 | 3 | `epi-para-frigorifico-e-camara-fria` | 2026-09-11 | |
 | 4 | `funcionario-recusa-usar-epi-o-que-fazer` | 2026-09-11 | |
