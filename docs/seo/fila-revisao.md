@@ -78,3 +78,5 @@ CA do EPI e NCM da botina (outubro e novembro de 2026).
 | 67 | `protetor-auditivo-plug-ou-concha` | 2026-10-29 | |
 | 68 | `o-que-e-ca-certificado-de-aprovacao` | 2026-11-01 | |
 | 69 | `ncm-da-botina-de-seguranca` | 2026-11-06 | |
+| 70 | `ncm-dos-epi-luva-capacete-oculos-e-respirador` | 2026-11-17 | |
+| 71 | `epi-para-motorista-de-caminhao` | 2026-11-17 | |

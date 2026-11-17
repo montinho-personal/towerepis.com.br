@@ -558,6 +558,11 @@ export const PROFISSOES: Profissao[] = [
         texto: 'Pegada, resistência a corte e conforto para manuseio contínuo.',
       },
       {
+        href: '/conhecimento/epi-para-motorista-de-caminhao/',
+        titulo: 'EPI para motorista de caminhão',
+        texto: 'Carga, descarga, carroceria e caminhão-tanque.',
+      },
+      {
         href: '/protecao/corpo/',
         titulo: 'Vestimentas',
         texto: 'Alta visibilidade e uniforme de trabalho.',

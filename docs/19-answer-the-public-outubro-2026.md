@@ -310,3 +310,16 @@ diferente?", o CA na ficha e no PPP (via S-2240), "tabela/lista de CA" (base de
 dados para download no próprio CAEPI), óculos na marcação, o passo de digitar
 só os algarismos e três FAQ (sigla, quem emite, um CA por modelo). Title e
 description ficaram iguais: com posição 64 não há CTR para avaliar.
+
+**17/11/2026 — dois artigos novos com pesquisa pelo SerpApi:**
+- `ncm-dos-epi-luva-capacete-oculos-e-respirador`: TIPI (ADE RFB nº 1/2026)
+  posições 39.26, 40.15, 42.03, 61.16, 62.16, 65.06, 90.04 e 90.20, com os "Ex"
+  e as alíquotas. A visão de IA citava 6506.10.00, que não existe na TIPI
+  vigente. Link de entrada a partir do NCM da botina.
+- `epi-para-motorista-de-caminhao`: NR-6 Anexo I, NR-11 11.2.4 e 11.2.10,
+  NR-20 Anexo IV 5.1.1.1 e 12.1.1, NR-35 35.1.2, NR-31 31.6.2 d. A visão de IA
+  lista colete refletivo como EPI; não está no Anexo I da NR-6. Link de entrada
+  a partir da página de logística e estoque.
+- Pautas que ficaram de fora: motoboy/entregador de moto (regras de trânsito,
+  não NR-6; não recomendo agora); transporte de produtos perigosos (regulamento
+  da ANTT; não recomendo sem a fonte oficial lida).

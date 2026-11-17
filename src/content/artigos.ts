@@ -11471,7 +11471,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Quem classifica o produto é o fabricante ou o importador, e a NCM vem na nota fiscal dele. Quem revende confere a classificação com o contador, junto com o resto da tributação, que este texto não cobre. Para quem quer revender EPI, o que muda na compra está em <a href="/conhecimento/como-escolher-fornecedor-de-epi/">como escolher fornecedor de EPI</a>.',
+          'Quem classifica o produto é o fabricante ou o importador, e a NCM vem na nota fiscal dele. Quem revende confere a classificação com o contador, junto com o resto da tributação, que este texto não cobre. Para quem quer revender EPI, o que muda na compra está em <a href="/conhecimento/como-escolher-fornecedor-de-epi/">como escolher fornecedor de EPI</a>, e os códigos de luva, capacete, óculos e respirador, em <a href="/conhecimento/ncm-dos-epi-luva-capacete-oculos-e-respirador/">NCM dos EPI</a>.',
       },
     ],
     fontes: [
@@ -12598,6 +12598,291 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Qual EPI usar na prensa de sublimação?',
         resposta:
           'Luva para proteção das mãos contra agentes térmicos, com o CA declarando essa proteção (NR-6, Anexo I, item F.1, alínea d). Luva de algodão comum não protege contra a superfície quente da prensa.',
+      },
+    ],
+  },
+  {
+    slug: 'ncm-dos-epi-luva-capacete-oculos-e-respirador',
+    titulo: 'NCM dos EPI: luva, capacete, óculos e respirador',
+    tituloSeo: 'NCM dos EPI: luva, capacete e óculos',
+    resumo:
+      'Não existe uma NCM de "EPI". A TIPI classifica pelo que o produto é e pelo material: luva de borracha, de couro e de malha têm códigos diferentes.',
+    descricaoSeo:
+      'Os códigos da TIPI para capacete de segurança, óculos de segurança, luvas de borracha, couro, plástico e malha, e respirador com filtro, com a alíquota de IPI.',
+    publicado: '2026-11-17',
+    atualizado: '2026-11-17',
+    atualizadoExibicao: 'novembro de 2026',
+    cluster: 'Compra',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Não existe uma NCM de "EPI". A TIPI classifica pelo que o produto é e pelo material de que é feito, e não pela função de proteger. Por isso uma luva de borracha, uma de couro e uma de malha têm códigos diferentes, e o capacete de segurança comum não tem o mesmo código do capacete de bombeiro com viseira.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A fonte é a Tabela de Incidência do IPI, a TIPI, aprovada pelo Decreto nº 11.158/2022 e atualizada pela Receita Federal; a versão consultada vai até o Ato Declaratório Executivo RFB nº 1, de janeiro de 2026. O calçado tem regras próprias, explicadas em <a href="/conhecimento/ncm-da-botina-de-seguranca/">NCM da botina de segurança</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Os códigos mais comuns',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['EPI', 'NCM', 'O que diz a TIPI'],
+        linhas: [
+          ['Capacete de segurança', '6506.10.90', 'Capacetes de proteção, "outros". O 6506.10.10 é só o de bombeiro, com viseira e protetor facial incorporados'],
+          ['Óculos de segurança', '9004.90.20', 'Subitem próprio: "óculos de segurança"'],
+          ['Luva de borracha, natural ou sintética', '4015.19.00', 'Luvas de borracha vulcanizada, com destaque "Ex 01 - de segurança e proteção"'],
+          ['Luva de plástico, como a de PVC', '3926.20.00', 'Vestuário e acessórios de plástico, incluindo luvas'],
+          ['Luva de couro, como a de vaqueta ou raspa', '4203.29.00', 'Luvas de couro, com destaque "Ex 01 - de proteção, para trabalho manual"'],
+          ['Luva de malha impregnada ou revestida de plástico ou borracha', '6116.10.00', 'Luvas de malha impregnadas, revestidas ou recobertas'],
+          ['Luva de malha sem revestimento', '6116.92.00 (algodão) ou 6116.93.00 (fibra sintética)', 'Conforme a fibra'],
+          ['Luva de tecido que não é malha', '6216.00.00', 'Luvas de tecido'],
+          ['Respirador com filtro substituível', '9020.00.10 (máscara contra gases) ou 9020.00.90', 'A posição exclui a máscara sem mecanismo e sem filtro removível'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Repare na última linha: a máscara descartável PFF, que não tem filtro removível, fica fora da posição 90.20 e é classificada pelo material de que é feita. Já a luva de borracha que alguém chama de "nitrílica" e a luva de malha com banho nitrílico na palma caem em códigos diferentes, porque uma é de borracha e a outra é de malha revestida. A diferença entre os materiais de luva está em <a href="/conhecimento/tipos-de-luva-qual-material-escolher/">tipos de luva</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Um erro comum: 6506.10.00 para capacete',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O código 6506.10.00 ainda aparece em cadastros e em páginas na internet, mas não existe na TIPI vigente. Nela, a subposição 6506.10 tem dois subitens: 6506.10.10, só para o capacete de bombeiro com viseira e protetor facial incorporados, e 6506.10.90, para os outros capacetes de proteção, que é onde fica o capacete de segurança da obra e da indústria.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que é o "Ex 01" ao lado do código',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É um destaque dentro do código, que dá à mercadoria descrita nele uma alíquota de IPI diferente da do código geral. Ele não muda a NCM. Na TIPI consultada, a luva de borracha "de segurança e proteção" e a luva de couro "de proteção, para trabalho manual" têm alíquota zero pelo Ex 01, enquanto o código geral de cada uma tem alíquota maior.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'E o IPI?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na TIPI consultada, estão com alíquota zero o capacete de segurança, as luvas de borracha e de couro com o Ex 01, as luvas de malha e de tecido e a máscara contra gases. O óculos de segurança e a luva de plástico estão com 3,25%, e o 9020.00.90, com 5,2%. Alíquota muda por decreto e por ato da Receita, então vale conferir a tabela vigente na data da operação.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Protetor auditivo e kit de EPI',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A TIPI não tem um subitem com o nome de protetor auditivo: ele é classificado pelo material e pela forma, como plug de espuma ou concha de plástico, e o código vem do fabricante. No kit de EPI vendido junto, cada item continua sendo um produto, e vale combinar com o fornecedor que a nota saia item a item, com a NCM e o CA de cada um.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quem define a NCM',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem classifica o produto é o fabricante ou o importador, e a NCM vem na nota fiscal dele. Quem revende confere a classificação com o contador, junto com o resto da tributação, que este texto não cobre. O CA, que é outra coisa, está explicado em <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">o que é o CA do EPI</a>.',
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'TIPI — Tabela de Incidência do IPI, aprovada pelo Decreto nº 11.158/2022, atualizada até o ADE RFB nº 1/2026, capítulos 39, 40, 42, 61, 62, 65 e 90 (Receita Federal)',
+        url: 'https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/documentos-e-arquivos/tipi.docx/@@download/file',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/',
+      rotulo: 'Ver o atendimento a empresas',
+    },
+    contexto: 'empresas',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Queria cotar EPI e preciso da NCM e do CA de cada item na proposta.',
+    ctaTitulo: 'Precisa da NCM e do CA de cada item?',
+    ctaTexto:
+      'Mande a lista do que a sua empresa compra. A gente devolve a proposta com o CA de cada item e a NCM que vem na nota do fabricante.',
+    perguntas: [
+      {
+        pergunta: 'Existe um NCM único para EPI?',
+        resposta:
+          'Não. A TIPI classifica pelo que o produto é e pelo material, e não pela função de proteger. Capacete, óculos, luva e respirador ficam em capítulos diferentes, e cada material de luva tem o seu código.',
+      },
+      {
+        pergunta: 'Qual o NCM do capacete de segurança?',
+        resposta:
+          '6506.10.90, capacetes de proteção, "outros". O 6506.10.10 é só o capacete de bombeiro com viseira e protetor facial incorporados, e o código 6506.10.00 não existe na TIPI vigente.',
+      },
+      {
+        pergunta: 'Luva de segurança: qual NCM?',
+        resposta:
+          'Depende do material: borracha, 4015.19.00; plástico, 3926.20.00; couro, 4203.29.00; malha revestida de plástico ou borracha, 6116.10.00; tecido que não é malha, 6216.00.00. A NCM certa vem na nota do fabricante.',
+      },
+      {
+        pergunta: 'Óculos de segurança tem NCM próprio?',
+        resposta:
+          'Tem: 9004.90.20, um subitem com o nome "óculos de segurança" dentro da posição de óculos para correção, proteção ou outros fins.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-para-motorista-de-caminhao',
+    titulo: 'EPI para motorista de caminhão: carga, descarga, carroceria e tanque',
+    tituloSeo: 'EPI para motorista de caminhão',
+    resumo:
+      'Dirigindo, o motorista usa pouco EPI. O equipamento entra quando ele desce da cabine para carga, descarga, amarração ou descarga de combustível, e muda com a carga.',
+    descricaoSeo:
+      'O EPI do motorista de caminhão sai da atividade, não do cargo: carga e descarga, carroceria, caminhão-tanque. O que a NR-6, a NR-11 e a NR-20 pedem.',
+    publicado: '2026-11-17',
+    atualizado: '2026-11-17',
+    atualizadoExibicao: 'novembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Dirigindo, o motorista usa pouco EPI: o risco do volante se trata com descanso, veículo em ordem e rota planejada. O EPI entra quando ele desce da cabine, para carga e descarga, amarração, lona ou descarga de combustível, e muda com o tipo de carga. A NR-6 manda fornecer o EPI adequado ao risco, e quem define a lista é a atividade, não o cargo.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'É por isso que "kit de EPI para motorista" pronto costuma errar para um lado ou para o outro. O motorista de baú que só confere a nota não precisa do mesmo conjunto que o de carga seca que ajuda a descarregar, e nenhum dos dois precisa do que o de caminhão-tanque usa no posto.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Carga e descarga',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Pés:</strong> calçado de segurança com biqueira contra impacto (Anexo I da NR-6, item G.1, alínea a), com solado que segure na rampa, no pátio molhado e no degrau da cabine. A diferença entre os modelos está em <a href="/conhecimento/botina-bota-ou-sapato-de-seguranca/">botina, bota ou sapato de segurança</a>.',
+          '<strong>Mãos:</strong> luva contra abrasão ou contra corte (item F.1, alíneas a e b), conforme a carga, a cinta e a lona.',
+          '<strong>Cabeça:</strong> capacete contra impacto (item A.1, alínea a) quando há carga sendo içada ou risco de queda de objeto, como em pátio com empilhadeira e ponte rolante.',
+          '<strong>Olhos:</strong> óculos contra partícula (item B.1, alínea a) com carga a granel e poeira.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-11 acrescenta regras para a carga manual: na carga e descarga manual de sacos em caminhão ou vagão, o trabalhador tem o auxílio de ajudante (item 11.2.4), e o transporte manual de sacos em piso escorregadio ou molhado deve ser evitado (item 11.2.10).',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Em cima da carroceria',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Subir na carroceria para amarrar ou cobrir a carga pode ser trabalho em altura: a NR-35 considera assim toda atividade acima de 2 metros do nível inferior com risco de queda (item 35.1.2). Aí a ordem é evitar subir quando houver outro jeito, depois proteção coletiva e, por último, sistema individual contra quedas, como explica <a href="/conhecimento/epi-e-epc-qual-a-diferenca/">EPI e EPC</a>. Cinturão, talabarte e trava-quedas não são linha da Tower.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Caminhão-tanque de combustível',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'No posto de combustível, a NR-20 trata a descarga como atividade crítica de exposição ao benzeno. Quem faz, direta ou indiretamente, a conferência do produto no caminhão-tanque, a coleta de amostras e a descarga deve usar respirador de face inteira com filtro para vapores orgânicos e proteção para a pele (Anexo IV, itens 5.1.1.1 e 12.1.1). Como escolher o filtro está em <a href="/conhecimento/respirador-como-escolher-o-filtro/">respirador: como escolher o filtro</a>, e a luva, em <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">luva para produto químico</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para outras cargas químicas, a ficha de segurança do produto diz o EPI de quem manuseia. O transporte rodoviário de produtos perigosos tem regulamento próprio, com exigências que vão além do EPI do motorista, e não é assunto deste texto.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Colete refletivo é EPI?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Não pela NR-6: o colete refletivo não está no Anexo I, que é a lista de EPI. No campo, a NR-31 o põe entre os dispositivos de proteção pessoal, para sinalização (item 31.6.2, alínea d). Fora disso, ele entra pela avaliação de riscos de quem desce no pátio, no acostamento ou à noite, e não precisa de CA para isso.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Motorista contratado, terceirizado ou autônomo',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem fornece o EPI é o empregador do motorista. No transporte terceirizado, isso é da transportadora, e quem contrata também tem deveres, como explica <a href="/conhecimento/epi-para-terceirizados-de-quem-e-a-obrigacao/">EPI para terceirizados</a>. O caminhoneiro autônomo não tem empregador para fornecer, e na carga e descarga dentro de uma empresa segue as regras de segurança do local.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O entregador de moto é outro caso: o capacete e os equipamentos da moto seguem as regras de trânsito, e não a lista de EPI da NR-6.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Antes de pedir o EPI dos motoristas',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'O tipo de carga: seca, a granel, refrigerada, química ou combustível.',
+          'Quem faz a carga e a descarga: o motorista, um ajudante ou a equipe do cliente.',
+          'Se há subida na carroceria, amarração ou lona.',
+          'Se o motorista circula em pátio com empilhadeira ou ponte rolante.',
+          'A numeração de calçado e o tamanho de luva de cada motorista.',
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'NR-11 — Transporte, movimentação, armazenagem e manuseio de materiais (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-11-atualizada-2016.pdf',
+      },
+      {
+        titulo: 'NR-20 — Segurança e saúde no trabalho com inflamáveis e combustíveis, Anexo IV (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-20-atualizada-2025.pdf',
+      },
+      {
+        titulo: 'NR-35 — Trabalho em altura (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-35.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/para-seu-trabalho/logistica-e-estoque/',
+      rotulo: 'Ver EPI para logística',
+    },
+    contexto: 'profissao-logistica',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Preciso de EPI para motoristas de caminhão e queria ajuda para montar o conjunto pela carga que eles fazem.',
+    ctaTitulo: 'Seus motoristas também carregam e descarregam?',
+    ctaTexto:
+      'Conte o tipo de carga e quem faz a descarga. A gente monta o conjunto de cada motorista, com o CA de cada item e a numeração de cada um.',
+    perguntas: [
+      {
+        pergunta: 'Qual é a NR para motorista de caminhão?',
+        resposta:
+          'Não há uma NR só para motorista. A NR-6 obriga o empregador a fornecer EPI adequado ao risco; a NR-11 trata da carga e descarga; a NR-35, do trabalho em altura, como em cima da carroceria; e a NR-20, da descarga de combustível em posto.',
+      },
+      {
+        pergunta: 'Motorista de caminhão é obrigado a usar EPI?',
+        resposta:
+          'Quando a atividade tem risco, como na carga e descarga, sim: a empresa fornece o EPI adequado e exige o uso, e o empregado é obrigado a usar o que recebeu. Dirigindo, o risco se trata com outras medidas, não com EPI.',
+      },
+      {
+        pergunta: 'Qual bota usar para motorista de caminhão?',
+        resposta:
+          'Para quem participa da carga e descarga, calçado de segurança com biqueira contra impacto e solado que segure em rampa e piso molhado. Para quem só dirige e confere nota, o calçado sai da avaliação de riscos e pode ser ocupacional.',
+      },
+      {
+        pergunta: 'Colete refletivo precisa de CA?',
+        resposta:
+          'Não pela NR-6, porque o colete refletivo não está na lista de EPI do Anexo I. Ele entra como item de sinalização, pela avaliação de riscos de quem desce no pátio, no acostamento ou à noite.',
       },
     ],
   },

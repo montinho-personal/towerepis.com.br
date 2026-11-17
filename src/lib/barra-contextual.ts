@@ -423,6 +423,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Que produtos a sua estamparia usa?',
     rotulo: 'Escolher o filtro',
   },
+  'ncm-dos-epi-luva-capacete-oculos-e-respirador': {
+    chamada: 'Precisa da NCM e do CA de cada item?',
+    rotulo: 'Pedir orçamento com CA',
+  },
+  'epi-para-motorista-de-caminhao': {
+    chamada: 'Seus motoristas também carregam e descarregam?',
+    rotulo: 'Montar o conjunto',
+  },
   'epi-para-mecanico-de-oficina': {
     chamada: 'Que serviços a sua oficina faz?',
     rotulo: 'Montar a lista da oficina',
