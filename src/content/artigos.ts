@@ -4791,8 +4791,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Como escolher o filtro do respirador a partir do contaminante, da forma dele no ar e da rotina da equipe — e por que cheiro não serve como critério de troca.',
     publicado: '2026-09-09',
-    atualizado: '2026-09-09',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-11-17',
+    atualizadoExibicao: 'novembro de 2026',
     cluster: 'Proteção',
     blocos: [
       {
@@ -4856,6 +4856,29 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
+        texto: 'Classes P1, P2 e P3, e as famílias do filtro químico',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para partícula, o Anexo I da NR-6 separa três classes de filtro, com eficiência crescente: P1 contra poeiras e névoas; P2 contra poeiras, névoas e fumos; P3 contra poeiras, névoas, fumos e radionuclídeos (item D.1, alínea d). São as mesmas três faixas das máscaras descartáveis PFF1, PFF2 e PFF3 (alíneas a a c), explicadas em <a href="/conhecimento/mascara-descartavel-nao-protege-de-vapor-quimico/">máscara descartável não protege de vapor químico</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para gás e vapor, a norma prevê filtros químicos e filtros combinados, para gases e vapores e material particulado ao mesmo tempo (item D.1, alínea e). Dentro do químico, cada cartucho é feito para uma família de produto, como vapores orgânicos, gases ácidos ou amônia, e a família vem na embalagem e no CA do modelo. É por isso que o nome do produto, e a ficha de segurança dele, decidem a compra.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Semifacial ou facial inteira',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O filtro vai encaixado numa peça facial, que também tem CA próprio. A NR-6 prevê peça um quarto facial, semifacial, que cobre nariz e boca, e facial inteira, que cobre também os olhos (item D.1, alíneas d e e). A facial inteira entra quando o produto também agride os olhos ou quando a avaliação de riscos pede mais proteção; para solda, o conjunto completo está em <a href="/conhecimento/epi-para-soldador-o-que-muda/">EPI para soldador</a>.',
+      },
+      {
+        tipo: 'h2',
         texto: 'Cheiro não é critério de troca',
       },
       {
@@ -4866,7 +4889,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'O primeiro é que sentir o cheiro significa que o produto já passou pelo filtro e chegou ao nariz. A proteção já falhou quando o aviso chega. O segundo é que nem todo produto tem cheiro perceptível na concentração em que já faz mal — há substância que não avisa nada antes de causar dano.',
+          'É comum ver, inclusive em resumos automáticos de busca, a orientação de trocar o filtro quando sentir cheiro ou gosto do produto. O primeiro problema é que sentir o cheiro significa que o produto já passou pelo filtro e chegou ao nariz. A proteção já falhou quando o aviso chega. O segundo é que nem todo produto tem cheiro perceptível na concentração em que já faz mal — há substância que não avisa nada antes de causar dano.',
       },
       {
         tipo: 'p',
@@ -4934,6 +4957,16 @@ export const ARTIGOS: Artigo[] = [
     ctaTexto:
       'Mande o nome do produto e a ficha de segurança, se tiver. A gente diz qual classe de filtro atende, e o que ainda falta medir antes de fechar.',
     perguntas: [
+      {
+        pergunta: 'Quando trocar o filtro do respirador?',
+        resposta:
+          'Pela rotina definida com o dado de vida útil do fabricante para aquela condição de uso, e não pelo cheiro. Sentir o cheiro do produto já é sinal de que a proteção falhou, e há substâncias que fazem mal antes de ter cheiro perceptível. O filtro para partícula também se troca quando a respiração fica difícil ou ele está danificado.',
+      },
+      {
+        pergunta: 'Qual a diferença entre máscara e respirador?',
+        resposta:
+          'No EPI, a máscara descartável PFF já é um respirador: a NR-6 a chama de peça semifacial filtrante. O respirador com filtro troca só o cartucho e aceita filtro químico. Máscara de pano e máscara cirúrgica não estão entre os EPI de proteção respiratória do Anexo I da NR-6.',
+      },
       {
         pergunta: 'Dá para usar o mesmo cartucho por vários dias?',
         resposta:
