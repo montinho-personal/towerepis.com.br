@@ -12,8 +12,8 @@ CA do EPI e NCM da botina (outubro e novembro de 2026).
 | 1 | `respirador-como-escolher-o-filtro` | 2026-09-09 | 2026-11-17 (b5ce2b4) |
 | 2 | `tipos-de-luva-qual-material-escolher` | 2026-09-09 | 2026-11-18 (6178934) |
 | 3 | `epi-para-frigorifico-e-camara-fria` | 2026-09-11 | 2026-11-18 (6178934) |
-| 4 | `funcionario-recusa-usar-epi-o-que-fazer` | 2026-09-11 | |
-| 5 | `calcado-para-quem-trabalha-em-pe-o-dia-todo` | 2026-09-12 | |
+| 4 | `funcionario-recusa-usar-epi-o-que-fazer` | 2026-09-11 | 2026-11-18 (9138892) |
+| 5 | `calcado-para-quem-trabalha-em-pe-o-dia-todo` | 2026-09-12 | 2026-11-18 (9138892) |
 | 6 | `epi-para-soldador-o-que-muda` | 2026-09-12 | |
 | 7 | `epi-na-regiao-metropolitana-de-fortaleza` | 2026-09-20 | |
 | 8 | `epi-para-aplicacao-de-defensivo-agricola` | 2026-09-20 | |
