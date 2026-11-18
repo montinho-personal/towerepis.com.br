@@ -14,8 +14,8 @@ CA do EPI e NCM da botina (outubro e novembro de 2026).
 | 3 | `epi-para-frigorifico-e-camara-fria` | 2026-09-11 | 2026-11-18 (6178934) |
 | 4 | `funcionario-recusa-usar-epi-o-que-fazer` | 2026-09-11 | 2026-11-18 (9138892) |
 | 5 | `calcado-para-quem-trabalha-em-pe-o-dia-todo` | 2026-09-12 | 2026-11-18 (9138892) |
-| 6 | `epi-para-soldador-o-que-muda` | 2026-09-12 | |
-| 7 | `epi-na-regiao-metropolitana-de-fortaleza` | 2026-09-20 | |
+| 6 | `epi-para-soldador-o-que-muda` | 2026-09-12 | 2026-11-18 (d03c6f5) |
+| 7 | `epi-na-regiao-metropolitana-de-fortaleza` | 2026-09-20 | 2026-11-18 (d03c6f5) |
 | 8 | `epi-para-aplicacao-de-defensivo-agricola` | 2026-09-20 | |
 | 9 | `epi-para-fabrica-de-calcado` | 2026-09-20 | |
 | 10 | `epi-para-hotelaria-o-que-muda` | 2026-09-20 | |
