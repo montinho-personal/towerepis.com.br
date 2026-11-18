@@ -16,8 +16,8 @@ CA do EPI e NCM da botina (outubro e novembro de 2026).
 | 5 | `calcado-para-quem-trabalha-em-pe-o-dia-todo` | 2026-09-12 | 2026-11-18 (9138892) |
 | 6 | `epi-para-soldador-o-que-muda` | 2026-09-12 | 2026-11-18 (d03c6f5) |
 | 7 | `epi-na-regiao-metropolitana-de-fortaleza` | 2026-09-20 | 2026-11-18 (d03c6f5) |
-| 8 | `epi-para-aplicacao-de-defensivo-agricola` | 2026-09-20 | |
-| 9 | `epi-para-fabrica-de-calcado` | 2026-09-20 | |
+| 8 | `epi-para-aplicacao-de-defensivo-agricola` | 2026-09-20 | 2026-11-18 (f4b2bdb) |
+| 9 | `epi-para-fabrica-de-calcado` | 2026-09-20 | 2026-11-18 (sem mudança) |
 | 10 | `epi-para-hotelaria-o-que-muda` | 2026-09-20 | |
 | 11 | `epi-para-industria-textil` | 2026-09-20 | |
 | 12 | `epi-para-mecanico-de-oficina` | 2026-09-20 | |
