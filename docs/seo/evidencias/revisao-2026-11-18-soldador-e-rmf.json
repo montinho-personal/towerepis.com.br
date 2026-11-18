@@ -1,0 +1,141 @@
+{
+ "data": "2026-11-18",
+ "epi-para-soldador-o-que-muda": {
+  "busca": "epi para soldador",
+  "autocompletar_de": "epi soldador",
+  "autocompletar": [
+   "epi soldador completo",
+   "epi soldador mecanico",
+   "epi soldador deve usar",
+   "kit epi soldador",
+   "epi para soldador industrial",
+   "epi para soldador com ca",
+   "oculos epi soldador",
+   "epi para soldador tig",
+   "epi para soldador mig",
+   "balaclava epi soldador",
+   "bota epi soldador",
+   "roupa epi soldador",
+   "luva epi soldador",
+   "epi touca soldador",
+   "epi que soldador usa"
+  ],
+  "pessoas_tambem_perguntam": [
+   "Quais são os EPIs para soldador?",
+   "A NR 18 fala sobre solda?",
+   "Quais EPIs para serralheiro?",
+   "Para que se usa EPI?"
+  ],
+  "organicos": [
+   {
+    "pos": 1,
+    "fonte": "Mercado Livre",
+    "titulo": "https://www.mercadolivre.com.br/culos-de-seguranca..."
+   },
+   {
+    "pos": 2,
+    "fonte": "Benetherm",
+    "titulo": "EPIs para soldagem e fundição: Produtos da Benetherm em ambientes de alta temperatura"
+   },
+   {
+    "pos": 3,
+    "fonte": "VETSECURITE.com",
+    "titulo": "Cómo elegir y usar los EPI para soldadores profesionales o principiantes"
+   },
+   {
+    "pos": 4,
+    "fonte": "Comese",
+    "titulo": "Proteção para Solda - EPIs e Ferramentas"
+   },
+   {
+    "pos": 5,
+    "fonte": "LinkedIn",
+    "titulo": "Garantindo a Segurança dos Soldadores: A Importância dos Equipamentos de Proteção Individual (EPIs)"
+   },
+   {
+    "pos": 6,
+    "fonte": "Central Soldas",
+    "titulo": "EPIs - EPI's"
+   }
+  ],
+  "mapa": [],
+  "visao_de_ia": [
+   "Os EPIs (Equipamentos de Proteção Individual) para soldadores protegem contra radiação ultravioleta/infravermelha, respingos incandescentes, calor intenso, fumo",
+   "Principais EPIs para Soldador",
+   "Máscara de solda: Protege os olhos e o rosto contra a forte luminosidade e radiações do arco elétrico (pode ser convencional ou de escurecimento automático).",
+   "Luvas de segurança: Variam conforme o tipo de solda (luvas de vaqueta para TIG, ou raspa de couro para MIG/Eletrodo Revestido).",
+   "Óculos de proteção: Guardam os olhos contra pequenas fagulhas, cavacos ou durante o lixamento/corte.",
+   "Avental de raspa: Protege o tronco e a parte frontal do corpo contra calor e respingos.",
+   "Mangote e perneira de raspa: Protegem os braços e as pernas de queimaduras.",
+   "Blusão ou casaco de raspa: Alternativa mais completa ao avental para maior cobertura do tronco e membros superiores.",
+   "Calçado de segurança (botina de couro): Protege os pés contra queda de materiais e respingos (idealmente sem cadarço ou com polainas/perneiras).",
+   "Respirador (PFF2 ou PFF3): Essencial para filtrar os fumos metálicos e gases tóxicos gerados no processo.",
+   "Protetor auricular: Atenua o ruído de máquinas, esmeris e do próprio arco de soldagem.",
+   "Touca de soldador: Protege o couro cabeludo e a nuca de pequenas fagulhas e radiação.",
+   "Nota importante: Todo EPI comercializado no Brasil deve possuir um CA (Certificado de Aprovação) válido emitido pelo Ministério do Trabalho. Você pode encontrar",
+   "Para ajudar a direcionar melhor, me diga:"
+  ],
+  "tower_entre_os_8": false
+ },
+ "epi-na-regiao-metropolitana-de-fortaleza": {
+  "busca": "epi maracanaú",
+  "autocompletar_de": "epi caucaia",
+  "autocompletar": [
+   "foco epi caucaia",
+   "loja epi caucaia",
+   "epi ceara",
+   "epi caieiras",
+   "epi cai"
+  ],
+  "pessoas_tambem_perguntam": [],
+  "organicos": [
+   {
+    "pos": 1,
+    "fonte": "maracanau.net.br",
+    "titulo": "Ibel Indústria De Borracha Eva em Maracanau - CE - Guia Maracanaú"
+   },
+   {
+    "pos": 2,
+    "fonte": "maracanau.net.br",
+    "titulo": "Cagece Eee Industrial Unmte em Maracanau - CE"
+   },
+   {
+    "pos": 3,
+    "fonte": "MyLinQ",
+    "titulo": "Ilpea do Brasil - Unid. Maracanaú - CE: Fabrica de Forro de PVC em MARACANAU CE - Avenida Parque Sul, 2252 C"
+   },
+   {
+    "pos": 4,
+    "fonte": "Solutudo",
+    "titulo": "Comércio de Artefatos e Peças de Borracha em Maracanaú, CE"
+   },
+   {
+    "pos": 5,
+    "fonte": "OLX",
+    "titulo": "Uniformes de Trabalho e EPIs - Chaval - Ceará"
+   },
+   {
+    "pos": 6,
+    "fonte": "Solutudo",
+    "titulo": "Ibel Industria De Borracha Eva Ltda em Maracanaú, CE | Comércio de Artefatos e Peças ..."
+   },
+   {
+    "pos": 7,
+    "fonte": "encontrace.com.br",
+    "titulo": "Equipamentos para Lojas em Maracanaú - Guia Ceará"
+   },
+   {
+    "pos": 8,
+    "fonte": "Econodata",
+    "titulo": "Lista de Empresas de Seguranca em Maracanaú, CE em 2026"
+   }
+  ],
+  "mapa": [
+   "Apiguana Maracanaú",
+   "Fortifix Comercial",
+   "Equipas EPI's"
+  ],
+  "visao_de_ia": [],
+  "tower_entre_os_8": false
+ }
+}

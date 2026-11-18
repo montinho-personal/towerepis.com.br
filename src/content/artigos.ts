@@ -6005,8 +6005,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Radiação, respingo e fumo de solda exigem proteções diferentes ao mesmo tempo. O que muda na escolha, o que a roupa não pode ser e quem mais fica exposto.',
     publicado: '2026-09-12',
-    atualizado: '2026-09-12',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-11-18',
+    atualizadoExibicao: 'novembro de 2026',
     cluster: 'Proteção',
     blocos: [
       {
@@ -6114,6 +6114,37 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
+        texto: 'O kit do soldador, item por item na NR-6',
+      },
+      {
+        tipo: 'tabela',
+        cabecalho: ['Item', 'Contra o quê', 'Onde está no Anexo I da NR-6'],
+        linhas: [
+          ['Máscara de solda', 'Partículas, radiação ultravioleta e infravermelha, luminosidade intensa', 'B.3'],
+          ['Capuz ou balaclava, por baixo da máscara', 'Calor no crânio e no pescoço', 'A.2, alínea a'],
+          ['Avental, blusão ou casaco de raspa', 'Calor no tronco', 'E.1, alínea a'],
+          ['Mangote', 'Calor no braço e no antebraço', 'F.3, alínea e'],
+          ['Luva de solda', 'Calor nas mãos', 'F.1, alínea d'],
+          ['Perneira', 'Calor na perna', 'G.3, alínea c'],
+          ['Respirador', 'Fumo metálico: PFF2 ou filtro P2 e P3 cobrem fumos; gás pede filtro químico', 'D.1'],
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O processo muda a ênfase. No TIG, com mais precisão e menos respingo, a luva costuma ser mais fina, para dar tato; no eletrodo revestido e no MIG/MAG, com mais respingo, ela costuma ser mais robusta. Cada item tem o próprio CA, e o conjunto precisa ser compatível: a balaclava cabe sob a máscara, e o respirador cabe junto com ela. A perneira de solda está explicada em <a href="/conhecimento/perneira-de-seguranca-quando-usar/">perneira de segurança</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Solda na obra: trabalho a quente',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na construção, a NR-18 trata soldagem, goivagem, esmerilhamento e corte como trabalho a quente (item 18.7.6.1) e exige análise de risco específica quando há material combustível ou inflamável por perto ou quando a área não foi isolada antes (item 18.7.6.2). O resto da obra está em <a href="/conhecimento/epi-na-construcao-civil-o-que-a-nr-18-exige/">EPI na construção civil</a>.',
+      },
+      {
+        tipo: 'h2',
         texto: 'O que verificar antes de comprar',
       },
       {
@@ -6135,6 +6166,10 @@ export const ARTIGOS: Artigo[] = [
       },
     ],
     fontes: [
+      {
+        titulo: 'NR-18 — Segurança e saúde no trabalho na indústria da construção, item 18.7.6 (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-18-atualizada-2025-1.pdf',
+      },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
         url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
@@ -6159,6 +6194,16 @@ export const ARTIGOS: Artigo[] = [
     ctaTexto:
       'Conte o processo de solda, o metal que vocês trabalham e se a área tem exaustão. Com isso dá para montar a lista certa, e dizer o que falta antes de comprar.',
     perguntas: [
+      {
+        pergunta: 'Quais são os EPIs para soldador?',
+        resposta:
+          'Máscara de solda, capuz ou balaclava, avental ou blusão de raspa, mangote, luva de solda, perneira, calçado de segurança e respirador para o fumo, cada um com o seu CA. Quem fica perto do arco também precisa de proteção de vista, e o biombo de solda protege todos.',
+      },
+      {
+        pergunta: 'A NR-18 fala sobre solda?',
+        resposta:
+          'Fala. Ela trata soldagem, corte e esmerilhamento como trabalho a quente (item 18.7.6.1) e exige análise de risco específica quando há material combustível ou inflamável por perto ou a área não foi isolada (item 18.7.6.2).',
+      },
       {
         pergunta: 'Óculos escuro comum protege do arco de solda?',
         resposta:
@@ -6185,8 +6230,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'O que muda na escolha de EPI entre os municípios da Região Metropolitana de Fortaleza, e como montar o pedido de uma equipe espalhada sem errar em metade dela.',
     publicado: '2026-09-20',
-    atualizado: '2026-09-20',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-11-18',
+    atualizadoExibicao: 'novembro de 2026',
     cluster: 'Compra',
     blocos: [
       {
@@ -6315,6 +6360,11 @@ export const ARTIGOS: Artigo[] = [
     ctaTexto:
       'Conte quantas pessoas há em cada unidade e o que elas fazem. A gente separa o pedido por risco em vez de por endereço, e monta a grade junto.',
     perguntas: [
+      {
+        pergunta: 'A Tower tem loja em Caucaia ou Maracanaú?',
+        resposta:
+          'Não. A Tower é distribuidora e não tem loja: atende Fortaleza e a Região Metropolitana sem atendimento presencial. O pedido é feito pelo WhatsApp, e prazo e entrega são combinados no orçamento.',
+      },
       {
         pergunta: 'Dá para padronizar o EPI da empresa inteira?',
         resposta:
