@@ -5211,8 +5211,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Funcionário se recusa a usar EPI: as cinco causas mais comuns, o que fazer em cada uma, como registrar e o que a NR-6 cobra de cada lado.',
     publicado: '2026-09-11',
-    atualizado: '2026-09-11',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-11-18',
+    atualizadoExibicao: 'novembro de 2026',
     cluster: 'Normas',
     blocos: [
       {
@@ -5238,6 +5238,28 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'Ou seja: o uso não é opcional, e a adequação também não. As duas coisas estão no mesmo texto, e é por isso que a conversa sobre recusa começa checando se a empresa cumpriu a parte dela. O texto oficial e atualizado está no portal do Ministério do Trabalho e Emprego, e está linkado nas fontes ao final.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A CLT diz o mesmo com outras palavras: constitui ato faltoso do empregado a recusa injustificada ao uso dos equipamentos de proteção individual fornecidos pela empresa (art. 158, parágrafo único, alínea b). A palavra que pesa é "injustificada", e ela é o assunto da próxima seção.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quando a recusa tem razão',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>O EPI está danificado.</strong> A NR-6 manda a empresa substituir imediatamente o item danificado ou extraviado (item 6.5.1, alínea g), e o trabalhador comunicar quando ele fica impróprio para uso (item 6.6.1, alínea d).',
+          '<strong>O EPI não tem CA.</strong> A empresa só pode adquirir EPI aprovado (item 6.5.1, alínea a). Sem CA, a falta é de quem comprou, como explica <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">o que é o CA</a>.',
+          '<strong>O EPI não é adequado ao risco ou não serve na pessoa.</strong> O fornecimento é de EPI adequado ao risco (item 6.5.1, alínea c), e a seleção considera a adequação ao empregado e o conforto (item 6.5.2, alínea f).',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Nesses três casos, insistir no uso não resolve: a empresa corrige o item primeiro. E o EPI é sempre gratuito, como explica <a href="/conhecimento/empresa-pode-descontar-epi-do-salario/">se a empresa pode descontar EPI do salário</a>.',
       },
       {
         tipo: 'h2',
@@ -5317,6 +5339,10 @@ export const ARTIGOS: Artigo[] = [
     ],
     fontes: [
       {
+        titulo: 'Consolidação das Leis do Trabalho, art. 158 (Planalto)',
+        url: 'https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm',
+      },
+      {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
         url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
       },
@@ -5336,6 +5362,16 @@ export const ARTIGOS: Artigo[] = [
     ctaTexto:
       'Conte qual é o item e o que as pessoas reclamam dele. Na maior parte das vezes dá para identificar se o caso é de numeração, de modelo ou de categoria errada.',
     perguntas: [
+      {
+        pergunta: 'Recusar o uso do EPI pode dar justa causa?',
+        resposta:
+          'A CLT trata a recusa injustificada ao uso do EPI fornecido como ato faltoso (art. 158, parágrafo único). Que medida cabe em cada caso, e em que ordem, é decisão da empresa com a assessoria jurídica dela, depois de conferir que o EPI era adequado, tinha CA e servia na pessoa.',
+      },
+      {
+        pergunta: 'O funcionário pode recusar um EPI danificado ou sem CA?',
+        resposta:
+          'Nesses casos a falta é da empresa: a NR-6 manda adquirir só EPI aprovado e substituir imediatamente o danificado (item 6.5.1, alíneas a e g). O trabalhador comunica o problema, e a empresa troca o item antes de cobrar o uso.',
+      },
       {
         pergunta: 'A empresa pode obrigar o uso do EPI?',
         resposta:
@@ -5779,8 +5815,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'O que decide o conforto de quem passa o turno em pé: peso do par, amortecimento e numeração, nessa ordem. E o que ajuda sem ser o calçado.',
     publicado: '2026-09-12',
-    atualizado: '2026-09-12',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-11-18',
+    atualizadoExibicao: 'novembro de 2026',
     cluster: 'Calçados',
     blocos: [
       {
@@ -5833,7 +5869,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Isso explica uma reclamação comum: "a botina endureceu". Na maior parte das vezes o calçado está igual e a palmilha é que acabou. Trocar a palmilha é a manutenção mais barata que existe aqui, e ela aparece na rotina de <a href="/conhecimento/como-limpar-e-conservar-calcado-de-seguranca/">conservação do par</a>.',
+          'Isso explica uma reclamação comum: "a botina endureceu". Na maior parte das vezes o calçado está igual e a palmilha é que acabou. Trocar a palmilha é a manutenção mais barata que existe aqui, e ela aparece na rotina de <a href="/conhecimento/como-limpar-e-conservar-calcado-de-seguranca/">conservação do par</a>. Quem precisa de palmilha ortopédica, por indicação de profissional de saúde, encontra as regras em <a href="/conhecimento/palmilha-em-botina-de-seguranca-e-botina-ortopedica/">palmilha e botina ortopédica</a>.',
       },
       {
         tipo: 'h2',
@@ -5878,7 +5914,7 @@ export const ARTIGOS: Artigo[] = [
           '<strong>O piso.</strong> Concreto nu castiga mais que qualquer outro. Onde o posto é fixo, tapete de alívio muda mais do que trocar de modelo.',
           '<strong>A meia.</strong> Gerencia umidade e atrito, e atrito é a origem de bolha e de calo.',
           '<strong>Dois pares em rodízio.</strong> Par seco por dentro cansa menos, e ainda dura mais.',
-          '<strong>Alternar postura.</strong> Poder sentar alguns minutos, ou apoiar um pé, muda o acúmulo do dia. Isso é organização do trabalho, não compra.',
+          '<strong>Alternar postura.</strong> Poder sentar alguns minutos, ou apoiar um pé, muda o acúmulo do dia. Isso é organização do trabalho, não compra, e a NR-17 manda que, nas atividades feitas em pé, haja assentos com encosto para descanso durante as pausas (item 17.6.7).',
         ],
       },
       {
@@ -5894,6 +5930,7 @@ export const ARTIGOS: Artigo[] = [
           'O peso do par, comparado ao que a equipe usa hoje.',
           'Se a palmilha é removível e se há reposição dela.',
           'A numeração provada no fim do expediente, e a largura da forma.',
+          'Se há mulheres na equipe, com a forma e a numeração que o modelo oferece para elas, assunto de <a href="/conhecimento/calcado-de-seguranca-feminino-o-que-muda/">calçado de segurança feminino</a>.',
         ],
       },
       {
@@ -5908,6 +5945,10 @@ export const ARTIGOS: Artigo[] = [
       },
     ],
     fontes: [
+      {
+        titulo: 'NR-17 — Ergonomia, item 17.6.7 (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-17-atualizada-2022.pdf',
+      },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
         url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
@@ -5928,6 +5969,16 @@ export const ARTIGOS: Artigo[] = [
     ctaTexto:
       'Conte quantas horas são em pé, como é o piso e se existe risco de impacto no pé. Dá para dizer se o caso é de categoria, de peso do par ou de numeração.',
     perguntas: [
+      {
+        pergunta: 'Qual o sapato mais confortável para quem trabalha em pé?',
+        resposta:
+          'O que tem o peso mais baixo que o risco permite, amortecimento com estabilidade e a numeração e a largura certas, provadas no fim do expediente. Onde não há risco de impacto sobre o pé, o calçado ocupacional costuma cansar menos que a botina com biqueira.',
+      },
+      {
+        pergunta: 'Quem tem fascite plantar pode usar calçado de segurança?',
+        resposta:
+          'Pode, com o calçado certo e, quando houver indicação, palmilha prescrita por profissional de saúde. A troca de palmilha num calçado com CA tem regras, explicadas no artigo de palmilha e botina ortopédica. Dor que persiste é assunto de avaliação de saúde.',
+      },
       {
         pergunta: 'Calçado mais macio é sempre melhor para ficar em pé?',
         resposta:
