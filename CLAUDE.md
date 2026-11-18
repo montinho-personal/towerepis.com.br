@@ -153,7 +153,7 @@ espera renovar. Não repetir busca que já está em `docs/seo/evidencias/`.
    falso, nunca palavra-chave no nome.
 
 **Rotinas agendadas:** mensal no dia 16, às 14h42 de Brasília (mapa local,
-visão de IA das 5 buscas principais, ideias de pauta); diária, um artigo por
-dia da fila em `docs/seo/fila-revisao.md`. As 5 buscas principais: "epi
+visão de IA das 5 buscas principais, ideias de pauta); diária, dois artigos
+por dia da fila em `docs/seo/fila-revisao.md`. As 5 buscas principais: "epi
 fortaleza", "loja de epi fortaleza", "botina de segurança fortaleza",
 "fornecedor de epi fortaleza", "calçado de segurança fortaleza".

@@ -4622,8 +4622,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Nitrílica, látex, vinílica e neoprene comparadas por resistência, tato e modo de falha — e por que a escolha final depende do produto manuseado e do CA da luva.',
     publicado: '2026-09-09',
-    atualizado: '2026-09-09',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-11-18',
+    atualizadoExibicao: 'novembro de 2026',
     cluster: 'Proteção',
     blocos: [
       {
@@ -4640,6 +4640,20 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'O que segue é a comparação honesta dos quatro materiais que aparecem em quase todo pedido, com o modo de falha de cada um. Depois dela, o que a comparação não alcança.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Os tipos de luva de segurança pela NR-6',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A norma separa a luva pelo risco, e não pelo material. O Anexo I da NR-6 lista nove tipos (item F.1): contra agentes abrasivos e escoriantes; cortantes e perfurantes; choques elétricos; agentes térmicos, que incluem calor e frio; agentes biológicos; agentes químicos; vibrações; umidade de operações com água; e radiação ionizante. O CA de cada modelo diz contra qual desses riscos ele foi ensaiado, e é por ele que se compra.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na prática, os nomes do comércio se encaixam nesses tipos. A luva de couro, de vaqueta ou de raspa, costuma ser a de abrasão e trabalho pesado. A tricotada, de malha, serve para manuseio leve, e a pigmentada é a tricotada com pontos de borracha ou plástico na palma para dar aderência. A anticorte é a do item cortantes e perfurantes, e a de eletricista é a isolante, explicada em <a href="/conhecimento/epi-para-eletricista-o-que-muda/">EPI para eletricista</a>. Abaixo, a comparação das luvas de borracha e plástico, que é onde a escolha do material mais pesa.',
       },
       {
         tipo: 'h2',
@@ -4765,6 +4779,16 @@ export const ARTIGOS: Artigo[] = [
     ctaTexto:
       'Conte o que a equipe manuseia e por quanto tempo a mão fica em contato. A gente responde qual material atende e o que ainda falta confirmar antes de fechar a caixa.',
     perguntas: [
+      {
+        pergunta: 'Para que servem as luvas de segurança?',
+        resposta:
+          'Para proteger as mãos de um risco do trabalho. A NR-6 lista nove: abrasão, corte e perfuração, choque elétrico, calor e frio, agentes biológicos, produtos químicos, vibração, umidade e radiação ionizante. Cada modelo é aprovado para um ou mais deles, e o CA diz quais.',
+      },
+      {
+        pergunta: 'Luva tricotada e luva pigmentada: qual a diferença?',
+        resposta:
+          'A pigmentada é uma luva tricotada, de malha, com pontos de borracha ou plástico na palma para melhorar a pegada. As duas são para manuseio leve; nenhuma substitui a anticorte nem a química quando esses riscos existem.',
+      },
       {
         pergunta: 'Luva mais grossa protege mais?',
         resposta:
@@ -5535,8 +5559,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'O que muda na escolha de EPI para frigorífico e câmara fria: mão dormente, luva em camadas, piso molhado e o que costuma faltar no pedido.',
     publicado: '2026-09-11',
-    atualizado: '2026-09-11',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-11-18',
+    atualizadoExibicao: 'novembro de 2026',
     cluster: 'Proteção',
     blocos: [
       {
@@ -5634,6 +5658,29 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
+        texto: 'O que a NR-6 tem contra o frio',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'No Anexo I da NR-6, a proteção contra o frio aparece como proteção contra agentes térmicos: capuz para crânio e pescoço (item A.2, alínea a), vestimenta para o tronco, que é a jaqueta ou japona térmica (item E.1, alínea a), luva (item F.1, alínea d), calça (item G.4, alínea d) e macacão (item H.1, alínea a). A meia tem item próprio, contra baixas temperaturas (item G.2). Qualquer uma dessas peças só é EPI com o CA declarando essa proteção.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Qual NR vale na câmara fria',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Em abate e processamento de carnes, vale a NR-36. Ela manda que a câmara fria tenha porta que abra por dentro sem muito esforço e alarme que possa ser acionado do interior (item 36.2.10.1), que a câmara a -18 °C ou menos indique o tempo máximo de permanência (item 36.2.10.1.1), que o EPI e a vestimenta sejam compatíveis com a temperatura do local (item 36.9.5.1.1, alínea d) e que os EPI usados juntos, como capacete com óculos ou protetor auditivo, sejam compatíveis entre si (item 36.10.1.1).',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Fora da indústria de carnes, como na câmara fria de distribuidora ou de supermercado, valem a NR-6 e a avaliação de riscos da empresa. E a NR-15 considera insalubre, por laudo de inspeção, o trabalho no interior de câmara frigorífica sem a proteção adequada (Anexo 9). O que o EPI muda nisso está em <a href="/conhecimento/epi-elimina-insalubridade/">EPI elimina insalubridade?</a>',
+      },
+      {
+        tipo: 'h2',
         texto: 'Uma coisa que EPI não resolve',
       },
       {
@@ -5665,6 +5712,14 @@ export const ARTIGOS: Artigo[] = [
     ],
     fontes: [
       {
+        titulo: 'NR-36 — Segurança e saúde no trabalho nas organizações de abate e processamento de carnes e derivados (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-36-atualizada-2024.pdf',
+      },
+      {
+        titulo: 'NR-15 — Atividades e operações insalubres, Anexo 9 (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-15-atualizada-2022.pdf',
+      },
+      {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
         url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
       },
@@ -5688,6 +5743,16 @@ export const ARTIGOS: Artigo[] = [
     ctaTexto:
       'Conte a temperatura da área, quem usa faca e quantas horas cada um passa lá dentro. Com isso dá para montar a lista por função, e não por catálogo.',
     perguntas: [
+      {
+        pergunta: 'Qual a NR para trabalho em câmara fria?',
+        resposta:
+          'Em abate e processamento de carnes, a NR-36, que tem regras para a própria câmara e para o EPI. Em qualquer setor, a NR-6 define os EPI contra o frio, e a NR-15 trata da insalubridade do trabalho em câmara frigorífica sem proteção adequada (Anexo 9).',
+      },
+      {
+        pergunta: 'Jaqueta térmica é EPI?',
+        resposta:
+          'É, quando tem CA como vestimenta de proteção do tronco contra agentes térmicos (NR-6, Anexo I, item E.1). Jaqueta comum de inverno, sem CA, aquece, mas não é EPI.',
+      },
       {
         pergunta: 'Luva térmica sozinha resolve em sala de corte?',
         resposta:
