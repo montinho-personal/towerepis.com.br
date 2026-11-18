@@ -6557,8 +6557,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Por que a bula do defensivo é quem especifica o EPI, o que muda entre preparo e aplicação, e o cuidado depois do trabalho que quase ninguém faz direito.',
     publicado: '2026-09-20',
-    atualizado: '2026-09-20',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-11-18',
+    atualizadoExibicao: 'novembro de 2026',
     cluster: 'Proteção',
     blocos: [
       {
@@ -6575,6 +6575,15 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'Também é a categoria em que o fornecedor mais deveria perguntar e menos pergunta. O que segue é o que a gente pergunta antes de montar qualquer pedido de agro.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Qual NR vale na aplicação de agrotóxico',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'No campo, vale a NR-31, que tem uma seção só para agrotóxicos (item 31.7). Ela manda o empregador fornecer EPI e vestimenta adequados ao risco, que privilegiem o conforto térmico, entregues em condições de uso e higienizados (item 31.7.6, alíneas a e b), e torna obrigatório o banho depois do preparo e da aplicação (item 31.7.6.1). Também proíbe aplicar com roupa pessoal e proíbe a manipulação por menores de 18 anos, maiores de 60 e gestantes ou lactantes (item 31.7.3, alíneas b e g).',
       },
       {
         tipo: 'h2',
@@ -6665,7 +6674,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'lista',
         itens: [
-          '<strong>A vestimenta se lava separada.</strong> Nunca junto com a roupa da casa e nunca com a roupa das crianças.',
+          '<strong>A vestimenta não vai para casa.</strong> No campo, a NR-31 põe a descontaminação do EPI e da vestimenta ao fim de cada jornada como responsabilidade do empregador, e proíbe que o equipamento contaminado saia do ambiente de trabalho, salvo para empresa especializada em descontaminação (item 31.7.6, alíneas c e f).',
           '<strong>Tira-se de fora para dentro</strong>, sem encostar o lado externo na pele, e as luvas saem por último, ainda calçadas, depois de lavadas por fora.',
           '<strong>O EPI não guarda junto com o produto.</strong> Armário de defensivo contamina o que está dentro dele.',
           '<strong>Filtro saturado e embalagem seguem destino próprio</strong>, e não o lixo comum.',
@@ -6718,6 +6727,10 @@ export const ARTIGOS: Artigo[] = [
     ],
     fontes: [
       {
+        titulo: 'NR-31 — Segurança e saúde no trabalho na agricultura, pecuária, silvicultura, exploração florestal e aquicultura, item 31.7 (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-31-atualizada-2024.pdf',
+      },
+      {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
         url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
       },
@@ -6742,6 +6755,11 @@ export const ARTIGOS: Artigo[] = [
       'Mande o nome dos produtos que a operação usa. A gente monta a lista a partir do que a bula exige, separando quem prepara a calda de quem aplica.',
     perguntas: [
       {
+        pergunta: 'Qual a NR para aplicação de agrotóxicos?',
+        resposta:
+          'A NR-31, que trata do trabalho rural e tem uma seção só para agrotóxicos (item 31.7). Ela define o que o empregador fornece, a descontaminação do EPI ao fim da jornada, o banho obrigatório e quem não pode manipular o produto. A NR-6 define o que é EPI e o CA.',
+      },
+      {
         pergunta: 'Posso usar o mesmo EPI para todos os defensivos?',
         resposta:
           'Nem sempre. A vestimenta e o calçado costumam servir para vários produtos, mas a luva e o filtro do respirador dependem do que está sendo manuseado. Mudou o produto, vale reconferir esses dois na bula antes de assumir que a lista continua valendo.',
@@ -6749,7 +6767,7 @@ export const ARTIGOS: Artigo[] = [
       {
         pergunta: 'Dá para lavar o macacão em casa?',
         resposta:
-          'Lavar separado, sim; lavar junto com a roupa da família, nunca. O resíduo passa de uma peça para outra na mesma água, e quem acaba exposto é quem nem entrou na lavoura. Vale ainda seguir a orientação da bula, porque parte das vestimentas tem instrução própria de lavagem.',
+          'Não. No trabalho rural, a NR-31 manda o empregador descontaminar a vestimenta e o EPI ao fim de cada jornada e proíbe que o equipamento contaminado seja levado para fora do ambiente de trabalho, salvo para empresa especializada (item 31.7.6). Levar para casa expõe quem nem entrou na lavoura.',
       },
       {
         pergunta: 'Máscara PFF2 serve para aplicar defensivo?',

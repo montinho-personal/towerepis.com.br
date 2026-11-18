@@ -1,0 +1,147 @@
+{
+ "data": "2026-11-18",
+ "epi-para-aplicacao-de-defensivo-agricola": {
+  "busca": "epi para aplicação de agrotóxico",
+  "autocompletar_de": "epi para aplicação de defensivo",
+  "autocompletar": [
+   "epi para aplicação de defensivos agrícolas",
+   "epi para aplicação de defensivos",
+   "epi para defensivos agricolas",
+   "epi para defensivo"
+  ],
+  "pessoas_tambem_perguntam": [
+   "Quais os EPIs para aplicação de agrotóxicos?",
+   "Quais EPIs são necessários para aplicação de herbicida?",
+   "Qual o NR para aplicação de agrotóxicos?",
+   "Quais são os EPIs específicos para trabalho com produtos químicos?"
+  ],
+  "outras_pesquisas": [
+   "Kit epi para aplicação de agrotóxicos",
+   "Kit epi para pulverização completo",
+   "Mascara para aplicação de agrotóxicos",
+   "Mascara de pulverização",
+   "Macacão para pulverização"
+  ],
+  "organicos": [
+   {
+    "pos": 1,
+    "fonte": "Mercado Livre",
+    "titulo": "Epi Para Poverizacao De Agrotoxico Completo"
+   },
+   {
+    "pos": 2,
+    "fonte": "Irrigafort - Produtos Agrícolas",
+    "titulo": "Conjunto EPI Aplicação de Defensivos 40 Lavadas - GG"
+   },
+   {
+    "pos": 3,
+    "fonte": "AgriQ",
+    "titulo": "EPI para aplicação de agrotóxicos: como usar e qual a importância?"
+   },
+   {
+    "pos": 4,
+    "fonte": "InstaAgro",
+    "titulo": "EPI Agrícola e para Pulverização de Defensivos"
+   },
+   {
+    "pos": 5,
+    "fonte": "Segurança do Trabalho - UFV",
+    "titulo": "BOAS PRÁTICAS - NO USO DE EPIs"
+   },
+   {
+    "pos": 6,
+    "fonte": "Sindiveg",
+    "titulo": "MANUAL DE SEGURANÇA"
+   },
+   {
+    "pos": 7,
+    "fonte": "Shopee Brasil",
+    "titulo": "Conjunto Pulverização Agroquímico Roupa Aplicação De Agrotóxicos Epi Herbicida Defensivo"
+   }
+  ],
+  "visao_de_ia": [
+   "O uso de Equipamentos de Proteção Individual (EPIs) na aplicação de defensivos agrícolas é obrigatório por lei (regulamentado pela NR 31) e serve para evitar in",
+   "Principais EPIs necessários",
+   "Vestimenta hidro-repelente: Jaleco/camisa de mangas compridas e calça com tratamento especial (níveis 2 e 3).",
+   "Avental impermeável: Feito em PVC ou Bagum, para proteger o tronco e abdômen (obrigatório no preparo da calda e na aplicação costal).",
+   "Touca árabe (ou boné tipo árabe): Protege a cabeça, o pescoço e as orelhas contra respingos.",
+   "Viseira facial ou óculos de proteção: Evita o contato de produtos químicos com os olhos.",
+   "Respirador (máscara): Com filtro adequado (PFF2 ou cartucho químico para vapores e névoas) para evitar a inalação de partículas tóxicas.",
+   "Luvas de proteção: De borracha nitrílica, neoprene ou látex (resistentes a produtos químicos).",
+   "Botas impermeáveis: De cano longo (geralmente de PVC).",
+   "Ordem correta de vestimenta",
+   "Calça (com a barra por fora da bota)",
+   "Camisa/jaleco",
+   "Botas e meias de cano longo",
+   "Avental impermeável (na frente durante o preparo; nas costas para pulverização costal)"
+  ],
+  "tower_entre_os_8": false
+ },
+ "epi-para-fabrica-de-calcado": {
+  "busca": "epi para fábrica de calçados",
+  "autocompletar_de": "epi fabrica de calçados",
+  "autocompletar": [
+   "fabrica de calçados epi",
+   "epi calçados de segurança",
+   "epi fábrica",
+   "epi fabricas"
+  ],
+  "pessoas_tambem_perguntam": [
+   "O que a NR 32 fala sobre calçados?",
+   "Quais são os EPIs necessários no setor industrial?",
+   "Quem trabalha em fábrica de sapato é o quê?",
+   "O EPC substitui o EPI?"
+  ],
+  "outras_pesquisas": [
+   "Calçados de segurança epi",
+   "Fabricantes de calçados de segurança no brasil",
+   "Epi sapato feminino",
+   "Sapato de proteção epi feminino"
+  ],
+  "organicos": [
+   {
+    "pos": 1,
+    "fonte": "Mameluko",
+    "titulo": "Calçados de Segurança - Compre Calçados EPI aqui!"
+   },
+   {
+    "pos": 2,
+    "fonte": "Astro Distribuidora",
+    "titulo": "Calçados de Segurança: Botas, Botinas, Tênis e mais!"
+   },
+   {
+    "pos": 3,
+    "fonte": "Fire Segurança",
+    "titulo": "Fábrica de botas epi"
+   },
+   {
+    "pos": 4,
+    "fonte": "Calçados Para Trabalhar",
+    "titulo": "Equipamentos de Segurança para Indústria"
+   },
+   {
+    "pos": 5,
+    "fonte": "Safetline",
+    "titulo": "Calçados EPI: além de proteger o calçado poder ser confortável?"
+   },
+   {
+    "pos": 6,
+    "fonte": "Instituto de Pesquisas Tecnológicas",
+    "titulo": "Avaliação da conformidade de calçados e EPIs - Instituto de Pesquisas ..."
+   },
+   {
+    "pos": 7,
+    "fonte": "Prometal EPIs",
+    "titulo": "Calçado de Segurança: Como Escolher o Tipo Certo para Cada Ambiente"
+   },
+   {
+    "pos": 8,
+    "fonte": "Nova EPI",
+    "titulo": "Top 5 Melhores Calçados de Segurança para Indústrias em 2025 (Ranking Atualizado)"
+   }
+  ],
+  "visao_de_ia": [],
+  "tower_entre_os_8": false,
+  "decisao": "busca com intenção de comprar calçado de segurança ou achar fabricante; nada a acrescentar ao artigo"
+ }
+}
