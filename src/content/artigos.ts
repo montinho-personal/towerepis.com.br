@@ -6391,8 +6391,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Ruído contínuo, fibra no ar, corte e jornada em pé: o que muda na escolha de EPI entre fiação, tecelagem e confecção, e o que costuma faltar no pedido.',
     publicado: '2026-09-20',
-    atualizado: '2026-09-20',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-11-19',
+    atualizadoExibicao: 'novembro de 2026',
     cluster: 'Proteção',
     blocos: [
       {
@@ -6459,7 +6459,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Onde há corante, alvejante, ácido e calor, o EPI deixa de ser o da fábrica e passa a ser o de produto químico. A escolha vem da ficha de segurança de cada produto e da compatibilidade do modelo com ele, e o caminho está em <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">como escolher luva pelo produto químico</a>. A estamparia, com tinta, limpeza de tela e prensa térmica, tem o seu próprio conjunto, em <a href="/conhecimento/epi-para-serigrafia-e-estamparia/">EPI para serigrafia e estamparia</a>.',
+          'Onde há corante, alvejante, ácido e calor, o EPI deixa de ser o da fábrica e passa a ser o de produto químico. A escolha vem da ficha de segurança de cada produto e da compatibilidade do modelo com ele, e o caminho está em <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">como escolher luva pelo produto químico</a>. O conjunto da tinturaria costuma somar luva e vestimenta contra agentes químicos, que a NR-6 lista no Anexo I (itens F.1 f e E.1 c), e proteção dos olhos contra respingo quando a ficha do produto pede. A estamparia, com tinta, limpeza de tela e prensa térmica, tem o seu próprio conjunto, em <a href="/conhecimento/epi-para-serigrafia-e-estamparia/">EPI para serigrafia e estamparia</a>.',
       },
       {
         tipo: 'h2',
@@ -6531,6 +6531,11 @@ export const ARTIGOS: Artigo[] = [
     ctaTexto:
       'Conte quais setores existem e quantas pessoas em cada um. A gente separa a lista por área, porque fiação, corte e tinturaria não pedem a mesma coisa.',
     perguntas: [
+      {
+        pergunta: 'Quais EPIs são usados na indústria têxtil?',
+        resposta:
+          'Depende do setor da planta. Na fiação e na tecelagem, protetor auditivo e, onde há fibra no ar, peça filtrante para poeira; na sala de corte, luva contra corte; na tinturaria, luva, vestimenta e proteção dos olhos para produto químico; e calçado em todas as áreas, de segurança onde há risco de impacto e ocupacional onde não há. Quem fecha a lista é a avaliação de riscos da própria empresa.',
+      },
       {
         pergunta: 'Protetor auditivo descartável pode ser reutilizado?',
         resposta:
@@ -6956,8 +6961,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Cozinha, governança, lavanderia, manutenção e área de lazer pedem EPI diferente. O que muda em cada uma, e por que a alta temporada é um problema de EPI.',
     publicado: '2026-09-20',
-    atualizado: '2026-09-20',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-11-19',
+    atualizadoExibicao: 'novembro de 2026',
     cluster: 'Proteção',
     blocos: [
       {
@@ -6988,6 +6993,16 @@ export const ARTIGOS: Artigo[] = [
         tipo: 'p',
         texto:
           'Na maior parte das cozinhas de hotel não existe risco de queda de objeto pesado sobre o pé, o que torna o calçado ocupacional a categoria adequada — mais leve e mais confortável para a jornada. O critério completo está em <a href="/conhecimento/calcado-para-cozinha-como-escolher/">qual calçado para cozinha</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Além do piso, a cozinha tem calor e lâmina. Para forno, fritadeira e panela grande, a NR-6 prevê luva contra agentes térmicos e vestimenta de proteção do tronco contra agentes térmicos, que na cozinha costuma ser o avental (Anexo I, itens F.1 d e E.1 a). Para quem corta e desossa em volume, a luva é a de proteção contra agentes cortantes (F.1 b), e o material muda o resultado, como em <a href="/conhecimento/tipos-de-luva-qual-material-escolher/">qual material de luva escolher</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Touca e rede de cabelo fazem parte do uniforme da cozinha, mas por higiene do alimento: não estão na lista de EPI do Anexo I da NR-6, e por isso não entram na conta de CA.',
       },
       {
         tipo: 'h2',
@@ -7056,6 +7071,20 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
+        texto: 'O que a NR-6 cobra do hotel, em qualquer área',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Vale do mesmo jeito para a camareira, para o cozinheiro e para o extra da temporada. Pelo item 6.5.1 da NR-6, a empresa compra só EPI com <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">Certificado de Aprovação</a>, orienta e treina, fornece de graça o equipamento adequado ao risco, registra a entrega, exige o uso e substitui na hora o que danificar ou extraviar.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem foi contratado na véspera do réveillon entra nessa conta no primeiro dia de trabalho, e não quando a casa esvaziar.',
+      },
+      {
+        tipo: 'h2',
         texto: 'O que costuma faltar no pedido',
       },
       {
@@ -7110,6 +7139,11 @@ export const ARTIGOS: Artigo[] = [
     ctaTexto:
       'Conte quantas pessoas há em cada área e quais produtos a limpeza usa. A gente separa a lista por setor e ajuda a montar a grade antes de a temporada começar.',
     perguntas: [
+      {
+        pergunta: 'Quais EPIs a camareira de hotel usa?',
+        resposta:
+          'O conjunto básico é luva de limpeza compatível com os produtos da casa, que não é a luva de procedimento, e calçado fechado antiderrapante para o piso molhado e as horas em pé. Proteção dos olhos entra quando ela manuseia produto concentrado ou que respinga. Quem confirma a lista é a ficha de segurança de cada produto e a avaliação de riscos da casa.',
+      },
       {
         pergunta: 'A camareira precisa de biqueira no calçado?',
         resposta:
