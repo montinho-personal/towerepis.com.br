@@ -5713,7 +5713,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Fora da indústria de carnes, como na câmara fria de distribuidora ou de supermercado, valem a NR-6 e a avaliação de riscos da empresa. E a NR-15 considera insalubre, por laudo de inspeção, o trabalho no interior de câmara frigorífica sem a proteção adequada (Anexo 9). O que o EPI muda nisso está em <a href="/conhecimento/epi-elimina-insalubridade/">EPI elimina insalubridade?</a>',
+          'Fora da indústria de carnes, como na câmara fria de distribuidora ou de supermercado, valem a NR-6 e a avaliação de riscos da empresa. E a NR-15 considera insalubre, por laudo de inspeção, o trabalho no interior de câmara frigorífica sem a proteção adequada (Anexo 9). O que o EPI muda nisso está em <a href="/conhecimento/epi-elimina-insalubridade/">EPI elimina insalubridade?</a> O açougue de balcão, com faca e serra fita, tem guia próprio em <a href="/conhecimento/epi-para-acougue-e-acougueiro/">EPI para açougue</a>.',
       },
       {
         tipo: 'h2',
@@ -13008,7 +13008,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'No posto de combustível, a NR-20 trata a descarga como atividade crítica de exposição ao benzeno. Quem faz, direta ou indiretamente, a conferência do produto no caminhão-tanque, a coleta de amostras e a descarga deve usar respirador de face inteira com filtro para vapores orgânicos e proteção para a pele (Anexo IV, itens 5.1.1.1 e 12.1.1). Como escolher o filtro está em <a href="/conhecimento/respirador-como-escolher-o-filtro/">respirador: como escolher o filtro</a>, e a luva, em <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">luva para produto químico</a>.',
+          'No posto de combustível, a NR-20 trata a descarga como atividade crítica de exposição ao benzeno. Quem faz, direta ou indiretamente, a conferência do produto no caminhão-tanque, a coleta de amostras e a descarga deve usar respirador de face inteira com filtro para vapores orgânicos e proteção para a pele (Anexo IV, itens 5.1.1.1 e 12.1.1). Como escolher o filtro está em <a href="/conhecimento/respirador-como-escolher-o-filtro/">respirador: como escolher o filtro</a>, e a luva, em <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">luva para produto químico</a>. O que vale para quem trabalha na pista está em <a href="/conhecimento/epi-para-frentista-de-posto-de-combustivel/">EPI para frentista</a>.',
       },
       {
         tipo: 'p',
@@ -13101,6 +13101,319 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Colete refletivo precisa de CA?',
         resposta:
           'Não pela NR-6, porque o colete refletivo não está na lista de EPI do Anexo I. Ele entra como item de sinalização, pela avaliação de riscos de quem desce no pátio, no acostamento ou à noite.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-para-frentista-de-posto-de-combustivel',
+    titulo: 'EPI para frentista: o que a NR-20 pede no posto de combustível',
+    tituloSeo: 'EPI para frentista de posto',
+    resumo:
+      'No abastecimento, a NR-20 dispensa o frentista do respirador. O que ela cobra é roupa, calçado e luva fornecidos pelo posto, e respirador de face inteira nas tarefas críticas.',
+    descricaoSeo:
+      'O EPI do frentista no abastecimento e nas tarefas críticas do posto, o que a NR-20 manda o posto fornecer e lavar, e por que a flanela é proibida.',
+    publicado: '2026-11-20',
+    atualizado: '2026-11-20',
+    atualizadoExibicao: 'novembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Muita lista de EPI para frentista começa pela máscara. A NR-20 diz outra coisa: quem só abastece veículo está dispensado do respirador (Anexo IV, item 12.2). O que a norma cobra no dia a dia é roupa e calçado fornecidos e lavados pelo posto, luva impermeável para limpar respingo e, nas tarefas em que o vapor é maior, respirador de face inteira.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O motivo de tanto cuidado é o benzeno, que está na gasolina e é cancerígeno, como diz a placa obrigatória junto às bombas (item 13.1). Ele entra pela respiração e pela pele. O Anexo IV da NR-20 foi escrito só para posto revendedor de combustível, e por isso trata de roupa, de pele e de vapor, nessa ordem de rotina.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'No abastecimento: roupa, calçado e luva',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para o frentista que abastece veículo ou enche recipiente certificado, o respirador não é exigido (item 12.2). O conjunto da pista é este:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Roupa e calçado de trabalho:</strong> fornecidos de graça pelo empregador e adequados ao risco (item 11.1). A diferença entre a roupa de trabalho e o EPI está em <a href="/conhecimento/uniforme-e-epi-qual-a-diferenca/">uniforme é EPI?</a>.',
+          '<strong>Luva impermeável:</strong> a limpeza de superfície com combustível só pode ser feita com toalha de papel absorvente, de uso único, e com o trabalhador de luva impermeável apropriada (itens 9.8 e 9.8.1). O material que resiste a gasolina e diesel sai da ficha de segurança do combustível, como explica <a href="/conhecimento/luva-para-produto-quimico-como-escolher/">luva para produto químico</a>.',
+          '<strong>Calçado:</strong> quando a avaliação aponta contato com combustível, o Anexo I da NR-6 tem o calçado contra agentes químicos (item G.1, alínea g). Na pista, o solado também precisa segurar em piso com óleo e água, e o que a palavra antiderrapante garante está em <a href="/conhecimento/solado-antiderrapante-o-que-significa/">solado antiderrapante</a>.',
+          '<strong>Olhos:</strong> o posto precisa ter procedimento de emergência para combustível que atinge o corpo, especialmente os olhos (item 8.1, alínea c). Óculos entram pela avaliação de riscos de cada tarefa.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Flanela e estopa são proibidas',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Um costume antigo de posto virou proibição. Para conter respingo e transbordamento de combustível só valem dispositivos feitos para isso, e cabe ao empregador proibir flanela, estopa e tecido parecido (itens 9.6 e 9.7). O frentista também tem a obrigação de não usar (item 3.2, alínea c). A flanela no bolso, encharcada de gasolina, é contato com a pele o turno inteiro.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Nas tarefas críticas: respirador de face inteira',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O Anexo IV lista as atividades de maior risco de exposição ao benzeno (item 5.1.1.1). Quem faz essas tarefas, direta ou indiretamente, usa respirador de face inteira com filtro para vapores orgânicos e proteção para a pele (item 12.1.1). Entre elas estão:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Conferência do produto e coleta de amostra no caminhão-tanque.',
+          'Descarregamento de combustível para os tanques subterrâneos, inclusive a descarga selada.',
+          'Medição de tanque com régua, nos casos em que ela ainda é permitida (item 9.3.1).',
+          'Limpeza de válvulas, bombas, caixas separadoras, caixas de passagem e canaletas.',
+          'Aferição e manutenção de bombas.',
+          'Análises físico-químicas de controle de qualidade.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Ficam fora dessa exigência o abastecimento de veículo, o enchimento de recipiente e a etapa de estacionar o caminhão, aterrar e conectar os mangotes (alíneas d, g e h). O empregador pode escolher outro respirador mais apropriado ao posto, desde que proteja mais (item 12.1.1.2), e a troca de filtro segue o fabricante e o Programa de Proteção Respiratória (item 12.1.1.3). Como o filtro funciona está em <a href="/conhecimento/respirador-como-escolher-o-filtro/">respirador: como escolher o filtro</a>, e por que a máscara descartável de poeira não serve aqui, em <a href="/conhecimento/mascara-descartavel-nao-protege-de-vapor-quimico/">máscara descartável não protege de vapor</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que o posto cuida além do EPI',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Lavar a roupa de trabalho, no mínimo uma vez por semana (item 11.2).',
+          'Manter um conjunto extra de roupa para pelo menos um terço dos trabalhadores expostos, para a troca quando o uniforme for contaminado (item 11.3).',
+          'Treinamento inicial de no mínimo 4 horas e periódico a cada 2 anos (itens 5.1 e 5.2).',
+          'Hemograma completo com plaquetas e reticulócitos, no mínimo a cada seis meses (item 6.1).',
+          'Sistema de recuperação de vapores nos bicos, obrigatório no posto aprovado e construído depois de 22 de setembro de 2019; os demais seguem o prazo da Portaria MTE nº 1.146/2024 (itens 14.1 e 14.3).',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A entrega de cada item, com o CA, vai para a ficha do trabalhador, como em <a href="/conhecimento/ficha-de-entrega-de-epi-o-que-precisa-constar/">ficha de entrega de EPI</a>. Insalubridade e periculosidade do frentista são assunto trabalhista, fora deste texto; o que o EPI muda nessa conta está em <a href="/conhecimento/epi-elimina-insalubridade/">EPI elimina insalubridade?</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Troca de óleo e lavagem',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Muito posto tem troca de óleo e lavagem junto da pista. São outras funções, com outro risco: óleo usado e graxa nas mãos, piso com água e produto de limpeza. A lista do trocador de óleo se parece mais com a de <a href="/conhecimento/epi-para-mecanico-de-oficina/">EPI para mecânico de oficina</a>, e a do lavador passa pela <a href="/conhecimento/bota-de-pvc-quando-e-a-resposta-certa/">bota de PVC</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Antes de pedir o EPI do posto',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Quantos frentistas há em cada turno.',
+          'Quem faz descarga, coleta de amostra, medição com régua e limpeza de caixa separadora.',
+          'Se o posto tem troca de óleo e lavagem.',
+          'A ficha de segurança de cada combustível vendido.',
+          'A numeração de calçado e o tamanho de luva de cada pessoa.',
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-20 — Segurança e saúde no trabalho com inflamáveis e combustíveis, Anexo IV (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-20-atualizada-2025.pdf',
+      },
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/',
+      rotulo: 'Ver o atendimento a empresas',
+    },
+    contexto: 'empresas',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Tenho um posto de combustível e queria ajuda para montar o EPI dos frentistas.',
+    ctaTitulo: 'Vai equipar a equipe do posto?',
+    ctaTexto:
+      'Conte quantos frentistas são e quem faz descarga, régua e limpeza de caixa. A gente separa o conjunto da pista do conjunto das tarefas críticas, com o CA de cada item.',
+    perguntas: [
+      {
+        pergunta: 'Quais são os EPIs obrigatórios para frentista?',
+        resposta:
+          'No abastecimento, a NR-20 pede roupa e calçado de trabalho fornecidos pelo posto e luva impermeável para limpar respingo, e dispensa o respirador. Quem faz tarefa crítica, como descarga, medição com régua, coleta de amostra e limpeza de caixa separadora, usa também respirador de face inteira com filtro para vapores orgânicos e proteção para a pele. A lista final sai da avaliação de riscos do posto.',
+      },
+      {
+        pergunta: 'Frentista precisa usar máscara para abastecer?',
+        resposta:
+          'Não. O Anexo IV da NR-20 dispensa o respirador no abastecimento de veículos e de recipientes (item 12.2). Ele entra nas tarefas críticas, e aí é respirador de face inteira com filtro para vapores orgânicos; máscara descartável de poeira não protege de vapor.',
+      },
+      {
+        pergunta: 'O posto precisa ter roupa reserva para o frentista?',
+        resposta:
+          'Precisa. A NR-20 manda manter um conjunto extra de roupa de trabalho para pelo menos um terço da equipe exposta, para a troca quando o combustível atinge o uniforme. A roupa e o calçado são fornecidos de graça, e a lavagem da roupa fica com o posto, no mínimo uma vez por semana (Anexo IV, itens 11.1 a 11.3).',
+      },
+      {
+        pergunta: 'Frentista pode usar flanela?',
+        resposta:
+          'Não para conter respingo ou transbordamento de combustível. A NR-20 proíbe flanela, estopa e tecido parecido nessa função. A limpeza de superfície com combustível só pode ser feita com toalha de papel absorvente, de uso único, e com luva impermeável.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-para-acougue-e-acougueiro',
+    titulo: 'EPI para açougue: faca, serra fita, câmara fria e piso molhado',
+    tituloSeo: 'EPI para açougue e açougueiro',
+    resumo:
+      'No açougue, a mão que segura a peça é a que a faca encontra. A luva contra corte é o centro da lista; na serra fita, a proteção principal é a da máquina.',
+    descricaoSeo:
+      'Luva contra corte, avental, bota e roupa para frio: o EPI do açougueiro por tarefa, o que a NR-12 exige da serra fita e onde a NR-36 entra.',
+    publicado: '2026-11-20',
+    atualizado: '2026-11-20',
+    atualizadoExibicao: 'novembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'No açougue, o corte que mais se repete não vem da serra: vem da faca, na mão que segura a peça. Por isso a luva contra corte é o centro da lista. Na serra fita a lógica é outra: a NR-12 põe a proteção na própria máquina, e nenhuma luva substitui o braço empurrador e a canaleta.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Desossa e corte na faca',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Luva contra corte na mão que segura a peça:</strong> o Anexo I da NR-6 prevê luva contra agentes cortantes e perfurantes (item F.1, alínea b). Ela pode ser de malha de aço ou de fibra, e o CA diz contra o que cada modelo foi aprovado. A diferença entre os materiais está em <a href="/conhecimento/tipos-de-luva-qual-material-escolher/">tipos de luva</a>.',
+          '<strong>Proteção do tronco:</strong> na desossa em que a faca trabalha em direção ao corpo, a vestimenta contra agentes mecânicos (item E.1, alínea b), como o avental de malha de aço.',
+          '<strong>Braço:</strong> quando o antebraço fica no caminho da lâmina, há manga contra agentes cortantes (item F.3, alínea c).',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A luva protege a mão, mas não corrige a ferramenta. Faca cega pede mais força e escapa mais, e luva folgada tira a firmeza justamente da mão que segura a peça. Por isso a luva vai por tamanho, de cada pessoa, e não por caixa.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Serra fita: a proteção está na máquina',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem procura "EPI para serra fita de açougue" encontra a resposta na NR-12, que trata a serra fita de açougue como máquina com requisitos próprios, no Anexo VII. A fita fica protegida fora da área de corte, uma canaleta regulável deixa exposta só a parte mínima necessária, um braço articulado guia e empurra a carne e impede a mão de chegar à área de corte, e a máquina tem botão de parada de emergência (itens 2.2, 2.3 e 2.8). Para peça pequena e para terminar o corte, usa-se um dispositivo manual de empurrar (item 2.7).',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O mesmo anexo vale para o amaciador de bife e o moedor de carne: o bocal tem de impedir a mão de chegar aos cilindros ou à rosca (itens 3.3 e 4.3). Com essas proteções no lugar, o EPI do operador complementa. Sem elas, o problema é a máquina, e é ela que precisa ser corrigida, como explica <a href="/conhecimento/epi-e-epc-qual-a-diferenca/">EPI e EPC</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Pés e corpo: piso molhado e gordura',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O chão do açougue fica molhado e com gordura o turno inteiro, e a lavagem é rotina. A NR-6 prevê calçado contra umidade de operações com água (item G.1, alínea f), que é a bota impermeável, e o critério está em <a href="/conhecimento/bota-de-pvc-quando-e-a-resposta-certa/">bota de PVC</a>. Onde peça pesada pode cair no pé, como na descarga de carcaça, a biqueira entra. Em qualquer caso o solado precisa segurar em piso molhado e gorduroso, e o que a palavra antiderrapante garante está em <a href="/conhecimento/solado-antiderrapante-o-que-significa/">solado antiderrapante</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na lavagem e no manuseio de peça molhada, o avental impermeável é a vestimenta contra umidade de operações com água (item E.1, alínea f).',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Câmara fria',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem entra na câmara para buscar peça alterna frio e balcão o dia inteiro, e mão fria perde firmeza justamente para a faca. Roupa, luva e meia para frio entram aqui, e o critério completo está em <a href="/conhecimento/epi-para-frigorifico-e-camara-fria/">EPI para frigorífico e câmara fria</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'A NR-36 vale para açougue?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Muita lista de EPI para açougue cita a NR-36. O campo da própria norma é o das indústrias e organizações de abate e de processamento de carnes e derivados (itens 36.1.1 e 36.1.2). No açougue de balcão, a base é a NR-6 para o EPI e a NR-12 para as máquinas, com a avaliação de riscos do estabelecimento. Se a operação faz processamento de carne em escala, o enquadramento na NR-36 é conferido por quem cuida da segurança do trabalho da empresa.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Touca e luva fina são higiene, não proteção contra corte',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Touca, máscara de higiene e luva descartável aparecem em quase toda lista de açougue, mas por higiene do alimento, que é exigência da vigilância sanitária. Elas protegem a carne, não a mão: luva fina de manipulação não segura lâmina. A diferença entre as luvas está em <a href="/conhecimento/luva-de-procedimento-nao-e-luva-de-limpeza/">luva de procedimento não é luva de limpeza</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Antes de pedir o EPI do açougue',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Quantas pessoas ficam na desossa, no balcão e na câmara fria.',
+          'Quais máquinas há (serra fita, moedor, amaciador) e se têm as proteções do Anexo VII da NR-12.',
+          'Quanto tempo por dia cada pessoa passa dentro da câmara.',
+          'O tamanho de luva de cada pessoa, e a mão que segura a peça.',
+          'A numeração de bota de cada pessoa.',
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'NR-12 — Segurança no trabalho em máquinas e equipamentos, Anexo VII (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-12-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'NR-36 — Abate e processamento de carnes e derivados (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-36-atualizada-2024.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/alimentacao/',
+      rotulo: 'Ver o atendimento a alimentação',
+    },
+    contexto: 'empresas-alimentacao',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Tenho um açougue e queria ajuda para montar o EPI da equipe por função.',
+    ctaTitulo: 'Vai equipar o açougue?',
+    ctaTexto:
+      'Conte quantas pessoas ficam na desossa, no balcão e na câmara. A gente monta a lista por função, com o CA de cada item e o tamanho de luva de cada um.',
+    perguntas: [
+      {
+        pergunta: 'Quais são os EPIs de um açougueiro?',
+        resposta:
+          'Luva contra corte na mão que segura a peça, proteção do tronco na desossa, bota impermeável com solado antiderrapante e avental impermeável na lavagem. Quem entra na câmara fria precisa também de roupa e luva para frio. A lista final sai da avaliação de riscos de cada função.',
+      },
+      {
+        pergunta: 'Açougueiro é obrigado a usar luva?',
+        resposta:
+          'Onde há risco de corte, a luva contra corte é o EPI adequado: a NR-6 manda a empresa fornecer e exigir o uso, e o empregado usar. Em que tarefa ela entra quem define é a avaliação de riscos. Na serra fita, a proteção principal é a da própria máquina.',
+      },
+      {
+        pergunta: 'Luva de malha de aço ou de fibra contra corte?',
+        resposta:
+          'As duas existem com CA contra agentes cortantes. A de malha de aço é feita de elos de metal; a de fibra é tecida, mais leve e com mais tato. Qual serve sai da tarefa e do CA de cada modelo, que diz contra o que ele foi aprovado.',
+      },
+      {
+        pergunta: 'Que EPI usar na serra fita do açougue?',
+        resposta:
+          'A NR-12 põe a proteção da serra fita na máquina: fita protegida, canaleta regulável, braço empurrador, parada de emergência e empurrador manual para peça pequena. O EPI do operador complementa essas proteções e não as substitui.',
       },
     ],
   },

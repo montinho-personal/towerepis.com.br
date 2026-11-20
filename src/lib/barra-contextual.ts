@@ -431,6 +431,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Seus motoristas também carregam e descarregam?',
     rotulo: 'Montar o conjunto',
   },
+  'epi-para-frentista-de-posto-de-combustivel': {
+    chamada: 'Quem faz a descarga e a régua no seu posto?',
+    rotulo: 'Montar o EPI do posto',
+  },
+  'epi-para-acougue-e-acougueiro': {
+    chamada: 'Quantos ficam na desossa e na câmara?',
+    rotulo: 'Montar a lista do açougue',
+  },
   'epi-para-mecanico-de-oficina': {
     chamada: 'Que serviços a sua oficina faz?',
     rotulo: 'Montar a lista da oficina',

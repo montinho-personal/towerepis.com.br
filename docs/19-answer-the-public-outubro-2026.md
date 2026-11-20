@@ -323,3 +323,17 @@ description ficaram iguais: com posição 64 não há CTR para avaliar.
 - Pautas que ficaram de fora: motoboy/entregador de moto (regras de trânsito,
   não NR-6; não recomendo agora); transporte de produtos perigosos (regulamento
   da ANTT; não recomendo sem a fonte oficial lida).
+
+**20/11/2026 — dois artigos novos com pesquisa pelo SerpApi:**
+- `epi-para-frentista-de-posto-de-combustivel`: NR-20 Anexo IV (Portaria MTE
+  nº 60/2025) itens 3.2 c, 5.1, 5.1.1.1, 5.2, 6.1, 8.1 c, 9.3.1, 9.6 a 9.8.1,
+  11.1 a 11.3, 12.1.1 a 12.2, 13.1, 14.1 e 14.3; NR-6 Anexo I G.1 g. A visão
+  de IA põe respirador no abastecimento; o item 12.2 dispensa. Link de entrada
+  a partir do motorista de caminhão.
+- `epi-para-acougue-e-acougueiro`: NR-6 Anexo I F.1 b, E.1 b e f, F.3 c, G.1 f;
+  NR-12 Anexo VII itens 2.2, 2.3, 2.7, 2.8, 3.3 e 4.3; NR-36 36.1.1 e 36.1.2
+  (campo: abate e processamento; a visão de IA a aplica ao açougue sem
+  ressalva). Link de entrada a partir do frigorífico.
+- qa-faq barrou "Quem lava o uniforme do frentista?" contra a FAQ do uniforme
+  (0,60); reescrita. Sem pares novos de canibalização (127 páginas).
+- Reserva: padaria (forneiro, balconista), perto da página de cozinha.
