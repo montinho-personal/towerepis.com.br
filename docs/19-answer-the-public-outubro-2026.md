@@ -337,3 +337,10 @@ description ficaram iguais: com posição 64 não há CTR para avaliar.
 - qa-faq barrou "Quem lava o uniforme do frentista?" contra a FAQ do uniforme
   (0,60); reescrita. Sem pares novos de canibalização (127 páginas).
 - Reserva: padaria (forneiro, balconista), perto da página de cozinha.
+
+**20/11/2026 — terceiro artigo do dia, da reserva:**
+- `epi-para-padaria-e-panificadora`: NR-6 Anexo I F.1 b e d, F.3 e, E.1 a,
+  D.1 a e b; NR-12 Anexo VI itens 2.2, 2.7, 3.2, 3.7, 4.4, 4.6 e 8.2. A visão
+  de IA põe touca e rede entre os EPI; não estão no Anexo I da NR-6. Link de
+  entrada a partir do calçado para cozinha. Sem pares novos de canibalização
+  (128 páginas), qa-faq sem repetidas (468 perguntas).

@@ -439,6 +439,10 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Quantos ficam na desossa e na câmara?',
     rotulo: 'Montar a lista do açougue',
   },
+  'epi-para-padaria-e-panificadora': {
+    chamada: 'Quantos ficam no forno e no balcão?',
+    rotulo: 'Montar a lista da padaria',
+  },
   'epi-para-mecanico-de-oficina': {
     chamada: 'Que serviços a sua oficina faz?',
     rotulo: 'Montar a lista da oficina',

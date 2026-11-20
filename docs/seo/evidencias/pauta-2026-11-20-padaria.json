@@ -1,0 +1,83 @@
+{
+ "data": "2026-11-20",
+ "epi-para-padaria-e-panificadora": {
+  "busca": "epi para padaria",
+  "autocompletar": "ver pauta-2026-11-20-frentista-acougue-padaria.json",
+  "pessoas_tambem_perguntam": [
+   "Quais os EPIs para cozinheiro?",
+   "Quais são os 4 tipos de EPIs mais utilizados?",
+   "O que se enquadra como EPI?",
+   "Quais são os EPIs necessários no setor industrial?"
+  ],
+  "organicos": [
+   {
+    "pos": 1,
+    "fonte": "Shopee Brasil",
+    "titulo": "Cagipa EPI's, Loja Online"
+   },
+   {
+    "pos": 2,
+    "fonte": "Scribd",
+    "titulo": "Aep Padaria - e | PDF"
+   },
+   {
+    "pos": 3,
+    "fonte": "LinkedIn",
+    "titulo": "Os EPIs mais vendidos em loja de EPIs para a indústria sucroalcooleira"
+   },
+   {
+    "pos": 4,
+    "fonte": "blog.cloudfy.net.br",
+    "titulo": "Boas práticas de fabricação em padarias - Cloudfy Blog"
+   },
+   {
+    "pos": 5,
+    "fonte": "Fast Epis",
+    "titulo": "EPIs para Cozinha Industrial"
+   },
+   {
+    "pos": 6,
+    "fonte": "Slideshare",
+    "titulo": "Padarias normas | PDF"
+   },
+   {
+    "pos": 7,
+    "fonte": "Sindusfort",
+    "titulo": "7 EPIs Indispensáveis em Fábricas Alimentares"
+   },
+   {
+    "pos": 8,
+    "fonte": "Mercado Livre",
+    "titulo": "https://lista.mercadolivre.com.br/industria-comerc..."
+   }
+  ],
+  "visao_de_ia": [
+   "Os principais EPIs para padaria variam conforme a função, mas os mais comuns são calçados fechados antiderrapantes, luvas térmicas, aventais, toucas ou redes e máscaras respiratórias.",
+   "Principais EPIs por risco",
+   "Calçados de segurança: fechados e antiderrapantes para evitar escorregões e proteger contra queda de objetos ou líquidos.",
+   "Luvas térmicas (e mangotes): protegem mãos e antebraços contra queimaduras em fornos, chapas e assadeiras quentes.",
+   "Aventais: protegem o corpo e o uniforme contra respingos, umidade, calor ou produtos de limpeza (podem ser de PVC, tecido ou plástico, conforme a tarefa).",
+   "Luvas anticorte e de limpeza: indicadas para fatiamento, uso de lâminas ou higienização com produtos químicos.",
+   "Máscaras / respiradores: ajudam na proteção contra poeira, farinha em suspensão e vapores de limpeza.",
+   "Óculos de proteção e protetor auricular: usados conforme avaliação de risco em áreas de limpeza, manutenção, câmaras frias ou ruído elevado de máquinas.",
+   "Touca ou rede: essencial para higiene e controle sanitário na manipulação de alimentos.",
+   "Regras e onde consultar",
+   "NR-6 e NR-12: a NR-6 trata do fornecimento gratuito e uso correto de EPIs com Certificado de Aprovação (CA), enquanto a NR-12 aborda a segurança de máquinas e equipamentos (como cilindros, modeladoras e amassadeiras).",
+   "Referências e compras: você pode conferir orientações técnicas em Food Connection e GR Produtos Industriais, ou buscar itens com CA na Super EPI.",
+   "Para ajudar a direcionar melhor, me diga:",
+   "Qual função ou área terá o EPI (forno, masseira, limpeza, atendimento ou compra para a equipe toda)?",
+   "O foco é compra ou adequação às normas da sua padaria?",
+   "Há alguma preferência de material ou faixa de orçamento?"
+  ],
+  "visao_de_ia_fontes": [
+   "GR Produtos Industriais",
+   "Cursos da Escola e Educação",
+   "YouTube",
+   "YouTube",
+   "YouTube",
+   "Winterhalter",
+   "www.foodconnection.com.br",
+   "Instagram"
+  ]
+ }
+}

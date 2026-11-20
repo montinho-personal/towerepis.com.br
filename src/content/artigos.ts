@@ -188,7 +188,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'A biqueira de proteção é o que caracteriza o calçado de segurança e existe para proteger os dedos contra impacto e compressão. Uma cozinha de restaurante comum raramente tem esse risco. Já uma cozinha industrial, com movimentação de panelões, caixas e carrinhos de carga, pode ter.',
+          'A biqueira de proteção é o que caracteriza o calçado de segurança e existe para proteger os dedos contra impacto e compressão. Uma cozinha de restaurante comum raramente tem esse risco. Já uma cozinha industrial, com movimentação de panelões, caixas e carrinhos de carga, pode ter. A padaria, que junta forno, cilindro e saco de farinha, tem guia próprio em <a href="/conhecimento/epi-para-padaria-e-panificadora/">EPI para padaria</a>.',
       },
       {
         tipo: 'p',
@@ -13414,6 +13414,154 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Que EPI usar na serra fita do açougue?',
         resposta:
           'A NR-12 põe a proteção da serra fita na máquina: fita protegida, canaleta regulável, braço empurrador, parada de emergência e empurrador manual para peça pequena. O EPI do operador complementa essas proteções e não as substitui.',
+      },
+    ],
+  },
+  {
+    slug: 'epi-para-padaria-e-panificadora',
+    titulo: 'EPI para padaria: forno, cilindro, farinha e balcão',
+    tituloSeo: 'EPI para padaria e panificadora',
+    resumo:
+      'Padaria tem quatro postos com riscos diferentes: forno, produção com máquinas, farinha no ar e balcão. O EPI de um não serve para o outro, e nos rolos quem protege é a máquina.',
+    descricaoSeo:
+      'O EPI do forneiro, do padeiro e do balconista: luva e manga para o forno, calçado para piso com farinha, pó no ar e o que a NR-12 exige das máquinas.',
+    publicado: '2026-11-20',
+    atualizado: '2026-11-20',
+    atualizadoExibicao: 'novembro de 2026',
+    cluster: 'Proteção',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Uma padaria junta quatro postos que não pedem a mesma coisa: o forno, a produção com amassadeira e cilindro, a farinha no ar e o balcão. A lista que trata todos como "cozinha" esquece justamente o que é da padaria. E no cilindro e na amassadeira a proteção principal não é EPI: é a da própria máquina, que a NR-12 detalha em anexo próprio.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Forno: mão, antebraço e tronco',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O forneiro tira assadeira e esteira quentes o turno inteiro, e o antebraço é o que encosta na borda do forno. O Anexo I da NR-6 tem os três itens para esse risco:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Luva contra agentes térmicos</strong> (item F.1, alínea d), com cano que cubra o punho. Luva de pano comum, úmida, conduz o calor em vez de isolar.',
+          '<strong>Manga contra agentes térmicos</strong> (item F.3, alínea e), para o antebraço que entra no forno.',
+          '<strong>Vestimenta para o tronco contra agentes térmicos</strong> (item E.1, alínea a), que na padaria costuma ser o avental para o forno.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O CA de cada peça diz a que calor ela foi ensaiada, e é ele que separa luva de forno de luva de cozinha doméstica. Como ler o certificado está em <a href="/conhecimento/o-que-e-ca-certificado-de-aprovacao/">o que é o CA</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Produção: amassadeira, batedeira e cilindro',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'As máquinas de panificação têm um anexo inteiro na NR-12, o Anexo VI. A amassadeira e a batedeira precisam de proteção móvel intertravada que impeça o acesso à zona do batedor e de botão de parada de emergência (itens 2.2, 2.7, 3.2 e 3.7). O cilindro sovador precisa de proteção entre o rolete obstrutivo e o cilindro superior e de dois botões de parada de emergência (itens 4.4 e 4.6). A fatiadora de pães precisa impedir, por todos os lados, o acesso às lâminas (item 8.2).',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para quem opera essas máquinas, a mensagem é direta: em rolo e batedor, nenhuma luva protege a mão que entra na zona perigosa. A proteção é a da máquina, e o EPI complementa, como explica <a href="/conhecimento/epi-e-epc-qual-a-diferenca/">EPI e EPC</a>. Máquina sem essas proteções é problema a corrigir, não a compensar com equipamento individual.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Farinha no ar',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Despejar saco na amassadeira e polvilhar a bancada levantam pó de farinha, e farinha no ar é poeira. Quem diz se a exposição pede proteção respiratória é a avaliação de riscos da padaria. Quando pede, a NR-6 tem a peça filtrante para poeiras, PFF1 ou PFF2 (Anexo I, item D.1, alíneas a e b). Antes dela vêm as medidas que reduzem o pó para todo mundo, como despejar o saco devagar e perto da bacia. A diferença entre as classes está em <a href="/conhecimento/respirador-como-escolher-o-filtro/">respirador: como escolher o filtro</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Pés: farinha com água é sabão',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Farinha no chão, com respingo de água ou de gordura, vira uma camada lisa, e a lavagem do fim do turno deixa o piso molhado. O calçado é fechado, com solado antiderrapante e, na maior parte das padarias, da linha ocupacional, sem biqueira. A biqueira entra onde saco ou assadeira cheia pode cair no pé. O raciocínio completo está em <a href="/conhecimento/calcado-para-cozinha-como-escolher/">calçado para cozinha</a> e em <a href="/conhecimento/calcado-ocupacional-ou-de-seguranca/">ocupacional ou de segurança</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Balcão e atendimento',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O balconista passa o dia em pé, em piso que recebe farinha e líquido, e corta frios e pão. O calçado é o que pesa mais para ele, e o critério está em <a href="/conhecimento/calcado-para-quem-trabalha-em-pe-o-dia-todo/">calçado para quem trabalha em pé o dia todo</a>. Na limpeza da lâmina do fatiador de frios, a luva é a de proteção contra agentes cortantes (NR-6, Anexo I, item F.1, alínea b).',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Touca e rede são higiene, não EPI',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Touca, rede de cabelo e luva fina de manipulação estão em toda padaria, mas por higiene do alimento, exigência da vigilância sanitária. Elas não constam da lista de EPI do Anexo I da NR-6 e não protegem contra calor nem contra corte. A limpeza com produto químico concentrado pede outra luva, como explica <a href="/conhecimento/luva-de-procedimento-nao-e-luva-de-limpeza/">luva de procedimento não é luva de limpeza</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Antes de pedir o EPI da padaria',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Quantas pessoas no forno, na produção, no balcão e na limpeza, por turno.',
+          'Que tipo de forno a casa usa e o que sai dele: assadeira, esteira, lastro.',
+          'Quais máquinas há e se têm as proteções do Anexo VI da NR-12.',
+          'Se a avaliação de riscos aponta exposição a pó de farinha.',
+          'A numeração de calçado e o tamanho de luva de cada pessoa.',
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'NR-12 — Segurança no trabalho em máquinas e equipamentos, Anexo VI (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-12-atualizada-2022-1.pdf',
+      },
+    ],
+    paginaComercial: {
+      href: '/empresas/alimentacao/',
+      rotulo: 'Ver o atendimento a alimentação',
+    },
+    contexto: 'empresas-alimentacao',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Tenho uma padaria e queria ajuda para montar o EPI da equipe por função.',
+    ctaTitulo: 'Vai equipar a padaria?',
+    ctaTexto:
+      'Conte quantas pessoas ficam no forno, na produção e no balcão. A gente monta a lista por função, com o CA de cada item e a numeração de cada um.',
+    perguntas: [
+      {
+        pergunta: 'Quais EPIs são necessários numa padaria?',
+        resposta:
+          'Depende do posto. No forno, luva, manga e avental contra calor; na produção e no balcão, calçado fechado com solado antiderrapante; onde a avaliação aponta pó de farinha, peça filtrante para poeira; e luva contra corte na limpeza de lâmina. A lista final sai da avaliação de riscos da padaria.',
+      },
+      {
+        pergunta: 'Que EPI o forneiro de padaria usa?',
+        resposta:
+          'Luva contra agentes térmicos com cano que cubra o punho, manga térmica para o antebraço que entra no forno e avental para o tronco, todos com CA. Calçado fechado e antiderrapante completa o conjunto.',
+      },
+      {
+        pergunta: 'Balconista de padaria precisa de EPI?',
+        resposta:
+          'Precisa do que a rotina pede: calçado fechado, antiderrapante e confortável para o dia em pé, e luva contra corte quando limpa a lâmina do fatiador. Touca e luva fina de manipulação são higiene do alimento, não EPI.',
+      },
+      {
+        pergunta: 'Padeiro precisa de máscara por causa da farinha?',
+        resposta:
+          'Quando a avaliação de riscos aponta exposição a pó de farinha, sim, e a peça é filtrante para poeira, PFF1 ou PFF2. Antes dela vêm as medidas que reduzem o pó, como despejar o saco devagar e perto da bacia.',
       },
     ],
   },
