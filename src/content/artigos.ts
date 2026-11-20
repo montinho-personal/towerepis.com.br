@@ -7170,8 +7170,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Óleo, solvente, peça quente e escorregão: o que muda na escolha de EPI numa oficina mecânica, e por que filtro não resolve gás de escape.',
     publicado: '2026-09-20',
-    atualizado: '2026-09-20',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-11-20',
+    atualizadoExibicao: 'novembro de 2026',
     cluster: 'Proteção',
     blocos: [
       {
@@ -7270,6 +7270,30 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         tipo: 'h2',
+        texto: 'O que a NR-6 manda a oficina fornecer',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A NR-6 não traz uma lista pronta por profissão. Ela manda a empresa fornecer de graça o EPI adequado a cada risco, com CA, exigir o uso e substituir o que estragar (item 6.5.1). Na oficina, os riscos acima levam a estes itens do Anexo I da norma:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Óculos contra impacto de partículas</strong> (item B.1, alínea a), para esmeril, escova rotativa e ar comprimido.',
+          '<strong>Luvas</strong> contra abrasão (F.1, alínea a), contra produto químico (F.1, alínea f) e contra calor, para peça quente de motor e escapamento (F.1, alínea d). Para peça pequena, a luva fina revestida dá o tato que a de serviço grosso não dá.',
+          '<strong>Creme protetor</strong> contra agentes químicos (item F.2), como complemento da luva, não no lugar dela.',
+          '<strong>Protetor auditivo</strong> (item C.1) onde a avaliação de ruído aponta a necessidade, como perto de compressor, esmeril e ferramenta pneumática. A escolha está em <a href="/conhecimento/protetor-auditivo-plug-ou-concha/">plug ou concha</a>.',
+          '<strong>Calçado contra impacto sobre os dedos</strong> (item G.1, alínea a), onde peça e ferramenta podem cair no pé.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A lista vale para oficina de carro, de moto e de caminhão: o que muda o EPI é o serviço, não o veículo. A borracharia acrescenta o compressor e o pneu sob pressão, e o protetor auditivo e o óculos ganham peso ali.',
+      },
+      {
+        tipo: 'h2',
         texto: 'O que costuma faltar no pedido',
       },
       {
@@ -7329,6 +7353,11 @@ export const ARTIGOS: Artigo[] = [
     ctaTexto:
       'Conte que serviços vocês fazem e quais solventes usam. A gente monta a lista com luva em mais de um tipo, que é o que faz a equipe realmente usar.',
     perguntas: [
+      {
+        pergunta: 'Que EPI a oficina é obrigada a dar ao mecânico?',
+        resposta:
+          'O que corresponde aos riscos do serviço, de graça e com CA: na maior parte das oficinas, óculos contra partículas, luva para abrasão e para óleo e solvente, calçado com biqueira e, onde o ruído pede, protetor auditivo. A NR-6 não traz lista por profissão; quem fecha a lista é a avaliação de riscos da oficina.',
+      },
       {
         pergunta: 'Luva de vaqueta serve para trabalhar com óleo?',
         resposta:

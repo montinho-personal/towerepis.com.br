@@ -1,0 +1,151 @@
+{
+ "data": "2026-11-20",
+ "epi-para-mecanico-de-oficina": {
+  "busca": "epi para mecânico",
+  "autocompletar_de": "epi para mecanico",
+  "autocompletar": [
+   "epi para mecanico de manutenção",
+   "epi para mecanico industrial",
+   "epi para mecanico de refrigeração",
+   "epi para mecanico de moto",
+   "epi para mecanico de carro",
+   "luva epi para mecanico",
+   "epi para torno mecanico",
+   "epi obrigatorio para mecanico",
+   "kit epi para mecanico",
+   "epi para torneiro mecanico",
+   "epi necessario para mecanico",
+   "epi mecanico automotivo",
+   "epi mecanico de manutenção",
+   "epi mecanico industrial",
+   "lista de epi para mecanico"
+  ],
+  "pessoas_tambem_perguntam": [
+   "O que um mecânico precisa ter?",
+   "O que a NR 32 exige sobre EPIs?",
+   "Quais são os 3 tipos de EPI?",
+   "Um mecânico pode ser MEI em 2026?"
+  ],
+  "outras_pesquisas": [
+   "Kit epi mecânico",
+   "Epis para borracheiro",
+   "Consulta ca",
+   "Nr 12"
+  ],
+  "organicos": [
+   {
+    "pos": 1,
+    "fonte": "Super EPI",
+    "titulo": "EPI para Mecânico: EPIs e Equipamentos com CA"
+   },
+   {
+    "pos": 2,
+    "fonte": "Automec",
+    "titulo": "7 EPIs essenciais para a segurança de mecânicos"
+   },
+   {
+    "pos": 3,
+    "fonte": "Ativa EPIs",
+    "titulo": "Equipamentos de Proteção Individual para Mecânica - Segurança Garantida"
+   },
+   {
+    "pos": 4,
+    "fonte": "Blog da Nakata",
+    "titulo": "EPI para mecânico: qual proteção usar em cada serviço?"
+   },
+   {
+    "pos": 5,
+    "fonte": "Facebook · Loja do Mecânico",
+    "titulo": "EPIs: Equipamentos de segurança profissional na Loja do Mecânico!"
+   },
+   {
+    "pos": 6,
+    "fonte": "EPI Zeus",
+    "titulo": "EPI para mecânico — equipamentos para proteção"
+   },
+   {
+    "pos": 7,
+    "fonte": "Truck Center Equipamentos Automotivos",
+    "titulo": "EPIs essenciais para mecânicos: Guia de segurança"
+   }
+  ],
+  "visao_de_ia": [
+   "Os principais EPIs para mecânico incluem óculos de proteção, luvas, protetor auricular, calçado de segurança e máscara respiratória, sempre com Certificado de Aprovação (CA) válido conforme a NR 6.",
+   "EPIs essenciais na oficina",
+   "Óculos de proteção: Protegem contra cavacos, poeira e respingos de óleo ou químicos. Exemplos: Óculos de Proteção Steelflex Pro-TechAcesse a caixa de diálogo de visualização de produtos para esse item",
+   "Luvas de segurança: Garante aderência e protege contra graxa, abrasão e calor. Modelos revestidos em PU ou nitrílica servem para peças pequenas; vaqueta ou anticorte indicam-se para serviços pesados e",
+   "Protetor auricular: Reduz o ruído de ferramentas pneumáticas, compressores e motores. Pode ser do tipo plug (inserção) ou concha.",
+   "Calçado de segurança: Botinas com biqueira protegem os pés contra queda de ferramentas e peças pesadas.",
+   "Máscara respiratória e creme protetor: A máscara filtra vapores, poeiras e névoas; o creme ajuda a proteger a pele exposta contra óleos e graxas.",
+   "Você pode consultar catálogos especializados como Super EPI ou Truck Center e guias de segurança como Automec para conferir especificações por tarefa.",
+   "Para indicar as opções mais adequadas, conte:",
+   "Quais serviços você faz (manutenção leve, troca de óleo, solda, borracharia ou funilaria)",
+   "Se busca itens avulsos ou um kit completo de oficina",
+   "Sua faixa de orçamento ou preferência por materiais específicos"
+  ],
+  "tower_entre_os_8": false
+ },
+ "epi-pelo-menor-preco-onde-a-conta-nao-fecha": {
+  "busca": "epi barato",
+  "autocompletar_de": "epi mais barato",
+  "autocompletar": [
+   "epi max",
+   "epidrat mais barato",
+   "comprar epi barato",
+   "lojas de epi mais próximo de mim",
+   "loja de epi mais perto de mim"
+  ],
+  "pessoas_tambem_perguntam": [
+   "Qual o melhor capacete de segurança da marca EPI?",
+   "Onde comprar EPI para revenda?",
+   "Quais são os 5 tipos de EPI?",
+   "Para que serve o EPI?"
+  ],
+  "outras_pesquisas": [],
+  "organicos": [
+   {
+    "pos": 1,
+    "fonte": "Agromania",
+    "titulo": "EPI - Equipamentos de Proteção Individual mais Baratos do Brasil"
+   },
+   {
+    "pos": 2,
+    "fonte": "boa praça epi",
+    "titulo": "Indústria - A Maior Distribuidora de EPI e EPC do Espírito Santo!"
+   },
+   {
+    "pos": 3,
+    "fonte": "Cauê distribuidora",
+    "titulo": "Distribuidora de EPIs"
+   },
+   {
+    "pos": 4,
+    "fonte": "KT Equipamentos",
+    "titulo": "Fornecedores de epi"
+   },
+   {
+    "pos": 5,
+    "fonte": "Shopee Brasil",
+    "titulo": "Valores EPIs, Loja Online"
+   },
+   {
+    "pos": 6,
+    "fonte": "Net Suprimentos",
+    "titulo": "Net Suprimentos: EPIs e Equipamentos de Segurança"
+   },
+   {
+    "pos": 7,
+    "fonte": "Baratão da Construção",
+    "titulo": "EPI - Equipamentos de Proteção Individual"
+   },
+   {
+    "pos": 8,
+    "fonte": "Atacadão da Indústria",
+    "titulo": "Atacadão da Indústria | A Melhor Loja de EPIs de Maringá"
+   }
+  ],
+  "visao_de_ia": [],
+  "tower_entre_os_8": false,
+  "decisao": "busca de quem quer comprar barato ou achar loja perto; nada a acrescentar ao artigo"
+ }
+}
