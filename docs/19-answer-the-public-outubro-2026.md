@@ -344,3 +344,18 @@ description ficaram iguais: com posição 64 não há CTR para avaliar.
   de IA põe touca e rede entre os EPI; não estão no Anexo I da NR-6. Link de
   entrada a partir do calçado para cozinha. Sem pares novos de canibalização
   (128 páginas), qa-faq sem repetidas (468 perguntas).
+
+**20/11/2026 — dois artigos de calçado pelos setores que mais compram sapato**
+(conversa da Cristina com o Renato: hotelaria, saúde, barraca de praia,
+serviços gerais, bares e restaurantes):
+- `sapato-para-garcom-bar-restaurante-e-barraca-de-praia`: social × profissional
+  × tênis, solado, turno em pé, barraca de praia, NR-6 6.5.1 e 6.6.1. Links de
+  entrada a partir de "trabalhar em pé" e da hotelaria.
+- `sapato-para-servicos-gerais`: ocupacional × segurança (NR-6 Anexo I G.1 a),
+  EVA/borracha/couro, "ortopédico", NR-32 32.2.4.5, NR-6 6.5.1 e 6.6.1. Link de
+  entrada a partir de "trabalhar em pé".
+- Sticky Shoes citada só como linha que a Tower trabalha, sem afirmação de
+  desempenho de modelo. Sem pares novos de canibalização (130 páginas);
+  qa-faq sem repetidas (477 perguntas).
+- Pendente, em lote separado (página indexada): reforço da página de
+  enfermagem com "sapato fechado/branco para técnico de enfermagem".

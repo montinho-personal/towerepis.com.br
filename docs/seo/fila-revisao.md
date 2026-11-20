@@ -83,3 +83,5 @@ CA do EPI e NCM da botina (outubro e novembro de 2026).
 | 72 | `epi-para-frentista-de-posto-de-combustivel` | 2026-11-20 | |
 | 73 | `epi-para-acougue-e-acougueiro` | 2026-11-20 | |
 | 74 | `epi-para-padaria-e-panificadora` | 2026-11-20 | |
+| 75 | `sapato-para-garcom-bar-restaurante-e-barraca-de-praia` | 2026-11-20 | |
+| 76 | `sapato-para-servicos-gerais` | 2026-11-20 | |

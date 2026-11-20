@@ -443,6 +443,14 @@ const POR_ARTIGO: Record<string, { chamada: string; rotulo: string }> = {
     chamada: 'Quantos ficam no forno e no balcão?',
     rotulo: 'Montar a lista da padaria',
   },
+  'sapato-para-garcom-bar-restaurante-e-barraca-de-praia': {
+    chamada: 'Qual a cor do uniforme do salão?',
+    rotulo: 'Escolher o sapato',
+  },
+  'sapato-para-servicos-gerais': {
+    chamada: 'Alguma tarefa tem peso caindo no pé?',
+    rotulo: 'Escolher o sapato',
+  },
   'epi-para-mecanico-de-oficina': {
     chamada: 'Que serviços a sua oficina faz?',
     rotulo: 'Montar a lista da oficina',

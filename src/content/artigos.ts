@@ -5878,7 +5878,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Esta é a decisão que mais muda o peso do conjunto, e ela não é de preferência: é do risco da atividade. Onde não há queda de objeto pesado sobre o pé, o calçado ocupacional atende melhor e cansa menos. A diferença entre as duas categorias está em <a href="/conhecimento/calcado-ocupacional-ou-de-seguranca/">calçado ocupacional ou de segurança</a>.',
+          'Esta é a decisão que mais muda o peso do conjunto, e ela não é de preferência: é do risco da atividade. Onde não há queda de objeto pesado sobre o pé, o calçado ocupacional atende melhor e cansa menos. A diferença entre as duas categorias está em <a href="/conhecimento/calcado-ocupacional-ou-de-seguranca/">calçado ocupacional ou de segurança</a>. Duas funções em pé e quase sempre sem biqueira têm guia próprio: <a href="/conhecimento/sapato-para-garcom-bar-restaurante-e-barraca-de-praia/">sapato para garçom</a> e <a href="/conhecimento/sapato-para-servicos-gerais/">sapato para serviços gerais</a>.',
       },
       {
         tipo: 'p',
@@ -7093,7 +7093,7 @@ export const ARTIGOS: Artigo[] = [
           '<strong>A lavanderia inteira.</strong> É a área mais esquecida da casa.',
           '<strong>Proteção de olhos na manutenção e na piscina.</strong> Item barato, ausência frequente.',
           '<strong>Luva separada por área</strong>, em vez de uma caixa geral no almoxarifado.',
-          '<strong>Calçado para quem trabalha na recepção e no salão.</strong> Jornada em pé também é exposição, e o assunto está em <a href="/conhecimento/calcado-para-quem-trabalha-em-pe-o-dia-todo/">calçado para quem trabalha em pé o dia todo</a>.',
+          '<strong>Calçado para quem trabalha na recepção e no salão.</strong> Jornada em pé também é exposição, e o assunto está em <a href="/conhecimento/calcado-para-quem-trabalha-em-pe-o-dia-todo/">calçado para quem trabalha em pé o dia todo</a>; o do salão, em <a href="/conhecimento/sapato-para-garcom-bar-restaurante-e-barraca-de-praia/">sapato para garçom</a>.',
           '<strong>Reposição dimensionada para a temporada</strong>, e não para o mês médio.',
         ],
       },
@@ -13591,6 +13591,297 @@ export const ARTIGOS: Artigo[] = [
         pergunta: 'Padeiro precisa de máscara por causa da farinha?',
         resposta:
           'Quando a avaliação de riscos aponta exposição a pó de farinha, sim, e a peça é filtrante para poeira, PFF1 ou PFF2. Antes dela vêm as medidas que reduzem o pó, como despejar o saco devagar e perto da bacia.',
+      },
+    ],
+  },
+  {
+    slug: 'sapato-para-garcom-bar-restaurante-e-barraca-de-praia',
+    titulo: 'Sapato para garçom: bar, restaurante e barraca de praia',
+    tituloSeo: 'Sapato para garçom: como escolher',
+    resumo:
+      'O garçom precisa de três coisas no mesmo par: aderência em piso com bebida e gordura, conforto para o turno inteiro em pé e o visual que o uniforme pede. O sapato social comum costuma entregar só o último.',
+    descricaoSeo:
+      'Social ou profissional antiderrapante: como escolher o sapato do garçom de bar, restaurante e barraca de praia, e o que conferir no solado e no CA.',
+    publicado: '2026-11-20',
+    atualizado: '2026-11-20',
+    atualizadoExibicao: 'novembro de 2026',
+    cluster: 'Calçados',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'O garçom passa o turno andando rápido, de bandeja na mão, sem olhar para o chão. E é o chão que derruba: bebida derramada no salão, gordura que sai da cozinha, deck molhado na barraca. O sapato certo junta aderência, conforto e o visual da casa, e o sapato social comum costuma entregar só o visual.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Social, profissional ou tênis',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>Sapato social comum:</strong> resolve o visual, mas o solado liso não foi feito para piso molhado. É a opção mais arriscada no salão.',
+          '<strong>Calçado profissional antiderrapante:</strong> fechado, leve, lavável e com solado ensaiado para piso molhado. Existe em preto e em modelos discretos, que passam no uniforme da maior parte das casas.',
+          '<strong>Tênis comum:</strong> confortável, mas absorve líquido, é difícil de limpar e não tem solado ensaiado para piso molhado nem Certificado de Aprovação.',
+        ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quando a casa exige sapato social, vale procurar o modelo profissional de aparência social, e não o social comum. Sem risco de queda de objeto pesado no pé, que é o caso do salão, o calçado é da linha ocupacional, sem biqueira, como explica <a href="/conhecimento/calcado-ocupacional-ou-de-seguranca/">calçado ocupacional ou de segurança</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O que conferir no solado',
+      },
+      {
+        tipo: 'p',
+        texto:
+          '"Antiderrapante" na etiqueta não diz em que piso nem com que líquido o solado foi testado. O modelo com Certificado de Aprovação traz a marcação de resistência ao escorregamento, e é esse dado que interessa para salão com bebida e gordura. Como ler essa marcação está em <a href="/conhecimento/solado-antiderrapante-o-que-significa/">o que significa solado antiderrapante</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O turno inteiro em pé',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'O garçom passa o turno em pé e andando, muitas vezes com peso numa mão só. Peso do calçado, amortecimento e forma que não aperta contam tanto quanto o solado, e o pé incha ao longo do dia: vale provar pensando no fim do expediente. O assunto completo está em <a href="/conhecimento/calcado-para-quem-trabalha-em-pe-o-dia-todo/">calçado para quem trabalha em pé o dia todo</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Para a garçonete, modelo de forma feminina costuma calçar melhor do que o masculino em número pequeno, que sobra na largura e aperta no peito do pé. O que muda está em <a href="/conhecimento/calcado-de-seguranca-feminino-o-que-muda/">calçado feminino</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Barraca de praia',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na barraca o piso muda a cada passo: areia, deck de madeira molhado, piso perto do chuveiro e da cozinha. Sandália enche de areia e deixa o pé exposto a caco e respingo; tênis encharca e não seca até o fim do dia. O que costuma funcionar é calçado fechado, leve, de material que não absorve água, que se lava e seca rápido, com solado que segure em piso molhado.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quem trabalha na cozinha da barraca segue o critério de cozinha, em <a href="/conhecimento/calcado-para-cozinha-como-escolher/">calçado para cozinha</a>. O sol do dia inteiro tem tratamento próprio, em <a href="/conhecimento/trabalho-ao-sol-protetor-solar-e-epi/">trabalho ao sol</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O sapato do garçom é EPI?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Depende do risco. Onde a avaliação de riscos da casa aponta o piso escorregadio como risco do posto, o calçado com Certificado de Aprovação é EPI, e a NR-6 manda a empresa fornecer de graça, exigir o uso e substituir quando danificado (item 6.5.1). O garçom, por sua vez, usa o que recebeu e cuida dele (item 6.6.1). O que a empresa pode ou não descontar está em <a href="/conhecimento/empresa-pode-descontar-epi-do-salario/">empresa pode descontar EPI do salário?</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A Tower trabalha calçado ocupacional antiderrapante para bar, restaurante e barraca, entre eles a linha da <a href="/marcas/sticky-shoes/">Sticky Shoes</a>, e monta a grade de numeração da equipe, como em <a href="/conhecimento/grade-de-numeracao-como-definir-para-a-equipe/">grade de numeração</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Antes de comprar para a equipe',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'A cor que o uniforme pede: preto, branco ou livre.',
+          'O piso do salão e o que costuma cair nele.',
+          'Se o garçom entra na cozinha ou na área de lavagem.',
+          'Quantas horas tem o turno.',
+          'A numeração de cada pessoa, e se há garçonetes na equipe.',
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+    ],
+    paginaComercial: {
+      href: '/calcados/ocupacionais/',
+      rotulo: 'Ver calçados ocupacionais',
+    },
+    contexto: 'calcados-ocupacionais',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Preciso de sapato para os garçons e queria ajuda para escolher o modelo e montar a numeração.',
+    ctaTitulo: 'Vai calçar a equipe do salão?',
+    ctaTexto:
+      'Conte a cor do uniforme, o piso e a numeração de cada um. A gente indica o modelo antiderrapante que passa no visual da casa e monta a grade.',
+    perguntas: [
+      {
+        pergunta: 'Como escolher o sapato do garçom?',
+        resposta:
+          'Pelo solado primeiro, depois pelo conforto e por último pelo visual: solado antiderrapante ensaiado para piso molhado, peso baixo com amortecimento e a cor que a casa pede. Para a maioria dos salões, isso é um calçado profissional fechado e preto, com Certificado de Aprovação, e não um sapato social comum.',
+      },
+      {
+        pergunta: 'Garçom pode trabalhar de tênis?',
+        resposta:
+          'Se a casa permitir no uniforme, pode, mas o tênis comum absorve líquido, é difícil de limpar e não tem solado ensaiado para piso molhado. Onde o piso é risco, o certo é calçado profissional antiderrapante com CA.',
+      },
+      {
+        pergunta: 'Sapato social serve para garçom?',
+        resposta:
+          'Serve no visual e falha no chão: o solado do sapato social comum não foi feito para piso com bebida e gordura. A saída é o modelo profissional antiderrapante de aparência social.',
+      },
+      {
+        pergunta: 'Que calçado usar em barraca de praia?',
+        resposta:
+          'Fechado, leve, de material que não absorve água e que seca rápido, com solado que segure em deck e piso molhados. Sandália enche de areia e deixa o pé exposto; tênis encharca. Na cozinha da barraca vale o critério de calçado para cozinha.',
+      },
+    ],
+  },
+  {
+    slug: 'sapato-para-servicos-gerais',
+    titulo: 'Sapato para serviços gerais: qual escolher para limpeza e apoio',
+    tituloSeo: 'Sapato para serviços gerais',
+    resumo:
+      'Quem faz serviços gerais lava piso, tira lixo, serve café e carrega caixa no mesmo dia. O sapato depende de uma pergunta antes de todas: existe risco de algo pesado cair no pé?',
+    descricaoSeo:
+      'Ocupacional ou de segurança, borracha ou EVA, feminino ou masculino: como escolher o sapato de serviços gerais para limpeza, copa e apoio, com CA.',
+    publicado: '2026-11-20',
+    atualizado: '2026-11-20',
+    atualizadoExibicao: 'novembro de 2026',
+    cluster: 'Calçados',
+    blocos: [
+      {
+        tipo: 'destaque',
+        texto:
+          'Serviços gerais é a função que mais troca de tarefa ao longo do dia: lava banheiro, passa pano no corredor, tira lixo, serve café, carrega caixa. O sapato precisa servir para todas, e a escolha começa por uma pergunta: alguma dessas tarefas tem risco de queda de objeto pesado sobre o pé?',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Ocupacional ou de segurança',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Se não existe esse risco, que é o caso da maior parte da limpeza e da copa, o calçado ocupacional, sem biqueira, é o mais leve e o que a pessoa aguenta o dia inteiro. Se existe, como para quem carrega caixa pesada no almoxarifado ou ajuda na manutenção, entra o calçado de segurança, que o Anexo I da NR-6 descreve como proteção contra impacto de quedas de objetos sobre os artelhos (item G.1, alínea a). A comparação está em <a href="/conhecimento/calcado-ocupacional-ou-de-seguranca/">calçado ocupacional ou de segurança</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'O piso molhado é o risco de todo dia',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Lavar piso é a tarefa que define o sapato: quem lava pisa no molhado o tempo todo, e água com produto de limpeza pode deixar o chão mais liso do que água sozinha. O que importa é o solado ensaiado para piso molhado e o calçado fechado e impermeável. Como ler a marcação do solado está em <a href="/conhecimento/solado-antiderrapante-o-que-significa/">o que significa solado antiderrapante</a>, e quando a lavagem é pesada, com mangueira e água corrente, a resposta é a <a href="/conhecimento/bota-de-pvc-quando-e-a-resposta-certa/">bota de PVC</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'EVA, borracha ou couro',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '<strong>EVA e outros polímeros:</strong> leves, impermeáveis e fáceis de lavar. Servem para limpeza e copa.',
+          '<strong>Borracha e PVC:</strong> impermeáveis e resistentes à água. O sapato de borracha fechado e a bota atendem quem lava área grande.',
+          '<strong>Couro:</strong> aguenta abrasão e serviço pesado, mas não é a escolha para quem passa o dia lavando piso.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        texto: 'Feminino e masculino',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Em equipe de serviços gerais, a forma do calçado faz diferença: modelo masculino em número pequeno sobra na largura e aperta no peito do pé. O que muda no modelo feminino está em <a href="/conhecimento/calcado-de-seguranca-feminino-o-que-muda/">calçado feminino</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Existe sapato ortopédico para serviços gerais?',
+      },
+      {
+        tipo: 'p',
+        texto:
+          '"Ortopédico" não é uma classificação do calçado profissional, e o Certificado de Aprovação não traz essa característica. Quem procura isso quase sempre quer conforto para o dia em pé: amortecimento, palmilha que apoia o arco e peso baixo. Quando há indicação de palmilha feita por profissional de saúde, o calçado precisa ter palmilha removível, como explica <a href="/conhecimento/palmilha-em-botina-de-seguranca-e-botina-ortopedica/">palmilha e botina ortopédica</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Serviços gerais em hospital e clínica',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Na área da saúde, a NR-32 manda o empregador vedar calçado aberto a quem está exposto a agente biológico (item 32.2.4.5), o que costuma incluir quem limpa quarto, banheiro e área de paciente. O resto do que a norma pede está em <a href="/conhecimento/epi-na-nr-32-o-que-a-norma-exige-em-servicos-de-saude/">EPI na NR-32</a>.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Quem fornece e quem usa',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'Quando o sapato é EPI, a empresa fornece de graça, exige o uso e substitui quando estraga (NR-6, item 6.5.1). O trabalhador usa o que recebeu, só para a finalidade dele, e cuida da limpeza e da guarda (item 6.6.1). Quando a recusa tem motivo, como um sapato que machuca, o caminho está em <a href="/conhecimento/funcionario-recusa-usar-epi-o-que-fazer/">funcionário se recusa a usar o EPI</a>.',
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A Tower trabalha calçado ocupacional antiderrapante para limpeza e serviços gerais, como a linha da <a href="/marcas/sticky-shoes/">Sticky Shoes</a>, e calçado de segurança da <a href="/marcas/bompel/">Bompel</a> onde há risco de impacto. Para equipe, a grade de numeração é montada uma vez e serve para a reposição.',
+      },
+      {
+        tipo: 'h2',
+        texto: 'Antes de comprar para a equipe',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Quais tarefas a equipe faz: limpeza, copa, lixo, carga, apoio à manutenção.',
+          'Se alguma delas tem risco de queda de objeto pesado no pé.',
+          'Como é a lavagem: pano e rodo ou mangueira e água corrente.',
+          'Se o local é área da saúde.',
+          'A numeração de cada pessoa e a forma, feminina ou masculina.',
+        ],
+      },
+    ],
+    fontes: [
+      {
+        titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+      },
+      {
+        titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
+        url: 'https://www.gov.br/pt-br/servicos/obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual-ca',
+      },
+    ],
+    paginaComercial: {
+      href: '/calcados/antiderrapantes/',
+      rotulo: 'Ver calçados antiderrapantes',
+    },
+    contexto: 'calcados-antiderrapantes',
+    mensagemWhats:
+      'Olá! Vim pelo site da Tower. Preciso de sapato para a equipe de serviços gerais e queria ajuda para escolher o modelo e montar a numeração.',
+    ctaTitulo: 'Vai calçar a equipe de serviços gerais?',
+    ctaTexto:
+      'Conte as tarefas da equipe e a numeração de cada um. A gente indica se é ocupacional ou de segurança e monta a grade para a reposição.',
+    perguntas: [
+      {
+        pergunta: 'Qual sapato usar em serviços gerais?',
+        resposta:
+          'Na maior parte dos casos, um calçado ocupacional fechado, impermeável e com solado antiderrapante ensaiado para piso molhado, leve o bastante para o dia inteiro. Se alguma tarefa tem risco de queda de objeto pesado no pé, entra o calçado de segurança com biqueira.',
+      },
+      {
+        pergunta: 'Sapato de serviços gerais precisa de biqueira?',
+        resposta:
+          'Só onde existe risco de queda de objeto pesado sobre o pé, como carga de caixa pesada ou apoio à manutenção. Na limpeza e na copa, a biqueira só acrescenta peso; o que protege ali é o solado.',
+      },
+      {
+        pergunta: 'Sou obrigado a usar o sapato que a empresa fornece?',
+        resposta:
+          'Quando ele é EPI, sim: a NR-6 obriga o trabalhador a usar o que recebeu e a cuidar dele, e a empresa a fornecer de graça e trocar quando estraga. Se o sapato machuca ou não serve para a tarefa, o caminho é avisar a empresa para trocar o modelo ou a numeração.',
+      },
+      {
+        pergunta: 'Sapato de borracha serve para serviços gerais?',
+        resposta:
+          'Serve para quem lava piso, porque é impermeável e se lava fácil, desde que seja fechado e tenha solado antiderrapante com CA. Para a lavagem pesada, com mangueira, a bota protege mais.',
       },
     ],
   },
