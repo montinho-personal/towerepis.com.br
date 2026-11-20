@@ -80,3 +80,5 @@ CA do EPI e NCM da botina (outubro e novembro de 2026).
 | 69 | `ncm-da-botina-de-seguranca` | 2026-11-06 | |
 | 70 | `ncm-dos-epi-luva-capacete-oculos-e-respirador` | 2026-11-17 | |
 | 71 | `epi-para-motorista-de-caminhao` | 2026-11-17 | |
+| 72 | `epi-para-frentista-de-posto-de-combustivel` | 2026-11-20 | |
+| 73 | `epi-para-acougue-e-acougueiro` | 2026-11-20 | |
