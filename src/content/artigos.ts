@@ -7763,8 +7763,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'O líquido da casca queima a pele, o cozimento solta vapor e a quebra é trabalho manual o dia inteiro. O que organiza o EPI de uma fábrica de castanha.',
     publicado: '2026-09-28',
-    atualizado: '2026-09-28',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-11-21',
+    atualizadoExibicao: 'novembro de 2026',
     cluster: 'Proteção',
     blocos: [
       {
@@ -7857,6 +7857,8 @@ export const ARTIGOS: Artigo[] = [
           '<strong>Luva de reposição durante o turno.</strong> Luva que entrou em contato com o líquido tem vida curta, e quando a reposição falta, a equipe trabalha sem.',
           '<strong>Luva térmica separada da luva química.</strong> O posto do cozimento e o posto do corte pedem coisas diferentes, e viram um item só na hora da compra.',
           '<strong>Avental impermeável</strong> para quem manipula castanha crua e casca, que respinga no corpo e não só na mão.',
+          '<strong>Proteção do antebraço.</strong> O líquido escorre da mão para o braço, e o Anexo I da NR-6 tem manga contra agentes químicos (item F.3, alínea f) para o espaço que a luva não cobre.',
+          '<strong>Óculos no corte.</strong> Onde a lâmina abre a casca, o líquido pode espirrar, e o olho é a parte do corpo que menos aguenta um produto cáustico.',
           '<strong>Proteção para quem limpa.</strong> Quem recolhe casca e lava o piso encontra o mesmo líquido, e raramente está na lista.',
           '<strong>Calçado antiderrapante</strong> onde o piso acumula resíduo, e não o mesmo calçado para a fábrica inteira.',
         ],
