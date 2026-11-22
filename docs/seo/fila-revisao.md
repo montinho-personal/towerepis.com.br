@@ -24,8 +24,8 @@ CA do EPI e NCM da botina (outubro e novembro de 2026).
 | 13 | `epi-pelo-menor-preco-onde-a-conta-nao-fecha` | 2026-09-20 | 2026-11-20 (sem mudança) |
 | 14 | `epi-para-beneficiamento-de-castanha-de-caju` | 2026-09-28 | 2026-11-21 (0980c85) |
 | 15 | `epi-para-ceramica-vermelha-e-olaria` | 2026-09-28 | 2026-11-21 (sem mudança) |
-| 16 | `epi-para-extracao-de-carnauba` | 2026-09-28 | |
-| 17 | `epi-para-salina-e-industria-do-sal` | 2026-09-28 | |
+| 16 | `epi-para-extracao-de-carnauba` | 2026-09-28 | 2026-11-22 (be07829) |
+| 17 | `epi-para-salina-e-industria-do-sal` | 2026-09-28 | 2026-11-22 (sem mudança) |
 | 18 | `epi-para-carcinicultura-e-despesca-de-camarao` | 2026-09-29 | |
 | 19 | `epi-para-marmoraria-e-rochas-ornamentais` | 2026-09-29 | |
 | 20 | `calcado-ocupacional-ou-de-seguranca` | 2026-10-03 | |
