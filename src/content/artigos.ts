@@ -8272,8 +8272,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'A folha que cai como flecha, a vara de até 12 metros, o sol do carnaubal e a poeira da batição. O que organiza o EPI na safra da carnaúba.',
     publicado: '2026-09-28',
-    atualizado: '2026-09-28',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-11-22',
+    atualizadoExibicao: 'novembro de 2026',
     cluster: 'Proteção',
     blocos: [
       {
@@ -8303,7 +8303,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'O talo da folha tem espinho, e o manuseio da palha cortada fere a mão. Luva de manuseio resistente a corte e perfuração, e calçado fechado e firme para o terreno do carnaubal, que tem toco, espinho e chão irregular.',
+          'O talo da folha tem espinho, e o manuseio da palha cortada fere a mão. Luva de manuseio resistente a corte e perfuração, e calçado fechado e firme para o terreno do carnaubal, que tem toco, espinho e chão irregular. No mato do carnaubal também há cobra: a NR-31 manda o empregador fornecer perneira contra picadas de animais peçonhentos de acordo com o risco da atividade (item 31.6.2, alínea c), e a diferença entre ela e as perneiras da NR-6 está em <a href="/conhecimento/perneira-de-seguranca-quando-usar/">perneira de segurança</a>.',
       },
       {
         tipo: 'h2',
