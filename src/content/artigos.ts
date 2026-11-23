@@ -8434,8 +8434,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Granito tem sílica, e o acabamento é onde a poeira mais sobe. O que organiza o EPI de uma marmoraria: corte úmido, respirador, ruído, água e chapa pesada.',
     publicado: '2026-09-29',
-    atualizado: '2026-09-29',
-    atualizadoExibicao: 'setembro de 2026',
+    atualizado: '2026-11-23',
+    atualizadoExibicao: 'novembro de 2026',
     cluster: 'Proteção',
     blocos: [
       {
@@ -8469,7 +8469,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'A água reduz a poeira, mas não resolve tudo sozinha. Onde a avaliação de riscos da empresa ainda indicar exposição, entra o respirador para partículas, com Certificado de Aprovação e bem vedado no rosto. A sequência da escolha está em <a href="/conhecimento/respirador-como-escolher-o-filtro/">como escolher o filtro do respirador</a>.',
+          'A água reduz a poeira, mas não resolve tudo sozinha. Onde a avaliação de riscos da empresa ainda indicar exposição, entra o respirador para partículas, com Certificado de Aprovação e bem vedado no rosto: peça semifacial filtrante, a PFF, ou peça com filtro para partículas, que o Anexo I da NR-6 lista no item D.1. A classe sai da avaliação de riscos. A sequência da escolha está em <a href="/conhecimento/respirador-como-escolher-o-filtro/">como escolher o filtro do respirador</a>.',
       },
       {
         tipo: 'h2',
@@ -8501,7 +8501,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Chapa de granito é pesada, frágil e tem borda cortante. A movimentação e a armazenagem de chapas têm regra própria, num anexo da norma de movimentação de materiais, que trata de cavalete, apoio e equipamento de içamento. O EPI completa essas medidas e não as substitui: calçado com biqueira e luva resistente a corte para quem pega a peça pela borda.',
+          'Chapa de granito é pesada, frágil e tem borda cortante. A movimentação e a armazenagem de chapas têm regra própria, num anexo da norma de movimentação de materiais, que trata de cavalete, apoio e equipamento de içamento. O EPI completa essas medidas e não as substitui: calçado com biqueira e luva resistente a corte para quem pega a peça pela borda. Onde há ponte rolante, talha ou chapa em cavalete alto, entra também o capacete contra impacto de objetos sobre o crânio (NR-6, Anexo I, item A.1, alínea a).',
       },
       {
         tipo: 'h2',
@@ -8570,6 +8570,11 @@ export const ARTIGOS: Artigo[] = [
     ctaTexto:
       'Conte quem corta, quem faz acabamento e quem movimenta chapa, e quais pedras vocês mais trabalham. A gente separa a lista por posto.',
     perguntas: [
+      {
+        pergunta: 'Marmorista tem direito a insalubridade?',
+        resposta:
+          'Depende de laudo. A NR-15 trata a poeira com sílica no Anexo 12, que fixa limite de tolerância e exige corte e acabamento com umidificação. Quem caracteriza a insalubridade é a perícia, considerando a exposição medida e as medidas de proteção em uso.',
+      },
       {
         pergunta: 'Corte a seco de granito é permitido?',
         resposta:
