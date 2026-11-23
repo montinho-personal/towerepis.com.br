@@ -26,8 +26,8 @@ CA do EPI e NCM da botina (outubro e novembro de 2026).
 | 15 | `epi-para-ceramica-vermelha-e-olaria` | 2026-09-28 | 2026-11-21 (sem mudança) |
 | 16 | `epi-para-extracao-de-carnauba` | 2026-09-28 | 2026-11-22 (be07829) |
 | 17 | `epi-para-salina-e-industria-do-sal` | 2026-09-28 | 2026-11-22 (sem mudança) |
-| 18 | `epi-para-carcinicultura-e-despesca-de-camarao` | 2026-09-29 | |
-| 19 | `epi-para-marmoraria-e-rochas-ornamentais` | 2026-09-29 | |
+| 18 | `epi-para-carcinicultura-e-despesca-de-camarao` | 2026-09-29 | 2026-11-23 (sem mudança) |
+| 19 | `epi-para-marmoraria-e-rochas-ornamentais` | 2026-09-29 | 2026-11-23 (e572d58) |
 | 20 | `calcado-ocupacional-ou-de-seguranca` | 2026-10-03 | |
 | 21 | `calcado-para-cozinha-como-escolher` | 2026-10-03 | |
 | 22 | `epi-para-fabrica-de-cimento-e-mineracao-de-calcario` | 2026-10-03 | |
