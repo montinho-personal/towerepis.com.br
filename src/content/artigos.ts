@@ -84,8 +84,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Piso molhado, gordura e horas em pé mudam o critério. O que observar no solado e na cobertura, e quando a biqueira entra — revisado por técnico de segurança.',
     publicado: '2026-08-30',
-    atualizado: '2026-10-03',
-    atualizadoExibicao: 'outubro de 2026',
+    atualizado: '2026-11-24',
+    atualizadoExibicao: 'novembro de 2026',
     cluster: 'Calçados',
     blocos: [
       {
@@ -207,6 +207,7 @@ export const ARTIGOS: Artigo[] = [
           ['Fechado no peito do pé', 'Respingo de líquido quente e gordura'],
           ['Material impermeável', 'Piso molhado durante todo o expediente'],
           ['Fácil higienização', 'Exigência sanitária e limpeza diária'],
+          ['Cor branca', 'Padrão de uniforme em parte das cozinhas; não protege mais que o preto'],
           ['Leve e confortável', 'Jornada longa em pé, muitas vezes em dobra'],
           ['Fixação no calcanhar', 'Calçado que sai do pé torce no piso molhado'],
           ['Biqueira', 'Só se houver risco de queda de objeto pesado'],
@@ -245,6 +246,11 @@ export const ARTIGOS: Artigo[] = [
     mensagemWhats:
       'Olá! Vim pelo site da Tower. Li o texto sobre calçado para cozinha e queria ajuda para escolher o modelo certo para a minha rotina.',
     perguntas: [
+      {
+        pergunta: 'O calçado da cozinha é EPI?',
+        resposta:
+          'É quando a avaliação de riscos aponta o piso escorregadio ou o respingo quente como risco do posto e o modelo tem Certificado de Aprovação. Aí a NR-6 manda a empresa fornecer de graça, exigir o uso e trocar quando estragar (item 6.5.1). Calçado sem CA não conta como EPI, por mais profissional que pareça.',
+      },
       {
         pergunta: 'Calçado furado ou tipo babuche serve para cozinha?',
         resposta:
@@ -515,8 +521,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'As duas normas do calçado profissional, o que cada uma exige da biqueira, e a pergunta que resolve a dúvida na maioria dos casos.',
     publicado: '2026-08-30',
-    atualizado: '2026-10-03',
-    atualizadoExibicao: 'outubro de 2026',
+    atualizado: '2026-11-24',
+    atualizadoExibicao: 'novembro de 2026',
     cluster: 'Calçados',
     blocos: [
       {
@@ -604,7 +610,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Na consulta do CA, a mesma informação vem em palavras. Frases como "proteção dos pés contra agentes cortantes e escoriantes" são textos de CA, não nomes de norma: dizem contra o quê aquele modelo foi aprovado, e é por elas que se confirma se existe biqueira de proteção.',
+          'Na consulta do CA, a mesma informação vem em palavras. Frases como "proteção dos pés contra agentes cortantes e escoriantes" são textos de CA, não nomes de norma: dizem contra o quê aquele modelo foi aprovado, e é por elas que se confirma se existe biqueira de proteção. Expressões como "calçado ocupacional de uso profissional, tipo sapato" ou "tipo botina", que muita gente digita na busca, vêm dessa mesma descrição: a categoria, o formato e o material do modelo aprovado.',
       },
       {
         tipo: 'p',
