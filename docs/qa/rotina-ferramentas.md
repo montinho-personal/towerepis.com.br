@@ -55,3 +55,33 @@ Quem corrige é a rodada principal, que depois roda tudo de novo.
 5. Resumo para o Renato: por ferramenta, o resultado de cada especialista,
    o que foi corrigido, a prova de que as contas fecham (quantas entradas
    conferidas, quantas divergências) e o que ficou pendente.
+
+## Histórico
+
+**26/11/2026 — rodada 1: tamanho de botina e grade da equipe.** Seis
+especialistas. Correções:
+
+- Calculadora de botina: a conta usava o passo arredondado 6,667 mm e dava
+  "38 ou 39" para 25,8 cm e "39" para 26,2 cm, à mesma distância do 39; agora
+  usa a fração exata da fonte (20/3). 8 de 161 medidas mudaram, todas para o
+  número único que a regra declarada manda. O link passou a guardar os dois
+  pés; o foco volta ao campo depois de "Usar X cm".
+- Grade: nome digitado depois do número ("40, Xavier") virava setor e saía na
+  mensagem e no que fica salvo (privacidade); valor inválido seguia somando;
+  mensagem errada acima de 20.000; modelo continuava depois de "Não"; duplo
+  clique trocava de etapa duas vezes; campos "Outro" sumiam no meio da
+  digitação; "39,5" e "40; 41" entravam sem aviso; "Paulo ?" era ignorado;
+  frase errada com reserva de 0%; "1 pares"; "Faltam 1"; desempate da
+  reserva por ponto flutuante; linhas recusadas além da 10ª sem aviso.
+- Acessibilidade em todo o site: botão de WhatsApp 4,31:1 → 5,14:1; foco
+  visível nas opções com rádio escondido; contorno claro sobre superfície
+  escura, vermelha e degradê; foco do "pular para o conteúdo"; borda de campo
+  3,6:1; placeholder 4,6:1; foco não fica sob o cabeçalho e o placar; regiões
+  de status persistentes; ordem do Tab igual à visual no celular; nome sem
+  corte na lista.
+- Contas conferidas pelos auditores: 238 entradas na calculadora de botina (8
+  divergências, corrigidas) e 267 grades (nenhuma conta errada; 30 frases do
+  0%, corrigidas).
+- Pendente, decisão de produto: botão "voltar" do navegador sai da
+  ferramenta em vez de voltar uma etapa; link com medida inválida volta ao
+  início sem aviso.

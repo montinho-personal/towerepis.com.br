@@ -75,6 +75,26 @@ o código do link: os dois campos são texto puro.
 Falso positivo corrigido em 26/11/2026: a âncora `#whatsapp` dos termos de
 uso era lida como link de WhatsApp; o teste agora olha o domínio do link.
 
+## Foco visível pelo teclado
+
+```
+npm run build && npx next start -p 3000
+node docs/ferramentas/qa-foco.mjs [rota ...]
+```
+
+Aperta Tab em cada rota (padrão: home, as três ferramentas, orçamento e um
+artigo) e mede, a cada parada, se há contorno de pelo menos 2px e o contraste
+dele contra o fundo **no ponto onde ele é desenhado**, mínimo 3:1 (WCAG 2.4.7 e
+1.4.11). Rádio `sr-only` é medido pela label que o envolve. Criado na QA das
+ferramentas de 26/11/2026, que achou contorno vermelho sobre grafite (2,33:1),
+sobre o degradê do cabeçalho (1:1) e opções sem contorno nenhum.
+
+Três armadilhas que o próprio teste já tropeçou e corrigiu: o fundo de
+referência não é o do pai, é o do ponto fora da caixa (um cartão claro numa
+grade escura mostra o contorno sobre o vizinho claro); a rolagem suave do site
+deixa o elemento fora do lugar na hora da medição (o teste desliga); e
+elemento em barra fixa não pode ser rolado nem medido durante a transição.
+
 ## Barra contextual
 
 ```

@@ -43,7 +43,7 @@ const novoItem = (): ItemCotacao => ({
 
 const rotulo = 'block font-display text-sm font-bold'
 const campo =
-  'mt-2 w-full border border-rule-strong bg-paper px-4 py-3 text-base focus:border-ink focus:outline-none'
+  'mt-2 w-full border border-campo bg-paper px-4 py-3 text-base focus:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-ink'
 
 export function FormularioCotacao() {
   const [itens, setItens] = useState<ItemCotacao[]>([novoItem()])
@@ -219,7 +219,7 @@ export function FormularioCotacao() {
                                 onChange={(e) =>
                                   atualizarNumeracao(item.id, n, e.target.value)
                                 }
-                                className="mt-1 w-full border border-rule-strong bg-paper px-1 py-2 text-center text-base focus:border-ink focus:outline-none"
+                                className="mt-1 w-full border border-campo bg-paper px-1 py-2 text-center text-base focus:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-ink"
                               />
                             </label>
                           ))}

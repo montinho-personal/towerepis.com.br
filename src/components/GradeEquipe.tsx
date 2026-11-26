@@ -665,6 +665,9 @@ function ModoLista({ estado, mudar }: { estado: Estado; mudar: (p: Partial<Estad
                     </li>
                   ))}
                 </ul>
+                {imp.ignoradas.length > 10 && (
+                  <p className="mt-1 text-sm">e mais {imp.ignoradas.length - 10} {imp.ignoradas.length - 10 === 1 ? 'linha' : 'linhas'} — confira a lista original.</p>
+                )}
               </>
             )}
           </div>

@@ -181,9 +181,12 @@ export function distribuirReserva(bases: [number, number][], total: number): Map
   const soma = bases.reduce((a, [, b]) => a + b, 0)
   const r = new Map<number, number>()
   if (total <= 0 || soma <= 0) return r
+  // Conta inteira: o resto é guardado como numerador sobre `soma`. Em ponto
+  // flutuante, 0,29999999999999716 perdia de 0,30000000000000004 e o
+  // desempate saía fora do critério declarado (auditoria de 26/11/2026).
   const cotas = bases.map(([n, b]) => {
-    const exata = (total * b) / soma
-    return { n, b, inteira: Math.floor(exata), resto: exata - Math.floor(exata) }
+    const produto = total * b
+    return { n, b, inteira: Math.floor(produto / soma), resto: produto % soma }
   })
   let sobra = total - cotas.reduce((a, c) => a + c.inteira, 0)
   const ordem = [...cotas].sort((x, y) => y.resto - x.resto || y.b - x.b || x.n - y.n)
@@ -251,11 +254,13 @@ export function calcular(e: Estado): Resultado {
     reservaPorNumero = distribuirReserva(bases, total)
     const exata = (base * e.reserva.pct) / 100
     reservaDescricao =
-      total === 0
+      base === 0
         ? `Reserva de ${e.reserva.pct}% escolhida, mas sem pares-base para aplicar.`
-        : exata === total
-          ? `Você escolheu ${e.reserva.pct}% de reserva sobre ${base} pares: ${pares(total)}, distribuídos conforme a equipe.`
-          : `Você escolheu ${e.reserva.pct}% de reserva sobre ${base} pares: ${fmtDecimal(exata)}, arredondados para cima, ${pares(total)}, distribuídos conforme a equipe.`
+        : total === 0
+          ? `Você escolheu ${e.reserva.pct}% de reserva: nenhum par a mais.`
+          : exata === total
+            ? `Você escolheu ${e.reserva.pct}% de reserva sobre ${pares(base)}: ${pares(total)}, distribuídos conforme a equipe.`
+            : `Você escolheu ${e.reserva.pct}% de reserva sobre ${pares(base)}: ${fmtDecimal(exata)}, arredondados para cima, ${pares(total)}, distribuídos conforme a equipe.`
   } else if (e.reserva.tipo === 'numeracao') {
     for (const n of NUMEROS) {
       const q = e.reserva.porNumero[String(n)] ?? 0

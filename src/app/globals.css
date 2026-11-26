@@ -139,11 +139,11 @@
      2,33:1 no grafite, abaixo dos 3:1 do WCAG 1.4.11. Ali ele é papel.
      A segunda regra devolve o vermelho para o que é claro dentro do escuro
      (cartão de papel numa faixa grafite); a ordem importa. */
-  :is(.band-ink, .bg-ink, .bg-grafite-900, .bg-grafite-800, .bg-grafite-700, .bg-tower-red, .ampliador)
+  :is(.band-ink, .bg-ink, .bg-grafite-900, .bg-grafite-800, .bg-grafite-700, .bg-tower-red, .degrade-marca, .ampliador)
     :is(:focus-visible, label:has(> input.sr-only:focus-visible)) {
     outline-color: var(--color-paper);
   }
-  :is(.band-ink, .bg-ink, .bg-grafite-900, .bg-grafite-800, .bg-grafite-700, .bg-tower-red)
+  :is(.band-ink, .bg-ink, .bg-grafite-900, .bg-grafite-800, .bg-grafite-700, .bg-tower-red, .degrade-marca)
     :is(.bg-paper, .bg-paper-2, .band, .bg-white)
     :is(:focus-visible, label:has(> input.sr-only:focus-visible)) {
     outline-color: var(--color-tower-red);
@@ -517,6 +517,9 @@
     font-weight: 700;
   }
   .skip-link:focus { left: 0; }
+  /* Encostado no canto, o contorno de fora cairia no degradê vermelho do
+     cabeçalho e sumiria: aqui ele vai por dentro, em papel sobre tinta. */
+  .skip-link:focus-visible { outline-color: var(--color-paper); outline-offset: -6px; }
 }
 
 /* Impressão da grade de numeração. Só vale quando o botão "Imprimir" da

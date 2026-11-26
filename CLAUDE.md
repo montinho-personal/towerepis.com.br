@@ -61,6 +61,7 @@ ferramentas estão em `docs/ferramentas/`, documentadas no `LEIA-ME.md` de lá:
 npm run build && npx next start -p 3000        # e -p 3122 para o rastreador
 node docs/ferramentas/qa-larguras.mjs          # estouro horizontal, 12 larguras
 node docs/ferramentas/qa-navegador.mjs         # navegador: rotas, menu, links, WhatsApp, orçamento (computador e celular)
+node docs/ferramentas/qa-foco.mjs              # foco pelo teclado: contorno e contraste (WCAG 2.4.7 e 1.4.11)
 node docs/ferramentas/qa-privacidade.mjs       # cookies e hosts, três trilhas
 node docs/ferramentas/qa-faq.mjs               # FAQ: presença e duplicação
 node docs/ferramentas/qa-barra.mjs             # barra contextual, matriz

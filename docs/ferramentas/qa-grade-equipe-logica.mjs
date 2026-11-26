@@ -180,6 +180,22 @@ if (!/fora da faixa/.test(imp.ignoradas[0]?.motivo ?? '')) f('importação: moti
   if (g.mensagemWhatsApp(cm, m).includes('XYZ') || g.textoGrade(cm, m).includes('XYZ')) f('modelo digitado e depois "Não" continuou na mensagem')
 }
 
+/* ---- auditoria de cálculo de 26/11/2026 ---- */
+{
+  const z = g.calcular(estado({ contagem: { 40: 10, 41: 7 }, reserva: { tipo: 'percentual', pct: 0 } }))
+  if (/sem pares-base/.test(z.reservaDescricao) || z.pedido !== 17) f(`0% com pares-base: "${z.reservaDescricao}", pedido ${z.pedido}`)
+  const um = g.calcular(estado({ contagem: { 40: 1 }, reserva: { tipo: 'percentual', pct: 1 } }))
+  if (/1 pares/.test(um.reservaDescricao)) f(`plural errado: "${um.reservaDescricao}"`)
+  // Restos iguais em conta exata: o desempate é mais pares-base, depois o número menor.
+  const d = g.distribuirReserva([[33, 10], [37, 710], [47, 10]], 13)
+  const esperado = new Map()
+  for (const [n, b] of [[33, 10], [37, 710], [47, 10]]) esperado.set(n, Math.floor((13 * b) / 730))
+  let sobra = 13 - [...esperado.values()].reduce((a, b) => a + b, 0)
+  const ordem = [[33, 10], [37, 710], [47, 10]].map(([n, b]) => ({ n, b, r: (13 * b) % 730 })).sort((x, y) => y.r - x.r || y.b - x.b || x.n - y.n)
+  for (const c of ordem) { if (sobra <= 0) break; esperado.set(c.n, esperado.get(c.n) + 1); sobra-- }
+  for (const [n, v] of esperado) if ((d.get(n) ?? 0) !== v) f(`desempate inteiro: ${n} deu ${d.get(n) ?? 0}, esperado ${v}`)
+}
+
 /* ---- grupos e privacidade ---- */
 {
   const e = estado({ modo: 'lista', pessoas: imp.pessoas, reserva: { tipo: 'percentual', pct: 10 } })

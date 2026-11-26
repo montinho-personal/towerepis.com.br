@@ -31,11 +31,21 @@ let paradas = 0
 
 for (const rota of rotas) {
   await p.goto(BASE + rota, { waitUntil: 'load' })
+  // Sem rolagem suave: o foco rola a página, e a medição precisa do elemento
+  // já no lugar, senão o ponto medido cai em outra coisa.
+  await p.addStyleTag({ content: 'html{scroll-behavior:auto!important}' })
   await p.evaluate(() => document.body.focus())
   const vistos = new Set()
   for (let i = 0; i < 120; i++) {
     await p.keyboard.press('Tab')
-    const r = await p.evaluate(() => {
+    // Elemento dentro de barra fixa: não rolar (rolar esconde ou mostra a
+    // barra) e esperar a transição de 300ms terminar antes de medir.
+    const fixo = await p.evaluate(() => {
+      for (let e = document.activeElement; e; e = e.parentElement) if (getComputedStyle(e).position === 'fixed') return true
+      return false
+    })
+    if (fixo) await p.waitForTimeout(450)
+    const r = await p.evaluate((fixo) => {
       let el = document.activeElement
       if (!el || el === document.body) return null
       const id = [el.tagName, el.id, el.getAttribute('href'), el.getAttribute('name'), el.value, (el.innerText || '').slice(0, 60), Math.round(el.getBoundingClientRect().top + scrollY)].join('|')
@@ -43,11 +53,32 @@ for (const rota of rotas) {
       if ((el.type === 'radio' || el.type === 'checkbox') && sr(el)) el = el.closest('label') || el
       const cs = getComputedStyle(el)
       const parse = (c) => (c.match(/[\d.]+/g) || []).map(Number)
-      let bg = null
-      for (let e = el.parentElement; e; e = e.parentElement) {
-        const v = parse(getComputedStyle(e).backgroundColor)
-        if (v.length >= 3 && (v.length === 3 || v[3] > 0.5)) { bg = v.slice(0, 3); break }
+      // O fundo que importa é o de onde o contorno é desenhado: um ponto logo
+      // fora da caixa, no meio da largura do contorno. Degradê conta pela
+      // primeira cor (o cabeçalho é um degradê vermelho).
+      const corDe = (e) => {
+        const s = getComputedStyle(e)
+        const v = parse(s.backgroundColor)
+        if (v.length >= 3 && (v.length === 3 || v[3] > 0.5) && !/oklab|oklch/.test(s.backgroundColor)) return v.slice(0, 3)
+        const g = s.backgroundImage.match(/#([0-9a-f]{6})|rgba?\([^)]*\)/i)
+        if (g) return g[1] ? [0, 2, 4].map((k) => parseInt(g[1].slice(k, k + 2), 16)) : parse(g[0]).slice(0, 3)
+        return null
       }
+      if (!fixo) el.scrollIntoView({ block: 'center', behavior: 'instant' })
+      const rc = el.getBoundingClientRect()
+      const off = parseFloat(cs.outlineOffset) || 0, larg = parseFloat(cs.outlineWidth) || 0
+      const y = Math.min(Math.max(rc.top + rc.height / 2, 1), innerHeight - 1)
+      const xs = [rc.left - off - larg / 2, rc.right + off + larg / 2].filter((x) => x > 0 && x < innerWidth)
+      let bg = null
+      for (const x of xs) {
+        for (const e of document.elementsFromPoint(x, y)) {
+          if (e === el || el.contains(e)) continue
+          bg = corDe(e)
+          if (bg) break
+        }
+        if (bg) break
+      }
+      if (!bg) for (let e = el.parentElement; e && !bg; e = e.parentElement) bg = corDe(e)
       bg = bg || [255, 255, 255]
       const lum = ([r, g, b]) => {
         const f = (x) => { x /= 255; return x <= 0.03928 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4 }
@@ -59,7 +90,7 @@ for (const rota of rotas) {
       const largura = cs.outlineStyle === 'none' ? 0 : parseFloat(cs.outlineWidth)
       const sombra = cs.boxShadow !== 'none'
       return { id, nome: (el.innerText || el.getAttribute('aria-label') || el.value || '').trim().slice(0, 40), largura, contraste: Math.round(contraste * 100) / 100, sombra }
-    })
+    }, fixo)
     if (!r) continue
     if (vistos.has(r.id)) break
     vistos.add(r.id)
