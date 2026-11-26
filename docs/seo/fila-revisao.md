@@ -30,8 +30,8 @@ CA do EPI e NCM da botina (outubro e novembro de 2026).
 | 19 | `epi-para-marmoraria-e-rochas-ornamentais` | 2026-09-29 | 2026-11-23 (e572d58) |
 | 20 | `calcado-ocupacional-ou-de-seguranca` | 2026-10-03 | 2026-11-24 (9936c3c) |
 | 21 | `calcado-para-cozinha-como-escolher` | 2026-10-03 | 2026-11-24 (9936c3c) |
-| 22 | `epi-para-fabrica-de-cimento-e-mineracao-de-calcario` | 2026-10-03 | |
-| 23 | `epi-para-packing-house-de-frutas` | 2026-10-03 | |
+| 22 | `epi-para-fabrica-de-cimento-e-mineracao-de-calcario` | 2026-10-03 | 2026-11-26 (e8c6224) |
+| 23 | `epi-para-packing-house-de-frutas` | 2026-10-03 | 2026-11-26 (sem mudança) |
 | 24 | `nr-6-o-que-a-empresa-precisa-saber` | 2026-10-03 | |
 | 25 | `ficha-de-entrega-de-epi-o-que-precisa-constar` | 2026-10-05 | |
 | 26 | `luva-de-procedimento-nao-e-luva-de-limpeza` | 2026-10-05 | |
