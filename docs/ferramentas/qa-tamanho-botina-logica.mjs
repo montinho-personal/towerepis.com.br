@@ -103,6 +103,22 @@ for (const qs of ['pe=abc', 'pe=5', 'pe=264', 'pe=26.4&largura=<b>', 'calcado=<s
   if (/^pe=(abc|5|264|)$/.test(qs) && r.estado) falha(`medida inválida na URL virou resultado: ${qs}`)
 }
 
+/* simetria em torno do centro (auditoria 26/11/2026: 25,8 dava "38 ou 39" e 26,2 dava "39") */
+for (let n = 27; n <= 51; n++) {
+  const centro = Math.round(n * 200 / 3) / 100 // cm
+  for (let k = 1; k <= 4; k++) {
+    const a = Math.round((n * 20 / 3 - k) ) / 10, b = Math.round((n * 20 / 3 + k)) / 10
+    if (a < 18 || b > 34) continue
+    const ea = t.estimar(a), eb = t.estimar(b)
+    const da = Math.abs(a * 15 - n * 10), db = Math.abs(b * 15 - n * 10)
+    if (Math.abs(da - db) < 1e-9 && ea.tipo !== eb.tipo) falha(`assimetria: ${a} cm → ${t.textoEstimativa(ea)}, ${b} cm → ${t.textoEstimativa(eb)}`)
+  }
+}
+for (const cm of [19.8, 21.8, 23.8, 25.8, 27.8, 29.8, 31.8, 33.8, 18.2, 20.2, 22.2, 24.2, 26.2, 28.2, 30.2, 32.2]) {
+  const e = t.estimar(cm)
+  if (e.tipo !== 'unico' || e.numero !== Math.round(cm * 1.5)) falha(`${cm} cm deveria dar ${Math.round(cm * 1.5)} (fração a 0,3 do centro), deu ${t.textoEstimativa(e)}`)
+}
+
 /* dois pés no link (QA 26/11/2026: recarregar perdia o lado e a diferença) */
 for (const [esq, dir] of [[26, 27.1], [27.1, 26], [25.5, 25.5], [18, 34]]) {
   const s = { cm: Math.max(esq, dir), esquerdo: esq, direito: dir, para: 'equipe' }

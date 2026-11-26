@@ -30,6 +30,8 @@ export type Fonte = { titulo: string; url: string }
 export type ReferenciaGeral = {
   nome: string
   passoMm: number
+  /** Fração exata da fonte (ex.: [20, 3]); quando existe, é ela que entra na conta. */
+  passoFracao?: number[]
   resumo: string
   fonte: Fonte
   fontesDeApoio: Fonte[]
@@ -53,6 +55,8 @@ export type TabelaDeModelo = {
 function validar(): { geral: ReferenciaGeral; modelos: TabelaDeModelo[] } {
   const geral = dados.referenciaGeral as ReferenciaGeral
   if (!(geral.passoMm > 6 && geral.passoMm < 7)) throw new Error('tabelas-numeracao: passoMm fora do ponto francês')
+  if (geral.passoFracao && (geral.passoFracao.length !== 2 || Math.abs(geral.passoFracao[0] / geral.passoFracao[1] - geral.passoMm) > 0.001))
+    throw new Error('tabelas-numeracao: passoFracao não corresponde a passoMm')
   if (!geral.fonte?.url || !/^\d{4}-\d{2}-\d{2}$/.test(geral.revisado)) throw new Error('tabelas-numeracao: referência geral sem fonte ou data')
   const modelos = (dados.tabelasDeModelo as TabelaDeModelo[]).filter((t) => {
     const completa =
@@ -113,14 +117,18 @@ export function lerMedida(texto: string): Leitura {
  */
 export const MEIO_NUMERO = 0.3
 
+/** Passo usado na conta: a fração exata da fonte, se houver; senão passoMm. */
+const PASSO_MM = REFERENCIA.passoFracao ? REFERENCIA.passoFracao[0] / REFERENCIA.passoFracao[1] : REFERENCIA.passoMm
+
 export type Estimativa =
   | { tipo: 'unico'; numero: number; bruto: number }
   | { tipo: 'faixa'; de: number; ate: number; bruto: number }
 
 export function estimar(cm: number): Estimativa {
-  const bruto = (cm * 10) / REFERENCIA.passoMm
+  // Arredonda a 1e-9 para a borda de 0,3 não depender de ruído de ponto flutuante.
+  const bruto = Math.round(((cm * 10) / PASSO_MM) * 1e9) / 1e9
   const n = Math.round(bruto)
-  if (Math.abs(bruto - n) <= MEIO_NUMERO) return { tipo: 'unico', numero: n, bruto }
+  if (Math.round(Math.abs(bruto - n) * 1e9) / 1e9 <= MEIO_NUMERO) return { tipo: 'unico', numero: n, bruto }
   const de = Math.floor(bruto)
   return { tipo: 'faixa', de, ate: de + 1, bruto }
 }
@@ -128,7 +136,7 @@ export function estimar(cm: number): Estimativa {
 export const textoEstimativa = (e: Estimativa) => (e.tipo === 'unico' ? String(e.numero) : `${e.de} ou ${e.ate}`)
 
 /** Comprimento de pé que corresponde ao centro de um número, em cm. */
-export const cmDoNumero = (n: number) => Math.round(n * REFERENCIA.passoMm) / 10
+export const cmDoNumero = (n: number) => Math.round(n * PASSO_MM) / 10
 
 /** O número está dentro da grade que o orçamento do site aceita? */
 const GRADE = NUMERACOES.map(Number)
