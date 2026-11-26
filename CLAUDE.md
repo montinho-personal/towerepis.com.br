@@ -180,6 +180,8 @@ espera renovar. Não repetir busca que já está em `docs/seo/evidencias/`.
 
 **Rotinas agendadas:** mensal no dia 16, às 14h42 de Brasília (mapa local,
 visão de IA das 5 buscas principais, ideias de pauta); diária, dois artigos
-por dia da fila em `docs/seo/fila-revisao.md`. As 5 buscas principais: "epi
+por dia da fila em `docs/seo/fila-revisao.md`. Diária às 15h13 de Fortaleza: QA de duas
+ferramentas por dia, com três especialistas (QA, mobile e acessibilidade,
+auditor de cálculo), pelo roteiro e pela fila em `docs/qa/rotina-ferramentas.md`. As 5 buscas principais: "epi
 fortaleza", "loja de epi fortaleza", "botina de segurança fortaleza",
 "fornecedor de epi fortaleza", "calçado de segurança fortaleza".
