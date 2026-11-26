@@ -10,6 +10,7 @@
  *   - nenhum erro de JavaScript (pageerror) nem console.error;
  *   - nenhuma requisição do próprio site com status >= 400;
  *   - nenhuma imagem quebrada depois de rolar até o fim;
+ *   - nenhum código HTML aparecendo como texto (link escrito na tela);
  *   - todo link de WhatsApp vai para wa.me com o número de empresa.ts;
  *   - no celular, o botão do menu abre o menu, o menu tem links e fecha.
  * Depois do percurso:
@@ -70,6 +71,7 @@ for (const modo of modos) {
     await p.waitForTimeout(150)
     const dados = await p.evaluate(() => ({
       h1: document.querySelectorAll('h1').length,
+      htmlCru: (document.querySelector('main') || document.body).innerText.match(/<\/?(a|strong|em|br|p)\b[^>]*>|&lt;|&gt;/i)?.[0] || '',
       imgs: [...document.images].filter((i) => i.complete && i.naturalWidth === 0 && i.loading !== 'lazy').map((i) => i.currentSrc || i.src),
       wa: [...document.querySelectorAll('a[href]')]
         .filter((a) => /^(wa\.me|(api|web)\.whatsapp\.com)$/.test(a.hostname))
@@ -79,6 +81,7 @@ for (const modo of modos) {
         .filter((h) => h.startsWith('/') && !h.startsWith('//')),
     }))
     if (dados.h1 !== 1) falha(modo.nome, rota, `${dados.h1} H1`)
+    if (dados.htmlCru) falha(modo.nome, rota, `código HTML aparecendo como texto: ${dados.htmlCru}`)
     for (const s of dados.imgs) falha(modo.nome, rota, `imagem quebrada ${s}`)
     for (const h of dados.wa) if (!waOk.test(h)) falha(modo.nome, rota, `WhatsApp fora do padrão ${h.slice(0, 80)}`)
     for (const h of dados.internos) links.add(h.split('#')[0])

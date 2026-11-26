@@ -65,7 +65,10 @@ function Renderizar({ bloco }: { bloco: Bloco }) {
           {/* h2, e não p: é a resposta direta do artigo. Ficou de fora do Lote
               1 porque o artigo renderiza por outro caminho. */}
           <h2 className="eyebrow eyebrow-red">Em uma frase</h2>
-          <p className="mt-2 text-lg leading-relaxed">{bloco.texto}</p>
+          {/* HTML, como o bloco 'p': o destaque também leva link. Até 26/11/2026
+              ele era texto puro, e o artigo da ficha mostrava o código do
+              link na tela (e estourava a largura em 320px). */}
+          <p className="mt-2 text-lg leading-relaxed" dangerouslySetInnerHTML={{ __html: bloco.texto }} />
         </div>
       )
     case 'tabela':

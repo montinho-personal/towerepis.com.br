@@ -227,7 +227,7 @@ export default function GradeDeNumeracao() {
               <ul className="mt-4 space-y-3 text-sm">
                 <li>
                   <a
-                    href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf"
+                    href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="underline underline-offset-4"

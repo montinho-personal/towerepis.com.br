@@ -435,7 +435,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto atualizado em 2022) — Ministério do Trabalho e Emprego',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Dicionário de metadados do conjunto de dados de EPI (campos do CA) — Ministério do Trabalho e Emprego',
@@ -755,8 +755,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Fornecimento gratuito, CA válido, ficha de entrega, treinamento e o erro mais comum de quem compra. Resumo prático da norma, com o texto oficial citado.',
     publicado: '2026-08-30',
-    atualizado: '2026-10-03',
-    atualizadoExibicao: 'outubro de 2026',
+    atualizado: '2026-11-26',
+    atualizadoExibicao: 'novembro de 2026',
     cluster: 'Normas',
     blocos: [
       {
@@ -907,7 +907,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Portaria MTE nº 57, de 16 de janeiro de 2025 — altera o item 6.9.4 da NR-6 (PDF oficial)',
@@ -1140,8 +1140,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'A NR-6 obriga a registrar a entrega do EPI. Veja o que a ficha precisa conter, os erros mais comuns no preenchimento e como organizar isso numa equipe grande.',
     publicado: '2026-09-03',
-    atualizado: '2026-10-05',
-    atualizadoExibicao: 'outubro de 2026',
+    atualizado: '2026-11-26',
+    atualizadoExibicao: 'novembro de 2026',
     cluster: 'Normas',
     blocos: [
       {
@@ -1294,7 +1294,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto atualizado)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
@@ -1309,6 +1309,11 @@ export const ARTIGOS: Artigo[] = [
     mensagemWhats:
       'Olá! Vim pelo site da Tower. Li o texto sobre ficha de entrega de EPI e gostaria de ajuda para organizar o fornecimento da nossa equipe.',
     perguntas: [
+      {
+        pergunta: 'Pode usar uma ficha coletiva, com a equipe toda na mesma folha?',
+        resposta:
+          'A NR-6 pede o registro do fornecimento ao empregado e aceita livro, ficha ou sistema eletrônico, inclusive biométrico (item 6.5.1, alínea d). O que o registro precisa mostrar é, para cada trabalhador, o que ele recebeu, quando e com qual CA. Lista coletiva costuma falhar justamente nisso, porque mistura entregas e não traz a assinatura de cada um em cada item.',
+      },
       {
         pergunta: 'A ficha de entrega de EPI pode ser digital?',
         resposta:
@@ -1498,7 +1503,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto atualizado)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Requisitos para calçados de segurança e ocupacionais — Target Normas',
@@ -2143,7 +2148,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto atualizado)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -2348,7 +2353,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto atualizado)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Requisitos para calçados de segurança e ocupacionais — Target Normas',
@@ -2569,7 +2574,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto atualizado)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
@@ -2832,7 +2837,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto atualizado)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
@@ -3053,7 +3058,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto atualizado)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
@@ -3248,7 +3253,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto atualizado)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -3459,7 +3464,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'CLT — Decreto-Lei nº 5.452/1943 (artigos 158, 166 e 462), Planalto',
@@ -3670,7 +3675,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -3897,7 +3902,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
@@ -4180,7 +4185,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
@@ -4377,7 +4382,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'NR-15 — Atividades e operações insalubres, Anexo 1 (texto oficial, PDF)',
@@ -4566,7 +4571,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
@@ -4767,7 +4772,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
@@ -4965,7 +4970,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
@@ -5163,7 +5168,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
@@ -5350,7 +5355,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
@@ -5556,7 +5561,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -5763,7 +5768,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
@@ -5957,7 +5962,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
@@ -6178,7 +6183,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
@@ -6348,7 +6353,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
@@ -6515,7 +6520,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
@@ -6743,7 +6748,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
@@ -6919,7 +6924,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
@@ -7127,7 +7132,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
@@ -7337,7 +7342,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Equipamentos de Proteção Individual — Ministério do Trabalho e Emprego',
@@ -7443,10 +7448,15 @@ export const ARTIGOS: Artigo[] = [
           ],
           [
             'Bota de PVC',
-            'Onde o pé fica dentro de líquido. É categoria à parte, tratada em <a href="/conhecimento/bota-de-pvc-quando-e-a-resposta-certa/">bota de PVC</a>.',
+            'Onde o pé fica dentro de líquido. É categoria à parte, com texto próprio logo abaixo da tabela.',
             'Uso o dia inteiro em ambiente seco, porque não respira.',
           ],
         ],
+      },
+      {
+        tipo: 'p',
+        texto:
+          'A bota de PVC, para quando o pé fica dentro de líquido, tem guia próprio em <a href="/conhecimento/bota-de-pvc-quando-e-a-resposta-certa/">bota de PVC: quando é a resposta certa</a>.',
       },
       {
         tipo: 'h2',
@@ -7527,7 +7537,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
@@ -7725,7 +7735,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
@@ -7909,7 +7919,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -8069,7 +8079,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -8234,7 +8244,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
@@ -8400,7 +8410,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -8720,7 +8730,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -8884,7 +8894,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -9065,7 +9075,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -9233,7 +9243,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -9427,7 +9437,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -9610,7 +9620,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -9798,7 +9808,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'NR-5 — Comissão Interna de Prevenção de Acidentes e de Assédio (texto oficial, PDF)',
@@ -9961,7 +9971,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'NBR 16603:2017 — calçado isolante elétrico para baixa tensão até 500 V em ambiente seco (Target/ABNT)',
@@ -10135,7 +10145,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'NR-31 — Segurança e saúde no trabalho na agricultura, pecuária, silvicultura, exploração florestal e aquicultura (texto oficial, PDF)',
@@ -10302,7 +10312,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -10423,7 +10433,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'SENAI-RS / SBRT — Fôrmas e sistemas de medidas para calçados (dossiê técnico), itens 4.1.3 e 4.2.2',
@@ -10580,7 +10590,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'CLT — Decreto-Lei 5.452/1943, artigo 166',
@@ -10729,7 +10739,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'NR-1 — Disposições Gerais e Gerenciamento de Riscos Ocupacionais (texto oficial, PDF)',
@@ -10877,7 +10887,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -11013,7 +11023,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Lei nº 12.305/2010 — Política Nacional de Resíduos Sólidos (Planalto)',
@@ -11178,7 +11188,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'SENAI-RS / SBRT — Fôrmas e sistemas de medidas para calçados (dossiê técnico)',
@@ -11299,7 +11309,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -11450,7 +11460,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -11584,7 +11594,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'NR-32 — Segurança e saúde no trabalho em serviços de saúde (texto oficial, PDF)',
@@ -11881,7 +11891,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -12041,7 +12051,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -12172,7 +12182,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -12337,7 +12347,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'NR-31 — Segurança e saúde no trabalho na agricultura, pecuária, silvicultura, exploração florestal e aquicultura (texto oficial, PDF)',
@@ -12520,7 +12530,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Consolidação das Leis do Trabalho — arts. 157, 158, 166 e 630 (Planalto)',
@@ -12667,7 +12677,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'NR-21 — Trabalhos a céu aberto (texto oficial, PDF)',
@@ -12826,7 +12836,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'IPECE — Enfoque Econômico nº 247: Indústria da confecção no Ceará, relevância e desempenho recente (março de 2023, PDF)',
@@ -13098,7 +13108,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'NR-11 — Transporte, movimentação, armazenagem e manuseio de materiais (texto oficial, PDF)',
@@ -13271,7 +13281,7 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
     ],
     paginaComercial: {
@@ -13415,7 +13425,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'NR-12 — Segurança no trabalho em máquinas e equipamentos, Anexo VII (texto oficial, PDF)',
@@ -13567,7 +13577,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'NR-12 — Segurança no trabalho em máquinas e equipamentos, Anexo VI (texto oficial, PDF)',
@@ -13711,7 +13721,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',
@@ -13858,7 +13868,7 @@ export const ARTIGOS: Artigo[] = [
     fontes: [
       {
         titulo: 'NR-6 — Equipamento de Proteção Individual, Anexo I (texto oficial, PDF)',
-        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-06-atualizada-2022-1.pdf',
+        url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf',
       },
       {
         titulo: 'Consulta ao Certificado de Aprovação (CA) — gov.br',

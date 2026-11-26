@@ -67,6 +67,11 @@ celular, o menu abre, tem links e fecha. Depois confere cada link interno
 "Enviar pelo WhatsApp" e lê o link que o botão abriria. Sai com código 1 se
 achar qualquer problema.
 
+Também acusa código HTML aparecendo como texto na página (`<a href...>` escrito
+na tela). Foi criado depois de achar, em 26/11/2026, o bloco "Em uma frase"
+da ficha de EPI e uma célula de tabela de "botina, bota ou sapato" mostrando
+o código do link: os dois campos são texto puro.
+
 Falso positivo corrigido em 26/11/2026: a âncora `#whatsapp` dos termos de
 uso era lida como link de WhatsApp; o teste agora olha o domínio do link.
 
