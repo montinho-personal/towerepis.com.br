@@ -32,8 +32,8 @@ CA do EPI e NCM da botina (outubro e novembro de 2026).
 | 21 | `calcado-para-cozinha-como-escolher` | 2026-10-03 | 2026-11-24 (9936c3c) |
 | 22 | `epi-para-fabrica-de-cimento-e-mineracao-de-calcario` | 2026-10-03 | 2026-11-26 (e8c6224) |
 | 23 | `epi-para-packing-house-de-frutas` | 2026-10-03 | 2026-11-26 (sem mudança) |
-| 24 | `nr-6-o-que-a-empresa-precisa-saber` | 2026-10-03 | |
-| 25 | `ficha-de-entrega-de-epi-o-que-precisa-constar` | 2026-10-05 | |
+| 24 | `nr-6-o-que-a-empresa-precisa-saber` | 2026-10-03 | 2026-11-26 (33c4aa6) |
+| 25 | `ficha-de-entrega-de-epi-o-que-precisa-constar` | 2026-10-05 | 2026-11-26 (33c4aa6) |
 | 26 | `luva-de-procedimento-nao-e-luva-de-limpeza` | 2026-10-05 | |
 | 27 | `mascara-descartavel-nao-protege-de-vapor-quimico` | 2026-10-05 | |
 | 28 | `luva-para-produto-quimico-como-escolher` | 2026-10-06 | |
