@@ -24,6 +24,7 @@ import {
   faixaEquipe,
   interpretarLista,
   LIMITE_ALERTA_POR_NUMERO,
+  LIMITE_POR_NUMERO,
   lerQuantidade,
   lerSalvo,
   mensagemWhatsApp,
@@ -150,12 +151,22 @@ export function GradeEquipe({ tamanho = false }: { tamanho?: boolean }) {
     setEstado((e) => ({ ...e, ...parcial }))
   }
 
+  // Trava de duplo clique: a etapa nova monta outro botão (ou um link) bem
+  // embaixo do cursor, e o segundo clique o acionava — "Continuar" virava
+  // "Voltar", "Gerar" virava "Ajustar" (QA 26/11/2026).
+  const ultimaTroca = useRef(0)
   function irPara(e: Etapa) {
+    const agora = Date.now()
+    if (agora - ultimaTroca.current < 450) return
+    ultimaTroca.current = agora
     interagiu.current = true
     setEtapa(e)
+    document.body.style.pointerEvents = 'none'
+    window.setTimeout(() => (document.body.style.pointerEvents = ''), 450)
   }
 
   function gerar() {
+    if (Date.now() - ultimaTroca.current < 450) return
     const r = calcular(estado)
     rastrearFerramentaConcluida(faixaEquipe(r.pessoas + r.pendentes), FERRAMENTA)
     rastrearFerramentaResultado(FERRAMENTA, estado.reserva.tipo, 'b2b', {
@@ -283,6 +294,11 @@ export function GradeEquipe({ tamanho = false }: { tamanho?: boolean }) {
           <button
             type="button"
             onClick={() => {
+              const errado = estado.modo === 'grade' ? Object.keys(textos).find((n) => lerQuantidade(textos[n]) === null) : undefined
+              if (errado) {
+                setTentouVazio(false)
+                return document.getElementById(`n-${errado}`)?.focus()
+              }
               if (vazio) return setTentouVazio(true)
               setTentouVazio(false)
               irPara('pedido')
@@ -377,7 +393,7 @@ function Conferencia({ conf }: { conf: ReturnType<typeof conferir> }) {
       {(conf.tipo === 'faltam' || conf.tipo === 'sobram') && (
         <p className="mt-2 text-[0.95rem] font-semibold text-tower-red-deep">
           {conf.tipo === 'faltam'
-            ? `Faltam ${pessoas(conf.n)} para fechar a quantidade informada.`
+            ? `${conf.n === 1 ? 'Falta' : 'Faltam'} ${pessoas(conf.n)} para fechar a quantidade informada.`
             : `A grade tem ${pessoas(conf.n)} a mais que o total informado.`}
         </p>
       )}
@@ -401,8 +417,13 @@ function ModoGrade({
   function definir(n: string, texto: string) {
     setTextos((t) => ({ ...t, [n]: texto }))
     const q = lerQuantidade(texto)
-    if (q === null) return
     const contagem = { ...estado.contagem }
+    // Valor inválido sai da conta: antes o placar seguia somando o último
+    // valor válido ("25000" contava 2500, "12a" contava 12).
+    if (q === null) {
+      delete contagem[n]
+      return mudar({ contagem })
+    }
     if (q) contagem[n] = q
     else delete contagem[n]
     mudar({ contagem })
@@ -451,7 +472,11 @@ function ModoGrade({
               </div>
               {(invalido || alto) && (
                 <p id={`n-${n}-msg`} role="alert" className="mt-1 text-sm font-semibold text-tower-red-deep">
-                  {invalido ? 'Use só números inteiros, como 12.' : `Confira: ${q.toLocaleString('pt-BR')} pessoas no ${n}?`}
+                  {invalido
+                    ? /^\d+$/.test(texto.trim())
+                      ? `Até ${LIMITE_POR_NUMERO.toLocaleString('pt-BR')} pessoas por numeração.`
+                      : 'Use só números inteiros, como 12.'
+                    : `Confira: ${q.toLocaleString('pt-BR')} pessoas no ${n}?`}
                 </p>
               )}
             </li>
@@ -502,9 +527,13 @@ function ModoLista({ estado, mudar }: { estado: Estado; mudar: (p: Partial<Estad
   const impRef = useRef<HTMLDivElement>(null)
   const dup = duplicados(estado.pessoas)
 
+  const ultimoAdd = useRef(0)
   function adicionar(ev: React.FormEvent) {
     ev.preventDefault()
     if (!numero) return
+    // Duplo clique em "Adicionar" criava a pessoa e uma cópia sem nome.
+    if (Date.now() - ultimoAdd.current < 400) return
+    ultimoAdd.current = Date.now()
     mudar({
       pessoas: [
         ...estado.pessoas,
@@ -717,10 +746,15 @@ function EtapaPedido({
   gerar: () => void
 }) {
   const ppp = estado.paresPorPessoa
-  const outroPares = ![1, 2].includes(ppp)
   const res = estado.reserva
   const pct = res.tipo === 'percentual' ? res.pct : 0
-  const outroPct = res.tipo === 'percentual' && ![5, 10, 15].includes(res.pct)
+  // "Outro" é um modo escolhido, não um valor: antes, digitar "10" passava
+  // pelo "1", que casava com o chip de 1 par, e o campo sumia no meio da
+  // digitação (o mesmo com "50" e o chip de 5%). QA 26/11/2026.
+  const [outroPares, setOutroPares] = useState(![1, 2].includes(ppp))
+  const [textoPpp, setTextoPpp] = useState(String(ppp))
+  const [outroPct, setOutroPct] = useState(res.tipo === 'percentual' && ![5, 10, 15].includes(res.pct))
+  const [textoPct, setTextoPct] = useState(String(pct))
   const usados = resultado.linhas.filter((l) => l.pessoas > 0)
 
   function porNumero(n: string, v: number) {
@@ -742,13 +776,14 @@ function EtapaPedido({
         <legend className="font-display text-lg font-bold">Quantos pares por pessoa?</legend>
         <div className="mt-3 flex flex-wrap items-center gap-2">
           {[1, 2].map((n) => (
-            <label key={n} className={CHIP(ppp === n)}>
+            <label key={n} className={CHIP(!outroPares && ppp === n)}>
               <input
                 type="radio"
                 name="ppp"
-                checked={ppp === n}
+                checked={!outroPares && ppp === n}
                 onChange={() => {
                   rastrearFerramenta('pares-por-pessoa', String(n), FERRAMENTA)
+                  setOutroPares(false)
                   mudar({ paresPorPessoa: n })
                 }}
                 className="sr-only"
@@ -757,7 +792,17 @@ function EtapaPedido({
             </label>
           ))}
           <label className={CHIP(outroPares)}>
-            <input type="radio" name="ppp" checked={outroPares} onChange={() => mudar({ paresPorPessoa: 3 })} className="sr-only" />
+            <input
+              type="radio"
+              name="ppp"
+              checked={outroPares}
+              onChange={() => {
+                setOutroPares(true)
+                setTextoPpp('3')
+                mudar({ paresPorPessoa: 3 })
+              }}
+              className="sr-only"
+            />
             Outro
           </label>
           {outroPares && (
@@ -769,8 +814,9 @@ function EtapaPedido({
                 id="ppp-outro"
                 type="text"
                 inputMode="numeric"
-                value={ppp}
+                value={textoPpp}
                 onChange={(e) => {
+                  setTextoPpp(e.target.value)
                   const q = lerQuantidade(e.target.value, PARES_POR_PESSOA_MAX)
                   if (q) mudar({ paresPorPessoa: q })
                 }}
@@ -809,6 +855,7 @@ function EtapaPedido({
                 checked={res.tipo === t}
                 onChange={() => {
                   rastrearFerramenta('reserva', t, FERRAMENTA)
+                  setOutroPct(false)
                   mudar({
                     reserva:
                       t === 'nenhuma'
@@ -830,13 +877,14 @@ function EtapaPedido({
             <p className="font-display text-sm font-bold">Percentual sobre os pares-base</p>
             <div className="mt-2 flex flex-wrap items-center gap-2">
               {[5, 10, 15].map((p) => (
-                <label key={p} className={CHIP(pct === p)}>
+                <label key={p} className={CHIP(!outroPct && pct === p)}>
                   <input
                     type="radio"
                     name="pct"
-                    checked={pct === p}
+                    checked={!outroPct && pct === p}
                     onChange={() => {
                       rastrearFerramenta('reserva-percentual', String(p), FERRAMENTA)
+                      setOutroPct(false)
                       mudar({ reserva: { tipo: 'percentual', pct: p } })
                     }}
                     className="sr-only"
@@ -845,7 +893,17 @@ function EtapaPedido({
                 </label>
               ))}
               <label className={CHIP(outroPct)}>
-                <input type="radio" name="pct" checked={outroPct} onChange={() => mudar({ reserva: { tipo: 'percentual', pct: 8 } })} className="sr-only" />
+                <input
+                  type="radio"
+                  name="pct"
+                  checked={outroPct}
+                  onChange={() => {
+                    setOutroPct(true)
+                    setTextoPct('8')
+                    mudar({ reserva: { tipo: 'percentual', pct: 8 } })
+                  }}
+                  className="sr-only"
+                />
                 Outro
               </label>
               {outroPct && (
@@ -857,10 +915,11 @@ function EtapaPedido({
                     id="pct-outro"
                     type="text"
                     inputMode="numeric"
-                    value={pct}
+                    value={textoPct}
                     onChange={(e) => {
+                      setTextoPct(e.target.value)
                       const q = lerQuantidade(e.target.value, RESERVA_PCT_MAX)
-                      if (q !== null) mudar({ reserva: { tipo: 'percentual', pct: q } })
+                      if (q !== null && e.target.value.trim() !== '') mudar({ reserva: { tipo: 'percentual', pct: q } })
                     }}
                     onBlur={() => rastrearFerramenta('reserva-percentual', String(pct), FERRAMENTA)}
                     className={CAMPO_NUM}
@@ -932,7 +991,7 @@ function EtapaPedido({
                 checked={estado.modelo?.sabe === v}
                 onChange={() => {
                   rastrearFerramenta('sabe-modelo', v, FERRAMENTA)
-                  mudar({ modelo: { sabe: v, nome: estado.modelo?.nome } })
+                  mudar({ modelo: { sabe: v, nome: v === 'sim' ? estado.modelo?.nome : undefined } })
                 }}
                 className="sr-only"
               />
@@ -1052,7 +1111,7 @@ function ResultadoGrade({
   const linkZap = linkWhatsApp('ferramenta-grade', mensagem.length > LIMITE_MENSAGEM ? undefined : mensagem)
   const maior = Math.max(1, ...r.linhas.map((l) => l.pedido))
   const grande = r.pessoas + r.pendentes > 30
-  const modelo = estado.modelo?.nome?.trim()
+  const modelo = estado.modelo?.sabe === 'sim' ? estado.modelo.nome?.trim() : undefined
   const data = new Date().toLocaleDateString('pt-BR')
 
   async function copiar() {

@@ -394,8 +394,17 @@ export function interpretarLista(texto: string): Importacao {
     // numeração separa o nome, antes, do grupo, depois.
     if (partes.length === 1) {
       const palavras = partes[0].split(/\s+/)
-      const i = palavras.findIndex((w) => /^\d{2}$/.test(w) && NUMEROS.includes(Number(w)))
+      let i = palavras.findIndex((w) => /^\d{2}$/.test(w) && NUMEROS.includes(Number(w)))
+      // "Paulo ?" sem separador: o pendente também separa o nome (QA 26/11/2026).
+      if (i === -1) i = palavras.findIndex((w) => PENDENTE.test(w))
       if (i !== -1) partes = [palavras.slice(0, i).join(' '), palavras[i], palavras.slice(i + 1).join(' ')].filter(Boolean)
+    }
+    // "39,5" vira "39" e "5" no split da vírgula, e a pessoa entrava como 39
+    // sem aviso. Numeração com decimal fica de fora, para a pessoa conferir.
+    const decimal = linha.match(/(?:^|[^\d])(\d{2}[,.]\d)(?!\d)/)
+    if (decimal) {
+      ignoradas.push({ linha: i + 1, texto: linha.slice(0, 60), motivo: `numeração com decimal (${decimal[1]}): use o número inteiro` })
+      return
     }
     if (partes.every((p) => CABECALHO.test(p))) {
       cabecalhos++
@@ -414,14 +423,24 @@ export function interpretarLista(texto: string): Importacao {
       })
       return
     }
+    const validos = partes.filter((p) => /^\d{2}$/.test(p) && NUMEROS.includes(Number(p)))
+    if (validos.length > 1) {
+      ignoradas.push({ linha: i + 1, texto: linha.slice(0, 60), motivo: `mais de uma numeração (${validos.join(' e ')}): deixe só uma` })
+      return
+    }
     const pos = idx !== -1 ? idx : idxPend
     const antes = partes.slice(0, pos).filter((p) => !/^\d+$/.test(p) || !NUMEROS.includes(Number(p)))
-    const depois = partes.slice(pos + 1)
+    const depois = partes.slice(pos + 1).filter((p) => !/^\d+$/.test(p))
+    // PRIVACIDADE: o primeiro texto da linha é sempre o nome, venha antes ou
+    // depois da numeração. Antes, "40, Xavier Quintino" punha o nome como
+    // setor, e o setor vai para a mensagem e fica salvo (QA 26/11/2026).
+    // Na dúvida, o texto vira nome, que nunca sai do navegador.
+    const nome = antes.length ? antes.join(' ') : depois.shift()
     pessoas.push({
       id: novoId(),
-      nome: antes.join(' ').slice(0, 60) || undefined,
+      nome: nome?.slice(0, 60) || undefined,
       numero: idx !== -1 ? Number(partes[idx]) : null,
-      grupo: depois.find((p) => !/^\d+$/.test(p))?.slice(0, 40) || undefined,
+      grupo: depois[0]?.slice(0, 40) || undefined,
     })
   })
   return { pessoas, ignoradas, cabecalhos }
@@ -437,7 +456,7 @@ export function textoGrade(r: Resultado, e: Estado): string {
   l.push(`Pessoas com numeração: ${r.pessoas}`, `Pares por pessoa: ${r.paresPorPessoa}`)
   if (r.reserva) l.push(`Reserva incluída: ${pares(r.reserva)}`)
   if (r.pendentes) l.push(`Numeração pendente: ${r.pendentes} ${r.pendentes === 1 ? 'pessoa' : 'pessoas'} (fora do total)`)
-  if (e.modelo?.nome?.trim()) l.push(`Modelo: ${e.modelo.nome.trim()}`)
+  if (e.modelo?.sabe === 'sim' && e.modelo.nome?.trim()) l.push(`Modelo: ${e.modelo.nome.trim()}`)
   l.push('', 'Grade montada em towerepis.com.br/ferramentas/grade-de-numeracao/')
   return l.join('\n')
 }
@@ -469,7 +488,7 @@ export function mensagemWhatsApp(r: Resultado, e: Estado, limite = 1400): string
     `Total: ${pares(r.pedido)}`,
   ]
   if (r.pendentes) topo.push(`Numeração pendente: ${r.pendentes} ${r.pendentes === 1 ? 'pessoa' : 'pessoas'} (fora do total)`)
-  const modelo = e.modelo?.nome?.trim()
+  const modelo = e.modelo?.sabe === 'sim' ? e.modelo.nome?.trim() : undefined
   if (modelo) topo.push(`Modelo: ${modelo.slice(0, 80)}`)
   else if (e.calcado && e.calcado in NOME_FAMILIA) topo.push(`Tipo de calçado: ${NOME_FAMILIA[e.calcado as FamiliaOrigem]} (resultado do teste do site)`)
   else if (e.modelo?.sabe === 'nao' || e.modelo?.sabe === 'avaliando') topo.push('Ainda estou definindo o modelo.')

@@ -163,6 +163,23 @@ eq(imp.pessoas.map((p) => [p.nome ?? '', p.numero, p.grupo ?? '']), [
 eq(imp.ignoradas.map((x) => x.linha), [9, 10], 'importação: ignoradas (52 fora da faixa; sem número)')
 if (!/fora da faixa/.test(imp.ignoradas[0]?.motivo ?? '')) f('importação: motivo da faixa')
 
+/* ---- importação: casos da QA de 26/11/2026 ---- */
+{
+  const r = g.interpretarLista(['40, Xavier Quintino', '41; Yara Wanderley', '38 Zuleica Baptista', '42, Wilson Teixeira, Expedição', 'Paulo ?', 'Joana; 39,5', 'Ivo; 40; 41'].join('\n'))
+  eq(r.pessoas.map((p) => [p.nome ?? '', p.numero, p.grupo ?? '']), [
+    ['Xavier Quintino', 40, ''], ['Yara Wanderley', 41, ''], ['Zuleica Baptista', 38, ''], ['Wilson Teixeira', 42, 'Expedição'], ['Paulo', null, ''],
+  ], 'importação: número antes do nome vira nome, não setor')
+  eq(r.ignoradas.map((x) => x.linha), [6, 7], 'importação: decimal e duas numerações ficam de fora')
+  const e = estado({ modo: 'lista', pessoas: r.pessoas })
+  const c = g.calcular(e)
+  const saidas = [g.mensagemWhatsApp(c, e), g.textoGrade(c, e), g.csvGrade(c), g.paraSalvar(e)]
+  for (const nome of ['Xavier', 'Yara', 'Zuleica', 'Wilson', 'Paulo'])
+    saidas.forEach((s, i) => { if (s.includes(nome)) f(`nome "${nome}" (número antes do nome) vazou na saída ${['whatsapp', 'texto', 'csv', 'salvo'][i]}`) })
+  const m = estado({ contagem: { 40: 3 }, modelo: { sabe: 'nao', nome: 'Botina XYZ' } })
+  const cm = g.calcular(m)
+  if (g.mensagemWhatsApp(cm, m).includes('XYZ') || g.textoGrade(cm, m).includes('XYZ')) f('modelo digitado e depois "Não" continuou na mensagem')
+}
+
 /* ---- grupos e privacidade ---- */
 {
   const e = estado({ modo: 'lista', pessoas: imp.pessoas, reserva: { tipo: 'percentual', pct: 10 } })
