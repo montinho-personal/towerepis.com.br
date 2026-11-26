@@ -60,6 +60,7 @@ ferramentas estão em `docs/ferramentas/`, documentadas no `LEIA-ME.md` de lá:
 ```
 npm run build && npx next start -p 3000        # e -p 3122 para o rastreador
 node docs/ferramentas/qa-larguras.mjs          # estouro horizontal, 12 larguras
+node docs/ferramentas/qa-navegador.mjs         # navegador: rotas, menu, links, WhatsApp, orçamento (computador e celular)
 node docs/ferramentas/qa-privacidade.mjs       # cookies e hosts, três trilhas
 node docs/ferramentas/qa-faq.mjs               # FAQ: presença e duplicação
 node docs/ferramentas/qa-barra.mjs             # barra contextual, matriz
@@ -86,6 +87,31 @@ não existir.
 **Falso positivo conhecido:** o "1995" decorativo do rodapé transborda a coluna
 de propósito e aparece uma vez por página a partir de 1024px na varredura de
 larguras. Não é defeito.
+
+---
+
+## Toda mudança no site passa por estes seis passos
+
+Regra do Renato, 25/11/2026. Vale para qualquer ação que mexa no site:
+artigo novo, revisão, correção, mudança de componente. Nenhuma entrega é dada
+como pronta sem os seis, e a resposta diz o resultado de cada um.
+
+1. **Abrir o site no navegador.** Build de produção e `npx next start -p 3000`;
+   o navegador é o Chromium do Playwright, não a leitura do código.
+2. **Testar botões e funcionalidades.** `node docs/ferramentas/qa-navegador.mjs`
+   percorre todas as rotas, abre e fecha o menu do celular, confere todo link
+   de WhatsApp e todo link interno, e usa o formulário de orçamento até o
+   botão de enviar. Se a mudança tocou numa ferramenta, roda também o teste
+   dela (qa-qual-calcado, qa-tamanho-botina, qa-grade-equipe) e o qa-barra.
+3. **Verificar a versão mobile.** O qa-navegador roda num celular emulado
+   (Pixel 7); a página alterada passa ainda pela varredura de larguras
+   (320 a 1280) e, se mudou layout, `qa-larguras.mjs` completo.
+4. **Executar os testes automatizados.** `npx tsc --noEmit`, o build, a
+   sequência da auditoria (rastrear, analisar, canibalização) e o `qa-faq`.
+5. **Identificar erros e corrigi-los.** Defeito achado é corrigido no mesmo
+   trabalho; se for do teste (falso positivo), corrige o teste e registra.
+6. **Repetir os testes depois das correções.** Todos os que falharam, mais o
+   qa-navegador inteiro. Só faz commit e push com tudo verde.
 
 ---
 

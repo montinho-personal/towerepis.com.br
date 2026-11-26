@@ -50,6 +50,26 @@ existe para comparar antes e depois de uma alteração, não para prever clique.
 title, H1 e description com os comprimentos. É a linha de base da segunda
 auditoria, que só faz sentido quando houver amostra no Search Console.
 
+## Teste de navegador (regra dos seis passos)
+
+```
+npm run build && npx next start -p 3000
+node docs/ferramentas/qa-navegador.mjs
+```
+
+Roda em toda mudança no site (CLAUDE.md, "Toda mudança no site passa por
+estes seis passos"). Percorre todas as rotas do sitemap em 1280px e num
+celular emulado (Pixel 7): status 200, um H1, nenhum erro de JavaScript nem
+console.error, nenhuma requisição do site com erro, nenhuma imagem quebrada,
+todo link de WhatsApp para wa.me com o número de `empresa.ts`, e, no
+celular, o menu abre, tem links e fecha. Depois confere cada link interno
+único e usa o formulário de orçamento: escolhe uma categoria, toca em
+"Enviar pelo WhatsApp" e lê o link que o botão abriria. Sai com código 1 se
+achar qualquer problema.
+
+Falso positivo corrigido em 26/11/2026: a âncora `#whatsapp` dos termos de
+uso era lida como link de WhatsApp; o teste agora olha o domínio do link.
+
 ## Barra contextual
 
 ```
