@@ -39,6 +39,10 @@
   --color-aco: #a8a29a;       /* concreto e aço, para superfícies técnicas */
   --color-rule: #ded8ce;
   --color-rule-strong: #cfc8bd;
+  /* Borda de campo de formulário: 3,6:1 no papel e 3,2:1 no creme. A
+     rule-strong (1,6:1) é boa para divisória, não para dizer "aqui se
+     digita" (WCAG 1.4.11, auditoria de 26/11/2026). */
+  --color-campo: #8a8378;
 
   /* Funcional: verde só para WhatsApp. Cor com função, nunca enfeite. */
   /* Era #128c4a: branco em cima dava 4,31:1, abaixo dos 4,5:1 do WCAG AA para
@@ -144,6 +148,17 @@
     :is(:focus-visible, label:has(> input.sr-only:focus-visible)) {
     outline-color: var(--color-tower-red);
   }
+
+  /* Texto de exemplo dentro do campo: o padrão do navegador dava 3,33:1. */
+  ::placeholder {
+    color: var(--color-ink-3);
+    opacity: 1;
+  }
+
+  /* Cabeçalho fixo (56/64px): o foco que sobe com Shift+Tab ficava embaixo
+     dele. Na grade da equipe, o placar fixo soma mais ~70px (WCAG 2.4.11). */
+  html { scroll-padding-top: 5rem; }
+  html:has([data-placar]) { scroll-padding-top: 10rem; }
 
   ::selection {
     background: var(--color-tower-red);

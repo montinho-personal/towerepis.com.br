@@ -71,11 +71,11 @@ const ETAPAS: { id: Etapa; rotulo: string }[] = [
 const GRUPOS_SUGERIDOS = ['Produção', 'Logística', 'Manutenção', 'Limpeza', 'Cozinha', 'Administrativo', 'Forma feminina']
 
 const BOTAO_PASSO =
-  'flex h-11 w-11 shrink-0 items-center justify-center border border-rule-strong bg-paper font-display text-xl font-bold hover:border-ink hover:bg-paper-2 disabled:opacity-40'
+  'flex h-11 w-11 shrink-0 items-center justify-center border border-campo bg-paper font-display text-xl font-bold hover:border-ink hover:bg-paper-2 disabled:opacity-40'
 const CAMPO_NUM =
-  'h-11 w-16 border border-rule-strong bg-paper text-center font-display text-lg font-bold tabular-nums focus:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-ink'
+  'h-11 w-16 border border-campo bg-paper text-center font-display text-lg font-bold tabular-nums focus:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-ink'
 const CAMPO_TXT =
-  'min-h-11 w-full border border-rule-strong bg-paper px-3 text-[0.98rem] focus:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-ink'
+  'min-h-11 w-full border border-campo bg-paper px-3 text-[0.98rem] focus:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-ink'
 const CHIP = (ativo: boolean) =>
   `relative flex min-h-11 cursor-pointer items-center border px-4 font-display text-sm font-semibold ${
     ativo ? 'border-ink bg-ink text-paper' : 'border-rule-strong bg-paper hover:border-ink'
@@ -207,11 +207,7 @@ export function GradeEquipe({ tamanho = false }: { tamanho?: boolean }) {
           só números e setores.
         </p>
       )}
-      {aviso && (
-        <p className="mb-6 text-sm text-ink-2" role="status">
-          {aviso}
-        </p>
-      )}
+      <div role="status">{aviso && <p className="mb-6 text-sm text-ink-2">{aviso}</p>}</div>
 
       {etapa !== 'resultado' && <Placar r={resultado} estado={estado} />}
 
@@ -355,7 +351,7 @@ export function GradeEquipe({ tamanho = false }: { tamanho?: boolean }) {
 
 function Placar({ r, estado }: { r: Resultado; estado: Estado }) {
   return (
-    <div className="sticky top-14 z-10 mb-6 grid grid-cols-3 border border-ink bg-paper text-center sm:top-16" aria-live="polite" aria-atomic="true">
+    <div data-placar className="sticky top-14 z-10 mb-6 grid grid-cols-3 border border-ink bg-paper text-center sm:top-16" aria-live="polite" aria-atomic="true">
       <p className="border-r border-rule px-2 py-2">
         <span className="block font-display text-2xl font-bold tabular-nums">{r.pessoas}</span>
         <span className="block text-xs text-ink-2">com numeração</span>
@@ -373,19 +369,19 @@ function Placar({ r, estado }: { r: Resultado; estado: Estado }) {
 }
 
 function Conferencia({ conf }: { conf: ReturnType<typeof conferir> }) {
-  if (conf.tipo === 'sem-referencia') return null
-  if (conf.tipo === 'ok')
-    return (
-      <p className="mt-2 text-[0.95rem] font-semibold" role="status">
-        ✓ A grade fecha com o total informado.
-      </p>
-    )
+  // A região de status existe sempre e só o texto muda: região criada já
+  // com texto não é anunciada por todo leitor de tela (WCAG 4.1.3).
   return (
-    <p className="mt-2 text-[0.95rem] font-semibold text-tower-red-deep" role="status">
-      {conf.tipo === 'faltam'
-        ? `Faltam ${pessoas(conf.n)} para fechar a quantidade informada.`
-        : `A grade tem ${pessoas(conf.n)} a mais que o total informado.`}
-    </p>
+    <div role="status">
+      {conf.tipo === 'ok' && <p className="mt-2 text-[0.95rem] font-semibold">✓ A grade fecha com o total informado.</p>}
+      {(conf.tipo === 'faltam' || conf.tipo === 'sobram') && (
+        <p className="mt-2 text-[0.95rem] font-semibold text-tower-red-deep">
+          {conf.tipo === 'faltam'
+            ? `Faltam ${pessoas(conf.n)} para fechar a quantidade informada.`
+            : `A grade tem ${pessoas(conf.n)} a mais que o total informado.`}
+        </p>
+      )}
+    </div>
   )
 }
 
@@ -454,7 +450,7 @@ function ModoGrade({
                 </button>
               </div>
               {(invalido || alto) && (
-                <p id={`n-${n}-msg`} className="mt-1 text-sm font-semibold text-tower-red-deep">
+                <p id={`n-${n}-msg`} role="alert" className="mt-1 text-sm font-semibold text-tower-red-deep">
                   {invalido ? 'Use só números inteiros, como 12.' : `Confira: ${q.toLocaleString('pt-BR')} pessoas no ${n}?`}
                 </p>
               )}
@@ -503,6 +499,7 @@ function ModoLista({ estado, mudar }: { estado: Estado; mudar: (p: Partial<Estad
   const [colado, setColado] = useState('')
   const [imp, setImp] = useState<Importacao | null>(null)
   const nomeRef = useRef<HTMLInputElement>(null)
+  const impRef = useRef<HTMLDivElement>(null)
   const dup = duplicados(estado.pessoas)
 
   function adicionar(ev: React.FormEvent) {
@@ -525,6 +522,8 @@ function ModoLista({ estado, mudar }: { estado: Estado; mudar: (p: Partial<Estad
     rastrearFerramenta('importacao', `${r.pessoas.length}/${r.pessoas.length + r.ignoradas.length}`, FERRAMENTA)
     if (r.pessoas.length) mudar({ pessoas: [...estado.pessoas, ...r.pessoas] })
     setColado('')
+    // A caixa esvazia e o botão desabilita: sem isto o foco caía no body.
+    requestAnimationFrame(() => impRef.current?.focus())
   }
 
   function arquivo(ev: React.ChangeEvent<HTMLInputElement>) {
@@ -603,7 +602,7 @@ function ModoLista({ estado, mudar }: { estado: Estado; mudar: (p: Partial<Estad
           onChange={(e) => setColado(e.target.value)}
           rows={5}
           placeholder={'Carlos, 40, Expedição\nJoão, 42, Logística\nAna, 36, Limpeza'}
-          className="mt-3 w-full border border-rule-strong bg-paper p-3 font-mono text-sm focus:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-ink"
+          className="mt-3 w-full border border-campo bg-paper p-3 font-mono text-sm focus:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-ink"
         />
         <div className="mt-3 flex flex-wrap items-center gap-3">
           <button type="button" className="btn btn-ink" onClick={() => importar(colado)} disabled={!colado.trim()}>
@@ -617,8 +616,9 @@ function ModoLista({ estado, mudar }: { estado: Estado; mudar: (p: Partial<Estad
             Baixar modelo de planilha
           </button>
         </div>
+        <div role="status" ref={impRef} tabIndex={-1} className="mt-4 text-[0.95rem]">
         {imp && (
-          <div role="status" className="mt-4 text-[0.95rem]">
+          <div>
             <p className="font-semibold">
               {imp.pessoas.length ? `${pessoas(imp.pessoas.length)} ${imp.pessoas.length === 1 ? 'adicionada' : 'adicionadas'}.` : 'Nenhuma pessoa reconhecida.'}
               {imp.cabecalhos ? ' Cabeçalho ignorado.' : ''}
@@ -640,6 +640,7 @@ function ModoLista({ estado, mudar }: { estado: Estado; mudar: (p: Partial<Estad
             )}
           </div>
         )}
+        </div>
       </details>
 
       {estado.pessoas.length > 0 && (
@@ -647,15 +648,17 @@ function ModoLista({ estado, mudar }: { estado: Estado; mudar: (p: Partial<Estad
           <h3 className="font-display text-base font-bold">
             {pessoas(estado.pessoas.length)} na lista
           </h3>
-          {dup.length > 0 && (
-            <p className="mt-2 text-[0.95rem] font-semibold text-tower-red-deep" role="status">
-              Nome repetido: {dup.join(', ')}. Pode ser a mesma pessoa lançada duas vezes.
-            </p>
-          )}
+          <div role="status">
+            {dup.length > 0 && (
+              <p className="mt-2 text-[0.95rem] font-semibold text-tower-red-deep">
+                Nome repetido: {dup.join(', ')}. Pode ser a mesma pessoa lançada duas vezes.
+              </p>
+            )}
+          </div>
           <ul className="mt-3 divide-y divide-rule border-y border-rule">
             {estado.pessoas.map((p, i) => (
               <li key={p.id} className="flex flex-wrap items-center gap-x-3 gap-y-1 py-2">
-                <span className="min-w-0 flex-1 truncate">{p.nome || <span className="text-ink-3">Pessoa {i + 1}</span>}</span>
+                <span className="min-w-0 basis-full truncate sm:basis-0 sm:flex-1">{p.nome || <span className="text-ink-3">Pessoa {i + 1}</span>}</span>
                 <label className="sr-only" htmlFor={`pn-${p.id}`}>
                   Numeração de {p.nome || `pessoa ${i + 1}`}
                 </label>
@@ -667,7 +670,7 @@ function ModoLista({ estado, mudar }: { estado: Estado; mudar: (p: Partial<Estad
                       pessoas: estado.pessoas.map((x) => (x.id === p.id ? { ...x, numero: e.target.value === 'pendente' ? null : Number(e.target.value) } : x)),
                     })
                   }
-                  className="min-h-11 border border-rule-strong bg-paper px-2 font-display font-bold"
+                  className="min-h-11 border border-campo bg-paper px-2 font-display font-bold"
                 >
                   {NUMEROS.map((n) => (
                     <option key={n} value={n}>
@@ -890,9 +893,10 @@ function EtapaPedido({
                     <button type="button" className={BOTAO_PASSO} onClick={() => porNumero(n, Math.max(0, v - 1))} disabled={!v} aria-label={`Menos um par de reserva no ${n}`}>
                       −
                     </button>
-                    <span className="w-8 text-center font-display text-lg font-bold tabular-nums" aria-live="polite" aria-label={`Reserva no ${n}: ${v}`}>
+                    <span className="w-8 text-center font-display text-lg font-bold tabular-nums" aria-hidden="true">
                       {v}
                     </span>
+                    <span className="sr-only" aria-live="polite">{`Reserva no ${n}: ${v}`}</span>
                     <button type="button" className={BOTAO_PASSO} onClick={() => porNumero(n, v + 1)} aria-label={`Mais um par de reserva no ${n}`}>
                       +
                     </button>
@@ -987,12 +991,14 @@ function EtapaPedido({
         )}
       </div>
 
-      <div className="mt-8 flex flex-col-reverse gap-3 sm:flex-row">
-        <button type="button" onClick={voltar} className="btn btn-ghost">
-          Voltar
-        </button>
+      {/* Ordem do DOM = ordem que o celular mostra (Gerar em cima), para o Tab
+          seguir o que se vê; no computador, row-reverse põe o Voltar à esquerda. */}
+      <div className="mt-8 flex flex-col gap-3 sm:flex-row-reverse sm:justify-end">
         <button type="button" onClick={gerar} className="btn btn-red sm:min-w-56" disabled={resultado.pedido === 0}>
           Gerar grade <IconeSeta />
+        </button>
+        <button type="button" onClick={voltar} className="btn btn-ghost">
+          Voltar
         </button>
       </div>
     </section>
