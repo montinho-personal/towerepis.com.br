@@ -1,0 +1,123 @@
+{
+ "data": "2026-11-26",
+ "epi-para-fabrica-de-cimento-e-mineracao-de-calcario": {
+  "busca": "epi para fábrica de cimento",
+  "autocompletar_de": "epi para cimento",
+  "autocompletar": [
+   "epi cimento",
+   "epi para trabalhar com cimento",
+   "epi para concreto"
+  ],
+  "pessoas_tambem_perguntam": [
+   "O que são produtos de EPI?",
+   "Qual é o EPI mais vendido?",
+   "Quais são os EPIs necessários para operadores de máquinas pesadas?",
+   "Quais são os EPI para soldador?"
+  ],
+  "outras_pesquisas": [
+   "Epi para forneiro de padaria",
+   "Nr 14",
+   "Nr 15",
+   "Consulta ca"
+  ],
+  "organicos": [
+   {
+    "pos": 1,
+    "fonte": "Guia do Epi",
+    "titulo": "EPIs para a Construção Civil: Garantindo a Segurança dos Trabalhadores"
+   },
+   {
+    "pos": 2,
+    "fonte": "EQPRO",
+    "titulo": "Construção Civil: descubra os EPIs necessários para essa atividade"
+   },
+   {
+    "pos": 3,
+    "fonte": "Facebook · Concrebase",
+    "titulo": "Trabalhar com concreto exige atenção total à segurança. O contato direto ..."
+   },
+   {
+    "pos": 4,
+    "fonte": "taQi",
+    "titulo": "5 EPIs essenciais na construção civil - Blog taQi Empresas"
+   },
+   {
+    "pos": 5,
+    "fonte": "Suprema Luvas",
+    "titulo": "EPIs para fundição: guia definitivo de riscos e normas para SST"
+   },
+   {
+    "pos": 6,
+    "fonte": "Nova EPI",
+    "titulo": "Arquivo de EPIs por Segmento (Indústria, Logística, Construção etc.)"
+   },
+   {
+    "pos": 7,
+    "fonte": "Instagram · sempreepi",
+    "titulo": "Você Está Usando o Equipamento Certo? 🛡️ A construção civil é um dos setores com ..."
+   },
+   {
+    "pos": 8,
+    "fonte": "Mobuss",
+    "titulo": "» EPIs para canteiros de obra: o que você precisa saber"
+   }
+  ],
+  "visao_de_ia": "não consultada (pouca intenção; cota)"
+ },
+ "epi-para-packing-house-de-frutas": {
+  "busca": "epi para packing house",
+  "autocompletar_de": "epi packing house",
+  "autocompletar": [],
+  "pessoas_tambem_perguntam": [
+   "Quais são os EPIs para açougue?",
+   "Quem fornece a ficha de EPI?",
+   "Qual é o EPI mais vendido?",
+   "Quais são os EPIs necessários para operadores de máquinas pesadas?"
+  ],
+  "outras_pesquisas": [],
+  "organicos": [
+   {
+    "pos": 1,
+    "fonte": "UNIVASF Universidade Federal do Vale do São Francisco",
+    "titulo": "caracterização de packing houses de uvas na região de petrolina/ juazeiro e ..."
+   },
+   {
+    "pos": 2,
+    "fonte": "YouTube · Band Jornalismo",
+    "titulo": "Entenda a importância da packing house para o agronegócio | Jornal da Noite"
+   },
+   {
+    "pos": 3,
+    "fonte": "Nova EPI",
+    "titulo": "Arquivo de EPIs para Logística e Armazéns"
+   },
+   {
+    "pos": 4,
+    "fonte": "Scribd",
+    "titulo": "Adequação de Packing Houses à Segurança Alimentar"
+   },
+   {
+    "pos": 5,
+    "fonte": "Scribd",
+    "titulo": "Boas Práticas de Higiene no Packing House | PDF | Desperdício"
+   },
+   {
+    "pos": 6,
+    "fonte": "Mercado Livre",
+    "titulo": "Kit Epi Agrotoxico"
+   },
+   {
+    "pos": 7,
+    "fonte": "Embrapa",
+    "titulo": "Boas Práticas Agrícolas e Pós-Colheita na Produção Integrada de Maçãs"
+   },
+   {
+    "pos": 8,
+    "fonte": "Revista Brasileira de Engenharia de Biossistemas",
+    "titulo": "View of WORK SAFETY IN AGRICULTURAL PACKING HOUSES"
+   }
+  ],
+  "visao_de_ia": "não consultada (pouca intenção; cota)",
+  "decisao": "sem autocompletar; resultados acadêmicos e de boas práticas; nada a acrescentar"
+ }
+}

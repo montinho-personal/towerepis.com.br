@@ -8924,8 +8924,8 @@ export const ARTIGOS: Artigo[] = [
     descricaoSeo:
       'Na pedreira de calcário e na fábrica de cimento: poeira, ruído de moinho, calor de forno e o cimento alcalino que ataca a pele. O que organiza o EPI.',
     publicado: '2026-10-03',
-    atualizado: '2026-10-03',
-    atualizadoExibicao: 'outubro de 2026',
+    atualizado: '2026-11-26',
+    atualizadoExibicao: 'novembro de 2026',
     cluster: 'Proteção',
     blocos: [
       {
@@ -8978,7 +8978,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'p',
         texto:
-          'Por isso a luva não pode ser de pano nem de couro que encharca: ela precisa ser impermeável e resistente ao material alcalino, e o raciocínio está em <a href="/conhecimento/tipos-de-luva-qual-material-escolher/">qual material de luva escolher</a>. Manga longa, bota de cano alto com a calça por fora para o cimento não entrar, óculos onde há respingo. E pele lavada assim que houver contato, sem esperar o fim do turno.',
+          'Por isso a luva não pode ser de pano nem de couro que encharca: ela precisa ser impermeável e resistente ao material alcalino, e o raciocínio está em <a href="/conhecimento/tipos-de-luva-qual-material-escolher/">qual material de luva escolher</a>. Manga longa, bota de cano alto com a calça por fora para o cimento não entrar, óculos onde há respingo. E pele lavada assim que houver contato, sem esperar o fim do turno. O mesmo vale para quem mexe com concreto e argamassa na obra, onde o cimento chega molhado; o conjunto de quem trabalha no canteiro está em <a href="/conhecimento/epi-na-construcao-civil-o-que-a-nr-18-exige/">EPI na construção civil</a>.',
       },
       {
         tipo: 'p',
