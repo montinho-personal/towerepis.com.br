@@ -221,6 +221,12 @@ const FAMILIAS: FamiliaOrigem[] = ['ocupacional', 'seguranca', 'bota-impermeavel
 export function serializar(s: Estado): string {
   const q = new URLSearchParams()
   q.set('pe', String(s.cm))
+  // Os dois pés vão juntos ou não vão: sem eles, recarregar e compartilhar
+  // perdiam "o direito, que é o maior" e o aviso da diferença (QA 26/11/2026).
+  if (s.esquerdo !== undefined && s.direito !== undefined) {
+    q.set('esq', String(s.esquerdo))
+    q.set('dir', String(s.direito))
+  }
   if (s.largura) q.set('largura', s.largura)
   if (s.para) q.set('para', s.para)
   if (s.calcado) q.set('calcado', s.calcado)
@@ -238,5 +244,11 @@ export function desserializar(qs: string): { estado?: Estado; calcado?: FamiliaO
   if (!l.ok) return { calcado }
   const largura = LARGURAS.includes(q.get('largura') as Largura) ? (q.get('largura') as Largura) : undefined
   const para = q.get('para') === 'equipe' ? 'equipe' : q.get('para') === 'mim' ? 'mim' : undefined
-  return { estado: { cm: l.cm, largura, para, calcado }, calcado }
+  // Pés só entram se os dois forem medidas válidas e o maior for o "pe";
+  // qualquer outra combinação é URL adulterada e cai fora inteira.
+  const esq = lerMedida(q.get('esq') ?? '')
+  const dir = lerMedida(q.get('dir') ?? '')
+  const pesOk = esq.ok && dir.ok && Math.max(esq.cm, dir.cm) === l.cm
+  const pes = pesOk ? { esquerdo: esq.cm, direito: dir.cm } : {}
+  return { estado: { cm: l.cm, ...pes, largura, para, calcado }, calcado }
 }

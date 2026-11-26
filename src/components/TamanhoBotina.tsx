@@ -99,6 +99,7 @@ export function TamanhoBotina() {
     if (c) setCalcado(c)
     if (e) {
       setEstado(e)
+      if (e.esquerdo !== undefined && e.direito !== undefined) setPes({ esquerdo: e.esquerdo, direito: e.direito })
       setPara(e.para)
       setEtapa('resultado')
     }
@@ -162,7 +163,7 @@ export function TamanhoBotina() {
     }
     setErro(null)
     setPes(medidas)
-    const novo: Estado = { cm, para, calcado }
+    const novo: Estado = medidas ? { cm, ...medidas, para, calcado } : { cm, para, calcado }
     setEstado(novo)
     if (!iniciou.current) {
       iniciou.current = true
@@ -184,6 +185,10 @@ export function TamanhoBotina() {
     else if (campo === 'esq') setTextoEsq(v)
     else setTextoDir(v)
     setErro(null)
+    // O botão "Usar X cm" some junto com o erro; sem isto o foco caía no
+    // body e quem usa teclado ou leitor de tela recomeçava do topo.
+    const id = campo === 'unico' ? 'medida' : campo === 'esq' ? 'medida-esq' : 'medida-dir'
+    requestAnimationFrame(() => document.getElementById(id)?.focus())
   }
 
   function refazer() {

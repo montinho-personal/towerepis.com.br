@@ -103,6 +103,17 @@ for (const qs of ['pe=abc', 'pe=5', 'pe=264', 'pe=26.4&largura=<b>', 'calcado=<s
   if (/^pe=(abc|5|264|)$/.test(qs) && r.estado) falha(`medida inválida na URL virou resultado: ${qs}`)
 }
 
+/* dois pés no link (QA 26/11/2026: recarregar perdia o lado e a diferença) */
+for (const [esq, dir] of [[26, 27.1], [27.1, 26], [25.5, 25.5], [18, 34]]) {
+  const s = { cm: Math.max(esq, dir), esquerdo: esq, direito: dir, para: 'equipe' }
+  const volta = t.desserializar(t.serializar(s)).estado
+  if (!volta || volta.esquerdo !== esq || volta.direito !== dir || volta.cm !== s.cm) falha(`link perde os dois pés: ${JSON.stringify(s)} → ${JSON.stringify(volta)}`)
+}
+for (const qs of ['pe=27&esq=26&dir=26.5', 'pe=27&esq=abc&dir=27', 'pe=27&esq=26', 'pe=27&esq=99&dir=27']) {
+  const e = t.desserializar(qs).estado
+  if (!e || e.esquerdo !== undefined || e.direito !== undefined) falha(`pés inconsistentes na URL viraram resultado: ${qs} → ${JSON.stringify(e)}`)
+}
+
 /* dois pés */
 const p = t.maiorPe(26.1, 26.5)
 if (!(p.maior === 26.5 && p.lado === 'direito' && p.diferenca === 0.4)) falha(`maiorPe(26,1; 26,5) = ${JSON.stringify(p)}`)

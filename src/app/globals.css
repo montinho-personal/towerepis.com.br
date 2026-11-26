@@ -41,7 +41,9 @@
   --color-rule-strong: #cfc8bd;
 
   /* Funcional: verde só para WhatsApp. Cor com função, nunca enfeite. */
-  --color-zap: #128c4a;
+  /* Era #128c4a: branco em cima dava 4,31:1, abaixo dos 4,5:1 do WCAG AA para
+     o texto de 14px do botão (auditoria de 26/11/2026). Este dá 5,14:1. */
+  --color-zap: #0f7e43;
   --color-zap-deep: #0e7440;
 
   /* --- Tipografia ------------------------------------------- */
@@ -118,10 +120,29 @@
   p { text-wrap: pretty; }
 
   /* Foco visível de verdade — requisito de acessibilidade, não detalhe. */
-  :focus-visible {
+  :focus-visible,
+  label:has(> input.sr-only:focus-visible) {
     outline: 3px solid var(--color-tower-red);
     outline-offset: 3px;
     border-radius: 2px;
+  }
+
+  /* Opção cujo rádio é sr-only: o rádio de 1px recebe o foco, mas quem a
+     pessoa vê é a label. Sem a regra acima, quem navega pelo teclado não
+     sabia em que opção estava (WCAG 2.4.7, auditoria de 26/11/2026). */
+
+  /* Sobre superfície escura ou vermelha, o contorno vermelho some: dava
+     2,33:1 no grafite, abaixo dos 3:1 do WCAG 1.4.11. Ali ele é papel.
+     A segunda regra devolve o vermelho para o que é claro dentro do escuro
+     (cartão de papel numa faixa grafite); a ordem importa. */
+  :is(.band-ink, .bg-ink, .bg-grafite-900, .bg-grafite-800, .bg-grafite-700, .bg-tower-red, .ampliador)
+    :is(:focus-visible, label:has(> input.sr-only:focus-visible)) {
+    outline-color: var(--color-paper);
+  }
+  :is(.band-ink, .bg-ink, .bg-grafite-900, .bg-grafite-800, .bg-grafite-700, .bg-tower-red)
+    :is(.bg-paper, .bg-paper-2, .band, .bg-white)
+    :is(:focus-visible, label:has(> input.sr-only:focus-visible)) {
+    outline-color: var(--color-tower-red);
   }
 
   ::selection {
