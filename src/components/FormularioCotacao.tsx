@@ -164,7 +164,8 @@ export function FormularioCotacao() {
                       // O botão some junto com o item; sem isto o foco caía no body.
                       requestAnimationFrame(() => botaoAdicionar.current?.focus())
                     }}
-                    className="font-display text-sm font-semibold text-ink-3 underline underline-offset-4 hover:text-tower-red"
+                    aria-label={`Remover o item ${indice + 1}`}
+                    className="inline-flex min-h-11 items-center font-display text-sm font-semibold text-ink-3 underline underline-offset-4 hover:text-tower-red"
                   >
                     Remover
                   </button>
@@ -174,7 +175,7 @@ export function FormularioCotacao() {
               <div className="mt-4 space-y-5">
                 <div>
                   <label htmlFor={`cat-${item.id}`} className={rotulo}>
-                    O que você precisa?
+                    O que você precisa?<span className="sr-only"> (item {indice + 1})</span>
                   </label>
                   <select
                     id={`cat-${item.id}`}
@@ -197,7 +198,7 @@ export function FormularioCotacao() {
                   <>
                     <div>
                       <label htmlFor={`desc-${item.id}`} className={rotulo}>
-                        Detalhe, do seu jeito{' '}
+                        Detalhe, do seu jeito<span className="sr-only"> (item {indice + 1})</span>{' '}
                         <span className="font-normal text-ink-3">(opcional)</span>
                       </label>
                       <p className="mt-1 text-sm text-ink-3">{cat.exemplo}</p>
@@ -215,7 +216,7 @@ export function FormularioCotacao() {
                          na primeira resposta em vez da terceira. */
                       <fieldset>
                         <legend className={rotulo}>
-                          Quantos pares de cada numeração?
+                          Quantos pares de cada numeração?<span className="sr-only"> (item {indice + 1})</span>
                         </legend>
                         <p className="mt-1 text-sm text-ink-3">
                           Preencha só as que precisar. Se for um par só, marque 1 na sua
@@ -230,12 +231,12 @@ export function FormularioCotacao() {
                               <input
                                 type="text"
                                 inputMode="numeric"
-                                aria-label={`Pares na numeração ${n}`}
+                                aria-label={`Item ${indice + 1}: pares na numeração ${n}`}
                                 value={item.numeracao[n] ?? ''}
                                 onChange={(e) =>
                                   atualizarNumeracao(item.id, n, soAlgarismos(e.target.value))
                                 }
-                                className="mt-1 w-full border border-campo bg-paper px-1 py-2 text-center text-base focus:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-ink"
+                                className="mt-1 min-h-11 w-full border border-campo bg-paper px-1 py-2 text-center text-base focus:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-ink"
                               />
                             </label>
                           ))}
@@ -250,7 +251,7 @@ export function FormularioCotacao() {
                       <div>
                         <label htmlFor={`qtd-${item.id}`} className={rotulo}>
                           Quantidade{' '}
-                          <span className="font-normal text-ink-3">({cat.unidade})</span>
+                          <span className="font-normal text-ink-3">({cat.unidade})</span><span className="sr-only"> (item {indice + 1})</span>
                         </label>
                         <input
                           id={`qtd-${item.id}`}
@@ -276,7 +277,12 @@ export function FormularioCotacao() {
       <button
         type="button"
         ref={botaoAdicionar}
-        onClick={() => setItens((l) => [...l, novoItem()])}
+        onClick={() => {
+          const novo = novoItem()
+          setItens((l) => [...l, novo])
+          // Foco na categoria do item novo, que é o próximo passo.
+          requestAnimationFrame(() => document.getElementById(`cat-${novo.id}`)?.focus())
+        }}
         className="btn btn-ghost mt-5"
       >
         + Adicionar outro item
@@ -293,6 +299,7 @@ export function FormularioCotacao() {
             <input
               id="cidade"
               type="text"
+              autoComplete="address-level2"
               value={cidade}
               onChange={(e) => setCidade(e.target.value)}
               placeholder="Fortaleza"
@@ -326,6 +333,7 @@ export function FormularioCotacao() {
             <input
               id="nome"
               type="text"
+              autoComplete="name"
               value={nome}
               onChange={(e) => setNome(e.target.value)}
               className={campo}
@@ -339,6 +347,7 @@ export function FormularioCotacao() {
             <input
               id="empresa"
               type="text"
+              autoComplete="organization"
               value={empresa}
               onChange={(e) => setEmpresa(e.target.value)}
               className={campo}
