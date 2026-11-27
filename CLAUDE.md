@@ -158,10 +158,19 @@ artigo / não recomendo / cabe em página existente.
 **Evidência:** o JSON enxuto de cada busca (só os campos usados) vai para
 `docs/seo/evidencias/`, com a data no nome.
 
-**Cota:** uma conta só para todos os sites do Renato, 1.000 buscas por mês, e as
-rotinas somadas já passam disso por decisão dele. Quando o SerpApi disser que a
-cota acabou, parar na hora e avisar o Renato, que decide se aumenta o plano ou
-espera renovar. Não repetir busca que já está em `docs/seo/evidencias/`.
+**Orçamento do mês** (1.000 pesquisas, todos os sites somados; revisto em
+26/11/2026): o Renato reduziu as revisões diárias de 2 para 1 por dia em todos
+os sites, para a soma caber na cota. Rotinas diárias: Direito de Verdade (1
+revisão, 2 buscas) cerca de 150; Personal por Perto (1 artigo + 1 cidade) cerca
+de 180; Site do Montinho (1 artigo) cerca de 60 a 75; Crédito por Perto (1
+página) cerca de 60 a 90; Guia Fitness Alphaville (1 artigo) cerca de 75 a 90;
+Tower EPI's (1 artigo, até 2 buscas) cerca de 60 a 90; site de missões de GTA 6
+(Radar, no máximo 3 chamadas por dia) cerca de 90. Rotinas mensais (dia 16):
+visão de IA com ideias de artigo nos 7 sites, mapa do Montinho e da Tower e
+alertas de regra do Direito e do Crédito, cerca de 205. Total: cerca de 880 a
+970, dentro da cota. Mesmo assim, quando o SerpApi disser que a cota acabou ou
+der limite de requisições, parar na hora e avisar o Renato. Não repetir busca
+que já está em `docs/seo/evidencias/`.
 
 ## Estratégias de SEO com o SerpApi
 
@@ -180,8 +189,9 @@ espera renovar. Não repetir busca que já está em `docs/seo/evidencias/`.
    falso, nunca palavra-chave no nome.
 
 **Rotinas agendadas:** mensal no dia 16, às 14h42 de Brasília (mapa local,
-visão de IA das 5 buscas principais, ideias de pauta); diária, dois artigos
-por dia da fila em `docs/seo/fila-revisao.md`. Diária às 15h13 de Fortaleza: QA de duas
+visão de IA das 5 buscas principais, ideias de pauta); diária, um artigo
+por dia da fila em `docs/seo/fila-revisao.md`, com até 2 buscas no SerpApi
+(busca comum + autocompletar). Diária às 15h13 de Fortaleza: QA de duas
 ferramentas por dia, com três especialistas (QA, mobile e acessibilidade,
 auditor de cálculo), pelo roteiro e pela fila em `docs/qa/rotina-ferramentas.md`. As 5 buscas principais: "epi
 fortaleza", "loja de epi fortaleza", "botina de segurança fortaleza",
