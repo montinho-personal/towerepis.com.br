@@ -202,9 +202,16 @@ export function QualCalcado({ tamanho = false }: { tamanho?: boolean }) {
   // Foco na pergunta a cada tela — sem deixar o focus() rolar, porque ele
   // usa a posição de antes do layout assentar. A rolagem é feita depois,
   // pela posição real, com margem para o cabeçalho fixo (scroll-mt-24).
+  // Na primeira renderização não mexe: a página abria já rolada até a
+  // pergunta, com o foco nela, pulando o título e o aviso (QA 27/11/2026).
+  const primeiraTela = useRef(true)
   useEffect(() => {
     const el = foco.current
     if (!el) return
+    if (primeiraTela.current) {
+      primeiraTela.current = false
+      return
+    }
     el.focus({ preventScroll: true })
     requestAnimationFrame(() => el.scrollIntoView({ block: 'start', behavior: 'smooth' }))
   }, [passo, pronto])
@@ -323,7 +330,7 @@ export function QualCalcado({ tamanho = false }: { tamanho?: boolean }) {
                 maxLength={80}
                 value={outroTexto}
                 onChange={(e) => setOutroTexto(e.target.value)}
-                className="mt-2 w-full border border-rule-strong bg-paper px-4 py-3 text-base"
+                className="mt-2 w-full border border-campo bg-paper px-4 py-3 text-base"
                 placeholder="Ex.: reforma de móveis, lavagem de carros…"
                 autoComplete="off"
               />

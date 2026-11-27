@@ -35,7 +35,9 @@
   --color-paper-2: #f0ebe3;   /* creme — mais presente que antes */
   --color-ink: #191a1d;
   --color-ink-2: #4a4e56;
-  --color-ink-3: #6e737c;
+  /* Era #6e737c: 4,61:1 no papel, mas 4,02:1 no creme (paper-2), abaixo
+     dos 4,5:1 do WCAG 1.4.3 (QA de 27/11/2026). Este dá 5,35 e 4,66. */
+  --color-ink-3: #646970;
   --color-aco: #a8a29a;       /* concreto e aço, para superfícies técnicas */
   --color-rule: #ded8ce;
   --color-rule-strong: #cfc8bd;
