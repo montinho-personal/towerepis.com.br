@@ -15,8 +15,8 @@ cada três dias.
 |---|---|---|---|---|---|
 | 1 | Calculadora de tamanho de botina | `/ferramentas/tamanho-de-botina/` | `qa-tamanho-botina-logica`, `qa-tamanho-botina` (build de prévia se a trava estiver ativa) | medida em cm → numeração, pela tabela de `src/content/tabelas-numeracao.json`, de 18 a 34 cm de décimo em décimo; pés diferentes; tabela da página = resultado da calculadora | 2026-11-26 (e9325f0) |
 | 2 | Grade de numeração da equipe | `/ferramentas/grade-de-numeracao/` | `qa-grade-equipe-logica`, `qa-grade-equipe` | soma por número, total de pares, reserva calculada sobre pares e arredondada para cima, distribuição da reserva pelos maiores restos, CSV = tela = mensagem | 2026-11-26 (e9325f0) |
-| 3 | Qual calçado usar | `/ferramentas/qual-calcado-usar/` | `qa-qual-calcado-logica`, `qa-qual-calcado` | cada combinação de resposta leva à categoria que as regras de `src/lib/qual-calcado.ts` mandam (biqueira só com impacto, impermeável com líquido etc.) | |
-| 4 | Formulário de orçamento | `/orcamento/` | `qa-navegador` (parte do orçamento) + percurso próprio do especialista | soma da numeração por item, total de pares na mensagem, nenhum item perdido, limite de tamanho do link do WhatsApp | |
+| 3 | Qual calçado usar | `/ferramentas/qual-calcado-usar/` | `qa-qual-calcado-logica`, `qa-qual-calcado` | cada combinação de resposta leva à categoria que as regras de `src/lib/qual-calcado.ts` mandam (biqueira só com impacto, impermeável com líquido etc.) | 2026-11-27 (08cfa53) |
+| 4 | Formulário de orçamento | `/orcamento/` | `qa-navegador` (parte do orçamento) + percurso próprio do especialista | soma da numeração por item, total de pares na mensagem, nenhum item perdido, limite de tamanho do link do WhatsApp | 2026-11-27 (08cfa53) |
 | 5 | Barra contextual e botões de WhatsApp | todas as rotas | `qa-barra`, `qa-navegador` | mensagem de cada página corresponde ao contexto; número do WhatsApp = `empresa.ts` em todas as rotas | |
 | 6 | Consentimento e medição | todas as rotas | `qa-privacidade` | zero cookie e zero host externo antes do aceite e depois da recusa | |
 
