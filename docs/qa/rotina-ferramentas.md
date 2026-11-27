@@ -85,3 +85,35 @@ especialistas. Correções:
 - Pendente, decisão de produto: botão "voltar" do navegador sai da
   ferramenta em vez de voltar uma etapa; link com medida inválida volta ao
   início sem aviso.
+
+**27/11/2026 — rodada 2: qual calçado usar e formulário de orçamento.** Seis
+especialistas. Correções:
+
+- Qual calçado: emoji na posição 60 do "Outro" derrubava a página inteira
+  (corte no meio do emoji; agora corta por caractere, em 80, como o campo);
+  duplo clique respondia a pergunta seguinte sem a pessoa ver; "constructor" e
+  "__proto__" passavam na URL e iam para a mensagem; incômodo repetido na URL;
+  link de equipe sem tamanho abria com respostas marcadas; URL inválida ficava
+  na barra; a página abria já rolada até a pergunta, pulando título e aviso;
+  campo "Outro" com borda de 1,40:1; texto cinza com 4,02:1 no creme (ink-3
+  escurecido no site inteiro, agora 4,66:1).
+- Orçamento: tela somava negativo e a mensagem não; "1e3", "1.5", "abc" e
+  números enormes iam crus (agora inteiro de 1 a 99.999 nos dois lugares);
+  quantidade escondida sobrava ao trocar de categoria; duplo clique abria o
+  WhatsApp duas vezes; e-mail longo estourava a prévia no celular; cópia
+  falhava calada; foco perdido ao remover item; política na mesma aba apagava o
+  formulário (abre em nova aba, e o aviso diz que nada é salvo); "(1 pares)";
+  título ENTREGA sozinho; campos sem dizer de qual item são; sem autocomplete
+  em nome, empresa e cidade; foco não ia para o item novo; Remover e caixas da
+  grade abaixo de 44px.
+- Contas e regras conferidas pelos auditores: 210 combinações do "Qual
+  calçado" (nenhum erro de decisão; o link compartilhado não leva o texto do
+  "Outro", de propósito, por privacidade) e 160 orçamentos (5 "1 pares" e 3
+  casos-borda, todos corrigidos). Novo teste `qa-orcamento-logica`: 5.000
+  orçamentos sorteados.
+- Testes do projeto ajustados (falso positivo, registrado no LEIA-ME):
+  `qa-qual-calcado` agora espera 500ms entre respostas e não cobra foco na
+  primeira tela.
+- Pendente, decisão de produto: o orçamento não guarda o que foi digitado
+  (recarregar apaga tudo); limite de mensagem conta caracteres, não o
+  tamanho do link com acentos; setas do teclado não andam entre as opções.
