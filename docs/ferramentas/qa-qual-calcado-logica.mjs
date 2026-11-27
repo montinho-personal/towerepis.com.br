@@ -58,6 +58,19 @@ for (const calor of ['sim', 'nao']) for (const incomodos of INCS) {
   maior = Math.max(maior, m.length); if (m.length > 1400) v('mensagem acima de 1400', ex)
   if (JSON.stringify(q.desserializar(q.serializar(r))) !== JSON.stringify(r)) v('link compartilhado não reproduz', ex)
 }
+/* QA de 27/11/2026: emoji cortado ao meio derrubava a página; chaves de protótipo na URL; link incompleto */
+{
+  const base = 'atividade=cozinha&para=mim&impacto=nao&perfuracao=nao&piso=sempre&oleo=frequente&eletricidade=nao&quimico=limpeza&jornada=pe-intenso&calor=sim'
+  const ok = q.desserializar(base + '&incomodos=')
+  if (!ok) v('URL válida recusada', base)
+  else {
+    const r = { ...ok, atividade: 'outro', atividadeOutro: 'a'.repeat(79) + '😀fim' }
+    try { encodeURIComponent(q.mensagemWhatsApp(r, q.calcular(r))) } catch (e) { v('emoji cortado ao meio quebra o link do WhatsApp', e.message) }
+  }
+  for (const ruim of ['constructor', '__proto__', 'hasOwnProperty', 'toString'])
+    if (q.desserializar(base + '&incomodos=' + ruim)) v('chave de protótipo aceita na URL', ruim)
+  if (q.desserializar(base.replace('para=mim', 'para=equipe') + '&incomodos=')) v('equipe sem tamanho aceita na URL', 'para=equipe sem equipe')
+}
 console.log(`combinações: ${n.toLocaleString('pt-BR')} | maior mensagem: ${maior} caracteres`)
 const k = Object.keys(viol)
 if (!k.length) { console.log('\nTUDO OK'); process.exit(0) }

@@ -42,6 +42,9 @@ const item = (x) => ({ id: 'i', categoria: 'Calçado de segurança', descricao: 
   if (/Quantidade/.test(q)) f(`quantidade inválida foi para a mensagem: ${q}`)
   const um = w.mensagemCotacao({ ...base, itens: [item({ numeracao: { 40: '1' } })] })
   if (!um.includes('(1 par)')) f(`singular: ${um}`)
+  if (/ENTREGA/.test(um)) f('título ENTREGA sem cidade nem prazo')
+  const comCidade = w.mensagemCotacao({ ...base, cidade: 'Caucaia', itens: [item({ numeracao: { 40: '1' } })] })
+  if (!/ENTREGA\nCidade: Caucaia/.test(comCidade)) f(`ENTREGA com cidade: ${comCidade}`)
 }
 
 // Sorteio com semente fixa.

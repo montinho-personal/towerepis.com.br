@@ -196,6 +196,9 @@ export function QualCalcado({ tamanho = false }: { tamanho?: boolean }) {
     if (lido) {
       setR(lido)
       setPronto(true)
+    } else if (/(^|[?&])atividade=/.test(qs)) {
+      // Link inválido: as perguntas começam do zero e a URL errada sai da barra.
+      window.history.replaceState(null, '', window.location.pathname)
     }
   }, [])
 
@@ -216,8 +219,16 @@ export function QualCalcado({ tamanho = false }: { tamanho?: boolean }) {
     requestAnimationFrame(() => el.scrollIntoView({ block: 'start', behavior: 'smooth' }))
   }, [passo, pronto])
 
+  // Duplo clique numa opção respondia também a pergunta seguinte, que a
+  // pessoa nem tinha visto (QA 27/11/2026).
+  const ultimaResposta = useRef(0)
   const responder = useCallback(
     (campo: keyof Respostas, valor: unknown, extra: Parcial = {}) => {
+      if (campo !== 'incomodos') {
+        const agora = Date.now()
+        if (agora - ultimaResposta.current < 450) return
+        ultimaResposta.current = agora
+      }
       if (!iniciou.current) {
         iniciou.current = true
         rastrearFerramentaIniciada(FERRAMENTA)

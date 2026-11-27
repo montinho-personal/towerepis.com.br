@@ -199,7 +199,8 @@ export function mensagemCotacao(dados: {
     }
   })
 
-  linhas.push('', 'ENTREGA')
+  // O título só entra com conteúdo embaixo (saía sozinho sem cidade e prazo).
+  if (dados.cidade.trim() || dados.prazo) linhas.push('', 'ENTREGA')
   if (dados.cidade.trim()) linhas.push(`Cidade: ${dados.cidade.trim()}`)
   if (dados.prazo) linhas.push(`Prazo: ${dados.prazo}`)
 

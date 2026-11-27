@@ -515,7 +515,7 @@ export function mensagemWhatsApp(r: Respostas, res: Resultado): string {
     'Olá! Fiz o teste "Qual calçado profissional é ideal para mim?" no site da Tower.',
     '',
     'Meu perfil:',
-    `Atividade: ${ROTULO_ATIVIDADE[r.atividade]}${r.atividade === 'outro' && r.atividadeOutro ? ` (${r.atividadeOutro.slice(0, 60)})` : ''}`,
+    `Atividade: ${ROTULO_ATIVIDADE[r.atividade]}${r.atividade === 'outro' && r.atividadeOutro ? ` (${Array.from(r.atividadeOutro).slice(0, 80).join('')})` : ''}`,
     `Risco de impacto no pé: ${ROTULO_TRI[r.impacto]}`,
     `Material perfurante no piso: ${ROTULO_TRI[r.perfuracao]}`,
     `Piso: ${ROTULO_PISO[r.piso]}`,
@@ -588,8 +588,10 @@ export function desserializar(qs: string): Respostas | null {
     const v = p.get(k)
     if (k === 'incomodos') {
       const lista = (v ?? '').split('.').filter(Boolean)
-      if (!lista.every((i) => i in ROTULO_INCOMODO)) return null
-      out[k] = lista
+      // Object.hasOwn, e não `in`: "constructor" e "__proto__" passavam e
+      // iam para a mensagem como "function Object()..." (QA 27/11/2026).
+      if (!lista.every((i) => Object.hasOwn(ROTULO_INCOMODO, i))) return null
+      out[k] = [...new Set(lista)]
       continue
     }
     if (k === 'equipe') {
@@ -600,5 +602,8 @@ export function desserializar(qs: string): Respostas | null {
     if (v === null || !VALIDOS[k]?.includes(v)) return null
     out[k] = v
   }
+  // Compra para equipe sem o tamanho da equipe é link incompleto: antes ele
+  // abria o teste com respostas marcadas e pulava perguntas.
+  if (out.para === 'equipe' && out.equipe === undefined) return null
   return out as Respostas
 }
