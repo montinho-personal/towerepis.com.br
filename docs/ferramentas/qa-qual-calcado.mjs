@@ -62,7 +62,10 @@ async function percorrer(nomeCaminho, respostas, viewport) {
     // (que rola a página) precisa ter terminado. Sem isso o clique seguinte
     // pega o botão em movimento e o Playwright recusa, com razão.
     await p.waitForFunction((ant) => document.querySelector('h2#pergunta')?.textContent !== ant, anterior, { timeout: 5000 })
-    await p.waitForTimeout(150)
+    // 500ms, e não 150: desde 27/11/2026 a ferramenta ignora resposta dada
+    // menos de 450ms depois da anterior (trava de duplo clique). Uma pessoa
+    // não lê a pergunta e responde nesse tempo; o teste precisa do mesmo ritmo.
+    await p.waitForTimeout(500)
     if ((await pergunta.count()) !== 1) { problemas.push(`${nomeCaminho}: tela sem h2#pergunta único`); break }
     const focado = await p.evaluate(() => document.activeElement?.id === 'pergunta')
     anterior = await pergunta.textContent()
@@ -96,7 +99,9 @@ async function percorrer(nomeCaminho, respostas, viewport) {
   const topoResultado = await p.evaluate(() => document.querySelector('[data-resultado] h2')?.getBoundingClientRect().top ?? -1)
   if (topoResultado < 0 || topoResultado > viewport.height * 0.5) problemas.push(`${nomeCaminho} @${viewport.width}px: título do resultado a ${Math.round(topoResultado)}px, fora da tela`)
   if (respostas[0] === 'Outro' && !msg.includes('lavagem de carros')) problemas.push(`${nomeCaminho}: texto livre do "Outro" não chegou à mensagem`)
-  const semFocoNaTelas = passos.filter((s) => !s.focado).length
+  // A primeira tela fica de fora desde 27/11/2026: abrir a página não move
+  // mais o foco nem rola até a pergunta (pulava o título e o aviso, WCAG 2.4.3).
+  const semFocoNaTelas = passos.slice(1).filter((s) => !s.focado).length
 
   // largura
   const estourou = await p.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth + 1)

@@ -193,6 +193,10 @@ repetição.
   segundos, sem site no ar. É a que pegou o caso "pé dentro de líquido com
   impacto 'não sei'" que nenhuma amostra tinha alcançado.
 
+- Desde 27/11/2026 a ferramenta ignora resposta dada menos de 450ms depois da
+  anterior (trava de duplo clique). O `qa-qual-calcado.mjs` espera 500ms entre
+  respostas; com 150ms, como antes, ele mesmo passava por duplo clique e falhava.
+
 ## Calculadora de tamanho de botina
 
 A página tem **trava de publicação**: só existe quando a referência de
