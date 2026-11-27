@@ -146,6 +146,19 @@ export type ItemCotacao = {
 }
 
 /**
+ * Quantidade aceita no orçamento: inteiro de 1 a 99.999. Qualquer outra coisa
+ * ("abc", "-3", "1e3", "1.5", número enorme, zero) não entra na mensagem nem
+ * no total. Antes, a tela somava negativos e a mensagem não (QA 27/11/2026).
+ */
+export const QUANTIDADE_MAX = 99999
+export function quantidadeValida(texto: string | undefined): number | null {
+  const t = (texto ?? '').trim()
+  if (!/^\d{1,5}$/.test(t)) return null
+  const n = Number(t)
+  return n >= 1 && n <= QUANTIDADE_MAX ? n : null
+}
+
+/**
  * Monta a mensagem da cotação.
  *
  * O formato é pensado para ser lido no WhatsApp, num celular, por quem está
@@ -171,16 +184,18 @@ export function mensagemCotacao(dados: {
     if (item.descricao.trim()) linhas.push(`   ${item.descricao.trim()}`)
 
     const grade = Object.entries(item.numeracao)
-      .filter(([, qtd]) => Number(qtd) > 0)
+      .map(([n, q]) => [n, quantidadeValida(q)] as const)
+      .filter((x): x is readonly [string, number] => x[1] !== null)
       .sort(([a], [b]) => Number(a) - Number(b))
 
     if (grade.length) {
-      const total = grade.reduce((s, [, q]) => s + Number(q), 0)
+      const total = grade.reduce((s, [, q]) => s + q, 0)
       linhas.push(
-        `   Numeração: ${grade.map(([n, q]) => `${n}x${q}`).join(', ')} (${total} pares)`,
+        `   Numeração: ${grade.map(([n, q]) => `${n}x${q}`).join(', ')} (${total} ${total === 1 ? 'par' : 'pares'})`,
       )
-    } else if (item.quantidade.trim()) {
-      linhas.push(`   Quantidade: ${item.quantidade.trim()}`)
+    } else {
+      const q = quantidadeValida(item.quantidade)
+      if (q !== null) linhas.push(`   Quantidade: ${q}`)
     }
   })
 

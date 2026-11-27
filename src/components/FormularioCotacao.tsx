@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useMemo, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
 import {
   CATEGORIAS_COTACAO,
   NUMERACOES,
@@ -11,6 +11,7 @@ import {
 import {
   linkWhatsApp,
   mensagemCotacao,
+  quantidadeValida,
   LIMITE_MENSAGEM,
   type ItemCotacao,
 } from '@/lib/whatsapp'
@@ -54,6 +55,11 @@ export function FormularioCotacao() {
   const [observacao, setObservacao] = useState('')
   const [iniciado, setIniciado] = useState(false)
   const [copiado, setCopiado] = useState(false)
+  const [falhaCopia, setFalhaCopia] = useState(false)
+  const ultimoEnvio = useRef(0)
+  const botaoAdicionar = useRef<HTMLButtonElement>(null)
+  // Só algarismos, até 5: "-3", "1e3", "1.5" e números enormes não entram.
+  const soAlgarismos = (v: string) => v.replace(/\D/g, '').slice(0, 5)
 
   const marcarInicio = () => {
     if (!iniciado) {
@@ -99,11 +105,14 @@ export function FormularioCotacao() {
   const longaDemais = mensagem.length > LIMITE_MENSAGEM
 
   function abrirWhatsApp() {
+    // Duplo clique abria o WhatsApp duas vezes (QA 27/11/2026).
+    if (Date.now() - ultimoEnvio.current < 1000) return
+    ultimoEnvio.current = Date.now()
     rastrearFormConcluido('cotacao', {
       itens: itensValidos.length,
       prazo,
       tem_numeracao: itensValidos.some((i) =>
-        Object.values(i.numeracao).some((q) => Number(q) > 0),
+        Object.values(i.numeracao).some((q) => quantidadeValida(q) !== null),
       ),
     })
     rastrearWhatsApp({
@@ -119,10 +128,14 @@ export function FormularioCotacao() {
   async function copiar() {
     try {
       await navigator.clipboard.writeText(mensagem)
+      setFalhaCopia(false)
       setCopiado(true)
       setTimeout(() => setCopiado(false), 2500)
     } catch {
+      // Com a mensagem longa, este é o único caminho que sobra: falhar calado
+      // deixava o cliente sem saída.
       setCopiado(false)
+      setFalhaCopia(true)
     }
   }
 
@@ -133,7 +146,7 @@ export function FormularioCotacao() {
         {itens.map((item, indice) => {
           const cat = buscarCategoria(item.categoria)
           const totalPares = Object.values(item.numeracao).reduce(
-            (s, q) => s + (Number(q) || 0),
+            (s, q) => s + (quantidadeValida(q) ?? 0),
             0,
           )
 
@@ -146,7 +159,11 @@ export function FormularioCotacao() {
                 {itens.length > 1 && (
                   <button
                     type="button"
-                    onClick={() => setItens((l) => l.filter((i) => i.id !== item.id))}
+                    onClick={() => {
+                      setItens((l) => l.filter((i) => i.id !== item.id))
+                      // O botão some junto com o item; sem isto o foco caía no body.
+                      requestAnimationFrame(() => botaoAdicionar.current?.focus())
+                    }}
                     className="font-display text-sm font-semibold text-ink-3 underline underline-offset-4 hover:text-tower-red"
                   >
                     Remover
@@ -163,7 +180,7 @@ export function FormularioCotacao() {
                     id={`cat-${item.id}`}
                     value={item.categoria}
                     onChange={(e) =>
-                      atualizar(item.id, { categoria: e.target.value, numeracao: {} })
+                      atualizar(item.id, { categoria: e.target.value, numeracao: {}, quantidade: '' })
                     }
                     className={campo}
                   >
@@ -211,13 +228,12 @@ export function FormularioCotacao() {
                                 {n}
                               </span>
                               <input
-                                type="number"
-                                min={0}
+                                type="text"
                                 inputMode="numeric"
                                 aria-label={`Pares na numeração ${n}`}
                                 value={item.numeracao[n] ?? ''}
                                 onChange={(e) =>
-                                  atualizarNumeracao(item.id, n, e.target.value)
+                                  atualizarNumeracao(item.id, n, soAlgarismos(e.target.value))
                                 }
                                 className="mt-1 w-full border border-campo bg-paper px-1 py-2 text-center text-base focus:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-ink"
                               />
@@ -242,7 +258,7 @@ export function FormularioCotacao() {
                           inputMode="numeric"
                           value={item.quantidade}
                           onChange={(e) =>
-                            atualizar(item.id, { quantidade: e.target.value })
+                            atualizar(item.id, { quantidade: soAlgarismos(e.target.value) })
                           }
                           placeholder="Ex.: 30"
                           className={`${campo} sm:max-w-[10rem]`}
@@ -259,6 +275,7 @@ export function FormularioCotacao() {
 
       <button
         type="button"
+        ref={botaoAdicionar}
         onClick={() => setItens((l) => [...l, novoItem()])}
         className="btn btn-ghost mt-5"
       >
@@ -350,7 +367,7 @@ export function FormularioCotacao() {
 
         {completo ? (
           <>
-            <pre className="mt-5 whitespace-pre-wrap border-l-4 border-zap bg-paper-2 px-5 py-5 font-serif text-[0.95rem] leading-relaxed">
+            <pre className="mt-5 whitespace-pre-wrap [overflow-wrap:anywhere] border-l-4 border-zap bg-paper-2 px-5 py-5 font-serif text-[0.95rem] leading-relaxed">
               {mensagem}
             </pre>
 
@@ -369,15 +386,19 @@ export function FormularioCotacao() {
                 O texto diz a verdade verificada: nada sai do navegador até
                 você mandar, e quem recebe é o WhatsApp. */}
             <p className="mt-6 max-w-prose text-[0.85rem] leading-relaxed text-ink-3">
-              O que você digitou fica no seu navegador. Nada é enviado para a Tower até
+              O que você digitou fica só nesta página, no seu navegador, e não é salvo:
+              se fechar ou recarregar, começa de novo. Nada é enviado para a Tower até
               você tocar no botão — e, quando toca, o que segue é a mensagem acima, pelo
               WhatsApp, que é um serviço de terceiro. Nome e empresa são opcionais.{' '}
-              <Link
+              {/* Nova aba: na mesma aba, ler a política apagava o formulário. */}
+              <a
                 href="/politica-de-privacidade/"
+                target="_blank"
+                rel="noopener"
                 className="underline underline-offset-4 hover:text-tower-red"
               >
-                Política de privacidade
-              </Link>
+                Política de privacidade<span className="sr-only"> (abre em nova aba)</span>
+              </a>
               .
             </p>
 
@@ -414,6 +435,13 @@ export function FormularioCotacao() {
             <p aria-live="polite" className="sr-only">
               {copiado ? 'Texto copiado para a área de transferência.' : ''}
             </p>
+            <div role="status">
+              {falhaCopia && (
+                <p className="mt-3 text-[0.95rem] font-semibold text-tower-red-deep">
+                  Não deu para copiar automaticamente. Selecione o texto da mensagem acima e copie à mão.
+                </p>
+              )}
+            </div>
           </>
         ) : (
           <p className="mt-5 text-ink-2">
